@@ -1,7 +1,7 @@
 .unit-wrapper {
-    width: 100%; 
-    height: 220px;
-    //aspect-ratio: 0.75 / 1; // this might be problematic later so we'll see
+    // width: 100%; 
+    // height: 220px;
+    aspect-ratio: 0.75 / 1; // this might be problematic later so we'll see
     cursor: pointer;
     border: 1px #3c3c3d solid;
     border-radius: 8px;
@@ -78,6 +78,7 @@
 
                 img {
                     width: 28px;
+                    height: fit-content;
                 }
 
                 .type-and-buffs {
@@ -85,6 +86,12 @@
                     width: 100%;
                     flex-direction: row;
                     justify-content: space-between;
+
+                    .icons, .buffs {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 4px;
+                    }
                 }
             }
         }
