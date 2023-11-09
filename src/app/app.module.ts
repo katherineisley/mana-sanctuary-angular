@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { UnitsIndexComponent } from './units-index/units-index.component';
 import { UnitCardComponent } from './unit-card/unit-card.component';
+import { HealingGuideComponent } from './healing-guide/healing-guide.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { UnitCardComponent } from './unit-card/unit-card.component';
     HeaderComponent,
     FooterComponent,
     UnitsIndexComponent,
-    UnitCardComponent
+    UnitCardComponent,
+    HealingGuideComponent
   ],
   imports: [
     BrowserModule,
