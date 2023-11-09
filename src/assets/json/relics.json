@@ -1,0 +1,17 @@
+[
+  {
+    "avatar":"altereddestiny",
+    "name": "Altered Destiny",
+    "priority": "<span class=\"veryhigh-priority\">VERY HIGH</span>",
+    "stars": "0",
+    "functionality": "<p>Create a dome for 8 seconds. Allies inside it will not drop below 20% HP and gain immunity to hitstun effects.</p><p>(Once used, cannot be affected by another AD for 45 sec)</p>",
+    "important advancements":"<p>1 ★ Allies in the dome recover 15% HP 8 seconds later</p><p>2 ★ Allies in the dome gain 25% lifesteal</p><p>3 ★ Allies in the dome gain immunity to mind control</p><p>5 ★ Allies in the dome double all lifesteal effects when HP is below 40%</p>",
+    "notes":"<p>Use in dangerous situations when the party is in critical health. Can be used by maximum 2 people in a party, taking turns since it has a 45 second CD on the effect.</p><p>Can be placed at the beginning of each OOW stage to prevent death when enemies gather together</p><p>Can be placed at the beginning of VA boss fight to prevent death before the healer has stacked all buffs.</p>"
+  },
+  {
+    "avatar":"spacetimerift",
+    "name": "Spacetime Rift",
+    "priority": "<span class=\"high-priority\">HIGH</span>",
+    "stars": "3"
+  }
+]

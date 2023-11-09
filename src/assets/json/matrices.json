@@ -1,0 +1,40 @@
+[
+    {
+        "avatar": "coco",
+        "name": "Cocoritter",
+        "subtitle": "on-field matrix",
+        "2pc effect": "<p>Increase healing capability and healing received by 10%/12%/14%/16%.</p>",
+        "4pc effect":"<p>When you or your teammates are healed, increase ATK by 12.5%/15%/17.5%/20% for 6 seconds. </p>",
+        "2pc notes": "<p>Only works while on the equipped weapon. Attack effect stays even when you switch weapons. Increase attack of all allies. Best to use on on-field weapons like Nemesis or Coco.</p>",
+        "4pc notes": "<p>Only works while on the equipped weapon. Best to use on on-field weapons like Nemesis or Coco. You receive 10%/12%/14%/16% more healing. And your healing is increased by 10%/12%/14%/16%</p>",
+        "rec img 1": "<img class=\"recommended-img\" src=\"Assets/simulacra/fiona_avatar.png\" alt=\"Fiona\">",
+        "rec img 2": "<img class=\"recommended-img\" src=\"Assets/simulacra/coco_avatar.png\" alt=\"Coco\">",
+        "rec img 3": "<img class=\"recommended-img\" src=\"Assets/simulacra/zero_avatar.png\" alt=\"Zero\">",
+        "rec img 4": "<img class=\"recommended-img\" src=\"Assets/simulacra/nemesis_avatar.png\" alt=\"Nemesis\">",
+        "rec img 5": "",
+        "mat tag 1":"<span class=\"tag teamatk\">team ATK</span>",
+        "mat tag 2":"<span class=\"tag healingincrease\">increased healing</span>",
+        "mat tag 3":"",
+        "mat tag 4":""
+
+    },
+    {
+        "avatar": "zero",
+        "name": "Zero",
+        "subtitle": "on-field matrix",
+        "2pc effect": "",
+        "4pc effect":"",
+        "2pc notes": "",
+        "4pc notes": "",
+        "rec img 1": "<img class=\"recommended-img\" src=\"Assets/simulacra/fiona_avatar.png\" alt=\"Fiona\">",
+        "rec img 2": "<img class=\"recommended-img\" src=\"Assets/simulacra/coco_avatar.png\" alt=\"Coco\">",
+        "rec img 3": "<img class=\"recommended-img\" src=\"Assets/simulacra/nemesis_avatar.png\" alt=\"Nemesis\">",
+        "rec img 4": "",
+        "rec img 5": "",
+        "mat tag 1":"<span class=\"tag dmgincrease\">damage increase</span>",
+        "mat tag 2":"",
+        "mat tag 3":"",
+        "mat tag 4":""
+
+    }
+]

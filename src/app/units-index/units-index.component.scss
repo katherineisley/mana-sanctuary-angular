@@ -1,0 +1,125 @@
+$main: #18181A; // not final
+$content: #29292A; // not final
+$white: #F5F5F5; // not final
+// $font: "Inter", sans-serif;
+$font: 'Exo', sans-serif;
+// $font: 'Exo 2', sans-serif; 
+
+.category-filter {
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    justify-content: space-between;
+    margin: 20px 0 0 0;
+    padding: 12px 20px;
+    background-color: $content;
+    border-radius: 8px;
+
+    .rarity, .element, .type {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .title {
+            font-size: 18px;
+            font-weight: 400;
+            margin: unset;
+        }
+
+        .wrapper {
+            display: flex;
+            gap: 8px;
+        }
+    }
+
+    .rarity {
+        .wrapper {
+            .rarity {
+                &-ssr, &-sr, &-r {
+                    cursor: pointer;
+                    font-size: 22px;
+                    opacity: 0.5;
+                    transition: 0.15s ease-in-out;
+
+                    &.active {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .element {
+        .wrapper {
+            img {
+                opacity: 0.5;
+                transition: 0.15s ease-in-out;
+
+                &.active {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .element, .type {
+        .wrapper {
+            img {
+                cursor: pointer;
+                width: 36px;
+
+                opacity: 0.5;
+                transition: 0.15s ease-in-out;
+
+                &.active {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+.rarity {
+    &-ssr, &-sr, &-r {
+        font-weight: 600;
+    }
+
+    &-ssr {
+        color: #FFDB9B;
+    }
+
+    &-sr {
+        color: #D6CDFF;
+    }
+
+    &-r {
+        color: #B0E9FF;
+    }
+}
+
+.all-unit-index {
+    margin: 40px 0 0 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    justify-items: center;
+    
+
+}
+.inner-index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1180px;
+    width: 100%;
+    padding: 0px 20px;
+
+    
+    .title-big-center {
+        text-align: center;
+        margin: 40px 0 0 0;
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+}

@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+$main: #18181A; // not final
+$content: #29292A; // not final
+$white: #F5F5F5; // not final
+// $font: "Inter", sans-serif;
+$font: 'Exo', sans-serif;
+// $font: 'Exo 2', sans-serif; 
+
+// TESTING PURPOSES VIEWPORT USED: 1920PX
+body {
+    margin: 0;
+    background-color: $main;
+    color: $white;
+    font-family: $font;
+    overflow-x: clip; // ive no idea when this was introduced but it fixes the overflow-x issue caused by the fixed nav bar
+}
+
+a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+a:hover {
+    color: #f1f1f1;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
