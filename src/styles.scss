@@ -29,7 +29,7 @@ main {
     display: flex;
     justify-content: center;
 
-    app-units-index {
+    app-units-index, app-unit-page { // with how Angular loads pages, just do this for every main component
         width: 100%;
         display: flex;
         justify-content: center;

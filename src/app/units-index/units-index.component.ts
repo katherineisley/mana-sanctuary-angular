@@ -7,6 +7,7 @@ import * as $ from 'jquery';
   templateUrl: './units-index.component.html',
   styleUrls: ['./units-index.component.scss']
 })
+
 export class UnitsIndexComponent implements OnInit {
   units: any[] = [];
 
@@ -16,7 +17,6 @@ export class UnitsIndexComponent implements OnInit {
     this.cardDataService.getCardData().subscribe((data: any) => {
       this.units = data;
     });
-
 
     const physicalUnits: string[] = ['yanmiao', 'mingjing', 'umi', 'gnonno', 'lyra', 'claudia', 'shiro', 'bailing'];
     const flameUnits: string[] = ['lan', 'feise', 'liuhuo', 'annabella', 'ruby', 'cobaltb', 'zero', 'king', 'huma'];
@@ -126,6 +126,5 @@ export class UnitsIndexComponent implements OnInit {
         $(`[data-unit="${unit}"]`).parent().show();
       });
     }
-
   }
 }
