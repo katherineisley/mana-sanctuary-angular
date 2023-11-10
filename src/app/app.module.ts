@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { UnitsIndexComponent } from './units-index/units-index.component';
 import { UnitCardComponent } from './unit-card/unit-card.component';
 import { HealingGuideComponent } from './healing-guide/healing-guide.component';
+import { UnitPageComponent } from './unit-page/unit-page.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HealingGuideComponent } from './healing-guide/healing-guide.component';
     FooterComponent,
     UnitsIndexComponent,
     UnitCardComponent,
-    HealingGuideComponent
+    HealingGuideComponent,
+    UnitPageComponent
   ],
   imports: [
     BrowserModule,

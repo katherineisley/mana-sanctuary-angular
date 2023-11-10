@@ -1,0 +1,101 @@
+.unit-wrapper {
+    max-width: 1180px;
+    width: 100%;
+
+
+    .header-element {
+        display: flex;
+        margin: 40px 0 0 0;
+        width: 1180px;
+        padding: 10px 20px;
+        background-image: url("/assets/backgrounds/header-element.svg");
+        background-size: cover;
+        height: 141px;
+
+        .unit-avatar {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin: 0 15px 0 0;
+        }
+
+        .unit-avatar img {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+        }
+
+        .unit-name-element {
+            display: flex;
+            justify-content: center;
+            margin: 0 40px 0 0;
+            flex-direction: column;
+            min-width: 130px;
+
+            .unit-name {
+                color: #F5F5F5;
+                font-size: 24px;
+                font-weight: 600;
+                text-transform: uppercase;
+                line-height: 24px;
+                padding-top: 10px;
+            }
+
+            .unit-weapon-name {
+                color: #F5F5F5;
+                font-size: 16px;
+                font-weight: 200;
+                font-style: italic;
+                padding-bottom: 5px;
+            }
+
+            .unit-element {
+                display: flex;
+                justify-content: left;               
+                align-items: center;
+            }
+
+            .unit-element img {
+                width: 38px;
+                margin-right: 5px;
+            }
+        }
+
+        .unit-stats {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin-right: 30px;
+            .top-stats{
+                display: flex;
+                padding-bottom: 20px;
+            }
+            .bottom-stats {
+                display: flex;
+                padding-bottom: 15px;
+            }
+        }
+
+        .unit-buffs{
+            display: flex;
+            justify-content: left;    
+            align-items: flex-end;
+            padding-bottom: 15px;
+        }
+
+    }
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    color: #F5F5F5;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-right: 20px;
+}
+.stats img{
+    width: 34px;
+    margin-right: 10px;   
+}
