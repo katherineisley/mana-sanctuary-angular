@@ -4,7 +4,10 @@ $content: #29292A; // not final
 $white: #F5F5F5; // not final
 // $font: "Inter", sans-serif;
 $font: 'Exo', sans-serif;
-// $font: 'Exo 2', sans-serif; 
+// $font: 'Exo 2', sans-serif;
+$laptop: 1440px;
+$tablet: 1024px;
+$mobile: 768px;
 
 // TESTING PURPOSES VIEWPORT USED: 1920PX
 body {
@@ -14,6 +17,12 @@ body {
     font-family: $font;
     overflow-x: clip; // ive no idea when this was introduced but it fixes the overflow-x issue caused by the fixed nav bar
     overflow-y: scroll;
+}
+
+ul {
+    padding: unset;
+    margin: unset;
+    list-style: none;
 }
 
 a {
@@ -29,9 +38,63 @@ main {
     display: flex;
     justify-content: center;
 
+    app-home {
+        width: 100%;
+    }
+
     app-units-index, app-unit-page { // with how Angular loads pages, just do this for every main component
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+}
+
+@keyframes distort-subtle {
+    20% {
+        text-shadow: none;
+    }
+
+    21% {
+        text-shadow: 2px -1px red, -2px 3px #0ff;
+    }
+
+    22% {
+        text-shadow: -2px -3px red, 2px 1px #0ff;
+    }
+
+    23% {
+        text-shadow: 2px 1px red, -4px 1px #0ff;
+    }
+
+    24% {
+        text-shadow: -4px 1px red, -2px -1px #0ff;
+    }
+
+    25% {
+        text-shadow: none;
+    }
+
+    75% {
+        text-shadow: none;
+    }
+
+    76% {
+        text-shadow: -4px 1px red, -2px -1px #0ff;
+    }
+
+    77% {
+        text-shadow: -2px -3px red ,2px 1px #0ff;
+    }
+
+    78% {
+        text-shadow: 2px -1px red, -2px 3px #0ff;
+    }
+
+    79% {
+        text-shadow: 2px 1px red, -4px 1px #0ff;
+    }
+
+    80% {
+        text-shadow: none;
     }
 }

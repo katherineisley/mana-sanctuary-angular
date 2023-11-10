@@ -1,11 +1,4 @@
-$main: #18181A; // not final
-$content: #29292A; // not final
-$white: #F5F5F5; // not final
-// $font: "Inter", sans-serif;
-$font: 'Exo', sans-serif;   
-// $font: 'Exo 2', sans-serif; 
-
-// TESTING PURPOSES VIEWPORT USED: 1920PX
+@import '../../styles.scss';
 
 .header {
     background-image: linear-gradient(rgba(38, 38, 38, 0.6), rgba(38, 38, 38, 0.6)), url("/assets/backgrounds/mana_background.png"); // #262626 I forget way too often that you can do this
@@ -77,6 +70,75 @@ $font: 'Exo', sans-serif;
 
         &_mobile {
             display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .header {
+        height: 80px;
+        padding: 0px 24px;
+
+        .main-menu {
+            display: none;
+
+            &_mobile {
+                position: relative;
+                display: flex;
+                height: 100%;
+                width: 100%;
+                align-items: center;
+                justify-content: space-between;
+
+                .home {
+                    margin: unset;
+                    font-size: 24px;
+                }
+
+                .menu-icon {
+                    padding: 8px 6px;
+                    background: white;
+                    border: 2px solid black;
+                    border-radius: 10px;
+                }
+
+                .burger-menu {
+                    display: none;
+                    position: absolute;
+                    top: 80px;
+                    left: -24px;
+                    width: calc(100% + 48px);
+                    padding: 20px;
+                    z-index: 1;
+                    background: $content;
+
+                    // display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    .menu-item {
+                        .hyperlink {
+                            display: flex;
+                            justify-content: space-between;
+
+                            .item-wrapper {
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;
+
+                                img {
+                                    width: 36px;
+                                    height: 36px;
+                                }
+
+                                span {
+                                    font-size: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
