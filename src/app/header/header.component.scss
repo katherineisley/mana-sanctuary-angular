@@ -100,6 +100,12 @@
                     background: white;
                     border: 2px solid black;
                     border-radius: 10px;
+                    transition: 0.2s ease-in-out;
+
+                    // &.active { this is missing like an inverse color SVG and im too lazy to do that right now
+                    //     background: black;
+                    //     border: 2px solid white;
+                    // }
                 }
 
                 .burger-menu {
@@ -117,6 +123,14 @@
                     gap: 20px;
 
                     .menu-item {
+                        padding: 0 0 16px 0;
+                        border-bottom: 2px solid $border;
+
+                        &:last-child {
+                            padding: unset;
+                            border-bottom: unset;
+                        }
+                        
                         .hyperlink {
                             display: flex;
                             justify-content: space-between;

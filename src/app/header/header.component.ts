@@ -10,7 +10,9 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
     $('.menu-icon').click(function () {
       console.log("clicked");
-      $('.burger-menu').toggle();
+      const display = $('.burger-menu').css('display');
+      $('.burger-menu').css('display', display === 'none' ? 'flex' : 'none');
+      $(this).toggleClass('active');
     });
   }
 }
