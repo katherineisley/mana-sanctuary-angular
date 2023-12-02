@@ -43,7 +43,7 @@ main {
         width: 100%;
     }
 
-    app-units-index, app-unit-page { // with how Angular loads pages, just do this for every main component
+    app-units-index, app-unit-page, app-guides, app-healing-guide { // with how Angular loads pages, just do this for every main component
         width: 100%;
         display: flex;
         justify-content: center;

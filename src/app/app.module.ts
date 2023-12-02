@@ -11,6 +11,7 @@ import { UnitCardComponent } from './unit-card/unit-card.component';
 import { HealingGuideComponent } from './healing-guide/healing-guide.component';
 import { UnitPageComponent } from './unit-page/unit-page.component';
 import { HomeComponent } from './home/home.component';
+import { GuidesComponent } from './guides/guides.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HomeComponent } from './home/home.component';
     UnitCardComponent,
     HealingGuideComponent,
     UnitPageComponent,
-    HomeComponent
+    HomeComponent,
+    GuidesComponent
   ],
   imports: [
     BrowserModule,

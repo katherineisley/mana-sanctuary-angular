@@ -1,39 +1,41 @@
 <div class="inner-index">
-    <h2 class="title-big-center">Simulacra and Matrices</h2>
-    <div class="category-filter">
-        <div class="rarity">
-            <h5 class="title">Rarity</h5>
-            <div class="wrapper">
-                <span class="rarity-ssr" data-rarity="ssr">SSR</span>
-                <span class="rarity-sr" data-rarity="sr">SR</span>
-                <span class="rarity-r" data-rarity="r">R</span>
-            </div>
-        </div>
-        <div class="element">
-            <h5 class="title">Element</h5>
-            <div class="wrapper">
-                <img src="../assets/elements/element_all.png" alt="All Elements" data-element="all" class="active">
-                <img src="../assets/elements/element_physical.png" alt="Physical Element" data-element="physical">
-                <img src="../assets/elements/element_flame.png" alt="Flame Element" data-element="flame">
-                <img src="../assets/elements/element_frost.png" alt="Frost Element" data-element="frost">
-                <img src="../assets/elements/element_volt.png" alt="Volt Element" data-element="volt">
-                <img src="../assets/elements/element_physicalflame.png" alt="Physical Flame Fusion Element" data-element="physical-flame">
-                <img src="../assets/elements/element_flamephysical.png" alt="Flame Physical Fusion Element" data-element="flame-physical">
-                <img src="../assets/elements/element_frostvolt.png" alt="Frost Volt Fusion Element" data-element="frost-volt">
-                <img src="../assets/elements/element_voltfrost.png" alt="Volt Frost Fusion Element" data-element="volt-frost">
-                <img src="../assets/elements/element_altered.png" alt="Altered Element" data-element="altered">
-            </div>
-        </div>
-        <div class="type">
-            <h5 class="title">Type</h5>
-            <div class="wrapper">
-                <img src="../assets/elements/attack.png" alt="DPS Type" data-type="damage">
-                <img src="../assets/elements/benediction.png" alt="Benediction Type" data-type="benediction">
-                <img src="../assets/elements/fortitude.png" alt="Fortitude Type" data-type="fortitude">
-            </div>
-        </div>
+  <h2 class="title-big-center">Simulacra and Matrices</h2>
+  <div class="category-filter">
+    <div class="rarity">
+      <h5 class="title">Rarity</h5>
+      <div class="wrapper">
+        <span class="rarity-ssr" data-rarity="ssr">SSR</span>
+        <span class="rarity-sr" data-rarity="sr">SR</span>
+        <span class="rarity-r" data-rarity="r">R</span>
+      </div>
     </div>
-    <div class="all-unit-index">
-        <app-unit-card *ngFor="let unit of units" [unit]="unit"></app-unit-card>
+    <div class="element">
+      <h5 class="title">Element</h5>
+      <div class="wrapper">
+        <img src="../assets/elements/element_all.png" alt="All Elements" data-element="all" class="active">
+        <img src="../assets/elements/element_physical.png" alt="Physical Element" data-element="physical">
+        <img src="../assets/elements/element_flame.png" alt="Flame Element" data-element="flame">
+        <img src="../assets/elements/element_frost.png" alt="Frost Element" data-element="frost">
+        <img src="../assets/elements/element_volt.png" alt="Volt Element" data-element="volt">
+        <img src="../assets/elements/element_physicalflame.png" alt="Physical Flame Fusion Element"
+          data-element="physical-flame">
+        <img src="../assets/elements/element_flamephysical.png" alt="Flame Physical Fusion Element"
+          data-element="flame-physical">
+        <img src="../assets/elements/element_frostvolt.png" alt="Frost Volt Fusion Element" data-element="frost-volt">
+        <img src="../assets/elements/element_voltfrost.png" alt="Volt Frost Fusion Element" data-element="volt-frost">
+        <img src="../assets/elements/element_altered.png" alt="Altered Element" data-element="altered">
+      </div>
     </div>
+    <div class="type">
+      <h5 class="title">Type</h5>
+      <div class="wrapper">
+        <img src="../assets/elements/attack.png" alt="DPS Type" data-type="damage">
+        <img src="../assets/elements/benediction.png" alt="Benediction Type" data-type="benediction">
+        <img src="../assets/elements/fortitude.png" alt="Fortitude Type" data-type="fortitude">
+      </div>
+    </div>
+  </div>
+  <div class="all-unit-index">
+    <app-unit-card *ngFor="let unit of units" [unit]="unit"></app-unit-card>
+  </div>
 </div>

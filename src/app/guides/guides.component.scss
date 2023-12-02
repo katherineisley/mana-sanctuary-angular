@@ -1,0 +1,52 @@
+@import '../../styles.scss';
+
+.inner {
+    max-width: 1220px;
+    width: 100%;
+    padding: 0px 20px;
+
+    .title {
+        font-size: 24px;
+        font-weight: 600;
+        margin: 40px 0 0 0; // was 32
+    }
+
+    .guides-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin: 24px 0 0 0;
+        grid-auto-rows: 1fr;
+    
+        .card {
+            background-color: $content;
+            border-radius: 10px;
+            height: 100%;
+            transition: 0.5s ease;
+            cursor: pointer;
+    
+            &:hover {
+                transform: translate3D(0,-1px,0) scale(1.02);
+            }
+           
+            .card-img-top {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+    
+            .card-body {
+                padding: 20px 20px 30px;
+    
+                .card-title {
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+    
+                .card-text {
+                    font-size: 16px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
