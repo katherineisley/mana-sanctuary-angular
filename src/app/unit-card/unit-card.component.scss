@@ -7,18 +7,106 @@
     border-radius: 8px;
     position: relative;
 
+    .top-card {
+        position: relative;
+        z-index: 2;
+    }
+
+    .back-card {
+        // display: none;
+        opacity: 1;
+        animation: onTopReverse 0.65s ease-in-out forwards;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background: black;
+    }
+
     // surely a shuffle animation will be easy, clueless
-    // &:hover {
-    //     .top-card {
-    //         z-index: 1;
-    //     }
+    &:hover {
+        .top-card {
+            // z-index: 1;
+        }
 
-    //     .back-card {
-    //         z-index: 2;
-    //     }
-    // }
+        .back-card {
+            opacity: 1;
+            animation: onTop 1s ease-in-out forwards;
+        }
+    }
 
-    .top-card, .back-card {
+    @keyframes onTop {
+        0% {
+            transform: translateY(0);
+            z-index: 1;
+            left: 0;
+            top: 0;
+            rotate: 0deg;
+        }
+
+        25% {
+            transform: translateY(-35px);
+            z-index: 1;
+            left: 10px;
+            top: 0;
+            rotate: 2.5deg;
+        }
+
+        50% {
+            transform: translateY(0);
+            z-index: 2;
+            left: 10px;
+            top: -4.5px;
+            rotate: 5deg;
+        }
+
+        100% {
+            transform: translateY(0);
+            z-index: 2;
+            left: 10px;
+            top: -4.5px;
+            rotate: 5deg;
+        }
+    }
+
+    @keyframes onTopReverse {
+        0% {
+            transform: translateY(0);
+            z-index: 2;
+            left: 10px;
+            top: -4.5px;
+            rotate: 5deg;
+        }
+
+        25% {
+            transform: translateY(0);
+            z-index: 2;
+            left: 10px;
+            top: -4.5px;
+            rotate: 5deg;
+        }
+
+        50% {
+            transform: translateY(-35px);
+            z-index: 1;
+            left: 10px;
+            top: 0;
+            rotate: 2.5deg;
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(0);
+            z-index: 1;
+            left: 0;
+            top: 0;
+            rotate: 0deg;
+            opacity: 0;
+        }
+    }
+
+    .top-card,
+    .back-card {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat; // weird edge case
@@ -43,6 +131,7 @@
                 text-transform: capitalize;
                 top: 0;
             }
+
             .meta-tag {
                 font-size: 10px;
                 background-color: #1f71b4;
@@ -53,6 +142,7 @@
                 text-transform: capitalize;
                 top: 0;
             }
+
             .standard-tag {
                 font-size: 10px;
                 background-color: rgb(192, 112, 15);
@@ -87,7 +177,8 @@
                     flex-direction: row;
                     justify-content: space-between;
 
-                    .icons, .buffs {
+                    .icons,
+                    .buffs {
                         display: flex;
                         flex-direction: row;
                         gap: 4px;
@@ -96,18 +187,4 @@
             }
         }
     }
-
-    .top-card {
-        position: relative;
-        z-index: 2;
-    }
-
-    .back-card {
-        display: none;
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        // background: black;
-    }                            
 }
