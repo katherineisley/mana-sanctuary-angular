@@ -1,36 +1,30 @@
+@import '../../styles.scss';
+
 .unit-wrapper {
     // width: 100%; 
     // height: 220px;
     aspect-ratio: 0.75 / 1; // this might be problematic later so we'll see
     cursor: pointer;
-    border: 1px #3c3c3d solid;
-    border-radius: 8px;
     position: relative;
 
     .top-card {
         position: relative;
         z-index: 2;
+        background: $main; // this dumbassery fixes the whole "transparent character artwork background-image" problem and makes me wonder why i even went to school in the first place
     }
 
     .back-card {
-        // display: none;
-        opacity: 1;
         animation: onTopReverse 0.65s ease-in-out forwards;
         position: absolute;
         z-index: 1;
         top: 0;
         left: 0;
-        background: black;
+        background: $main;
     }
 
     // surely a shuffle animation will be easy, clueless
     &:hover {
-        .top-card {
-            // z-index: 1;
-        }
-
         .back-card {
-            opacity: 1;
             animation: onTop 1s ease-in-out forwards;
         }
     }
@@ -92,7 +86,11 @@
             left: 10px;
             top: 0;
             rotate: 2.5deg;
-            opacity: 1;
+
+            // the exact timing of turning the opacity from 1 to 0 is a bit of a nuisance to get right
+            // so i'm not going to spend too much time on it right now
+            // and just leaving this as "good enough"
+
         }
 
         100% {
@@ -101,7 +99,6 @@
             left: 0;
             top: 0;
             rotate: 0deg;
-            opacity: 0;
         }
     }
 
@@ -114,6 +111,12 @@
         height: 100%;
         border-radius: 8px;
         padding: 10px;
+
+        // this is better on the cards themselves rather than the unit-wrapper
+        // as when the back-card gets put on top, it doesn't have a border to distinguish itself from the body
+
+        border: 2px #3c3c3d solid;
+        border-radius: 8px;
 
         .content-wrapper {
             position: relative;

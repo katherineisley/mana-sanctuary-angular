@@ -1,9 +1,4 @@
-$main: #18181A; // not final
-$content: #29292A; // not final
-$white: #F5F5F5; // not final
-// $font: "Inter", sans-serif;
-$font: 'Exo', sans-serif;
-// $font: 'Exo 2', sans-serif;
+@import '../../styles.scss';
 
 .category-filter {
     display: flex;
