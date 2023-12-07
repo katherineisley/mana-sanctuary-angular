@@ -4,62 +4,74 @@
       <a routerLink="/home">Mana</a>
     </li>
     <li class="menu-item">
-      <a routerLink="/healingguide">Healing Guide</a>
+      <a routerLink="/healing-guide">Healing Guide</a>
     </li>
     <li class="menu-item">
-      <a routerLink="/unitpage">Teams</a>
+      <a routerLink="/unit-page">Teams</a>
       <!-- Teams routing to /unitpage is temporary -->
     </li>
     <li class="menu-item">
       <a routerLink="/guides">Guides</a>
     </li>
     <li class="menu-item beta">
-      <a routerLink="/unitsindex">Index</a>
+      <a routerLink="/units-index">Index</a>
       <span class="beta-tag">Beta</span>
+    </li>
+    <li class="menu-item">
+      <a routerLink="/about-us">About Us</a>
     </li>
   </ul>
   <div class="main-menu_mobile">
     <h3 class="home">
       <a routerLink="/home">Mana</a>
     </h3>
-    <img class="menu-icon" src="../assets/other/menu-icon.svg" alt="">
+    <img class="menu-icon" src="../../assets/other/menu-icon.svg" alt="">
     <ul class="burger-menu">
       <li class="menu-item">
-        <a class="hyperlink" routerLink="/healingguide">
+        <a class="hyperlink" routerLink="/healing-guide">
           <div class="item-wrapper">
-            <img src="../assets/other/double-cross.svg" alt="Healing Guide Icon">
+            <img src="../../assets/other/double-cross.svg" alt="Healing Guide Icon">
             <span>Healing Guide</span>
           </div>
-          <img src="../assets/other/arrow-right.svg" alt="Right Arrow">
+          <img src="../../assets/other/arrow-right.svg" alt="Right Arrow">
         </a>
       </li>
       <li class="menu-item">
-        <a class="hyperlink" href="teams.html">
+        <a class="hyperlink" routerLink="unit-page">
+          <!-- Teams routing to /unitpage is temporary -->
           <div class="item-wrapper">
-            <img src="../assets/other/teams.svg" alt="Teans Icon">
+            <img src="../../assets/other/teams.svg" alt="Teans Icon">
             <span>Teams</span>
           </div>
           <img src="../assets/other/arrow-right.svg" alt="Right Arrow">
         </a>
       </li>
       <li class="menu-item">
-        <a class="hyperlink" href="guides.html">
+        <a class="hyperlink" routerLink="/guides">
           <div class="item-wrapper">
-            <img src="../assets/other/guides.svg" alt="Guides Icon">
+            <img src="../../assets/other/guides.svg" alt="Guides Icon">
             <span>Guides</span>
           </div>
-          <img src="../assets/other/arrow-right.svg" alt="Right Arrow">
+          <img src="../../assets/other/arrow-right.svg" alt="Right Arrow">
         </a>
       </li>
       <li class="menu-item beta">
-        <a class="hyperlink" routerLink="/unitsindex">
+        <a class="hyperlink" routerLink="/units-index">
           <div class="item-wrapper">
-            <img src="../assets/other/guides.svg" alt="Beta Icon">
+            <img src="../../assets/other/guides.svg" alt="Beta Icon">
             <span>Index</span>
           </div>
-          <img src="../assets/other/arrow-right.svg" alt="Right Arrow">
+          <img src="../../assets/other/arrow-right.svg" alt="Right Arrow">
         </a>
       </li>
+      <li class="menu-item">
+        <a class="hyperlink" routerLink="/about-us">
+          <div class="item-wrapper">
+            <img src="../../assets/other/dev.svg" alt="About Us Icon">
+            <span>About Us</span>
+          </div>
+          <img src="../../assets/other/arrow-right.svg" alt="Right Arrow">
+        </a>
     </ul>
   </div>
 </header>

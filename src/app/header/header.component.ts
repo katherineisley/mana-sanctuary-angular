@@ -14,5 +14,9 @@ export class HeaderComponent implements OnInit {
       $('.burger-menu').css('display', display === 'none' ? 'flex' : 'none');
       $(this).toggleClass('active');
     });
+
+    $('.main-menu_mobile .menu-item, .main-menu_mobile .home').click(function () {
+      $('.burger-menu').css('display', 'none');
+    });
   }
 }

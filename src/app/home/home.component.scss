@@ -19,23 +19,12 @@
     }
 }
 
+
 .banner {
     width: 100%;
     height: 700px;
     position: relative;
     background: linear-gradient(90deg, #232323 0%, rgba(35, 35, 35, 0.00) 50%);
-
-    .image-container {
-        width: 100%;
-        height: 100%;
-        background-image: url("../../assets/backgrounds/banner_background.jpg");
-        background-position: center;
-        background-repeat: no-repeat; // problems with higher height though we should never encounter that problem
-        background-size: cover;
-        z-index: -1; // i remember why i hate background blurs now
-        position: relative;
-        opacity: 0.7;
-    }
 
     .content-container {
         position: absolute;

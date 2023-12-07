@@ -20,6 +20,27 @@ body {
     overflow-y: scroll;
 }
 
+.splide-fix {
+    z-index: -1;
+    position: relative;
+    opacity: 0.7;
+    height: 100%;
+
+    .splide__arrows, .splide__pagination {
+        display: none;
+    }
+
+    .splide__track {
+        height: 100%;
+
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
 ul {
     padding: unset;
     margin: unset;

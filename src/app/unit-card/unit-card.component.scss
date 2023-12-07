@@ -14,12 +14,15 @@
     }
 
     .back-card {
-        animation: onTopReverse 0.65s ease-in-out forwards;
         position: absolute;
         z-index: 1;
         top: 0;
         left: 0;
         background: $main;
+    }
+
+    .reverse-animation {
+        animation: onTopReverse 0.65s ease-in-out forwards;
     }
 
     // surely a shuffle animation will be easy, clueless
