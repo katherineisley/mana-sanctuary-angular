@@ -42,7 +42,7 @@
         }
 
         25% {
-            transform: translateY(-35px);
+            transform: translateY(-25px);
             z-index: 1;
             left: 10px;
             top: 0;
@@ -52,16 +52,16 @@
         50% {
             transform: translateY(0);
             z-index: 2;
-            left: 10px;
-            top: -4.5px;
+            left: 11px;
+            top: -7px;
             rotate: 5deg;
         }
 
         100% {
             transform: translateY(0);
             z-index: 2;
-            left: 10px;
-            top: -4.5px;
+            left: 11px;
+            top: -7px;
             rotate: 5deg;
         }
     }
@@ -70,30 +70,25 @@
         0% {
             transform: translateY(0);
             z-index: 2;
-            left: 10px;
-            top: -4.5px;
+            left: 11px;
+            top: -7px;
             rotate: 5deg;
         }
 
         25% {
             transform: translateY(0);
             z-index: 2;
-            left: 10px;
-            top: -4.5px;
+            left: 11px;
+            top: -7px;
             rotate: 5deg;
         }
 
         50% {
-            transform: translateY(-35px);
+            transform: translateY(-25px);
             z-index: 1;
             left: 10px;
             top: 0;
             rotate: 2.5deg;
-
-            // the exact timing of turning the opacity from 1 to 0 is a bit of a nuisance to get right
-            // so i'm not going to spend too much time on it right now
-            // and just leaving this as "good enough"
-
         }
 
         100% {
@@ -118,7 +113,7 @@
         // this is better on the cards themselves rather than the unit-wrapper
         // as when the back-card gets put on top, it doesn't have a border to distinguish itself from the body
 
-        border: 2px #3c3c3d solid;
+        border: 1px #3c3c3d solid;
         border-radius: 8px;
 
         .content-wrapper {

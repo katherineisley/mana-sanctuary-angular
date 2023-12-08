@@ -10,8 +10,11 @@ export class UnitCardComponent implements AfterViewInit {
   @Input() unit: any;
 
   ngAfterViewInit() {
-    $('.back-card').one('mouseleave', function() {
+    $('.back-card').on('mouseleave', function() {
       $(this).addClass('reverse-animation');
+      setTimeout(() => {
+        $(this).removeClass('reverse-animation'); // playback bug starts happening again if the filter is applied
+      }, 650 /* duration of animation */ );
     });
   }
 }
