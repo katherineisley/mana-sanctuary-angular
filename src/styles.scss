@@ -3,6 +3,7 @@ $main: #18181A; // not final
 $content: #29292A; // not final
 $white: #F5F5F5; // not final
 $border: #6A6666;
+$link: #7DC9FF;
 // $font: "Inter", sans-serif;
 $font: 'Exo', sans-serif;
 // $font: 'Exo 2', sans-serif;
@@ -64,11 +65,67 @@ main {
         width: 100%;
     }
 
-    app-units-index, app-unit-page, app-guides, app-healing-guide { // with how Angular loads pages, just do this for every main component
+    app-units-index, app-unit-page, app-guides, app-healing-guide, app-about-us { // with how Angular loads pages, just do this for every main component
         width: 100%;
         display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
+        margin: 40px 0 0 0;
     }
+}
+
+.hyperlink {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+
+    &:hover {
+        -webkit-animation: distort-subtle 5s infinite;
+        animation: distort-subtle 5s infinite;
+    }
+}
+
+.white-black, .white-black-medium {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    padding: 8px 16px;
+    font-size: 16px;
+    transition: 0.25s ease;
+    border: 2px solid transparent;
+
+    &:hover {
+        background-color: black;
+        border: 2px solid white;
+        color: white;
+        -webkit-animation: distort-subtle 5s infinite;
+        animation: distort-subtle 5s infinite;
+    }
+}
+
+.black-white, .black-white-medium {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 8px 16px;
+    font-size: 16px;
+    transition: 0.25s ease;
+    border: 2px solid white;
+
+    &:hover {
+        border: 2px solid transparent;
+        background-color: white;
+        color: black;
+        -webkit-animation: distort-subtle 5s infinite;
+        animation: distort-subtle 5s infinite;
+    }
+}
+
+.white-black-medium, .black-white-medium {
+    padding: 12px 24px;
+    font-size: 24px;
+    line-height: 1.2;
 }
 
 @keyframes distort-subtle {

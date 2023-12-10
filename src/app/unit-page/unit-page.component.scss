@@ -4,6 +4,8 @@
     max-width: 1220px;
     width: 100%;
     padding: 0 20px;
+    display: flex;
+    flex-direction: column;
 
     // border-bottom: 140px solid green;
     // border-right: 140px solid transparent;
@@ -12,7 +14,6 @@
 
     .header-element {
         display: flex;
-        margin: 40px 0 0 0;
         // width: 1180px; we do not set static widths to content containers! we do the next 2 lines below
         // max-width: 1220px; this is inherited from the parent
         width: 100%;
