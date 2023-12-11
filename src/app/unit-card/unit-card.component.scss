@@ -113,7 +113,7 @@
         // this is better on the cards themselves rather than the unit-wrapper
         // as when the back-card gets put on top, it doesn't have a border to distinguish itself from the body
 
-        border: 1px #3c3c3d solid;
+        border: 1px $border solid;
         border-radius: 8px;
 
         .content-wrapper {

@@ -1,1 +1,81 @@
 @import '../../styles.scss';
+
+.about {
+    position: relative;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        .avatar {
+            .image {
+                mask-image: url(../../assets/other/avatar-frame.svg);
+                -webkit-mask-image: url(../../assets/other/avatar-frame.svg);
+                width: 120px;
+                height: 120px;
+                mask-repeat: no-repeat;
+                -webkit-mask-repeat: no-repeat;
+                mask-position: center;
+                -webkit-mask-position: center;
+                mask-size: contain;
+                -webkit-mask-size: contain;
+            }
+        }
+    
+        .info {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+    
+            .name, .discord, .title {
+                margin: unset;
+            }
+    
+            .name {
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 1;
+            }
+    
+            .discord, .title {
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .quote {
+        margin: unset;
+    }
+
+    .socials {
+        display: flex;
+        gap: 16px;
+
+        .social-link {
+            .icon {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+    
+    .opaque-background {
+        // background: green;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.15;
+        border-radius: 10px;
+    }
+}

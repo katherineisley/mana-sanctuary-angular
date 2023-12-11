@@ -5,6 +5,9 @@
         "discord": "@katherineisley",
         "title": "Founder & OOW Tryhard",
         "quote": "Lorem ipsum dolor sit amet, consecte tur adipiscing elit.",
+        "favourite": "lyra1",
+        "color1": "#FF0000",
+        "color2": "#000000",
         "links": [
             {
                 "alt": "Twitch",
@@ -24,6 +27,9 @@
         "discord": "@neptunenx",
         "title": "Developer & Code Janitor",
         "quote": "Lorem ipsum dolor sit amet, consecte tur adipiscing elit.",
+        "favourite": "umi1",
+        "color1": "#FF00F5",
+        "color2": "#9E00FF",
         "links": [
             {
                 "alt": "LinkedIn",
@@ -32,7 +38,7 @@
             },
             {
                 "alt": "GitHub",
-                "url": "https://githum.com",
+                "url": "https://github.com",
                 "icon": "github"
             }
         ]
