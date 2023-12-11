@@ -5,8 +5,8 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class UnitCardService {
-  private dataUrl = 'assets/json/indexcards.json'; // Update the path
+export class AboutUsCardService {
+  private dataUrl = 'assets/json/aboutuscards.json';
   constructor(private http: HttpClient) {}
 
   getCardData(): Observable<any> {

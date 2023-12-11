@@ -1,0 +1,40 @@
+[
+    {
+        "avatar": "kath",
+        "name": "Kath",
+        "discord": "@katherineisley",
+        "title": "Founder & OOW Tryhard",
+        "quote": "Lorem ipsum dolor sit amet, consecte tur adipiscing elit.",
+        "links": [
+            {
+                "alt": "Twitch",
+                "url": "https://twitch.tv",
+                "icon": "twitch"
+            },
+            {
+                "alt": "YouTube",
+                "url": "https://youtube.com",
+                "icon": "youtube"
+            }
+        ]
+    },
+    {
+        "avatar": "melly",
+        "name": "Melly",
+        "discord": "@neptunenx",
+        "title": "Developer & Code Janitor",
+        "quote": "Lorem ipsum dolor sit amet, consecte tur adipiscing elit.",
+        "links": [
+            {
+                "alt": "LinkedIn",
+                "url": "https://linkedin.com",
+                "icon": "linkedin"
+            },
+            {
+                "alt": "GitHub",
+                "url": "https://githum.com",
+                "icon": "github"
+            }
+        ]
+    }
+]
