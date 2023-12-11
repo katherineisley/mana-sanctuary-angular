@@ -58,6 +58,7 @@
     .socials {
         display: flex;
         gap: 16px;
+        z-index: 1;
 
         .social-link {
             .icon {
