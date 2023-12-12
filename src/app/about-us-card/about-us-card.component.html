@@ -3,9 +3,19 @@
     <div class="wrapper">
         <div class="avatar">
             <img src="../../assets/contributors/{{card.avatar}}.png" [alt]="card.name" class="image">
+            <svg width="130" height="142" viewBox="0 0 130 142" fill="none" xmlns="http://www.w3.org/2000/svg" class="custom-border">
+                <path d="M63.0816 2.18813C64.2771 1.53473 65.7229 1.53473 66.9184 2.18813L126.87 34.9553C128.154 35.6568 128.952 37.0027 128.952 38.4653V103.535C128.952 104.997 128.154 106.343 126.87 107.045L66.9184 139.812C65.7229 140.465 64.2771 140.465 63.0816 139.812L3.1297 107.045C1.84633 106.343 1.0481 104.997 1.0481 103.535V38.4653C1.0481 37.0027 1.84632 35.6568 3.1297 34.9553L63.0816 2.18813Z" [attr.stroke]="'url(#' + card.name + ')'" stroke-width="2"/>
+                <defs>
+                <linearGradient [attr.id]="card.name" x1="32.8571" y1="15.3833" x2="101.906" y2="124.036" gradientUnits="userSpaceOnUse">
+                <stop [attr.stop-color]="card.color1"></stop>
+                <stop offset="0.9999" [attr.stop-color]="card.color2"></stop>
+                <stop offset="1" [attr.stop-color]="card.color2"></stop>
+                </linearGradient>
+                </defs>
+            </svg>                
         </div>
         <div class="info">
-            <h5 class="name">{{card.name}}</h5>
+            <h5 class="name" [style.color]="card.color1">{{card.name}}</h5>
             <h6 class="discord">{{card.discord}}</h6>
             <h6 class="title">{{card.title}}</h6>
         </div>

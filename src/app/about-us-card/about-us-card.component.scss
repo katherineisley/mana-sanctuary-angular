@@ -16,11 +16,21 @@
         z-index: 1;
 
         .avatar {
+            position: relative;
+
+            .custom-border {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 120px; // must be kept consistent with .image
+                height: 120px; // must be kept consistent with .image
+            }
+
             .image {
                 mask-image: url(../../assets/other/avatar-frame.svg);
                 -webkit-mask-image: url(../../assets/other/avatar-frame.svg);
-                width: 120px;
-                height: 120px;
+                width: 120px; // must be kept consistent with .custom-border
+                height: 120px; // must be kept consistent with .custom-border
                 mask-repeat: no-repeat;
                 -webkit-mask-repeat: no-repeat;
                 mask-position: center;
