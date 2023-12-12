@@ -20,7 +20,7 @@
             <h6 class="title">{{card.title}}</h6>
         </div>
     </div>
-    <p class="quote">{{card.quote}}</p>
+    <p class="quote">"{{card.quote}}"</p>
     <div class="socials">
         <a *ngFor="let link of card.links" [href]="link.url" target="_blank" class="social-link">
             <img src="../../assets/socials/{{link.icon}}.svg" [alt]="link.alt" class="icon">
