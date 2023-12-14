@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
     });
 
     $('.main-menu_mobile .menu-item, .main-menu_mobile .home').click(function () {
-      $('.burger-menu').css('display', 'none');
+      $('.burger-menu').hide();
     });
   }
 }
