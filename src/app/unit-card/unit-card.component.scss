@@ -19,8 +19,8 @@
         top: 0;
         left: 0;
         background: $main;
-        backface-visibility: hidden;
-        transform: translateZ(0), scale(1, 1);
+        // backface-visibility: hidden;
+        // transform: translateZ(0), scale(1, 1);
     }
 
     .reverse-animation {
