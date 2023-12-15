@@ -14,7 +14,7 @@ export class UnitCardComponent implements AfterViewInit {
       $(this).addClass('reverse-animation');
       setTimeout(() => {
         $(this).removeClass('reverse-animation'); // playback bug starts happening again if the filter is applied
-      }, 650 /* duration of animation */ );
+      }, 500 /* duration of animation */ );
     });
   }
 }

@@ -19,16 +19,18 @@
         top: 0;
         left: 0;
         background: $main;
+        backface-visibility: hidden;
+        transform: translateZ(0), scale(1, 1);
     }
 
     .reverse-animation {
-        animation: onTopReverse 0.65s ease-in-out forwards;
+        animation: onTopReverse 0.5s ease-in-out forwards;
     }
 
     // surely a shuffle animation will be easy, clueless
     &:hover {
         .back-card {
-            animation: onTop 1s ease-in-out forwards;
+            animation: onTop 0.5s ease-in-out forwards;
         }
     }
 
@@ -41,20 +43,12 @@
             rotate: 0deg;
         }
 
-        25% {
+        50% {
             transform: translateY(-25px);
             z-index: 1;
             left: 11px;
             top: 0;
             rotate: 2.5deg;
-        }
-
-        50% {
-            transform: translateY(0);
-            z-index: 2;
-            left: 11px;
-            top: -7px;
-            rotate: 5deg;
         }
 
         100% {
@@ -64,18 +58,18 @@
             top: -7px;
             rotate: 5deg;
         }
+
+        // 100% {
+        //     transform: translateY(0);
+        //     z-index: 2;
+        //     left: 11px;
+        //     top: -7px;
+        //     rotate: 5deg;
+        // }
     }
 
     @keyframes onTopReverse {
         0% {
-            transform: translateY(0);
-            z-index: 2;
-            left: 11px;
-            top: -7px;
-            rotate: 5deg;
-        }
-
-        25% {
             transform: translateY(0);
             z-index: 2;
             left: 11px;
@@ -114,7 +108,6 @@
         // as when the back-card gets put on top, it doesn't have a border to distinguish itself from the body
 
         border: 1px $border solid;
-        border-radius: 8px;
 
         .content-wrapper {
             position: relative;
