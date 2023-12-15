@@ -1,0 +1,128 @@
+[
+    {
+        "name": "Umi",
+        "weapon": "Mobious",
+        "avatar": "umi_avatar",
+        "resonance": "attack",
+        "element": "element_physical",
+        "hasAtk": true,
+        "hasHP": true,
+        "hasCrit": true,
+        "hasRes": false,
+        "shatter": "12",
+        "charge": "9",
+        "roles": ["MDPS", "Buffer"],
+        "effects": [
+            {
+                "name": "Grievous",
+                "description": "Fully charged weapons will inflict damage equal to 137.00% of ATK with the next attack, and make the target grievous for 7 seconds, taking 20% extra damage."
+            },
+            {
+                "name": "Physical Resonance",
+                "description": "Increase physical ATK by 15% and physical resistance by 25%. Activate by equipping 2 or more physical weapons. This set effect also works with weapons in the off-hand slot. Cannot stack with effects of the same type."
+            }
+        ],
+        "oneStar": "When using any skill or discharge, if your Guards are at the maximum, the Guard duration will be refreshed, dealing physical damage equal to 30% of physical ATK * number of Guards to the enemy. Up to 8 Guards when under the effects of Benediction, and up to 6 when without it.",
+        "twoStar": "Increase the current weapon's base ATK growth by 16%.",
+        "threeStar": "When ending Magic Trick early, deal wide-area damage over 13 seconds. The current cooldown of Mobius' skill is reduced, and physical damage is increased by 25% for a period of time (this effect does not apply to Mobius). If Magic Trick has more than 13 seconds remaining, gain an additional 200 weapon charge. The more time remaining when Magic Trick ends, the higher the area damage, the greater the skill cooldown reduction, and the longer the physical damage boost lasts. The area damage dealt is capped at 200% of ATK (the maximum damage is dealt when the remaining time is more than 13 seconds). The maximum cooldown reduction is 13 seconds, and the physical damage boost can last up to 20 seconds.",
+        "fourStar": "Increase the current weapon's base ATK growth by 32%.",
+        "fiveStar": "Gain the Psychic Puppet effect upon entering Magic Trick, increasing Mobius's physical damage boost to 15%. During Magic Trick, recover 2% of Max HP and 10 weapon charge every second.",
+        "sixStar": "During Magic Trick, Mobius has an additional whip that is automatically swung whenever Mobius uses normal attacks or dodge attacks, dealing damage equal to 100% of Mobius's ATK (this damage is not counted as dealing normal attacks).",
+        "attacks": [
+            {
+                "name": "Basic Technique",
+                "icon": "/umi/skill_whip_melee.webp",
+                "method": ["Attack x5"],
+                "description": "While on the ground, use Mobius to launch 5 consecutive attacks. The shatter of this skill is increased by an additional 50%.",
+                "hasChain": true,
+                "chain": [
+                    {
+                        "combo": "76.9% of ATK + 4 and knockback"
+                    },
+                    {
+                        "combo": "84.4% of ATK + 4 and knockback"
+                    },
+                    {
+                        "combo": "112.1% of ATK + 6 and knockdown"
+                    },
+                    {
+                        "combo": "105.5% of ATK + 6 and drag and drop the target"
+                    },
+                    {
+                        "combo": "265.1% of ATK + 14 and launch the target."
+                    }
+                ]
+            },
+            {
+                "name": "Air Combo",
+                "icon": "/umi/skill_whip_melee.webp",
+                "method": ["Jump", "Attack x5"],
+                "description": "While airborne, use normal attack to attack 5 times in a row in mid-air, consuming endurance.",
+                "hasChain": true,
+                "chain": [
+                    {
+                        "combo": "46% of ATK + 2"
+                    },
+                    {
+                        "combo": "66.5% of ATK + 4"
+                    },
+                    {
+                        "combo": "88.4% of ATK + 5"
+                    },
+                    {
+                        "combo": "88.8% of ATK + 5"
+                    },
+                    {
+                        "combo": "260.5% of ATK + 14"
+                    }
+                ]
+            },
+            {
+                "name": "Ouf of the Blue",
+                "icon": "/umi/skill_whip_melee.webp",
+                "method": ["Attack", "Hold Attack"],
+                "description": "While using Basic Technique on the ground, tap and hold normal attack to trigger Out of the Blue directly based on the currently locked target. Smaller locked-on targets are dealt damage equal to 105% of ATK plus 6 and draw in nearby targets. Larger locked-on targets are dealt damage equal to 85.5% of ATK plus 5 and draw in nearby targets. This skill's shatter is additionally increased by 50%.",
+                "hasChain": false
+            },
+            {
+                "name": "Stage Rotation",
+                "icon": "/umi/skill_whip_melee.webp",
+                "method": ["Jump", "Hold Attack"],
+                "description": "Tap and hold normal attack while airborne, or use normal attack while climbing, jumping backward, or using the Jetpack to trigger Pummel. Plummet from the skies, dealing damage equal to 121.5% of ATK plus 6 and launching the target.",
+                "hasChain": false
+            },
+            {
+                "name": "Close-Up Magic",
+                "icon": "/umi/skill_whip_melee.webp",
+                "method": ["Hold Attack"],
+                "description": "Tap and hold normal attack on the ground to charge Anticipation, and release the button to trigger Close-up Magic based on the currently locked target. Smaller locked-on targets are dealt damage equal to 105% of ATK plus 6 and draw in nearby targets. Larger locked-on targets are dealt damage equal to 85.5% of ATK plus 5 and draw in nearby targets. This skill's shatter is additionally increased by 50%.",
+                "hasChain": false
+            }
+        ],
+        "dodge": [
+            {
+
+            }
+        ],
+        "skill": [
+            {
+
+            }
+        ],
+        "discharge": [
+            {
+
+            }
+        ],
+        "trait": [
+            {
+                "affinity": "1200",
+                "description": "Increase final damage by 12% for 30 seconds whenever Umi uses It's Magic Time. This effect does not stack."
+            },
+            {
+                "affinity": "4000",
+                "description": "Increase final damage by 18% for 30 seconds whenever Umi uses It's Magic Time. This effect does not stack."
+            }
+        ]
+    }
+]
