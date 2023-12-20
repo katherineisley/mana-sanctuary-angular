@@ -23,7 +23,7 @@
                 "description": "Increase physical ATK by 15% and physical resistance by 25%. Activate by equipping 2 or more physical weapons. This set effect also works with weapons in the off-hand slot. Cannot stack with effects of the same type."
             }
         ],
-        "oneStar": "When using any skill or discharge, if your Guards are at the maximum, the Guard duration will be refreshed, dealing physical damage equal to 30% of physical ATK * number of Guards to the enemy. Up to 8 Guards when under the effects of Benediction, and up to 6 when without it.",
+        "oneStar": "When switching to Mobius, immediately gain 30 warmup points. Cooldown: 17 seconds. Upon entering Magic Trick, deal area damage equal to 840% of ATK to nearby targets and reduce their physical resistance by 10% for 20 seconds.",
         "twoStar": "Increase the current weapon's base ATK growth by 16%.",
         "threeStar": "When ending Magic Trick early, deal wide-area damage over 13 seconds. The current cooldown of Mobius' skill is reduced, and physical damage is increased by 25% for a period of time (this effect does not apply to Mobius). If Magic Trick has more than 13 seconds remaining, gain an additional 200 weapon charge. The more time remaining when Magic Trick ends, the higher the area damage, the greater the skill cooldown reduction, and the longer the physical damage boost lasts. The area damage dealt is capped at 200% of ATK (the maximum damage is dealt when the remaining time is more than 13 seconds). The maximum cooldown reduction is 13 seconds, and the physical damage boost can last up to 20 seconds.",
         "fourStar": "Increase the current weapon's base ATK growth by 32%.",
