@@ -8,6 +8,7 @@ import { UnitPageComponent } from './unit-page/unit-page.component';
 import { HomeComponent } from './home/home.component';
 import { GuidesComponent } from './guides/guides.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'unit-page', component: UnitPageComponent },
   { path: 'home', component: HomeComponent },
   { path: 'guides', component: GuidesComponent },
-  { path: 'about-us', component: AboutUsComponent }
+  { path: 'about-us', component: AboutUsComponent },
+  { path: '**', component: PageNotFoundComponent }, // keep this as the last route
 ];
 
 @NgModule({

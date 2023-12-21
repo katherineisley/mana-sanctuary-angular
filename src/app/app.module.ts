@@ -15,6 +15,7 @@ import { HomeComponent } from './home/home.component';
 import { GuidesComponent } from './guides/guides.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AboutUsCardComponent } from './about-us-card/about-us-card.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AboutUsCardComponent } from './about-us-card/about-us-card.component';
     HomeComponent,
     GuidesComponent,
     AboutUsComponent,
-    AboutUsCardComponent
+    AboutUsCardComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
