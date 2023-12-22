@@ -1,5 +1,66 @@
 [
     {
+        "slug": "brevey",
+        "name": "Brevey"
+    },
+    {
+        "slug": "yanmiao",
+        "name": "Yan Miao"
+    },
+    {
+        "slug": "nanyin",
+        "name": "Nan Yin"
+    },
+    {
+        "slug": "linghan",
+        "name": "Ling Han"
+    },
+    {
+        "slug": "feise",
+        "name": "Fei Se"
+    },
+    {
+        "slug": "huang",
+        "name": "Huang"
+    },
+    {
+        "slug": "mingjing",
+        "name": "Ming Jing"
+    },
+    {
+        "slug": "yulan",
+        "name": "Yu Lan"
+    },
+    {
+        "slug": "liuhuo",
+        "name": "Liu Huo"
+    },
+    {
+        "slug": "rubilia",
+        "name": "Rubilia"
+    },
+    {
+        "slug": "gnonno",
+        "name": "Gnonno"
+    },
+    {
+        "slug": "fiona",
+        "name": "Fiona"
+    },
+    {
+        "slug": "icarus",
+        "name": "Icarus"
+    },
+    {
+        "slug": "lan",
+        "name": "Lan"
+    },
+    {
+        "slug": "fenrir",
+        "name": "Fenrir"
+    },
+    {
+        "slug": "umi",
         "name": "Umi",
         "weapon": "Mobious",
         "weaponDescription": "The whip favored by the new Executor, Umi. Umi's favorite part of it is that she doesn't get tripped up by it, usually.",
@@ -193,5 +254,105 @@
                 "description": "Increase final damage by 18% for 30 seconds whenever Umi uses It's Magic Time. This effect does not stack."
             }
         ]
+    },
+    {
+        "slug": "alyss",
+        "name": "Alyss"
+    },
+    {
+        "slug": "annabella",
+        "name": "Annabella"
+    },
+    {
+        "slug": "tianlang",
+        "name": "Tian Lang"
+    },
+    {
+        "slug": "lyra",
+        "name": "Lyra"
+    },
+    {
+        "slug": "lin",
+        "name": "Lin"
+    },
+    {
+        "slug": "sakifuwa",
+        "name": "Saki Fuwa"
+    },
+    {
+        "slug": "ruby",
+        "name": "Ruby"
+    },
+    {
+        "slug": "cobaltb",
+        "name": "Cobalt B"
+    },
+    {
+        "slug": "claudia",
+        "name": "Claudia"
+    },
+    {
+        "slug": "frigg",
+        "name": "Frigg"
+    },
+    {
+        "slug": "nemesis",
+        "name": "Nemesis"
+    },
+    {
+        "slug": "crow",
+        "name": "Crow"
+    },
+    {
+        "slug": "huma",
+        "name": "Huma"
+    },
+    {
+        "slug": "samir",
+        "name": "Samir"
+    },
+    {
+        "slug": "zero",
+        "name": "Zero"
+    },
+    {
+        "slug": "shiro",
+        "name": "Shiro"
+    },
+    {
+        "slug": "king",
+        "name": "KING"
+    },
+    {
+        "slug": "cocoritter",
+        "name": "Cocoritter"
+    },
+    {
+        "slug": "tsubasa",
+        "name": "Tsubasa"
+    },
+    {
+        "slug": "meryl",
+        "name": "Meryl"
+    },
+    {
+        "slug": "pepper",
+        "name": "Pepper"
+    },
+    {
+        "slug": "hilda",
+        "name": "Hilda"
+    },
+    {
+        "slug": "ene",
+        "name": "Ene"
+    },
+    {
+        "slug": "echo",
+        "name": "Echo"
+    },
+    {
+        "slug": "bailing",
+        "name": "Bai Ling"
     }
 ]

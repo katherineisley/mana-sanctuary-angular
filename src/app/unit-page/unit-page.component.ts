@@ -8,15 +8,16 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./unit-page.component.scss']
 })
 export class UnitPageComponent /* implements OnInit */ {
-  // name!: string;
-  // unit: any;
+  slug!: string;
+  unit: any = {};
   
-  // constructor(private route: ActivatedRoute, private http: HttpClient) { }
+  constructor(private route: ActivatedRoute, private http: HttpClient) { }
 
-  // ngOnInit() {
-  //   this.name = this.route.snapshot.paramMap.get('name')!;
-  //   this.http.get('../../assets/' + this.name + '.json').subscribe(data => {
-  //     this.unit = data[this.name];
-  //   });
-  // }
+  ngOnInit() {
+    this.slug = this.route.snapshot.paramMap.get('name')!;
+    this.http.get<any>("../../assets/json/simulacra-data.json").subscribe(data => {
+      this.unit = data.find((unit: any) => unit.slug === this.slug);
+      console.log(this.unit);
+    });
+  }
 }

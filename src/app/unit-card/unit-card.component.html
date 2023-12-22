@@ -1,4 +1,4 @@
-<div class="unit-wrapper" [attr.data-unit]="unit.name">
+<div class="unit-wrapper" [attr.data-unit]="unit.name" [routerLink]="['/unit-page/', unit.name]">
   <div class="top-card"
     style="background-image: linear-gradient(0deg, #232323 0%, rgba(35, 35, 35, 0.00) 50%), url(&quot;../assets/cards/{{unit.name}}2.png&quot;);">
     <div class="content-wrapper">
