@@ -77,41 +77,77 @@
         "effects": [
             {
                 "name": "Grievous",
-                "description": "Fully charged weapons will inflict damage equal to 137.00% of ATK with the next attack, and make the target grievous for 7 seconds, taking 20% extra damage."
+                "description": [
+                    {
+                        "paragraph": "Fully charged weapons will inflict damage equal to 137.00% of ATK with the next attack, and make the target grievous for 7 seconds, taking 20% extra damage."
+                    }
+                ]
             },
             {
                 "name": "Physical Resonance",
-                "description": "Increase physical ATK by 15% and physical resistance by 25%. Activate by equipping 2 or more physical weapons. This set effect also works with weapons in the off-hand slot. Cannot stack with effects of the same type."
+                "description": [
+                    {
+                        "paragraph": "Increase physical ATK by 15% and physical resistance by 25%. Activate by equipping 2 or more physical weapons. This set effect also works with weapons in the off-hand slot. Cannot stack with effects of the same type."
+                    }
+                ]
             }
         ],
-        "oneStar": "When switching to Mobius, immediately gain 30 warmup points. Cooldown: 17 seconds. Upon entering Magic Trick, deal area damage equal to 840% of ATK to nearby targets and reduce their physical resistance by 10% for 20 seconds.",
-        "twoStar": "Increase the current weapon's base ATK growth by 16%.",
-        "threeStar": "When ending Magic Trick early, deal wide-area damage over 13 seconds. The current cooldown of Mobius' skill is reduced, and physical damage is increased by 25% for a period of time (this effect does not apply to Mobius). If Magic Trick has more than 13 seconds remaining, gain an additional 200 weapon charge. The more time remaining when Magic Trick ends, the higher the area damage, the greater the skill cooldown reduction, and the longer the physical damage boost lasts. The area damage dealt is capped at 200% of ATK (the maximum damage is dealt when the remaining time is more than 13 seconds). The maximum cooldown reduction is 13 seconds, and the physical damage boost can last up to 20 seconds.",
-        "fourStar": "Increase the current weapon's base ATK growth by 32%.",
-        "fiveStar": "Gain the Psychic Puppet effect upon entering Magic Trick, increasing Mobius's physical damage boost to 15%. During Magic Trick, recover 2% of Max HP and 10 weapon charge every second.",
-        "sixStar": "During Magic Trick, Mobius has an additional whip that is automatically swung whenever Mobius uses normal attacks or dodge attacks, dealing damage equal to 100% of Mobius's ATK (this damage is not counted as dealing normal attacks).",
+        "oneStar": [
+            {
+                "paragraph": "When switching to Mobius, immediately gain 30 warmup points. Cooldown: 17 seconds. Upon entering Magic Trick, deal area damage equal to 840% of ATK to nearby targets and reduce their physical resistance by 10% for 20 seconds."
+            }
+        ],
+        "twoStar": [
+            {
+                "paragraph": "Increase the current weapon's base ATK growth by 16%."
+            }
+        ],
+        "threeStar": [
+            {
+                "paragraph": "When ending Magic Trick early, deal wide-area damage over 13 seconds. The current cooldown of Mobius' skill is reduced, and physical damage is increased by 25% for a period of time (this effect does not apply to Mobius). If Magic Trick has more than 13 seconds remaining, gain an additional 200 weapon charge. The more time remaining when Magic Trick ends, the higher the area damage, the greater the skill cooldown reduction, and the longer the physical damage boost lasts. The area damage dealt is capped at 200% of ATK (the maximum damage is dealt when the remaining time is more than 13 seconds). The maximum cooldown reduction is 13 seconds, and the physical damage boost can last up to 20 seconds."
+            }
+        ],
+        "fourStar": [
+            {
+                "paragraph": "Increase the current weapon's base ATK growth by 32%."
+            }
+        ],
+        "fiveStar": [
+            {
+                "paragraph": "Gain the Psychic Puppet effect upon entering Magic Trick, increasing Mobius's physical damage boost to 15%. During Magic Trick, recover 2% of Max HP and 10 weapon charge every second."
+            }
+        ],
+        "sixStar": [
+            {
+                "paragraph": "During Magic Trick, Mobius has an additional whip that is automatically swung whenever Mobius uses normal attacks or dodge attacks, dealing damage equal to 100% of Mobius's ATK (this damage is not counted as dealing normal attacks)."
+            }
+        ],
         "attacks": [
             {
                 "name": "Basic Technique",
                 "icon": "/umi/skill_whip_melee.webp",
                 "method": ["Attack x5"],
-                "description": "While on the ground, use Mobius to launch 5 consecutive attacks. The shatter of this skill is increased by an additional 50%.",
+                "description": [
+                    {
+                        "paragraph": "While on the ground, use Mobius to launch 5 consecutive attacks. The shatter of this skill is increased by an additional 50%."
+                    }
+                ],
                 "hasChain": true,
                 "chain": [
                     {
-                        "combo": "76.9% of ATK + 4 and knock the target back."
+                        "combo": "76.9% of ATK and knock the target back."
                     },
                     {
-                        "combo": "84.4% of ATK + 4 and knock the target back."
+                        "combo": "84.4% of ATK and knock the target back."
                     },
                     {
-                        "combo": "112.1% of ATK + 6 and knock the target down."
+                        "combo": "112.1% of ATK and knock the target down."
                     },
                     {
-                        "combo": "105.5% of ATK + 6 and drag and drop the target."
+                        "combo": "105.5% of ATK and drag and drop the target."
                     },
                     {
-                        "combo": "265.1% of ATK + 14 and launch the target." 
+                        "combo": "265.1% of ATK and launch the target." 
                     }
                 ]
             },
@@ -119,23 +155,27 @@
                 "name": "Air Combo",
                 "icon": "/umi/skill_whip_melee.webp",
                 "method": ["Jump", "Attack x5"],
-                "description": "While airborne, use normal attack to attack 5 times in a row in mid-air, consuming endurance.",
+                "description": [
+                    {
+                        "paragraph": "While airborne, use normal attack to attack 5 times in a row in mid-air, consuming endurance."
+                    }
+                ],
                 "hasChain": true,
                 "chain": [
                     {
-                        "combo": "46% of ATK + 2."
+                        "combo": "46% of ATK."
                     },
                     {
-                        "combo": "66.5% of ATK + 4."
+                        "combo": "66.5% of ATK."
                     },
                     {
-                        "combo": "88.4% of ATK + 5."
+                        "combo": "88.4% of ATK."
                     },
                     {
-                        "combo": "88.8% of ATK + 5."
+                        "combo": "88.8% of ATK."
                     },
                     {
-                        "combo": "260.5% of ATK + 14."
+                        "combo": "260.5% of ATK."
                     }
                 ]
             },
@@ -143,21 +183,33 @@
                 "name": "Ouf of the Blue",
                 "icon": "/umi/skill_whip_melee.webp",
                 "method": ["Attack", "Hold Attack"],
-                "description": "While using Basic Technique on the ground, tap and hold normal attack to trigger Out of the Blue directly based on the currently locked target. Smaller locked-on targets are dealt damage equal to 105% of ATK plus 6 and draw in nearby targets. Larger locked-on targets are dealt damage equal to 85.5% of ATK plus 5 and draw in nearby targets. This skill's shatter is additionally increased by 50%.",
+                "description": [
+                    {
+                        "paragraph": "While using Basic Technique on the ground, tap and hold normal attack to trigger Out of the Blue directly based on the currently locked target. Smaller locked-on targets are dealt damage equal to 105% of ATK and draw in nearby targets. Larger locked-on targets are dealt damage equal to 85.5% of ATK and draw in nearby targets. This skill's shatter is additionally increased by 50%."
+                    }
+                ],
                 "hasChain": false
             },
             {
                 "name": "Stage Rotation",
                 "icon": "/umi/skill_whip_melee.webp",
                 "method": ["Jump", "Hold Attack"],
-                "description": "Tap and hold normal attack while airborne, or use normal attack while climbing, jumping backward, or using the Jetpack to trigger Pummel. Plummet from the skies, dealing damage equal to 121.5% of ATK plus 6 and launching the target.",
+                "description": [
+                    {
+                        "paragraph": "Tap and hold normal attack while airborne, or use normal attack while climbing, jumping backward, or using the Jetpack to trigger Pummel. Plummet from the skies, dealing damage equal to 121.5% of ATK and launching the target."
+                    }
+                ],
                 "hasChain": false
             },
             {
                 "name": "Close-Up Magic",
                 "icon": "/umi/skill_whip_melee.webp",
                 "method": ["Hold Attack"],
-                "description": "Tap and hold normal attack on the ground to charge Anticipation, and release the button to trigger Close-up Magic based on the currently locked target. Smaller locked-on targets are dealt damage equal to 105% of ATK plus 6 and draw in nearby targets. Larger locked-on targets are dealt damage equal to 85.5% of ATK plus 5 and draw in nearby targets. This skill's shatter is additionally increased by 50%.",
+                "description": [
+                    {
+                        "paragraph": "Tap and hold normal attack on the ground to charge Anticipation, and release the button to trigger Close-up Magic based on the currently locked target. Smaller locked-on targets are dealt damage equal to 105% of ATK and draw in nearby targets. Larger locked-on targets are dealt damage equal to 85.5% of ATK and draw in nearby targets. This skill's shatter is additionally increased by 50%."
+                    }
+                ],
                 "hasChain": false
             }
         ],
@@ -166,14 +218,22 @@
                 "name": "Grand Illusion",
                 "icon": "/umi/skill_whip_dodge.webp",
                 "method": ["Dodge", "Attack"],
-                "description": "Tap normal attack during the short period after dodging to trigger Grand Illusion, dealing damage equal to 187.2% of ATK plus 10 to nearby targets. This skill's shatter is additionally increased by 50%.",
+                "description": [
+                    {
+                        "paragraph": "Tap normal attack during the short period after dodging to trigger Grand Illusion, dealing damage equal to 187.2% of ATK to nearby targets. This skill's shatter is additionally increased by 50%."
+                    }
+                ],
                 "hasChain": false
             },
             {
                 "name": "Dodge",
                 "icon": "/umi/skill_whip_dodge.webp",
                 "method": ["Dodge"],
-                "description": "Dodge right before getting hit to trigger a Phantasia, cooldown 15 seconds, reducing the speed of enemies within an area. Become immune to hitstun for 0.5 seconds while dodging.",
+                "description": [
+                    {
+                        "paragraph": "Dodge right before getting hit to trigger a Phantasia, cooldown 15 seconds, reducing the speed of enemies within an area. Become immune to hitstun for 0.5 seconds while dodging."
+                    }
+                ],
                 "hasChain": false
             }
         ],
@@ -186,7 +246,7 @@
                         "paragraph": "Dealing damage with any weapon in the main slot will accrue warmup points. Cooldown: 0.06 seconds. Physical weapons accrue 1 point with each hit, and non-physical weapons accrue 0.5 points with each hit. The number of warmup points you have are displayed in the Magic Gauge, up to 100 points. When entering battle, immediately gain 100 warmup points."
                     },
                     {
-                        "paragraph": "Skills can be cast once there are 100 warmup points in the Magic Gauge. Pull together enemies in a certain area and deal damage equal to 950% of ATK plus 50 to the target. Become temporarily invincible (unavailable in Apex League and The Critical Abyss) and reduce the speed of targets within the hit area (unavailable in Apex League and The Critical Abyss). At the same time, activate Magic Trick to continuously consume warmup points for 18 seconds. Cooldown: 30 seconds. This cooldown is not affected by effects (including the clearance, reset, or change of the cooldown time) that are not from Mobius. During this time, the skill button is replaced with a Cut Card button."
+                        "paragraph": "Skills can be cast once there are 100 warmup points in the Magic Gauge. Pull together enemies in a certain area and deal damage equal to 950% of ATK to the target. Become temporarily invincible (unavailable in Apex League and The Critical Abyss) and reduce the speed of targets within the hit area (unavailable in Apex League and The Critical Abyss). At the same time, activate Magic Trick to continuously consume warmup points for 18 seconds. Cooldown: 30 seconds. This cooldown is not affected by effects (including the clearance, reset, or change of the cooldown time) that are not from Mobius. During this time, the skill button is replaced with a Cut Card button."
                     },
                     {
                         "paragraph": "During Magic Trick, automatically get either a Spade or Heart Poker Card every 2 seconds. The type of Poker Card that is about to be obtained can be switched in advance with the Cut Card button. When there are 2 Poker Cards, the corresponding Card Magic will be automatically used. Cooldown: 3.8 seconds."
