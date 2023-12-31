@@ -6,6 +6,7 @@
     padding: 0 20px;
     display: flex;
     flex-direction: column;
+    gap: 20px;
 
     // border-bottom: 140px solid green;
     // border-right: 140px solid transparent;
@@ -18,7 +19,7 @@
         // max-width: 1220px; this is inherited from the parent
         width: 100%;
         padding: 10px 20px;
-        background-image: url("/assets/backgrounds/header-element.svg");
+        background-image: url("/assets/backgrounds/header_element.svg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: right; // ?
@@ -84,17 +85,53 @@
             }
         }
 
-        .unit-buffs{
+        .unit-roles {
             display: flex;
             gap: 20px;
             align-items: flex-end;
             padding-bottom: 14px;
         }
+    }
 
+    .body-element {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 20px;
+        background-color: $content;
+
+        .tabs {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+
+            .tab {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                border: 1px solid #CF9B14;
+                padding: 12px 0;
+                cursor: pointer;
+
+                img {
+                    width: 28px;
+                    height: 28px;
+                }
+
+                span {
+                    font-weight: bold;
+                }
+            }
+
+            .tab.active {
+                background-color: #CF9B14;
+            }
+        }
     }
 }
 
-.stats {
+.stats, .roles {
     display: flex;
     gap: 10px;
     align-items: center;
@@ -103,6 +140,7 @@
     font-weight: 400;
     font-style: italic;
 }
-.stats img{
+
+.stats img, .roles img {
     width: 36px;
 }

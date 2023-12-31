@@ -904,7 +904,7 @@
         "weaponDescription": "Invented by a mad scientist. With its impressive test numbers, one can only imagine how powerful it might be at full power.",
         "avatar": "cobaltb_avatar",
         "resonance": "attack",
-        "element": "element_fire",
+        "element": "element_flame",
         "hasAtk": true,
         "hasHP": true,
         "hasCrit": true,

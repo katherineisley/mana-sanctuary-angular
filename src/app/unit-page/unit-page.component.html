@@ -1,62 +1,75 @@
 <section class="main" *ngIf="unit">
   <div class="header-element">
     <div class="unit-avatar">
-      <img src="assets/simulacra/lyra_avatar.png">
+      <img src="assets/simulacra/{{unit?.avatar}}.png" alt="Character avatar">
     </div>
     <div class="unit-name-element">
       <div class="unit-name">
-        {{unit?.name}}
+        <span>{{unit?.name}}</span>
       </div>
       <div class="unit-weapon-name">
-        Vesper
+        <span>{{unit?.weapon}}</span>
       </div>
       <div class="unit-element">
-        <img src="assets/elements/benediction.png">
-        <img src="assets/elements/element_physical.png">
+        <img src="assets/elements/{{unit?.resonance}}.png" alt="Resonance Icon">
+        <img src="assets/elements/{{unit?.element}}.png" alt="Element Icon">
       </div>
     </div>
     <div class="unit-stats">
       <div class="top-stats">
-        <div class="stats">
-          <img src="assets/stats/icon_atk.webp" style="filter: brightness(3);">
-          ATK
+        <div *ngIf="unit?.hasAtk" class="stats">
+          <img src="assets/stats/icon_atk.webp" alt="Attack Icon" style="filter: brightness(3);">
+          <span>ATK</span>
         </div>
-        <div class="stats">
-          <img src="assets/stats/icon_hp.webp" style="filter: brightness(3);">
-          HP
+        <div *ngIf="unit?.hasHP" class="stats">
+          <img src="assets/stats/icon_hp.webp" alt="HP Icon" style="filter: brightness(3);">
+          <span>HP</span>
         </div>
-        <div class="stats">
-          <img src="assets/stats/icon_crit.webp" style="filter: brightness(3);">
-          CRIT
+        <div *ngIf="unit?.hasCrit" class="stats">
+          <img src="assets/stats/icon_crit.webp" alt="Crit Icon" style="filter: brightness(3);">
+          <span>CRIT</span>
+        </div>
+        <div *ngIf="unit?.hasRes" class="stats">
+          <img src="assets/stats/icon_res.webp" alt="Resistance Icon" style="filter: brightness(3);">
+          <span>RES</span>
         </div>
       </div>
       <div class="bottom-stats">
         <div class="stats">
-          <img src="assets/stats/shatter_SS.png">
-          Charge 12
+          <img src="assets/stats/shatter_SS.png" alt="SS Grade">
+          <span>Charge {{unit?.charge}}</span>
         </div>
         <div class="stats">
-          <img src="assets/stats/shatter_SS.png">
-          Shatter 14
+          <img src="assets/stats/shatter_SS.png" alt="SS Grade">
+          <span>Shatter {{unit?.shatter}}</span>
         </div>
       </div>
     </div>
-    <div class="unit-buffs">
-      <div class="stats">
-        <img src="assets/effects/buff_mdps.png">
-        MDPS
-      </div>
-      <div class="stats">
-        <img src="assets/effects/buff_buffer.png">
-        Buffer
-      </div>
-      <div class="stats">
-        <img src="assets/effects/buff_buffer.png">
-        Buffer
+    <div class="unit-roles">
+      <div *ngFor="let roles of unit.roles" class="roles">
+        <img src="assets/effects/buff_{{roles.toLowerCase()}}.png">
+        <span>{{roles}}</span>
       </div>
     </div>
   </div>
   <div class="body-element">
-
+    <div class="tabs">
+      <div class="tab active">
+        <img src="assets/other/profile-icon.svg" alt="Profile Icon">
+        <span>PROFILE</span>
+      </div>
+      <div class="tab">
+        <img src="assets/other/matrix-icon.svg" alt="Matrix Icon">
+        <span>MATRIX</span>
+      </div>
+      <div class="tab">
+        <img src="assets/other/materials-icon.svg" alt="Materials Icon">
+        <span>MATERIALS</span>
+      </div>
+      <div class="tab">
+        <img src="assets/other/guide-icon.svg" alt="Guide Icon">
+        <span>GUIDE</span>
+      </div>
+    </div>
   </div>
 </section>
