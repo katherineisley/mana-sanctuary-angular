@@ -14,7 +14,7 @@ export class UnitsIndexComponent implements OnInit {
   activeRarity: string | null = null;
   activeType: string | null = null;
 
-  // Define arrays for unit types
+  // ELEMENT ARRAUS
   private physicalUnits: string[] = ['yanmiao', 'mingjing', 'umi', 'gnonno', 'lyra', 'claudia', 'shiro', 'bailing'];
   private flameUnits: string[] = ['lan', 'feise', 'liuhuo', 'annabella', 'ruby', 'cobaltb', 'zero', 'king', 'huma'];
   private frostUnits: string[] = ['alyss', 'linghan', 'yulan', 'icarus', 'sakifuwa', 'frigg', 'tsubasa', 'cocoritter', 'meryl', 'hilda', 'ene'];
@@ -27,13 +27,12 @@ export class UnitsIndexComponent implements OnInit {
   // RARITY ARRAYS
   private SSRUnits: string[] = ['umi', 'lan', 'alyss', 'rubilia', 'yanmiao', 'linghan', 'nanyin', 'feise', 'huang', 'mingjing', 'yulan', 'liuhuo', 'gnonno', 'fiona', 'icarus', 'fenrir', 'annabella', 'tianlang', 'lyra', 'lin', 'sakifuwa', 'ruby', 'frigg', 'nemesis', 'cobaltb', 'claudia', 'zero', 'tsubasa', 'shiro', 'samir', 'meryl', 'king', 'huma', 'crow', 'cocoritter'];
   private SRUnits: string[] = ['bailing', 'hilda', 'ene', 'pepper', 'echo'];
-  private RUnits: string[] = [];
   // TYPE ARRAYS
   private damageUnits: string[] = ['umi', 'alyss', 'rubilia', 'yanmiao', 'linghan', 'nanyin', 'feise', 'mingjing', 'yulan', 'liuhuo', 'gnonno', 'icarus', 'fenrir', 'annabella', 'tianlang', 'lin', 'ruby', 'frigg', 'cobaltb', 'claudia', 'tsubasa', 'shiro', 'samir', 'king', 'crow', 'hilda', 'echo', 'bailing'];
   private benedictionUnits: string[] = ['fiona', 'lyra', 'nemesis', 'zero', 'cocoritter', 'pepper'];
   private fortitudeUnits: string[] = ['lan', 'huang', 'sakifuwa', 'meryl', 'huma', 'ene'];
   // ALL
-  private allUnits: string[] = [...this.SSRUnits, ...this.SRUnits, ...this.RUnits];
+  private allUnits: string[] = [...this.SSRUnits, ...this.SRUnits];
 
   constructor(private cardDataService: UnitCardService) { }
 
@@ -41,7 +40,6 @@ export class UnitsIndexComponent implements OnInit {
     this.cardDataService.getCardData().subscribe((data: any) => {
       this.units = data;
     });
-
 
     $('.element .wrapper img').click((event) => {
       const element = $(event.currentTarget).attr('data-element');
@@ -52,22 +50,20 @@ export class UnitsIndexComponent implements OnInit {
     });
     
     $('.rarity .wrapper span').click((event) => {
-      const rarityElement = $(event.currentTarget).attr('data-rarity');
-      this.activeRarity = this.activeRarity === rarityElement ? null : (rarityElement || null);
+      const rarity = $(event.currentTarget).attr('data-rarity');
+      this.activeRarity = this.activeRarity === rarity ? null : (rarity || null);
       const unitsToShow = this.getUnitsToShow(this.activeElement, this.activeRarity, this.activeType);
       this.showUnits(unitsToShow);
       this.updateActiveClasses();
     });
     
     $('.type .wrapper img').click((event) => {
-      const typeElement = $(event.currentTarget).attr('data-type');
-      this.activeType = this.activeType === typeElement ? null : (typeElement || null);
+      const type = $(event.currentTarget).attr('data-type');
+      this.activeType = this.activeType === type ? null : (type || null);
       const unitsToShow = this.getUnitsToShow(this.activeElement, this.activeRarity, this.activeType);
       this.showUnits(unitsToShow);
       this.updateActiveClasses();
     });
-    
- 
   }
 
   private updateActiveClasses(): void {
@@ -102,8 +98,6 @@ export class UnitsIndexComponent implements OnInit {
         case 'flame-physical':
           filteredUnits = filteredUnits.filter(unit => this.flamePhysicalUnits.includes(unit));
           break;
-
-          
         case 'frost-volt':
           filteredUnits = filteredUnits.filter(unit => this.frostVoltUnits.includes(unit));
           break;
@@ -125,7 +119,6 @@ export class UnitsIndexComponent implements OnInit {
         case 'volt':
           filteredUnits = filteredUnits.filter(unit => this.voltUnits.includes(unit));
           break;
-        
       }
     }
 
@@ -151,10 +144,8 @@ export class UnitsIndexComponent implements OnInit {
         case 'fortitude':
           filteredUnits = filteredUnits.filter(unit => this.fortitudeUnits.includes(unit));
           break;
-
       }
     }
-
     return filteredUnits;
   }
 
