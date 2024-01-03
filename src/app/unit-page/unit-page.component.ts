@@ -20,6 +20,28 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
     this.http.get<any>("../../assets/json/simulacra-data.json").subscribe(data => {
       this.unit = data.find((unit: any) => unit.slug === this.slug);
       console.log(this.unit);
+      switch (this.unit.element) {
+        case "element_physical":
+        case "element_physicalflame":
+          $('.tabs .tab').css('border', '1px solid #CF9B14');
+          $('.tab.active').css('background-color', '#CF9B14');
+          break;
+        case "element_flame":
+        case "element_flamephysical":
+          $('.tabs .tab').css('border', '1px solid #E74412');
+          $('.tab.active').css('background-color', '#E74412');
+          break;
+        case "element_frost":
+        case "element_frostvolt":
+          $('.tabs .tab').css('border', '1px solid #3498DB');
+          $('.tab.active').css('background-color', '#3498DB');
+          break;
+        case "element_volt":
+        case "element_voltfrost":
+          $('.tabs .tab').css('border', '1px solid #8C7ED0');
+          $('.tab.active').css('background-color', '#8C7ED0');
+          break;
+      }
     });
   }
 

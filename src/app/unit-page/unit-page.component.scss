@@ -82,6 +82,19 @@
             .top-stats, .bottom-stats {
                 display: flex;
                 gap: 20px;
+
+                .stats {
+                    .grade {
+                        line-height: 1;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: bold;
+                        color: $content;
+                        padding: 4px 8px 2px; // 2px comes from the underside of the grade having extra space
+                        background-color: #D9D9D9;
+                        transform: skew(-8deg);
+                    }
+                }
             }
         }
 
@@ -110,7 +123,7 @@
                 justify-content: center;
                 align-items: center;
                 gap: 8px;
-                border: 1px solid #CF9B14;
+                // border: 1px solid #CF9B14;
                 padding: 12px 0;
                 cursor: pointer;
 
@@ -125,7 +138,7 @@
             }
 
             .tab.active {
-                background-color: #CF9B14;
+                // background-color: #CF9B14;
             }
         }
     }
