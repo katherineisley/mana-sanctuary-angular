@@ -123,7 +123,7 @@
                 justify-content: center;
                 align-items: center;
                 gap: 8px;
-                // border: 1px solid #CF9B14;
+                border: 1px solid var(--element-color); // first time using one of these, insanely useful actually. check TS.
                 padding: 12px 0;
                 cursor: pointer;
 
@@ -138,7 +138,7 @@
             }
 
             .tab.active {
-                // background-color: #CF9B14;
+                background-color: var(--element-color);
             }
         }
     }
