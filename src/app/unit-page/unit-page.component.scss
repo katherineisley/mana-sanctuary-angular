@@ -109,6 +109,7 @@
     .body-element {
         display: flex;
         flex-direction: column;
+        gap: 20px;
         width: 100%;
         padding: 20px 20px;
         background-color: $content;
@@ -134,11 +135,40 @@
 
                 span {
                     font-weight: bold;
+                    text-transform: uppercase;
                 }
             }
 
             .tab.active {
                 background-color: var(--element-color);
+            }
+        }
+
+        .profile-part {
+            .info-selection {
+                position: relative;
+                display: flex;
+                border-bottom: 1px solid $border;
+                padding: 0 0 5px 0;
+
+                .info {
+                    text-transform: uppercase;
+                    text-align: center;
+                    color: var(--element-color);
+                    font-weight: 500;
+                    cursor: pointer;
+                    margin: auto; // might be the only time i ever use this 
+                }
+
+                .underline {
+                    position: absolute;
+                    bottom: 0;
+                    height: 3px;
+                    background: white;
+                    bottom: -2px;
+                    width: 0; 
+                    left: 0; 
+                }
             }
         }
     }

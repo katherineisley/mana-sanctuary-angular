@@ -60,25 +60,33 @@
   </div>
   <div class="body-element">
     <div class="tabs">
-      <div class="tab" (click)="setActiveElement(unit)" [class.active]="activeElement === unit">
+      <div class="tab" data-tab="profile" (click)="setActiveTab(unit)" [class.active]="activeTab === unit">
         <img src="assets/other/profile-icon.svg" alt="Profile Icon">
-        <span>PROFILE</span>
+        <span>Profile</span>
       </div>
-      <div class="tab" (click)="setActiveElement(unit)" [class.active]="activeElement === unit">
+      <div class="tab" data-tab="matrix" (click)="setActiveTab(unit)" [class.active]="activeTab === unit">
         <img src="assets/other/matrix-icon.svg" alt="Matrix Icon">
-        <span>MATRIX</span>
+        <span>Matrix</span>
       </div>
-      <div class="tab" (click)="setActiveElement(unit)" [class.active]="activeElement === unit">
+      <div class="tab" data-tab="materials" (click)="setActiveTab(unit)" [class.active]="activeTab === unit">
         <img src="assets/other/materials-icon.svg" alt="Materials Icon">
-        <span>MATERIALS</span>
+        <span>Materials</span>
       </div>
-      <div class="tab" (click)="setActiveElement(unit)" [class.active]="activeElement === unit">
+      <div class="tab" data-tab="guide" (click)="setActiveTab(unit)" [class.active]="activeTab === unit">
         <img src="assets/other/guide-icon.svg" alt="Guide Icon">
-        <span>GUIDE</span>
+        <span>Guide</span>
       </div>
     </div>
     <div class="profile-part">
-      
+      <div class="info-selection">
+        <a class="info" (click)="setActiveInfo($event.target)" #info>Advancements</a>
+        <a class="info" (click)="setActiveInfo($event.target)" #info>Attacks</a>
+        <a class="info" (click)="setActiveInfo($event.target)" #info>Dodge</a>
+        <a class="info" (click)="setActiveInfo($event.target)" #info>Skill</a>
+        <a class="info" (click)="setActiveInfo($event.target)" #info>Discharge</a>
+        <a class="info" (click)="setActiveInfo($event.target)" #info>Special Mechanics</a>
+        <div class="underline"></div>
+      </div>
     </div>
   </div>
 </section>
