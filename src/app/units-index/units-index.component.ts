@@ -14,7 +14,7 @@ export class UnitsIndexComponent implements OnInit {
   activeRarity: string | null = null;
   activeType: string | null = null;
 
-  // ELEMENT ARRAUS
+  // ELEMENT ARRAYS
   private physicalUnits: string[] = ['yanmiao', 'mingjing', 'umi', 'gnonno', 'lyra', 'claudia', 'shiro', 'bailing'];
   private flameUnits: string[] = ['lan', 'feise', 'liuhuo', 'annabella', 'ruby', 'cobaltb', 'zero', 'king', 'huma'];
   private frostUnits: string[] = ['alyss', 'linghan', 'yulan', 'icarus', 'sakifuwa', 'frigg', 'tsubasa', 'cocoritter', 'meryl', 'hilda', 'ene'];

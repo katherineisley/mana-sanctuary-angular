@@ -170,6 +170,36 @@
                     left: 0; 
                 }
             }
+            .advancements-table{
+                padding: 20px 80px;
+                width: 100%;
+                display: flex;
+                margin: 20px 0 0 0;               
+                flex-direction: column;
+                row-gap: 30px;
+              }
+              
+              .advancements-table p{
+                margin:unset;
+              }
+              
+              .advancements-table-row{
+                display:flex;
+                width: 100%;
+                gap:30px;
+                justify-content: space-between;
+                align-items: center;
+              }
+              
+              .advancements-star-column{
+                width:5%;
+              }
+              
+              .advancements-text-column{
+                width:95%;
+                font-weight: 200;
+              }
+
         }
     }
 }

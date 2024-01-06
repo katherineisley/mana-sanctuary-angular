@@ -447,7 +447,7 @@
         "attacks": [
             {
                 "name": "Basic Technique",
-                "icon": "/umi/skill_whip_melee.webp",
+                "icon": "/umi/umi_attack_1.png",
                 "method": ["Attack x5"],
                 "description": [
                     {
@@ -475,7 +475,7 @@
             },
             {
                 "name": "Air Combo",
-                "icon": "/umi/skill_whip_melee.webp",
+                "icon": "/umi/umi_attack_2.png",
                 "method": ["Jump", "Attack x5"],
                 "description": [
                     {
@@ -503,7 +503,7 @@
             },
             {
                 "name": "Ouf of the Blue",
-                "icon": "/umi/skill_whip_melee.webp",
+                "icon": "/umi/umi_attack_3.png",
                 "method": ["Attack", "Hold Attack"],
                 "description": [
                     {
@@ -514,7 +514,7 @@
             },
             {
                 "name": "Stage Rotation",
-                "icon": "/umi/skill_whip_melee.webp",
+                "icon": "/umi/umi_attack_4.png",
                 "method": ["Jump", "Hold Attack"],
                 "description": [
                     {
@@ -629,11 +629,20 @@
         "trait": [
             {
                 "affinity": "1200",
-                "description": "Increase final damage by 12% for 30 seconds whenever Umi uses It's Magic Time. This effect does not stack."
+                "description": [
+                    {
+                        "paragraph": "Increase final damage by 12% for 30 seconds whenever Umi uses It's Magic Time. This effect does not stack."
+                    }
+                ]
             },
             {
                 "affinity": "4000",
-                "description": "Increase final damage by 18% for 30 seconds whenever Umi uses It's Magic Time. This effect does not stack."
+                "description": [
+                    {
+                        "paragraph": "Increase final damage by 18% for 30 seconds whenever Umi uses It's Magic Time. This effect does not stack."
+                    }
+                ]
+               
             }
         ]
     },
