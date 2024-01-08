@@ -1,13 +1,39 @@
 @import '../../styles.scss';
 
-.inner {
+.main {
     max-width: 1220px;
     width: 100%;
-    padding: 0px 20px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
 
-    .title {
-        font-size: 36px;
-        font-weight: 600;
+    .intro {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .titles {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+    
+            .title {
+                font-size: 36px;
+                font-weight: bold;
+                margin: unset;
+            }
+    
+            .subtitle {
+                font-size: 24px;
+                font-weight: 200;
+                color: $link;
+                margin: unset;
+            }
+        }
+
+        .description {
+            margin: unset;
+        }
     }
 
     .entries {
