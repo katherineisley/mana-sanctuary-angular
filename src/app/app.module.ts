@@ -17,6 +17,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { AboutUsCardComponent } from './about-us-card/about-us-card.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HealingComponent } from './healing/healing.component';
+import { DynamicContentHeightDirective } from './dynamic-content-height.directive';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { HealingComponent } from './healing/healing.component';
     AboutUsComponent,
     AboutUsCardComponent,
     PageNotFoundComponent,
-    HealingComponent
+    HealingComponent,
+    DynamicContentHeightDirective
   ],
   imports: [
     BrowserModule,
