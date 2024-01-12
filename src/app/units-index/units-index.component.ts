@@ -18,18 +18,18 @@ export class UnitsIndexComponent implements OnInit {
   private physicalUnits: string[] = ['yanmiao', 'mingjing', 'umi', 'gnonno', 'lyra', 'claudia', 'shiro', 'bailing'];
   private flameUnits: string[] = ['lan', 'feise', 'liuhuo', 'annabella', 'ruby', 'cobaltb', 'zero', 'king', 'huma'];
   private frostUnits: string[] = ['alyss', 'linghan', 'yulan', 'icarus', 'sakifuwa', 'frigg', 'tsubasa', 'cocoritter', 'meryl', 'hilda', 'ene'];
-  private voltUnits: string[] = ['rubilia', 'huang', 'fenrir', 'tianlang', 'nemesis', 'samir', 'crow', 'pepper', 'echo'];
+  private voltUnits: string[] = ['brevey', 'rubilia', 'huang', 'fenrir', 'tianlang', 'nemesis', 'samir', 'crow', 'pepper', 'echo'];
   private alteredUnits: string[] = ['nanyin', 'fiona', 'lin'];
   private physicalFlameUnits: string[] = ['mingjing', 'yanmiao'];
   private flamePhysicalUnits: string[] = [];
   private frostVoltUnits: string[] = [];
-  private voltFrostUnits: string[] = [];
+  private voltFrostUnits: string[] = ['brevey'];
   // RARITY ARRAYS
-  private SSRUnits: string[] = ['umi', 'lan', 'alyss', 'rubilia', 'yanmiao', 'linghan', 'nanyin', 'feise', 'huang', 'mingjing', 'yulan', 'liuhuo', 'gnonno', 'fiona', 'icarus', 'fenrir', 'annabella', 'tianlang', 'lyra', 'lin', 'sakifuwa', 'ruby', 'frigg', 'nemesis', 'cobaltb', 'claudia', 'zero', 'tsubasa', 'shiro', 'samir', 'meryl', 'king', 'huma', 'crow', 'cocoritter'];
+  private SSRUnits: string[] = ['umi', 'lan', 'alyss', 'rubilia', 'brevey', 'yanmiao', 'linghan', 'nanyin', 'feise', 'huang', 'mingjing', 'yulan', 'liuhuo', 'gnonno', 'fiona', 'icarus', 'fenrir', 'annabella', 'tianlang', 'lyra', 'lin', 'sakifuwa', 'ruby', 'frigg', 'nemesis', 'cobaltb', 'claudia', 'zero', 'tsubasa', 'shiro', 'samir', 'meryl', 'king', 'huma', 'crow', 'cocoritter'];
   private SRUnits: string[] = ['bailing', 'hilda', 'ene', 'pepper', 'echo'];
   // TYPE ARRAYS
   private damageUnits: string[] = ['umi', 'alyss', 'rubilia', 'yanmiao', 'linghan', 'nanyin', 'feise', 'mingjing', 'yulan', 'liuhuo', 'gnonno', 'icarus', 'fenrir', 'annabella', 'tianlang', 'lin', 'ruby', 'frigg', 'cobaltb', 'claudia', 'tsubasa', 'shiro', 'samir', 'king', 'crow', 'hilda', 'echo', 'bailing'];
-  private benedictionUnits: string[] = ['fiona', 'lyra', 'nemesis', 'zero', 'cocoritter', 'pepper'];
+  private benedictionUnits: string[] = ['brevey', 'fiona', 'lyra', 'nemesis', 'zero', 'cocoritter', 'pepper'];
   private fortitudeUnits: string[] = ['lan', 'huang', 'sakifuwa', 'meryl', 'huma', 'ene'];
   // ALL
   private allUnits: string[] = [...this.SSRUnits, ...this.SRUnits];
