@@ -88,8 +88,6 @@
         <div class="underline"></div>
       </div>
       <!-- ADVANCEMENTS-->
-
-
       <div *ngIf="activeInfo === 'Advancements'">
         <div class="advancements-table">
           <div class="advancements-table-row">
@@ -156,7 +154,6 @@
       </div>
          <!-- ATTACKS-->
       <div *ngIf="activeInfo === 'Attacks'">
-
       <div>
         <div *ngFor="let item of unit?.attacks">
           <p>{{ item.name }}</p>
@@ -175,10 +172,8 @@
         </div>
       </div>
       </div>
-    
       <!-- DODGE-->
       <div *ngIf="activeInfo === 'Dodge'">
-
       <div>
         <div *ngFor="let item of unit?.dodge">
           <p>{{ item.name }}</p>
@@ -199,7 +194,6 @@
       </div>
        <!-- SKILLS-->
       <div *ngIf="activeInfo === 'Skill'">
-     
       <div>
         <div *ngFor="let item of unit?.skill">
           <p>{{ item.name }}</p>
@@ -233,14 +227,6 @@
           </div>
         </div>
       </div>
-
-
-
-
-     
-
-     
-
     </div>
   </div>
 </section>

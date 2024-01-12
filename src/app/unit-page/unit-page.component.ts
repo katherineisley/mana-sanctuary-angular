@@ -39,6 +39,7 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
   setActiveTab(element: any) { 
     this.activeTab = element;
   }
+
   setActiveInfo(event: Event | string | null) {
     if (typeof event === 'string') {
       this.activeInfo = event;
@@ -52,12 +53,14 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
       underline.style.width = `${rect.width + 16}px`; // make it a bit prettier
     }
   }
-  
 
   @ViewChildren('info') infos!: QueryList<ElementRef>;
 
   ngAfterViewInit() {
-    this.setActiveInfo(this.infos.first.nativeElement); // make the underline appear under "Advancements" on page load
+    const underLineInit = new Event('custom');
+    Object.defineProperty(underLineInit, 'target', {value: this.infos.first.nativeElement, enumerable: true});
+    this.setActiveInfo(underLineInit); // make the underline appear under "Advancements" on page load
+
     setTimeout(() => {
       $('.underline').css('transition', 'left 0.3s ease, width 0.3s ease');
     }, 1); // shit solution so it doesnt get applied mid-render
