@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class UnitCardService {
-  private dataUrl = 'assets/json/indexcards.json'; // Update the path
+  private dataUrl = 'assets/json/simulacra-data.json'; // Update the path
   constructor(private http: HttpClient) {}
 
   getCardData(): Observable<any> {

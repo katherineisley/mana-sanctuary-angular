@@ -1,63 +1,169 @@
 [
     {
         "slug": "brevey",
-        "name": "Brevey"
+        "name": "Brevey",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "yanmiao",
-        "name": "Yan Miao"
+        "name": "Yan Miao",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "nanyin",
-        "name": "Nan Yin"
+        "name": "Nan Yin",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "linghan",
-        "name": "Ling Han"
+        "name": "Ling Han",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "feise",
-        "name": "Fei Se"
+        "name": "Fei Se",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
+
     },
     {
         "slug": "huang",
-        "name": "Huang"
+        "name": "Huang",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "mingjing",
-        "name": "Ming Jing"
+        "name": "Ming Jing",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "yulan",
-        "name": "Yu Lan"
+        "name": "Yu Lan",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "liuhuo",
-        "name": "Liu Huo"
+        "name": "Liu Huo",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "rubilia",
-        "name": "Rubilia"
+        "name": "Rubilia",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "gnonno",
-        "name": "Gnonno"
+        "name": "Gnonno",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "fiona",
-        "name": "Fiona"
+        "name": "Fiona",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "icarus",
-        "name": "Icarus"
+        "name": "Icarus",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "lan",
-        "name": "Lan"
+        "name": "Lan",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "fenrir",
         "name": "Fenrir",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false,
         "weapon": "Gleipnir",
         "weaponDescription": "A special device that converts sound waves into attack. When the shackles are shattered, the currents of death become sharp claws that tear everything apart.",
         "avatar": "fenrir_avatar",
@@ -384,6 +490,13 @@
     {
         "slug": "umi",
         "name": "Umi",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false,
         "weapon": "Mobius",
         "weaponDescription": "The whip favored by the new Executor, Umi. Umi's favorite part of it is that she doesn't get tripped up by it, usually.",
         "avatar": "umi_avatar",
@@ -649,6 +762,13 @@
     {
         "slug": "alyss",
         "name": "Alyss",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false,
         "weapon": "Unyielding Wing",
         "weaponDescription": "Combat armor crafted with a foot-blade as its core. Powered by the user's mental energy, it is the result of cutting-edge science and technology from before the Cataclysm, and explodes with terrifying power when necessary.",
         "avatar": "alyss_avatar",
@@ -884,31 +1004,80 @@
     },
     {
         "slug": "annabella",
-        "name": "Annabella"
+        "name": "Annabella",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "tianlang",
-        "name": "Tian Lang"
+        "name": "Tian Lang",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "lyra",
-        "name": "Lyra"
+        "name": "Lyra",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "lin",
-        "name": "Lin"
+        "name": "Lin",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "sakifuwa",
-        "name": "Saki Fuwa"
+        "name": "Saki Fuwa",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "ruby",
-        "name": "Ruby"
+        "name": "Ruby",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "cobaltb",
         "name": "Cobalt-B",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false,
         "weapon": "Flaming Revolver",
         "weaponDescription": "Invented by a mad scientist. With its impressive test numbers, one can only imagine how powerful it might be at full power.",
         "avatar": "cobaltb_avatar",
@@ -1112,70 +1281,189 @@
     },
     {
         "slug": "claudia",
-        "name": "Claudia"
+        "name": "Claudia",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "frigg",
-        "name": "Frigg"
+        "name": "Frigg",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "nemesis",
-        "name": "Nemesis"
+        "name": "Nemesis",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "crow",
-        "name": "Crow"
+        "name": "Crow",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "huma",
-        "name": "Huma"
+        "name": "Huma",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "samir",
-        "name": "Samir"
+        "name": "Samir",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "zero",
-        "name": "Zero"
+        "name": "Zero",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "shiro",
-        "name": "Shiro"
+        "name": "Shiro",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "king",
-        "name": "KING"
+        "name": "KING",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "cocoritter",
-        "name": "Cocoritter"
+        "name": "Cocoritter",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "tsubasa",
-        "name": "Tsubasa"
+        "name": "Tsubasa",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "meryl",
-        "name": "Meryl"
+        "name": "Meryl",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "pepper",
-        "name": "Pepper"
+        "name": "Pepper",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "hilda",
-        "name": "Hilda"
+        "name": "Hilda",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "ene",
-        "name": "Ene"
+        "name": "Ene",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "echo",
-        "name": "Echo"
+        "name": "Echo",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     },
     {
         "slug": "bailing",
-        "name": "Bai Ling"
+        "name": "Bai Ling",
+        "tag": "new",
+        "isDPS": true,
+        "isBuffer": true,
+        "isHeal": true,
+        "isHealB": true,
+        "isShatter": false,
+        "isTaunt": false
     }
 ]

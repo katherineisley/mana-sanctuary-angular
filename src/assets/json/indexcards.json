@@ -7,8 +7,8 @@
         "tag": "new",
         "isDPS": true,
         "isBuffer": true,
-        "isHeal": false,
-        "isHealB": false,
+        "isHeal": true,
+        "isHealB": true,
         "isShatter": false,
         "isTaunt": false
 

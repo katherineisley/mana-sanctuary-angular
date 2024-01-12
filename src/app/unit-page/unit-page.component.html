@@ -79,78 +79,84 @@
     </div>
     <div class="profile-part">
       <div class="info-selection">
-        <a class="info" (click)="setActiveInfo($event.target)" #info>Advancements</a>
-        <a class="info" (click)="setActiveInfo($event.target)" #info>Attacks</a>
-        <a class="info" (click)="setActiveInfo($event.target)" #info>Dodge</a>
-        <a class="info" (click)="setActiveInfo($event.target)" #info>Skill</a>
-        <a class="info" (click)="setActiveInfo($event.target)" #info>Discharge</a>
-        <a class="info" (click)="setActiveInfo($event.target)" #info>Trait</a>
+        <a class="info" (click)="setActiveInfo($event)" #info>Advancements</a>
+        <a class="info" (click)="setActiveInfo($event)" #info>Attacks</a>
+        <a class="info" (click)="setActiveInfo($event)" #info>Dodge</a>
+        <a class="info" (click)="setActiveInfo($event)" #info>Skill</a>
+        <a class="info" (click)="setActiveInfo($event)" #info>Discharge</a>
+        <a class="info" (click)="setActiveInfo($event)" #info>Trait</a>
         <div class="underline"></div>
       </div>
       <!-- ADVANCEMENTS-->
-      <div class="advancements-table">
-        <div class="advancements-table-row">
-          <div class="advancements-star-column">
-            1 ★
-          </div>
-          <div class="advancements-text-column">
-            <div *ngFor="let item of unit?.oneStar">
-              <p>{{ item.paragraph }}</p>
+
+
+      <div *ngIf="activeInfo === 'Advancements'">
+        <div class="advancements-table">
+          <div class="advancements-table-row">
+            <div class="advancements-star-column">
+              1 ★
+            </div>
+            <div class="advancements-text-column">
+              <div *ngFor="let item of unit?.oneStar">
+                <p>{{ item.paragraph }}</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="advancements-table-row">
-          <div class="advancements-star-column">
-            2 ★
-          </div>
-          <div class="advancements-text-column">
-            <div *ngFor="let item of unit?.twoStar">
-              <p>{{ item.paragraph }}</p>
+          <div class="advancements-table-row">
+            <div class="advancements-star-column">
+              2 ★
+            </div>
+            <div class="advancements-text-column">
+              <div *ngFor="let item of unit?.twoStar">
+                <p>{{ item.paragraph }}</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="advancements-table-row">
-          <div class="advancements-star-column">
-            3 ★
-          </div>
-          <div class="advancements-text-column">
-            <div *ngFor="let item of unit?.threeStar">
-              <p>{{ item.paragraph }}</p>
+          <div class="advancements-table-row">
+            <div class="advancements-star-column">
+              3 ★
+            </div>
+            <div class="advancements-text-column">
+              <div *ngFor="let item of unit?.threeStar">
+                <p>{{ item.paragraph }}</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="advancements-table-row">
-          <div class="advancements-star-column">
-            4 ★
-          </div>
-          <div class="advancements-text-column">
-            <div *ngFor="let item of unit?.fourStar">
-              <p>{{ item.paragraph }}</p>
+          <div class="advancements-table-row">
+            <div class="advancements-star-column">
+              4 ★
+            </div>
+            <div class="advancements-text-column">
+              <div *ngFor="let item of unit?.fourStar">
+                <p>{{ item.paragraph }}</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="advancements-table-row">
-          <div class="advancements-star-column">
-            5 ★
-          </div>
-          <div class="advancements-text-column">
-            <div *ngFor="let item of unit?.fiveStar">
-              <p>{{ item.paragraph }}</p>
+          <div class="advancements-table-row">
+            <div class="advancements-star-column">
+              5 ★
+            </div>
+            <div class="advancements-text-column">
+              <div *ngFor="let item of unit?.fiveStar">
+                <p>{{ item.paragraph }}</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="advancements-table-row">
-          <div class="advancements-star-column">
-            6 ★
-          </div>
-          <div class="advancements-text-column">
-            <div *ngFor="let item of unit?.sixStar">
-              <p>{{ item.paragraph }}</p>
+          <div class="advancements-table-row">
+            <div class="advancements-star-column">
+              6 ★
+            </div>
+            <div class="advancements-text-column">
+              <div *ngFor="let item of unit?.sixStar">
+                <p>{{ item.paragraph }}</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- ATTACKS-->
+         <!-- ATTACKS-->
+      <div *ngIf="activeInfo === 'Attacks'">
+
       <div>
         <div *ngFor="let item of unit?.attacks">
           <p>{{ item.name }}</p>
@@ -168,7 +174,11 @@
           </div>
         </div>
       </div>
+      </div>
+    
       <!-- DODGE-->
+      <div *ngIf="activeInfo === 'Dodge'">
+
       <div>
         <div *ngFor="let item of unit?.dodge">
           <p>{{ item.name }}</p>
@@ -186,7 +196,10 @@
           </div>
         </div>
       </div>
-      <!-- SKILLS-->
+      </div>
+       <!-- SKILLS-->
+      <div *ngIf="activeInfo === 'Skill'">
+     
       <div>
         <div *ngFor="let item of unit?.skill">
           <p>{{ item.name }}</p>
@@ -196,25 +209,38 @@
           </div>
         </div>
       </div>
-      <!-- DISCHARGE-->
-      <div>
-        <div *ngFor="let item of unit?.discharge">
-          <p>{{ item.name }}</p>
-          <img src="assets/simulacra/abilities/{{item.icon}}" alt="Discharge Icon">
-          <div *ngFor="let desc of item.description">
-            <p>{{ desc.paragraph }}</p>
+      </div>
+       <!-- DISCHARGE-->
+      <div *ngIf="activeInfo === 'Discharge'">
+        <div>
+          <div *ngFor="let item of unit?.discharge">
+            <p>{{ item.name }}</p>
+            <img src="assets/simulacra/abilities/{{item.icon}}" alt="Discharge Icon">
+            <div *ngFor="let desc of item.description">
+              <p>{{ desc.paragraph }}</p>
+            </div>
           </div>
         </div>
       </div>
-      <!-- TRAIT-->
-      <div>
-        <div *ngFor="let item of unit?.trait">
-          <p>{{ item.affinity }}</p>
-          <div *ngFor="let desc of item.description">
-            <p>{{ desc.paragraph }}</p>
+       <!-- TRAIT-->
+      <div *ngIf="activeInfo === 'Trait'">
+        <div>
+          <div *ngFor="let item of unit?.trait">
+            <p>{{ item.affinity }}</p>
+            <div *ngFor="let desc of item.description">
+              <p>{{ desc.paragraph }}</p>
+            </div>
           </div>
         </div>
       </div>
+
+
+
+
+     
+
+     
+
     </div>
   </div>
 </section>

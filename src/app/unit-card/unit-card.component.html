@@ -1,14 +1,14 @@
-<div class="unit-wrapper" [attr.data-unit]="unit.name" [routerLink]="['/unit-page/', unit.name]">
+<div class="unit-wrapper" [attr.data-unit]="unit.slug" [routerLink]="['/unit-page/', unit.slug]">
   <div class="top-card"
-    style="background-image: linear-gradient(0deg, #232323 0%, rgba(35, 35, 35, 0.00) 50%), url(&quot;../assets/cards/{{unit.name}}2.png&quot;);">
+    style="background-image: linear-gradient(0deg, #232323 0%, rgba(35, 35, 35, 0.00) 50%), url(&quot;../assets/cards/{{unit.slug}}2.png&quot;);">
     <div class="content-wrapper">
       <div class="{{unit.tag}}-tag">{{unit.tag}}</div>
       <div class="details-container">
-        <h5 class="name">{{unit.title}}</h5>
+        <h5 class="name">{{unit.name}}</h5>
         <div class="type-and-buffs">
           <div class="icons">
             <img src="assets/elements/{{unit.resonance}}.png" alt="{{unit.resonance}} resonance">
-            <img src="assets/elements/element_{{unit.element}}.png" alt="{{unit.element}} element">
+            <img src="assets/elements/{{unit.element}}.png" alt="{{unit.element}} element">
           </div>
           <div class="buffs">
             <img *ngIf="unit.isDPS" src="assets/effects/buff_mdps.png" alt="Main DPS">
@@ -24,15 +24,15 @@
   </div>
   <!-- TOP AND BACK SHUFFLE ON HOVER -->
   <div class="back-card"
-    style="background-image: linear-gradient(0deg, #232323 0%, rgba(35, 35, 35, 0.00) 50%), url(&quot;../assets/cards/{{unit.name}}1.png&quot;);">
+    style="background-image: linear-gradient(0deg, #232323 0%, rgba(35, 35, 35, 0.00) 50%), url(&quot;../assets/cards/{{unit.slug}}1.png&quot;);">
     <div class="content-wrapper">
       <div class="{{unit.tag}}-tag">{{unit.tag}}</div>
       <div class="details-container">
-        <h5 class="name">{{unit.title}}</h5>
+        <h5 class="name">{{unit.name}}</h5>
         <div class="type-and-buffs">
           <div class="icons">
             <img src="assets/elements/{{unit.resonance}}.png" alt="{{unit.resonance}} resonance">
-            <img src="assets/elements/element_{{unit.element}}.png" alt="{{unit.element}} element">
+            <img src="assets/elements/{{unit.element}}.png" alt="{{unit.element}} element">
           </div>
           <div class="buffs">
             <img *ngIf="unit.isDPS" src="assets/effects/buff_mdps.png" alt="Main DPS">

@@ -13,6 +13,7 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
   slug!: string;
   unit: any = {};
   activeTab: any = null;
+  activeInfo: string = 'Advancements'; 
   
   constructor(private route: ActivatedRoute, private http: HttpClient) { }
 
@@ -38,9 +39,12 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
   setActiveTab(element: any) { 
     this.activeTab = element;
   }
-
-  setActiveInfo(target: EventTarget | null) {
-    if (target instanceof HTMLElement) {
+  setActiveInfo(event: Event | string | null) {
+    if (typeof event === 'string') {
+      this.activeInfo = event;
+    } else if (event instanceof Event) {
+      const target = (event.target as HTMLElement);
+      this.activeInfo = target.textContent || ''; // Assuming the text content of the element is the desired information
       const rect = target.getBoundingClientRect();
       const underline = document.querySelector('.underline') as HTMLElement;
       const containerRect = (underline.parentElement as HTMLElement).getBoundingClientRect();
@@ -48,6 +52,7 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
       underline.style.width = `${rect.width + 16}px`; // make it a bit prettier
     }
   }
+  
 
   @ViewChildren('info') infos!: QueryList<ElementRef>;
 
