@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UnitCardService } from '../unit-card.service';
+import { HttpClient } from '@angular/common/http';
 import * as $ from 'jquery';
 
 @Component({
@@ -14,31 +15,83 @@ export class UnitsIndexComponent implements OnInit {
   activeRarity: string | null = null;
   activeType: string | null = null;
 
-  // ELEMENT ARRAYS
-  private physicalUnits: string[] = ['yanmiao', 'mingjing', 'umi', 'gnonno', 'lyra', 'claudia', 'shiro', 'bailing'];
-  private flameUnits: string[] = ['lan', 'feise', 'liuhuo', 'annabella', 'ruby', 'cobaltb', 'zero', 'king', 'huma'];
-  private frostUnits: string[] = ['alyss', 'linghan', 'yulan', 'icarus', 'sakifuwa', 'frigg', 'tsubasa', 'cocoritter', 'meryl', 'hilda', 'ene'];
-  private voltUnits: string[] = ['brevey', 'rubilia', 'huang', 'fenrir', 'tianlang', 'nemesis', 'samir', 'crow', 'pepper', 'echo'];
-  private alteredUnits: string[] = ['nanyin', 'fiona', 'lin'];
-  private physicalFlameUnits: string[] = ['mingjing', 'yanmiao'];
+  private physicalUnits: string[] = [];
+  private flameUnits: string[] = [];
+  private frostUnits: string[] = [];
+  private voltUnits: string[] = [];
+  private alteredUnits: string[] = [];
+  private physicalFlameUnits: string[] = [];
   private flamePhysicalUnits: string[] = [];
   private frostVoltUnits: string[] = [];
-  private voltFrostUnits: string[] = ['brevey'];
-  // RARITY ARRAYS
-  private SSRUnits: string[] = ['umi', 'lan', 'alyss', 'rubilia', 'brevey', 'yanmiao', 'linghan', 'nanyin', 'feise', 'huang', 'mingjing', 'yulan', 'liuhuo', 'gnonno', 'fiona', 'icarus', 'fenrir', 'annabella', 'tianlang', 'lyra', 'lin', 'sakifuwa', 'ruby', 'frigg', 'nemesis', 'cobaltb', 'claudia', 'zero', 'tsubasa', 'shiro', 'samir', 'meryl', 'king', 'huma', 'crow', 'cocoritter'];
-  private SRUnits: string[] = ['bailing', 'hilda', 'ene', 'pepper', 'echo'];
-  // TYPE ARRAYS
-  private damageUnits: string[] = ['umi', 'alyss', 'rubilia', 'yanmiao', 'linghan', 'nanyin', 'feise', 'mingjing', 'yulan', 'liuhuo', 'gnonno', 'icarus', 'fenrir', 'annabella', 'tianlang', 'lin', 'ruby', 'frigg', 'cobaltb', 'claudia', 'tsubasa', 'shiro', 'samir', 'king', 'crow', 'hilda', 'echo', 'bailing'];
-  private benedictionUnits: string[] = ['brevey', 'fiona', 'lyra', 'nemesis', 'zero', 'cocoritter', 'pepper'];
-  private fortitudeUnits: string[] = ['lan', 'huang', 'sakifuwa', 'meryl', 'huma', 'ene'];
-  // ALL
+  private voltFrostUnits: string[] = [];
+  private SSRUnits: string[] = [];
+  private SRUnits: string[] = [];
+  private damageUnits: string[] = [];
+  private benedictionUnits: string[] = [];
+  private fortitudeUnits: string[] = [];
+
   private allUnits: string[] = [...this.SSRUnits, ...this.SRUnits];
 
   constructor(private cardDataService: UnitCardService) { }
 
+  private populateArrays(data: any[]): void {
+    data.forEach((character: any) => {
+      
+      //ELEMENT
+      if (character.element === 'element_physical'|| character.element === 'element_physicalflame') {
+        this.physicalUnits.push(character.slug);
+      } 
+      if (character.element === 'element_flame' || character.element === 'element_flamephysical') {
+        this.flameUnits.push(character.slug);
+      }
+      if (character.element === 'element_frost' || character.element === 'element_frostvolt') {
+        this.frostUnits.push(character.slug);
+      }
+      if (character.element === 'element_volt'|| character.element === 'element_voltfrost') {
+        this.voltUnits.push(character.slug);
+      }
+      if (character.element === 'element_altered') {
+        this.alteredUnits.push(character.slug);
+      }
+      if (character.element === 'element_physicalflame') {
+        this.physicalFlameUnits.push(character.slug);
+      }
+      if (character.element === 'element_flamephysical') {
+        this.flamePhysicalUnits.push(character.slug);
+      }
+      if (character.element === 'element_frostvolt') {
+        this.frostVoltUnits.push(character.slug);
+      }    
+      if (character.element === 'element_voltfrost') {
+        this.voltFrostUnits.push(character.slug);
+      }
+      //RARITY
+      if (character.rarity === 'SSR') {
+        this.SSRUnits.push(character.slug);
+      }
+      if (character.rarity === 'SR') {
+        this.SRUnits.push(character.slug);
+      }
+      //RESONANCE
+      if (character.resonance === 'attack') {
+        this.damageUnits.push(character.slug);
+      }
+      if (character.resonance === 'benediction') {
+        this.benedictionUnits.push(character.slug);
+      }
+      if (character.resonance === 'fortitude') {
+        this.fortitudeUnits.push(character.slug);
+      }
+    });
+
+    // Update the allUnits array
+    this.allUnits = [...this.SSRUnits, ...this.SRUnits];
+  }
+
   ngOnInit() {
     this.cardDataService.getCardData().subscribe((data: any) => {
       this.units = data;
+      this.populateArrays(data); // Call the new function to populate the arrays
     });
 
     $('.element .wrapper img').click((event) => {
