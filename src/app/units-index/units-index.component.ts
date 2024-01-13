@@ -34,58 +34,49 @@ export class UnitsIndexComponent implements OnInit {
 
   constructor(private cardDataService: UnitCardService) { }
 
-  private populateArrays(data: any[]): void {
-    data.forEach((character: any) => {
-      
-      //ELEMENT
-      if (character.element === 'element_physical'|| character.element === 'element_physicalflame') {
-        this.physicalUnits.push(character.slug);
-      } 
-      if (character.element === 'element_flame' || character.element === 'element_flamephysical') {
-        this.flameUnits.push(character.slug);
+  private populateArrays(data: any[]): void { // i know its a funny gag to say "the code is self-documenting" but this one really should be
+    const elementMap = {
+      'element_physical': this.physicalUnits,
+      'element_physicalflame': this.physicalFlameUnits,
+      'element_flame': this.flameUnits,
+      'element_flamephysical': this.flamePhysicalUnits,
+      'element_frost': this.frostUnits,
+      'element_frostvolt': this.frostVoltUnits,
+      'element_volt': this.voltUnits,
+      'element_voltfrost': this.voltFrostUnits,
+      'element_altered': this.alteredUnits
+    };
+    
+    const rarityMap = {
+      'SSR': this.SSRUnits,
+      'SR': this.SRUnits
+    };
+
+    const resonanceMap = {
+      'attack': this.damageUnits,
+      'benediction': this.benedictionUnits,
+      'fortitude': this.fortitudeUnits
+    };
+
+    data.forEach((character: any) => { // just nabs the character's element, rarity, and resonance and adds it to the appropriate array for the filter
+      const elementKey = character.element as keyof typeof elementMap;
+      const rarityKey = character.rarity as keyof typeof rarityMap;
+      const resonanceKey = character.resonance as keyof typeof resonanceMap;
+
+      if (elementMap[elementKey]) {
+        elementMap[elementKey].push(character.slug);
       }
-      if (character.element === 'element_frost' || character.element === 'element_frostvolt') {
-        this.frostUnits.push(character.slug);
+
+      if (rarityMap[rarityKey]) {
+        rarityMap[rarityKey].push(character.slug);
       }
-      if (character.element === 'element_volt'|| character.element === 'element_voltfrost') {
-        this.voltUnits.push(character.slug);
-      }
-      if (character.element === 'element_altered') {
-        this.alteredUnits.push(character.slug);
-      }
-      if (character.element === 'element_physicalflame') {
-        this.physicalFlameUnits.push(character.slug);
-      }
-      if (character.element === 'element_flamephysical') {
-        this.flamePhysicalUnits.push(character.slug);
-      }
-      if (character.element === 'element_frostvolt') {
-        this.frostVoltUnits.push(character.slug);
-      }    
-      if (character.element === 'element_voltfrost') {
-        this.voltFrostUnits.push(character.slug);
-      }
-      //RARITY
-      if (character.rarity === 'SSR') {
-        this.SSRUnits.push(character.slug);
-      }
-      if (character.rarity === 'SR') {
-        this.SRUnits.push(character.slug);
-      }
-      //RESONANCE
-      if (character.resonance === 'attack') {
-        this.damageUnits.push(character.slug);
-      }
-      if (character.resonance === 'benediction') {
-        this.benedictionUnits.push(character.slug);
-      }
-      if (character.resonance === 'fortitude') {
-        this.fortitudeUnits.push(character.slug);
+
+      if (resonanceMap[resonanceKey]) {
+        resonanceMap[resonanceKey].push(character.slug);
       }
     });
 
-    // Update the allUnits array
-    this.allUnits = [...this.SSRUnits, ...this.SRUnits];
+    this.allUnits = [...this.SSRUnits, ...this.SRUnits]; // update the allUnits array
   }
 
   ngOnInit() {
@@ -142,7 +133,6 @@ export class UnitsIndexComponent implements OnInit {
   ): string[] {
     // Use filters to narrow down the units to show
     let filteredUnits: string[] = this.allUnits;
-
     if (elementFilter) {
       switch (elementFilter) {
         case 'physical-flame':
@@ -174,7 +164,7 @@ export class UnitsIndexComponent implements OnInit {
           break;
       }
     }
-
+    
     if (rarityFilter) {
       switch (rarityFilter) {
         case 'ssr':
