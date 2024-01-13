@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { UnitCardService } from '../unit-card.service';
-import { HttpClient } from '@angular/common/http';
 import * as $ from 'jquery';
 
 @Component({

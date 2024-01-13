@@ -19,7 +19,7 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
     this.slug = this.route.snapshot.paramMap.get('name')!;
-    this.http.get<any>("../../assets/json/simulacra-data.json").subscribe(data => {
+    this.http.get<any>("assets/json/simulacra-data.json").subscribe(data => {
       this.unit = data.find((unit: any) => unit.slug === this.slug);
       // console.log(this.unit);
       const elementColors: {[key: string]: string} = { // this sets the page color depending on the element

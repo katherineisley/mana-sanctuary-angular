@@ -1,1 +1,85 @@
-<p>healing-calculator works!</p>
+<section class="main">
+  <div class="intro">
+    <div class="titles">
+      <h3 class="title">Healing - Calculator</h3>
+      <h4 class="subtitle">Lorem ipsum</h4>
+    </div>
+    <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa maxime sunt in, soluta dolorum aliquam reiciendis vitae omnis dicta doloremque saepe blanditiis, quam similique qui cumque accusamus, voluptate recusandae nulla?</p>
+  </div>
+  <div class="insertions">
+    <div class="units">
+      <div class="all-units">
+        <div class="entry" *ngFor="let unit of units">
+          <img class="avatar" src="assets/simulacra/{{unit.avatar}}.png" alt="Avatar">
+          <div class="wrapper">
+            <span class="name">{{unit.name}}</span>
+            <span class="description">Lorem ipsum</span>
+          </div>
+        </div>
+      </div>
+      <!-- does not exist yet -->
+      <!-- <div class="all-matrices">
+        <div class="entry" *ngFor="let matrix of matrices">
+          <img class="avatar" src="assets/matrices/{{matrix.avatar}}.png" alt="Avatar">
+          <div class="wrapper">
+            <span class="name">{{matrix.name}}</span>
+            <span class="description">Lorem ipsum</span>
+          </div>
+        </div>
+      </div> -->
+      <div class="unit" data-unit="1">
+        <div class="simulacra">
+          <div class="subtitle">Weapons</div>
+          <div class="simulacra-select">
+            <img src="assets/other/simualcra_select.svg" alt="Select" class="image">
+          </div>
+        </div>
+        <div class="matrices">
+          <div class="subtitle">Matrices</div>
+          <div class="wrapper">
+            <div class="matrix-select">
+              <img src="assets/other/matrix_select.svg" alt="Select" class="image">
+            </div>
+            <div class="matrix-select">
+              <img src="assets/other/matrix_select.svg" alt="Select" class="image">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="unit" data-unit="2">
+        <div class="simulacra">
+          <div class="simulacra-select">
+            <img src="assets/other/simualcra_select.svg" alt="Select" class="image">
+          </div>
+        </div>
+        <div class="matrices">
+          <div class="wrapper">
+            <div class="matrix-select">
+              <img src="assets/other/matrix_select.svg" alt="Select" class="image">
+            </div>
+            <div class="matrix-select">
+              <img src="assets/other/matrix_select.svg" alt="Select" class="image">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="unit" data-unit="3">
+        <div class="simulacra">
+          <div class="simulacra-select">
+            <img src="assets/other/simualcra_select.svg" alt="Select" class="image">
+          </div>
+        </div>
+        <div class="matrices">
+          <div class="wrapper">
+            <div class="matrix-select">
+              <img src="assets/other/matrix_select.svg" alt="Select" class="image">
+            </div>
+            <div class="matrix-select">
+              <img src="assets/other/matrix_select.svg" alt="Select" class="image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

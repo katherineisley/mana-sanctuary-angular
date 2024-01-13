@@ -1,1 +1,121 @@
 @import '../../styles.scss';
+
+.main {
+    max-width: 1220px;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .titles {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+    
+            .title {
+                font-size: 36px;
+                font-weight: bold;
+                margin: unset;
+            }
+    
+            .subtitle {
+                font-size: 24px;
+                font-weight: 200;
+                color: $link;
+                margin: unset;
+            }
+        }
+
+        .description {
+            margin: unset;
+        }
+    }
+
+    .insertions {
+        margin: 40px 0 0 0;
+
+        .units {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            .all-units {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+                max-height: 500px;
+                overflow-y: auto;
+                
+                .entry {
+                    background-color: $content;
+                    display: flex;
+                    gap: 8px;
+
+                    .avatar {
+                        width: 80px; // subject to change once avatars are cropped
+                        height: 80px;
+                    }
+
+                    .wrapper {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        
+                        .name, .description {
+                            font-style: italic;
+                        }
+
+                        .name {
+                            font-size: 16px;
+                            color: $link;
+                        }
+
+                        .description {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+
+            .unit {
+                display: flex;
+                gap: 25px;
+    
+                .simulacra, .matrices {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+    
+                    .subtitle {
+                        align-self: center;
+                        font-size: 24px;
+                    }
+                }
+    
+                .simulacra {
+                    .simulacra-select {
+                        cursor: pointer;
+                    }
+                }
+    
+                .matrices {
+                    justify-content: center;
+    
+                    .wrapper {
+                        display: flex;
+                        gap: 25px;
+    
+                        .matrix-select {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
