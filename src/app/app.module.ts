@@ -18,6 +18,8 @@ import { AboutUsCardComponent } from './about-us-card/about-us-card.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HealingComponent } from './healing/healing.component';
 import { DynamicContentHeightDirective } from './dynamic-content-height.directive';
+import { HealingTeamsComponent } from './healing-teams/healing-teams.component';
+import { HealingCalculatorComponent } from './healing-calculator/healing-calculator.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { DynamicContentHeightDirective } from './dynamic-content-height.directiv
     AboutUsCardComponent,
     PageNotFoundComponent,
     HealingComponent,
-    DynamicContentHeightDirective
+    DynamicContentHeightDirective,
+    HealingTeamsComponent,
+    HealingCalculatorComponent
   ],
   imports: [
     BrowserModule,

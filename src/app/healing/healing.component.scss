@@ -49,7 +49,8 @@
             height: 100%;
             transition: 0.5s ease;
             cursor: pointer;
-    
+
+            // consider using an animation that *isnt* scale as the image and text look like shit during the transition
             &:hover {
                 transform: translate3D(0,-1px,0) scale(1.02);
             }
