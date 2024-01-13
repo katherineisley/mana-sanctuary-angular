@@ -151,16 +151,16 @@ export class UnitsIndexComponent implements OnInit {
           filteredUnits = filteredUnits.filter(unit => this.alteredUnits.includes(unit));
           break;
         case 'physical':
-          filteredUnits = filteredUnits.filter(unit => this.physicalUnits.includes(unit));
+          filteredUnits = filteredUnits.filter(unit => this.physicalUnits.includes(unit) || this.physicalFlameUnits.includes(unit));
           break;
         case 'flame':
-          filteredUnits = filteredUnits.filter(unit => this.flameUnits.includes(unit));
+          filteredUnits = filteredUnits.filter(unit => this.flameUnits.includes(unit) || this.flamePhysicalUnits.includes(unit));
           break;
         case 'frost':
-          filteredUnits = filteredUnits.filter(unit => this.frostUnits.includes(unit));
+          filteredUnits = filteredUnits.filter(unit => this.frostUnits.includes(unit) || this.frostVoltUnits.includes(unit));
           break;
         case 'volt':
-          filteredUnits = filteredUnits.filter(unit => this.voltUnits.includes(unit));
+          filteredUnits = filteredUnits.filter(unit => this.voltUnits.includes(unit) || this.voltFrostUnits.includes(unit));
           break;
       }
     }
