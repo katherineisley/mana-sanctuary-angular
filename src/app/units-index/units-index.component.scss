@@ -2,7 +2,7 @@
 
 .category-filter {
     display: flex;
-    max-width: 800px;
+    max-width: 1200px;
     width: 100%;
     justify-content: space-between;
     margin: 20px 0 0 0;
@@ -10,7 +10,7 @@
     background-color: $content;
     border-radius: 8px;
 
-    .rarity, .element, .type {
+    .rarity, .element, .type, .role {
         display: flex;
         flex-direction: column;
         gap: 8px;
@@ -30,7 +30,7 @@
     .rarity {
         .wrapper {
             .rarity {
-                &-ssr, &-sr, &-r {
+                &-ssr, &-sr {
                     cursor: pointer;
                     font-size: 22px;
                     opacity: 0.5;
@@ -44,7 +44,7 @@
         }
     }
 
-    .element {
+    .element, .role {
         .wrapper {
             img {
                 opacity: 0.5;
@@ -57,7 +57,7 @@
         }
     }
 
-    .element, .type {
+    .element, .type, .role{
         .wrapper {
             img {
                 cursor: pointer;
@@ -74,7 +74,7 @@
     }
 }
 .rarity {
-    &-ssr, &-sr, &-r {
+    &-ssr, &-sr {
         font-weight: 600;
     }
 

@@ -13,6 +13,7 @@ export class UnitsIndexComponent implements OnInit {
   activeElement: string | null = null;
   activeRarity: string | null = null;
   activeType: string | null = null;
+  activeRole: string | null = null;
 
   private physicalUnits: string[] = [];
   private flameUnits: string[] = [];
@@ -28,6 +29,12 @@ export class UnitsIndexComponent implements OnInit {
   private damageUnits: string[] = [];
   private benedictionUnits: string[] = [];
   private fortitudeUnits: string[] = [];
+  private MDPSUnits: string[] = [];
+  private BufferUnits: string[] = [];
+  private HealUnits: string[] = [];
+  private SupportBufferUnits: string[] = [];
+  private ShatterUnits: string[] = [];
+  private TauntUnits: string[] = [];
 
   private allUnits: string[] = [...this.SSRUnits, ...this.SRUnits];
 
@@ -57,10 +64,35 @@ export class UnitsIndexComponent implements OnInit {
       'fortitude': this.fortitudeUnits
     };
 
+    const MDPSMap = {
+      'true': this.MDPSUnits
+    }
+    const BufferMap = {
+      'true': this.BufferUnits
+    }
+    const HealMap = {
+      'true': this.HealUnits
+    }
+    const SupportBufferMap = {
+      'true': this.SupportBufferUnits
+    }
+    const ShatterMap = {
+      'true': this.ShatterUnits
+    }
+    const TauntMap = {
+      'true': this.TauntUnits
+    }
+
     data.forEach((character: any) => { // just nabs the character's element, rarity, and resonance and adds it to the appropriate array for the filter
       const elementKey = character.element as keyof typeof elementMap;
       const rarityKey = character.rarity as keyof typeof rarityMap;
       const resonanceKey = character.resonance as keyof typeof resonanceMap;
+      const MDPSKey = character.isMDPS as keyof typeof MDPSMap;
+      const BufferKey = character.isBuffer as keyof typeof BufferMap;
+      const HealKey = character.isHeal as keyof typeof HealMap;
+      const SupportBufferKey = character.isSupportBuffer as keyof typeof SupportBufferMap;
+      const ShatterKey = character.isShatter as keyof typeof ShatterMap;
+      const TauntKey = character.isTaunt as keyof typeof TauntMap;
 
       if (elementMap[elementKey]) {
         elementMap[elementKey].push(character.slug);
@@ -73,6 +105,33 @@ export class UnitsIndexComponent implements OnInit {
       if (resonanceMap[resonanceKey]) {
         resonanceMap[resonanceKey].push(character.slug);
       }
+
+      // ROLE
+
+      if (MDPSMap[MDPSKey]) {
+        MDPSMap[MDPSKey].push(character.slug);
+      }
+
+      if (BufferMap[BufferKey]) {
+        BufferMap[BufferKey].push(character.slug);
+      }
+
+      if (HealMap[HealKey]) {
+        HealMap[HealKey].push(character.slug);
+      }
+
+      if (SupportBufferMap[SupportBufferKey]) {
+        SupportBufferMap[SupportBufferKey].push(character.slug);
+      }
+
+      if (ShatterMap[ShatterKey]) {
+        ShatterMap[ShatterKey].push(character.slug);
+      }
+
+      if (TauntMap[TauntKey]) {
+        TauntMap[TauntKey].push(character.slug);
+      }
+
     });
 
     this.allUnits = [...this.SSRUnits, ...this.SRUnits]; // update the allUnits array
@@ -87,7 +146,7 @@ export class UnitsIndexComponent implements OnInit {
     $('.element .wrapper img').click((event) => {
       const element = $(event.currentTarget).attr('data-element');
       this.activeElement = this.activeElement === element ? null : (element || null);
-      const unitsToShow = this.getUnitsToShow(this.activeElement, this.activeRarity, this.activeType);
+      const unitsToShow = this.getUnitsToShow(this.activeElement, this.activeRarity, this.activeType,this.activeRole);
       this.showUnits(unitsToShow);
       this.updateActiveClasses();
     });
@@ -95,7 +154,7 @@ export class UnitsIndexComponent implements OnInit {
     $('.rarity .wrapper span').click((event) => {
       const rarity = $(event.currentTarget).attr('data-rarity');
       this.activeRarity = this.activeRarity === rarity ? null : (rarity || null);
-      const unitsToShow = this.getUnitsToShow(this.activeElement, this.activeRarity, this.activeType);
+      const unitsToShow = this.getUnitsToShow(this.activeElement, this.activeRarity, this.activeType,this.activeRole);
       this.showUnits(unitsToShow);
       this.updateActiveClasses();
     });
@@ -103,7 +162,15 @@ export class UnitsIndexComponent implements OnInit {
     $('.type .wrapper img').click((event) => {
       const type = $(event.currentTarget).attr('data-type');
       this.activeType = this.activeType === type ? null : (type || null);
-      const unitsToShow = this.getUnitsToShow(this.activeElement, this.activeRarity, this.activeType);
+      const unitsToShow = this.getUnitsToShow(this.activeElement, this.activeRarity, this.activeType,this.activeRole);
+      this.showUnits(unitsToShow);
+      this.updateActiveClasses();
+    });
+
+    $('.role .wrapper img').click((event) => {
+      const role = $(event.currentTarget).attr('data-role');
+      this.activeRole = this.activeRole === role ? null : (role || null);
+      const unitsToShow = this.getUnitsToShow(this.activeElement, this.activeRarity, this.activeType, this.activeRole);
       this.showUnits(unitsToShow);
       this.updateActiveClasses();
     });
@@ -111,7 +178,7 @@ export class UnitsIndexComponent implements OnInit {
 
   private updateActiveClasses(): void {
     // Remove all active classes
-    $('.element .wrapper img, .rarity .wrapper span, .type .wrapper img').removeClass('active');
+    $('.element .wrapper img, .rarity .wrapper span, .type .wrapper img, .role .wrapper img').removeClass('active');
 
     // Add active class for each active state
     if (this.activeElement !== null) {
@@ -123,12 +190,16 @@ export class UnitsIndexComponent implements OnInit {
     if (this.activeType !== null) {
       $(`.type .wrapper img[data-type="${this.activeType}"]`).addClass('active');
     }
+    if (this.activeRole !== null) {
+      $(`.role .wrapper img[data-role="${this.activeRole}"]`).addClass('active');
+    }
   }
 
   private getUnitsToShow(
     elementFilter: string | null,
     rarityFilter: string | null,
-    typeFilter: string | null
+    typeFilter: string | null,
+    roleFilter: string | null
   ): string[] {
     // Use filters to narrow down the units to show
     let filteredUnits: string[] = this.allUnits;
@@ -185,6 +256,28 @@ export class UnitsIndexComponent implements OnInit {
           break;
         case 'fortitude':
           filteredUnits = filteredUnits.filter(unit => this.fortitudeUnits.includes(unit));
+          break;
+      }
+    }
+    if (roleFilter) {
+      switch (roleFilter) {
+        case 'mdps':
+          filteredUnits = filteredUnits.filter(unit => this.MDPSUnits.includes(unit));
+          break;
+        case 'buffer':
+          filteredUnits = filteredUnits.filter(unit => this.BufferUnits.includes(unit));
+          break;
+        case 'heal':
+          filteredUnits = filteredUnits.filter(unit => this.HealUnits.includes(unit));
+          break;
+        case 'supportbuffer':
+          filteredUnits = filteredUnits.filter(unit => this.SupportBufferUnits.includes(unit));
+          break;
+        case 'shatter':
+          filteredUnits = filteredUnits.filter(unit => this.ShatterUnits.includes(unit));
+          break;
+        case 'taunt':
+          filteredUnits = filteredUnits.filter(unit => this.TauntUnits.includes(unit));
           break;
       }
     }
