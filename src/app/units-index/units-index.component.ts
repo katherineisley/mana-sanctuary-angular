@@ -31,7 +31,7 @@ export class UnitsIndexComponent implements OnInit {
   private fortitudeUnits: string[] = [];
   private MDPSUnits: string[] = [];
   private BufferUnits: string[] = [];
-  private HealUnits: string[] = [];
+  private HealerUnits: string[] = [];
   private SupportBufferUnits: string[] = [];
   private ShatterUnits: string[] = [];
   private TauntUnits: string[] = [];
@@ -64,35 +64,19 @@ export class UnitsIndexComponent implements OnInit {
       'fortitude': this.fortitudeUnits
     };
 
-    const MDPSMap = {
-      'true': this.MDPSUnits
-    }
-    const BufferMap = {
-      'true': this.BufferUnits
-    }
-    const HealMap = {
-      'true': this.HealUnits
-    }
-    const SupportBufferMap = {
-      'true': this.SupportBufferUnits
-    }
-    const ShatterMap = {
-      'true': this.ShatterUnits
-    }
-    const TauntMap = {
-      'true': this.TauntUnits
-    }
+    const rolesMap = {
+      'MDPS': this.MDPSUnits,
+      'Buffer': this.BufferUnits,
+      'Healer': this.HealerUnits,
+      'SupportBuffer': this.SupportBufferUnits,
+      'Shatter': this.ShatterUnits,
+      'Taunt': this.TauntUnits
+    };
 
     data.forEach((character: any) => { // just nabs the character's element, rarity, and resonance and adds it to the appropriate array for the filter
       const elementKey = character.element as keyof typeof elementMap;
       const rarityKey = character.rarity as keyof typeof rarityMap;
       const resonanceKey = character.resonance as keyof typeof resonanceMap;
-      const MDPSKey = character.isMDPS as keyof typeof MDPSMap;
-      const BufferKey = character.isBuffer as keyof typeof BufferMap;
-      const HealKey = character.isHeal as keyof typeof HealMap;
-      const SupportBufferKey = character.isSupportBuffer as keyof typeof SupportBufferMap;
-      const ShatterKey = character.isShatter as keyof typeof ShatterMap;
-      const TauntKey = character.isTaunt as keyof typeof TauntMap;
 
       if (elementMap[elementKey]) {
         elementMap[elementKey].push(character.slug);
@@ -106,32 +90,12 @@ export class UnitsIndexComponent implements OnInit {
         resonanceMap[resonanceKey].push(character.slug);
       }
 
-      // ROLE
-
-      if (MDPSMap[MDPSKey]) {
-        MDPSMap[MDPSKey].push(character.slug);
-      }
-
-      if (BufferMap[BufferKey]) {
-        BufferMap[BufferKey].push(character.slug);
-      }
-
-      if (HealMap[HealKey]) {
-        HealMap[HealKey].push(character.slug);
-      }
-
-      if (SupportBufferMap[SupportBufferKey]) {
-        SupportBufferMap[SupportBufferKey].push(character.slug);
-      }
-
-      if (ShatterMap[ShatterKey]) {
-        ShatterMap[ShatterKey].push(character.slug);
-      }
-
-      if (TauntMap[TauntKey]) {
-        TauntMap[TauntKey].push(character.slug);
-      }
-
+      character.roles.forEach((role: any) => {
+        const rolesMapKey = role as keyof typeof rolesMap;
+        if (rolesMap[rolesMapKey]) {
+          rolesMap[rolesMapKey].push(character.slug);
+        }
+      });
     });
 
     this.allUnits = [...this.SSRUnits, ...this.SRUnits]; // update the allUnits array
@@ -146,7 +110,7 @@ export class UnitsIndexComponent implements OnInit {
     $('.element .wrapper img').click((event) => {
       const element = $(event.currentTarget).attr('data-element');
       this.activeElement = this.activeElement === element ? null : (element || null);
-      const unitsToShow = this.getUnitsToShow(this.activeElement, this.activeRarity, this.activeType,this.activeRole);
+      const unitsToShow = this.getUnitsToShow(this.activeElement, this.activeRarity, this.activeType, this.activeRole);
       this.showUnits(unitsToShow);
       this.updateActiveClasses();
     });
@@ -261,22 +225,22 @@ export class UnitsIndexComponent implements OnInit {
     }
     if (roleFilter) {
       switch (roleFilter) {
-        case 'mdps':
+        case 'MDPS':
           filteredUnits = filteredUnits.filter(unit => this.MDPSUnits.includes(unit));
           break;
-        case 'buffer':
+        case 'Buffer':
           filteredUnits = filteredUnits.filter(unit => this.BufferUnits.includes(unit));
           break;
-        case 'heal':
-          filteredUnits = filteredUnits.filter(unit => this.HealUnits.includes(unit));
+        case 'Healer':
+          filteredUnits = filteredUnits.filter(unit => this.HealerUnits.includes(unit));
           break;
-        case 'supportbuffer':
+        case 'SupportBuffer':
           filteredUnits = filteredUnits.filter(unit => this.SupportBufferUnits.includes(unit));
           break;
-        case 'shatter':
+        case 'Shatter':
           filteredUnits = filteredUnits.filter(unit => this.ShatterUnits.includes(unit));
           break;
-        case 'taunt':
+        case 'Taunt':
           filteredUnits = filteredUnits.filter(unit => this.TauntUnits.includes(unit));
           break;
       }

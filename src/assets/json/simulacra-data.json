@@ -1,1510 +1,1583 @@
 [
-    {   
-        "slug": "brevey",
-        "name": "Brevey",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "yanmiao",
-        "name": "Yan Miao",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "nanyin",
-        "name": "Nan Yin",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "linghan",
-        "name": "Ling Han",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "feise",
-        "name": "Fei Se",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-
-    },
-    {
-        "slug": "huang",
-        "name": "Huang",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "mingjing",
-        "name": "Ming Jing",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "yulan",
-        "name": "Yu Lan",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "liuhuo",
-        "name": "Liu Huo",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "rubilia",
-        "name": "Rubilia",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "gnonno",
-        "name": "Gnonno",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "fiona",
-        "name": "Fiona",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "icarus",
-        "name": "Icarus",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "lan",
-        "name": "Lan",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "fenrir",
-        "name": "Fenrir",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false,
-        "weapon": "Gleipnir",
-        "weaponDescription": "A special device that converts sound waves into attack. When the shackles are shattered, the currents of death become sharp claws that tear everything apart.",
-        "avatar": "fenrir_avatar",
-        "resonance": "attack",
-        "element": "element_volt",
-        "hasAtk": true,
-        "hasHP": true,
-        "hasCrit": true,
-        "hasRes": false,
-        "shatter": "13.5",
-        "charge": "10.5",
-        "roles": [
-            ""
-        ],
-        "effects": [
-            {
-                "name": "Volt",
-                "description": [
-                    {
-                        "paragraph": "When the weapon is fully charged, the next attack will strongly paralyze targets for 1 second and electrify them for 6 seconds, removing all their buffs and dealing damage equal to 144% of ATK. Targets can't receive any buffs for the next 6 seconds."
-                    }
-                ]
-            },
-            {
-                "name": "Volt Resonance",
-                "description": [
-                    {
-                        "paragraph": "Increase Volt ATK by 15% and Volt Resistance by 25%. Activate by equipping 2 or more Volt weapons. This set effect works in the off-hand slot. Cannot stack with effects of the same type."
-                    }
-                ]
-            },
-            {
-                "name": "Balanced Resonance",
-                "description": [
-                    {
-                        "paragraph": "Increase all ATK by 15%. Activate by equipping 3 weapons of different types. This set effect also works with weapons in the off-hand slot."
-                    }
-                ]
-            }
-        ],
-        "oneStar": [
-            {
-                "paragraph": "When Su-Paw-Star summons a consciousness and is on cooldown, gain the Aural Fever skill. Rush to the target and attack multiple times, dealing damage up to 720% of ATK. Each hit landed slows the enemy for a brief period and restores HP equal to 100% of ATK. The last hit places 2 musical notes on the target. Aural Fever cooldown: 15 seconds."
-            },
-            {
-                "paragraph": "When 3 or more notes are detonated and the cooldown of Aural Fever is greater than 5 seconds, clear the cooldown of Aural Fever. This effect can only trigger 1 time every 15 seconds."
-            }
-        ],
-        "twoStar": [
-            {
-                "paragraph": "Increase the current weapon's base ATK growth by 16%."
-            }
-        ],
-        "threeStar": [
-            {
-                "paragraph": "While Songworld is active:"
-            },
-            {
-                "paragraph": "For every 45% of max HP lost or when using the skill Aural Fever, trigger a Songworld Quake which deals damage equal to 650% of ATK to targets in the Songworld."
-            },
-            {
-                "paragraph": "For every 99% of max HP lost, gain 1 escape death (block a lethal effect and become immune to damage for a short time) for 45 seconds, stacking up to 1 time."
-            }
-        ],
-        "fourStar": [
-            {
-                "paragraph": "Increase the current weapon's base ATK growth by 32%."
-            }
-        ],
-        "fiveStar": [
-            {
-                "paragraph": "Increase the damage multiplier of musical notes' detonation to 40%, and the DoT caused by intoxication to 1.5% of max HP every second."
-            },
-            {
-                "paragraph": "While Songworld is active, Songworld Quake is triggered automatically if it doesn't trigger for 12 seconds while in combat."
-            }
-        ],
-        "sixStar": [
-            {
-                "paragraph": "Increase crit rate by 18% while wielding Gleipnir. The crit rate increase lasts another 5 seconds after switching to other weapons."
-            }
-        ],
-        "attacks": [
-            {
-                "name": "Woof",
-                "icon": "",
-                "method": ["Attack x7"],
-                "description": [
-                    {
-                        "paragraph": "Initiate 7 attacks in a row when on the ground."
-                    }
-                ],
-                "hasChain": true,
-                "chain": [
-                    {
-                        "combo": "48.6% of ATK."
-                    },
-                    {
-                        "combo": "54.1% of ATK."
-                    },
-                    {
-                        "combo": "54.1% of ATK."
-                    },
-                    {
-                        "combo": "85.4% of ATK."
-                    },
-                    {
-                        "combo": "54.1% of ATK."
-                    },
-                    {
-                        "combo": "152.9% of ATK."
-                    },
-                    {
-                        "combo": "169% of ATK."
-                    }
-                ]
-            },
-            {
-                "name": "Unshackle",
-                "icon": "",
-                "method": ["Jump", "Attack x7"],
-                "description": [
-                    {
-                        "paragraph": "While airborne or after jumping once, use normal attack to attack 7 times in a row in mid-air."
-                    }
-                ],
-                "hasChain": true,
-                "chain": [
-                    {
-                        "combo": "52.9% of ATK."
-                    },
-                    {
-                        "combo": "60.8% of ATK."
-                    },
-                    {
-                        "combo": "60.8% of ATK."
-                    },
-                    {
-                        "combo": "105.8% of ATK."
-                    },
-                    {
-                        "combo": "79.3% of ATK."
-                    },
-                    {
-                        "combo": "183.4% of AT."
-                    },
-                    {
-                        "combo": "202.8% of ATK."
-                    }
-                ]
-            },
-            {
-                "name": "Wolfbite",
-                "icon": "",
-                "method": ["Attack x2", "Jump", "Jump"],
-                "description": [
-                    {
-                        "paragraph": "While on the ground, tap and hold normal attack during the second or the fourth normal attack to trigger Wolfbite."
-                    },
-                    {
-                        "paragraph": "Charge forward quickly, dealing damage equal to 69% of ATK and knocking the target back."
-                    },
-                    {
-                        "paragraph": "After triggering Wolfbite, tap and hold normal attack to trigger Upswipe."
-                    },
-                    {
-                        "paragraph": "Swipe upward, dealing damage equal to 93.1% of ATK and suspend the target."
-                    }
-                ],
-                "hasChain": false
-            },
-            {
-                "name": "Menacing Hunt",
-                "icon": "",
-                "method": ["Attack x5", "Hold"],
-                "description": [
-                    {
-                        "paragraph": "While on the ground, tap and hold normal attack during the fifth or sixth normal attack to trigger Menacing Hunt. Descend from above, gaining temporary invincibility and dealing damage equal to 254.3% of ATK and suspend the target."
-                    }
-                ],
-                "hasChain": false
-            },
-            {
-                "name": "Think and Fast",
-                "icon": "",
-                "method": ["Jump", "Hold", "Hold"],
-                "description": [
-                    {
-                        "paragraph": "Tap and hold normal attack while airborne (tap when a target is available), or tap normal attack while climbing, jumping backward, or using a jetpack to trigger Thick and Fast."
-                    },
-                    {
-                        "paragraph": "Descend from above, dealing damage equal to 200% of ATK upon landing and suspending surrounding targets."
-                    },
-                    {
-                        "paragraph": "After triggering Thick and Fast, tap and hold normal attack again to trigger Roar."
-                    },
-                    {
-                        "paragraph": "Let out a terrifying Roar in all directions and gain temporary invincibility, dealing damage equal to 200% of ATK to nearby targets and knocking them back."
-                    }
-                ],
-                "hasChain": false
-            },
-            {
-                "name": "Trailing Note",
-                "icon": "",
-                "method": ["Jump", "Attack x2", "Hold"],
-                "description": [
-                    {
-                        "paragraph": "While airborne, tap and hold normal attack when using the second to the seventh Unshackle to trigger Trailing Note."
-                    },
-                    {
-                        "paragraph": "Roam through the air multiple times and deal damage equal to 277.3% of ATK to surrounding targets."
-                    }
-                ],
-                "hasChain": false
-            },
-            {
-                "name": "Reverberation",
-                "icon": "",
-                "method": [],
-                "description": [
-                    {
-                        "paragraph": "Each time a target is hit by a normal attack, there is a 50% chance to place 1 musical note on the target that lasts for 15 seconds, stacking up to 5 notes."
-                    },
-                    {
-                        "paragraph": "Wolfbite, Menacing Hunt, and Thick and Fast have a 100% chance to place 1 musical note on the target on hit."
-                    },
-                    {
-                        "paragraph": "Musical notes can only be placed at least 1 second apart."
-                    },
-                    {
-                        "paragraph": "Passive: Trailing Note and Melody will detonate all the musical notes on the target on hit, dealing damage equal to 20% of ATK times the number of musical notes detonated. Damage is doubled if 3 or more notes are detonated."
-                    },
-                    {
-                        "paragraph": "Passive: After detonating 2 or more musical notes, cause the target to become intoxicated, dealing damage equal to 1% of Wanderer's max HP every second for 16 seconds."
-                    },
-                    {
-                        "paragraph": "Damage from musical note detonation and intoxication is considered as dodge attack damage."
-                    }
-                ],
-                "hasChain": false
-            }
-        ],
-        "dodge": [
-            {
-                "name": "Melody",
-                "icon": "",
-                "method": ["Directional Dodge", "Attack"],
-                "description": [
-                    {
-                        "paragraph": "Attack with claws, dealing damage equal to 210.8% of ATK to surrounding targets and knocking them down."
-                    }
-                ],
-                "hasChain": false
-            },
-            {
-                "name": "Dodge",
-                "icon": "",
-                "method": ["Directional Dodge"],
-                "description": [
-                    {
-                        "paragraph": "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for 0.5 seconds."
-                    },
-                    {
-                        "paragraph": "Passive: Place a musical note on the target."
-                    }
-                ],
-                "hasChain": false
-            }
-        ],
-        "skill": [
-            {
-                "name": "Su-Paw-Star",
-                "icon": "",
-                "description": [
-                    {
-                        "paragraph": "Summon a consciousness that is separate from the target, dealing damage equal to 124.1% of ATK on hit. Create a Songworld at the Wanderer's current location that lasts 30 seconds, in which damage taken by the Wanderer is reduced by 8% while ignoring 20% of the target's defense."
-                    },
-                    {
-                        "paragraph": "The consciousness has HP equal to 30 times the Wanderer's max HP. It can only receive non-passive damage from Gleipnir, and 100% of the damage is transferred to the target's main body (1% for enemy Wanderers), while restoring HP equal to 50% of ATK to the Wanderer. While the consciousness is active, the Wanderer takes 12% less damage from the target's main body. The consciousness will exist for up to 15 seconds."
-                    },
-                    {
-                        "paragraph": "After the consciousness returns to the target's main body, deal area damage equal to 705.4% of ATK."
-                    },
-                    {
-                        "paragraph": "Recalling the consciousness: The consciousness returns to its main body when it's defeated, when its duration runs out, when a new consciousness is summoned, or when it strays too far from the body."
-                    },
-                    {
-                        "paragraph": "Su-Paw-Star cooldown: 30 seconds."
-                    }
-                ]
-            }
-        ],
-        "discharge": [
-            {
-                "name": "Awoooo!",
-                "icon": "",
-                "description": [
-                    {
-                        "paragraph": "When weapon charge is full or Phantasia is triggered, remove all debuffs from the wielder upon switching to this weapon, then rush to the target and attack, dealing damage up to 661.8% of ATK to targets in the area and placing 3 musical notes on them. Briefly become invincible while the skill is active (unavailable in The Critical Abyss and Apex League)."
-                    }
-                ]
-            }
-        ],
-        "trait": [
-            {
-                "affinity": "1200",
-                "description": [
-                    {
-                        "paragraph": "Increase final damage by 13% when equipping 2 weapons of different types. Increase final damage by 18% when equipping 3 weapons of different types."
-                    }
-                ]
-            },
-            {
-                "affinity": "4000",
-                "description": [
-                    {
-                        "paragraph": "Increase final damage by 18% when equipping 2 weapons of different types. Increase final damage by 23% when equipping 3 weapons of different types."
-                    }
-                ]
-            }
+  {
+    "slug": "brevey",
+    "name": "Brevey",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "yanmiao",
+    "name": "Yan Miao",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "nanyin",
+    "name": "Nan Yin",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "linghan",
+    "name": "Ling Han",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "feise",
+    "name": "Fei Se",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "huang",
+    "name": "Huang",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "mingjing",
+    "name": "Ming Jing",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "yulan",
+    "name": "Yu Lan",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "liuhuo",
+    "name": "Liu Huo",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "rubilia",
+    "name": "Rubilia",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "gnonno",
+    "name": "Gnonno",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "fiona",
+    "name": "Fiona",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "icarus",
+    "name": "Icarus",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "lan",
+    "name": "Lan",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "fenrir",
+    "name": "Fenrir",
+    "tag": "new",
+    "rarity": "SSR",
+    "weapon": "Gleipnir",
+    "weaponDescription": "A special device that converts sound waves into attack. When the shackles are shattered, the currents of death become sharp claws that tear everything apart.",
+    "avatar": "fenrir_avatar",
+    "resonance": "attack",
+    "element": "element_volt",
+    "hasAtk": true,
+    "hasHP": true,
+    "hasCrit": true,
+    "hasRes": false,
+    "shatter": "13.5",
+    "charge": "10.5",
+    "roles": [
+        "MDPS",
+        "Buffer",
+        "Healer",
+        "SupportBuffer"
+    ],
+    "effects": [
+      {
+        "name": "Volt",
+        "description": [
+          {
+            "paragraph": "When the weapon is fully charged, the next attack will strongly paralyze targets for 1 second and electrify them for 6 seconds, removing all their buffs and dealing damage equal to 144% of ATK. Targets can't receive any buffs for the next 6 seconds."
+          }
         ]
-    },
-    {
-        "slug": "umi",
-        "name": "Umi",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false,
-        "weapon": "Mobius",
-        "weaponDescription": "The whip favored by the new Executor, Umi. Umi's favorite part of it is that she doesn't get tripped up by it, usually.",
-        "avatar": "umi_avatar",
-        "resonance": "attack",
-        "element": "element_physical",
-        "hasAtk": true,
-        "hasHP": true,
-        "hasCrit": true,
-        "hasRes": false,
-        "shatter": "12",
-        "charge": "9",
-        "roles": ["MDPS", "Buffer"],
-        "effects": [
-            {
-                "name": "Grievous",
-                "description": [
-                    {
-                        "paragraph": "Fully charged weapons will inflict damage equal to 137.00% of ATK with the next attack, and make the target grievous for 7 seconds, taking 20% extra damage."
-                    }
-                ]
-            },
-            {
-                "name": "Physical Resonance",
-                "description": [
-                    {
-                        "paragraph": "Increase physical ATK by 15% and physical resistance by 25%. Activate by equipping 2 or more physical weapons. This set effect also works with weapons in the off-hand slot. Cannot stack with effects of the same type."
-                    }
-                ]
-            }
-        ],
-        "oneStar": [
-            {
-                "paragraph": "When switching to Mobius, immediately gain 30 warmup points. Cooldown: 17 seconds. Upon entering Magic Trick, deal area damage equal to 840% of ATK to nearby targets and reduce their physical resistance by 10% for 20 seconds."
-            }
-        ],
-        "twoStar": [
-            {
-                "paragraph": "Increase the current weapon's base ATK growth by 16%."
-            }
-        ],
-        "threeStar": [
-            {
-                "paragraph": "When ending Magic Trick early, deal wide-area damage over 13 seconds. The current cooldown of Mobius' skill is reduced, and physical damage is increased by 25% for a period of time (this effect does not apply to Mobius). If Magic Trick has more than 13 seconds remaining, gain an additional 200 weapon charge. The more time remaining when Magic Trick ends, the higher the area damage, the greater the skill cooldown reduction, and the longer the physical damage boost lasts. The area damage dealt is capped at 200% of ATK (the maximum damage is dealt when the remaining time is more than 13 seconds). The maximum cooldown reduction is 13 seconds, and the physical damage boost can last up to 20 seconds."
-            }
-        ],
-        "fourStar": [
-            {
-                "paragraph": "Increase the current weapon's base ATK growth by 32%."
-            }
-        ],
-        "fiveStar": [
-            {
-                "paragraph": "Gain the Psychic Puppet effect upon entering Magic Trick, increasing Mobius's physical damage boost to 15%. During Magic Trick, recover 2% of Max HP and 10 weapon charge every second."
-            }
-        ],
-        "sixStar": [
-            {
-                "paragraph": "During Magic Trick, Mobius has an additional whip that is automatically swung whenever Mobius uses normal attacks or dodge attacks, dealing damage equal to 100% of Mobius's ATK (this damage is not counted as dealing normal attacks)."
-            }
-        ],
-        "attacks": [
-            {
-                "name": "Basic Technique",
-                "icon": "/umi/umi_attack_1.png",
-                "method": ["Attack x5"],
-                "description": [
-                    {
-                        "paragraph": "While on the ground, use Mobius to launch 5 consecutive attacks. The shatter of this skill is increased by an additional 50%."
-                    }
-                ],
-                "hasChain": true,
-                "chain": [
-                    {
-                        "combo": "76.9% of ATK and knock the target back."
-                    },
-                    {
-                        "combo": "84.4% of ATK and knock the target back."
-                    },
-                    {
-                        "combo": "112.1% of ATK and knock the target down."
-                    },
-                    {
-                        "combo": "105.5% of ATK and drag and drop the target."
-                    },
-                    {
-                        "combo": "265.1% of ATK and launch the target." 
-                    }
-                ]
-            },
-            {
-                "name": "Air Combo",
-                "icon": "/umi/umi_attack_2.png",
-                "method": ["Jump", "Attack x5"],
-                "description": [
-                    {
-                        "paragraph": "While airborne, use normal attack to attack 5 times in a row in mid-air, consuming endurance."
-                    }
-                ],
-                "hasChain": true,
-                "chain": [
-                    {
-                        "combo": "46% of ATK."
-                    },
-                    {
-                        "combo": "66.5% of ATK."
-                    },
-                    {
-                        "combo": "88.4% of ATK."
-                    },
-                    {
-                        "combo": "88.8% of ATK."
-                    },
-                    {
-                        "combo": "260.5% of ATK."
-                    }
-                ]
-            },
-            {
-                "name": "Ouf of the Blue",
-                "icon": "/umi/umi_attack_3.png",
-                "method": ["Attack", "Hold Attack"],
-                "description": [
-                    {
-                        "paragraph": "While using Basic Technique on the ground, tap and hold normal attack to trigger Out of the Blue directly based on the currently locked target. Smaller locked-on targets are dealt damage equal to 105% of ATK and draw in nearby targets. Larger locked-on targets are dealt damage equal to 85.5% of ATK and draw in nearby targets. This skill's shatter is additionally increased by 50%."
-                    }
-                ],
-                "hasChain": false
-            },
-            {
-                "name": "Stage Rotation",
-                "icon": "/umi/umi_attack_4.png",
-                "method": ["Jump", "Hold Attack"],
-                "description": [
-                    {
-                        "paragraph": "Tap and hold normal attack while airborne, or use normal attack while climbing, jumping backward, or using the Jetpack to trigger Pummel. Plummet from the skies, dealing damage equal to 121.5% of ATK and launching the target."
-                    }
-                ],
-                "hasChain": false
-            },
-            {
-                "name": "Close-Up Magic",
-                "icon": "/umi/skill_whip_melee.webp",
-                "method": ["Hold Attack"],
-                "description": [
-                    {
-                        "paragraph": "Tap and hold normal attack on the ground to charge Anticipation, and release the button to trigger Close-up Magic based on the currently locked target. Smaller locked-on targets are dealt damage equal to 105% of ATK and draw in nearby targets. Larger locked-on targets are dealt damage equal to 85.5% of ATK and draw in nearby targets. This skill's shatter is additionally increased by 50%."
-                    }
-                ],
-                "hasChain": false
-            }
-        ],
-        "dodge": [
-            {
-                "name": "Grand Illusion",
-                "icon": "/umi/skill_whip_dodge.webp",
-                "method": ["Dodge", "Attack"],
-                "description": [
-                    {
-                        "paragraph": "Tap normal attack during the short period after dodging to trigger Grand Illusion, dealing damage equal to 187.2% of ATK to nearby targets. This skill's shatter is additionally increased by 50%."
-                    }
-                ],
-                "hasChain": false
-            },
-            {
-                "name": "Dodge",
-                "icon": "/umi/skill_whip_dodge.webp",
-                "method": ["Dodge"],
-                "description": [
-                    {
-                        "paragraph": "Dodge right before getting hit to trigger a Phantasia, cooldown 15 seconds, reducing the speed of enemies within an area. Become immune to hitstun for 0.5 seconds while dodging."
-                    }
-                ],
-                "hasChain": false
-            }
-        ],
-        "skill": [
-            {
-                "name": "It's Magic Time",
-                "icon": "/umi/skill_whip_skill.webp",
-                "description": [
-                    {
-                        "paragraph": "Dealing damage with any weapon in the main slot will accrue warmup points. Cooldown: 0.06 seconds. Physical weapons accrue 1 point with each hit, and non-physical weapons accrue 0.5 points with each hit. The number of warmup points you have are displayed in the Magic Gauge, up to 100 points. When entering battle, immediately gain 100 warmup points."
-                    },
-                    {
-                        "paragraph": "Skills can be cast once there are 100 warmup points in the Magic Gauge. Pull together enemies in a certain area and deal damage equal to 950% of ATK to the target. Become temporarily invincible (unavailable in Apex League and The Critical Abyss) and reduce the speed of targets within the hit area (unavailable in Apex League and The Critical Abyss). At the same time, activate Magic Trick to continuously consume warmup points for 18 seconds. Cooldown: 30 seconds. This cooldown is not affected by effects (including the clearance, reset, or change of the cooldown time) that are not from Mobius. During this time, the skill button is replaced with a Cut Card button."
-                    },
-                    {
-                        "paragraph": "During Magic Trick, automatically get either a Spade or Heart Poker Card every 2 seconds. The type of Poker Card that is about to be obtained can be switched in advance with the Cut Card button. When there are 2 Poker Cards, the corresponding Card Magic will be automatically used. Cooldown: 3.8 seconds."
-                    },
-                    {
-                        "paragraph": "During Magic Trick, you gain hyperbody and are considered as having a shield. Your Magic Gauge will also no longer be automatically replenished. Increase the physical damage of Mobius's attacks (normal attack and dodge attack) by 10% and shatter by 20%."
-                    },
-                    {
-                        "paragraph": "Different Poker Card combinations will activate different Card Magic effects.\\nHeart + Spade → Psychic Puppet\\n Heart + Heart → Contradiction Corrosion\\nSpade + Spade → Card Sweep"
-                    },
-                    {
-                        "paragraph": "Magic Trick ends when switching to another weapon in any way or upon being defeated."
-                    },
-                    {
-                        "paragraph": "Gain hyperbody for 20 seconds when Magic Trick ends. If it ends naturally, it deals additional damage equal to 1,000% of ATK to nearby targets."
-                    }
-                ]
-            },
-            {
-                "name": "Psychic Puppet",
-                "icon": "/umi/skill_whip_skill.webp",
-                "description": [
-                    {
-                        "paragraph": "Pull out a colony of bats from your hat and enhance yourself. During Magic Trick, physical damage dealt by Mobius is increased by 7.5%, and only 60% of the damage taken will be tallied. The remaining 40% will slowly be deducted from your HP over 10 seconds after Magic Trick ends. The delayed tally effect only applies when Fortitude Resonance is not active."
-                    }
-                ]
-            },
-            {
-                "name": "Contradiction Corrosion",
-                "icon": "/umi/skill_whip_skill.webp",
-                "description": [
-                    {
-                        "paragraph": "Immediately recover 10% of Max HP and plant a Corrosion Flower on up to 7 targets within a certain range, which deal damage equal to 260% of ATK every second for 3 seconds."
-                    }
-                ]
-            },
-            {
-                "name": "Card Sweep",
-                "icon": "/umi/skill_whip_skill.webp",
-                "description": [
-                    {
-                        "paragraph": "Summon a large number of flying cards, forming a hurricane that swarms to the target location, attacking the target up to 12 times and dealing total damage equal to 850% of ATK."
-                    }
-                ]
-            }
-        ],
-        "discharge": [
-            {
-                "name": "Sleight of Hand",
-                "icon": "/umi/skill_whip_discharge.webp",
-                "description": [
-                    {
-                        "paragraph": "When weapon charge is full or Phantasia is triggered, remove all debuffs from the wielder upon switching to this weapon, cast Sleight of Hand and gain temporary invincibility (unavailable in Apex League and The Critical Abyss). Upon landing, deal damage equal to 316.2% of ATK plus 17 to the target. After swinging the whip, deal damage equal to 737.8% of ATK plus 39 to the target and strongly launch the target."
-                    }
-                ]
-            }
-        ],
-        "trait": [
-            {
-                "affinity": "1200",
-                "description": [
-                    {
-                        "paragraph": "Increase final damage by 12% for 30 seconds whenever Umi uses It's Magic Time. This effect does not stack."
-                    }
-                ]
-            },
-            {
-                "affinity": "4000",
-                "description": [
-                    {
-                        "paragraph": "Increase final damage by 18% for 30 seconds whenever Umi uses It's Magic Time. This effect does not stack."
-                    }
-                ]
-               
-            }
+      },
+      {
+        "name": "Volt Resonance",
+        "description": [
+          {
+            "paragraph": "Increase Volt ATK by 15% and Volt Resistance by 25%. Activate by equipping 2 or more Volt weapons. This set effect works in the off-hand slot. Cannot stack with effects of the same type."
+          }
         ]
-    },
-    {
-        "slug": "alyss",
-        "name": "Alyss",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false,
-        "weapon": "Unyielding Wing",
-        "weaponDescription": "Combat armor crafted with a foot-blade as its core. Powered by the user's mental energy, it is the result of cutting-edge science and technology from before the Cataclysm, and explodes with terrifying power when necessary.",
-        "avatar": "alyss_avatar",
-        "resonance": "attack",
-        "element": "element_frost",
-        "hasAtk": true,
-        "hasHP": true,
-        "hasCrit": false,
-        "hasRes": true,
-        "shatter": "8",
-        "charge": "12",
-        "roles": [""],
-        "effects": [
-            {
-                "name": "Ice Shell",
-                "description": [
-                    {
-                        "paragraph": "When the weapon is fully charged, the next attack will freeze targets for 2 seconds and leave them frostbitten for 6 seconds. Breaking the ice shell causes additional damage equal to 151% of ATK. While frostbitten, the target's weapon charge rate is reduced by 50%."
-                    }
-                ]
-            },
-            {
-                "name": "Frost Resonance",
-                "description": [
-                    {
-                        "paragraph": "Increase Frost ATK by 15% and Frost Resistance by 25%. Activate by equipping 2 or more Frost weapons. This set effect works in the off-hand slot. Cannot stack with effects of the same type."
-                    }
-                ]
-            }
-        ],
-        "oneStar": [
-            {
-                "paragraph": "Receive Alyss's Support when using any frost weapon skill in the Chilling Field, summoning Alyss to cast a discharge skill on the field. The skill that triggers the discharge skill will then be used again afterward. Alyss's supporting discharge skill damage is equal to 70% of her skill's original damage."
-            }
-        ],
-        "twoStar": [
-            {
-                "paragraph": "Increase the current weapon's base ATK growth by 16%."
-            }
-        ],
-        "threeStar": [
-            {
-                "paragraph": "Receive Alyss's Support every time Starry Night is triggered and increase Starry Night and Hoarfrost Damage by 10% for 12 seconds. Stack up to 3 times."
-            }
-        ],
-        "fourStar": [
-            {
-                "paragraph": "Increase the current weapon's base ATK growth by 32%."
-            }
-        ],
-        "fiveStar": [
-            {
-                "paragraph": "Increase the damage of Unyielding Wing's normal attack and Spatial Slice by 35%. The Wanderer receives Alyss's Protection upon taking fatal damage, protecting the Wanderer from death 1 time and making the Wanderer immune to damage for a short time. Cooldown: 60 seconds."
-            }
-        ],
-        "sixStar": [
-            {
-                "paragraph": "Increase frost damage by 12% when Alyss's Support reaches 3 stacks."
-            }
-        ],
-        "attacks": [
-            {
-                "name": "Swan Arc",
-                "icon": "",
-                "method": ["Attack x5"],
-                "description": [
-                    {
-                        "paragraph": "While on the ground, use Unyielding Wing to launch 5 consecutive attacks."
-                    }
-                ],
-                "hasChain": true,
-                "chain": [
-                    {
-                        "combo": "101.3% of ATK and knock the target back a short distance."
-                    },
-                    {
-                        "combo": "107.3% of ATK and knock the target back significantly."
-                    },
-                    {
-                        "combo": "116.4% of ATK and knock the target back a short distance."
-                    },
-                    {
-                        "combo": "141.8% of ATK and suspend the target."
-                    },
-                    {
-                        "combo": "241.5% of ATK and launch the target."
-                    }
-                ]
-            },
-            {
-                "name": "Sweeping Combo",
-                "icon": "",
-                "method": ["Jump", "Attack x5"],
-                "description": [
-                    {
-                        "paragraph": "While airborne, use normal attack to attack 5 times in a row and consume endurance."
-                    }
-                ],
-                "hasChain": true,
-                "chain": [
-                    {
-                        "combo": "72.1% of ATK ."
-                    },
-                    {
-                        "combo": "65.6% of ATK ."
-                    },
-                    {
-                        "combo": "115.8% of ATK ."
-                    },
-                    {
-                        "combo": "131.1% of ATK ."
-                    },
-                    {
-                        "combo": "343.9% of ATK and deliver a knockdown."
-                    }
-                ]
-            },
-            {
-                "name": "Dancing Flash",
-                "icon": "",
-                "method": ["Attack x1", "Hold"],
-                "description": [
-                    {
-                        "paragraph": "While using Swan Arc, tap and hold normal attack to pull the targets together and deal damage equal to 303.9% of ATK to all targets within range. The last hit strongly suspends the target and deals damage equal to 95% of ATK."
-                    },
-                    {
-                        "paragraph": "Passive: Within 4 seconds of using any weapon skill or entering Latent State, become immune to damage during the next Dancing Flash."
-                    }
-                ],
-                "hasChain": false
-            },
-            {
-                "name": "Sweeping Dive",
-                "icon": "",
-                "method": ["Jump", "Hold"],
-                "description": [
-                    {
-                        "paragraph": "Tap and hold normal attack while airborne (or tap when a target is selected), or use normal attack while climbing, jumping backward, or using the Jetpack to trigger Pummel. While falling, deal damage equal to 95% of ATK each hit and continuously consume endurance."
-                    }
-                ],
-                "hasChain": false
-            },
-            {
-                "name": "Waltz",
-                "icon": "",
-                "method": ["Hold"],
-                "description": [
-                    {
-                        "paragraph": "Hold the normal attack button. Each hit deals damage equal to 104.5% of ATK to the target. The last hit deals damage equal to 190% of ATK . Gain hyperbody during this time and continuously consume endurance."
-                    }
-                ],
-                "hasChain": false
-            }
-        ],
-        "dodge": [
-            {
-                "name": "Dance Form",
-                "icon": "",
-                "method": ["Backwards Dodge", "Attack x3"],
-                "description": [
-                    {
-                        "paragraph": "After dodging backwards, tap normal attack 3 times consecutively to deal damage equal to 572.8% of ATK to the target, and strongly suspend the target with the first hit."
-                    }
-                ],
-                "hasChain": false
-            },
-            {
-                "name": "Latent State",
-                "icon": "",
-                "method": ["Dodge", "Hold"],
-                "description": [
-                    {
-                        "paragraph": "Dodge before holding to enter the Latent State, during which endurance is constantly consumed and speed is increased by 50%. Increase speed by an additional 50% in the Chilling Field. When exiting the Latent State, deal damage equal to 305.1% of ATK to all nearby targets and freeze them for 2 seconds."
-                    }
-                ],
-                "hasChain": false
-            },
-            {
-                "name": "Dodge",
-                "icon": "",
-                "method": ["Directional Dodge"],
-                "description": [
-                    {
-                        "paragraph": "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for 0.5 seconds."
-                    }
-                ],
-                "hasChain": false
-            }
-        ],
-        "skill": [
-            {
-                "name": "Chilling Field",
-                "icon": "",
-                "description": [
-                    {
-                        "paragraph": "Pull nearby targets together, then deal damage equal to 857.7% of ATK to them and strongly suspend them. The Wanderer enters the Chilling Field for 30 seconds. Cooldown: 25 seconds. Gain hyperbody while the skill is active."
-                    },
-                    {
-                        "paragraph": "Passive: When using any frost weapon discharge skill in the Chilling Field, deal frost damage equal to 125.8% of ATK 1 time and slow the target for 2 seconds (the slow effect is ineffective against bosses). While in the field, for every 12 times the Unyielding Wing's hit effect is triggered, further triggers Spatial Slice 1 time, dealing damage equal to 165% of ATK 1 time to targets in the space every 2 seconds for 25 seconds (this also stops when the space disappears)."
-                    }
-                ]
-            }
-        ],
-        "discharge": [
-            {
-                "name": "Starry Night",
-                "icon": "",
-                "description": [
-                    {
-                        "paragraph": "When weapon charge is full or Phantasia is triggered, switching to this weapon from another removes all debuffs from the wielder and unleashes a discharge skill, dealing damage equal to 553.2% of ATK and strongly launching them, during which damage immunity lasts for 2.6 seconds (unavailable in Apex League)."
-                    }
-                ]
-            }
-        ],
-        "trait": [
-            {
-                "affinity": "1200",
-                "description": [
-                    {
-                        "paragraph": "Increase final damage by 13% for 12 seconds after successfully using a weapon skill."
-                    }
-                ]
-            },
-            {
-                "affinity": "4000",
-                "description": [
-                    {
-                        "paragraph": "Increase final damage by 18% for 18 seconds after successfully using a weapon skill. After Unyielding Wing is advanced to 1 star, receive Alyss' Support when using a Physical/Flame/Volt weapon skill in the Chilling Field, summoning Alyss to cast a discharge skill on the field. The skill that triggers the discharge skill will then be used again afterward."
-                    }
-                ]
-            }
+      },
+      {
+        "name": "Balanced Resonance",
+        "description": [
+          {
+            "paragraph": "Increase all ATK by 15%. Activate by equipping 3 weapons of different types. This set effect also works with weapons in the off-hand slot."
+          }
         ]
-    },
-    {
-        "slug": "annabella",
-        "name": "Annabella",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "tianlang",
-        "name": "Tian Lang",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "lyra",
-        "name": "Lyra",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "lin",
-        "name": "Lin",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "sakifuwa",
-        "name": "Saki Fuwa",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "ruby",
-        "name": "Ruby",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "cobaltb",
-        "name": "Cobalt-B",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false,
-        "weapon": "Flaming Revolver",
-        "weaponDescription": "Invented by a mad scientist. With its impressive test numbers, one can only imagine how powerful it might be at full power.",
-        "avatar": "cobaltb_avatar",
-        "resonance": "attack",
-        "element": "element_flame",
-        "hasAtk": true,
-        "hasHP": true,
-        "hasCrit": true,
-        "hasRes": false,
-        "shatter": "12.5",
-        "charge": "10",
-        "roles": [
-            ""
+      }
+    ],
+    "oneStar": [
+      {
+        "paragraph": "When Su-Paw-Star summons a consciousness and is on cooldown, gain the Aural Fever skill. Rush to the target and attack multiple times, dealing damage up to 720% of ATK. Each hit landed slows the enemy for a brief period and restores HP equal to 100% of ATK. The last hit places 2 musical notes on the target. Aural Fever cooldown: 15 seconds."
+      },
+      {
+        "paragraph": "When 3 or more notes are detonated and the cooldown of Aural Fever is greater than 5 seconds, clear the cooldown of Aural Fever. This effect can only trigger 1 time every 15 seconds."
+      }
+    ],
+    "twoStar": [
+      {
+        "paragraph": "Increase the current weapon's base ATK growth by 16%."
+      }
+    ],
+    "threeStar": [
+      {
+        "paragraph": "While Songworld is active:"
+      },
+      {
+        "paragraph": "For every 45% of max HP lost or when using the skill Aural Fever, trigger a Songworld Quake which deals damage equal to 650% of ATK to targets in the Songworld."
+      },
+      {
+        "paragraph": "For every 99% of max HP lost, gain 1 escape death (block a lethal effect and become immune to damage for a short time) for 45 seconds, stacking up to 1 time."
+      }
+    ],
+    "fourStar": [
+      {
+        "paragraph": "Increase the current weapon's base ATK growth by 32%."
+      }
+    ],
+    "fiveStar": [
+      {
+        "paragraph": "Increase the damage multiplier of musical notes' detonation to 40%, and the DoT caused by intoxication to 1.5% of max HP every second."
+      },
+      {
+        "paragraph": "While Songworld is active, Songworld Quake is triggered automatically if it doesn't trigger for 12 seconds while in combat."
+      }
+    ],
+    "sixStar": [
+      {
+        "paragraph": "Increase crit rate by 18% while wielding Gleipnir. The crit rate increase lasts another 5 seconds after switching to other weapons."
+      }
+    ],
+    "attacks": [
+      {
+        "name": "Woof",
+        "icon": "",
+        "method": [
+          "Attack x7"
         ],
-        "effects": [
-            {
-                "name": "Flame",
-                "description": [
-                    {
-                        "paragraph": "When the weapon is fully charged, the next attack will set the target on fire for 8 seconds, causing damage equal to 58% of ATK every second. Ignited targets have 50% reduced healing efficacy."
-                    }
-                ]
-            },
-            {
-                "name": "Flame Resonance",
-                "description": [
-                    {
-                        "paragraph": "Increase Flame ATK by 15% and Flame Resistance by 25%. Activate by equipping 2 or more Flame weapons. This set effect works in the off-hand slot. Cannot stack with effects of the same type."
-                    }
-                ]
-            }
+        "description": [
+          {
+            "paragraph": "Initiate 7 attacks in a row when on the ground."
+          }
         ],
-        "oneStar": [
-            {
-                "paragraph": "Each round of Barrage deals additional damage equal to 2% of the target's current HP (cannot exceed 200% of ATK)."
-            }
-        ],
-        "twoStar": [
-            {
-                "paragraph": "Increase the current weapon's base ATK growth by 16%."
-            }
-        ],
-        "threeStar": [
-            {
-                "paragraph": "Heavy Bombardment branch skill, and Close Quarters dodge attack inflict Ion Scorch on targets that are already burned, dealing flame damage equal to 40% of their current ATK every second for 10 seconds."
-            }
-        ],
-        "fourStar": [
-            {
-                "paragraph": "Increase the current weapon's base ATK growth by 32%."
-            }
-        ],
-        "fiveStar": [
-            {
-                "paragraph": "The damage from Ion Scorch increases to 60% of ATK. Successful attacks with any weapon's dodge skills will refresh the duration of Ion Scorch."
-            }
-        ],
-        "sixStar": [
-            {
-                "paragraph": "Barrage has a 15-second burning effect. Successful attacks with any weapon's dodge skills reduce the cooldown of Barrage by 4 seconds. This cooldown of the effect: 1.5 seconds. The DoT burn from the dodge skill also triggers a cooldown reduction effect."
-            }
-        ],
-        "attacks": [
-            {
-                "name": "Normal Attack",
-                "icon": "",
-                "method": ["Attack x5"],
-                "description": [
-                    {
-                        "paragraph": "On the ground, use normal attack button to launch 5 attacks in a row."
-                    }
-                ],
-                "hasChain": true,
-                "chain": [
-                    {
-                        "combo": "52.3% of ATK damage."
-                    },
-                    {
-                        "combo": "75.6% of ATK damage."
-                    },
-                    {
-                        "combo": "94.5% of ATK damage."
-                    },
-                    {
-                        "combo": "142.8% of ATK damage."
-                    },
-                    {
-                        "combo": "137.8% of ATK damage."
-                    }
-                ]
-            },
-            {
-                "name": "Charged Shot",
-                "icon": "",
-                "method": ["Hold"],
-                "description": [
-                    {
-                        "paragraph": "Tap and hold normal attack to charge a shot and release to fire rounds, dealing 95.4% of ATK damage, plus an explosion 3 seconds later (or if the target dies), dealing 23.9% of ATK as damage to nearby enemies. Each time the target is dealt damage before the explosion (up to 4 times), AoE is doubled and damage is increased."
-                    }
-                ],
-                "hasChain": false
-            },
-            {
-                "name": "Jumping Blast",
-                "icon": "",
-                "method": ["Jump", "Attack"],
-                "description": [
-                    {
-                        "paragraph": "While airborne or after jumping once, use an aerial attack. Toss a bomb that deals damage equal to 90.8% of ATK to enemies in a circle ahead, knocking them back a certain distance. Consumes 250 endurance."
-                    }
-                ],
-                "hasChain": false
-            },
-            {
-                "name": "Aerial Discharge",
-                "icon": "",
-                "method": ["Jump", "Jump", "Attack"],
-                "description": [
-                    {
-                        "paragraph": "After double-jumping, use a jump attack in the air. Fire an Omnium beam downward. The beam then sweeps forward, dealing damage equal to 33.8% of ATK."
-                    }
-                ],
-                "hasChain": false
-            },
-            {
-                "name": "Heavy Bombardment",
-                "icon": "",
-                "method": ["Attack", "Hold"],
-                "description": [
-                    {
-                        "paragraph": "Hold attack button during a normal attack to unleash Suppressing Fire in front, dealing enemies 102% of ATK AoE damage."
-                    }
-                ],
-                "hasChain": false
-            }
-        ],
-        "dodge": [
-            {
-                "name": "Dodge",
-                "icon": "",
-                "method": ["Directional Dodge"],
-                "description": [
-                    {
-                        "paragraph": "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for 0.5 seconds."
-                    }
-                ],
-                "hasChain": false
-            },
-            {
-                "name": "Close Quarters",
-                "icon": "",
-                "method": ["Dodge", "Attack"],
-                "description": [
-                    {
-                        "paragraph": "Use normal attack right after dodging to trigger Close Quarters. Deal damage equal to 156.1% of ATK to targets in a frontal cone area."
-                    }
-                ],
-                "hasChain": false
-            }
-        ],
-        "skill": [
-            {
-                "name": "Barrage",
-                "icon": "",
-                "description": [
-                    {
-                        "paragraph": "Constant fire in a frontal cone area to deal 705.1% of ATK damage. Cooldown: 60 seconds."
-                    }
-                ]
-            }
-        ],
-        "discharge": [
-            {
-                "name": "Explosive Rain",
-                "icon": "",
-                "description": [
-                    {
-                        "paragraph": "When weapon charge is full or Phantasia is triggered, switching to this weapon from another weapon removes all debuffs from the wielder and unleashes 3 grenades forward, dealing 570% of ATK AoE damage and causing launch."
-                    }
-                ]
-            }
-        ],
-        "trait": [
-            {
-                "affinity": "1200",
-                "description": [
-                    {
-                        "paragraph": "After Cobalt-B uses her discharge skill, restore a random amount of weapon charge between 50 to 120 points."
-                    }
-                ]
-            },
-            {
-                "affinity": "4000",
-                "description": [
-                    {
-                        "paragraph": "After Cobalt-B uses her discharge skill, restore a random amount of weapon charge between 90 to 180 points."
-                    }
-                ]
-            }
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "48.6% of ATK."
+          },
+          {
+            "combo": "54.1% of ATK."
+          },
+          {
+            "combo": "54.1% of ATK."
+          },
+          {
+            "combo": "85.4% of ATK."
+          },
+          {
+            "combo": "54.1% of ATK."
+          },
+          {
+            "combo": "152.9% of ATK."
+          },
+          {
+            "combo": "169% of ATK."
+          }
         ]
-    },
-    {
-        "slug": "claudia",
-        "name": "Claudia",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "frigg",
-        "name": "Frigg",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "nemesis",
-        "name": "Nemesis",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "crow",
-        "name": "Crow",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "huma",
-        "name": "Huma",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "samir",
-        "name": "Samir",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "zero",
-        "name": "Zero",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "shiro",
-        "name": "Shiro",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "king",
-        "name": "KING",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "cocoritter",
-        "name": "Cocoritter",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "tsubasa",
-        "name": "Tsubasa",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "meryl",
-        "name": "Meryl",
-        "tag": "new",
-        "rarity": "SSR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "pepper",
-        "name": "Pepper",
-        "tag": "new",
-        "rarity": "SR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "hilda",
-        "name": "Hilda",
-        "tag": "new",
-        "rarity": "SR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "ene",
-        "name": "Ene",
-        "tag": "new",
-        "rarity": "SR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "echo",
-        "name": "Echo",
-        "tag": "new",
-        "rarity": "SR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    },
-    {
-        "slug": "bailing",
-        "name": "Bai Ling",
-        "tag": "new",
-        "rarity": "SR",
-        "isMDPS": true,
-        "isBuffer": true,
-        "isHeal": true,
-        "isSupportBuffer": true,
-        "isShatter": false,
-        "isTaunt": false
-    }
+      },
+      {
+        "name": "Unshackle",
+        "icon": "",
+        "method": [
+          "Jump",
+          "Attack x7"
+        ],
+        "description": [
+          {
+            "paragraph": "While airborne or after jumping once, use normal attack to attack 7 times in a row in mid-air."
+          }
+        ],
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "52.9% of ATK."
+          },
+          {
+            "combo": "60.8% of ATK."
+          },
+          {
+            "combo": "60.8% of ATK."
+          },
+          {
+            "combo": "105.8% of ATK."
+          },
+          {
+            "combo": "79.3% of ATK."
+          },
+          {
+            "combo": "183.4% of AT."
+          },
+          {
+            "combo": "202.8% of ATK."
+          }
+        ]
+      },
+      {
+        "name": "Wolfbite",
+        "icon": "",
+        "method": [
+          "Attack x2",
+          "Jump",
+          "Jump"
+        ],
+        "description": [
+          {
+            "paragraph": "While on the ground, tap and hold normal attack during the second or the fourth normal attack to trigger Wolfbite."
+          },
+          {
+            "paragraph": "Charge forward quickly, dealing damage equal to 69% of ATK and knocking the target back."
+          },
+          {
+            "paragraph": "After triggering Wolfbite, tap and hold normal attack to trigger Upswipe."
+          },
+          {
+            "paragraph": "Swipe upward, dealing damage equal to 93.1% of ATK and suspend the target."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Menacing Hunt",
+        "icon": "",
+        "method": [
+          "Attack x5",
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "While on the ground, tap and hold normal attack during the fifth or sixth normal attack to trigger Menacing Hunt. Descend from above, gaining temporary invincibility and dealing damage equal to 254.3% of ATK and suspend the target."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Think and Fast",
+        "icon": "",
+        "method": [
+          "Jump",
+          "Hold",
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "Tap and hold normal attack while airborne (tap when a target is available), or tap normal attack while climbing, jumping backward, or using a jetpack to trigger Thick and Fast."
+          },
+          {
+            "paragraph": "Descend from above, dealing damage equal to 200% of ATK upon landing and suspending surrounding targets."
+          },
+          {
+            "paragraph": "After triggering Thick and Fast, tap and hold normal attack again to trigger Roar."
+          },
+          {
+            "paragraph": "Let out a terrifying Roar in all directions and gain temporary invincibility, dealing damage equal to 200% of ATK to nearby targets and knocking them back."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Trailing Note",
+        "icon": "",
+        "method": [
+          "Jump",
+          "Attack x2",
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "While airborne, tap and hold normal attack when using the second to the seventh Unshackle to trigger Trailing Note."
+          },
+          {
+            "paragraph": "Roam through the air multiple times and deal damage equal to 277.3% of ATK to surrounding targets."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Reverberation",
+        "icon": "",
+        "method": [],
+        "description": [
+          {
+            "paragraph": "Each time a target is hit by a normal attack, there is a 50% chance to place 1 musical note on the target that lasts for 15 seconds, stacking up to 5 notes."
+          },
+          {
+            "paragraph": "Wolfbite, Menacing Hunt, and Thick and Fast have a 100% chance to place 1 musical note on the target on hit."
+          },
+          {
+            "paragraph": "Musical notes can only be placed at least 1 second apart."
+          },
+          {
+            "paragraph": "Passive: Trailing Note and Melody will detonate all the musical notes on the target on hit, dealing damage equal to 20% of ATK times the number of musical notes detonated. Damage is doubled if 3 or more notes are detonated."
+          },
+          {
+            "paragraph": "Passive: After detonating 2 or more musical notes, cause the target to become intoxicated, dealing damage equal to 1% of Wanderer's max HP every second for 16 seconds."
+          },
+          {
+            "paragraph": "Damage from musical note detonation and intoxication is considered as dodge attack damage."
+          }
+        ],
+        "hasChain": false
+      }
+    ],
+    "dodge": [
+      {
+        "name": "Melody",
+        "icon": "",
+        "method": [
+          "Directional Dodge",
+          "Attack"
+        ],
+        "description": [
+          {
+            "paragraph": "Attack with claws, dealing damage equal to 210.8% of ATK to surrounding targets and knocking them down."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Dodge",
+        "icon": "",
+        "method": [
+          "Directional Dodge"
+        ],
+        "description": [
+          {
+            "paragraph": "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for 0.5 seconds."
+          },
+          {
+            "paragraph": "Passive: Place a musical note on the target."
+          }
+        ],
+        "hasChain": false
+      }
+    ],
+    "skill": [
+      {
+        "name": "Su-Paw-Star",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "Summon a consciousness that is separate from the target, dealing damage equal to 124.1% of ATK on hit. Create a Songworld at the Wanderer's current location that lasts 30 seconds, in which damage taken by the Wanderer is reduced by 8% while ignoring 20% of the target's defense."
+          },
+          {
+            "paragraph": "The consciousness has HP equal to 30 times the Wanderer's max HP. It can only receive non-passive damage from Gleipnir, and 100% of the damage is transferred to the target's main body (1% for enemy Wanderers), while restoring HP equal to 50% of ATK to the Wanderer. While the consciousness is active, the Wanderer takes 12% less damage from the target's main body. The consciousness will exist for up to 15 seconds."
+          },
+          {
+            "paragraph": "After the consciousness returns to the target's main body, deal area damage equal to 705.4% of ATK."
+          },
+          {
+            "paragraph": "Recalling the consciousness: The consciousness returns to its main body when it's defeated, when its duration runs out, when a new consciousness is summoned, or when it strays too far from the body."
+          },
+          {
+            "paragraph": "Su-Paw-Star cooldown: 30 seconds."
+          }
+        ]
+      }
+    ],
+    "discharge": [
+      {
+        "name": "Awoooo!",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "When weapon charge is full or Phantasia is triggered, remove all debuffs from the wielder upon switching to this weapon, then rush to the target and attack, dealing damage up to 661.8% of ATK to targets in the area and placing 3 musical notes on them. Briefly become invincible while the skill is active (unavailable in The Critical Abyss and Apex League)."
+          }
+        ]
+      }
+    ],
+    "trait": [
+      {
+        "affinity": "1200",
+        "description": [
+          {
+            "paragraph": "Increase final damage by 13% when equipping 2 weapons of different types. Increase final damage by 18% when equipping 3 weapons of different types."
+          }
+        ]
+      },
+      {
+        "affinity": "4000",
+        "description": [
+          {
+            "paragraph": "Increase final damage by 18% when equipping 2 weapons of different types. Increase final damage by 23% when equipping 3 weapons of different types."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "umi",
+    "name": "Umi",
+    "tag": "new",
+    "rarity": "SSR",
+    "weapon": "Mobius",
+    "weaponDescription": "The whip favored by the new Executor, Umi. Umi's favorite part of it is that she doesn't get tripped up by it, usually.",
+    "avatar": "umi_avatar",
+    "resonance": "attack",
+    "element": "element_physical",
+    "hasAtk": true,
+    "hasHP": true,
+    "hasCrit": true,
+    "hasRes": false,
+    "shatter": "12",
+    "charge": "9",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ],
+    "effects": [
+      {
+        "name": "Grievous",
+        "description": [
+          {
+            "paragraph": "Fully charged weapons will inflict damage equal to 137.00% of ATK with the next attack, and make the target grievous for 7 seconds, taking 20% extra damage."
+          }
+        ]
+      },
+      {
+        "name": "Physical Resonance",
+        "description": [
+          {
+            "paragraph": "Increase physical ATK by 15% and physical resistance by 25%. Activate by equipping 2 or more physical weapons. This set effect also works with weapons in the off-hand slot. Cannot stack with effects of the same type."
+          }
+        ]
+      }
+    ],
+    "oneStar": [
+      {
+        "paragraph": "When switching to Mobius, immediately gain 30 warmup points. Cooldown: 17 seconds. Upon entering Magic Trick, deal area damage equal to 840% of ATK to nearby targets and reduce their physical resistance by 10% for 20 seconds."
+      }
+    ],
+    "twoStar": [
+      {
+        "paragraph": "Increase the current weapon's base ATK growth by 16%."
+      }
+    ],
+    "threeStar": [
+      {
+        "paragraph": "When ending Magic Trick early, deal wide-area damage over 13 seconds. The current cooldown of Mobius' skill is reduced, and physical damage is increased by 25% for a period of time (this effect does not apply to Mobius). If Magic Trick has more than 13 seconds remaining, gain an additional 200 weapon charge. The more time remaining when Magic Trick ends, the higher the area damage, the greater the skill cooldown reduction, and the longer the physical damage boost lasts. The area damage dealt is capped at 200% of ATK (the maximum damage is dealt when the remaining time is more than 13 seconds). The maximum cooldown reduction is 13 seconds, and the physical damage boost can last up to 20 seconds."
+      }
+    ],
+    "fourStar": [
+      {
+        "paragraph": "Increase the current weapon's base ATK growth by 32%."
+      }
+    ],
+    "fiveStar": [
+      {
+        "paragraph": "Gain the Psychic Puppet effect upon entering Magic Trick, increasing Mobius's physical damage boost to 15%. During Magic Trick, recover 2% of Max HP and 10 weapon charge every second."
+      }
+    ],
+    "sixStar": [
+      {
+        "paragraph": "During Magic Trick, Mobius has an additional whip that is automatically swung whenever Mobius uses normal attacks or dodge attacks, dealing damage equal to 100% of Mobius's ATK (this damage is not counted as dealing normal attacks)."
+      }
+    ],
+    "attacks": [
+      {
+        "name": "Basic Technique",
+        "icon": "/umi/umi_attack_1.png",
+        "method": [
+          "Attack x5"
+        ],
+        "description": [
+          {
+            "paragraph": "While on the ground, use Mobius to launch 5 consecutive attacks. The shatter of this skill is increased by an additional 50%."
+          }
+        ],
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "76.9% of ATK and knock the target back."
+          },
+          {
+            "combo": "84.4% of ATK and knock the target back."
+          },
+          {
+            "combo": "112.1% of ATK and knock the target down."
+          },
+          {
+            "combo": "105.5% of ATK and drag and drop the target."
+          },
+          {
+            "combo": "265.1% of ATK and launch the target."
+          }
+        ]
+      },
+      {
+        "name": "Air Combo",
+        "icon": "/umi/umi_attack_2.png",
+        "method": [
+          "Jump",
+          "Attack x5"
+        ],
+        "description": [
+          {
+            "paragraph": "While airborne, use normal attack to attack 5 times in a row in mid-air, consuming endurance."
+          }
+        ],
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "46% of ATK."
+          },
+          {
+            "combo": "66.5% of ATK."
+          },
+          {
+            "combo": "88.4% of ATK."
+          },
+          {
+            "combo": "88.8% of ATK."
+          },
+          {
+            "combo": "260.5% of ATK."
+          }
+        ]
+      },
+      {
+        "name": "Ouf of the Blue",
+        "icon": "/umi/umi_attack_3.png",
+        "method": [
+          "Attack",
+          "Hold Attack"
+        ],
+        "description": [
+          {
+            "paragraph": "While using Basic Technique on the ground, tap and hold normal attack to trigger Out of the Blue directly based on the currently locked target. Smaller locked-on targets are dealt damage equal to 105% of ATK and draw in nearby targets. Larger locked-on targets are dealt damage equal to 85.5% of ATK and draw in nearby targets. This skill's shatter is additionally increased by 50%."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Stage Rotation",
+        "icon": "/umi/umi_attack_4.png",
+        "method": [
+          "Jump",
+          "Hold Attack"
+        ],
+        "description": [
+          {
+            "paragraph": "Tap and hold normal attack while airborne, or use normal attack while climbing, jumping backward, or using the Jetpack to trigger Pummel. Plummet from the skies, dealing damage equal to 121.5% of ATK and launching the target."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Close-Up Magic",
+        "icon": "/umi/skill_whip_melee.webp",
+        "method": [
+          "Hold Attack"
+        ],
+        "description": [
+          {
+            "paragraph": "Tap and hold normal attack on the ground to charge Anticipation, and release the button to trigger Close-up Magic based on the currently locked target. Smaller locked-on targets are dealt damage equal to 105% of ATK and draw in nearby targets. Larger locked-on targets are dealt damage equal to 85.5% of ATK and draw in nearby targets. This skill's shatter is additionally increased by 50%."
+          }
+        ],
+        "hasChain": false
+      }
+    ],
+    "dodge": [
+      {
+        "name": "Grand Illusion",
+        "icon": "/umi/skill_whip_dodge.webp",
+        "method": [
+          "Dodge",
+          "Attack"
+        ],
+        "description": [
+          {
+            "paragraph": "Tap normal attack during the short period after dodging to trigger Grand Illusion, dealing damage equal to 187.2% of ATK to nearby targets. This skill's shatter is additionally increased by 50%."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Dodge",
+        "icon": "/umi/skill_whip_dodge.webp",
+        "method": [
+          "Dodge"
+        ],
+        "description": [
+          {
+            "paragraph": "Dodge right before getting hit to trigger a Phantasia, cooldown 15 seconds, reducing the speed of enemies within an area. Become immune to hitstun for 0.5 seconds while dodging."
+          }
+        ],
+        "hasChain": false
+      }
+    ],
+    "skill": [
+      {
+        "name": "It's Magic Time",
+        "icon": "/umi/skill_whip_skill.webp",
+        "description": [
+          {
+            "paragraph": "Dealing damage with any weapon in the main slot will accrue warmup points. Cooldown: 0.06 seconds. Physical weapons accrue 1 point with each hit, and non-physical weapons accrue 0.5 points with each hit. The number of warmup points you have are displayed in the Magic Gauge, up to 100 points. When entering battle, immediately gain 100 warmup points."
+          },
+          {
+            "paragraph": "Skills can be cast once there are 100 warmup points in the Magic Gauge. Pull together enemies in a certain area and deal damage equal to 950% of ATK to the target. Become temporarily invincible (unavailable in Apex League and The Critical Abyss) and reduce the speed of targets within the hit area (unavailable in Apex League and The Critical Abyss). At the same time, activate Magic Trick to continuously consume warmup points for 18 seconds. Cooldown: 30 seconds. This cooldown is not affected by effects (including the clearance, reset, or change of the cooldown time) that are not from Mobius. During this time, the skill button is replaced with a Cut Card button."
+          },
+          {
+            "paragraph": "During Magic Trick, automatically get either a Spade or Heart Poker Card every 2 seconds. The type of Poker Card that is about to be obtained can be switched in advance with the Cut Card button. When there are 2 Poker Cards, the corresponding Card Magic will be automatically used. Cooldown: 3.8 seconds."
+          },
+          {
+            "paragraph": "During Magic Trick, you gain hyperbody and are considered as having a shield. Your Magic Gauge will also no longer be automatically replenished. Increase the physical damage of Mobius's attacks (normal attack and dodge attack) by 10% and shatter by 20%."
+          },
+          {
+            "paragraph": "Different Poker Card combinations will activate different Card Magic effects.\\nHeart + Spade → Psychic Puppet\\n Heart + Heart → Contradiction Corrosion\\nSpade + Spade → Card Sweep"
+          },
+          {
+            "paragraph": "Magic Trick ends when switching to another weapon in any way or upon being defeated."
+          },
+          {
+            "paragraph": "Gain hyperbody for 20 seconds when Magic Trick ends. If it ends naturally, it deals additional damage equal to 1,000% of ATK to nearby targets."
+          }
+        ]
+      },
+      {
+        "name": "Psychic Puppet",
+        "icon": "/umi/skill_whip_skill.webp",
+        "description": [
+          {
+            "paragraph": "Pull out a colony of bats from your hat and enhance yourself. During Magic Trick, physical damage dealt by Mobius is increased by 7.5%, and only 60% of the damage taken will be tallied. The remaining 40% will slowly be deducted from your HP over 10 seconds after Magic Trick ends. The delayed tally effect only applies when Fortitude Resonance is not active."
+          }
+        ]
+      },
+      {
+        "name": "Contradiction Corrosion",
+        "icon": "/umi/skill_whip_skill.webp",
+        "description": [
+          {
+            "paragraph": "Immediately recover 10% of Max HP and plant a Corrosion Flower on up to 7 targets within a certain range, which deal damage equal to 260% of ATK every second for 3 seconds."
+          }
+        ]
+      },
+      {
+        "name": "Card Sweep",
+        "icon": "/umi/skill_whip_skill.webp",
+        "description": [
+          {
+            "paragraph": "Summon a large number of flying cards, forming a hurricane that swarms to the target location, attacking the target up to 12 times and dealing total damage equal to 850% of ATK."
+          }
+        ]
+      }
+    ],
+    "discharge": [
+      {
+        "name": "Sleight of Hand",
+        "icon": "/umi/skill_whip_discharge.webp",
+        "description": [
+          {
+            "paragraph": "When weapon charge is full or Phantasia is triggered, remove all debuffs from the wielder upon switching to this weapon, cast Sleight of Hand and gain temporary invincibility (unavailable in Apex League and The Critical Abyss). Upon landing, deal damage equal to 316.2% of ATK plus 17 to the target. After swinging the whip, deal damage equal to 737.8% of ATK plus 39 to the target and strongly launch the target."
+          }
+        ]
+      }
+    ],
+    "trait": [
+      {
+        "affinity": "1200",
+        "description": [
+          {
+            "paragraph": "Increase final damage by 12% for 30 seconds whenever Umi uses It's Magic Time. This effect does not stack."
+          }
+        ]
+      },
+      {
+        "affinity": "4000",
+        "description": [
+          {
+            "paragraph": "Increase final damage by 18% for 30 seconds whenever Umi uses It's Magic Time. This effect does not stack."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "alyss",
+    "name": "Alyss",
+    "tag": "new",
+    "rarity": "SSR",
+    "weapon": "Unyielding Wing",
+    "weaponDescription": "Combat armor crafted with a foot-blade as its core. Powered by the user's mental energy, it is the result of cutting-edge science and technology from before the Cataclysm, and explodes with terrifying power when necessary.",
+    "avatar": "alyss_avatar",
+    "resonance": "attack",
+    "element": "element_frost",
+    "hasAtk": true,
+    "hasHP": true,
+    "hasCrit": false,
+    "hasRes": true,
+    "shatter": "8",
+    "charge": "12",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ],
+    "effects": [
+      {
+        "name": "Ice Shell",
+        "description": [
+          {
+            "paragraph": "When the weapon is fully charged, the next attack will freeze targets for 2 seconds and leave them frostbitten for 6 seconds. Breaking the ice shell causes additional damage equal to 151% of ATK. While frostbitten, the target's weapon charge rate is reduced by 50%."
+          }
+        ]
+      },
+      {
+        "name": "Frost Resonance",
+        "description": [
+          {
+            "paragraph": "Increase Frost ATK by 15% and Frost Resistance by 25%. Activate by equipping 2 or more Frost weapons. This set effect works in the off-hand slot. Cannot stack with effects of the same type."
+          }
+        ]
+      }
+    ],
+    "oneStar": [
+      {
+        "paragraph": "Receive Alyss's Support when using any frost weapon skill in the Chilling Field, summoning Alyss to cast a discharge skill on the field. The skill that triggers the discharge skill will then be used again afterward. Alyss's supporting discharge skill damage is equal to 70% of her skill's original damage."
+      }
+    ],
+    "twoStar": [
+      {
+        "paragraph": "Increase the current weapon's base ATK growth by 16%."
+      }
+    ],
+    "threeStar": [
+      {
+        "paragraph": "Receive Alyss's Support every time Starry Night is triggered and increase Starry Night and Hoarfrost Damage by 10% for 12 seconds. Stack up to 3 times."
+      }
+    ],
+    "fourStar": [
+      {
+        "paragraph": "Increase the current weapon's base ATK growth by 32%."
+      }
+    ],
+    "fiveStar": [
+      {
+        "paragraph": "Increase the damage of Unyielding Wing's normal attack and Spatial Slice by 35%. The Wanderer receives Alyss's Protection upon taking fatal damage, protecting the Wanderer from death 1 time and making the Wanderer immune to damage for a short time. Cooldown: 60 seconds."
+      }
+    ],
+    "sixStar": [
+      {
+        "paragraph": "Increase frost damage by 12% when Alyss's Support reaches 3 stacks."
+      }
+    ],
+    "attacks": [
+      {
+        "name": "Swan Arc",
+        "icon": "",
+        "method": [
+          "Attack x5"
+        ],
+        "description": [
+          {
+            "paragraph": "While on the ground, use Unyielding Wing to launch 5 consecutive attacks."
+          }
+        ],
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "101.3% of ATK and knock the target back a short distance."
+          },
+          {
+            "combo": "107.3% of ATK and knock the target back significantly."
+          },
+          {
+            "combo": "116.4% of ATK and knock the target back a short distance."
+          },
+          {
+            "combo": "141.8% of ATK and suspend the target."
+          },
+          {
+            "combo": "241.5% of ATK and launch the target."
+          }
+        ]
+      },
+      {
+        "name": "Sweeping Combo",
+        "icon": "",
+        "method": [
+          "Jump",
+          "Attack x5"
+        ],
+        "description": [
+          {
+            "paragraph": "While airborne, use normal attack to attack 5 times in a row and consume endurance."
+          }
+        ],
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "72.1% of ATK ."
+          },
+          {
+            "combo": "65.6% of ATK ."
+          },
+          {
+            "combo": "115.8% of ATK ."
+          },
+          {
+            "combo": "131.1% of ATK ."
+          },
+          {
+            "combo": "343.9% of ATK and deliver a knockdown."
+          }
+        ]
+      },
+      {
+        "name": "Dancing Flash",
+        "icon": "",
+        "method": [
+          "Attack x1",
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "While using Swan Arc, tap and hold normal attack to pull the targets together and deal damage equal to 303.9% of ATK to all targets within range. The last hit strongly suspends the target and deals damage equal to 95% of ATK."
+          },
+          {
+            "paragraph": "Passive: Within 4 seconds of using any weapon skill or entering Latent State, become immune to damage during the next Dancing Flash."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Sweeping Dive",
+        "icon": "",
+        "method": [
+          "Jump",
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "Tap and hold normal attack while airborne (or tap when a target is selected), or use normal attack while climbing, jumping backward, or using the Jetpack to trigger Pummel. While falling, deal damage equal to 95% of ATK each hit and continuously consume endurance."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Waltz",
+        "icon": "",
+        "method": [
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "Hold the normal attack button. Each hit deals damage equal to 104.5% of ATK to the target. The last hit deals damage equal to 190% of ATK . Gain hyperbody during this time and continuously consume endurance."
+          }
+        ],
+        "hasChain": false
+      }
+    ],
+    "dodge": [
+      {
+        "name": "Dance Form",
+        "icon": "",
+        "method": [
+          "Backwards Dodge",
+          "Attack x3"
+        ],
+        "description": [
+          {
+            "paragraph": "After dodging backwards, tap normal attack 3 times consecutively to deal damage equal to 572.8% of ATK to the target, and strongly suspend the target with the first hit."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Latent State",
+        "icon": "",
+        "method": [
+          "Dodge",
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "Dodge before holding to enter the Latent State, during which endurance is constantly consumed and speed is increased by 50%. Increase speed by an additional 50% in the Chilling Field. When exiting the Latent State, deal damage equal to 305.1% of ATK to all nearby targets and freeze them for 2 seconds."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Dodge",
+        "icon": "",
+        "method": [
+          "Directional Dodge"
+        ],
+        "description": [
+          {
+            "paragraph": "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for 0.5 seconds."
+          }
+        ],
+        "hasChain": false
+      }
+    ],
+    "skill": [
+      {
+        "name": "Chilling Field",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "Pull nearby targets together, then deal damage equal to 857.7% of ATK to them and strongly suspend them. The Wanderer enters the Chilling Field for 30 seconds. Cooldown: 25 seconds. Gain hyperbody while the skill is active."
+          },
+          {
+            "paragraph": "Passive: When using any frost weapon discharge skill in the Chilling Field, deal frost damage equal to 125.8% of ATK 1 time and slow the target for 2 seconds (the slow effect is ineffective against bosses). While in the field, for every 12 times the Unyielding Wing's hit effect is triggered, further triggers Spatial Slice 1 time, dealing damage equal to 165% of ATK 1 time to targets in the space every 2 seconds for 25 seconds (this also stops when the space disappears)."
+          }
+        ]
+      }
+    ],
+    "discharge": [
+      {
+        "name": "Starry Night",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "When weapon charge is full or Phantasia is triggered, switching to this weapon from another removes all debuffs from the wielder and unleashes a discharge skill, dealing damage equal to 553.2% of ATK and strongly launching them, during which damage immunity lasts for 2.6 seconds (unavailable in Apex League)."
+          }
+        ]
+      }
+    ],
+    "trait": [
+      {
+        "affinity": "1200",
+        "description": [
+          {
+            "paragraph": "Increase final damage by 13% for 12 seconds after successfully using a weapon skill."
+          }
+        ]
+      },
+      {
+        "affinity": "4000",
+        "description": [
+          {
+            "paragraph": "Increase final damage by 18% for 18 seconds after successfully using a weapon skill. After Unyielding Wing is advanced to 1 star, receive Alyss' Support when using a Physical/Flame/Volt weapon skill in the Chilling Field, summoning Alyss to cast a discharge skill on the field. The skill that triggers the discharge skill will then be used again afterward."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "annabella",
+    "name": "Annabella",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "tianlang",
+    "name": "Tian Lang",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "lyra",
+    "name": "Lyra",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "lin",
+    "name": "Lin",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "sakifuwa",
+    "name": "Saki Fuwa",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "ruby",
+    "name": "Ruby",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "cobaltb",
+    "name": "Cobalt-B",
+    "tag": "new",
+    "rarity": "SSR",
+    "weapon": "Flaming Revolver",
+    "weaponDescription": "Invented by a mad scientist. With its impressive test numbers, one can only imagine how powerful it might be at full power.",
+    "avatar": "cobaltb_avatar",
+    "resonance": "attack",
+    "element": "element_flame",
+    "hasAtk": true,
+    "hasHP": true,
+    "hasCrit": true,
+    "hasRes": false,
+    "shatter": "12.5",
+    "charge": "10",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ],
+    "effects": [
+      {
+        "name": "Flame",
+        "description": [
+          {
+            "paragraph": "When the weapon is fully charged, the next attack will set the target on fire for 8 seconds, causing damage equal to 58% of ATK every second. Ignited targets have 50% reduced healing efficacy."
+          }
+        ]
+      },
+      {
+        "name": "Flame Resonance",
+        "description": [
+          {
+            "paragraph": "Increase Flame ATK by 15% and Flame Resistance by 25%. Activate by equipping 2 or more Flame weapons. This set effect works in the off-hand slot. Cannot stack with effects of the same type."
+          }
+        ]
+      }
+    ],
+    "oneStar": [
+      {
+        "paragraph": "Each round of Barrage deals additional damage equal to 2% of the target's current HP (cannot exceed 200% of ATK)."
+      }
+    ],
+    "twoStar": [
+      {
+        "paragraph": "Increase the current weapon's base ATK growth by 16%."
+      }
+    ],
+    "threeStar": [
+      {
+        "paragraph": "Heavy Bombardment branch skill, and Close Quarters dodge attack inflict Ion Scorch on targets that are already burned, dealing flame damage equal to 40% of their current ATK every second for 10 seconds."
+      }
+    ],
+    "fourStar": [
+      {
+        "paragraph": "Increase the current weapon's base ATK growth by 32%."
+      }
+    ],
+    "fiveStar": [
+      {
+        "paragraph": "The damage from Ion Scorch increases to 60% of ATK. Successful attacks with any weapon's dodge skills will refresh the duration of Ion Scorch."
+      }
+    ],
+    "sixStar": [
+      {
+        "paragraph": "Barrage has a 15-second burning effect. Successful attacks with any weapon's dodge skills reduce the cooldown of Barrage by 4 seconds. This cooldown of the effect: 1.5 seconds. The DoT burn from the dodge skill also triggers a cooldown reduction effect."
+      }
+    ],
+    "attacks": [
+      {
+        "name": "Normal Attack",
+        "icon": "",
+        "method": [
+          "Attack x5"
+        ],
+        "description": [
+          {
+            "paragraph": "On the ground, use normal attack button to launch 5 attacks in a row."
+          }
+        ],
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "52.3% of ATK damage."
+          },
+          {
+            "combo": "75.6% of ATK damage."
+          },
+          {
+            "combo": "94.5% of ATK damage."
+          },
+          {
+            "combo": "142.8% of ATK damage."
+          },
+          {
+            "combo": "137.8% of ATK damage."
+          }
+        ]
+      },
+      {
+        "name": "Charged Shot",
+        "icon": "",
+        "method": [
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "Tap and hold normal attack to charge a shot and release to fire rounds, dealing 95.4% of ATK damage, plus an explosion 3 seconds later (or if the target dies), dealing 23.9% of ATK as damage to nearby enemies. Each time the target is dealt damage before the explosion (up to 4 times), AoE is doubled and damage is increased."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Jumping Blast",
+        "icon": "",
+        "method": [
+          "Jump",
+          "Attack"
+        ],
+        "description": [
+          {
+            "paragraph": "While airborne or after jumping once, use an aerial attack. Toss a bomb that deals damage equal to 90.8% of ATK to enemies in a circle ahead, knocking them back a certain distance. Consumes 250 endurance."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Aerial Discharge",
+        "icon": "",
+        "method": [
+          "Jump",
+          "Jump",
+          "Attack"
+        ],
+        "description": [
+          {
+            "paragraph": "After double-jumping, use a jump attack in the air. Fire an Omnium beam downward. The beam then sweeps forward, dealing damage equal to 33.8% of ATK."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Heavy Bombardment",
+        "icon": "",
+        "method": [
+          "Attack",
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "Hold attack button during a normal attack to unleash Suppressing Fire in front, dealing enemies 102% of ATK AoE damage."
+          }
+        ],
+        "hasChain": false
+      }
+    ],
+    "dodge": [
+      {
+        "name": "Dodge",
+        "icon": "",
+        "method": [
+          "Directional Dodge"
+        ],
+        "description": [
+          {
+            "paragraph": "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for 0.5 seconds."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Close Quarters",
+        "icon": "",
+        "method": [
+          "Dodge",
+          "Attack"
+        ],
+        "description": [
+          {
+            "paragraph": "Use normal attack right after dodging to trigger Close Quarters. Deal damage equal to 156.1% of ATK to targets in a frontal cone area."
+          }
+        ],
+        "hasChain": false
+      }
+    ],
+    "skill": [
+      {
+        "name": "Barrage",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "Constant fire in a frontal cone area to deal 705.1% of ATK damage. Cooldown: 60 seconds."
+          }
+        ]
+      }
+    ],
+    "discharge": [
+      {
+        "name": "Explosive Rain",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "When weapon charge is full or Phantasia is triggered, switching to this weapon from another weapon removes all debuffs from the wielder and unleashes 3 grenades forward, dealing 570% of ATK AoE damage and causing launch."
+          }
+        ]
+      }
+    ],
+    "trait": [
+      {
+        "affinity": "1200",
+        "description": [
+          {
+            "paragraph": "After Cobalt-B uses her discharge skill, restore a random amount of weapon charge between 50 to 120 points."
+          }
+        ]
+      },
+      {
+        "affinity": "4000",
+        "description": [
+          {
+            "paragraph": "After Cobalt-B uses her discharge skill, restore a random amount of weapon charge between 90 to 180 points."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "claudia",
+    "name": "Claudia",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "frigg",
+    "name": "Frigg",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "nemesis",
+    "name": "Nemesis",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "crow",
+    "name": "Crow",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "huma",
+    "name": "Huma",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "samir",
+    "name": "Samir",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "zero",
+    "name": "Zero",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "shiro",
+    "name": "Shiro",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "king",
+    "name": "KING",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "cocoritter",
+    "name": "Cocoritter",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "tsubasa",
+    "name": "Tsubasa",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "meryl",
+    "name": "Meryl",
+    "tag": "new",
+    "rarity": "SSR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "pepper",
+    "name": "Pepper",
+    "tag": "new",
+    "rarity": "SR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "hilda",
+    "name": "Hilda",
+    "tag": "new",
+    "rarity": "SR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "ene",
+    "name": "Ene",
+    "tag": "new",
+    "rarity": "SR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "echo",
+    "name": "Echo",
+    "tag": "new",
+    "rarity": "SR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  },
+  {
+    "slug": "bailing",
+    "name": "Bai Ling",
+    "tag": "new",
+    "rarity": "SR",
+    "roles": [
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
+    ]
+  }
 ]
