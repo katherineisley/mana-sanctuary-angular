@@ -1,0 +1,113 @@
+[
+    {
+        "slug": "yanmiao",
+        "name": "Yan Miao",
+        "tag": "new",
+        "avatar": "yanmiao_matrix",
+        "element": ["element_flame","element_physical"],
+        "rarity": "SSR",
+        "2pc": {
+            "onField":false,
+            "onHealingGuide":true,
+            "onTankGuide":false,
+            "roles": [
+                ""
+              ],
+            "recommendedDPS": [
+                ""
+              ],
+            "recommendedSupport": [
+                ""
+              ],
+            "recommendedTank": [
+                ""
+            ],
+            "effect": [
+                {
+                  "paragraph": ""
+                }
+              ]
+        },
+        "4pc": {
+            "onField":false,
+            "onHealingGuide":false,
+            "onTankGuide":false,
+            "roles": [
+                ""
+              ],
+            "recommendedDPS": [
+                ""
+              ],
+            "recommendedSupport": [
+                ""
+              ],
+            "recommendedTank": [
+                ""
+            ],
+            "effect": [
+                {
+                  "paragraph": ""
+                }
+              ]
+        }
+
+
+      },
+
+      {
+        "slug": "NEWCHARHERE",
+        "name": "NEWCHARHERE",
+        "tag": "new",
+        "avatar": "NEWCHARHERE",
+        "element": [""],
+        "rarity": "SSR",
+        "2pc": {
+            "onField":false,
+            "onHealingGuide":true,
+            "onTankGuide":false,
+            "roles": [
+                ""
+              ],
+            "recommendedDPS": [
+                ""
+              ],
+            "recommendedSupport": [
+                ""
+              ],
+            "recommendedTank": [
+                ""
+            ],
+            "effect": [
+                {
+                  "paragraph": ""
+                }
+              ]
+        },
+        "4pc": {
+            "onField":false,
+            "onHealingGuide":false,
+            "onTankGuide":false,
+            "roles": [
+                ""
+              ],
+            "recommendedDPS": [
+                ""
+              ],
+            "recommendedSupport": [
+                ""
+              ],
+            "recommendedTank": [
+                ""
+            ],
+            "effect": [
+                {
+                  "paragraph": ""
+                }
+              ]
+        }
+
+
+      }
+
+
+]
