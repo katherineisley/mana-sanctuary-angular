@@ -184,10 +184,10 @@
     "shatter": "13.5",
     "charge": "10.5",
     "roles": [
-        "MDPS",
-        "Buffer",
-        "Healer",
-        "SupportBuffer"
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "SupportBuffer"
     ],
     "effects": [
       {
