@@ -44,21 +44,31 @@
             flex-direction: column;
             gap: 40px;
 
-            .all-units {
+            .all-units, .all-matrices {
+                position: absolute;
+                border-radius: 10px;
                 display: flex;
                 flex-direction: column;
-                gap: 4px;
-                max-height: 500px;
+                max-height: 410px; // 4 entries + borders
+                max-width: 500px;
+                width: 100%;
                 overflow-y: auto;
+
+                .entry:first-child {
+                    border-top: none;
+                }
                 
                 .entry {
                     background-color: $content;
                     display: flex;
                     gap: 8px;
+                    cursor: pointer;
+                    border-top: 4px solid $border;
+                    // min-height: 120px; // i dislike this property but combining flex with
 
                     .avatar {
-                        width: 80px; // subject to change once avatars are cropped
-                        height: 80px;
+                        width: 100px; // subject to change once avatars are cropped
+                        height: 100px;
                     }
 
                     .wrapper {
@@ -71,12 +81,12 @@
                         }
 
                         .name {
-                            font-size: 16px;
+                            font-size: 18px;
                             color: $link;
                         }
 
                         .description {
-                            font-size: 12px;
+                            font-size: 16px;
                         }
                     }
                 }
