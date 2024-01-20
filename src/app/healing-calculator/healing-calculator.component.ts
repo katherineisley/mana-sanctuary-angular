@@ -25,7 +25,7 @@ export class HealingCalculatorComponent implements OnInit {
     }, error => console.error(error));
   }
 
-  toggleSelects(showUnits: boolean, event: MouseEvent) {
+  toggleSelects(showUnits: boolean, event: MouseEvent) { // IS NOT CONFIGURED FOR MOBILE
     // this might not make sense at first glance, but because we only have 2 states, we can just flip the boolean
     // true = show units, false = show matrices
     event.stopPropagation();
@@ -42,11 +42,11 @@ export class HealingCalculatorComponent implements OnInit {
   
     if (showUnits) {
       const allUnitsElement = this.el.nativeElement.querySelector('.all-units');
-      this.renderer.setStyle(allUnitsElement, 'top', `${top}px`); // use top + rect.height instead of rect.bottom
+      this.renderer.setStyle(allUnitsElement, 'top', `${top}px`);
       this.renderer.setStyle(allUnitsElement, 'left', `${left + rect.width + offset}px`);
     } else {
       const allMatricesElement = this.el.nativeElement.querySelector('.all-matrices');
-      this.renderer.setStyle(allMatricesElement, 'top', `${top}px`); // use top + rect.height instead of rect.bottom
+      this.renderer.setStyle(allMatricesElement, 'top', `${top}px`);
       this.renderer.setStyle(allMatricesElement, 'left', `${left + rect.width + offset}px`);
     }
   }
