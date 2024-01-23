@@ -152,59 +152,65 @@
           </div>
         </div>
       </div>
-         <!-- ATTACKS-->
+      <!-- ATTACKS-->
       <div *ngIf="activeInfo === 'Attacks'">
-      <div>
-        <div *ngFor="let item of unit?.attacks">
-          <p>{{ item.name }}</p>
-          <div *ngFor="let meth of item.method">
-            <p>{{ meth }}</p>
-          </div>
-          <img src="assets/simulacra/abilities/{{item.icon}}" alt="Normal Attack Icon">
-          <div *ngFor="let desc of item.description">
-            <p>{{ desc.paragraph }}</p>
-          </div>
-          <div *ngIf="item.hasChain">
-            <ul>
-              <li *ngFor="let combo of item.chain">{{ combo.combo }}</li>
-            </ul>
+        <div class="attack-wrap">
+          <div class="attack-border" *ngFor="let item of unit?.attacks">
+            <div class="attack-heading-wrap">
+              <img src="assets/simulacra/abilities/{{item.icon}}" alt="Normal Attack Icon">
+              <div class="attack-heading">
+                <p>{{ item.name }}</p>
+                <div class="attack-method-wrap">
+                  <div class="attack-method" *ngFor="let meth of item.method">
+                    <p>{{ meth }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div *ngFor="let desc of item.description">
+              <p>{{ desc.paragraph }}</p>
+            </div>
+            <div *ngIf="item.hasChain">
+              <ul>
+                <li *ngFor="let combo of item.chain">{{ combo.combo }}</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
       </div>
       <!-- DODGE-->
       <div *ngIf="activeInfo === 'Dodge'">
-      <div>
-        <div *ngFor="let item of unit?.dodge">
-          <p>{{ item.name }}</p>
-          <div *ngFor="let meth of item.method">
-            <p>{{ meth }}</p>
-          </div>
-          <img src="assets/simulacra/abilities/{{item.icon}}" alt="Dodge Attack Icon">
-          <div *ngFor="let desc of item.description">
-            <p>{{ desc.paragraph }}</p>
-          </div>
-          <div *ngIf="item.hasChain">
-            <ul>
-              <li *ngFor="let combo of item.chain">{{ combo.combo }}</li>
-            </ul>
+        <div>
+          <div *ngFor="let item of unit?.dodge">
+            <p>{{ item.name }}</p>
+            <div *ngFor="let meth of item.method">
+              <p>{{ meth }}</p>
+            </div>
+            <img src="assets/simulacra/abilities/{{item.icon}}" alt="Dodge Attack Icon">
+            <div *ngFor="let desc of item.description">
+              <p>{{ desc.paragraph }}</p>
+            </div>
+            <div *ngIf="item.hasChain">
+              <ul>
+                <li *ngFor="let combo of item.chain">{{ combo.combo }}</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-      </div>
-       <!-- SKILLS-->
+      <!-- SKILLS-->
       <div *ngIf="activeInfo === 'Skill'">
-      <div>
-        <div *ngFor="let item of unit?.skill">
-          <p>{{ item.name }}</p>
-          <img src="assets/simulacra/abilities/{{item.icon}}" alt="Skill Icon">
-          <div *ngFor="let desc of item.description">
-            <p>{{ desc.paragraph }}</p>
+        <div>
+          <div *ngFor="let item of unit?.skill">
+            <p>{{ item.name }}</p>
+            <img src="assets/simulacra/abilities/{{item.icon}}" alt="Skill Icon">
+            <div *ngFor="let desc of item.description">
+              <p>{{ desc.paragraph }}</p>
+            </div>
           </div>
         </div>
       </div>
-      </div>
-       <!-- DISCHARGE-->
+      <!-- DISCHARGE-->
       <div *ngIf="activeInfo === 'Discharge'">
         <div>
           <div *ngFor="let item of unit?.discharge">
@@ -216,7 +222,7 @@
           </div>
         </div>
       </div>
-       <!-- TRAIT-->
+      <!-- TRAIT-->
       <div *ngIf="activeInfo === 'Trait'">
         <div>
           <div *ngFor="let item of unit?.trait">

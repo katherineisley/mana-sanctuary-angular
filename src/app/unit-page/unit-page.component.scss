@@ -200,6 +200,45 @@
                 font-weight: 200;
               }
 
+              .attack-wrap{
+                padding: 20px 80px;
+                width: 100%;
+                display: flex;
+                margin: 20px 0 0 0;               
+                flex-direction: column;
+                row-gap: 30px;
+
+              }
+              .attack-heading-wrap{
+                display: flex;
+              
+              }
+              .attack-border{
+                border-bottom: 1px solid #F5F5F5;
+                
+              }
+
+
+              .attack-heading{
+                display: flex;
+                flex-direction: column;
+                margin-left:20px;
+              }
+              .attack-method-wrap{
+                display: flex;
+                gap:10px;
+              }
+              .attack-method{
+                padding: 5px 10px 5px 10px;
+                color: #CF9B14;
+                border-color: #CF9B14;
+                border-style: solid;
+                border-width: 1px;
+              }
+              .attack-method p {
+                margin: unset;
+              }
+
         }
     }
 }
