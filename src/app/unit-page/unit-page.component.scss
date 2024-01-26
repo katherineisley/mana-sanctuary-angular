@@ -62,7 +62,7 @@
 
             .unit-element {
                 display: flex;
-                justify-content: left;               
+                justify-content: left;
                 align-items: center;
                 gap: 5px;
             }
@@ -166,79 +166,81 @@
                     height: 3px;
                     background: white;
                     bottom: -2px;
-                    width: 0; 
-                    left: 0; 
+                    width: 0;
+                    left: 0;
                 }
             }
-            .advancements-table{
+
+            p {
+                font-weight: 400;
+                margin: unset;
+            }
+
+            .advancements-table {
                 padding: 20px 80px;
                 width: 100%;
                 display: flex;
-                margin: 20px 0 0 0;               
+                margin: 20px 0 0 0;
                 flex-direction: column;
                 row-gap: 30px;
-              }
-              
-              .advancements-table p{
-                margin:unset;
-              }
-              
-              .advancements-table-row{
-                display:flex;
+            }
+
+            .advancements-table-row {
+                display: flex;
                 width: 100%;
-                gap:30px;
+                gap: 30px;
                 justify-content: space-between;
                 align-items: center;
-              }
-              
-              .advancements-star-column{
-                width:5%;
-              }
-              
-              .advancements-text-column{
-                width:95%;
-                font-weight: 200;
-              }
+            }
 
-              .attack-wrap{
+            .advancements-star-column {
+                width: 5%;
+            }
+
+            .advancements-text-column {
+                width: 95%;
+                font-weight: 200;
+            }
+
+            .attack-wrap {
                 padding: 20px 80px;
                 width: 100%;
                 display: flex;
-                margin: 20px 0 0 0;               
+                margin: 20px 0 0 0;
                 flex-direction: column;
                 row-gap: 30px;
+            }
 
-              }
-              .attack-heading-wrap{
+            .attack-heading-wrap {
                 display: flex;
-              
-              }
-              .attack-border{
+                align-items: center;
+                gap: 20px;
+            }
+
+            .attack-container {
                 border-bottom: 1px solid #F5F5F5;
-                
-              }
+                padding: 0 0 20px;
+            }
 
-
-              .attack-heading{
+            .attack-heading {
                 display: flex;
                 flex-direction: column;
-                margin-left:20px;
-              }
-              .attack-method-wrap{
+                gap: 6px;
+            }
+
+            .attack-method-wrap {
                 display: flex;
-                gap:10px;
-              }
-              .attack-method{
-                padding: 5px 10px 5px 10px;
+                gap: 10px;
+            }
+
+            .attack-method {
+                // padding: 5px 10px 5px 10px; Repeating padding values can be simplified to one value (top + bottom, left + right)
+                padding: 5px 10px;
                 color: #CF9B14;
                 border-color: #CF9B14;
                 border-style: solid;
                 border-width: 1px;
-              }
-              .attack-method p {
-                margin: unset;
-              }
-
+            }
         }
     }
 }

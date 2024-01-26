@@ -155,7 +155,7 @@
       <!-- ATTACKS-->
       <div *ngIf="activeInfo === 'Attacks'">
         <div class="attack-wrap">
-          <div class="attack-border" *ngFor="let item of unit?.attacks">
+          <div class="attack-container" *ngFor="let item of unit?.attacks">
             <div class="attack-heading-wrap">
               <img src="assets/simulacra/abilities/{{item.icon}}" alt="Normal Attack Icon">
               <div class="attack-heading">
