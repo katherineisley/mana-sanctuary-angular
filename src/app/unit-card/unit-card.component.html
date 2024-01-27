@@ -4,7 +4,7 @@
     <div class="content-wrapper">
       <div class="{{unit.tag}}-tag">{{unit.tag}}</div>
       <div class="details-container">
-        <h5 class="name">{{unit.name}}</h5>
+        <h5 class="name">{{unit.name[0]}}</h5>
         <div class="type-and-buffs">
           <div class="icons">
             <img src="assets/elements/{{unit.resonance}}.png" alt="{{unit.resonance}} resonance">
@@ -23,7 +23,7 @@
     <div class="content-wrapper">
       <div class="{{unit.tag}}-tag">{{unit.tag}}</div>
       <div class="details-container">
-        <h5 class="name">{{unit.name}}</h5>
+        <h5 class="name">{{unit.name.length > 1 ? unit.name[1] : unit.name[0]}}</h5>
         <div class="type-and-buffs">
           <div class="icons">
             <img src="assets/elements/{{unit.resonance}}.png" alt="{{unit.resonance}} resonance">
