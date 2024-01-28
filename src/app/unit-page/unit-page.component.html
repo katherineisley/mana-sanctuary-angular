@@ -1,5 +1,5 @@
 <section class="main" *ngIf="unit">
-  <img class="background-splashart" src="assets/splashart/{{unit?.slug}}_a0_splashart.webp">
+  <img class="background-splashart" src="assets/splashart/{{unit?.slug}}_a3_splashart.webp">
   <div class="header-element">
     <div class="unit-avatar">
       <img src="assets/simulacra/{{unit?.avatar}}.png" alt="Character avatar">
@@ -160,7 +160,7 @@
             <div class="attack-heading-wrap">
               <img src="assets/simulacra/abilities/{{item.icon}}" alt="Normal Attack Icon">
               <div class="attack-heading">
-                <p>{{ item.name }}</p>
+                <div class="attack-name">{{ item.name }}</div>
                 <div class="attack-method-wrap">
                   <div class="attack-method" *ngFor="let meth of item.method">
                     <p>{{ meth }}</p>
@@ -168,12 +168,16 @@
                 </div>
               </div>
             </div>
-            <div *ngFor="let desc of item.description">
+            <div class="attack-description"  *ngFor="let desc of item.description">
               <p>{{ desc.paragraph }}</p>
             </div>
             <div *ngIf="item.hasChain">
               <ul>
-                <li *ngFor="let combo of item.chain">{{ combo.combo }}</li>
+                <li *ngFor="let combo of item.chain; let i = index">
+                  <span class="number">{{ i + 1 }}</span>
+                  <span>.</span>
+                  <span class="text">{{ combo.combo }}</span>
+                </li>
               </ul>
             </div>
           </div>
