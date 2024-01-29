@@ -32,13 +32,14 @@ export class DynamicContentHeightDirective implements AfterViewInit {
       // console.log("adjusting");
       const newHeight = windowHeight - headerHeight - footerHeight - 2 - this.getBotTopMargin(); // the -2 comes from the border of the footer
       // console.log(newHeight);
-      $(this.el.nativeElement).css('height', newHeight + 'px');
+      this.renderer.setStyle(this.el.nativeElement, 'height', `${newHeight}px`);
     }
   }
 
   private getBotTopMargin(): number {
-    const marginTop = parseInt($(this.el.nativeElement).css('margin-top'), 10);
-    const marginBottom = parseInt($(this.el.nativeElement).css('margin-bottom'), 10);
+    const style = window.getComputedStyle(this.el.nativeElement);
+    const marginTop = parseInt(style.marginTop, 10);
+    const marginBottom = parseInt(style.marginBottom, 10);
     return marginTop + marginBottom;
   }
 }

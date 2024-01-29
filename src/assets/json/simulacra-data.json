@@ -1,7 +1,9 @@
 [
   {
     "slug": "brevey",
-    "name": ["Brevey"],
+    "name": [
+      "Brevey"
+    ],
     "tag": "new",
     "rarity": "SSR",
     "roles": [
@@ -13,10 +15,11 @@
   },
   {
     "slug": "yanmiao",
-    "name": ["Yan Miao"],
+    "name": [
+      "Yan Miao"
+    ],
     "weapon": "Equilibrium",
     "weaponDescription": "With rules, the universe is in balance. After thousands of trials, only the sharpest remain. Without bias, all colors wither and fade. Like the clouds, justice rains swords upon the earth.",
-    "avatar": "yanmiao_avatar",
     "resonance": "attack",
     "element": "element_physical",
     "rarity": "SSR",
@@ -318,10 +321,11 @@
   },
   {
     "slug": "nanyin",
-    "name": ["Nan Yin"],
+    "name": [
+      "Nan Yin"
+    ],
     "weapon": "Purple Bamboo",
     "weaponDescription": "Purple Bamboo uses music and rhythm to utilize field energy for combat. After the Hendeca County Calamity, when Nan Yin reappeared, her flute also carried terrifying Darkness energy. Whenever Nan Yin played it, countless lives would be turned into dark wretches and fall under its control.",
-    "avatar": "nanyin_avatar",
     "resonance": "attack",
     "element": "element_altered",
     "rarity": "SSR",
@@ -704,10 +708,11 @@
   },
   {
     "slug": "linghan",
-    "name": ["Ling Han"],
+    "name": [
+      "Ling Han"
+    ],
     "weapon": "Alabaster Tiger",
     "weaponDescription": "With a flourish of sleeves and sword's dance divine, who can fathom the depths of this heart o' mine?",
-    "avatar": "linghan_avatar",
     "resonance": "attack",
     "element": "element_frost",
     "rarity": "SSR",
@@ -1003,10 +1008,11 @@
   },
   {
     "slug": "feise",
-    "name": ["Fei Se"],
+    "name": [
+      "Fei Se"
+    ],
     "weapon": "Endless Bloom",
     "weaponDescription": "Some flowers conceal a lethal intent.",
-    "avatar": "feise_avatar",
     "resonance": "attack",
     "element": "element_flame",
     "rarity": "SSR",
@@ -1332,10 +1338,12 @@
   },
   {
     "slug": "huang",
-    "name": ["Huang", "Mimi"],
+    "name": [
+      "Huang",
+      "Mimi"
+    ],
     "weapon": "Azure Dragon",
     "weaponDescription": "A pair of fans that contains enormous energy capable of collapsing mountains and tearing the world apart. When Azure Dragon mounts the clouds, the world is buffeted by the wind.",
-    "avatar": "huang_avatar",
     "resonance": "fortitude",
     "element": "element_volt",
     "rarity": "SSR",
@@ -1667,10 +1675,12 @@
   },
   {
     "slug": "mingjing",
-    "name": ["Ming Jing", "Zeke"],
+    "name": [
+      "Ming Jing",
+      "Zeke"
+    ],
     "weapon": "Onyx Tortoise",
     "weaponDescription": "An imposing and sharp greatsword that ordinary people can barely muster the strength to pick up. Its destructive power is juxtaposed by the wide blade and the sense of security it brings.",
-    "avatar": "mingjing_avatar",
     "resonance": "attack",
     "element": "element_physicalflame",
     "rarity": "SSR",
@@ -2010,10 +2020,11 @@
   },
   {
     "slug": "yulan",
-    "name": ["Yu Lan"],
+    "name": [
+      "Yu Lan"
+    ],
     "weapon": "Unity",
     "weaponDescription": "Unity, in other words, consolidation. It's the weapon Ji Yu handpicked for Yu Lan, which possesses the latest tech from Domain 9. Please don't be surprised if you witness some miraculous sights after using it with the timestamp.",
-    "avatar": "yulan_avatar",
     "resonance": "attack",
     "element": "element_frost",
     "rarity": "SSR",
@@ -2468,10 +2479,11 @@
   },
   {
     "slug": "liuhuo",
-    "name": ["Liu Huo"],
+    "name": [
+      "Liu Huo"
+    ],
     "weapon": "Pine Comet",
     "weaponDescription": "No violence please! Real academics wouldn't hit anyone with stationery! - Rong Jin",
-    "avatar": "liuhuo_avatar",
     "resonance": "attack",
     "element": "element_flame",
     "rarity": "SSR",
@@ -2874,10 +2886,11 @@
   },
   {
     "slug": "rubilia",
-    "name": ["Rubilia"],
+    "name": [
+      "Rubilia"
+    ],
     "weapon": "Lost Art",
     "weaponDescription": "A gentle swing in the chaotic abyss will stir up a tempest that affects everyone's fate.",
-    "avatar": "rubilia_avatar",
     "resonance": "attack",
     "element": "element_volt",
     "rarity": "SSR",
@@ -3170,10 +3183,11 @@
   },
   {
     "slug": "gnonno",
-    "name": ["Gnonno"],
+    "name": [
+      "Gnonno"
+    ],
     "weapon": "Mini Hurricane",
     "weaponDescription": "Far too dangerous to be a child's plaything. There is no way a kid could have gotten their hands on it through honest means. Who knows what kind of tech was used to refit it... Maybe it was simply picked up somewhere off the beaten path.",
-    "avatar": "gnonno_avatar",
     "resonance": "attack",
     "element": "element_physical",
     "rarity": "SSR",
@@ -3499,10 +3513,11 @@
   },
   {
     "slug": "fiona",
-    "name": ["Fiona"],
+    "name": [
+      "Fiona"
+    ],
     "weapon": "Moonstar Bracelet",
     "weaponDescription": "A strange nanoweapon that generates blades that cut through metal like butter. In the past, it used to take the form of a bracelet that wrapped around its owner's wrist while in standby mode, and that is where its owner's descriptions of it come from.",
-    "avatar": "fiona_avatar",
     "resonance": "benediction",
     "element": "element_altered",
     "rarity": "SSR",
@@ -3935,10 +3950,11 @@
   },
   {
     "slug": "icarus",
-    "name": ["Icarus"],
+    "name": [
+      "Icarus"
+    ],
     "weapon": "Precious One",
     "weaponDescription": "A rare collectible weapon fused with unique trendy refits. May the wielder walk with courage into the desolate darkness, even if like a moth to the flame.",
-    "avatar": "icarus_avatar",
     "resonance": "attack",
     "element": "element_frost",
     "rarity": "SSR",
@@ -4209,10 +4225,11 @@
   },
   {
     "slug": "lan",
-    "name": ["Lan"],
+    "name": [
+      "Lan"
+    ],
     "weapon": "Vermillion Bird",
     "weaponDescription": "A parasol weapon used exclusively by Zhuque with various hidden mechanisms. Vermillion Bird's large parasol body can not only become a powerful tool to destroy enemies using their energy, but also something to block the sight of others and hide the holder's demeanor...",
-    "avatar": "lan_avatar",
     "resonance": "fortitude",
     "element": "element_flame",
     "rarity": "SSR",
@@ -4508,10 +4525,11 @@
   },
   {
     "slug": "fenrir",
-    "name": ["Fenrir"],
+    "name": [
+      "Fenrir"
+    ],
     "weapon": "Gleipnir",
     "weaponDescription": "A special device that converts sound waves into attack. When the shackles are shattered, the currents of death become sharp claws that tear everything apart.",
-    "avatar": "fenrir_avatar",
     "resonance": "attack",
     "element": "element_volt",
     "rarity": "SSR",
@@ -4861,12 +4879,13 @@
   },
   {
     "slug": "umi",
-    "name": ["Umi"],
+    "name": [
+      "Umi"
+    ],
     "tag": "new",
     "rarity": "SSR",
     "weapon": "Mobius",
     "weaponDescription": "The whip favored by the new Executor, Umi. Umi's favorite part of it is that she doesn't get tripped up by it, usually.",
-    "avatar": "umi_avatar",
     "resonance": "attack",
     "element": "element_physical",
     "hasAtk": true,
@@ -5150,10 +5169,11 @@
   },
   {
     "slug": "alyss",
-    "name": ["Alyss"],
+    "name": [
+      "Alyss"
+    ],
     "weapon": "Unyielding Wing",
     "weaponDescription": "Combat armor crafted with a foot-blade as its core. Powered by the user's mental energy, it is the result of cutting-edge science and technology from before the Cataclysm, and explodes with terrifying power when necessary.",
-    "avatar": "alyss_avatar",
     "resonance": "attack",
     "element": "element_frost",
     "rarity": "SSR",
@@ -5411,10 +5431,11 @@
   },
   {
     "slug": "annabella",
-    "name": ["Annabella"],
+    "name": [
+      "Annabella"
+    ],
     "weapon": "Clover Cross",
     "weaponDescription": "A VR multiplayer shooting game that is incredibly popular in Mirroria specially designed this exclusive gun for their top player from a certain season. The customized physical model of the gun was also sent to the player, but nobody realized it could be used just like in the game.",
-    "avatar": "annabella_avatar",
     "resonance": "attack",
     "element": "element_flame",
     "rarity": "SSR",
@@ -5656,10 +5677,11 @@
   },
   {
     "slug": "tianlang",
-    "name": ["Tian Lang"],
+    "name": [
+      "Tian Lang"
+    ],
     "weapon": "Thunderbreaker",
     "weaponDescription": "This long spear covered in lightning is the SMA1-TS00- Thunderbreaker. It is able to unleash the stored power through unimaginable means. The electric field that it generates disrupts the mind of its wielder, so it cannot be mastered by ordinary people.",
-    "avatar": "tianlang_avatar",
     "resonance": "attack",
     "element": "element_volt",
     "rarity": "SSR",
@@ -5916,10 +5938,11 @@
   },
   {
     "slug": "lyra",
-    "name": ["Lyra"],
+    "name": [
+      "Lyra"
+    ],
     "weapon": "Vesper",
     "weaponDescription": "A support weapon custom-made for an insider of the Maidelin Foundation. Ms Maidelin believes that Lyra could make proper use of it.",
-    "avatar": "lyra_avatar",
     "resonance": "benediction",
     "element": "element_physical",
     "rarity": "SSR",
@@ -6228,10 +6251,11 @@
   },
   {
     "slug": "lin",
-    "name": ["Lin"],
+    "name": [
+      "Lin"
+    ],
     "weapon": "Shadoweave",
     "weaponDescription": "The initial design shows it to be a lightweight and covert concealed weapon, but it's changed to a heavy blade by the user's own request. It's heavy and not like a concealed weapon at all.",
-    "avatar": "lin_avatar",
     "resonance": "attack",
     "element": "element_altered",
     "rarity": "SSR",
@@ -6523,10 +6547,11 @@
   },
   {
     "slug": "sakifuwa",
-    "name": ["Saki Fuwa"],
+    "name": [
+      "Saki Fuwa"
+    ],
     "weapon": "Heartstream",
     "weaponDescription": "A special tachi that adapts to the Super Flow experiments. It is able to sense the user's mental state and generate Sword Shadows to assist in combat at the right time.",
-    "avatar": "sakifuwa_avatar",
     "resonance": "fortitude",
     "element": "element_frost",
     "rarity": "SSR",
@@ -6788,10 +6813,11 @@
   },
   {
     "slug": "ruby",
-    "name": ["Ruby"],
+    "name": [
+      "Ruby"
+    ],
     "weapon": "Spark",
     "weaponDescription": "A special weapon Lin asked Mirroria R&D to make for Ruby. Its main functions include: Acting as the housekeeper in the play-house game, waking Ruby up in the morning, and leading the way for Ruby... But most importantly, protecting Ruby.",
-    "avatar": "ruby_avatar",
     "resonance": "attack",
     "element": "element_flame",
     "rarity": "SSR",
@@ -7029,10 +7055,11 @@
   },
   {
     "slug": "cobaltb",
-    "name": ["Cobalt-B"],
+    "name": [
+      "Cobalt-B"
+    ],
     "weapon": "Flaming Revolver",
     "weaponDescription": "Invented by a mad scientist. With its impressive test numbers, one can only imagine how powerful it might be at full power.",
-    "avatar": "cobaltb_avatar",
     "resonance": "attack",
     "element": "element_flame",
     "rarity": "SSR",
@@ -7254,10 +7281,11 @@
   },
   {
     "slug": "claudia",
-    "name": ["Claudia"],
+    "name": [
+      "Claudia"
+    ],
     "weapon": "Guren Blade",
     "weaponDescription": "The crimson blade stands for courage and resolve, while the sharp edge carries the justice.",
-    "avatar": "claudia_avatar",
     "resonance": "attack",
     "element": "element_physical",
     "rarity": "SSR",
@@ -7493,10 +7521,11 @@
   },
   {
     "slug": "frigg",
-    "name": ["Frigg"],
+    "name": [
+      "Frigg"
+    ],
     "weapon": "Balmung",
     "weaponDescription": "The greatsword and the saber belonging exclusively to the Angel of Clemency, Frigg. They were adapted to Frigg's cybernetic body when they were manufactured. The two weapons are not the one and the same, but Frigg refers to them collectively as Balmung.",
-    "avatar": "frigg_avatar",
     "resonance": "attack",
     "element": "element_frost",
     "rarity": "SSR",
@@ -7736,10 +7765,11 @@
   },
   {
     "slug": "nemesis",
-    "name": ["Nemesis"],
+    "name": [
+      "Nemesis"
+    ],
     "weapon": "Venus",
     "weaponDescription": "Its designer is unknown. The special hovering EM Blaster's prototype's blueprint has been lost. It contains a unique electrical saving process in its interior. It's extremely troublesome to repair when it gets worn out, but Cobalt-B of Banges Tech seems to be able to do it.",
-    "avatar": "nemesis_avatar",
     "resonance": "benediction",
     "element": "element_volt",
     "rarity": "SSR",
@@ -8009,10 +8039,11 @@
   },
   {
     "slug": "crow",
-    "name": ["Crow"],
+    "name": [
+      "Crow"
+    ],
     "weapon": "Thunderblades",
     "weaponDescription": "Lethal, unpredictable and quiet.",
-    "avatar": "crow_avatar",
     "resonance": "attack",
     "element": "element_volt",
     "rarity": "SSR",
@@ -8252,10 +8283,11 @@
   },
   {
     "slug": "huma",
-    "name": ["Huma"],
+    "name": [
+      "Huma"
+    ],
     "weapon": "Molten Shield V2",
     "weaponDescription": "A shield axe that belongs to the V2 weapon series, a collection of weapons forged with special techniques.",
-    "avatar": "huma_avatar",
     "resonance": "fortitude",
     "element": "element_flame",
     "rarity": "SSR",
@@ -8508,10 +8540,11 @@
   },
   {
     "slug": "samir",
-    "name": ["Samir"],
+    "name": [
+      "Samir"
+    ],
     "weapon": "Dual EM Stars",
     "weaponDescription": "These firearms are designed based on railguns, and must be used in a pair.",
-    "avatar": "samir_avatar",
     "resonance": "attack",
     "element": "element_volt",
     "rarity": "SSR",
@@ -8711,10 +8744,11 @@
   },
   {
     "slug": "zero",
-    "name": ["Zero"],
+    "name": [
+      "Zero"
+    ],
     "weapon": "Negating Cube",
     "weaponDescription": "Users of the Strange Cube tend to think of many ways to negate unnecessary requirements.",
-    "avatar": "zero_avatar",
     "resonance": "benediction",
     "element": "element_flame",
     "rarity": "SSR",
@@ -8962,10 +8996,11 @@
   },
   {
     "slug": "shiro",
-    "name": ["Shiro"],
+    "name": [
+      "Shiro"
+    ],
     "weapon": "Chakram of the Seas",
     "weaponDescription": "A round and sharp weapon that traveled the seas with its owner.",
-    "avatar": "shiro_avatar",
     "resonance": "attack",
     "element": "element_physical",
     "rarity": "SSR",
@@ -9190,10 +9225,11 @@
   },
   {
     "slug": "king",
-    "name": ["KING"],
+    "name": [
+      "KING"
+    ],
     "weapon": "Scythe of the Crow",
     "weaponDescription": "A powerful scythe, great for both offense and defense. Able to instantly kill its target within a certain distance.",
-    "avatar": "king_avatar",
     "resonance": "attack",
     "element": "element_flame",
     "rarity": "SSR",
@@ -9444,10 +9480,11 @@
   },
   {
     "slug": "cocoritter",
-    "name": ["Cocoritter"],
+    "name": [
+      "Cocoritter"
+    ],
     "weapon": "Absolute Zero",
     "weaponDescription": "Keep the cold temperature steady to heal allies.",
-    "avatar": "cocoritter_avatar",
     "resonance": "benediction",
     "element": "element_frost",
     "rarity": "SSR",
@@ -9717,10 +9754,11 @@
   },
   {
     "slug": "tsubasa",
-    "name": ["Tsubasa"],
+    "name": [
+      "Tsubasa"
+    ],
     "weapon": "Icewind Arrow",
     "weaponDescription": "The arrows from this bow carry the power of frost.",
-    "avatar": "tsubasa_avatar",
     "resonance": "attack",
     "element": "element_frost",
     "rarity": "SSR",
@@ -9920,10 +9958,11 @@
   },
   {
     "slug": "meryl",
-    "name": ["Meryl"],
+    "name": [
+      "Meryl"
+    ],
     "weapon": "Rosy Edge",
     "weaponDescription": "An elegant frost blade that conjures up images of a pure white flower blooming on a snow-covered cliff.",
-    "avatar": "meryl_avatar",
     "resonance": "fortitude",
     "element": "element_frost",
     "rarity": "SSR",
@@ -10187,7 +10226,9 @@
   },
   {
     "slug": "pepper",
-    "name": ["Pepper"],
+    "name": [
+      "Pepper"
+    ],
     "tag": "new",
     "rarity": "SR",
     "roles": [
@@ -10199,7 +10240,9 @@
   },
   {
     "slug": "hilda",
-    "name": ["Hilda"],
+    "name": [
+      "Hilda"
+    ],
     "tag": "new",
     "rarity": "SR",
     "roles": [
@@ -10211,7 +10254,9 @@
   },
   {
     "slug": "ene",
-    "name": ["Ene"],
+    "name": [
+      "Ene"
+    ],
     "tag": "new",
     "rarity": "SR",
     "roles": [
@@ -10223,7 +10268,9 @@
   },
   {
     "slug": "echo",
-    "name": ["Echo"],
+    "name": [
+      "Echo"
+    ],
     "tag": "new",
     "rarity": "SR",
     "roles": [
@@ -10235,7 +10282,9 @@
   },
   {
     "slug": "bailing",
-    "name": ["Bai Ling"],
+    "name": [
+      "Bai Ling"
+    ],
     "tag": "new",
     "rarity": "SR",
     "roles": [
