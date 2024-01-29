@@ -10,7 +10,7 @@
     <div class="units">
       <div class="all-units" [style.display]="showAllUnits ? 'flex' : 'none'">
         <div class="entry" *ngFor="let unit of units">
-          <img class="avatar" src="assets/simulacra/{{unit.avatar}}.png" alt="Avatar">
+          <img class="avatar" src="assets/simulacra/{{unit.slug}}_avatar.webp" alt="Avatar">
           <div class="wrapper">
             <span class="name">{{unit.name[0]}}</span>
             <span class="description">Lorem ipsum</span>
@@ -19,7 +19,7 @@
       </div>
       <div class="all-matrices" [style.display]="showAllMatrices ? 'flex' : 'none'">
         <div class="entry" *ngFor="let matrix of matrices">
-          <img class="avatar" src="assets/matrices/{{matrix.avatar}}.png" alt="Avatar">
+          <img class="avatar" src="assets/matrices/{{matrix.slug}}_matrix.webp" alt="Avatar">
           <div class="wrapper">
             <span class="name">{{matrix.name}}</span>
             <span class="description">Lorem ipsum</span>

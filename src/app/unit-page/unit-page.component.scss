@@ -30,23 +30,25 @@
         // max-width: 1220px; this is inherited from the parent
         width: 100%;
         padding: 10px 20px;
-        background-image: url("/assets/backgrounds/header_element.svg");
+        background-image: var(--background-image);
+        // background-image: url("/assets/backgrounds/header_element.svg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: right; // ?
         // height: 141px; i know this is because of the background being 1180x141, we might redo the background with CSS altogether
         opacity: 0.9; // potential temp
+        min-height:141px ;
 
         // position: absolute;
         .unit-avatar {
             display: flex;
             justify-content: left;
             align-items: center;
-            margin: 0 15px 0 0;
+            margin: 0 25px 0 15px;
         }
 
         .unit-avatar img {
-            width: 120px;
+            width: 90px;
         }
 
         .unit-name-element {

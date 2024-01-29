@@ -1,63 +1,65 @@
 <section class="main" *ngIf="unit">
   <img class="background-splashart" src="assets/splashart/{{unit?.slug}}_a3_splashart.webp">
   <div class="header-element">
-    <div class="unit-avatar">
-      <img src="assets/simulacra/{{unit?.avatar}}.png" alt="Character avatar">
-    </div>
-    <div class="unit-name-element">
-      <div class="unit-name">
-        <span>{{unit?.name[0]}}</span>
+      
+      <div class="unit-avatar">
+        <img src="assets/simulacra/{{unit?.slug}}_avatar.webp" alt="Character avatar">
       </div>
-      <div class="unit-weapon-name">
-        <span>{{unit?.weapon}}</span>
-      </div>
-      <div class="unit-element">
-        <img src="assets/elements/{{unit?.resonance}}.png" alt="Resonance Icon">
-        <img src="assets/elements/{{unit?.element}}.png" alt="Element Icon">
-      </div>
-    </div>
-    <div class="unit-stats">
-      <div class="top-stats">
-        <div *ngIf="unit?.hasAtk" class="stats">
-          <img src="assets/stats/icon_atk.webp" alt="Attack Icon" style="filter: brightness(5);">
-          <span>ATK</span>
+      <div class="unit-name-element">
+        <div class="unit-name">
+          <span>{{unit?.name[0]}}</span>
         </div>
-        <div *ngIf="unit?.hasHP" class="stats">
-          <img src="assets/stats/icon_hp.webp" alt="HP Icon" style="filter: brightness(5);">
-          <span>HP</span>
+        <div class="unit-weapon-name">
+          <span>{{unit?.weapon}}</span>
         </div>
-        <div *ngIf="unit?.hasCrit" class="stats">
-          <img src="assets/stats/icon_crit.webp" alt="Crit Icon" style="filter: brightness(5);">
-          <span>CRIT</span>
-        </div>
-        <div *ngIf="unit?.hasRes" class="stats">
-          <img src="assets/stats/icon_res.webp" alt="Resistance Icon" style="filter: brightness(5);">
-          <span>RES</span>
+        <div class="unit-element">
+          <img src="assets/elements/{{unit?.resonance}}.png" alt="Resonance Icon">
+          <img src="assets/elements/{{unit?.element}}.png" alt="Element Icon">
         </div>
       </div>
-      <div class="bottom-stats">
-        <div class="stats">
-          <span class="grade" *ngIf="unit?.charge <= 7.49">B</span>
-          <span class="grade" *ngIf="unit?.charge >= 7.50 && unit?.charge <= 10.50">A</span>
-          <span class="grade" *ngIf="unit?.charge >= 10.51 && unit?.charge <= 14.00">S</span>
-          <span class="grade" *ngIf="unit?.charge >= 14.01">SS</span>
-          <span class="value">Charge {{unit?.charge}}</span>
+      <div class="unit-stats">
+        <div class="top-stats">
+          <div *ngIf="unit?.hasAtk" class="stats">
+            <img src="assets/stats/icon_atk.webp" alt="Attack Icon" style="filter: brightness(5);">
+            <span>ATK</span>
+          </div>
+          <div *ngIf="unit?.hasHP" class="stats">
+            <img src="assets/stats/icon_hp.webp" alt="HP Icon" style="filter: brightness(5);">
+            <span>HP</span>
+          </div>
+          <div *ngIf="unit?.hasCrit" class="stats">
+            <img src="assets/stats/icon_crit.webp" alt="Crit Icon" style="filter: brightness(5);">
+            <span>CRIT</span>
+          </div>
+          <div *ngIf="unit?.hasRes" class="stats">
+            <img src="assets/stats/icon_res.webp" alt="Resistance Icon" style="filter: brightness(5);">
+            <span>RES</span>
+          </div>
         </div>
-        <div class="stats">
-          <span class="grade" *ngIf="unit?.shatter <= 7.49">B</span>
-          <span class="grade" *ngIf="unit?.shatter >= 7.50 && unit?.shatter <= 10.50">A</span>
-          <span class="grade" *ngIf="unit?.shatter >= 10.51 && unit?.shatter <= 14.00">S</span>
-          <span class="grade" *ngIf="unit?.shatter >= 14.01">SS</span>
-          <span class="value">Shatter {{unit?.shatter}}</span>
+        <div class="bottom-stats">
+          <div class="stats">
+            <span class="grade" *ngIf="unit?.charge <= 7.49">B</span>
+            <span class="grade" *ngIf="unit?.charge >= 7.50 && unit?.charge <= 10.50">A</span>
+            <span class="grade" *ngIf="unit?.charge >= 10.51 && unit?.charge <= 14.00">S</span>
+            <span class="grade" *ngIf="unit?.charge >= 14.01">SS</span>
+            <span class="value">Charge {{unit?.charge}}</span>
+          </div>
+          <div class="stats">
+            <span class="grade" *ngIf="unit?.shatter <= 7.49">B</span>
+            <span class="grade" *ngIf="unit?.shatter >= 7.50 && unit?.shatter <= 10.50">A</span>
+            <span class="grade" *ngIf="unit?.shatter >= 10.51 && unit?.shatter <= 14.00">S</span>
+            <span class="grade" *ngIf="unit?.shatter >= 14.01">SS</span>
+            <span class="value">Shatter {{unit?.shatter}}</span>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="unit-roles">
-      <div *ngFor="let roles of unit.roles" class="roles">
-        <img src="assets/effects/buff_{{roles.toLowerCase()}}.png">
-        <span>{{roles}}</span>
+      <div class="unit-roles">
+        <div *ngFor="let roles of unit.roles" class="roles">
+          <img src="assets/effects/buff_{{roles.toLowerCase()}}.png">
+          <span>{{roles}}</span>
+        </div>
       </div>
-    </div>
+    
   </div>
   <div class="body-element">
     <div class="tabs">
