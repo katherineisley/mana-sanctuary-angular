@@ -1,16 +1,717 @@
 [
   {
+    "slug": "plotti",
+    "name": [
+      "Plotti"
+    ],
+    "weapon": "EP-7000 Skyfire",
+    "weaponDescription": "Plotti is an obsessive perfectionist and meticulously plans things down to the smallest detail, to the point of being almost neurotic. The elite personnel that Hykros devotes a lot of resources to is under the watchful eye of her predecessors.",
+    "resonance": "attack",
+    "element": "element_flamephysical",
+    "tag": "new",
+    "rarity": "SSR",
+    "hasAtk": true,
+    "hasHP": true,
+    "hasCrit": true,
+    "hasRes": false,
+    "shatter": "14",
+    "charge": "12",
+    "roles": [
+      ""
+    ],
+    "effects": [
+      {
+        "name": "Armor Dissolve",
+        "description": [
+          {
+            "paragraph": "When the weapon is fully charged, the next attack inflicts armor dissolve effect on the target for 45 seconds, increasing their flame and physical damage taken by 10% (and an additional 15% in team play). This effect will replace the grievous status on the target, and targets with this effect cannot become grievous. Physical attacks will stun targets under the dissolve effect for 2 seconds, and flame attacks will decrease the targets' speed by 50% for 5 seconds. This effect can only trigger 1 time every 15 seconds on the same target."
+          }
+        ]
+      },
+      {
+        "name": "Fusion of Flame and Mass",
+        "description": [
+          {
+            "paragraph": "When the weapon deals damage, damage is calculated using the currently equipped weapon's highest flame/physical base ATK, the highest equipped flame/physical ATK percentage, and the highest equipped flame/physical damage boost, and the weapon is considered both a flame and physical weapon."
+          }
+        ]
+      },
+      {
+        "name": "Flame Resonance",
+        "description": [
+          {
+            "paragraph": "Increase Flame ATK by 15% and Flame Resistance by 25%. Activate by equipping 2 or more Flame weapons. This set effect works in the off-hand slot. Cannot stack with other Flame Resonance or Flame reaction effects, with Flame Resonance taking precedence."
+          }
+        ]
+      },
+      {
+        "name": "Physical Resonance",
+        "description": [
+          {
+            "paragraph": "Increase Physical ATK by 15% and Physical Resistance by 25%. Activate by equipping 2 or more Physical weapons. This set effect works in the off-hand slot. Cannot stack with other Physical Resonance or Physical reaction effects, with Physical Resonance taking precedence."
+          }
+        ]
+      },
+      {
+        "name": "Poppa: Detachment",
+        "description": [
+          {
+            "paragraph": "After using Mirror Image, deal damage equal to 87.5% of flame ATK plus 12.5% of Max HP plus 45% the sum of all the Wanderer's resistance types plus 168.8% of crit every second for 30 seconds. Multiple Detachment damages will not stack. Poppa damage counts as skill damage. If there is 1 volt or frost weapon equipped, then Poppa's damage is multiplied by 1.3 times. In addition, Poppa's damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects."
+          }
+        ]
+      }
+    ],
+    "oneStar": [
+      {
+        "paragraph": "While Poppa is Here is active, Poppa will launch a Heavy Energy Round II for every 7 explosive shot fired, dealing damage equal to 590% of ATK to nearby targets and then splits into several high explosives, dealing damage equal to 660% of ATK to nearby targets."
+      }
+    ],
+    "twoStar": [
+      {
+        "paragraph": "Increase the current weapon's base ATK growth by 16%."
+      }
+    ],
+    "threeStar": [
+      {
+        "paragraph": "After Poppa appears 5 times, increase final damage by 12% and physical damage by 6% for 25 seconds."
+      },
+      {
+        "paragraph": "After Poppa appears 5 times, the next use of Mirror Image will refresh Phantasia Cooldown and immediately trigger Phantasia."
+      }
+    ],
+    "fourStar": [
+      {
+        "paragraph": "Increase the current weapon's base ATK growth by 32%."
+      }
+    ],
+    "fiveStar": [
+      {
+        "paragraph": "Reduce Heavy Energy Round I's trigger interval to 6 seconds. When firing Heavy Energy Round I or Heavy Energy Round II, also fire a Healing Round that recovers 10% of the Wanderer's Max HP."
+      }
+    ],
+    "sixStar": [
+      {
+        "paragraph": "Mirror (Target)'s damage reflection effect can now also affect the target. Mirror (Self)'s damage reflection ratio is increased to 30% and the maximum reflected damage is increased to 800% of the Wanderer's Max HP."
+      },
+      {
+        "paragraph": "Additionally, while Mirror (Self) is in effect, every time the Wanderer takes damage, additionally block damage equal to 10% of Max HP (excess damage will be taken normally, unavailable in Apex League). This effect can be triggered up to 1 time every 3 seconds. During cooldown, when Poppa appears and admires herself in the mirror, reduce the effect's cooldown by 1 second."
+      }
+    ],
+    "attacks": [
+      {
+        "name": "Standard Protocol",
+        "icon": "",
+        "method": [
+          "Attack x5"
+        ],
+        "description": [
+          {
+            "paragraph": "While on the ground, use normal attack to attack 5 times in a row."
+          }
+        ],
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "First Attack: Deal damage equal to 140% of ATK."
+          },
+          {
+            "combo": "Second Attack: Deal damage equal to 264% of ATK."
+          },
+          {
+            "combo": "Third Attack: Deal damage equal to 186% of ATK."
+          },
+          {
+            "combo": "Fourth Attack: Deal damage equal to 174% of ATK."
+          },
+          {
+            "combo": "Fifth Attack: Deal damage equal to 501% of ATK."
+          }
+        ]
+      },
+      {
+        "name": "Burst Fire Protocol",
+        "icon": "",
+        "method": [
+          "Jump",
+          "Attack x5"
+        ],
+        "description": [
+          {
+            "paragraph": "While airborne, use normal attack to launch 5 attacks in a row mid-air, consuming endurance."
+          }
+        ],
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "First Attack: Deal damage equal to 140% of ATK."
+          },
+          {
+            "combo": "Second Attack: Deal damage equal to 264% of ATK."
+          },
+          {
+            "combo": "Third Attack: Deal damage equal to 186% of ATK."
+          },
+          {
+            "combo": "Fourth Attack: Deal damage equal to 174% of ATK."
+          },
+          {
+            "combo": "Fifth Attack: Deal damage equal to 501% of ATK."
+          }
+        ]
+      },
+      {
+        "name": "Rapid Fire Protocol",
+        "icon": "",
+        "method": [
+          "Attack x1",
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "While on the ground, tap and hold normal attack when using the second to fourth normal attacks to trigger Rapid Fire Protocol and consume endurance."
+          },
+          {
+            "paragraph": "Launch an attack ahead, dealing damage equal to 90% of ATK to nearby targets and suspending them."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Energizing Protocol",
+        "icon": "",
+        "method": [
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "While on the ground, tap and hold normal attack to trigger a charged attack."
+          },
+          {
+            "paragraph": "Fire a charged shot at the target, dealing damage equal to 90% of ATK to nearby targets hit."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Air Raid Protocol",
+        "icon": "",
+        "method": [
+          "Jump",
+          "Attack x1",
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "While airborne, tap and hold normal attack when using the second to fourth normal attacks to trigger an aerial branch attack and consume endurance."
+          },
+          {
+            "paragraph": "Launch an attack ahead, dealing damage equal to 90% of ATK to nearby targets and suspending them."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Diving Protocol",
+        "icon": "",
+        "method": [
+          "Jump",
+          "Dodge",
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "Hold dodge while in mid-air to trigger Diving Protocol, dealing damage equal to 289% of ATK upon landing."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Brilliant Colors",
+        "icon": "",
+        "method": [
+          "Dodge",
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "When in the overworld, on the ground, or in the non-combat state, hold dodge to place fireworks of a random style that explode after a short delay."
+          }
+        ],
+        "hasChain": false
+      }
+    ],
+    "dodge": [
+      {
+        "name": "Dodge",
+        "icon": "",
+        "method": [
+          "Directional Dodge"
+        ],
+        "description": [
+          {
+            "paragraph": "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for 0.5 seconds."
+          },
+          {
+            "paragraph": "Passive: Recover 150 endurance and clear the increased endurance consumption effect caused when firing explosive shots while Poppa is Here is in effect."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Assault Protocol",
+        "icon": "",
+        "method": [
+          "Directional Dodge",
+          "Attack x1"
+        ],
+        "description": [
+          {
+            "paragraph": "Use normal attack during the short perfect dodge window (use a directional button before dodging) to trigger Assault Protocol."
+          },
+          {
+            "paragraph": "Summon a missile from space and deal damage equal to 203% of ATK to nearby targets."
+          },
+          {
+            "paragraph": "While Poppa is Here is active, after triggering Assault Protocol, tap and hold normal attack to continuously fire explosive shots."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Propulsion Protocol",
+        "icon": "",
+        "method": [
+          "Dodge",
+          "Attack x1"
+        ],
+        "description": [
+          {
+            "paragraph": "Use normal attack during the short period after dodging to trigger Propulsion Protocol."
+          },
+          {
+            "paragraph": "Fire a laser beam and deal damage equal to 154% of ATK to nearby targets."
+          },
+          {
+            "paragraph": "While Poppa is Here is active, after triggering Assault Protocol, tap and hold normal attack to continuously fire explosive shots."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Airborne Protocol",
+        "icon": "",
+        "method": [
+          "Jump",
+          "Dodge",
+          "Attack x1"
+        ],
+        "description": [
+          {
+            "paragraph": "Dodge attacks can be used while the Wanderer is airborne. For every 2 dodge attacks using EP-7000 Skyfire, Poppa appears and uses a dodge attack as well, dealing damage equal to 50% to 100% of the Wanderer's damage dealt based on Poppa's mood."
+          },
+          {
+            "paragraph": "After every 2 dodge attacks from EP-7000 Skyfire or 1 dodge attack using EP-7000 Skyfire while Poppa is Here is in effect, reduce Mirror Image's cooldown by 10 seconds. Can only be triggered 1 time for each skill's cooldown duration."
+          }
+        ],
+        "hasChain": false
+      }
+    ],
+    "skill": [
+      {
+        "name": "Mirror Image",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "Roam between the mind and reality, creating 8 Heart Mirror Walls around the Wanderer (these count as summons) and deal damage equal to 807% of ATK to nearby targets. After using the skill, activate Poppa is Here for 15 seconds, gaining the ability to fly as well as improved movement speed and jumping capabilities. Normal attack now fires explosive shots that deal damage equal to 180% of ATK to nearby targets upon hit and consumes endurance. After an explosive shot hits the ground, it will be transmitted to a Heart Mirror Wall and fired toward the locked-on target. Cooldown: 30 seconds. After Poppa is Here naturally ends, immediately gain 300 weapon charge."
+          },
+          {
+            "paragraph": "During Poppa is Here, increase final damage according to the distance in height between the Wanderer and the target hit, by up to 1%."
+          },
+          {
+            "paragraph": "While in the combat state and Poppa is Here not active, Poppa will appear every 8 seconds and fire a Heavy Energy Round I dealing damage equal to 590% of ATK to nearby targets."
+          }
+        ]
+      }
+    ],
+    "discharge": [
+      {
+        "name": "Extermination Protocol",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "When weapon charge is full or Phantasia is triggered, remove all debuffs from the Wanderer and activate the Satellite Ionic Beam upon switching to this weapon, summoning an ionic beam from the space station and dealing damage equal to 974% of ATK to nearby targets. At the same time, inflict Armor Dissolve on targets hit and gain damage immunity for 1.5 seconds (unavailable in Apex League)."
+          },
+          {
+            "paragraph": "After Extermination Protocol lands a hit, place 1 Mirror on both the locked-on target and the Wanderer for 45 seconds."
+          },
+          {
+            "paragraph": "Mirror (Target): The damage dealt by the Wanderer will be reflected by Mirrors to other targets for an additional 15% damage."
+          },
+          {
+            "paragraph": "Mirror (Self): Ignore 15% of the target's Flame Resistance (each element's total resistance ignored cannot exceed 50%). Whenever damage is taken, bounce back 20% of the damage received (no more than 500% of the Wanderer's Max HP). This effect can be triggered up to 1 time every 3 seconds. During cooldown, after Poppa appears, she will admire her reflection in the mirror, reducing this effect's cooldown by 1 second."
+          }
+        ]
+      }
+    ],
+    "trait": [
+      {
+        "affinity": "1200",
+        "description": [
+          {
+            "paragraph": "Increase final damage by 13%."
+          }
+        ]
+      },
+      {
+        "affinity": "4000",
+        "description": [
+          {
+            "paragraph": "Increase final damage by 18%."
+          },
+          {
+            "paragraph": "Increase EP-7000 Skyfire's flame damage by 20%."
+          }
+        ]
+      }
+    ]
+  },
+  {
     "slug": "brevey",
     "name": [
       "Brevey"
     ],
+    "weapon": "Pactcrest ☆ Metz",
+    "weaponDescription": "Since familiars and contract beasts can grant extraordinary powers to multiple girls, wouldn't it be more efficient for them to take direct action in combat? With this in mind, she decided to let her little helper set an example.",
+    "resonance": "benediction",
+    "element": "element_voltfrost",
     "tag": "new",
     "rarity": "SSR",
+    "hasAtk": true,
+    "hasHP": true,
+    "hasCrit": true,
+    "hasRes": false,
+    "shatter": "12",
+    "charge": "10",
     "roles": [
-      "MDPS",
-      "Buffer",
-      "Healer",
-      "SupportBuffer"
+      ""
+    ],
+    "effects": [
+      {
+        "name": "Force Impact",
+        "description": [
+          {
+            "paragraph": "When the weapon is fully charged, the next attack applies Force Impact on the enemy for 45 seconds, increasing their frost and volt damage taken by 10% (and an additional 15% in team play). Force Impact replaces the target's grievous status, and targets with Force Impact cannot become grievous. Frost attacks will freeze targets with Force Impact for 2 seconds, and volt attacks will remove the targets' buffs. This effect can only trigger 1 time every 15 seconds on the same target."
+          }
+        ]
+      },
+      {
+        "name": "Volt-Frost Fusion",
+        "description": [
+          {
+            "paragraph": "When the weapon deals damage, damage is calculated using the highest equipped volt/frost base ATK, the highest equipped volt/frost ATK percentage, and the highest equipped volt/frost damage boost, and the weapon is considered both a volt and frost weapon."
+          }
+        ]
+      },
+      {
+        "name": "Volt Resonance",
+        "description": [
+          {
+            "paragraph": "Increase volt ATK by 15% and volt resistance by 25%. Activate by equipping 2 or more volt weapons. This set effect works in the off-hand slot. Cannot stack with effects of the same type."
+          }
+        ]
+      },
+      {
+        "name": "Frost Resonance",
+        "description": [
+          {
+            "paragraph": "Increase frost ATK by 15% and frost resistance by 25%. Activate by equipping 2 or more frost weapons. This set effect works in the off-hand slot. Cannot stack with effects of the same type."
+          }
+        ]
+      },
+      {
+        "name": "Thunderbolt: Swift Cut",
+        "description": [
+          {
+            "paragraph": "When equipped with Pactcrest ☆ Metz, weapon discharge skills deal damage equal to 46.87% of volt ATK plus 0.62% of Max HP plus 23.43% of the sum of all the Wanderer's resistance types plus 85.93% of crit to nearby targets. While in combat, after every 0.5 seconds, the next Swift Cut damage will be increased by an additional 1 time, up to a maximum of 30 times. When multiple Swift Cut damages exist, the highest initial value is used for calculation. Swift Cut damage counts as discharge damage. If any flame or physical weapon is equipped, volt damage is multiplied by 2.5. In addition, volt damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects."
+          }
+        ]
+      },
+      {
+        "name": "Miraculous Turnaround",
+        "description": [
+          {
+            "paragraph": "When challenging Bygone Phantasm and Sequential Phantasm with Pactcrest ☆ Metz equipped, gain an additional 15 seconds to the challenge duration. When challenging Origin of War, for every 1 Pactcrest ☆ Metz equipped by the team, the team gains an additional 25 seconds to the challenge duration, up to 50 seconds."
+          }
+        ]
+      }
+    ],
+    "oneStar": [
+      {
+        "paragraph": "Each Pink Chain Frenzy or Metz off-hand coordinated attack hit recovers HP equal to 12% of ATK. In team play, each hit recovers HP by 18%."
+      },
+      {
+        "paragraph": "When a Bestie takes damage that reduces their HP below 25% of their max HP, also recover HP equal to 30% of their Max HP and grant them damage immunity for 3 seconds. If the damage is fatal, then additionally prevent lethal 1 time. Can be triggered 1 time every 60 seconds."
+      }
+    ],
+    "twoStar": [
+      {
+        "paragraph": "Increase the current weapon's base ATK growth by 16%."
+      }
+    ],
+    "threeStar": [
+      {
+        "paragraph": "When a non-Benediction Resonance is active, gain 2 additional uses of Metz Energy Wave, and increase volt damage and frost damage to bosses by 10%."
+      },
+      {
+        "paragraph": "When Benediction Resonance is active, gain 1 additional use of Million-Metz Shockwave, and recover HP equal to 15% of the Bestie's Max HP to them."
+      }
+    ],
+    "fourStar": [
+      {
+        "paragraph": "Increase the current weapon's base ATK growth by 32%."
+      }
+    ],
+    "fiveStar": [
+      {
+        "paragraph": "Increase damage dealt by Metz off-hand coordinated attack and Metz Energy Wave by 30%."
+      }
+    ],
+    "sixStar": [
+      {
+        "paragraph": "While Pact Amplification is active, increase volt and frost damage boost effects by 10% and 4% respectively. Metz Halo increases nearby teammates' final damage by 20% and shatter by 25%. This effect does not stack."
+      }
+    ],
+    "attacks": [
+      {
+        "name": "Firefly Wave",
+        "icon": "",
+        "method": [
+          "Attack x5"
+        ],
+        "description": [
+          {
+            "paragraph": "While on the ground, use normal attack to launch 5 attacks in a row."
+          },
+          {
+            "paragraph": "After triggering Firefly Wave, tap and hold normal attack to trigger Phantasmic Rhythm."
+          },
+          {
+            "paragraph": "While in the combat state, when Pactcrest ☆ Metz is in the off-hand slot, Metz remains on the battlefield for coordinated attacks. Metz is considered a summon, and each attack deals damage equal to 20% of ATK to nearby targets. The type of elemental damage dealt will be that of the current weapon."
+          },
+          {
+            "paragraph": "When Benediction Resonance is active:"
+          },
+          {
+            "paragraph": "When in the non-combat state, the first attack from Firefly Wave appoints 1 teammate as 'Bestie', and summons up to 1 Metz to follow the Bestie. Using Metz Halo recovers HP equal to 100% of the Wanderer's ATK to nearby teammates, and increases their final damage by 5%. This effect does not stack. Metz stops following the Bestie when the Wanderer is knocked down, or when Metz gets too far from the Wanderer."
+          }
+        ],
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "First Attack: Deal damage equal to 112% of ATK and knock the target back."
+          },
+          {
+            "combo": "Second Attack: Deal damage equal to 154% of ATK and suspend the target."
+          },
+          {
+            "combo": "Third Attack: Deal damage equal to 220% of ATK and knock the target down."
+          },
+          {
+            "combo": "Fourth Attack: Deal damage equal to 243% of ATK and suspend the target."
+          },
+          {
+            "combo": "Fifth Attack: Deal damage equal to 229 of ATK and knock the target down."
+          }
+        ]
+      },
+      {
+        "name": "Flying Star Wave",
+        "icon": "",
+        "method": [
+          "Jump",
+          "Attack x5"
+        ],
+        "description": [
+          {
+            "paragraph": "While airborne, use normal attack to launch 5 attacks in a row in mid-air, consuming endurance."
+          }
+        ],
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "First Attack: Deal damage equal to 112% of ATK."
+          },
+          {
+            "combo": "Second Attack: Deal damage equal to 154% of ATK."
+          },
+          {
+            "combo": "Third Attack: Deal damage equal to 220% of ATK."
+          },
+          {
+            "combo": "Fourth Attack: Deal damage equal to 243% of ATK."
+          },
+          {
+            "combo": "Fifth Attack: Deal damage equal to 229 of ATK."
+          }
+        ]
+      },
+      {
+        "name": "Pink Chain Frenzy",
+        "icon": "",
+        "method": [
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "When on the ground, tap and hold normal attack to trigger Pink Chain Frenzy."
+          },
+          {
+            "paragraph": "Commands Metz to attack a target, during which the Wanderer gains hyperbody and consumes endurance. Every attack that lands deals damage equal to 167% of ATK to nearby targets."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Phantasmic Rhythm",
+        "icon": "",
+        "method": [
+          "Attack x1",
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "While using normal attack on the ground, tap and hold normal attack when using the first to fourth normal attacks to trigger Phantasmic Rhythm."
+          },
+          {
+            "paragraph": "Transform into Metz and dash forward, dealing damage equal to 282% of ATK to the targets ahead, then pounce on the targets hit, dealing damage equal to 282% of ATK."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Familiar Descent",
+        "icon": "",
+        "method": [
+          "Jump",
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "Tap and hold normal attack while airborne (tap when a target is available), or use normal attack while climbing, jumping backward, or using the Jetpack to trigger Familiar Descent."
+          },
+          {
+            "paragraph": "While falling, deal damage equal to 173% of ATK each time the target is hit."
+          }
+        ],
+        "hasChain": false
+      }
+    ],
+    "dodge": [
+      {
+        "name": "Dodge",
+        "icon": "",
+        "method": [
+          "Directional Dodge"
+        ],
+        "description": [
+          {
+            "paragraph": "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for 0.5 seconds."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Strolling Flash",
+        "icon": "",
+        "method": [
+          "Directional Dodge",
+          "Attack x1"
+        ],
+        "description": [
+          {
+            "paragraph": "Use normal attack during the short perfect dodge window (use a directional button before dodging) to trigger Strolling Flash, dealing damage up to 244% of ATK to targets hit."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "MetzZZz",
+        "icon": "",
+        "method": [
+          "Dodge",
+          "Attack x1"
+        ],
+        "description": [
+          {
+            "paragraph": "Use normal attack during the short period after dodging to trigger MetzZZz. Metz crashes into the ground, dealing damage equal to 169% of ATK to targets ahead."
+          }
+        ],
+        "hasChain": false
+      }
+    ],
+    "skill": [
+      {
+        "name": "Million-Metz Shockwave",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "After using Million-Metz Shockwave, the Wanderer enters Pact Amplification for 30 seconds: When Pactcrest ☆ Metz is in the main slot, increase the Wanderer's volt damage by 25%. When Pactcrest ☆ Metz is in the off-hand slot, increase the Wanderer's frost damage by 10%. Cooldown: 30 seconds."
+          },
+          {
+            "paragraph": "When non-Benediction Resonances are active"
+          },
+          {
+            "paragraph": "Deal damage equal to 585% of ATK to nearby targets, and apply Force Impact on them. When Million-Metz Shockwave is on cooldown, dealing accumulated damage equal to 100 times of ATK during Pact Amplification grants 1 use of Metz Energy Wave each time. Metz Energy Wave: Deal damage equal to 1,800% of ATK to nearby targets. Gain up to 1 use every 10 seconds."
+          },
+          {
+            "paragraph": "Using Million-Metz Shockwave again during Pact Amplification resets the duration of Pact Amplification and accumulated damage."
+          },
+          {
+            "paragraph": "When Pact Amplification ends naturally, unused Metz Energy Waves are accumulated, and deal damage equal to unused charges times 1,200% of ATK."
+          },
+          {
+            "paragraph": "When Benediction Resonance is active"
+          },
+          {
+            "paragraph": "Using skills deals damage equal to 585% of ATK and applies Force Impact on targets hit. Recover HP equal to 400% of ATK to the Wanderer and nearby teammates, and recover an additional 10% of the Bestie's Max HP. Remove debuffs and control effects on the Wanderer and nearby teammates (including Graying Bite), and grant immunity to debuffs and control effects for 10 seconds. Cooldown: 15 seconds."
+          }
+        ]
+      }
+    ],
+    "discharge": [
+      {
+        "name": "Strange Symphonic Realm",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "When weapon charge is full or Phantasia is triggered, upon switching to this weapon, remove all debuffs from the Wanderer and summon a Strange Symphonic Realm, dealing damage equal to 811% of ATK to nearby targets, during which damage immunity lasts for 1.5 seconds (unavailable in Apex League)."
+          },
+          {
+            "paragraph": "When Benediction Resonance is active"
+          },
+          {
+            "paragraph": "Remove all debuffs and control effects from the Wanderer and nearby teammates (including Graying Bite), and grant them immunity to debuffs and control effects for 10 seconds. The Strange Symphonic Realm transforms nearby targets hit and non-teammate players into Metz (not effective against bosses, and unavailable in Apex League) for 4 seconds. Each target can be transformed 1 time every 30 seconds."
+          }
+        ]
+      }
+    ],
+    "trait": [
+      {
+        "affinity": "1200",
+        "description": [
+          {
+            "paragraph": "Increase final damage by 13%."
+          }
+        ]
+      },
+      {
+        "affinity": "4000",
+        "description": [
+          {
+            "paragraph": "Increase final damage by 18%. When Pactcrest ☆ Metz is equipped, increase final damage by an additional 6%. When Benediction Resonance is activated, increase the final damage of nearby teammates. This effect does not stack."
+          }
+        ]
+      }
     ]
   },
   {

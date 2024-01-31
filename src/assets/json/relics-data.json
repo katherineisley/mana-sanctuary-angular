@@ -1,0 +1,94 @@
+[
+    {
+      "slug": "newrelic",
+      "name": "newrelic",
+      "tag": "battle or utility(jetpack, arm, etc)",
+      "elementBoost": "element_whatever the 4star boosts",
+      "rarity": "SSR or SR",
+      "onDPSGuide":false,
+      "onHealingGuide": false,
+      "onTankGuide": false,
+      "roles": [
+        "leave empty for now just with quotation marks"
+      ],
+      "description": [
+        {
+            "paragraph":""            
+        }       
+      ],
+      "oneStar": [
+        {
+            "paragraph":""            
+        }       
+      ],
+      "twoStar": [
+        {
+            "paragraph":""            
+        }       
+      ],
+      "threeStar": [
+        {
+            "paragraph":""            
+        }       
+      ],
+      "fourStar": [
+        {
+            "paragraph":""            
+        }       
+      ],
+      "fiveStar": [
+        {
+            "paragraph":""            
+        }       
+      ]
+
+    },
+    {
+        "slug": "newrelic",
+        "name": "newrelic",
+        "tag": "battle or utility(jetpack, arm, etc)",
+        "elementBoost": "element_whatever the 4star boosts",
+        "rarity": "SSR or SR",
+        "onDPSGuide":false,
+        "onHealingGuide": false,
+        "onTankGuide": false,
+        "roles": [
+          "leave empty for now just with quotation marks"
+        ],
+        "description": [
+          {
+              "paragraph":""            
+          }       
+        ],
+        "oneStar": [
+          {
+              "paragraph":""            
+          }       
+        ],
+        "twoStar": [
+          {
+              "paragraph":""            
+          }       
+        ],
+        "threeStar": [
+          {
+              "paragraph":""            
+          }       
+        ],
+        "fourStar": [
+          {
+              "paragraph":""            
+          }       
+        ],
+        "fiveStar": [
+          {
+              "paragraph":""            
+          }       
+        ]
+  
+      }
+
+
+
+
+]
