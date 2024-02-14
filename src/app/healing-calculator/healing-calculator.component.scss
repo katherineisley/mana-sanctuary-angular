@@ -64,11 +64,10 @@
                     gap: 8px;
                     cursor: pointer;
                     border-top: 4px solid $border;
-                    // min-height: 120px; // i dislike this property but combining flex with
 
                     .avatar {
-                        width: 100px; // subject to change once avatars are cropped
-                        height: 100px;
+                        height: 80px;
+                        margin: 10px;
                     }
 
                     .wrapper {
@@ -97,31 +96,49 @@
                 gap: 25px;
     
                 .simulacra, .matrices {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-    
                     .subtitle {
                         align-self: center;
                         font-size: 24px;
                     }
+
+                    .stars {
+                        align-self: center;
+                        cursor: pointer;
+
+                        .active {
+                            path {
+                                fill: white;
+                            }
+                        }
+                    }
                 }
     
                 .simulacra {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
                     .simulacra-select {
                         cursor: pointer;
                     }
                 }
     
                 .matrices {
-                    justify-content: center;
-    
-                    .wrapper {
+                    display: flex;
+
+                    .matrix-wrapper {
                         display: flex;
+                        align-items: center;
                         gap: 25px;
-    
-                        .matrix-select {
-                            cursor: pointer;
+
+                        .matrix-select-container {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+
+                            .matrix-select {
+                                cursor: pointer;
+                            }
                         }
                     }
                 }

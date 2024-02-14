@@ -121,67 +121,6 @@
     "tag": "new",
     "avatar": "yanmiao_matrix",
     "element": [
-      "element_physical",
-      "element_flame"
-    ],
-    "rarity": "SSR",
-    "2pc": {
-      "onField": false,
-      "onHealingGuide": true,
-      "onTankGuide": false,
-      "roles": [
-        ""
-      ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
-      "effect": [
-        {
-          "paragraph": "Increase physical and flame ATK by 19% / 21% / 23% / 25%."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
-        }
-      ]
-    },
-    "4pc": {
-      "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "roles": [
-        ""
-      ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
-      "effect": [
-        {
-          "paragraph": "When equipped with at least 1 physical weapon, increase all elemental damage by 20% / 22% / 24% / 26%. When Equilibrium is equipped, increase all elemental damage by an additional 9%."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
-        }
-      ]
-    }
-  },
-  {
-    "slug": "yanmiao",
-    "name": "Yan Miao",
-    "tag": "new",
-    "avatar": "yanmiao_matrix",
-    "element": [
       "element_flame",
       "element_physical"
     ],

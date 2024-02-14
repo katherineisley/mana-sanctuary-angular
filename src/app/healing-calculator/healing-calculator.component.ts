@@ -51,6 +51,35 @@ export class HealingCalculatorComponent implements OnInit {
     }
   }
 
+  currentAdvancementLevel(event: Event) {
+    let target = event.target as HTMLElement;
+
+    // this is retarded because the path is on TOP of the svg, despite the path being the child of the svg WITH NO Z-INDEX
+    // this wasted like 20 minutes of my life because i couldn't figure out why stars with "active" kept getting its "active" removed when clicked
+    // but it worked properly if i clicked the very edge of the star
+    if (target.tagName.toLowerCase() === 'path') {
+      target = target.closest('svg') as unknown as HTMLElement;
+    }
+  
+    const advancementLevel = Number(target.getAttribute('data-advancement-level'));
+    const parentStarsDiv = target.closest('.stars'); // prevents from selecting ALL the stars on the page
+  
+    if (parentStarsDiv) {
+      const svgElements = parentStarsDiv.querySelectorAll('svg');
+  
+      svgElements.forEach((svg: SVGSVGElement) => {
+        const level = Number(svg.getAttribute('data-advancement-level'));
+        const shouldBeActive = level <= advancementLevel;
+  
+        if (shouldBeActive) {
+          this.renderer.addClass(svg, 'active');
+        } else {
+          this.renderer.removeClass(svg, 'active');
+        }
+      });
+    }
+  }
+
   @HostListener('document:click', ['$event.target'])
   onDocumentClick(target: HTMLElement) {
     if (!target.closest('.all-units')) {
