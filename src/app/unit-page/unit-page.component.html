@@ -209,7 +209,7 @@
             <p>{{ item.name }}</p>
             <img src="assets/simulacra/abilities/{{item.icon}}" alt="Skill Icon">
             <div *ngFor="let desc of item.description">
-              <p>{{ desc.paragraph }}</p>
+              <p [style.white-space]="'pre-line'">{{ desc.paragraph }}</p>
             </div>
           </div>
         </div>
