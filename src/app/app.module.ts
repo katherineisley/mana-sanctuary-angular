@@ -21,6 +21,8 @@ import { DynamicContentHeightDirective } from './dynamic-content-height.directiv
 import { HealingTeamsComponent } from './healing-teams/healing-teams.component';
 import { HealingCalculatorComponent } from './healing-calculator/healing-calculator.component';
 import { GlossaryComponent } from './glossary/glossary.component';
+import { MatricesIndexComponent } from './matrices-index/matrices-index.component';
+import { RelicsIndexComponent } from './relics-index/relics-index.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { GlossaryComponent } from './glossary/glossary.component';
     DynamicContentHeightDirective,
     HealingTeamsComponent,
     HealingCalculatorComponent,
-    GlossaryComponent
+    GlossaryComponent,
+    MatricesIndexComponent,
+    RelicsIndexComponent
   ],
   imports: [
     BrowserModule,

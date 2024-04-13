@@ -19,7 +19,6 @@
     }
 }
 
-
 .banner {
     width: 100%;
     height: 700px;
@@ -56,8 +55,10 @@
 
     .inner {
         // this part needs to be re-evaluated for responsive later
+        // edit: reevaluated once
+        max-width: 1440px;
         width: 100%;
-        margin: 0 120px; // figma has 140px
+        margin: 0 auto; // figma has 140px
         // end
 
         display: grid; // dont know if we should do it like this or flexbox and 50% width, will see whats easier later
