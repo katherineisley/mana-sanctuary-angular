@@ -1,7 +1,7 @@
 <header class="header">
   <ul class="main-menu">
     <li class="menu-item">
-      <a routerLink="/home">Mana</a>
+      <a routerLink="/home">Arcana</a>
     </li>
     <li class="menu-item">
       <a routerLink="/healing">Healing
@@ -29,14 +29,15 @@
         </a>
       </div>
     </li>
-    <li class="menu-item">
-      <a routerLink="/unit-page">Teams</a>
-      <!-- Teams routing to /unitpage is temporary -->
-    </li>
-    <li class="menu-item">
+    <li class="menu-item wip">
       <a routerLink="/guides">Guides</a>
+      <span class="wip-tag">WIP</span>
     </li>
-    <li class="menu-item beta">
+    <!-- <li class="menu-item beta" EXAMPLE BETA TAG USAGE>
+      -- main div stuff --
+      <span class="beta-tag">Beta</span>
+    </li> -->
+    <li class="menu-item wip">
       <a>Index
         <img src="assets/other/chevron-down.svg">
       </a>
@@ -60,7 +61,10 @@
           <p class="description">uhm</p>
         </a>
       </div>
-      <span class="beta-tag">Beta</span>
+      <span class="wip-tag">WIP</span>
+    </li>
+    <li class="menu-item">
+      <a routerLink="/glossary">Glossary</a>
     </li>
     <li class="menu-item">
       <a routerLink="/about-us">About Us</a>
@@ -68,7 +72,7 @@
   </ul>
   <div class="main-menu_mobile">
     <h3 class="home">
-      <a routerLink="/home">Mana</a>
+      <a routerLink="/home">Arcana</a>
     </h3>
     <img class="menu-icon" src="assets/other/menu-icon.svg" alt="">
     <ul class="burger-menu">
@@ -79,16 +83,6 @@
             <span>Healing</span>
           </div>
           <img src="assets/other/arrow-right.svg" alt="Right Arrow">
-        </a>
-      </li>
-      <li class="menu-item">
-        <a class="hyperlink" routerLink="/unit-page">
-          <!-- Teams routing to /unitpage is temporary -->
-          <div class="item-wrapper">
-            <img src="assets/other/teams.svg" alt="Teans Icon">
-            <span>Teams</span>
-          </div>
-          <img src="../assets/other/arrow-right.svg" alt="Right Arrow">
         </a>
       </li>
       <li class="menu-item">
@@ -110,6 +104,15 @@
         </a>
       </li>
       <li class="menu-item">
+        <a class="hyperlink" routerLink="/glossary">
+          <div class="item-wrapper">
+            <img src="assets/other/dev.svg" alt="Glossary Icon">
+            <span>Glossary</span>
+          </div>
+          <img src="assets/other/arrow-right.svg" alt="Right Arrow">
+        </a>
+      </li>
+      <li class="menu-item">
         <a class="hyperlink" routerLink="/about-us">
           <div class="item-wrapper">
             <img src="assets/other/dev.svg" alt="About Us Icon">
@@ -117,6 +120,7 @@
           </div>
           <img src="assets/other/arrow-right.svg" alt="Right Arrow">
         </a>
+      </li>
     </ul>
   </div>
 </header>

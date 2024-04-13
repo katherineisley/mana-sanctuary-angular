@@ -10,6 +10,7 @@ import { HealingCalculatorComponent } from './healing-calculator/healing-calcula
 import { UnitPageComponent } from './unit-page/unit-page.component';
 import { HomeComponent } from './home/home.component';
 import { GuidesComponent } from './guides/guides.component';
+import { GlossaryComponent } from './glossary/glossary.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'unit-page/:name', component: UnitPageComponent },
   { path: 'home', component: HomeComponent },
   { path: 'guides', component: GuidesComponent },
+  { path: 'glossary', component: GlossaryComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: '**', component: PageNotFoundComponent }, // keep this as the last route
 ];
