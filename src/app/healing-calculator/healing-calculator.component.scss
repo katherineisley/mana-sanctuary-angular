@@ -110,6 +110,11 @@
                                 fill: white;
                             }
                         }
+
+                        svg, img {
+                            width: 20px;
+                            height: 20px;
+                        }
                     }
                 }
     
@@ -119,7 +124,14 @@
                     gap: 10px;
 
                     .simulacra-select {
+                        align-self: center;
                         cursor: pointer;
+                        width: 150px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
                     }
                 }
     
@@ -129,7 +141,7 @@
                     .matrix-wrapper {
                         display: flex;
                         align-items: center;
-                        gap: 25px;
+                        gap: 15px;
 
                         .matrix-select-container {
                             display: flex;
@@ -137,7 +149,14 @@
                             gap: 10px;
 
                             .matrix-select {
+                                align-self: center;
                                 cursor: pointer;
+                                width: 75px;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
                             }
                         }
                     }
