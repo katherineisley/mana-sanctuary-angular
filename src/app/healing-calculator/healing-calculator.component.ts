@@ -80,6 +80,11 @@ export class HealingCalculatorComponent implements OnInit {
     }
   }
 
+  changeThumbnail(clickedEntry: any) { // wip
+    const value = clickedEntry.slug; // grabs the slug for the avatar
+    console.log(value);
+  }
+
   @HostListener('document:click', ['$event.target'])
   onDocumentClick(target: HTMLElement) {
     if (!target.closest('.all-units')) {

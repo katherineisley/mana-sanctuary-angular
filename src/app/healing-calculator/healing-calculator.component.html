@@ -23,7 +23,7 @@
   <div class="insertions">
     <div class="units">
       <div class="all-units" [style.display]="showAllUnits ? 'flex' : 'none'">
-        <div class="entry" *ngFor="let unit of units">
+        <div class="entry" [attr.data-name]="unit.slug" *ngFor="let unit of units" (click)="changeThumbnail(unit)">
           <img class="avatar" src="assets/simulacra/{{unit.slug}}_avatar.webp" alt="Avatar">
           <div class="wrapper">
             <span class="name">{{unit.name[0]}}</span>
@@ -32,7 +32,7 @@
         </div>
       </div>
       <div class="all-matrices" [style.display]="showAllMatrices ? 'flex' : 'none'">
-        <div class="entry" *ngFor="let matrix of matrices">
+        <div class="entry" [attr.data-name]="matrix.slug" *ngFor="let matrix of matrices" (click)="changeThumbnail(matrix)">
           <img class="avatar" src="assets/matrices/{{matrix.slug}}_matrix.webp" alt="Avatar">
           <div class="wrapper">
             <span class="name">{{matrix.name}}</span>

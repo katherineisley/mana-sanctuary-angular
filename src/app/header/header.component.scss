@@ -1,9 +1,9 @@
 @import '../../styles.scss';
 
 .header {
-    background-image: linear-gradient(rgba(38, 38, 38, 0.6), rgba(38, 38, 38, 0.6)), url("/assets/backgrounds/mana_background.png"); // #262626 I forget way too often that you can do this
+    background-image: linear-gradient(rgba(38, 38, 38, 0.6), rgba(38, 38, 38, 0.6)), url("/assets/backgrounds/header_background.webp"); // #262626 I forget way too often that you can do this
     background-size: cover;
-    background-position-y: 30%; // Problem: eyes are not centerpiece as viewport changes width. % value is better than a static px value, but does not solve the problem
+    background-position: center;
     display: flex;
     align-items: center;
     padding: 32px 64px;
