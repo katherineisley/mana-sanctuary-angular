@@ -1,0 +1,78 @@
+{
+    "slug": "",
+    "name": "",
+    "element": "element_",
+    "resonance": "",
+    "onDPSGuide": false,
+    "onHealingGuide": false,
+    "onTankGuide": false,
+    "favouriteGifts": [
+        "with",
+        "commas",
+        "inhere"
+    ],
+    "hasUtility": true/false (only leia has utility rn that she collects energy balls, just put each line from the text in a paragraph, delete utility block for the rest) ,
+    "utility": [
+        {
+            "paragraph": ""
+        }
+    ],
+    "skill": [
+        {
+            "name": "",
+            "icon": "",
+            "description": [
+                {
+                    "paragraph": ""
+                },
+                {
+                    "paragraph": ""
+                }
+            ]
+        },
+        {
+            "name": "",
+            "icon": "",
+            "description": [
+                {
+                    "paragraph": ""
+                },
+                {
+                    "paragraph": ""
+                }
+            ]
+        },
+        {
+            "name": "",
+            "icon": "",
+            "description": [
+                {
+                    "paragraph": ""
+                },
+                {
+                    "paragraph": ""
+                }
+            ]
+        }
+    ],
+    "properties": [
+        {
+            "paragraph": ""
+        }
+    ],
+    "oneStar": [
+        {
+            "paragraph": ""
+        }
+    ],
+    "twoStar": [
+        {
+            "paragraph": ""
+        }
+    ],
+    "threeStar": [
+        {
+            "paragraph": ""
+        }
+    ],
+}

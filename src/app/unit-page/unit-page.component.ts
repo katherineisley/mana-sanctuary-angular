@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+
 import * as $ from 'jquery';
 
 @Component({
@@ -12,10 +13,15 @@ import * as $ from 'jquery';
 export class UnitPageComponent implements OnInit, AfterViewInit {
   slug!: string;
   unit: any = {};
+  matrix: any = {};
   activeTab: any = null;
   activeInfo: string = 'Advancements'; 
   
-  constructor(private route: ActivatedRoute, private http: HttpClient) { }
+  constructor(
+    private route: ActivatedRoute,
+    private http: HttpClient
+  ) { }
+  
 
   ngOnInit() {
     this.slug = this.route.snapshot.paramMap.get('name')!;
@@ -54,6 +60,12 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
       document.documentElement.style.setProperty('--svg-color', dynamicColor);
       document.documentElement.style.setProperty('--background-image', backgroundImage);
     }, error => console.error(error));
+      // Fetch matrix data
+      this.http.get<any>("assets/json/matrices-data.json").subscribe(data => {
+        this.matrix = data.find((matrix: any) => matrix.slug === this.slug);
+    }, error => console.error(error));
+
+    
   }
 
   setActiveTab(element: any) { 
@@ -84,15 +96,32 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
     setTimeout(() => {
       $('.underline').css('transition', 'left 0.3s ease, width 0.3s ease');
     }, 1); // shit solution so it doesnt get applied mid-render
-
+ 
+ 
+    $('.matrix-part, .materials-part, .guide-part').hide();
     $('.tabs .tab:first-child').addClass('active'); // make "Profile" tab active on page load
+
     $('.tabs .tab').click(function () {
+      var tabName = $(this).data('tab');
       $(this).addClass('active').siblings().removeClass('active');
-      if (!$('.tabs .tab[data-tab="profile"]').hasClass('active')) { // i doubt this solution will be permanent or at least not this ugly
-        $('.profile-part').hide();
-      } else {
-        $('.profile-part').show();
+      
+      $('.profile-part, .matrix-part, .materials-part, .guide-part').hide(); // Hide all parts initially
+      
+      switch (tabName) {
+        case 'profile':
+          $('.profile-part').show();
+          break;
+        case 'matrix':
+          $('.matrix-part').show();
+          break;
+        case 'materials':
+          $('.materials-part').show();
+          break;
+        case 'guide':
+          $('.guide-part').show();
+          break;
       }
     });
+    
   }
 }
