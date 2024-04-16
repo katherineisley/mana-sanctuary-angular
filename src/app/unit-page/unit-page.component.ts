@@ -97,8 +97,6 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
       $('.underline').css('transition', 'left 0.3s ease, width 0.3s ease');
     }, 1); // shit solution so it doesnt get applied mid-render
  
- 
-    $('.matrix-part, .materials-part, .guide-part').hide();
     $('.tabs .tab:first-child').addClass('active'); // make "Profile" tab active on page load
 
     $('.tabs .tab').click(function () {
@@ -122,6 +120,5 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
           break;
       }
     });
-    
   }
 }

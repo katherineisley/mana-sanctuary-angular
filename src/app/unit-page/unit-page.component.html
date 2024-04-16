@@ -77,23 +77,6 @@
         <span>Guide</span>
       </div>
     </div>
-
-    <div class="matrix-part">
-      
-        <!-- Display 2pc effect -->
-        <h3>2pc Effect:</h3>
-        <div *ngFor="let effect of matrix['2pc'].effect">
-          <p>{{ effect.paragraph }}</p>
-        </div>
-      
-        <!-- Display 4pc effect -->
-        <h3>4pc Effect:</h3>
-        <div *ngFor="let effect of matrix['4pc'].effect">
-          <p>{{ effect.paragraph }}</p>
-        </div>
-    
-    </div>
-    
     <div class="profile-part">
       <div class="info-selection">
         <a class="info" (click)="setActiveInfo($event)" #info>Advancements</a>
@@ -253,6 +236,18 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="matrix-part">
+      <!-- Display 2pc effect -->
+      <h3>2pc Effect:</h3>
+      <div *ngFor="let effect of matrix['2pc'].effect">
+        <p>{{ effect.paragraph }}</p>
+      </div>
+      <!-- Display 4pc effect -->
+      <h3>4pc Effect:</h3>
+      <div *ngFor="let effect of matrix['4pc'].effect">
+        <p>{{ effect.paragraph }}</p>
       </div>
     </div>
   </div>

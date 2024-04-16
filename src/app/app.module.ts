@@ -23,6 +23,7 @@ import { HealingCalculatorComponent } from './healing-calculator/healing-calcula
 import { GlossaryComponent } from './glossary/glossary.component';
 import { MatricesIndexComponent } from './matrices-index/matrices-index.component';
 import { RelicsIndexComponent } from './relics-index/relics-index.component';
+import { SquareCardComponent } from './square-card/square-card.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { RelicsIndexComponent } from './relics-index/relics-index.component';
     HealingCalculatorComponent,
     GlossaryComponent,
     MatricesIndexComponent,
-    RelicsIndexComponent
+    RelicsIndexComponent,
+    SquareCardComponent
   ],
   imports: [
     BrowserModule,

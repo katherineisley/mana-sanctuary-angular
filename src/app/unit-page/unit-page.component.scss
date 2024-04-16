@@ -140,6 +140,10 @@
             }
         }
 
+        .matrix-part, .materials-part, .guide-part {
+            display: none;
+        }
+
         .profile-part {
             .info-selection {
                 position: relative;
