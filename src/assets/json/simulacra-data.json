@@ -1292,9 +1292,6 @@
       {
         "name": "Butterly Dance",
         "icon": "nanyin_dodge_3.webp",
-        "method": [
-          ""
-        ],
         "description": [
           {
             "paragraph": "While in team play, after dodging with Purple Bamboo, summon 1 butterfly that follows the Wanderer for 60 seconds."
