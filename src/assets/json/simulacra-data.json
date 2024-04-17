@@ -6850,7 +6850,7 @@
     "dodge": [
       {
         "name": "Dodge",
-        "icon": "lyra_dodge_1.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -6879,7 +6879,7 @@
     "skill": [
       {
         "name": "Forgiveness Guard",
-        "icon": "lyra_skill_1.webp",
+        "icon": "lyra_attack_1.webp",
         "description": [
           {
             "paragraph": "Forgiveness Guard: When the healing effect overflows, gain an HP Shield equal to 25% of Max HP. When Vesper has Forgiveness Guard, different guard effects are activated under different Resonances."
@@ -7067,16 +7067,16 @@
             "combo": "First Attack: Deal damage equal to 30.2% of ATK."
           },
           {
-            "combo": "First Attack: Deal damage equal to 55.6%. of ATK."
+            "combo": "Second Attack: Deal damage equal to 55.6%. of ATK."
           },
           {
-            "combo": "First Attack: Deal damage equal to 48.2% of ATK."
+            "combo": "Third Attack: Deal damage equal to 48.2% of ATK."
           },
           {
-            "combo": "First Attack: Deal damage equal to 111.2% of ATK."
+            "combo": "Fourth Attack: Deal damage equal to 111.2% of ATK."
           },
           {
-            "combo": "First Attack: Deal damage equal to 148.3% of ATK."
+            "combo": "Fifth Attack: Deal damage equal to 148.3% of ATK."
           }
         ]
       },
@@ -7140,7 +7140,7 @@
     "dodge": [
       {
         "name": "Dodge",
-        "icon": "lin_dodge_1.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -7421,7 +7421,7 @@
     "dodge": [
       {
         "name": "Dodge",
-        "icon": "sakifuwa_dodge_1.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -7695,7 +7695,7 @@
       },
       {
         "name": "Dodge",
-        "icon": "ruby_dodge_2.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -7910,7 +7910,7 @@
     "dodge": [
       {
         "name": "Dodge",
-        "icon": "cobaltb_dodge_1.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -8134,7 +8134,7 @@
       },
       {
         "name": "Sneak Attack",
-        "icon": "claudia_attack_5.webp",
+        "icon": "common_sneak.webp",
         "method": [
           "Crouch",
           "Attack"
@@ -8150,7 +8150,7 @@
     "dodge": [
       {
         "name": "Dodge",
-        "icon": "claudia_dodge_1.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -8385,7 +8385,7 @@
     "dodge": [
       {
         "name": "Dodge",
-        "icon": "frigg_dodge_1.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -8633,7 +8633,7 @@
     "dodge": [
       {
         "name": "Dodge",
-        "icon": "nemesis_dodge_1.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -8893,7 +8893,7 @@
       },
       {
         "name": "Sneak Attack",
-        "icon": "crow_attack_5.webp",
+        "icon": "common_sneak.webp",
         "method": [
           "Dodge",
           "Attack"
@@ -8926,7 +8926,7 @@
       },
       {
         "name": "Dodge",
-        "icon": "crow_dodge_2.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -9179,7 +9179,7 @@
       },
       {
         "name": "Dodge",
-        "icon": "huma_dodge_2.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge",
           "Attack"
@@ -9387,7 +9387,7 @@
       },
       {
         "name": "Dodge",
-        "icon": "samir_dodge_2.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
