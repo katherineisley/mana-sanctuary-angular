@@ -9557,7 +9557,7 @@
         ]
       },
       {
-        "name": "Omnium  Missile",
+        "name": "Omnium Missile",
         "icon": "zero_attack_2.webp",
         "method": [
           "Jump",
@@ -9633,7 +9633,7 @@
     "dodge": [
       {
         "name": "Soul Surge",
-        "icon": "zero_dodge_1.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -9838,7 +9838,7 @@
       },
       {
         "name": "Sneak Attack",
-        "icon": "shiro_attack_5.webp",
+        "icon": "common_sneak.webp",
         "method": [
           "Crouch",
           "Attack"
@@ -9868,7 +9868,7 @@
       },
       {
         "name": "Dodge",
-        "icon": "shiro_dodge_2.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -10079,7 +10079,7 @@
       },
       {
         "name": "Sneak Attack",
-        "icon": "king_attack_5.webp",
+        "icon": "common_sneak.webp",
         "method": [
           "Crouch",
           "Attack"
@@ -10095,7 +10095,7 @@
     "dodge": [
       {
         "name": "Returning Chainblade",
-        "icon": "king_dodge_1.webp",
+        "icon": "king_attack_4.webp",
         "method": [
           "Directional Dodge",
           "Attack"
@@ -10123,7 +10123,7 @@
       },
       {
         "name": "Dodge",
-        "icon": "king_dodge_3.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -10357,7 +10357,7 @@
     "dodge": [
       {
         "name": "Dodge",
-        "icon": "cocoritter_dodge_1.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -10390,7 +10390,7 @@
       },
       {
         "name": "Tesseract",
-        "icon": "cocoritter_dodge_3.webp",
+        "icon": "cocoritter_dodge_2.webp",
         "method": [
           "Dodge",
           "Attack"
@@ -10556,7 +10556,7 @@
       },
       {
         "name": "Air Volley",
-        "icon": "tsubasa_attack_3.webp",
+        "icon": "tsubasa_attack_2.webp",
         "method": [
           "Jump",
           "Attack x4"
@@ -10586,7 +10586,7 @@
     "dodge": [
       {
         "name": "Dodge",
-        "icon": "tsubasa_dodge_1.webp",
+        "icon": "common_dodge.webp",
         "method": [],
         "description": [
           {
@@ -10597,7 +10597,7 @@
       },
       {
         "name": "Loaded Arrow",
-        "icon": "tsubasa_dodge_2.webp",
+        "icon": "tsubasa_attack_2.webp",
         "method": [
           "Directional Dodge",
           "Attack"
@@ -10613,7 +10613,7 @@
     "skill": [
       {
         "name": "Piercing Shot",
-        "icon": "tsubasa_skill_1.webp",
+        "icon": "tsubasa_attack_1.webp",
         "description": [
           {
             "paragraph": "Perform a backflip and fire 3 piercing shots, with the main shot dealing damage equal to 284.1 of ATK, and the other two shots deal 60% damage. In addition, knock targets back and stun them for 5 seconds if they collide with an obstacle."
@@ -10806,7 +10806,7 @@
       },
       {
         "name": "Sneak Attack",
-        "icon": "meryl_attack_5.webp",
+        "icon": "common_sneak.webp",
         "method": [
           "Crouch",
           "Attack"
@@ -10835,7 +10835,7 @@
     "dodge": [
       {
         "name": "Dodge",
-        "icon": "meryl_dodge_1.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
