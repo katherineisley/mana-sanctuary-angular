@@ -8,6 +8,7 @@ import { HealingGuideComponent } from './healing-guide/healing-guide.component';
 import { HealingTeamsComponent } from './healing-teams/healing-teams.component';
 import { HealingCalculatorComponent } from './healing-calculator/healing-calculator.component';
 import { GuidesComponent } from './guides/guides.component';
+import { IndexComponent } from './index/index.component';
 import { UnitsIndexComponent } from './units-index/units-index.component';
 import { UnitPageComponent } from './unit-page/unit-page.component';
 import { MatricesIndexComponent } from './matrices-index/matrices-index.component';
@@ -24,10 +25,11 @@ const routes: Routes = [
   { path: 'healing/teams', component: HealingTeamsComponent },
   { path: 'healing/calculator', component: HealingCalculatorComponent },
   { path: 'guides', component: GuidesComponent },
-  { path: 'units-index', component: UnitsIndexComponent },
+  { path: 'index', component: IndexComponent },
+  { path: 'index/units-index', component: UnitsIndexComponent },
   { path: 'unit-page/:name', component: UnitPageComponent },
-  { path: 'matrices-index', component: MatricesIndexComponent },
-  { path: 'relics-index', component: RelicsIndexComponent },
+  { path: 'index/matrices-index', component: MatricesIndexComponent },
+  { path: 'index/relics-index', component: RelicsIndexComponent },
   { path: 'glossary', component: GlossaryComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: '**', component: PageNotFoundComponent }, // keep this as the last route

@@ -24,6 +24,7 @@ import { GlossaryComponent } from './glossary/glossary.component';
 import { MatricesIndexComponent } from './matrices-index/matrices-index.component';
 import { RelicsIndexComponent } from './relics-index/relics-index.component';
 import { SquareCardComponent } from './square-card/square-card.component';
+import { IndexComponent } from './index/index.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { SquareCardComponent } from './square-card/square-card.component';
     GlossaryComponent,
     MatricesIndexComponent,
     RelicsIndexComponent,
-    SquareCardComponent
+    SquareCardComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,
