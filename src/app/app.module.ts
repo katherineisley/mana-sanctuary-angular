@@ -23,10 +23,11 @@ import { HealingCalculatorComponent } from './healing-calculator/healing-calcula
 import { GlossaryComponent } from './glossary/glossary.component';
 import { MatricesIndexComponent } from './matrices-index/matrices-index.component';
 import { RelicsIndexComponent } from './relics-index/relics-index.component';
-import { SquareCardComponent } from './square-card/square-card.component';
 import { IndexComponent } from './index/index.component';
 import { MatrixCardComponent } from './matrix-card/matrix-card.component';
 import { MatrixPageComponent } from './matrix-page/matrix-page.component';
+import { RelicCardComponent } from './relic-card/relic-card.component';
+import { RelicPageComponent } from './relic-page/relic-page.component';
 
 @NgModule({
   declarations: [
@@ -49,10 +50,11 @@ import { MatrixPageComponent } from './matrix-page/matrix-page.component';
     GlossaryComponent,
     MatricesIndexComponent,
     RelicsIndexComponent,
-    SquareCardComponent,
     IndexComponent,
     MatrixCardComponent,
-    MatrixPageComponent
+    MatrixPageComponent,
+    RelicCardComponent,
+    RelicPageComponent
   ],
   imports: [
     BrowserModule,
