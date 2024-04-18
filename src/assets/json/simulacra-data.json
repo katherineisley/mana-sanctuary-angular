@@ -103,7 +103,7 @@
     "attacks": [
       {
         "name": "Rapid Bow",
-        "icon": "",
+        "icon": "rei_attack_1.webp",
         "method": [
           "Attack x6"
         ],
@@ -136,7 +136,7 @@
       },
       {
         "name": "Aerial Assault",
-        "icon": "",
+        "icon": "rei_attack_2.webp",
         "method": [
           "Attack x6"
         ],
@@ -169,7 +169,7 @@
       },
       {
         "name": "Backjump Arrow",
-        "icon": "",
+        "icon": "rei_attack_3.webp",
         "method": [
           "Attack x1",
           "Hold"
@@ -198,7 +198,7 @@
       },
       {
         "name": "Dodging Rapidfire",
-        "icon": "",
+        "icon": "rei_attack_4.webp",
         "method": [
           "Attack x3"
         ],
@@ -222,7 +222,7 @@
       },
       {
         "name": "Precision Shot",
-        "icon": "",
+        "icon": "rei_attack_5.webp",
         "method": [],
         "description": [
           {
@@ -235,7 +235,7 @@
     "dodge": [
       {
         "name": "Dodge",
-        "icon": "",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -248,7 +248,7 @@
       },
       {
         "name": "Triple Shot",
-        "icon": "",
+        "icon": "rei_dodge_2.webp",
         "method": [
           "Directional Dodge",
           "Attack x1"
@@ -262,7 +262,7 @@
       },
       {
         "name": "Charged Shots",
-        "icon": "",
+        "icon": "rei_dodge_3.webp",
         "method": [
           "Directional Dodge",
           "Attack x1"
@@ -278,7 +278,7 @@
     "skill": [
       {
         "name": "Mecha Strike",
-        "icon": "",
+        "icon": "rei_skill_1.webp",
         "description": [
           {
             "paragraph": "Summon a mecha to pummel enemies, dealing damage equal to 1,008% of ATK to nearby targets. During this time, the Wanderer gains hyperbody and receives 35 special energy. Cooldown: 20 seconds. This is not affected by other cooldown clearing, resetting, or changing effects."
@@ -289,7 +289,7 @@
     "discharge": [
       {
         "name": "Defense Field",
-        "icon": "",
+        "icon": "rei_discharge_1.webp",
         "description": [
           {
             "paragraph": "When weapon charge is full or Phantasia is triggered, upon switching to this weapon, remove all debuffs from the Wanderer. Summon a mecha and use its shield to smash the ground, with the resulting shockwave dealing damage equal to 1,337% of ATK to nearby targets. Also, gain 30 special energy. During this period, gain damage immunity for 1.5 seconds (unavailable in Apex League)."
@@ -415,7 +415,7 @@
     "attacks": [
       {
         "name": "Brandishing Spear: Forming Shadow",
-        "icon": "",
+        "icon": "asuka_attack_1.webp",
         "method": [
           "Attack x5"
         ],
@@ -445,7 +445,7 @@
       },
       {
         "name": "Thrusting Spear: Blinking Shadow",
-        "icon": "",
+        "icon": "asuka_attack_2.webp",
         "method": [
           "Jump",
           "Attack x5"
@@ -476,7 +476,7 @@
       },
       {
         "name": "Reverent Spear: Raging Wave",
-        "icon": "",
+        "icon": "asuka_attack_3.webp",
         "method": [
           "Attack x1",
           "Hold"
@@ -493,7 +493,7 @@
       },
       {
         "name": "Charging Spear: Assassinate",
-        "icon": "",
+        "icon": "asuka_attack_4.webp",
         "method": [
           "Jump",
           "Hold"
@@ -512,7 +512,7 @@
     "dodge": [
       {
         "name": "Dodge",
-        "icon": "",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -525,7 +525,7 @@
       },
       {
         "name": "Extending Spear: Plunder",
-        "icon": "",
+        "icon": "asuka_dodge_2.webp",
         "method": [
           "Directional Dodge",
           "Attack x1"
@@ -539,7 +539,7 @@
       },
       {
         "name": "Leaping Slam",
-        "icon": "",
+        "icon": "asuka_dodge_3.webp",
         "method": [
           "Dodge",
           "Attack x1"
@@ -555,7 +555,7 @@
     "skill": [
       {
         "name": "Cloud-Piercer",
-        "icon": "",
+        "icon": "asuka_skill_1.webp",
         "description": [
           {
             "paragraph": "Throw the weapon toward the target and draw in nearby targets, dealing damage equal to 1,604% of ATK, then briefly immobilize nearby targets. Cooldown: 20 seconds. This is not affected by other cooldown clearing, resetting, or changing effects."
@@ -578,7 +578,7 @@
     "discharge": [
       {
         "name": "Weapons Lift-Off",
-        "icon": "",
+        "icon": "asuka_discharge_1.webp",
         "description": [
           {
             "paragraph": "When weapon charge is full or Phantasia is triggered, upon switching to this weapon, remove all debuffs from the Wanderer and pilot EVA-02 to execute a flying kick, dealing damage equal to 1,755% of ATK to nearby targets. During this period, gain damage immunity for 1.5 seconds (unavailable in Apex League)."
@@ -707,7 +707,7 @@
     "attacks": [
       {
         "name": "Pillage",
-        "icon": "",
+        "icon": "yanuo_attack_1.webp",
         "method": [
           "Attack x6"
         ],
@@ -740,7 +740,7 @@
       },
       {
         "name": "Hunt",
-        "icon": "",
+        "icon": "yanuo_attack_2.webp",
         "method": [
           "Jump",
           "Attack x6"
@@ -774,7 +774,7 @@
       },
       {
         "name": "Frozen Spike",
-        "icon": "",
+        "icon": "yanuo_attack_3.webp",
         "method": [
           "Attack x2",
           "Hold"
@@ -799,7 +799,7 @@
       },
       {
         "name": "Death From Above",
-        "icon": "",
+        "icon": "yanuo_attack_4.webp",
         "method": [
           "Jump",
           "Attack x1",
@@ -817,7 +817,7 @@
       },
       {
         "name": "Fixate",
-        "icon": "",
+        "icon": "yanuo_attack_5.webp",
         "method": [
           "Hold"
         ],
@@ -833,7 +833,7 @@
       },
       {
         "name": "Boneshaver",
-        "icon": "",
+        "icon": "yanuo_attack_6.webp",
         "method": [
           "Hold"
         ],
@@ -851,7 +851,7 @@
     "dodge": [
       {
         "name": "Dodge",
-        "icon": "",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -864,7 +864,7 @@
       },
       {
         "name": "Concealment",
-        "icon": "",
+        "icon": "yanuo_dodge_2.webp",
         "method": [
           "Dodge",
           "Hold"
@@ -881,7 +881,7 @@
       },
       {
         "name": "Impending Chill",
-        "icon": "",
+        "icon": "yanuo_dodge_3.webp",
         "method": [
           "Directional Dodge",
           "Attack x1"
@@ -895,7 +895,7 @@
       },
       {
         "name": "Death Aflutter",
-        "icon": "",
+        "icon": "yanuo_dodge_4.webp",
         "method": [
           "Dodge",
           "Attack x1"
@@ -909,7 +909,7 @@
       },
       {
         "name": "Unforeseen Doom",
-        "icon": "",
+        "icon": "yanuo_dodge_5.webp",
         "method": [
           "Dodge",
           "Hold",
@@ -926,7 +926,7 @@
     "skill": [
       {
         "name": "Arctic Bite",
-        "icon": "",
+        "icon": "yanuo_skill_1.webp",
         "description": [
           {
             "paragraph": "Swing the lance to tear through space, giving the Wanderer hyperbody and a 80% damage reduction for 2 seconds, dealing damage equal to 420% of ATK to nearby targets, and creating a tear to draw in nearby targets that lasts for 30 seconds. This also creates 6 ice cores (up to 45 ice cores may exist in battle at any given time). Cooldown: 60 seconds."
@@ -938,7 +938,7 @@
       },
       {
         "name": "Frigid Blast",
-        "icon": "",
+        "icon": "yanuo_skill_2.webp",
         "description": [
           {
             "paragraph": "When Fixate tosses the weapon through the tear, the cold air explodes, dealing damage equal to 330% of ATK to enemies near the tear, strongly freezing them for 5 seconds (triggers up to once every 30 seconds, does not work on bosses). Additionally, it draws in and detonates all the ice cores in battle, and places Force Impact on the targets."
@@ -950,7 +950,7 @@
       },
       {
         "name": "Shadow Execution",
-        "icon": "",
+        "icon": "yanuo_skill_3.webp",
         "description": [
           {
             "paragraph": "Move to the weapon's location and strike swiftly (if the thrown weapon has previously hit a target, then move in front of that target), dealing damage equal to 99% of ATK to nearby targets (does not trigger the skill's additional effect). When Shadow Execution hits a target, triggers Phantasia if it's not on cooldown."
@@ -961,7 +961,7 @@
     "discharge": [
       {
         "name": "Deadly Euphoria",
-        "icon": "",
+        "icon": "yanuo_discharge_1.webp",
         "description": [
           {
             "paragraph": "When weapon charge is full or Phantasia is triggered, upon switching to this weapon, remove all debuffs from the Wanderer. Yanuo stabs the lance into the ground, dealing damage equal to 368% of ATK to the targets in the area ahead and creating 6 ice cores (up to 45 ice cores may exist in battle at any given time). During this period, gain damage immunity for 1.5 seconds (unavailable in Apex League)."
@@ -1089,7 +1089,7 @@
     "attacks": [
       {
         "name": "Standard Protocol",
-        "icon": "",
+        "icon": "plotti_attack_1.webp",
         "method": [
           "Attack x5"
         ],
@@ -1119,7 +1119,7 @@
       },
       {
         "name": "Burst Fire Protocol",
-        "icon": "",
+        "icon": "plotti_attack_2.webp",
         "method": [
           "Jump",
           "Attack x5"
@@ -1150,7 +1150,7 @@
       },
       {
         "name": "Rapid Fire Protocol",
-        "icon": "",
+        "icon": "plotti_attack_3.webp",
         "method": [
           "Attack x1",
           "Hold"
@@ -1167,7 +1167,7 @@
       },
       {
         "name": "Energizing Protocol",
-        "icon": "",
+        "icon": "plotti_attack_4.webp",
         "method": [
           "Hold"
         ],
@@ -1183,7 +1183,7 @@
       },
       {
         "name": "Air Raid Protocol",
-        "icon": "",
+        "icon": "plotti_attack_5.webp",
         "method": [
           "Jump",
           "Attack x1",
@@ -1201,7 +1201,7 @@
       },
       {
         "name": "Diving Protocol",
-        "icon": "",
+        "icon": "plotti_attack_6.webp",
         "method": [
           "Jump",
           "Dodge",
@@ -1216,7 +1216,7 @@
       },
       {
         "name": "Brilliant Colors",
-        "icon": "",
+        "icon": "plotti_attack_7.webp",
         "method": [
           "Dodge",
           "Hold"
@@ -1232,7 +1232,7 @@
     "dodge": [
       {
         "name": "Dodge",
-        "icon": "",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -1248,7 +1248,7 @@
       },
       {
         "name": "Assault Protocol",
-        "icon": "",
+        "icon": "plotti_dodge_2.webp",
         "method": [
           "Directional Dodge",
           "Attack x1"
@@ -1268,7 +1268,7 @@
       },
       {
         "name": "Propulsion Protocol",
-        "icon": "",
+        "icon": "plotti_dodge_3.webp",
         "method": [
           "Dodge",
           "Attack x1"
@@ -1288,7 +1288,7 @@
       },
       {
         "name": "Airborne Protocol",
-        "icon": "",
+        "icon": "plotti_dodge_4.webp",
         "method": [
           "Jump",
           "Dodge",
@@ -1308,7 +1308,7 @@
     "skill": [
       {
         "name": "Mirror Image",
-        "icon": "",
+        "icon": "plotti_skill_1.webp",
         "description": [
           {
             "paragraph": "Roam between the mind and reality, creating 8 Heart Mirror Walls around the Wanderer (these count as summons) and deal damage equal to 807% of ATK to nearby targets. After using the skill, activate Poppa is Here for 15 seconds, gaining the ability to fly as well as improved movement speed and jumping capabilities. Normal attack now fires explosive shots that deal damage equal to 180% of ATK to nearby targets upon hit and consumes endurance. After an explosive shot hits the ground, it will be transmitted to a Heart Mirror Wall and fired toward the locked-on target. Cooldown: 30 seconds. After Poppa is Here naturally ends, immediately gain 300 weapon charge."
@@ -1325,7 +1325,7 @@
     "discharge": [
       {
         "name": "Extermination Protocol",
-        "icon": "",
+        "icon": "plotti_discharge_1.webp",
         "description": [
           {
             "paragraph": "When weapon charge is full or Phantasia is triggered, remove all debuffs from the Wanderer and activate the Satellite Ionic Beam upon switching to this weapon, summoning an ionic beam from the space station and dealing damage equal to 974% of ATK to nearby targets. At the same time, inflict Armor Dissolve on targets hit and gain damage immunity for 1.5 seconds (unavailable in Apex League)."
@@ -1473,7 +1473,7 @@
     "attacks": [
       {
         "name": "Firefly Wave",
-        "icon": "",
+        "icon": "brevey_attack_1.webp",
         "method": [
           "Attack x5"
         ],
@@ -1515,7 +1515,7 @@
       },
       {
         "name": "Flying Star Wave",
-        "icon": "",
+        "icon": "brevey_attack_2.webp",
         "method": [
           "Jump",
           "Attack x5"
@@ -1546,7 +1546,7 @@
       },
       {
         "name": "Pink Chain Frenzy",
-        "icon": "",
+        "icon": "brevey_attack_3.webp",
         "method": [
           "Hold"
         ],
@@ -1562,7 +1562,7 @@
       },
       {
         "name": "Phantasmic Rhythm",
-        "icon": "",
+        "icon": "brevey_attack_4.webp",
         "method": [
           "Attack x1",
           "Hold"
@@ -1579,7 +1579,7 @@
       },
       {
         "name": "Familiar Descent",
-        "icon": "",
+        "icon": "brevey_attack_5.webp",
         "method": [
           "Jump",
           "Hold"
@@ -1598,7 +1598,7 @@
     "dodge": [
       {
         "name": "Dodge",
-        "icon": "",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -1611,7 +1611,7 @@
       },
       {
         "name": "Strolling Flash",
-        "icon": "",
+        "icon": "brevey_dodge_2.webp",
         "method": [
           "Directional Dodge",
           "Attack x1"
@@ -1625,7 +1625,7 @@
       },
       {
         "name": "MetzZZz",
-        "icon": "",
+        "icon": "brevey_dodge_3.webp",
         "method": [
           "Dodge",
           "Attack x1"
@@ -1641,7 +1641,7 @@
     "skill": [
       {
         "name": "Million-Metz Shockwave",
-        "icon": "",
+        "icon": "brevey_skill_1.webp",
         "description": [
           {
             "paragraph": "After using Million-Metz Shockwave, the Wanderer enters Pact Amplification for 30 seconds: When Pactcrest ☆ Metz is in the main slot, increase the Wanderer's volt damage by 25%. When Pactcrest ☆ Metz is in the off-hand slot, increase the Wanderer's frost damage by 10%. Cooldown: 30 seconds."
@@ -1670,7 +1670,7 @@
     "discharge": [
       {
         "name": "Strange Symphonic Realm",
-        "icon": "",
+        "icon": "brevey_discharge_1.webp",
         "description": [
           {
             "paragraph": "When weapon charge is full or Phantasia is triggered, upon switching to this weapon, remove all debuffs from the Wanderer and summon a Strange Symphonic Realm, dealing damage equal to 811% of ATK to nearby targets, during which damage immunity lasts for 1.5 seconds (unavailable in Apex League)."
@@ -1898,7 +1898,7 @@
     "dodge": [
       {
         "name": "Dodge",
-        "icon": "yanmiao_dodge_1.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -2247,7 +2247,7 @@
     "dodge": [
       {
         "name": "Dodge",
-        "icon": "nanyin_dodge_1.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -2600,7 +2600,7 @@
     "dodge": [
       {
         "name": "Dodge",
-        "icon": "linghan_dodge_1.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -2909,7 +2909,7 @@
     "dodge": [
       {
         "name": "Dodge",
-        "icon": "feise_dodge_1.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -3263,7 +3263,7 @@
     "dodge": [
       {
         "name": "Dodge",
-        "icon": "huang_dodge_1.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -3562,7 +3562,7 @@
     "dodge": [
       {
         "name": "Dodge",
-        "icon": "mingjing_dodge_1.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -3575,7 +3575,7 @@
       },
       {
         "name": "Open Clouds",
-        "icon": "mingjing_dodge_2.webp",
+        "icon": "mingjing_attack_1.webp",
         "method": [
           "Directional Dodge",
           "Attack"
@@ -3978,7 +3978,7 @@
     "dodge": [
       {
         "name": "Dodge",
-        "icon": "yulan_dodge_1.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -4078,7 +4078,7 @@
       },
       {
         "name": "Clashing of Arms",
-        "icon": "yulan_skill_3.webp",
+        "icon": "yulan_skill_2.webp",
         "description": [
           {
             "paragraph": "Deal damage equal to 982.8% of ATK to the target. Cooldown: 15 seconds."
@@ -4110,7 +4110,7 @@
       },
       {
         "name": "Observe & React",
-        "icon": "yulan_discharge_2.webp",
+        "icon": "yulan_discharge_1.webp",
         "description": [
           {
             "paragraph": "When weapon charge is full or Phantasia is triggered, upon switching to this weapon, remove all debuffs from the Wanderer, dealing damage up to 1,173.1% of ATK to nearby targets and strongly launching them. During this period, gain damage immunity for 1.5 seconds (unavailable in Apex League)."
@@ -4424,7 +4424,7 @@
     "dodge": [
       {
         "name": "Dodge",
-        "icon": "liuhuo_dodge_1.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directiona Dodge"
         ],
@@ -4733,7 +4733,7 @@
     "dodge": [
       {
         "name": "Dodge",
-        "icon": "rubilia_dodge_1.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -5087,7 +5087,7 @@
     "dodge": [
       {
         "name": "Dodge",
-        "icon": "gnonno_dodge_1.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -5428,7 +5428,7 @@
     "dodge": [
       {
         "name": "Dodge",
-        "icon": "fiona_dodge_1.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -5805,7 +5805,7 @@
     "dodge": [
       {
         "name": "Dodge",
-        "icon": "icarus_dodge_1.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -6100,7 +6100,7 @@
     "dodge": [
       {
         "name": "Dodge",
-        "icon": "lan_dodge_1.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -6127,7 +6127,7 @@
       },
       {
         "name": "Parasol",
-        "icon": "lan_skill_2.webp",
+        "icon": "lan_attack_4.webp",
         "description": [
           {
             "paragraph": "When a weapon's normal attack or a dodge attack hits, 1 parasol spawns near the target for 20 seconds. Cooldown: 1.5 seconds. Up to 3 parasols can be active at the same time."
@@ -6408,7 +6408,7 @@
         "hasChain": false
       },
       {
-        "name": "Think and Fast",
+        "name": "Thick and Fast",
         "icon": "fenrir_attack_5.webp",
         "method": [
           "Jump",
@@ -6493,7 +6493,7 @@
       },
       {
         "name": "Dodge",
-        "icon": "fenrir_dodge_2.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -6753,7 +6753,7 @@
       },
       {
         "name": "Dodge",
-        "icon": "umi_dodge_2.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Dodge"
         ],
@@ -7057,7 +7057,7 @@
       },
       {
         "name": "Dodge",
-        "icon": "alyss_dodge_3.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -7247,7 +7247,7 @@
       },
       {
         "name": "Aerial Discharge",
-        "icon": "anabella_attack_4.webp",
+        "icon": "anabella_attack_1.webp",
         "method": [
           "Jump",
           "Attack x3"
@@ -7291,7 +7291,7 @@
       },
       {
         "name": "Dodge",
-        "icon": "anabella_dodge_2.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -7538,7 +7538,7 @@
     "dodge": [
       {
         "name": "dodge",
-        "icon": "tian_dodge_1.webp",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
