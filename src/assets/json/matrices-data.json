@@ -5,7 +5,8 @@
     "tag": "new",
     "avatar": "rei_avatar",
     "element": [
-      "element_voltfrost"
+      "element_volt",
+      "element_frost"
     ],
     "rarity": "SSR",
     "2pc": {
@@ -41,7 +42,8 @@
     "tag": "new",
     "avatar": "asuka_avatar",
     "element": [
-      "element_physicalflame"
+      "element_physical",
+      "element_flame"
     ],
     "rarity": "SSR",
     "2pc": {
@@ -194,8 +196,8 @@
     "tag": "new",
     "avatar": "yanmiao_matrix",
     "element": [
-      "element_flame",
-      "element_physical"
+       "element_physical",
+       "element_flame"
     ],
     "rarity": "SSR",
     "2pc": {

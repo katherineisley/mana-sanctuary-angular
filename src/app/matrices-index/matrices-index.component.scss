@@ -1,0 +1,119 @@
+@import '../../styles.scss';
+
+.units-category-filter {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-between;
+    margin: 20px 0 0 0;
+    padding: 12px 20px;
+    background-color: $content;
+    border-radius: 8px;
+
+    .rarity, .element, .type, .role {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .title {
+            font-size: 18px;
+            font-weight: 400;
+            margin: unset;
+        }
+
+        .wrapper {
+            display: flex;
+            gap: 8px;
+        }
+    }
+
+    .rarity {
+        .wrapper {
+            .rarity {
+                &-ssr, &-sr {
+                    cursor: pointer;
+                    font-size: 22px;
+                    opacity: 0.5;
+                    transition: 0.15s ease-in-out;
+
+                    &.active {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .element, .role {
+        .wrapper {
+            img {
+                opacity: 0.5;
+                transition: 0.15s ease-in-out;
+
+                &.active {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .element, .type, .role{
+        .wrapper {
+            img {
+                cursor: pointer;
+                width: 36px;
+
+                opacity: 0.5;
+                transition: 0.15s ease-in-out;
+
+                &.active {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+.rarity {
+    &-ssr, &-sr {
+        font-weight: 600;
+    }
+
+    &-ssr {
+        color: #FFDB9B;
+    }
+
+    &-sr {
+        color: #D6CDFF;
+    }
+
+}
+
+.units-index {
+    margin: 40px 0 0 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    justify-items: center;
+
+    app-unit-card {
+        width: 100%;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1180px;
+    width: 100%;
+    padding: 0px 20px;
+
+    
+    .title-big-center {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+}

@@ -1,0 +1,184 @@
+@import '../../styles.scss';
+
+.unit-wrapper {
+    // width: 100%; 
+    // height: 220px;
+    aspect-ratio: 0.75 / 1; // this might be problematic later so we'll see
+    cursor: pointer;
+    position: relative;
+
+    .top-card {
+        position: relative;
+        z-index: 2;
+        background: $main; // this dumbassery fixes the whole "transparent character artwork background-image" problem and makes me wonder why i even went to school in the first place
+    }
+
+    .back-card {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background: $main;
+        // backface-visibility: hidden;
+        // transform: translateZ(0), scale(1, 1);
+    }
+
+    .reverse-animation {
+        animation: onTopReverse 0.5s ease-in-out forwards;
+    }
+
+    // surely a shuffle animation will be easy, clueless
+    &:hover {
+        .back-card {
+            animation: onTop 0.5s ease-in-out forwards;
+        }
+    }
+
+    @keyframes onTop {
+        0% {
+            transform: translateY(0);
+            z-index: 1;
+            left: 0;
+            top: 0;
+            rotate: 0deg;
+        }
+
+        50% {
+            transform: translateY(-25px);
+            z-index: 1;
+            left: 11px;
+            top: 0;
+            rotate: 2.5deg;
+        }
+
+        100% {
+            transform: translateY(0);
+            z-index: 2;
+            left: 11px;
+            top: -7px;
+            rotate: 5deg;
+        }
+
+        // 100% {
+        //     transform: translateY(0);
+        //     z-index: 2;
+        //     left: 11px;
+        //     top: -7px;
+        //     rotate: 5deg;
+        // }
+    }
+
+    @keyframes onTopReverse {
+        0% {
+            transform: translateY(0);
+            z-index: 2;
+            left: 11px;
+            top: -7px;
+            rotate: 5deg;
+        }
+
+        50% {
+            transform: translateY(-25px);
+            z-index: 1;
+            left: 11px;
+            top: 0;
+            rotate: 2.5deg;
+        }
+
+        100% {
+            transform: translateY(0);
+            z-index: 1;
+            left: 0;
+            top: 0;
+            rotate: 0deg;
+        }
+    }
+
+    .top-card,
+    .back-card {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat; // weird edge case
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        padding: 10px;
+
+        // this is better on the cards themselves rather than the unit-wrapper
+        // as when the back-card gets put on top, it doesn't have a border to distinguish itself from the body
+
+        border: 1px $border solid;
+
+        .content-wrapper {
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+
+            .new-tag {
+                font-size: 10px;
+                background-color: #AE150B;
+                border-radius: 8px 0 8px 0;
+                width: fit-content;
+                padding: 2px 6px;
+                position: absolute;
+                text-transform: capitalize;
+                top: 0;
+            }
+
+            .meta-tag {
+                font-size: 10px;
+                background-color: #1f71b4;
+                border-radius: 8px 0 8px 0;
+                width: fit-content;
+                padding: 2px 6px;
+                position: absolute;
+                text-transform: capitalize;
+                top: 0;
+            }
+
+            .standard-tag {
+                font-size: 10px;
+                background-color: rgb(192, 112, 15);
+                border-radius: 8px 0 8px 0;
+                width: fit-content;
+                padding: 2px 6px;
+                position: absolute;
+                text-transform: capitalize;
+                top: 0;
+            }
+
+            .details-container {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                .name {
+                    font-size: 20px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    margin: unset;
+                }
+
+                img {
+                    width: 28px;
+                    height: fit-content;
+                }
+
+                .type-and-buffs {
+                    display: flex;
+                    width: 100%;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .icons,
+                    .buffs {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 1px;
+                    }
+                }
+            }
+        }
+    }
+}
