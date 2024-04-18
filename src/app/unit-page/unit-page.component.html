@@ -169,11 +169,11 @@
                 </div>
               </div>
             </div>
-            <div class="attack-description" > 
-            <div  class="attack-paragraph" *ngFor="let desc of item.description">
-              <p>{{ desc.paragraph }}</p>
+            <div class="attack-description">
+              <div class="attack-paragraph" *ngFor="let desc of item.description">
+                <p>{{ desc.paragraph }}</p>
+              </div>
             </div>
-          </div>
             <div *ngIf="item.hasChain">
               <ul>
                 <li *ngFor="let combo of item.chain; let i = index">
@@ -186,6 +186,7 @@
           </div>
         </div>
       </div>
+      
       <!-- DODGE-->
       <div *ngIf="activeInfo === 'Dodge'">
         <div class="attack-wrap">
@@ -203,11 +204,11 @@
                 </div>
               </div>
             </div>
-            <div class="attack-description" > 
-            <div class="attack-paragraph" *ngFor="let desc of item.description">
-              <p>{{ desc.paragraph }}</p>
+            <div class="attack-description">
+              <div class="attack-paragraph" *ngFor="let desc of item.description">
+                <p>{{ desc.paragraph }}</p>
+              </div>
             </div>
-          </div>
             <div *ngIf="item.hasChain">
               <ul>
                 <li *ngFor="let combo of item.chain; let i = index">
@@ -220,6 +221,7 @@
           </div>
         </div>
       </div>
+
       <!-- SKILLS-->
       <div *ngIf="activeInfo === 'Skill'">
         <div class="attack-wrap">
@@ -230,14 +232,15 @@
                 <div class="attack-name">{{ item.name }}</div>
               </div>
             </div>
-            <div class="attack-description" > 
-            <div class="attack-paragraph" *ngFor="let desc of item.description">
-              <p>{{ desc.paragraph }}</p>
+            <div class="attack-description">
+              <div class="attack-paragraph" *ngFor="let desc of item.description">
+                <p>{{ desc.paragraph }}</p>
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
+
       <!-- DISCHARGE-->
       <div *ngIf="activeInfo === 'Discharge'">
         <div class="attack-wrap">
@@ -248,14 +251,15 @@
                 <div class="attack-name">{{ item.name }}</div>
               </div>
             </div>
-            <div class="attack-description" > 
-            <div class="attack-paragraph" *ngFor="let desc of item.description">
-              <p>{{ desc.paragraph }}</p>
+            <div class="attack-description">
+              <div class="attack-paragraph" *ngFor="let desc of item.description">
+                <p>{{ desc.paragraph }}</p>
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
+
       <!-- TRAIT-->
       <div *ngIf="activeInfo === 'Trait'">
         <div class="attack-wrap">
@@ -266,26 +270,39 @@
                 <div class="attack-name">{{ item.affinity }}</div>
               </div>
             </div>
-            <div class="attack-description" > 
-            <div class="attack-paragraph" *ngFor="let desc of item.description">
-              <p>{{ desc.paragraph }}</p>
+            <div class="attack-description">
+              <div class="attack-paragraph" *ngFor="let desc of item.description">
+                <p>{{ desc.paragraph }}</p>
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
     </div>
+
     <div class="matrix-part">
       <!-- Display 2pc effect -->
-      <h3>2pc Effect:</h3>
-      <div *ngFor="let effect of matrix['2pc'].effect">
-        <p>{{ effect.paragraph }}</p>
+      <div *ngIf="matrix['2pc'] && matrix['2pc'].effect">
+        <h3>2pc Effect:</h3>
+        <div *ngFor="let effect of matrix['2pc'].effect">
+          <p>{{ effect.paragraph }}</p>
+        </div>
+      </div>
+      <!-- Display 3pc effect -->
+      <div *ngIf="matrix['3pc'] && matrix['3pc'].effect">
+        <h3>3pc Effect:</h3>
+        <div *ngFor="let effect of matrix['3pc'].effect">
+          <p>{{ effect.paragraph }}</p>
+        </div>
       </div>
       <!-- Display 4pc effect -->
-      <h3>4pc Effect:</h3>
-      <div *ngFor="let effect of matrix['4pc'].effect">
-        <p>{{ effect.paragraph }}</p>
+      <div *ngIf="matrix['4pc'] && matrix['4pc'].effect">
+        <h3>4pc Effect:</h3>
+        <div *ngFor="let effect of matrix['4pc'].effect">
+          <p>{{ effect.paragraph }}</p>
+        </div>
       </div>
     </div>
+
   </div>
 </section>

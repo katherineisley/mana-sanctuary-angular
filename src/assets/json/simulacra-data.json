@@ -1,5 +1,994 @@
 [
   {
+    "slug": "rei",
+    "name": [
+      "Rei"
+    ],
+    "weapon": "Salvation",
+    "weaponDescription": "The prototype bow specially built for Rei Ayanami by the Mirroria Department of Science and Technology. Refer to the appearance and color of EVA-00. Able to fire energy arrows.",
+    "avatar": "rei_avatar",
+    "resonance": "attack",
+    "element": "element_voltfrost",
+    "rarity": "SSR",
+    "tag": "new",
+    "hasAtk": true,
+    "hasHP": true,
+    "hasCrit": true,
+    "hasRes": false,
+    "shatter": "14",
+    "charge": "14",
+    "roles": [
+      ""
+    ],
+    "effects": [
+      {
+        "name": "Force Impact",
+        "description": [
+          {
+            "paragraph": "When the weapon is fully charged, the next attack applies Force Impact on the enemy for 45 seconds, increasing their frost and volt damage taken by 10% (and an additional 15% in team play). Force Impact replaces the target's grievous status, and targets with Force Impact cannot become grievous. Frost attacks will freeze targets with Force Impact for 2 seconds, and volt attacks will remove the targets' buffs. This effect can only trigger 1 time every 15 seconds on the same target."
+          }
+        ]
+      },
+      {
+        "name": "Fusion of Frost and Volt",
+        "description": [
+          {
+            "paragraph": "When the weapon deals damage, damage is calculated using the highest equipped volt/frost base ATK, the highest equipped volt/frost ATK percentage, and the highest equipped volt/frost damage boost, and the weapon is considered both a volt and frost weapon."
+          }
+        ]
+      },
+      {
+        "name": "Volt Resonance",
+        "description": [
+          {
+            "paragraph": "Increase volt ATK by 15% and volt resistance by 25%. Activate by equipping 2 or more volt weapons. This set effect works in the off-hand slot. Cannot stack with other Volt Resonance or Volt Reaction effects, with Volt Resonance taking precedence."
+          }
+        ]
+      },
+      {
+        "name": "Frost Resonance",
+        "description": [
+          {
+            "paragraph": "Increase frost ATK by 15% and frost resistance by 25%. Activate by equipping 2 or more frost weapons. This set effect works in the off-hand slot. Cannot stack with other Frost Resonance or Frost Reaction effects, with Frost Resonance taking precedence."
+          }
+        ]
+      },
+      {
+        "name": "Flash: Detachment",
+        "description": [
+          {
+            "paragraph": "After using Mecha Strike, deal damage equal to 109.4% of volt ATK plus 15.6% of Max HP plus 56.3% of the sum of all the Wanderer's resistance types plus 210.9% of crit to targets hit every second for 30 seconds. Multiple Detachment damage will not stack and Flash damage counts as skill damage. If any 1 physical or flame weapon is equipped, Flash damage is increased to 1.3 times. In addition, Flash damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects."
+          }
+        ]
+      },
+      {
+        "name": "Homing Arrow",
+        "description": [
+          {
+            "paragraph": "When using any weapon to deal damage, fire 1 Homing Arrow toward the targets, dealing damage equal to 120% of ATK to the first target hit. At the same time, receive 4 special energy. The Homing Arrow will remain on the target and apply Overload for 30 seconds. When the number of Homing Arrows on a target reaches 3, the arrows will detonate, dealing damage equal to 360% of ATK to nearby targets. Homing Arrow can trigger up to 1 time every 0.5 seconds."
+          }
+        ]
+      }
+    ],
+    "oneStar": [
+      {
+        "paragraph": "When Salvation is in the off-hand slot, increase Homing Arrow's detonation damage by 100%."
+      }
+    ],
+    "twoStar": [
+      {
+        "paragraph": "Increase the current weapon's base ATK growth by 16%."
+      }
+    ],
+    "threeStar": [
+      {
+        "paragraph": "Increase the volt damage dealt to targets with Homing Arrow: Overloaded by 10% and frost damage by 10%. This effect works in the off-hand slot."
+      }
+    ],
+    "fourStar": [
+      {
+        "paragraph": "Increase the current weapon's base ATK growth by 32%."
+      }
+    ],
+    "fiveStar": [
+      {
+        "paragraph": "After using Mecha Strike, gain an additional 25 special energy."
+      }
+    ],
+    "sixStar": [
+      {
+        "paragraph": "After entering Energy Consumption, increase the Wanderer's volt damage by 16% and frost damage by 10% for 20 seconds."
+      }
+    ],
+    "attacks": [
+      {
+        "name": "Rapid Bow",
+        "icon": "",
+        "method": [
+          "Attack x6"
+        ],
+        "description": [
+          {
+            "paragraph": "While on the ground, use normal attack to launch 6 consecutive attacks."
+          }
+        ],
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "First Attack: Deal damage equal to 85% of ATK and knock the target back a short distance."
+          },
+          {
+            "combo": "Second Attack: Deal damage equal to 117% of ATK and knock the target back a short distance."
+          },
+          {
+            "combo": "Third Attack: Deal damage equal to 139% of ATK and knock the target back a short distance."
+          },
+          {
+            "combo": "Fourth Attack: Deal damage up to 128% of ATK and knock the target back a short distance."
+          },
+          {
+            "combo": "Fifth Attack: Deal damage up to 128% of ATK and knock the target back a short distance."
+          },
+          {
+            "combo": "After the fifth attack, when a flashing light appears, tap to trigger the sixth attack. Sixth Attack: Fire a powerful energy arrow and release Homing Arrows that deal damage equal to 311% of ATK to targets and apply a slowing magnetic field at the location of the first target hit for 3 seconds. Enemies within the area have their movement and attack speed reduced by 35%."
+          }
+        ]
+      },
+      {
+        "name": "Aerial Assault",
+        "icon": "",
+        "method": [
+          "Attack x6"
+        ],
+        "description": [
+          {
+            "paragraph": "While airborne, use normal attack to launch 6 consecutive attacks in mid-air, consuming endurance."
+          }
+        ],
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "First Attack: Deal damage equal to 85% of ATK"
+          },
+          {
+            "combo": "Second Attack: Deal damage equal to 117% of ATK"
+          },
+          {
+            "combo": "Third Attack: Deal damage equal to 139% of ATK"
+          },
+          {
+            "combo": "Fourth Attack: Deal damage up to 128% of ATK"
+          },
+          {
+            "combo": "Fifth Attack: Deal damage equal to 267% of ATK"
+          },
+          {
+            "combo": "After the fifth attack, when a flashing light appears, tap to trigger the sixth attack. Sixth Attack: Fire a powerful energy arrow and release 5 Homing Arrows that deal damage equal to 311% of ATK to targets and apply a slowing magnetic field at the location of the first target hit. Enemies within the area have their movement and attack speed reduced by 40% for 3 seconds."
+          }
+        ]
+      },
+      {
+        "name": "Backjump Arrow",
+        "icon": "",
+        "method": [
+          "Attack x1",
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "When using normal attack on the ground or in mid-air, while using the first to fifth normal attacks, tap and hold normal attack to trigger Backjump Arrow."
+          },
+          {
+            "paragraph": "Fire a shot while jumping backward, dealing damage equal to 272% of ATK to the target hit."
+          },
+          {
+            "paragraph": "If special energy is greater than 70 at that time, trigger Energy Consumption: Increase volt ATK by 15% and frost ATK by 5%."
+          },
+          {
+            "paragraph": "While Salvation is in the main slot, consume 5 special energy every 0.5 seconds. Increase Salvation's damage dealt by 30%. Continuously tap or tap and hold normal attack to trigger Dodging Rapidfire."
+          },
+          {
+            "paragraph": "While Salvation is in the off-hand slot, consume 3.3 special energy every 0.5 seconds. Increase Homing Arrow's damage by 50% and increase its detonation radius."
+          },
+          {
+            "paragraph": "The maximum amount of special energy is 100. When this amount is reached, switching Salvation from the main slot to the off-hand slot will immediately cause the Wanderer to enter Energy Consumption."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Dodging Rapidfire",
+        "icon": "",
+        "method": [
+          "Attack x3"
+        ],
+        "description": [
+          {
+            "paragraph": "While in Energy Consumption, use normal attack to attack 3 times in a row."
+          }
+        ],
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "First Attack: Deal damage equal to 920% of ATK."
+          },
+          {
+            "combo": "Second Attack: Deal damage equal to 880% of ATK."
+          },
+          {
+            "combo": "Third Attack: Deal damage equal to 1,200% of ATK."
+          }
+        ]
+      },
+      {
+        "name": "Precision Shot",
+        "icon": "",
+        "method": [],
+        "description": [
+          {
+            "paragraph": "Tap and hold normal attack to charge an attack. Deal damage equal to 32% of ATK. For every 0.1 seconds spent charging, the damage increases by 100%, reaching maximum damage after 2.3 seconds of charging."
+          }
+        ],
+        "hasChain": false
+      }
+    ],
+    "dodge": [
+      {
+        "name": "Dodge",
+        "icon": "",
+        "method": [
+          "Directional Dodge"
+        ],
+        "description": [
+          {
+            "paragraph": "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for 0.5 seconds."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Triple Shot",
+        "icon": "",
+        "method": [
+          "Directional Dodge",
+          "Attack x1"
+        ],
+        "description": [
+          {
+            "paragraph": "Use normal attack during the short period after dodging to trigger Triple Shot, dealing damage equal to 36% of ATK to the first target hit."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Charged Shots",
+        "icon": "",
+        "method": [
+          "Directional Dodge",
+          "Attack x1"
+        ],
+        "description": [
+          {
+            "paragraph": "After dodging, tap normal attack at the appropriate time to trigger Charged Shots, firing out powerful energy arrows that deal damage equal to 129% of ATK to targets. At the same time, fire Homing Arrows. The Wanderer receives 1 Blocking Barrier for 15 seconds, which blocks damage that does not exceed 10% of the Wanderer's Max HP. The Wanderer can only have up to 3 Blocking Barriers simultaneously."
+          }
+        ],
+        "hasChain": false
+      }
+    ],
+    "skill": [
+      {
+        "name": "Mecha Strike",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "Summon a mecha to pummel enemies, dealing damage equal to 1,008% of ATK to nearby targets. During this time, the Wanderer gains hyperbody and receives 35 special energy. Cooldown: 20 seconds. This is not affected by other cooldown clearing, resetting, or changing effects."
+          }
+        ]
+      }
+    ],
+    "discharge": [
+      {
+        "name": "Defense Field",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "When weapon charge is full or Phantasia is triggered, upon switching to this weapon, remove all debuffs from the Wanderer. Summon a mecha and use its shield to smash the ground, with the resulting shockwave dealing damage equal to 1,337% of ATK to nearby targets. Also, gain 30 special energy. During this period, gain damage immunity for 1.5 seconds (unavailable in Apex League)."
+          }
+        ]
+      }
+    ],
+    "trait": [
+      {
+        "affinity": "1200",
+        "description": [
+          {
+            "paragraph": "Increase final damage by 12%."
+          }
+        ]
+      },
+      {
+        "affinity": "4000",
+        "description": [
+          {
+            "paragraph": "Increase final damage by 18%. When Attack Resonance is activated, increase volt damage by 8%. When any Resonance type other than Attack Resonance is activated, increase Charged Shots' block effect to 12% of the Wanderer's Max HP, and increase Rapid Bow's and Aerial Assault's slowing magnetic field duration to 4 seconds."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "asuka",
+    "name": [
+      "Asuka"
+    ],
+    "weapon": "Spear of Longinus",
+    "weaponDescription": "Legend has it that this weapon is formed from the roots of the Tree of Life, possessing powers no one can withstand.",
+    "avatar": "asuka_avatar",
+    "resonance": "fortitude",
+    "element": "element_physicalflame",
+    "tag": "new",
+    "rarity": "SSR",
+    "hasAtk": true,
+    "hasHP": true,
+    "hasCrit": true,
+    "hasRes": false,
+    "shatter": "12",
+    "charge": "10",
+    "roles": [
+      ""
+    ],
+    "effects": [
+      {
+        "name": "Armor Dissolve",
+        "description": [
+          {
+            "paragraph": "When the weapon is fully charged, the next attack inflicts armor dissolve effect on the target for 45 seconds, increasing their flame and physical damage taken by 10% (and an additional 15% in team play). This effect will replace the grievous status on the target, and targets with this effect cannot become grievous. Physical attacks will stun targets under the dissolve effect for 2 seconds, and flame attacks will decrease the targets' speed by 50% for 5 seconds. This effect can only trigger 1 time every 15 seconds on the same target."
+          }
+        ]
+      },
+      {
+        "name": "Fusion of Mass and Flame",
+        "description": [
+          {
+            "paragraph": "When the weapon deals damage, damage is calculated using the currently equipped weapon's highest physical/flame base ATK, the highest equipped physical/flame ATK percentage, and the highest equipped physical/flame damage boost, and the weapon is considered both a physical and flame weapon."
+          }
+        ]
+      },
+      {
+        "name": "Physical Resonance",
+        "description": [
+          {
+            "paragraph": "Increase Physical ATK by 15% and Physical Resistance by 25%. Activate by equipping 2 or more Physical weapons. This set effect works in the off-hand slot. Cannot stack with other Physical Resonance or Physical Reaction effects, with Physical Resonance taking precedence."
+          }
+        ]
+      },
+      {
+        "name": "Flame Resonance",
+        "description": [
+          {
+            "paragraph": "Increase Flame ATK by 15% and Physical Resistance by 25%. Activate by equipping 2 or more Flame weapons. This set effect works in the off-hand slot. Cannot stack with other Flame Resonance or Flame Reaction effects, with Flame Resonance taking precedence."
+          }
+        ]
+      },
+      {
+        "name": "Reverent Spear: Swift Cut",
+        "description": [
+          {
+            "paragraph": "When Spear of Longinus is equipped, any weapon's discharge skill will deal damage to nearby targets equal to 58.8% of physical ATK plus 0.775% of Max HP plus 29.29% of the sum of all the Wanderer's resistance types plus 107.4% of crit to nearby targets. While in combat, after every 0.5 seconds, the next Swift Cut damage will be increased by an additional 1 time, up to a maximum of 30 times. When multiple Swift Cut damages exist, the highest initial value is used for calculation. Swift Cut damage is counted as discharge skill damage. If there is 1 frost/volt weapon of any kind equipped, Reverent Spear damage is increased to 1.3 times. In addition, Reverent Spear damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects."
+          }
+        ]
+      }
+    ],
+    "oneStar": [
+      {
+        "paragraph": "Increase maximum Vengeance stacks from 10 to 15. After all stacks are consumed, additionally trigger an enormous Spear of Longinus. If the current weapon is element is physical or flame, deal the weapon's elemental damage equal to 2,000% of ATK to nearby targets."
+      }
+    ],
+    "twoStar": [
+      {
+        "paragraph": "Increase the current weapon's base ATK growth by 16%."
+      }
+    ],
+    "threeStar": [
+      {
+        "paragraph": "While the Wanderer has an A.T. Field active, attacks can ignore a certain percentage of the damage reduction from a target's shield. This percentage is equal to 30% of the current A.T. Field's durability percentage plus 20%. When Fortitude Resonance is active, increase the Wanderer's shatter at a rate equal to 100% of the A.T. Field's durability percentage."
+      }
+    ],
+    "fourStar": [
+      {
+        "paragraph": "Increase the current weapon's base ATK growth by 32%."
+      }
+    ],
+    "fiveStar": [
+      {
+        "paragraph": "For every 1 stack of Vengeance consumed, regenerate 6% of A.T. Field's maximum durability."
+      }
+    ],
+    "sixStar": [
+      {
+        "paragraph": "Increase the physical damage boost granted while A.T. Field is active to 36% and the flame damage boost to 24%."
+      },
+      {
+        "paragraph": "When Fortitude Resonance is activated, while A.T. Field is active, nearby teammates ignore 15% of their targets' shield's damage reduction. Also, reduce nearby targets' all resistance by 12%. This effect cannot be stacked."
+      }
+    ],
+    "attacks": [
+      {
+        "name": "Brandishing Spear: Forming Shadow",
+        "icon": "",
+        "method": [
+          "Attack x5"
+        ],
+        "description": [
+          {
+            "paragraph": "While on the ground, use normal attack to launch 5 consecutive attacks."
+          }
+        ],
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "First Attack: Deal damage equal to 163% of ATK and knock the target back."
+          },
+          {
+            "combo": "Second Attack: Deal damage equal to 190% of ATK and knock the target back."
+          },
+          {
+            "combo": "Third Attack: Deal damage equal to 315% of ATK and knock the target back."
+          },
+          {
+            "combo": "Fourth Attack: Deal damage equal to 315% of ATK and knock the target back."
+          },
+          {
+            "combo": "Fifth Attack: Deal damage equal to 344% of ATK and launch the target."
+          }
+        ]
+      },
+      {
+        "name": "Thrusting Spear: Blinking Shadow",
+        "icon": "",
+        "method": [
+          "Jump",
+          "Attack x5"
+        ],
+        "description": [
+          {
+            "paragraph": "While airborne, use normal attack to launch 5 attacks in a row in mid-air, consuming endurance."
+          }
+        ],
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "First Attack: Deal damage equal to 154% of ATK."
+          },
+          {
+            "combo": "Second Attack: Deal damage equal to 181% of ATK."
+          },
+          {
+            "combo": "Third Attack: Deal damage equal to 299% of ATK."
+          },
+          {
+            "combo": "Fourth Attack: Deal damage equal to 300% of ATK."
+          },
+          {
+            "combo": "Fifth Attack: Deal damage equal to 326% of ATK and launch the target."
+          }
+        ]
+      },
+      {
+        "name": "Reverent Spear: Raging Wave",
+        "icon": "",
+        "method": [
+          "Attack x1",
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "While using normal attack on the ground, tap and hold normal attack when using the first to fourth normal attacks to trigger Reverent Spear: Raging Wave."
+          },
+          {
+            "paragraph": "Continuously attack multiple times, dealing damage equal to 586% of ATK to nearby targets."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Charging Spear: Assassinate",
+        "icon": "",
+        "method": [
+          "Jump",
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "Tap and hold normal attack while airborne (tap when a target is available), or use normal attack while climbing, jumping backward, or using the Jetpack to trigger Charging Spear: Assassinate."
+          },
+          {
+            "paragraph": "Dive down from above, dealing damage equal to 293% of ATK to nearby targets upon reaching the ground."
+          }
+        ],
+        "hasChain": false
+      }
+    ],
+    "dodge": [
+      {
+        "name": "Dodge",
+        "icon": "",
+        "method": [
+          "Directional Dodge"
+        ],
+        "description": [
+          {
+            "paragraph": "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for 0.5 seconds."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Extending Spear: Plunder",
+        "icon": "",
+        "method": [
+          "Directional Dodge",
+          "Attack x1"
+        ],
+        "description": [
+          {
+            "paragraph": "Use normal attack during the short perfect dodge window (use a directional button before dodging) to trigger Extending Spear: Plunder, dealing damage up to 246% of ATK to targets ahead."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Leaping Slam",
+        "icon": "",
+        "method": [
+          "Dodge",
+          "Attack x1"
+        ],
+        "description": [
+          {
+            "paragraph": "Use normal attack during the short period after dodging to trigger Leaping Slam, dealing damage up to 246% of ATK damage to targets ahead."
+          }
+        ],
+        "hasChain": false
+      }
+    ],
+    "skill": [
+      {
+        "name": "Cloud-Piercer",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "Throw the weapon toward the target and draw in nearby targets, dealing damage equal to 1,604% of ATK, then briefly immobilize nearby targets. Cooldown: 20 seconds. This is not affected by other cooldown clearing, resetting, or changing effects."
+          },
+          {
+            "paragraph": "After successfully using this skill, gain 10 stacks of Vengeance. Dealing damage to an enemy will consume 1 Vengeance stack. If the equipped weapon's type is physical or flame, deal additional damage of the weapon's type equal to 600% of ATK to nearby targets. This effect can trigger up to 1 time per second."
+          },
+          {
+            "paragraph": "Additionally, after successfully using this skill, generate an A.T. Field with durability equal to 50% of Max HP for 30 seconds. During this time, increase the Wanderer's physical damage by 18% and flame damage by 12%, and gain hyperbody."
+          },
+          {
+            "paragraph": "When the Wanderer receives damage, the A. T. Field will reduce damage based on its remaining durability percentage and deduct its durability based on the damage dealt (down to a minimum of 10% durability)."
+          },
+          {
+            "paragraph": "While Fortitude Resonance is active, if the Wanderer receives damage while having Vengeance stacks, consume 1 Vengeance stack and block damage equal to 8% of Max HP. This effect can trigger up to 1 time every 0.5 seconds."
+          }
+        ]
+      }
+    ],
+    "discharge": [
+      {
+        "name": "Weapons Lift-Off",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "When weapon charge is full or Phantasia is triggered, upon switching to this weapon, remove all debuffs from the Wanderer and pilot EVA-02 to execute a flying kick, dealing damage equal to 1,755% of ATK to nearby targets. During this period, gain damage immunity for 1.5 seconds (unavailable in Apex League)."
+          }
+        ]
+      }
+    ],
+    "trait": [
+      {
+        "affinity": "1200",
+        "description": [
+          {
+            "paragraph": "Increase final damage by 14%."
+          }
+        ]
+      },
+      {
+        "affinity": "4000",
+        "description": [
+          {
+            "paragraph": "Increase final damage by 18%. When Fortitude Resonance is active, the A.T Field durability is set to at least 30% of its maximum value."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "yanuo",
+    "name": [
+      "Yanuo"
+    ],
+    "weapon": "Wicked",
+    "weaponDescription": "By sealing the malicious dark energy within the lance, the knight truly becomes a 'knight.' And then... the knight takes the girl's hand, and together, they step into a tomorrow with endless possibilities.",
+    "avatar": "yanuo_avatar",
+    "resonance": "attack",
+    "element": "element_frostvolt",
+    "tag": "new",
+    "rarity": "SSR",
+    "hasAtk": true,
+    "hasHP": true,
+    "hasCrit": true,
+    "hasRes": false,
+    "shatter": "16",
+    "charge": "12",
+    "roles": [
+      ""
+    ],
+    "effects": [
+      {
+        "name": "Force Impact",
+        "description": [
+          {
+            "paragraph": "When the weapon is fully charged, the next attack applies Force Impact on the enemy for 45 seconds, increasing their frost and volt damage by 10% ( and an additional 15% in team play ). Force Impact replaces the targets's grevious status, and targets with Force Impact cannot become grevious, Frost attacks will freeze targets with Frost Impact for 2 seconds, and volt attacks will remove the buffs on targets with Force Impact. This effect can only trigger 1 time every 15 seconds on the same target."
+          }
+        ]
+      },
+      {
+        "name": "Fusion of Volt and Frost",
+        "description": [
+          {
+            "paragraph": "When the weapon deals damage, damage is calculated using the highest equipped volt/frost base ATK, the highest equipped volt/frost ATK percentage, and the highest equipped volt/frost damage boost, and the weapon is considered both a volt and frost weapon."
+          }
+        ]
+      },
+      {
+        "name": "Volt Resonance",
+        "description": [
+          {
+            "paragraph": "Increase volt ATK by 15% and volt resistance by 25%. Activate by equipping 2 or more volt weapons. This set effect works in the off-hand slot. Cannot stack with other Volt Resonance or Volt Reaction effects, with Volt Resonance taking precedence."
+          }
+        ]
+      },
+      {
+        "name": "Frost Resonance",
+        "description": [
+          {
+            "paragraph": "Increase frost ATK by 15% and frost resistance by 25%. Activate by equipping 2 or more frost weapons. This set effect works in the off-hand slot. Cannot stack with other Frost Resonance or Frost Reaction effects, with Frost Resonance taking precedence."
+          }
+        ]
+      },
+      {
+        "name": "Chilling Strike: On-Field",
+        "description": [
+          {
+            "paragraph": "When hitting any target with Wicked, deal damage to nearby targets equal to 205% of frost ATK plus 2.9% of Max HP plus 106% of the sum of all the Wanderer's resistance types plus 3.9% of crit to nearby targets. Can be triggered up to 1 time every 1.5 seconds. Chilling Strike damage counts as normal attack damage. If any 1 physical or flame weapon is equipped, Chilling Strike damage is multiplied by 1.3. In addition, Chilling Strike damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects."
+          }
+        ]
+      }
+    ],
+    "oneStar": [
+      {
+        "paragraph": "When dealing damage to targets below 80% HP, increase final damage by 12%. This set effect works in the off-hand slot."
+      },
+      {
+        "paragraph": "Being attacked when in Concealment state will not break Concealment and the maximum number of attacks that can be blocked is increased to 3 times. After breaking concealment by launching an attack, gain a shield equal to Concealment duration multiplied by 5% of the Wanderer's Max HP (does not exceed 120% of the Wanderer's Max HP). Lasts for 30 seconds."
+      }
+    ],
+    "twoStar": [
+      {
+        "paragraph": "Increase the current weapon's base ATK growth by 16%."
+      }
+    ],
+    "threeStar": [
+      {
+        "paragraph": "Increase Wicked's shatter by 20%. When Fevered Hunt is triggered, draw in and detonate all the ice cores around the Wanderer and enter Permeation for 5 seconds, during which Arctic Bite replaces the weapon-switching button (but this Artic Bite does not trigger the additional skill effects) and using it reduces Arctic Bite's cooldown by 20 seconds. Use normal attack to immediately exit Permeation."
+      }
+    ],
+    "fourStar": [
+      {
+        "paragraph": "Increase the current weapon's base ATK growth by 32%."
+      }
+    ],
+    "fiveStar": [
+      {
+        "paragraph": "Increase Ice Core Detonation damage by 150%. After Fixate tosses the weapon and hits a target, places Snow Trace on the target for 5 seconds (triggered by the charged attack damage from Fixate). When Snow Trace fades, target takes damage equal to 30% of the damage taken during Snow Trace (does not exceed Wanderer's ATK multiplied by 650 in solo mode, and Wanderer's ATK multiplied by 6,500 while on a team)."
+      },
+      {
+        "paragraph": "Damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects. Snow Trace can be triggered up to once every 30 seconds."
+      }
+    ],
+    "sixStar": [
+      {
+        "paragraph": "The frost-volt damage increase from Arctic Bite can be stacked up to 3 times."
+      }
+    ],
+    "attacks": [
+      {
+        "name": "Pillage",
+        "icon": "",
+        "method": [
+          "Attack x6"
+        ],
+        "description": [
+          {
+            "paragraph": "While on the ground, use normal attack to launch 6 consecutive attacks (up to 45 ice cores may exist in battle at any given time)."
+          }
+        ],
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "First Attack: Deal damage equal to 36% of ATK, and create 1 ice core."
+          },
+          {
+            "combo": "Second Attack: Deal damage equal to 46% of ATK, and creates 2 ice cores."
+          },
+          {
+            "combo": "Third Attack: Deal damage equal to 280% of ATK."
+          },
+          {
+            "combo": "Fourth Attack: Deal damage equal to 244% of ATK, and create 1 ice core."
+          },
+          {
+            "combo": "Fifth Attack: Deal damage equal to 380% of ATK, and create 3 ice cores."
+          },
+          {
+            "combo": "Sixth Attack: Deal damage equal to 315% of ATK."
+          }
+        ]
+      },
+      {
+        "name": "Hunt",
+        "icon": "",
+        "method": [
+          "Jump",
+          "Attack x6"
+        ],
+        "description": [
+          {
+            "paragraph": "While airborne, use normal attack to launch 6 consecutive attacks in mid-air, consuming endurance."
+          }
+        ],
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "First Attack: Deal damage equal to 75% of ATK."
+          },
+          {
+            "combo": "Second Attack: Deal damage equal to 145% of ATK."
+          },
+          {
+            "combo": "Third Attack: Deal damage equal to 175% of ATK."
+          },
+          {
+            "combo": "Fourth Attack: Deal damage equal to 153% of ATK."
+          },
+          {
+            "combo": "Fifth Attack: Deal damage equal to 238% of ATK."
+          },
+          {
+            "combo": "Sixth Attack: Deal damage equal to 440% of ATK."
+          }
+        ]
+      },
+      {
+        "name": "Frozen Spike",
+        "icon": "",
+        "method": [
+          "Attack x2",
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "While on the ground, tap and hold normal attack when using the second, fourth, and fifth normal attacks to trigger Frozen Spike, leaping backward to charge while in the air, up to 3 charges."
+          }
+        ],
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "Phase 1 charged hit: Deal damage equal to 182% of ATK."
+          },
+          {
+            "combo": "Phase 2 charged hit: Deal damage equal to 320% of ATK."
+          },
+          {
+            "combo": "Phase 3 charged hit: Deal damage equal to 455% of ATK."
+          }
+        ]
+      },
+      {
+        "name": "Death From Above",
+        "icon": "",
+        "method": [
+          "Jump",
+          "Attack x1",
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "While airborne, tap and hold normal attack to trigger Death From Above."
+          },
+          {
+            "paragraph": "Stab the ground with the lance upon landing, dealing damage equal to 120% of ATK."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Fixate",
+        "icon": "",
+        "method": [
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "While on the ground, hold normal attack to trigger Fixate to charge. Damage increases for 6 seconds depending on the charge time, during which the Wanderer gains hyperbody, and the weapon is tossed in the target direction. After the weapon lands a hit, deal damage up to 4,480% of ATK to nearby targets. Aim assist is activated after aiming for 2.5 seconds during Fixate's charging. The tossed weapon automatically hits the target in the head (losing auto-aim does not affect charging)."
+          },
+          {
+            "paragraph": "After Fixate tosses the weapon, a new skill button for Shadow Execution becomes available."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Boneshaver",
+        "icon": "",
+        "method": [
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "While on the ground, tap and hold normal attack when aiming at the sky to trigger Boneshaver, during which the Wanderer gains hyperbody. Tosses the lance in the target direction, dealing damage equal to 160% of ATK to nearby targets and placing Force Impact on targets hit."
+          },
+          {
+            "paragraph": "Boneshaver does not trigger Shadow Execution after tossing the weapon."
+          }
+        ],
+        "hasChain": false
+      }
+    ],
+    "dodge": [
+      {
+        "name": "Dodge",
+        "icon": "",
+        "method": [
+          "Directional Dodge"
+        ],
+        "description": [
+          {
+            "paragraph": "Dodge right before getting hit to trigger Phantasia, reducing the speed of targets within the area. Become immune to hitstun while dodging."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Concealment",
+        "icon": "",
+        "method": [
+          "Dodge",
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "While on the ground, tap and hold dodge to trigger Concealment for 60 seconds and become concealed (in solo mode, create an ice sculpture that attracts enemy attention for up to 15 seconds) and increasing movement speed by 30%. While concealed, the Wanderer blocks damage equal to 50% of Max HP up to 1 time (this effect can only be triggered up to 1 time every 10 seconds). Concealment breaks when launching an attack and dealing damage with Wicked, being attacked, or swapping weapons."
+          },
+          {
+            "paragraph": "Hunting: When concealment breaks from launching an attack with Wicked and landing a hit, trigger Fevered Hunt. This resets Arctic Bite's cooldown and increases the Wanderer's final damage exponentially by 2.4% to 36% based on the Concealment duration. Receive maximum damage boost after 10 seconds of Concealment. Damage dealt using Fixate to trigger Hunting also benefits from the damage boost."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Impending Chill",
+        "icon": "",
+        "method": [
+          "Directional Dodge",
+          "Attack x1"
+        ],
+        "description": [
+          {
+            "paragraph": "Use normal attack during the short perfect dodge window (use a directional button before dodging) to trigger Impending Chill, dealing damage equal to 30% of ATK and creating 2 ice cores (up to 45 ice cores may exist in battle at any given time)."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Death Aflutter",
+        "icon": "",
+        "method": [
+          "Dodge",
+          "Attack x1"
+        ],
+        "description": [
+          {
+            "paragraph": "Use normal attack right after dodging backward to trigger Death Aflutter, leaping forward and dealing equal to 70% of ATK to nearby targets upon landing. This also creates 1 ice core (up to 45 ice cores may exist in battle at any given time)."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Unforeseen Doom",
+        "icon": "",
+        "method": [
+          "Dodge",
+          "Hold",
+          "Attack x1"
+        ],
+        "description": [
+          {
+            "paragraph": "Tap normal attack at the moment the Wanderer enters concealment from holding dodge to quickly trigger Fixate, dealing damage equal to 160% of ATK. After tossing the weapon, a new skill button for Shadow Execution becomes available."
+          }
+        ],
+        "hasChain": false
+      }
+    ],
+    "skill": [
+      {
+        "name": "Arctic Bite",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "Swing the lance to tear through space, giving the Wanderer hyperbody and a 80% damage reduction for 2 seconds, dealing damage equal to 420% of ATK to nearby targets, and creating a tear to draw in nearby targets that lasts for 30 seconds. This also creates 6 ice cores (up to 45 ice cores may exist in battle at any given time). Cooldown: 60 seconds."
+          },
+          {
+            "paragraph": "After successfully using Arctic Bite, increase the Wanderer's frost and volt damage by 9%, and the Wanderer ignores 15% of the target's frost and volt resistance, lasting for 60 seconds (each element's total resistance ignored cannot exceed 50%)."
+          }
+        ]
+      },
+      {
+        "name": "Frigid Blast",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "When Fixate tosses the weapon through the tear, the cold air explodes, dealing damage equal to 330% of ATK to enemies near the tear, strongly freezing them for 5 seconds (triggers up to once every 30 seconds, does not work on bosses). Additionally, it draws in and detonates all the ice cores in battle, and places Force Impact on the targets."
+          },
+          {
+            "paragraph": "Ice Core Detonation: Each ice core deals damage equal to 80% of ATK to nearby targets, and the shatter from each ice core is calculated independently."
+          }
+        ]
+      },
+      {
+        "name": "Shadow Execution",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "Move to the weapon's location and strike swiftly (if the thrown weapon has previously hit a target, then move in front of that target), dealing damage equal to 99% of ATK to nearby targets (does not trigger the skill's additional effect). When Shadow Execution hits a target, triggers Phantasia if it's not on cooldown."
+          }
+        ]
+      }
+    ],
+    "discharge": [
+      {
+        "name": "Deadly Euphoria",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "When weapon charge is full or Phantasia is triggered, upon switching to this weapon, remove all debuffs from the Wanderer. Yanuo stabs the lance into the ground, dealing damage equal to 368% of ATK to the targets in the area ahead and creating 6 ice cores (up to 45 ice cores may exist in battle at any given time). During this period, gain damage immunity for 1.5 seconds (unavailable in Apex League)."
+          }
+        ]
+      }
+    ],
+    "trait": [
+      {
+        "affinity": "1200",
+        "description": [
+          {
+            "paragraph": "Increase final damage by 13%."
+          }
+        ]
+      },
+      {
+        "affinity": "4000",
+        "description": [
+          {
+            "paragraph": "Increase final damage by 18%. When equipped with Wicked, increase final damage by an additional 6%."
+          }
+        ]
+      }
+    ]
+  },
+  {
     "slug": "plotti",
     "name": [
       "Plotti"
@@ -2257,9 +3246,6 @@
       {
         "name": "Qinglong's Might",
         "icon": "huang_attack_6.webp",
-        "method": [
-          ""
-        ],
         "description": [
           {
             "paragraph": "Every 3 normal attacks landed while using Azure Dragon grants 1 stack of Qinglong's Might, stacking up to 8 times, for 30 seconds."
@@ -10927,13 +11913,255 @@
     "name": [
       "Pepper"
     ],
-    "tag": "new",
+    "weapon": "Staff of Scars",
+    "weaponDescription": "A mechanical staff with a cross rune carved into it. Capable of both forgiving sins or unleashing punishments.",
+    "avatar": "pepper_avatar",
+    "resonance": "benediction",
+    "element": "element_volt",
     "rarity": "SR",
+    "tag": "",
+    "hasAtk": true,
+    "hasHP": true,
+    "hasCrit": false,
+    "hasRes": true,
+    "shatter": "4",
+    "charge": "10",
     "roles": [
-      "MDPS",
-      "Buffer",
-      "Healer",
-      "SupportBuffer"
+      ""
+    ],
+    "effects": [
+      {
+        "name": "Volt",
+        "description": [
+          {
+            "paragraph": "When the weapon is fully charged, the next attack will strongly paralyze targets for 1 second and electrify them for 6 seconds, removing all their buffs and dealing damage equal to 111% of ATK. Electrified targets can't receive any buffs for the next 6 seconds."
+          }
+        ]
+      }
+    ],
+    "oneStar": [
+      {
+        "paragraph": "Heal all teammates within 10 meters for 100% of ATK after using a Dodge skill."
+      }
+    ],
+    "twoStar": [
+      {
+        "paragraph": "Increase the current weapon's base HP growth by 10%."
+      }
+    ],
+    "threeStar": [
+      {
+        "paragraph": "Normal attacks also fire two missiles, each dealing damage equal to 5% of ATK to the target and restoring 5 weapon charge points."
+      }
+    ],
+    "fourStar": [
+      {
+        "paragraph": "Increase the current weapon's base HP growth by 20%."
+      }
+    ],
+    "fiveStar": [
+      {
+        "paragraph": "Increase speed of obtaining weapon charge by 20% (not applicable to missile attacks)."
+      }
+    ],
+    "sixStar": [
+      {
+        "paragraph": "Grant all teammates within range 60% damage reduction whenever a skill dispels control effects from the target."
+      }
+    ],
+    "attacks": [
+      {
+        "name": "Normal Attack",
+        "icon": "",
+        "method": [
+          "Attack x5"
+        ],
+        "description": [
+          {
+            "paragraph": "While on the ground, swing the staff to attack 5 times in a row."
+          }
+        ],
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "First Attack: Deal damage equal to 33.9% of ATK."
+          },
+          {
+            "combo": "Second Attack: Deal damage equal to 25.4% of ATK."
+          },
+          {
+            "combo": "Third Attack: Deal damage equal to 41% of ATK."
+          },
+          {
+            "combo": "Fourth Attack: Deal damage equal to 56.1% of ATK."
+          },
+          {
+            "combo": "Fifth Attack: Deal damage equal to 98.8% of ATK."
+          }
+        ]
+      },
+      {
+        "name": "Soaring Barrage",
+        "icon": "",
+        "method": [
+          "Jump",
+          "Attack x5"
+        ],
+        "description": [
+          {
+            "paragraph": "While airborne or after jumping once, tap normal attack to attack 5 times in a row."
+          }
+        ],
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "First Attack: Deal damage equal to 43.9% of ATK."
+          },
+          {
+            "combo": "Second Attack: Deal damage equal to 31.7% of ATK."
+          },
+          {
+            "combo": "Third Attack: Deal damage equal to 34.4% of ATK."
+          },
+          {
+            "combo": "Fourth Attack: Deal damage equal to 61.6% of ATK."
+          },
+          {
+            "combo": "Fifth Attack: Deal damage equal to 64.3% of ATK."
+          }
+        ]
+      },
+      {
+        "name": "Moonfall",
+        "icon": "",
+        "method": [
+          "Jump",
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "Tap and hold normal attack while airborne to trigger Moonfall. Upon landing, deal damage once every 0.2 seconds, for a total of 77.2% of ATK damage."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Focused Assault",
+        "icon": "",
+        "method": [
+          "Attack x3",
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "After the third normal attack, hold the normal attack button to trigger branch attacks, consuming 300 points of endurance."
+          }
+        ],
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "First Attack: Pull in enemies in front of the user, strongly suspending them and dealing damage equal to 21.7% of ATK every 0.3 seconds (up to 4 times)."
+          },
+          {
+            "combo": "Second Attack: Deal damage equal to 25.2% of ATK at the target location and to nearby enemies every 0.3 seconds."
+          }
+        ]
+      }
+    ],
+    "dodge": [
+      {
+        "name": "Dodge",
+        "icon": "",
+        "method": [
+          "Directional Dodge"
+        ],
+        "description": [
+          {
+            "paragraph": "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for 0.5 seconds."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Surge",
+        "icon": "",
+        "method": [
+          "Dodge",
+          "Attack x1"
+        ],
+        "description": [
+          {
+            "paragraph": "Use normal attack during the short perfect dodge window (use a directional button before dodging) to trigger Surge."
+          },
+          {
+            "paragraph": "Each energy pulse deals damage equal to 30.5% of ATK to targets"
+          },
+          {
+            "paragraph": "Grant 75 weapon charge upon use."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Tesseract",
+        "icon": "",
+        "method": [
+          "Directional Dodge",
+          "Attack x1"
+        ],
+        "description": [
+          {
+            "paragraph": "Use a normal attack during the short period after dodging to trigger Evasive Blast."
+          },
+          {
+            "paragraph": "Fire an energy orb forward, dealing damage equal to 43.3% of ATK to targets in its path every 0.3 seconds (up to 5 times)."
+          },
+          {
+            "paragraph": "Grant 75 weapon charge upon use."
+          }
+        ],
+        "hasChain": false
+      }
+    ],
+    "skill": [
+      {
+        "name": "Sanctuary",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "Create an energy shield at the Wanderer's location. Heal allies within the shield for 81.7% of ATK every second and reduce their damage taken by 3% for 10 seconds. 60-second cooldown."
+          }
+        ]
+      }
+    ],
+    "discharge": [
+      {
+        "name": "Swift Deliverance",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "When weapon charge is full or Phantasia is triggered, switching to this weapon from another weapon removes all debuffs from the Wanderer, and the staff continues to remove debuffs from the Wanderer and allies, plus healing nearby Wanderers and allies for 79% of ATK as HP for 7 seconds."
+          }
+        ]
+      }
+    ],
+    "trait": [
+      {
+        "affinity": "1200",
+        "description": [
+          {
+            "paragraph": "When Pepper spends satiey to restore HP, increase restoration effect by 100%."
+          }
+        ]
+      },
+      {
+        "affinity": "4000",
+        "description": [
+          {
+            "paragraph": "When Pepper spends satiey to restore HP, increase restoration effect by 200%."
+          }
+        ]
+      }
     ]
   },
   {
@@ -10941,13 +12169,131 @@
     "name": [
       "Hilda"
     ],
-    "tag": "new",
+    "weapon": "The Terminator",
+    "weaponDescription": "The most gnarly firearm ever created, also known as a moving turret.",
+    "avatar": "hilda_avatar",
+    "resonance": "attack",
+    "element": "element_frost",
     "rarity": "SR",
+    "tag": "",
+    "hasAtk": true,
+    "hasHP": true,
+    "hasCrit": false,
+    "hasRes": true,
+    "shatter": "16",
+    "charge": "10",
     "roles": [
-      "MDPS",
-      "Buffer",
-      "Healer",
-      "SupportBuffer"
+      ""
+    ],
+    "effects": [
+      {
+        "name": "Ice Shell",
+        "description": [
+          {
+            "paragraph": "When the weapon is fully charged, the next attack will strongly freeze targets for 2 seconds and leave them frostbitten for 6 seconds. Breaking the ice shell causes additional damage equal to 106% of ATK. While frostbitten, the target's weapon charge rate is reduced by 50%."
+          }
+        ]
+      }
+    ],
+    "oneStar": [
+      {
+        "paragraph": "Every successful normal attack increases damage by 1% for 2 seconds. Stack up to 15 times. Increase ammo count to 60."
+      }
+    ],
+    "twoStar": [
+      {
+        "paragraph": "Increase the current weapon's base ATK growth by 10%."
+      }
+    ],
+    "threeStar": [
+      {
+        "paragraph": "Within 10 seconds of switching to the weapon, increase damage of normal attacks and shatter by 30%. Cooldown: 25 seconds. Increase ammo to 80."
+      }
+    ],
+    "fourStar": [
+      {
+        "paragraph": "Increase the current weapon's base ATK growth by 20%."
+      }
+    ],
+    "fiveStar": [
+      {
+        "paragraph": "Reduce cooldown of normal attacks while in turret mode by 2 seconds."
+      }
+    ],
+    "sixStar": [
+      {
+        "paragraph": "Within 10 seconds of switching to the weapon, increase damage of normal attacks and shatter by 60%. Cooldown: 25 seconds."
+      }
+    ],
+    "attacks": [
+      {
+        "name": "Normal Attack",
+        "icon": "",
+        "method": [
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "Tap normal attack to enter aiming mode. Hold normal attack to fire continuously, up to 40 rounds. Each shot deals damage equal to 15.4% of ATK. Deal double damage when scoring a headshot or hitting an enemy's weak point, knocking them down (headshots are ineffective against Wanderers)."
+          }
+        ],
+        "hasChain": false
+      }
+    ],
+    "dodge": [
+      {
+        "name": "Dodge",
+        "icon": "",
+        "method": [
+          "Directional Dodge"
+        ],
+        "description": [
+          {
+            "paragraph": "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for 0.5 seconds."
+          }
+        ],
+        "hasChain": false
+      }
+    ],
+    "skill": [
+      {
+        "name": "Turret",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "Enable turret mode and fire large energy orbs, each dealing damage equal to 287.9% of ATK and launching the target into the air. Become immune to hitstun and control effects while setting up the turret. Cooldown: 3.5 seconds."
+          }
+        ]
+      }
+    ],
+    "discharge": [
+      {
+        "name": "Arctic Beam",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "When weapon charge is full or Phantasia is triggered, remove all debuffs from the Wanderer and fire an arctic beam upon switching to this weapon, dealing damage equal to 444.5% of ATK and inflict a 3-second freeze effect. Also reduce the target's frost resistance by 50% for 10 seconds."
+          }
+        ]
+      }
+    ],
+    "trait": [
+      {
+        "affinity": "1200",
+        "description": [
+          {
+            "paragraph": "When Hilda uses a vehicle, increase speed by 7%."
+          }
+        ]
+      },
+      {
+        "affinity": "4000",
+        "description": [
+          {
+            "paragraph": "When Hilda uses a vehicle, increase speed by 10%."
+          }
+        ]
+      }
     ]
   },
   {
@@ -10955,13 +12301,279 @@
     "name": [
       "Ene"
     ],
-    "tag": "new",
+    "weapon": "Pummeler",
+    "weaponDescription": "No one wants to be on the receiving end of this maul.",
+    "avatar": "ene_avatar",
+    "resonance": "fortitude",
+    "element": "element_frost",
     "rarity": "SR",
+    "tag": "",
+    "hasAtk": true,
+    "hasHP": true,
+    "hasCrit": false,
+    "hasRes": true,
+    "shatter": "10",
+    "charge": "6",
     "roles": [
-      "MDPS",
-      "Buffer",
-      "Healer",
-      "SupportBuffer"
+      ""
+    ],
+    "effects": [
+      {
+        "name": "Ice Shell",
+        "description": [
+          {
+            "paragraph": "When the weapon is fully charged, the next attack will strongly freeze targets for 2 seconds and leave them frostbitten for 6 seconds. Breaking the ice shell causes additional damage equal to 106% of ATK. While frostbitten, the target's weapon charge rate is reduced by 50%."
+          }
+        ]
+      }
+    ],
+    "oneStar": [
+      {
+        "paragraph": "Taunt nearby targets after switching to this weapon, preventing 1 instance of damage in the next 8 seconds and granting hyperbody for the next 8 seconds. Cooldown: 15 seconds."
+      }
+    ],
+    "twoStar": [
+      {
+        "paragraph": "Increase the current weapon's base HP growth by 10%."
+      }
+    ],
+    "threeStar": [
+      {
+        "paragraph": "After taking damage, reduce all damage received by 50% for the next 6 seconds. Cooldown: 20 seconds."
+      }
+    ],
+    "fourStar": [
+      {
+        "paragraph": "Increase the current weapon's base HP growth by 20%."
+      }
+    ],
+    "fiveStar": [
+      {
+        "paragraph": "Normal attacks stun targets for 2.5 seconds. Cooldown: 20 seconds."
+      }
+    ],
+    "sixStar": [
+      {
+        "paragraph": "Discharge skills deal an additional 10% damage to targets and increase frost damage by an additional 10% for 25 seconds."
+      }
+    ],
+    "attacks": [
+      {
+        "name": "Normal Attack",
+        "icon": "",
+        "method": [
+          "Attack x4"
+        ],
+        "description": [
+          {
+            "paragraph": "While on the ground, swing the maul to attack 4 times in a row."
+          }
+        ],
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "First Attack: Deal damage equal to 103% of ATK and knock the target back a short distance."
+          },
+          {
+            "combo": "Second Attack: Deal damage equal to 83.9% of ATK and knock the target back a short distance."
+          },
+          {
+            "combo": "Third Attack: Deal damage equal to 212.4% of ATK and knock the target back a short distance."
+          },
+          {
+            "combo": "Fourth Attack: Deal damage equal to 356.2% of ATK and launch the target."
+          },
+          {
+            "combo": "While Outburst is active, swing the maul to attack 4 times in a row."
+          },
+          {
+            "combo": "First Attack: Deal damage equal to 102% of ATK and knock the target back a short distance."
+          },
+          {
+            "combo": "Second Attack: Deal damage equal to 87.8% of ATK and knock the target back a short distance."
+          },
+          {
+            "combo": "Third Attack: Deal damage equal to 231.3% of ATK and knock the target back a short distance."
+          },
+          {
+            "combo": "Fourth Attack: Deal damage equal to 425.7% of ATK and strongly suspend the target."
+          }
+        ]
+      },
+      {
+        "name": "Pummel",
+        "icon": "",
+        "method": [
+          "Jump",
+          "Attack x1"
+        ],
+        "description": [
+          {
+            "paragraph": "While airborne or after jumping once, tap normal attack to trigger Pummel. Deal damage equal to 164.3% of ATK and suspend the target."
+          },
+          {
+            "paragraph": "While Outburst is active, deal damage equal to 180.7% of ATK and strongly suspend the target."
+          },
+          {
+            "paragraph": "The higher the altitude when triggering the attack, the greater the damage dealt, up to 600% damage."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Shockwave",
+        "icon": "",
+        "method": [
+          "Jump",
+          "Jump",
+          "Attack x1"
+        ],
+        "description": [
+          {
+            "paragraph": "Tapping and holding while airborne, double-jumping, short tapping in the air when there are targets nearby, climbing, jumping backward, or attacking while using the Jetpack will trigger a Shockwave. Strongly suspend the target 4 times, dealing damage equal to 47% of ATK each time. Cost 250 endurance."
+          },
+          {
+            "paragraph": "While Outburst is active, Shockwave strongly suspends the target 5 times, dealing damage equal to 51.7% of ATK each time."
+          },
+          {
+            "paragraph": "The higher the altitude when triggering the attack, the greater the damage dealt, up to 600% damage."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Sneak Attack",
+        "icon": "",
+        "method": [
+          "Crouch",
+          "Attack x1"
+        ],
+        "description": [
+          {
+            "paragraph": "Approach the enemy from behind while crouching, then use normal attack to trigger Sneak Attack, dealing damage equal to 427.5% of ATK."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Focus Smash",
+        "icon": "",
+        "method": [
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "Tap and hold normal attack to trigger Focus Smash (can be charged up to 3 stacks). Grant immunity to all control effects and hyperbody while charging."
+          }
+        ],
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "First Stack: Deal damage equal to 207.6% of ATK and suspend the target."
+          },
+          {
+            "combo": "Second Stack: Deal damage equal to 519.1% of ATK and strongly suspend the target."
+          },
+          {
+            "combo": "Third Stack: Deal damage equal to 973.2% of ATK and strongly suspend the target."
+          },
+          {
+            "combo": "While Outburst is active, tap and hold normal attack to trigger Furious Strikes, dealing damage equal to 676.7% of ATK and strongly suspend the target."
+          }
+        ]
+      }
+    ],
+    "dodge": [
+      {
+        "name": "Jumping Smash",
+        "icon": "",
+        "method": [
+          "Directional Dodge",
+          "Attack x1"
+        ],
+        "description": [
+          {
+            "paragraph": "Use the arrow buttons and the dodge button to trigger Jumping Smash, unleashing a Shockwave that suspends the enemy 4 times, dealing damage equal to 218% of ATK."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Worldsplitter",
+        "icon": "",
+        "method": [
+          "Dodge",
+          "Attack x1"
+        ],
+        "description": [
+          {
+            "paragraph": "Tap normal attack during the short period of time after a dodge to trigger Worldsplitter, unleashing 3 shockwaves forward, each dealing damage equal to 70.8% of ATK, and suspending the targets."
+          },
+          {
+            "paragraph": "While in Outburst mode, fire 5 shockwaves forward, each dealing damage equal to 70.8% of ATK and suspending the target."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Dodge",
+        "icon": "",
+        "method": [
+          "Directional Dodge"
+        ],
+        "description": [
+          {
+            "paragraph": "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for 0.5 seconds."
+          }
+        ],
+        "hasChain": false
+      }
+    ],
+    "skill": [
+      {
+        "name": "Outburst",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "Switch to activate Outburst, increasing damage dealt for 25 seconds."
+          },
+          {
+            "paragraph": "While Outburst is active, skills trigger Windfury, dealing damage equal to 295.2% of ATK, strongly suspending the target and creating an air current on the ground. While standing in the current, dodging has no cost."
+          },
+          {
+            "paragraph": "Cooldown: 45 seconds (Windfury's cooldown: 10 seconds."
+          }
+        ]
+      }
+    ],
+    "discharge": [
+      {
+        "name": "Overwhelming Maul",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "When weapon charge is full or Phantasia is triggered, upon switching to this weapon, remove all debuffs from the Wanderer and strongly suspend nearby targets, dealing damage equal to 206.9% of ATK. Also summon a mail to fall on nearby targets, dealing damage equal to 206.9% of ATK"
+          }
+        ]
+      }
+    ],
+    "trait": [
+      {
+        "affinity": "1200",
+        "description": [
+          {
+            "paragraph": "When Ene swims, climbs, or glides, reduce endurance consumption by 12%."
+          }
+        ]
+      },
+      {
+        "affinity": "4000",
+        "description": [
+          {
+            "paragraph": "When Ene swims, climbs, or glides, reduce endurance consumption by 20%."
+          }
+        ]
+      }
     ]
   },
   {
@@ -10969,13 +12581,255 @@
     "name": [
       "Echo"
     ],
-    "tag": "new",
+    "weapon": "Thunderous Halberd",
+    "weaponDescription": "A halnerd infused with the power of thunder. Great for burst damage, and its length makes it a great weapon for a variety of ranges.",
+    "avatar": "echo_avatar",
+    "resonance": "attack",
+    "element": "element_volt",
     "rarity": "SR",
+    "tag": "",
+    "hasAtk": true,
+    "hasHP": true,
+    "hasCrit": false,
+    "hasRes": true,
+    "shatter": "11",
+    "charge": "7",
     "roles": [
-      "MDPS",
-      "Buffer",
-      "Healer",
-      "SupportBuffer"
+      ""
+    ],
+    "effects": [
+      {
+        "name": "Volt",
+        "description": [
+          {
+            "paragraph": "When the weapon is fully charged, the next attack will strongly paralyze targets for 1 second and electrify them for 6 seconds, removing all their buffs and dealing damage equal to 111% of ATK. Electrified targets can't receive any buffs for the next 6 seconds."
+          }
+        ]
+      }
+    ],
+    "oneStar": [
+      {
+        "paragraph": "Increase shatter by 15%. After shattering the target's shield, increase all teammates' ATK by 15% for 30 seconds. This cannot be stacked."
+      }
+    ],
+    "twoStar": [
+      {
+        "paragraph": "Increase the current weapon's base HP growth by 10%."
+      }
+    ],
+    "threeStar": [
+      {
+        "paragraph": "After hitting a target with Moonchaser, reduce their ATK by 5% and increase the user's ATK by 5% for 15 seconds (effect can be stacked up to 3 times by hitting multiple targets). Effect is doubled to grievous targets."
+      }
+    ],
+    "fourStar": [
+      {
+        "paragraph": "Increase the current weapon's base ATK growth by 20%."
+      }
+    ],
+    "fiveStar": [
+      {
+        "paragraph": "Double stun duration from dodge skills."
+      }
+    ],
+    "sixStar": [
+      {
+        "paragraph": "Discharge skill deals more damage the further it travels, up to 100% more damage."
+      }
+    ],
+    "attacks": [
+      {
+        "name": "Thrust",
+        "icon": "",
+        "method": [
+          "Attack x5"
+        ],
+        "description": [
+          {
+            "paragraph": "While on the ground, swing the long spear to attack 5 times in a row."
+          }
+        ],
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "First Attack: Deal damage equal to 33.3% of ATK and knock the target back a short distance."
+          },
+          {
+            "combo": "Second Attack: Deal damage equal to 30.5% of ATK and knock the target back a short distance."
+          },
+          {
+            "combo": "Third Attack: Deal damage equal to 63.8% of ATK and knock the target back a short distance."
+          },
+          {
+            "combo": "Fourth Attack: Deal damage equal to 88% of ATK and knock the target back a short distance."
+          },
+          {
+            "combo": "Fifth Attack: Deal damage equal to 155.1% of ATK and knock the target back a significant distance."
+          }
+        ]
+      },
+      {
+        "name": "Jumping Strike",
+        "icon": "",
+        "method": [
+          "Jump",
+          "Attack x4"
+        ],
+        "description": [
+          {
+            "paragraph": "While airborne, use normal attack to attack 4 times in a row in the air."
+          }
+        ],
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "First Attack: Deal damage equal to 37% of ATK."
+          },
+          {
+            "combo": "Second Attack: Deal damage equal to 31.4% of ATK."
+          },
+          {
+            "combo": "Third Attack: Deal damage equal to 61.8% of ATK."
+          },
+          {
+            "combo": "Fourth Attack: Deal damage equal to 148.4% of ATK."
+          }
+        ]
+      },
+      {
+        "name": "Crashing Drive",
+        "icon": "",
+        "method": [
+          "Jump",
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "Tap and hold normal attack while airborne (or tap when a target is selected), or tap normal attack while climbing, jumping backward, or using the Jetpack to trigger Crashing Drive. While falling, deal damage equal to 8% of ATK each hit. Upon landing, deal damage equal to 65.4% of ATK and knock the target down. The higher the altitude when triggering the attack, the greater the damage dealt, up to 600% damage."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Spear Flurry",
+        "icon": "",
+        "method": [
+          "Attack x3",
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "After the third normal attack, hold the normal attack button to trigger Spear Flurry."
+          },
+          {
+            "paragraph": "Upon hit, strongly suspend the target, dealing damage equal to 66.4% of ATK. Tap again to continue attacking the airborne target, dealing up to 132.5% of ATK damage to a single target."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Sneak Attack",
+        "icon": "",
+        "method": [
+          "Crouch",
+          "Attack x1"
+        ],
+        "description": [
+          {
+            "paragraph": "Thrust the long spear forward, dealing damage equal to 570% of ATK."
+          }
+        ],
+        "hasChain": false
+      }
+    ],
+    "dodge": [
+      {
+        "name": "Flying Kick",
+        "icon": "",
+        "method": [
+          "Directional Dodge",
+          "Attack x1"
+        ],
+        "description": [
+          {
+            "paragraph": "Use normal attack during the short perfect dodge window (use a directional button before dodging) to trigger Flying Kick."
+          },
+          {
+            "paragraph": "Once hit the target, deal damage equal to 97.2% of ATK, knock the enemies back significantly, and stun enemies for 1 seconds or 0.5 seconds to Wanderers."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Lunging Smash",
+        "icon": "",
+        "method": [
+          "Dodge",
+          "Attack x1"
+        ],
+        "description": [
+          {
+            "paragraph": "Use normal attack during the short period after dodging to trigger Lunging Smash."
+          },
+          {
+            "paragraph": "Slam the long spear into the ground, dealing damage equal to 71.4% of ATK and strongly suspending targets."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Dodge",
+        "icon": "",
+        "method": [
+          "Directional Dodge"
+        ],
+        "description": [
+          {
+            "paragraph": "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for 0.5 seconds."
+          }
+        ],
+        "hasChain": false
+      }
+    ],
+    "skill": [
+      {
+        "name": "Moonchaser",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "Strongly suspend targets and go airborne, dealing damage equal to 171.9% of ATK. Cooldown: 25 seconds."
+          }
+        ]
+      }
+    ],
+    "discharge": [
+      {
+        "name": "Thunderclap",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "When weapon charge is full or Phantasia is triggered, upon switching to this weapon, remove all debuffs from the Wanderer, then jump in the air and throw a thunderous spear that explodes on hitting the ground, dealing 400.5% of ATK damage and strongly paralyzing targets for 1 second."
+          }
+        ]
+      }
+    ],
+    "trait": [
+      {
+        "affinity": "1200",
+        "description": [
+          {
+            "paragraph": "When teamed up with Echo, allies within 10 meters around Echo gain a damage boost of 4% (excluding Echo)."
+          }
+        ]
+      },
+      {
+        "affinity": "4000",
+        "description": [
+          {
+            "paragraph": "When teamed up with Echo, allies within 10 meters around Echo gain a damage boost of 6% (excluding Echo)."
+          }
+        ]
+      }
     ]
   },
   {
@@ -10983,13 +12837,217 @@
     "name": [
       "Bai Ling"
     ],
-    "tag": "new",
+    "weapon": "Nightingale's Feather",
+    "weaponDescription": "Blends perfectly into the gloomy night.",
+    "avatar": "bailing_avatar",
+    "resonance": "attack",
+    "element": "element_physical",
     "rarity": "SR",
+    "tag": "new",
+    "hasAtk": true,
+    "hasHP": true,
+    "hasCrit": true,
+    "hasRes": false,
+    "shatter": "6",
+    "charge": "10",
     "roles": [
-      "MDPS",
-      "Buffer",
-      "Healer",
-      "SupportBuffer"
+      ""
+    ],
+    "effects": [
+      {
+        "name": "Grevious",
+        "description": [
+          {
+            "paragraph": "When the weapon is fully charged, the next attack will cause enemies to become grevious for 7 seconds, increasing their damage received by 20% and dealing damage equal to 100% of ATK. When in team play, physical damage dealt to grevious targets is increased by an additional 20%."
+          }
+        ]
+      }
+    ],
+    "oneStar": [
+      {
+        "paragraph": "Restore 1 dodge attempt every fifth normal attack or after using Piercing Shot."
+      }
+    ],
+    "twoStar": [
+      {
+        "paragraph": "Increase the current weapon's base ATK growth by 10%."
+      }
+    ],
+    "threeStar": [
+      {
+        "paragraph": "Increase headshot damage by 30%."
+      }
+    ],
+    "fourStar": [
+      {
+        "paragraph": "Increase the current weapon's base ATK growth by 20%."
+      }
+    ],
+    "fiveStar": [
+      {
+        "paragraph": "Dodge skills inflict a grievous effect on targets for 7 seconds."
+      }
+    ],
+    "sixStar": [
+      {
+        "paragraph": "Increase crit rate to grievous targets by 30% and crit damage by 50%."
+      }
+    ],
+    "attacks": [
+      {
+        "name": "Quickdraw",
+        "icon": "",
+        "method": [
+          "Attack x5"
+        ],
+        "description": [
+          {
+            "paragraph": "While on the ground, draw the bow repeatedly to attack 5 times."
+          }
+        ],
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "First Attack: Deal damage equal to 45.5% of ATK."
+          },
+          {
+            "combo": "Second Attack: Deal damage equal to 40.7% of ATK."
+          },
+          {
+            "combo": "Third Attack: Deal damage equal to 73% of ATK."
+          },
+          {
+            "combo": "Fourth Attack: Deal damage equal to 113% of ATK."
+          },
+          {
+            "combo": "Fifth Attack: Deal damage equal to 104.8% of ATK and knock the target back a short distance."
+          }
+        ]
+      },
+      {
+        "name": "Charged Arrow",
+        "icon": "",
+        "method": [
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "Tap and hold normal attack to charge an attack. Deal base damage equal to 81.8% of ATK, and 50% more for each 1 second spent charging, up to 3 seconds. Deal double damage when scoring a headshot or when hitting an enemy's weak point, and knock the target down (headshots are ineffective against Wanderers)."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Arrow Rain",
+        "icon": "",
+        "method": [
+          "Attack x5",
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "After any normal attack, hold the normal attack button to unleash Arrow Rain, dealing up to 266.7% of ATK area damage to targets."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Air Volley",
+        "icon": "",
+        "method": [
+          "Jump",
+          "Attack x4"
+        ],
+        "description": [
+          {
+            "paragraph": "While airborne, use normal attack to attack 4 times in a row in the air."
+          }
+        ],
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "First Attack: Deal damage equal to 52.5% of ATK."
+          },
+          {
+            "combo": "Second Attack: Deal damage equal to 69% of ATK."
+          },
+          {
+            "combo": "Third Attack: Deal damage equal to 105% of ATK."
+          },
+          {
+            "combo": "Fourth Attack: Deal damage equal to 158% of ATK."
+          }
+        ]
+      }
+    ],
+    "dodge": [
+      {
+        "name": "Dodge",
+        "icon": "",
+        "method": [
+          "Directional Dodge"
+        ],
+        "description": [
+          {
+            "paragraph": "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for 0.5 seconds."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Loaded Arrow",
+        "icon": "",
+        "method": [
+          "Directional Dodge",
+          "Attack x1"
+        ],
+        "description": [
+          {
+            "paragraph": "Tap attack after dodging to trigger Loaded Arrow, knocking the target back by a short distance and dealing damage equal to 115.5% of ATK."
+          }
+        ],
+        "hasChain": false
+      }
+    ],
+    "skill": [
+      {
+        "name": "Piercing Shot",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "Backflips and fires 1 piercing shot forward, damage equal to 209% of ATK and knocking the target back. 12-second cooldown."
+          }
+        ]
+      }
+    ],
+    "discharge": [
+      {
+        "name": "Explosive Barrage",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "When weapon charge is full or Phantasia is triggered, upon switching to this weapon, remove all debuffs from the Wanderer, and unleash Explosive Barrage on the target upon switching to this weapon, dealing damage equal to 660% of ATK."
+          }
+        ]
+      }
+    ],
+    "trait": [
+      {
+        "affinity": "1200",
+        "description": [
+          {
+            "paragraph": "When Bai Ling puts the Glider or the Jetboard away, increase speed by 8% for 12 seconds. Cooldown: 60 seconds."
+          }
+        ]
+      },
+      {
+        "affinity": "4000",
+        "description": [
+          {
+            "paragraph": "When Bai Ling puts the Glider or the Jetboard away, increase speed by 15% for 12 seconds. Cooldown: 60 seconds."
+          }
+        ]
+      }
     ]
   }
 ]

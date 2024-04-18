@@ -1,5 +1,114 @@
 [
   {
+    "slug": "rei",
+    "name": "Rei",
+    "tag": "new",
+    "avatar": "rei_avatar",
+    "element": [
+      "element_voltfrost"
+    ],
+    "rarity": "SSR",
+    "2pc": {
+      "onField": false,
+      "onHealingGuide": false,
+      "onTankGuide": false,
+      "roles": [
+        ""
+      ],
+      "effect": [
+        {
+          "paragraph": "Increase volt and frost damage by 10% / 12% / 14% / 16%. After equipping Salvation, the Wanderer ignores 15% of targets' volt resistance and frost resistance (each element's total resistance ignored cannot exceed 50%). This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+        }
+      ]
+    },
+    "4pc": {
+      "onField": false,
+      "onHealingGuide": false,
+      "onTankGuide": false,
+      "roles": [
+        ""
+      ],
+      "effect": [
+        {
+          "paragraph": "Increase final damage by 22% / 24% / 26% / 28%. After Salvation deals damage, increase volt and frost ATK by 12% for 5 seconds. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "asuka",
+    "name": "Asuka",
+    "tag": "new",
+    "avatar": "asuka_avatar",
+    "element": [
+      "element_physicalflame"
+    ],
+    "rarity": "SSR",
+    "2pc": {
+      "onField": false,
+      "onHealingGuide": false,
+      "onTankGuide": false,
+      "roles": [
+        ""
+      ],
+      "effect": [
+        {
+          "paragraph": "Increase physical and flame ATK by 20% / 22% / 24% / 26%. Using dodge attacks can additionally consume 1 stack of Vengeance and is not limited by the trigger interval. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+        }
+      ]
+    },
+    "4pc": {
+      "onField": false,
+      "onHealingGuide": false,
+      "onTankGuide": false,
+      "roles": [
+        ""
+      ],
+      "effect": [
+        {
+          "paragraph": "Increase all elemental damage by 22% / 24% / 26% / 28%. After equipping Spear of Longinus, increase final damage by 9%, increase Vengeance's multiplier to 720%. When Fortitude Resonance is activated, aggro generated from attacks is increased by 150% / 200% / 250% / 300%. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "yanuo",
+    "name": "Yanuo",
+    "tag": "new",
+    "avatar": "yanuo_avatar",
+    "element": [
+      "element_frost",
+      "element_volt"
+    ],
+    "rarity": "SSR",
+    "2pc": {
+      "onField": false,
+      "onHealingGuide": false,
+      "onTankGuide": false,
+      "roles": [
+        ""
+      ],
+      "effect": [
+        {
+          "paragraph": "Increase frost and volt damage by 13% / 15% / 17% / 19%, frost and volt ATK by 5%, and movement speed increases while concealed by 20%. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+        }
+      ]
+    },
+    "4pc": {
+      "onField": false,
+      "onHealingGuide": false,
+      "onTankGuide": false,
+      "roles": [
+        ""
+      ],
+      "effect": [
+        {
+          "paragraph": "Increase all elemental damage by 22% / 24% / 26% / 28% when at least 1 frost weapon is equipped. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect. After using Arctic Bite, increase final damage by 8% for 60 seconds. When entering combat with Wicked in the main slot, trigger a fully buffed Fevered Hunt 1 time (this does not count towards Wicked's Fevered Hunt cooldown, but it can only be triggered 1 time every 15 seconds)."
+        }
+      ]
+    }
+  },
+  {
     "slug": "plotti",
     "name": "Plotti",
     "tag": "new",
@@ -16,15 +125,6 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Increase flame and physical ATK by 19% / 21% / 23% / 25% and EP-7000 Skyfire's dodge energy regen by 100%. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
@@ -36,15 +136,6 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "roles": [
-        ""
-      ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
         ""
       ],
       "effect": [
@@ -71,15 +162,6 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Increase all elemental damage by 7.5% / 9% / 10.5% / 12%. After using any discharge skill, increase the Wanderer's outgoing healing by 30% for 30 seconds."
@@ -94,15 +176,6 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "roles": [
-        ""
-      ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
         ""
       ],
       "effect": [
@@ -132,15 +205,6 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Increase physical and flame ATK by 19% / 21% / 23% / 25%."
@@ -155,15 +219,6 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "roles": [
-        ""
-      ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
         ""
       ],
       "effect": [
@@ -192,15 +247,6 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Increase all attack by 19% / 21% / 23% / 25%. Void Trace inherits an additional 30% of the Wanderer's ATK. When dealing damage for the first time in combat, gain 1,000 weapon charge."
@@ -215,15 +261,6 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "roles": [
-        ""
-      ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
         ""
       ],
       "effect": [
@@ -252,15 +289,6 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Increase all elemental damage by 7% / 8% / 9% / 10%. When firing Frost Blades, deal additional damage equal to 416% of ATK to nearby targets."
@@ -275,15 +303,6 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "roles": [
-        ""
-      ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
         ""
       ],
       "effect": [
@@ -312,15 +331,6 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "After using any flame weapon skill or discharge, increase all attack by 14% / 16% / 18% / 20% for 30 seconds."
@@ -335,15 +345,6 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "roles": [
-        ""
-      ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
         ""
       ],
       "effect": [
@@ -372,15 +373,6 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Increase final damage by 7% / 8% / 9% / 10%. After Azura's shockwave lands a hit, increase skill damage by 15% for 30 seconds."
@@ -395,15 +387,6 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "roles": [
-        ""
-      ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
         ""
       ],
       "effect": [
@@ -433,15 +416,6 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Increase Serpent Chain member limit to 5. When at least 1 physical or flame weapon is equipped, increase physical ATK and flame ATK by 14% / 16% / 18% / 20%."
@@ -456,15 +430,6 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "roles": [
-        ""
-      ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
         ""
       ],
       "effect": [
@@ -493,15 +458,6 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "When equipped with at least 1 frost weapon, while in the combat state, deal damage equal to 85% of ATK to nearby targets every second. After using any frost weapon skill or discharge skill, increase final damage by 7% / 8% / 9% / 10% for 30 seconds."
@@ -516,15 +472,6 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "roles": [
-        ""
-      ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
         ""
       ],
       "effect": [
@@ -553,15 +500,6 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Increase final damage by 9% / 10% / 11% / 12%. The number of Sparrow Feathers obtained from dodging after using Pine Comet increases to 20."
@@ -576,15 +514,6 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "roles": [
-        ""
-      ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
         ""
       ],
       "effect": [
@@ -613,15 +542,6 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Increase volt ATK by 14.5% / 16.5% / 18.5% / 20.5%."
@@ -636,15 +556,6 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "roles": [
-        ""
-      ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
         ""
       ],
       "effect": [
@@ -673,15 +584,6 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Increase all elemental damage by 8% / 9% / 10% / 11% when at least 1 physical weapon is equipped."
@@ -696,15 +598,6 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "roles": [
-        ""
-      ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
         ""
       ],
       "effect": [
@@ -733,15 +626,6 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "After dealing damage, increase ATK by 16% / 18% / 20% / 22% for 30 seconds."
@@ -756,15 +640,6 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "roles": [
-        ""
-      ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
         ""
       ],
       "effect": [
@@ -793,15 +668,6 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Equipping Precious One, 2 or more weapons of different elements, or 2 or more types of weapons increases all elemental damage by 8% / 9% / 10% / 11%."
@@ -816,15 +682,6 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "roles": [
-        ""
-      ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
         ""
       ],
       "effect": [
@@ -853,15 +710,6 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "When equipped with at least 1 flame weapon, increase flame ATK by 6% / 7% / 8% / 9% and flame damage by 3.2% / 3.8% / 4.4% / 5%."
@@ -876,15 +724,6 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "roles": [
-        ""
-      ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
         ""
       ],
       "effect": [
@@ -913,21 +752,9 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Equipping this matrix on the current weapon increases final damage by 8.5% / 10.5% / 12.5% / 14.5%."
-        },
-        {
-          "paragraph": ""
         }
       ]
     },
@@ -936,15 +763,6 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "roles": [
-        ""
-      ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
         ""
       ],
       "effect": [
@@ -973,21 +791,9 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Equipping this matrix on the current weapon increases crit damage by 13% / 16% / 19% / 23% and shatter by 13% / 16% / 19% / 23%."
-        },
-        {
-          "paragraph": ""
         }
       ]
     },
@@ -996,15 +802,6 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "roles": [
-        ""
-      ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
         ""
       ],
       "effect": [
@@ -1033,15 +830,6 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Increases crit damage by 14% / 15% / 16% / 18%. This effect does not stack."
@@ -1056,15 +844,6 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "roles": [
-        ""
-      ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
         ""
       ],
       "effect": [
@@ -1093,15 +872,6 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "When dealing physical damage, increase final damage by 4% / 5% / 6% / 7% and physical damage by 2% / 2.5% / 3% / 3.5% for 3 seconds."
@@ -1116,15 +886,6 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "roles": [
-        ""
-      ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
         ""
       ],
       "effect": [
@@ -1153,15 +914,6 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Increase final damage by 4.5% / 5.5% / 6.5% / 7.5% upon switching to this weapon. Increase frost damage by an additional 3% for 18 seconds if it's a frost weapon."
@@ -1176,15 +928,6 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "roles": [
-        ""
-      ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
         ""
       ],
       "effect": [
@@ -1213,15 +956,6 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "After hitting a target with a flame weapon, increase final damage by 3% / 3.4% / 3.8% / 4.2% and final crit rate by 2% / 2% / 2.4% / 2.4% for 25 seconds, stacking up to 2 times."
@@ -1236,15 +970,6 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "roles": [
-        ""
-      ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
         ""
       ],
       "effect": [
@@ -1273,15 +998,6 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Every time volt damage is dealt, there is a 40% chance of triggering chain lightning, dealing damage equal to 50% / 65% / 90% / 120% of volt ATK to targets, up to 7 targets. Cooldown: 2 seconds. Every time chain lightning is triggered, increase volt damage by 6% for 6 seconds (chain lightning will not trigger attack effects). This effect cannot be stacked."
@@ -1296,15 +1012,6 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "roles": [
-        ""
-      ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
         ""
       ],
       "effect": [
@@ -1333,21 +1040,9 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Use this weapon to increase all attack types by 13% / 17% / 21% / 25%. The lower the HP, the higher the healing received, which can be increased by up to 100%."
-        },
-        {
-          "paragraph": ""
         }
       ]
     },
@@ -1358,21 +1053,9 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "When dealing physical damage, increase physical damage by 2.7% with a cooldown of 0.1 seconds, Stack up to 5 times, Upon reaching the maximum stacks, increase physical damage by an additional 3.5% / 7% / 10.5% / 14% for 5 seconds. Only the effect with the highest star rating is applied when obtained repeatedly, Obtain 1 block for each dodge, blocking damage up to 60% of current HP, but not less than 20% of Max HP. Stack up to 3 blocks for 10 seconds."
-        },
-        {
-          "paragraph": ""
         }
       ]
     }
@@ -1393,15 +1076,6 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Increase ATK by 2.1% / 2.6% / 3.1% / 3.6% on hit for 18 seconds, stacking up to 5 times."
@@ -1416,15 +1090,6 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "roles": [
-        ""
-      ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
         ""
       ],
       "effect": [
@@ -1453,15 +1118,6 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "When Frost Resonance gets triggered: Every 3 seconds, deal frost damage equal to 65% / 80% / 95% / 110% of frost ATK to enemies within a 10-meter radius and apply the Icefrost effect: Inflict 5% slow effect that lasts for 3.5 seconds, freeze targets for 3 seconds at 3 stacks (does not apply to bosses), and increase frost damage taken by the target by 5% for 18 seconds."
@@ -1476,15 +1132,6 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "roles": [
-        ""
-      ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
         ""
       ],
       "effect": [
@@ -1513,15 +1160,6 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Increase flame ATK after casting weapon skill by 8% / 10% / 12% / 15% for 25 seconds."
@@ -1538,21 +1176,9 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Grant Mastery after casting weapon skill for 15 seconds, with a cooldown of 15 seconds (Mastery shares cooldowns across levels). Mastery is not stackable. Increase flame damage by 2% / 2.5% / 3% / 3.5% every time the target is hit with a normal attack until the end of Mastery. Stack up to 6 times, adding a maximum of 1 stack every 0.2 seconds. At 6 stacks, grant a shield that can block damage for 1 time."
-        },
-        {
-          "paragraph": ""
         }
       ]
     }
@@ -1573,21 +1199,9 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Increase damage against debuffed targets by 14% / 16% / 18% / 20%."
-        },
-        {
-          "paragraph": ""
         }
       ]
     },
@@ -1598,21 +1212,9 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Restore 1 dodge attempt every 3 dodges. Dodge skills inflict burn upon hit, dealing damage equal to 24% / 30% / 36% / 42% of ATK every 0.5 seconds for 4 seconds."
-        },
-        {
-          "paragraph": ""
         }
       ]
     }
@@ -1633,21 +1235,9 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Increase damage by 13% / 17% / 20% / 23% when hitting a target in mid-air or initiating an aerial attack. Reset double-jump upon hitting the target in mid-air."
-        },
-        {
-          "paragraph": ""
         }
       ]
     },
@@ -1658,21 +1248,9 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Hitting an enemy with a skill reduces the cooldowns of all weapon skills by 1.5 / 2 / 2.5 / 3 seconds and increases the damage of discharge skills by 58% / 80% / 103% / 126% for 15 seconds."
-        },
-        {
-          "paragraph": ""
         }
       ]
     }
@@ -1693,15 +1271,6 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Increase frost ATK by 8% / 10% / 12% / 15% for 10 seconds when switching between frost weapons."
@@ -1718,21 +1287,9 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "When unleashing a frost domain with the weapon Balmung, enemies within the frost domain receive frost damage equal to 55% / 65% / 75% / 85% of ATK every second."
-        },
-        {
-          "paragraph": ""
         }
       ]
     }
@@ -1753,15 +1310,6 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "When a target is being healed, their volt ATK is increased by / 8% / 10% / 12% / 15% for 20 seconds."
@@ -1776,15 +1324,6 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "roles": [
-        ""
-      ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
         ""
       ],
       "effect": [
@@ -1813,21 +1352,9 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Upon using a discharge skill to switch to the current weapon, gain a shield equal to 150% / 200% / 250% / 300% of ATK for 6 seconds."
-        },
-        {
-          "paragraph": ""
         }
       ]
     },
@@ -1838,21 +1365,9 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "While the shield is active, you and your teammates deal 16% / 20% / 24% / 28% more damage."
-        },
-        {
-          "paragraph": ""
         }
       ]
     }
@@ -1873,21 +1388,9 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Increase damage dealt by 14% / 16% / 18% / 20% when there are no enemies within 4 meters."
-        },
-        {
-          "paragraph": ""
         }
       ]
     },
@@ -1898,21 +1401,9 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Upon a headshot or hitting the target with Icewind Arrow: Piercing Shot, increase ATK by 15% / 18% / 21% / 25% for 8 seconds."
-        },
-        {
-          "paragraph": ""
         }
       ]
     }
@@ -1933,21 +1424,9 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Increase both damage and shatter to targets with more than 50% HP by 15% / 19% / 22.5% / 26%."
-        },
-        {
-          "paragraph": ""
         }
       ]
     },
@@ -1958,21 +1437,9 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Upon entering battle, gain a 20% / 25% / 30% / 35% damage boost for 35 seconds. Reset 5 seconds after exiting battle."
-        },
-        {
-          "paragraph": ""
         }
       ]
     }
@@ -1993,21 +1460,9 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Increase damage progressively by 1% upon hitting a target. Stack up to 10 / 13 / 16 / 20 times. Last for 1.5 seconds."
-        },
-        {
-          "paragraph": ""
         }
       ]
     },
@@ -2018,21 +1473,9 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Increase Dual EM Stars' electrical explosion damage by 16% / 22% / 30% / 40% of ATK."
-        },
-        {
-          "paragraph": ""
         }
       ]
     }
@@ -2053,21 +1496,9 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "If HP is less than 30% after being attacked, gain a shield equal to 20% / 26% / 32% / 40% of Max HP for 10 seconds. Cooldown: 90 seconds."
-        },
-        {
-          "paragraph": ""
         }
       ]
     },
@@ -2078,21 +1509,9 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Increase Whirlwind's damage by 36% / 45% / 54% / 63% and restore HP equal to 30% / 38% / 44% / 50% of the damage dealt while Whirlwind is active. The maximum HP restored every 0.5 seconds cannot exceed 60% / 72% / 81% / 90% of ATK."
-        },
-        {
-          "paragraph": ""
         }
       ]
     }
@@ -2113,21 +1532,9 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "When a target is shattered, grant 8% / 10% / 12% / 14% damage boost for 25 seconds. Only the highest level's effect is applied when obtained repeatedly."
-        },
-        {
-          "paragraph": ""
         }
       ]
     },
@@ -2138,21 +1545,9 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "When there are 2 enemies around, hit restore HP equal to 14% / 18% / 22% / 26% of damage dealt upon attacking. The maximum HP restored every 0.5 seconds must not exceed 36% / 42% / 48% / 54% of ATK."
-        },
-        {
-          "paragraph": ""
         }
       ]
     }
@@ -2173,21 +1568,9 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Hitting targets with dodge skills inflicts bleed, dealing damage equal to / 15% / 19% / 22.5% / 26% of ATK every second for 5 seconds."
-        },
-        {
-          "paragraph": ""
         }
       ]
     },
@@ -2196,15 +1579,6 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "roles": [
-        ""
-      ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
         ""
       ],
       "effect": [
@@ -2233,21 +1607,9 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Increase crit damage to targets with less than 60% HP by 24% / 30% / 36% / 42%."
-        },
-        {
-          "paragraph": ""
         }
       ]
     },
@@ -2258,21 +1620,9 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Crits deal additional damage over time every second equal to 18% / 22% / 26% / 30% of ATK for 5 seconds. This effect does not stack."
-        },
-        {
-          "paragraph": ""
         }
       ]
     }
@@ -2293,21 +1643,9 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "Increase healing capability and healing received by 10% / 12% / 14% / 16%."
-        },
-        {
-          "paragraph": ""
         }
       ]
     },
@@ -2318,21 +1656,245 @@
       "roles": [
         ""
       ],
-      "recommendedDPS": [
-        ""
-      ],
-      "recommendedSupport": [
-        ""
-      ],
-      "recommendedTank": [
-        ""
-      ],
       "effect": [
         {
           "paragraph": "When you or your teammates are healed, increase ATK by 12.5% / 15% / 17.5% / 20% for 6 seconds."
         },
         {
           "paragraph": "Only the set with the highest star rating will take effect."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "robarg",
+    "name": "Robarg",
+    "tag": "",
+    "avatar": "robarg_avatar",
+    "element": [
+      "element_all"
+    ],
+    "rarity": "SR",
+    "3pc": {
+      "onField": true,
+      "onHealingGuide": false,
+      "onTankGuide": false,
+      "roles": [
+        ""
+      ],
+      "effect": [
+        {
+          "paragraph": "When a target is shattered, poison the target and deal damage equal to 45% / 56% / 67.5% of ATK every second for 10 seconds."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "apophis",
+    "name": "Apophis",
+    "tag": "",
+    "avatar": "apophis_avatar",
+    "element": [
+      "element_all"
+    ],
+    "rarity": "SR",
+    "3pc": {
+      "onField": true,
+      "onHealingGuide": false,
+      "onTankGuide": false,
+      "roles": [
+        ""
+      ],
+      "effect": [
+        {
+          "paragraph": "Deal higher damage at lower HP. Deal maximum damage when HP is 20%. The damage can be increased by up to 20% / 25% / 30%."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "frostbot",
+    "name": "Frostbot",
+    "tag": "",
+    "avatar": "frostbot_avatar",
+    "element": [
+      "element_all"
+    ],
+    "rarity": "SR",
+    "3pc": {
+      "onField": true,
+      "onHealingGuide": false,
+      "onTankGuide": false,
+      "roles": [
+        ""
+      ],
+      "effect": [
+        {
+          "paragraph": "When HP is below 40%, using a discharge skill to switch to the current weapon restores HP equal to 160% / 200% / 240% of ATK."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "sobek",
+    "name": "Sobek",
+    "tag": "",
+    "avatar": "sobek_avatar",
+    "element": [
+      "element_all"
+    ],
+    "rarity": "SR",
+    "3pc": {
+      "onField": true,
+      "onHealingGuide": false,
+      "onTankGuide": false,
+      "roles": [
+        ""
+      ],
+      "effect": [
+        {
+          "paragraph": "Increase damage dealt by 6% / 7.5% / 9% for each enemy nearby. Up to 3 stacks."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "barbarossa",
+    "name": "Barbarossa",
+    "tag": "",
+    "avatar": "barbarossa_avatar",
+    "element": [
+      "element_all"
+    ],
+    "rarity": "SR",
+    "3pc": {
+      "onField": true,
+      "onHealingGuide": false,
+      "onTankGuide": false,
+      "roles": [
+        ""
+      ],
+      "effect": [
+        {
+          "paragraph": "Upon switching to the weapon, gain 50% / 62.5% / 75% damage reflection for 3 seconds. Cooldown: 30 seconds. Upon switching to another weapon, gain a 20% / 25% / 30% damage boost for 5 seconds. Cooldown: 30 seconds."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "pepper",
+    "name": "Pepper",
+    "tag": "",
+    "avatar": "pepper_avatar",
+    "element": [
+      "element_volt"
+    ],
+    "rarity": "SR",
+    "3pc": {
+      "onField": true,
+      "onHealingGuide": false,
+      "onTankGuide": false,
+      "roles": [
+        ""
+      ],
+      "effect": [
+        {
+          "paragraph": "Increase the speed of obtaining weapon charge by 10% / 12.5% / 15%."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "hilda",
+    "name": "Hilda",
+    "tag": "",
+    "avatar": "hilda_avatar",
+    "element": [
+      "element_frost"
+    ],
+    "rarity": "SR",
+    "3pc": {
+      "onField": true,
+      "onHealingGuide": false,
+      "onTankGuide": false,
+      "roles": [
+        ""
+      ],
+      "effect": [
+        {
+          "paragraph": "Increase damage by 12% / 15% / 18% when there are no enemies within 6 meters."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "ene",
+    "name": "Ene",
+    "tag": "",
+    "avatar": "ene_avatar",
+    "element": [
+      "element_frost"
+    ],
+    "rarity": "SR",
+    "3pc": {
+      "onField": true,
+      "onHealingGuide": false,
+      "onTankGuide": false,
+      "roles": [
+        ""
+      ],
+      "effect": [
+        {
+          "paragraph": "When dealing damage greater than 100% of ATK, deal additional damage equal to 60% / 75% / 90% of ATK."
+        },
+        {
+          "paragraph": "Cooldown: 3 seconds."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "echo",
+    "name": "Echo",
+    "tag": "",
+    "avatar": "echo_avatar",
+    "element": [
+      "element_volt"
+    ],
+    "rarity": "SR",
+    "3pc": {
+      "onField": true,
+      "onHealingGuide": false,
+      "onTankGuide": false,
+      "roles": [
+        ""
+      ],
+      "effect": [
+        {
+          "paragraph": "Using a discharge skill to switch to the current weapon grants 150 / 200 / 250 weapon charge."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "bailing",
+    "name": "Bai Ling",
+    "tag": "",
+    "avatar": "bailing_avatar",
+    "element": [
+      "element_physical"
+    ],
+    "rarity": "SR",
+    "3pc": {
+      "onField": true,
+      "onHealingGuide": false,
+      "onTankGuide": false,
+      "roles": [
+        ""
+      ],
+      "effect": [
+        {
+          "paragraph": "Increase damage dealt to grievous targets by 12% / 15% / 18%."
         }
       ]
     }
