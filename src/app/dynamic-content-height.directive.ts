@@ -1,4 +1,5 @@
 import { Directive, ElementRef, Renderer2, HostListener } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Directive({
   selector: '[appDynamicContentHeight]'
@@ -7,12 +8,18 @@ import { Directive, ElementRef, Renderer2, HostListener } from '@angular/core';
 export class DynamicContentHeightDirective {
   private resizeListener!: Function;
 
-  constructor(private el: ElementRef, private renderer: Renderer2) { }
+  constructor(private el: ElementRef, private renderer: Renderer2, private router: Router) { }
 
   ngAfterViewInit(): void {
     this.resizeListener = this.renderer.listen('window', 'resize', () => {
       this.renderer.setStyle(this.el.nativeElement, 'height', 'unset'); // fix potential problem where the explicitly set height might no longer be appropriate due to changes
       this.adjustHeight();
+    });
+
+    this.router.events.subscribe((event) => { // fix Home load --> any other page
+      if (event instanceof NavigationEnd) {
+        this.adjustHeight();
+      }
     });
   }
 
