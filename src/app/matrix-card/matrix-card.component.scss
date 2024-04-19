@@ -13,13 +13,14 @@
 .unit-wrapper {
     // width: 100%; 
     // height: 220px;
-    aspect-ratio: 0.85 / 1; // this might be problematic later so we'll see
+    aspect-ratio: 0.9 / 1; // this might be problematic later so we'll see
     cursor: pointer;
     position: relative;
 
     .top-card {
         position: relative;
         z-index: 2;
+        
         background: $main; // this dumbassery fixes the whole "transparent character artwork background-image" problem and makes me wonder why i even went to school in the first place
     }
 
@@ -106,9 +107,11 @@
 
     .top-card,
     .back-card {
-        background-position: center;
-        background-size: cover;
+       // background-position: 80% 20%;
+        //background-size:85%;
+        background-size:cover;
         background-repeat: no-repeat; // weird edge case
+
         width: 100%;
         height: 100%;
         border-radius: 8px;
@@ -124,6 +127,9 @@
             height: 100%;
             display: flex;
             align-items: flex-end;
+            background-position: 80% -10%;
+            background-size:90%;
+            background-repeat: no-repeat; // weird edge case
 
             .new-tag {
                 font-size: 10px;
@@ -183,7 +189,8 @@
 
                     .icons,
                     .buffs {
-                        font-weight: 500;
+                        font-weight: 600;
+                        font-size: 20px;
                         display: flex;
                         flex-direction: row;
                         gap: 1px;

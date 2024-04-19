@@ -1,12 +1,13 @@
 <div class="unit-wrapper" [attr.data-unit]="matrix.slug" [routerLink]="'/matrix-page/' + matrix.slug">
   <div class="top-card"
-    style="background-image: linear-gradient(0deg, #232323 0%, rgba(35, 35, 35, 0.00) 50%), url(&quot;../assets/matrices/{{matrix.slug}}_matrix.webp&quot;);">
-    <div class="content-wrapper">
+    style="background-image: url(&quot;../../assets/backgrounds/hexagons.png&quot;);">
+    <div class="content-wrapper"
+    style="background-image: url(&quot;../assets/matrices/{{matrix.slug}}_matrix.webp&quot;);">
       <div class="{{matrix.tag}}-tag">{{matrix.tag}}</div>
       <div class="details-container">
         <h5 class="name">{{matrix.name}}</h5>
         <div class="type-and-buffs">
-          <div class="icons">
+          <div class="icons">  
             <img *ngFor="let element of matrix.element" [src]="'assets/elements/' + element.toLowerCase() + '.png'" [alt]="element">
           </div>
           <div class="buffs" [class]="getRarityClass()">
