@@ -12,4 +12,12 @@ export class MatrixCardComponent {
   getRarityClass(): string {
     return this.matrix.rarity.toLowerCase() === 'ssr' ? 'ssr-class' : 'sr-class';
   }
+  ngAfterViewInit() {
+    $('.back-card').on('mouseleave', function() {
+      $(this).addClass('reverse-animation');
+      setTimeout(() => {
+        $(this).removeClass('reverse-animation'); // playback bug starts happening again if the filter is applied
+      }, 500 /* duration of animation */ );
+    });
+  }
 }
