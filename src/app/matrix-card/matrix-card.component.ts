@@ -9,5 +9,7 @@ import * as $ from 'jquery';
 export class MatrixCardComponent {
   @Input() matrix: any;
 
-
+  getRarityClass(): string {
+    return this.matrix.rarity.toLowerCase() === 'ssr' ? 'ssr-class' : 'sr-class';
+  }
 }

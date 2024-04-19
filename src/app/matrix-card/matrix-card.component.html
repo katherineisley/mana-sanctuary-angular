@@ -7,11 +7,10 @@
         <h5 class="name">{{matrix.name}}</h5>
         <div class="type-and-buffs">
           <div class="icons">
-            <img src="assets/elements/{{matrix.resonance}}.png" alt="{{matrix.resonance}} resonance">
-            <img src="assets/elements/{{matrix.element}}.png" alt="{{matrix.element}} element">
+            <img *ngFor="let element of matrix.element" [src]="'assets/elements/' + element.toLowerCase() + '.png'" [alt]="element">
           </div>
-          <div class="buffs">
-            <img *ngFor="let role of matrix.roles" [src]="'assets/effects/buff_' + role.toLowerCase() + '.png'" [alt]="role">
+          <div class="buffs" [class]="getRarityClass()">
+             {{matrix.rarity.toUpperCase()}}
           </div>
         </div>
       </div>

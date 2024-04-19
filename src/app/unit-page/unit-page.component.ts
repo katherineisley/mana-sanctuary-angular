@@ -37,7 +37,7 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
         "element_frostvolt": '#3498DB',
         "element_volt": '#8C7ED0',
         "element_voltfrost": '#8C7ED0',
-        "element_altered": '#19C37D'
+        "element_altered": '#0EA667'
       };
       document.documentElement.style.setProperty('--element-color', elementColors[this.unit.element]);
 

@@ -2027,7 +2027,8 @@
     "shatter": "12",
     "charge": "12",
     "roles": [
-      ""
+      "MDPS",
+      "Buffer"
     ],
     "effects": [
       {

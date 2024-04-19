@@ -1,9 +1,19 @@
 @import '../../styles.scss';
 
+
+.ssr-class {
+    color:#FFDB9B; /* Define styles for SSR rarity */
+  }
+  
+  .sr-class {
+    color:#D6CDFF; /* Define styles for SR rarity */
+  }
+
+
 .unit-wrapper {
     // width: 100%; 
     // height: 220px;
-    aspect-ratio: 0.75 / 1; // this might be problematic later so we'll see
+    aspect-ratio: 0.85 / 1; // this might be problematic later so we'll see
     cursor: pointer;
     position: relative;
 
@@ -173,6 +183,7 @@
 
                     .icons,
                     .buffs {
+                        font-weight: 500;
                         display: flex;
                         flex-direction: row;
                         gap: 1px;

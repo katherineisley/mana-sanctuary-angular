@@ -1,12 +1,14 @@
 @import '../../styles.scss';
 
 .header {
-    background-image: linear-gradient(rgba(38, 38, 38, 0.6), rgba(38, 38, 38, 0.6)), url("/assets/backgrounds/header_background.webp"); // #262626 I forget way too often that you can do this
+    background-image: linear-gradient(rgba(38, 38, 38, 0.4), rgba(38, 38, 38, 0.4)), url("/assets/backgrounds/header_background.webp"); // #262626 I forget way too often that you can do this
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     padding: 32px 64px;
+    width: 100%; 
+
 
     .main-menu {
         display: flex;
