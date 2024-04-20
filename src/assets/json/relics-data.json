@@ -1,92 +1,1254 @@
 [
-    {
-      "slug": "newrelic",
-      "name": "newrelic",
-      "tag": "battle or utility(jetpack, arm, etc)",
-      "elementBoost": "element_whatever the 4star boosts",
-      "rarity": "SSR or SR",
-      "onDPSGuide":false,
+  {
+    "slug": "couant",
+    "name": "Couant",
+    "tag": "battle",
+    "elementBoost": "flameresistance",
+    "rarity": "SR",
+    "onDPSGuide":false,
+    "onHealingGuide": false,
+    "onTankGuide": false,
+    "roles": [
+      ""
+    ],
+    "description": [
+      {
+          "paragraph":"Summon a droid and generate a shield for 5 seconds. The shield disappears after 5 seconds or after being struck once. When it disappears, it knocks back nearby enemies, dealing damage equal to 100% of ATK. If broken within 1 second of being created, the shield will stun enemies for 2 seconds. Cooldown: 30 seconds."            
+      }       
+    ],
+    "oneStar": [
+      {
+          "paragraph":"When the shield is broken, reduce the speed of the attacker by 35% for 6 seconds."            
+      }       
+    ],
+    "twoStar": [
+      {
+          "paragraph":"After shield breaks, increase final damage by 20% for 10 seconds."            
+      }       
+    ],
+    "threeStar": [
+      {
+          "paragraph":"After shield breaks, increase speed by 30% for 6 seconds."            
+      }       
+    ],
+    "fourStar": [
+      {
+          "paragraph":"Reduce flame damage received by 1.5%, even if not deployed. Unavailable in Apex League."            
+      }       
+    ],
+    "fiveStar": [
+      {
+          "paragraph":"If the shield breaks, gain a 5-second damage reflection effect, reflecting 0.6x damage taken back at the attacker."            
+      }       
+    ]
+
+  },
+  {
+    "slug": "cyberneticarm",
+    "name": "Cybernetic Arm",
+    "tag": "utility",
+    "elementBoost": "frostboost",
+    "rarity": "SR",
+    "onDPSGuide":false,
+    "onHealingGuide": false,
+    "onTankGuide": false,
+    "roles": [
+      ""
+    ],
+    "description": [
+      {
+          "paragraph":"Fire a Cybernetic Arm to pull the selected target to you, or you to the target. Deal 100% damage on hit, strongly suspend the target, and regenerate weapon charge by 300. Can be used to access hard-to-reach areas, and stores up to 2 charges at a time. Regain 1 charge every 30 seconds."            
+      }       
+    ],
+    "oneStar": [
+      {
+          "paragraph":"Produce an EM shield that reduces damage taken by 20% for 7 seconds."            
+      }       
+    ],
+    "twoStar": [
+      {
+          "paragraph":"Regain 1 charge every 15 seconds."            
+      }       
+    ],
+    "threeStar": [
+      {
+          "paragraph":"Store up to 3 charges."            
+      }       
+    ],
+    "fourStar": [
+      {
+          "paragraph":"Increase frost damage by 1.5%, even if not deployed. Unavailable in Apex League."            
+      }       
+    ],
+    "fiveStar": [
+      {
+          "paragraph":"Reduce final damage of targets hit by 30% for 7 seconds."            
+      }       
+    ]
+
+  },
+  {
+    "slug": "hoveringcannon",
+    "name": "Hovering Cannon",
+    "tag": "battle",
+    "elementBoost": "frostboost",
+    "rarity": "SR",
+    "onDPSGuide":false,
+    "onHealingGuide": false,
+    "onTankGuide": false,
+    "roles": [
+      ""
+    ],
+    "description": [
+      {
+          "paragraph":"Summon a Hovering Cannon for 20 seconds. 240-second cooldown. The Hovering Cannon has the skill: Laser Beam, which deals 5.6% ATK damage to the target each time."            
+      }       
+    ],
+    "oneStar": [
+      {
+          "paragraph":"Hovering Cannon lasts for 24 seconds."            
+      }       
+    ],
+    "twoStar": [
+      {
+          "paragraph":"Gain the Laser Matrix skill: Freeze targets after dealing damage to them 4 times in a row and deal damage equal to a maximum of 93.2% of ATK."            
+      }       
+    ],
+    "threeStar": [
+      {
+          "paragraph":"Reduce cooldown to 150 seconds."            
+      }       
+    ],
+    "fourStar": [
+      {
+          "paragraph":"Increase frost damage by 1.5%, even if not deployed. Unavailable in Apex League."            
+      }       
+    ],
+    "fiveStar": [
+      {
+          "paragraph":"Gain the Crash skill: Deal damage to the target equal to 55.9% of ATK and stun them for 0.5 seconds."            
+      }       
+    ]
+
+  },
+  {
+    "slug": "jetboard",
+    "name": "Jetboard",
+    "tag": "utility",
+    "elementBoost": "frostresistance",
+    "rarity": "SR",
+    "onDPSGuide":false,
+    "onHealingGuide": false,
+    "onTankGuide": false,
+    "roles": [
+      ""
+    ],
+    "description": [
+      {
+          "paragraph":"Dash forward a set distance before gradually slowing down to a halt, dealing damage equal to 380% of ATK to targets along the way and launching them. Can be used while swimming. Cooldown: 90 seconds."            
+      }       
+    ],
+    "oneStar": [
+      {
+          "paragraph":"Gain 10 weapon charge points every second while gliding."            
+      }       
+    ],
+    "twoStar": [
+      {
+          "paragraph":"Reduce charge time to 60 seconds."            
+      }       
+    ],
+    "threeStar": [
+      {
+          "paragraph":"Jetboard collision damage is increased by 100%, and charge time is reduced to 45 seconds."            
+      }       
+    ],
+    "fourStar": [
+      {
+          "paragraph":"Reduce frost damage received by 1.5%, even if not deployed. Unavailable in Apex League."            
+      }       
+    ],
+    "fiveStar": [
+      {
+          "paragraph":"Immune to control effects while using Jetboard. Using the Jetboard to attack and hit targets stuns them for 5 seconds. Charge time is reduced to 30 seconds."            
+      }       
+    ]
+
+  },
+  {
+    "slug": "jetpack",
+    "name": "Jetpack",
+    "tag": "utility",
+    "elementBoost": "physicalresistance",
+    "rarity": "SR",
+    "onDPSGuide":false,
+    "onHealingGuide": false,
+    "onTankGuide": false,
+    "roles": [
+      ""
+    ],
+    "description": [
+      {
+          "paragraph":"Tap and hold to aim, then release to blast off in the target direction and glide. Consumes 10 endurance every second. Cooldown: 120 seconds (gliding is not affected by the cooldown timer). Jetpack can hold up to 2 charges."            
+      }       
+    ],
+    "oneStar": [
+      {
+          "paragraph":"Replenish 1 charge every 100 seconds. Gliding no longer expends endurance."            
+      }       
+    ],
+    "twoStar": [
+      {
+          "paragraph":"Gliding for longer than 3 seconds empowers the user's next pummel attack to stun the target for 2 seconds."            
+      }       
+    ],
+    "threeStar": [
+      {
+          "paragraph":"Replenish 1 charge every 60 seconds."            
+      }       
+    ],
+    "fourStar": [
+      {
+          "paragraph":"Reduce physical damage received by 1.5%, even if not deployed. Unavailable in Apex League."            
+      }       
+    ],
+    "fiveStar": [
+      {
+          "paragraph":"Store up to 3 charges."            
+      }       
+    ]
+
+  },
+  {
+    "slug": "lavabomb",
+    "name": "Lava Bomb",
+    "tag": "battle",
+    "elementBoost": "flameboost",
+    "rarity": "SR",
+    "onDPSGuide":false,
+    "onHealingGuide": false,
+    "onTankGuide": false,
+    "roles": [
+      ""
+    ],
+    "description": [
+      {
+          "paragraph":"Toss a Lava Bomb at a target location, dealing damage equal to 567% of ATK and launching the target into the air. Cooldown: 45 seconds."            
+      }       
+    ],
+    "oneStar": [
+      {
+          "paragraph":"Stun targets for 2 seconds on hit, and burn them."            
+      }       
+    ],
+    "twoStar": [
+      {
+          "paragraph":"Increase blast radius by 50%."            
+      }       
+    ],
+    "threeStar": [
+      {
+          "paragraph":"Reduce cooldown to 30 seconds."            
+      }       
+    ],
+    "fourStar": [
+      {
+          "paragraph":"Increase flame damage by 1.5%, even if not deployed. Unavailable in Apex League."            
+      }       
+    ],
+    "fiveStar": [
+      {
+          "paragraph":"Stun targets for 3 seconds on hit and burn their endurance for 10 seconds, causing targets to lose 100 endurance after every ability use."            
+      }       
+    ]
+
+  },
+  {
+    "slug": "magneticpulse",
+    "name": "Magnetic Pulse",
+    "tag": "battle",
+    "elementBoost": "voltresistance",
+    "rarity": "SR",
+    "onDPSGuide": false,
+    "onHealingGuide": false,
+    "onTankGuide": false,
+    "roles": [
+      ""
+    ],
+    "description": [
+      {
+          "paragraph":"Detonate a Magnetic Bomb, dealing volt damage equal to 38.8% of ATK and strongly launching targets. Grant the user immunity to hitstun for 5 seconds. Cooldown: 35 seconds."            
+      }       
+    ],
+    "oneStar": [
+      {
+          "paragraph":"Can be used while under control effects."            
+      }       
+    ],
+    "twoStar": [
+      {
+          "paragraph":"Grant immunity to control effects for the next 5 seconds."            
+      }       
+    ],
+    "threeStar": [
+      {
+          "paragraph":"Upon hitting the target, plant a 7-second Magnetic Bomb that detonates if the target uses normal attacks/dodges/skills, causing 40% Slow for 5 seconds, and disappears after detonation."            
+      }       
+    ],
+    "fourStar": [
+      {
+          "paragraph":"Reduce volt damage received by 1.5%, even if not deployed. Unavailable in Apex League."            
+      }       
+    ],
+    "fiveStar": [
+      {
+          "paragraph":"Detonating the Magnetic Bomb removes all current buffs from the target."            
+      }       
+    ]
+
+  },
+  {
+    "slug": "magneticstorm",
+    "name": "Magnetic Storm",
+    "tag": "battle",
+    "elementBoost": "voltboost",
+    "rarity": "SR",
+    "onDPSGuide":false,
+    "onHealingGuide": false,
+    "onTankGuide": false,
+    "roles": [
+      ""
+    ],
+    "description": [
+      {
+          "paragraph":"Warp the magnetic field to unleash 1 electric tornado that travels through the battlefield at random for 10 seconds, throwing nearby enemies into the air and dealing damage equal to 186.3% of ATK every second. Cooldown: 100 seconds."            
+      }       
+    ],
+    "oneStar": [
+      {
+          "paragraph":"Unleash 2 electric tornadoes."            
+      }       
+    ],
+    "twoStar": [
+      {
+          "paragraph":"Increase tornado damage by 20%."            
+      }       
+    ],
+    "threeStar": [
+      {
+          "paragraph":"Unleash 3 electric tornadoes."            
+      }       
+    ],
+    "fourStar": [
+      {
+          "paragraph":"Increase volt damage by 1.5%, even if not deployed. Unavailable in Apex League."            
+      }       
+    ],
+    "fiveStar": [
+      {
+          "paragraph":"Those caught in tornadoes have a 50% chance to be disoriented for 3 seconds each time they take damage. Movement direction inputs will also be swapped."            
+      }       
+    ]
+
+  },
+  {
+    "slug": "missilebarrage",
+    "name": "Missile Barrage",
+    "tag": "battle",
+    "elementBoost": "physicalboost",
+    "rarity": "SR",
+    "onDPSGuide":false,
+    "onHealingGuide": false,
+    "onTankGuide": false,
+    "roles": [
+      ""
+    ],
+    "description": [
+      {
+          "paragraph":"Place a missile launcher behind the user for 8 seconds. Fire multiple missiles at nearby enemies, dealing damage equal to 34.8% of ATK with each strike. Cooldown: 60 seconds."            
+      }       
+    ],
+    "oneStar": [
+      {
+          "paragraph":"Fire more missiles every second."            
+      }       
+    ],
+    "twoStar": [
+      {
+          "paragraph":"Missile Barrage damage by 20%."            
+      }       
+    ],
+    "threeStar": [
+      {
+          "paragraph":"Missile Barrage lasts for 12 seconds."            
+      }       
+    ],
+    "fourStar": [
+      {
+          "paragraph":"Increase physical damage by 1.5%, even if not deployed. Unavailable in Apex League."            
+      }       
+    ],
+    "fiveStar": [
+      {
+          "paragraph":"Number of missiles launched every second is further increased."            
+      }       
+    ]
+
+  },
+  {
+    "slug": "omniumhandcannon",
+    "name": "Omnium Handcannon",
+    "tag": "utility",
+    "elementBoost": "flameboost",
+    "rarity": "SR",
+    "onDPSGuide":false,
+    "onHealingGuide": false,
+    "onTankGuide": false,
+    "roles": [
+      ""
+    ],
+    "description": [
+      {
+          "paragraph":"Launch 1 Omnium bomb at target location and create a scalable energy pillar upon striking the ground or water surface for up to 20 seconds. Cooldown: 50 seconds. Maximum 2 charges."            
+      }       
+    ],
+    "oneStar": [
+      {
+          "paragraph":"Increase duration of energy pillars to 30 seconds."            
+      }       
+    ],
+    "twoStar": [
+      {
+          "paragraph":"Increase endurance regen speed by 30% for 20 seconds after switching to the Omnium Handcannon."            
+      }       
+    ],
+    "threeStar": [
+      {
+          "paragraph":"Stores up to 3 charges."            
+      }       
+    ],
+    "fourStar": [
+      {
+          "paragraph":"Increase flame damage by 1.5%, even if not deployed. Unavailable in Apex League."            
+      }       
+    ],
+    "fiveStar": [
+      {
+          "paragraph":"Reduce charge time to 40 seconds."            
+      }       
+    ]
+
+  },
+  {
+    "slug": "quantumcloak",
+    "name": "Quantum Cloak",
+    "tag": "utility",
+    "elementBoost": "voltboost",
+    "rarity": "SR",
+    "onDPSGuide":false,
+    "onHealingGuide": false,
+    "onTankGuide": false,
+    "roles": [
+      ""
+    ],
+    "description": [
+      {
+          "paragraph":"Enter a quantum state for 10 seconds, during which enemies cannot detect the wearer. The wearer exits quantum state after attacking once. 120-second cooldown."            
+      }       
+    ],
+    "oneStar": [
+      {
+          "paragraph":"Quantum state lasts for 20 seconds."            
+      }       
+    ],
+    "twoStar": [
+      {
+          "paragraph":"Reduce cooldown to 80 seconds."            
+      }       
+    ],
+    "threeStar": [
+      {
+          "paragraph":"+100% damage in Quantum state, negated after 1 successful attack."            
+      }       
+    ],
+    "fourStar": [
+      {
+          "paragraph":"Increase volt damage by 1.5%, even if not deployed. Unavailable in Apex League."            
+      }       
+    ],
+    "fiveStar": [
+      {
+          "paragraph":"+100% damage for 3 successful attacks in Quantum state."            
+      }       
+    ]
+
+  },
+  {
+    "slug": "strangecube",
+    "name": "Strange Cube",
+    "tag": "battle",
+    "elementBoost": "voltboost",
+    "rarity": "SR",
+    "onDPSGuide":false,
+    "onHealingGuide": false,
+    "onTankGuide": false,
+    "roles": [
+      ""
+    ],
+    "description": [
+      {
+          "paragraph":"Use the Strange Cube to alter the surrounding gravity, dealing damage equal to 100% of ATK to enemies and suspending them in midair. Afterwards, dealing damage equal to 120% of ATK. Cooldown: 30 seconds."            
+      }       
+    ],
+    "oneStar": [
+      {
+          "paragraph":"Activating the Strange Cube increases damage dealt by 10% for 10 seconds."            
+      }       
+    ],
+    "twoStar": [
+      {
+          "paragraph":"After activating an Strange Cube, reduce weapon charge of nearby enemies by 200."            
+      }       
+    ],
+    "threeStar": [
+      {
+          "paragraph":"Increase Strange Cube's uses to 2."            
+      }       
+    ],
+    "fourStar": [
+      {
+          "paragraph":"Increase volt damage by 1.5%, even if not deployed. Unavailable in Apex League."            
+      }       
+    ],
+    "fiveStar": [
+      {
+          "paragraph":"After activating the Strange Cube, gain weapon charge based on HP lost. For every 1% of HP lost, gain 10 weapon charge."            
+      }       
+    ]
+
+  },
+  {
+    "slug": "alternatedestiny",
+    "name": "Alternate Destiny",
+    "tag": "battle",
+    "elementBoost": "frostboost",
+    "rarity": "SSR",
+    "onDPSGuide":false,
+    "onHealingGuide": false,
+    "onTankGuide": false,
+    "roles": [
+      ""
+    ],
+    "description": [
+      {
+          "paragraph":"Generate a Pocket Dimension for 8 seconds. Allied Wanderers gain immunity to hitstun effects in the dimension, and HP will not drop below 20% from enemy attacks. Cooldown: 90 seconds. Leaving the dimension removes all buffs. Once you have spent 8 seconds in the dimension, you cannot be buffed by it for 45 seconds."            
+      }       
+    ],
+    "oneStar": [
+      {
+          "paragraph":"Allied Wanderers in the dimension recovers 15% HP 8 seconds later."            
+      }       
+    ],
+    "twoStar": [
+      {
+          "paragraph":"Allied units in the dimension gain 25% lifesteal."            
+      }       
+    ],
+    "threeStar": [
+      {
+          "paragraph":"Allied Wanderers in the dimension gain immunity to all mind control."            
+      }       
+    ],
+    "fourStar": [
+      {
+          "paragraph":"Increase frost damage by 2%, even if not deployed. Unavailable in Apex League."            
+      }       
+    ],
+    "fiveStar": [
+      {
+          "paragraph":"Until the Relic disappears, Allied Wanderers in the dimension double all lifesteal effects when HP drops to 40% or below."            
+      }       
+    ]
+
+  },
+  {
+    "slug": "bubblegun",
+    "name": "Bubble Gun",
+    "tag": "battle",
+    "elementBoost": "flameboost",
+    "rarity": "SSR",
+    "onDPSGuide":false,
+    "onHealingGuide": false,
+    "onTankGuide": false,
+    "roles": [
+      ""
+    ],
+    "description": [
+      {
+          "paragraph":"Tap the fire button to consume 1 drop of bubble solution and fire a few bubbles that deal damage equal to 10% of ATK each. Hold for 0.5 seconds to consume 5 drops of bubble solution and fire a big bubble that deals damage equal to 300% of ATK. The big bubble is capable of engulfing most small targets and causing them to fly away. Each target can only be engulfed and flown 1 time every 15 seconds, but targets with hyperbody are not affected. Big bubbles have a 5-second cooldown. The bubble solution is refilled at a rate of 1 drop every 3 seconds, and 10 drops are refilled after defeating an enemy. Bubble Gun can hold up to 30 drops of bubble solution."            
+      }       
+    ],
+    "oneStar": [
+      {
+          "paragraph":"Increase the number of small bubbles fired. The wielder also moves backward when firing small bubbles. After firing the relic, increase speed by 10% for 30 seconds."            
+      }       
+    ],
+    "twoStar": [
+      {
+          "paragraph":"Gain 1 / 3 stacks of Happy Time after firing small and large bubbles, respectively. Each stack increases the Wanderer's damage dealt by 1.8% for 60 seconds, stacking up to 5 times."            
+      }       
+    ],
+    "threeStar": [
+      {
+          "paragraph":"Use the Bubble Gun to summon a Bubble Spirit that fires bubbles and refreshes the duration of Happy Time. The Spirit lasts 150 seconds."            
+      }       
+    ],
+    "fourStar": [
+      {
+          "paragraph":"Increase flame damage by 2%, even if not deployed. Unavailable in Apex League."            
+      }       
+    ],
+    "fiveStar": [
+      {
+          "paragraph":"Increase the Happy Time damage boost by an additional 0.6% per stack."            
+      }       
+    ]
+
+  },
+  {
+    "slug": "colossusarm",
+    "name": "Colossus Arm",
+    "tag": "battle",
+    "elementBoost": "physicalresistance",
+    "rarity": "SSR",
+    "onDPSGuide": false,
+    "onHealingGuide": false,
+    "onTankGuide": false,
+    "roles": [
+      ""
+    ],
+    "description": [
+      {
+          "paragraph":"Summon a colossus arm to battle for 20 seconds. Cooldown: 300 seconds. Gain hitstun immunity for the next 20 seconds. Tap the Relic again to cancel. Normal attacks deal damage up to 1,387.7% of ATK and strongly launch enemies. Skills deal damage equal to 453.5% of ATK and strongly suspends enemies. Cooldown: 10 seconds."
+      }       
+    ],
+    "oneStar": [
+      {
+          "paragraph":"Fire 2 missiles with each attack, dealing damage to the target. Each missile deals damage equal to 34.8% of ATK."            
+      }       
+    ],
+    "twoStar": [
+      {
+          "paragraph":"Reduce cooldown to 200 seconds."            
+      }       
+    ],
+    "threeStar": [
+      {
+          "paragraph":"Fire 4 missiles with each attack, dealing damage to the target. Each missile deals damage equal to 34.8% of ATK."            
+      }       
+    ],
+    "fourStar": [
+      {
+          "paragraph":"Reduce physical damage received by 2%, even if not deployed. Unavailable in Apex League."            
+      }       
+    ],
+    "fiveStar": [
+      {
+          "paragraph":"Colossus Arm lasts for 30 seconds. All damage taken for this duration is reduced by 20%."            
+      }       
+    ]
+
+  },
+  {
+    "slug": "drone",
+    "name": "Drone",
+    "tag": "battle",
+    "elementBoost": "voltresistance",
+    "rarity": "SSR",
+    "onDPSGuide": false,
+    "onHealingGuide": false,
+    "onTankGuide": false,
+    "roles": [
+      ""
+    ],
+    "description": [
+      {
+          "paragraph":"Summon a Drone for 15 seconds, increase final damage reduction by 5% every 5 seconds. Cooldown: 120 seconds."            
+      }       
+    ],
+    "oneStar": [
+      {
+          "paragraph":"Remove all control effects and grand immunity to control effects for the next 5 seonds."            
+      }       
+    ],
+    "twoStar": [
+      {
+          "paragraph":"Extend duration to 25 seconds."            
+      }       
+    ],
+    "threeStar": [
+      {
+          "paragraph":"Every 5 seconds, additionally grant Wanderers one stack of inspiration, increasing damage dealt by 5% per stack."            
+      }       
+    ],
+    "fourStar": [
+      {
+          "paragraph":"Reduce volt damage received by 2%, even if not deployed. Unavailable in Apex League"            
+      }       
+    ],
+    "fiveStar": [
+      {
+          "paragraph":"The Wanderer's attacks convert 20% of damage dealt into HP for the duration of the drone."            
+      }       
+    ]
+
+  },
+  {
+    "slug": "hologramprojector",
+    "name": "Hologram Projector",
+    "tag": "battle",
+    "elementBoost": "voltboost",
+    "rarity": "SSR",
+    "onDPSGuide": false,
+    "onHealingGuide": false,
+    "onTankGuide": false,
+    "roles": [
+      ""
+    ],
+    "description": [
+      {
+          "paragraph":"Project a hologram of the user that synchronously replays the Wanderer's weapon attacks, dealing 35% of the Wanderer's damage dealt. Last for 15 seconds. 180-second cooldown."            
+      }       
+    ],
+    "oneStar": [
+      {
+          "paragraph":"Extend duration to 20 seconds."            
+      }       
+    ],
+    "twoStar": [
+      {
+          "paragraph":"Reduce skill cooldown to 120 seconds."            
+      }       
+    ],
+    "threeStar": [
+      {
+          "paragraph":"Tap again to transpose to the hologram's position."            
+      }       
+    ],
+    "fourStar": [
+      {
+          "paragraph":"Increase volt damage by 2%, even if not deployed. Unavailable in Apex League."            
+      }       
+    ],
+    "fiveStar": [
+      {
+          "paragraph":"Increase damage dealt by holograms to 50% of the Wanderer's damage. Transposing removes control effects."            
+      }       
+    ]
+
+  },
+  {
+    "slug": "hoverboard",
+    "name": "Hoverboard",
+    "tag": "utility",
+    "elementBoost": "flameboost",
+    "rarity": "SSR",
+    "onDPSGuide": false,
+    "onHealingGuide": false,
+    "onTankGuide": false,
+    "roles": [
+      ""
+    ],
+    "description": [
+      {
+          "paragraph":"Use the Hoverboard to hover on the ground and quicksand at the cost of endurance. Move forward at a faster speed for a distance when using a Hoverboard. Cooldown: 90 seconds."            
+      }       
+    ],
+    "oneStar": [
+      {
+          "paragraph":"Reduce cooldown to 60 seconds."            
+      }       
+    ],
+    "twoStar": [
+      {
+          "paragraph":"Endurance cost is halved on the ground, no cost in the water."            
+      }       
+    ],
+    "threeStar": [
+      {
+          "paragraph":" Ignore cooldown when swimming."            
+      }       
+    ],
+    "fourStar": [
+      {
+          "paragraph":"Increase flame damage by 2%, even if not deployed. Unavailable in Apex League."            
+      }       
+    ],
+    "fiveStar": [
+      {
+          "paragraph":"Reduce cooldown to 30 seconds."            
+      }       
+    ]
+
+  },
+  {
+    "slug": "minipelican",
+    "name": "Mini Pelican",
+    "tag": "utility",
+    "elementBoost": "voltboost",
+    "rarity": "SSR",
+    "onDPSGuide": false,
+    "onHealingGuide": false,
+    "onTankGuide": false,
+    "roles": [
+      ""
+    ],
+    "description": [
+      {
+          "paragraph":"When diving, you can use the Mini Pelican to speed up. Consumes endurance continuously when moving, but slowly recovers endurance when you stop moving. Cooldown: 90 seconds. Mini Pelican can store 2 charges. Diving light will be automatically turned on when you use the Mini Pelican, illuminating the surrounding area."            
+      }       
+    ],
+    "oneStar": [
+      {
+          "paragraph":"Reduce cooldown to 60 seconds."            
+      }       
+    ],
+    "twoStar": [
+      {
+          "paragraph":"Recover to full endurance when using the Mini Pelican, not effective when exhausted."            
+      }       
+    ],
+    "threeStar": [
+      {
+          "paragraph":"Mini Pelican can store up to 3 charges."            
+      }       
+    ],
+    "fourStar": [
+      {
+          "paragraph":"Increase volt damage by 2%, even if not deployed. Unavailable in Apex League."            
+      }       
+    ],
+    "fiveStar": [
+      {
+          "paragraph":"Reduces cooldown to 30 seconds and unlocks Mini Pelican's new paint: Pigmentation."            
+      }       
+    ]
+
+  },
+  {
+    "slug": "omniumshield",
+    "name": "Omnium Shield",
+    "tag": "battle",
+    "elementBoost": "frostresistance",
+    "rarity": "SSR",
+    "onDPSGuide": false,
+    "onHealingGuide": false,
+    "onTankGuide": false,
+    "roles": [
+      ""
+    ],
+    "description": [
+      {
+          "paragraph":"Generate an Omnium shield that stops projectiles for 10 seconds, with starting energy equal to 200% of the Wanderer's max HP and a 90-second cooldown."            
+      }       
+    ],
+    "oneStar": [
+      {
+          "paragraph":"Slow enemies that pass through the shield by 50% for 2 seconds."            
+      }       
+    ],
+    "twoStar": [
+      {
+          "paragraph":"Reduce cooldown to 60 seconds."            
+      }       
+    ],
+    "threeStar": [
+      {
+          "paragraph":"Extend duration to 20 seconds."            
+      }       
+    ],
+    "fourStar": [
+      {
+          "paragraph":"Reduce frost damage received by 2%, even if not deployed. Unavailable in Apex League."            
+      }       
+    ],
+    "fiveStar": [
+      {
+          "paragraph":"When Wanderers or allies pass through the Omnium Shield, damage dealt increases by 25% for 7 seconds."            
+      }       
+    ]
+
+  },
+  {
+    "slug": "overdriveshot",
+    "name": "Overdrive Shot",
+    "tag": "battle",
+    "elementBoost": "physicalboost",
+    "rarity": "SSR",
+    "onDPSGuide": false,
+    "onHealingGuide": false,
+    "onTankGuide": false,
+    "roles": [
+      ""
+    ],
+    "description": [
+      {
+          "paragraph":"When used, mark the current weapon and grant it 3 doses that last 200 seconds. Also gain the Micro Attack effect: Increase damage dealt by 4% for 200 seconds. Using a marked weapon's skill consumes 1 dose each time and grants Overdrive: Increase damage dealt by 15% for 20 seconds. Overdrive is removed when switching to other weapons. Overdrive Shot has a 240-second cooldown."            
+      },
+      {
+          "paragraph":"When removing Overdrive Shot or switching Relics, the remaining doses, the Micro Attack, and Overdrive effects will all be removed. When a weapon is marked a second time, the doses from the first mark are removed."
+      }       
+    ],
+    "oneStar": [
+      {
+          "paragraph":"Grant 5 doses each time."            
+      }       
+    ],
+    "twoStar": [
+      {
+          "paragraph":"Restore HP to full when marking a weapon with Overdrive Shot. Restore HP equal to 20% of Max HP instead in Apex League."            
+      }       
+    ],
+    "threeStar": [
+      {
+          "paragraph":"Reduce cooldown to 150 seconds."            
+      }       
+    ],
+    "fourStar": [
+      {
+          "paragraph":"Increase physical damage by 2%, even if not deployed. Unavailable in Apex League."            
+      }       
+    ],
+    "fiveStar": [
+      {
+          "paragraph":"While Micro Attack is active, increase damage dealt against grievous targets by 4%."            
+      }       
+    ]
+
+  },
+  {
+    "slug": "spacetimerift",
+    "name": "Spacetime Rift",
+    "tag": "battle",
+    "elementBoost": "flameresistance",
+    "rarity": "SSR",
+    "onDPSGuide": false,
+    "onHealingGuide": false,
+    "onTankGuide": false,
+    "roles": [
+      ""
+    ],
+    "description": [
+      {
+          "paragraph":"Launch a proton bomb at the target location, creating a rift in time-space that draws in targets for 10 seconds. After 1.5 seconds, the center of the collapse deals damage equal to 39.6% of ATK to targets caught in the area every 0.5 seconds. Cooldown: 100 seconds."            
+      }       
+    ],
+    "oneStar": [
+      {
+          "paragraph":"Enemies caught within the rift who are close to the ground are unable to dodge, and the vacuum duration is increased to 15 seconds."            
+      }       
+    ],
+    "twoStar": [
+      {
+          "paragraph":"Increase the target area by 100%."            
+      }       
+    ],
+    "threeStar": [
+      {
+          "paragraph":"Increase damage dealt to targets in the area by 20%."            
+      }       
+    ],
+    "fourStar": [
+      {
+          "paragraph":"Reduce flame damage received by 2%, even if not deployed. Unavailable in Apex League."            
+      }       
+    ],
+    "fiveStar": [
+      {
+          "paragraph":"Enemies within the rift are unable to receive any healing."            
+      }       
+    ]
+
+  },
+  {
+    "slug": "speedwalkers",
+    "name": "Speedwalkers",
+    "tag": "utility",
+    "elementBoost": "physicalresistance",
+    "rarity": "SSR",
+    "onDPSGuide": false,
+    "onHealingGuide": false,
+    "onTankGuide": false,
+    "roles": [
+      ""
+    ],
+    "description": [
+      {
+          "paragraph":"Speedwalkers can be used to enter the zephyr state, allowing you to move freely on the wall and jump to quickly cover a short distance for 15 seconds. Cooldown: 90 seconds. Speedwalkers are only usable in Domain 9."            
+      }       
+    ],
+    "oneStar": [
+      {
+          "paragraph":"Zephyr duration is extended to 30 seconds."            
+      }       
+    ],
+    "twoStar": [
+      {
+          "paragraph":"In the zephyr state, speed on the ground and walls is increased by 15% and jump height is increased."            
+      }       
+    ],
+    "threeStar": [
+      {
+          "paragraph":"Speedwalkers can store up to 2 charges."            
+      }       
+    ],
+    "fourStar": [
+      {
+          "paragraph":"Reduce physical damage received by 2%, even if not deployed. Unavailable in Apex League."            
+      }       
+    ],
+    "fiveStar": [
+      {
+          "paragraph":"During zephyr, each hit from aerial attacks recovers dodge attempts and aerial dodges recover all endurance."            
+      }       
+    ]
+
+  },
+  {
+    "slug": "thalassicheart",
+    "name": "Thalassic Heart",
+    "tag": "battle",
+    "elementBoost": "voltboost",
+    "rarity": "SSR",
+    "onDPSGuide": false,
+    "onHealingGuide": false,
+    "onTankGuide": false,
+    "roles": [
+      ""
+    ],
+    "description": [
+      {
+          "paragraph":"Generate a Thalassic Heart at the target's location. Cooldown: 60 seconds. Every 2 seconds, the Thalassic Heart will deal damage to nearby targets equal to 2% (0.2% in Apex League) of the Wanderer's Max HP for 45 seconds. The type of elemental damage dealt will be that of the current weapon. Damage received by targets hit is also increased by 4% for 5 seconds."            
+      }       
+    ],
+    "oneStar": [
+      {
+          "paragraph":"Thalassic Heart will raise the tide 1 time every 15 seconds, dealing damage equal to 15% (1.5% in Apex League) of your Max HP to nearby targets."            
+      }       
+    ],
+    "twoStar": [
+      {
+          "paragraph":"Thalassic Heart duration is extended to 90 seconds."            
+      }       
+    ],
+    "threeStar": [
+      {
+          "paragraph":"Damage dealt to targets hit by Thalassic Heart is increased by 5.5%."            
+      }       
+    ],
+    "fourStar": [
+      {
+          "paragraph":"Increase volt damage by 2%, even if not deployed. Unavailable in Apex League."            
+      }       
+    ],
+    "fiveStar": [
+      {
+          "paragraph":"While diving, use Thalassic Heart to transform into a dolphin for up to 45 seconds. Enemies will not attack for 15 seconds, and movement speed will be increased."            
+      },
+      {
+          "paragraph":"While transformed, attacking will thrash the seawater, dealing damage equal to 25% (2.5% in Apex League) of your Max HP to nearby targets, and will end the transformation."            
+      }        
+    ]
+
+  },
+  {
+    "slug": "triplemask",
+    "name": "Triple Mask",
+    "tag": "utility",
+    "elementBoost": "frostboost",
+    "rarity": "SSR",
+    "onDPSGuide": false,
+    "onHealingGuide": false,
+    "onTankGuide": false,
+    "roles": [
+      ""
+    ],
+    "description": [
+      {
+          "paragraph": "Use to put on Triple Mask's Mask of the Void. While exploring the Overworld, you will not be attacked by enemies other than bosses. When discovered by certain enemies, detection will be triggered. While wearing Mask of the Void, enemies under the influence of the mask will not alert other enemies when attacked. Use Triple Mask again to remove the current mask and enter cooldown. Cooldown: 20 seconds."            
+      }       
+    ],
+    "oneStar": [
+      {
+          "paragraph": "Unlocks Mask of the Hunter. Select when using Triple Mask and confirm again to wear. While Mask of the Hunter is worn, you can view the locations of elite achievement enemies in Domain 9 on the map."            
+      }       
+    ],
+    "twoStar": [
+      {
+          "paragraph": "While Triple Mask is deployed, speed is increased by 8% and elemental damage is increased by 6%."            
+      }       
+    ],
+    "threeStar": [
+      {
+          "paragraph": "Unlocks Mask of the Knowledge. While Mask of the Knowledge is worn, when there is an unopened chest nearby, you will be prompted and guided to the location of the chest."            
+      }       
+    ],
+    "fourStar": [
+      {
+          "paragraph": "Increase frost damage by 2%, even if not deployed. Unavailable in Apex League."            
+      }       
+    ],
+    "fiveStar": [
+      {
+          "paragraph": "While Triple Mask is deployed, elemental damage is additionally increased by 6%."            
+      }       
+    ]
+
+  },
+  {
+    "slug": "typeiicouant",
+    "name": "Type II Couant",
+    "tag": "battle",
+    "elementBoost": "flameboost",
+    "rarity": "SSR",
+    "onDPSGuide": false,
+    "onHealingGuide": false,
+    "onTankGuide": false,
+    "roles": [
+      ""
+    ],
+    "description": [
+      {
+          "paragraph": "Summon a Type II Couant and generate a shield for 5 seconds, which disappears after 5 seconds or after being struck once. Upon disappearing, the knocks back nearby enemies and deals damage equal to 100% of Attack. After the shield is broken, increase damage by 20% for 10 seconds. For every 1 seconds the generated shield exists on the battlefield, gain 1 additional stack of blessing once the shield ends (is broken). Each blessing stack will reduce damage by 2% for 10 seconds. Stack up to 5 times. Cooldown: 30 seconds (shares cooldown with other Couants)."            
+      }       
+    ],
+    "oneStar": [
+      {
+          "paragraph": "Grant 100 energy immediately upon use if HP is greater than 90%. If HP is less than 90%, immediately grant 50 energy, then 50 more energy once the damage increase expires."            
+      }       
+    ],
+    "twoStar": [
+      {
+          "paragraph": "Increase the duration of damage boost to 12 seconds."            
+      }       
+    ],
+    "threeStar": [
+      {
+          "paragraph": "Every stack of blessing additionally increases final damage by 1% for 12 seconds."            
+      }       
+    ],
+    "fourStar": [
+      {
+          "paragraph": "Increase flame damage by 2%, even if not deployed. Unavailable in Apex League."            
+      }       
+    ],
+    "fiveStar": [
+      {
+          "paragraph": "When there are a full 5 stacks of blessings, additionally increase final damage by 2.5% and reduce damage received by 5% for 12 seconds."            
+      }       
+    ]
+
+  },
+  {
+      "slug": "typevarmor",
+      "name": "Type V Armor",
+      "tag": "battle",
+      "elementBoost": "flameboost",
+      "rarity": "SSR",
+      "onDPSGuide": false,
       "onHealingGuide": false,
       "onTankGuide": false,
       "roles": [
-        "leave empty for now just with quotation marks"
+        ""
       ],
       "description": [
         {
-            "paragraph":""            
+            "paragraph":"Pilot mechanized armor to fight for 30 seconds. Cooldown: 200 seconds. Immune to hitstun, Tap again to exit and detonate the armor. Skill: Aimed Shot."            
+        },
+        {
+            "paragraph":"Aimed Shot: Shoot rapidly to deal damage equal to 44.4% of ATK per hit."
         }       
       ],
       "oneStar": [
         {
-            "paragraph":""            
+            "paragraph": "When piloting the armor, gain immunity to flame damage and control effects"            
         }       
       ],
       "twoStar": [
         {
-            "paragraph":""            
+            "paragraph": "Gain the Artillery Fire skill."            
+        },
+        {
+            "paragraph": "Artillery Fire: Fire 6 times at the locked-on target. Each hit deals damage equal to 155.2% of ATK."
         }       
       ],
       "threeStar": [
         {
-            "paragraph":""            
+            "paragraph": "When piloting the armor, dealing damage also inflics burn."            
         }       
       ],
       "fourStar": [
         {
-            "paragraph":""            
+            "paragraph": "Increase flame damage by 2%, even if not deployed. Unavailable in Apex League."            
         }       
       ],
       "fiveStar": [
         {
-            "paragraph":""            
+            "paragraph": "Gain the Flame Domain skill."            
+        },
+        {
+            "paragraph": "Flame Domain: Erect a wide-range Flame Domain at the current location, dealing damage equal to a maximum of 1,146.8% of ATK."
         }       
       ]
 
     },
     {
-        "slug": "newrelic",
-        "name": "newrelic",
-        "tag": "battle or utility(jetpack, arm, etc)",
-        "elementBoost": "element_whatever the 4star boosts",
-        "rarity": "SSR or SR",
-        "onDPSGuide":false,
-        "onHealingGuide": false,
-        "onTankGuide": false,
-        "roles": [
-          "leave empty for now just with quotation marks"
-        ],
-        "description": [
-          {
-              "paragraph":""            
-          }       
-        ],
-        "oneStar": [
-          {
-              "paragraph":""            
-          }       
-        ],
-        "twoStar": [
-          {
-              "paragraph":""            
-          }       
-        ],
-        "threeStar": [
-          {
-              "paragraph":""            
-          }       
-        ],
-        "fourStar": [
-          {
-              "paragraph":""            
-          }       
-        ],
-        "fiveStar": [
-          {
-              "paragraph":""            
-          }       
-        ]
-  
-      }
+      "slug": "bioelectriccontrolrifle",
+      "name": "Bioelectric Control Rifle",
+      "tag": "battle",
+      "elementBoost": "frostboost",
+      "rarity": "SSR",
+      "onDPSGuide": false,
+      "onHealingGuide": false,
+      "onTankGuide": false,
+      "roles": [
+        ""
+      ],
+      "description": [
+        {
+            "paragraph": "Launch an energy bullet to a specified location. When it hits a 'beast' type enemy, it can be controlled as an ally (ineffective against bosses, and only effective in the Overworld) for 30 seconds. Cooldown: 60 seconds. If the energy bullet hits a controlled target again, you will lose control. The maximum number of controlled enemies is 1 with a maximum of 2 charges that can be stored."            
+        }       
+      ],
+      "oneStar": [
+        {
+            "paragraph": "Control duration increased to 60 seconds, with a maximum of 3 charges that can be stored."            
+        }       
+      ],
+      "twoStar": [
+        {
+            "paragraph": "While Bioelectric Control Rifle is equipped, increase jump height by 10% and damage by 6%."            
+        }       
+      ],
+      "threeStar": [
+        {
+            "paragraph": "Reduce cooldown to 30 seconds."            
+        }       
+      ],
+      "fourStar": [
+        {
+            "paragraph": "Increase all frost damage by 2%. Effective even when undeployed."            
+        }       
+      ],
+      "fiveStar": [
+        {
+            "paragraph": "The maximum number of simultaneously controlled enemies is increased to 2, and enemies beyond the control limit will be automatically released."            
+        },
+        {
+            "paragraph": "Increase damage boost to 12%."            
+        }      
+      ]
+
+    }
 
 
 
