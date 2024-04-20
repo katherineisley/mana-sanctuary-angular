@@ -11,43 +11,56 @@
 
     .header-element {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
+        min-height: 350px;
 
-        background-color: $content;
-        //position:fixed;
 
-        .header-strip {
-            background-color: var(--element-color);
-            height: 5px;
+        .header-splash{
+            position: absolute;
+            overflow:visible;
+            height: 800px;
+            right: 0px;
+            top: -50px;
+            width: 550px;
+            z-index: -100;
+            background-position: top;
+            background-size: contain;
+            background-repeat: no-repeat; 
+
         }
-
         .header-content {
-            padding: 30px 20px;
-            display: flex;
-            flex-direction: row;
-            width: 85%;
-            justify-content: space-between;
+
+            padding: 20px 20px;
+            display: grid;
+            grid-template-columns: auto auto; /* Two columns of equal width */
+            grid-template-rows: auto auto; /* Two rows of equal height */
+            gap: 10px; /* Gap between grid items */
+ 
+            .unit-description{
+                font-size: 15px;
+                font-weight: 300;
+                font-style: italic;
+                max-width: 400px;
+            } 
 
             .unit-wrapper {
                 display: flex;
                 flex-direction: row;
+                margin: 0 40px 0 0;
+
 
                 .unit-avatar {
-                    display: flex;
-                    justify-content: left;
-                    align-items: center;
-                    margin: 0 25px 0 15px;
+                    margin: 0 25px 0 0;
                 }
 
                 .unit-avatar img {
-                    width: 120px;
+                    width: 100px;
                 }
 
                 .unit-name-element {
                     display: flex;
-                    justify-content: center;
-                    gap: 2px;
+                    //justify-content: center;                  
                     flex-direction: column;
 
                     .unit-name {
@@ -60,10 +73,10 @@
 
                     .unit-weapon-name {
                         color: #F5F5F5;
-                        font-size: 22px;
+                        font-size: 20px;
                         font-weight: 300;
                         font-style: italic;
-                        padding: 5px 0px;
+                        padding: 4px 0px;
                     }
 
                     .unit-element {
@@ -78,7 +91,9 @@
                     }
                 }
             }
-
+            .unit-stats{
+                margin: 0 40px 0 0;
+            }
             .unit-stats,
             .unit-roles {
                 display: flex;
@@ -122,7 +137,8 @@
         gap: 20px;
         width: 100%;
         padding: 20px 20px;
-        background-color: $content;
+        background-color: rgba(41, 41, 42, 0.9);
+     
 
         .tabs {
             display: grid;

@@ -1,8 +1,6 @@
 <section class="main" *ngIf="unit">
   <div class="header-element">
-    <div class="header-strip">
 
-    </div>
     <div class="header-content">
       <div class="unit-wrapper">
         <div class="unit-avatar">
@@ -21,7 +19,10 @@
           </div>
         </div>
       </div>
-
+      <div class="unit-description">
+        <i style="font-size:24px" class="fa fa-quote-left"></i>
+        <span>&#x2003;{{unit?.weaponDescription}}</span>
+      </div>
       <div class="unit-stats">
         <div class="stats-title">Attributes</div>
         <div class="top-stats">
@@ -68,6 +69,10 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="header-splash"
+    style="background-image: url(&quot;../assets/splashart/{{unit?.slug}}_a3_splashart.webp&quot;);">
+
     </div>
   </div>
   <div class="body-element">

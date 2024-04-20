@@ -3043,7 +3043,7 @@
     "shatter": "14.00",
     "charge": "15.00",
     "roles": [
-      ""
+      "MDPS", "Buffer"
     ],
     "effects": [
       {
@@ -6581,9 +6581,7 @@
     "charge": "9",
     "roles": [
       "MDPS",
-      "Buffer",
-      "Healer",
-      "SupportBuffer"
+      "Buffer"
     ],
     "effects": [
       {
