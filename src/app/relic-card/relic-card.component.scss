@@ -1,6 +1,5 @@
 @import '../../styles.scss';
 
-
 .ssr-class {
     color: #FFDB9B;
     /* Define styles for SSR rarity */
@@ -10,8 +9,6 @@
     color: #D6CDFF;
     /* Define styles for SR rarity */
 }
-
-
 
 .back-card-content {
     display: flex;
@@ -43,7 +40,6 @@
                     width: 30px;
                     height: fit-content;
                 }
-
             }
         }
     }
@@ -57,7 +53,6 @@
     .top-card {
         position: relative;
         z-index: 2;
-
         background: $main; // this dumbassery fixes the whole "transparent character artwork background-image" problem and makes me wonder why i even went to school in the first place
     }
 
