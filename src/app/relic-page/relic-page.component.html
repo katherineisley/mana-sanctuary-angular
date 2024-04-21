@@ -1,1 +1,117 @@
-<p>relic-page works!</p>
+<section class="main" *ngIf="relic">
+  <div class="header-element">
+
+    <div class="header-content">
+      <div class="unit-wrapper">
+        <div class="unit-avatar" style="background-image: url(&quot;../assets/other/relic_frame.png&quot;);" >
+          <img src="assets/relics/{{relic?.slug}}_relic.png" alt="Relic">
+        </div>
+        <div class="unit-name-element">
+          <div class="unit-name">
+            <span>{{relic?.name}}</span>
+          </div>
+          <div class="unit-weapon-name">
+            <span>{{relic?.tag}}</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="unit-description">
+        <div *ngFor="let item of relic?.description">
+
+          <p>{{ item.paragraph }}</p>
+        </div>
+
+      </div>
+<!--       <div class="unit-roles">
+        <div class="stats-title">Roles</div>
+        <div class="top-stats">
+          <div *ngFor="let roles of relic.roles" class="roles">
+            <img src="assets/effects/buff_{{roles.toLowerCase()}}.png">
+            <span>{{roles}}</span>
+          </div>
+        </div>
+      </div> -->
+    </div>
+    <div class="header-splash"
+      style="background-image: url(&quot;../assets/backgrounds/relic_page_background.png&quot;);">
+
+    </div>
+  </div>
+  <div class="body-element">
+    <div class="tabs">
+      <div class="tab" data-tab="profile" (click)="setActiveTab(relic)" [class.active]="activeTab === relic">
+        <img src="assets/other/profile-icon.svg" alt="Profile Icon">
+        <span>Profile</span>
+      </div>
+      <div class="tab" data-tab="video" (click)="setActiveTab(relic)" [class.active]="activeTab === relic">
+        <img src="assets/other/materials-icon.svg" alt="Videp Icon">
+        <span>Video</span>
+      </div>
+      <div class="tab" data-tab="guide" (click)="setActiveTab(relic)" [class.active]="activeTab === relic">
+        <img src="assets/other/guide-icon.svg" alt="Guide Icon">
+        <span>Guide</span>
+      </div>
+    </div>
+    <div class="profile-part">
+
+      <div class="advancements-table">
+        <div class="advancements-table-row">
+          <div class="advancements-star-column">
+            1 ★
+          </div>
+          <div class="advancements-text-column">
+            <div *ngFor="let item of relic?.oneStar">
+              <p>{{ item.paragraph }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="advancements-table-row">
+          <div class="advancements-star-column">
+            2 ★
+          </div>
+          <div class="advancements-text-column">
+            <div *ngFor="let item of relic?.twoStar">
+              <p>{{ item.paragraph }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="advancements-table-row">
+          <div class="advancements-star-column">
+            3 ★
+          </div>
+          <div class="advancements-text-column">
+            <div *ngFor="let item of relic?.threeStar">
+              <p>{{ item.paragraph }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="advancements-table-row">
+          <div class="advancements-star-column">
+            4 ★
+          </div>
+          <div class="advancements-text-column">
+            <div *ngFor="let item of relic?.fourStar">
+              <p>{{ item.paragraph }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="advancements-table-row">
+          <div class="advancements-star-column">
+            5 ★
+          </div>
+          <div class="advancements-text-column">
+            <div *ngFor="let item of relic?.fiveStar">
+              <p>{{ item.paragraph }}</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </div>
+</section>

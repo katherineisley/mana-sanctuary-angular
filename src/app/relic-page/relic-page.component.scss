@@ -1,0 +1,242 @@
+@import '../../styles.scss';
+
+.main {
+    max-width: 1220px;
+    width: 100%;
+    //padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+
+    .header-element {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        min-height: 350px;
+
+
+        .header-splash {
+            position: absolute;
+            overflow: visible;
+            height: 1000px;
+            right: -100px;
+            top:-100px;
+            width: 700px;
+            z-index: -100;
+            background-position: top;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+        }
+
+        .header-content {
+
+            //padding: 20px 20px;
+            display: flex;
+            flex-direction: column;
+
+            gap: 10px;
+
+            .unit-description {
+                font-size: 16px;
+                font-weight: 300;
+                max-width: 600px;
+                padding: 0 0 0 10px;
+            }
+
+            .unit-wrapper {
+                display: flex;
+                flex-direction: row;
+                margin: 0 40px 0 0;
+                //height: 150px;
+
+
+                .unit-avatar {
+                    display: flex;
+                    margin: 0 25px 0 0;
+                    background-position: top;
+                    background-size:cover;
+                    background-repeat: no-repeat;
+                    width: 150px;
+                    height: 150px;
+                    justify-content: center; /* Horizontally center the image */
+                    align-items: center; /* Vertically center the image */
+                }
+
+                .unit-avatar img {
+                    width: 100px;
+
+                }
+
+                .unit-name-element {
+                    display: flex;
+                    justify-content: center;                  
+                    flex-direction: column;
+
+                    .unit-name {
+                        color: #F5F5F5;
+                        font-size: 24px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        line-height: 24px;
+                    }
+
+                    .unit-weapon-name {
+                        color: #F5F5F5;
+                        font-size: 20px;
+                        font-weight: 300;
+                        font-style: italic;
+                        padding: 4px 0px;
+                    }
+
+                    .unit-element {
+                        display: flex;
+                        justify-content: left;
+                        align-items: center;
+                        gap: 5px;
+                    }
+
+                    .unit-element img {
+                        width: 36px;
+                    }
+                }
+            }
+
+            .unit-stats {
+                margin: 0 40px 0 0;
+            }
+
+            .unit-stats,
+            .unit-roles {
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+            }
+
+            .top-stats,
+            .bottom-stats {
+                display: flex;
+                gap: 20px;
+
+                .stats {
+                    .grade {
+                        line-height: 1;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: bold;
+                        color: $content;
+                        padding: 4px 8px 2px; // 2px comes from the underside of the grade having extra space
+                        background-color: #D9D9D9;
+                        transform: skew(-8deg);
+                    }
+                }
+            }
+
+            .stats-title {
+                border: 2px solid #c49860;
+                width: fit-content;
+                padding: 4px 18px;
+                font-style: italic;
+                font-weight: 500;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .body-element {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        padding: 20px 20px;
+        background-color: rgba(41, 41, 42, 0.9);
+
+
+        .tabs {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+
+            .tab {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                border: 1px solid #c49860;
+                padding: 12px 0;
+                cursor: pointer;
+
+                img {
+                    width: 28px;
+                    height: 28px;
+                }
+
+                span {
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+            }
+
+            .tab.active {
+                background-color: #c49860;
+            }
+        }
+
+
+        .video-part,
+        .guide-part {
+            display: none;
+        }
+
+        .profile-part {
+
+            p {
+                font-weight: 300;
+                margin: unset;
+            }
+
+            .advancements-table {
+                padding: 0px 80px;
+                width: 100%;
+                display: flex;
+                margin: 30px 0 0 0;
+                flex-direction: column;
+                row-gap: 30px;
+            }
+
+            .advancements-table-row {
+                display: flex;
+                width: 100%;
+                gap: 30px;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .advancements-star-column {
+                width: 5%;
+            }
+
+            .advancements-text-column {
+                width: 95%;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+.stats,
+.roles {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #F5F5F5;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.stats img,
+.roles img {
+    width: 28px;
+}
