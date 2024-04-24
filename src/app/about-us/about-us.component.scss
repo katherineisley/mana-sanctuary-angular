@@ -50,8 +50,30 @@
 
     .cards {
         display: grid;
+        justify-items: center;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
         margin: 40px 0 0 0;
+    }
+}
+
+@media only screen and (max-width: $laptop) {
+    .main {
+        .cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media only screen and (max-width: $tablet) {
+    .main {
+        .cards {
+            grid-template-columns: repeat(1, 1fr);
+
+            app-about-us-card {
+                max-width: 500px;
+                width: 100%;
+            }
+        }
     }
 }

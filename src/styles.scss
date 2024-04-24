@@ -309,6 +309,16 @@ main {
 }
 
 @media only screen and (max-width: $tablet) {
+    main {
+        app-home {
+            margin: 0 0 40px 0;
+        }
+        
+        app-index, app-units-index, app-unit-page, app-matrix-page, app-relic-page, app-matrices-index, app-relics-index, app-healing, app-healing-guide, app-healing-teams, app-healing-calculator, app-guides, app-glossary,  app-about-us, app-page-not-found {
+            margin: 20px 0 40px 0;
+        }
+    }
+
     .overview {
         .entries {
             grid-template-columns: repeat(1, 1fr);
