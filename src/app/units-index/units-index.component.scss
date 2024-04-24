@@ -73,6 +73,7 @@
         }
     }
 }
+
 .rarity {
     &-ssr, &-sr {
         font-weight: 600;
@@ -114,6 +115,31 @@
         text-align: center;
         font-size: 36px;
         font-weight: 600;
+        margin: unset;
     }
+}
 
+@media only screen and (max-width: $laptop) { // Card flip animation begins to look clip out of the borders
+    .units-index {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media only screen and (max-width: $tablet) {
+    .units-index {
+        grid-template-columns: repeat(3, 1fr);
+        // gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .units-index {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .units-index {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
