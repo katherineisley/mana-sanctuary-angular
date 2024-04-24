@@ -1,6 +1,5 @@
 <section class="main" *ngIf="unit">
   <div class="header-element">
-
     <div class="header-content">
       <div class="unit-wrapper">
         <div class="unit-avatar">
@@ -20,8 +19,7 @@
         </div>
       </div>
       <div class="unit-description">
-        <i style="font-size:24px" class="fa fa-quote-left"></i>
-        <span>&#x2003;{{unit?.weaponDescription}}</span>
+        <span><i style="font-size:24px; margin: 0 4px 0 0;" class="fa fa-quote-left"></i>{{unit?.weaponDescription}}</span>
       </div>
       <div class="unit-stats">
         <div class="stats-title">Attributes</div>
@@ -70,8 +68,7 @@
         </div>
       </div>
     </div>
-    <div class="header-splash"
-    style="background-image: url(&quot;../assets/splashart/{{unit?.slug}}_a3_splashart.webp&quot;);">
+    <div class="header-splash" style="background-image: url(&quot;../assets/splashart/{{unit?.slug}}_a3_splashart.webp&quot;);">
 
     </div>
   </div>
@@ -222,7 +219,6 @@
             </div>
           </div>
         </div>
-
         <!-- DODGE-->
         <div *ngIf="activeInfo === 'Dodge'">
           <div class="attack-wrap">
@@ -257,7 +253,6 @@
             </div>
           </div>
         </div>
-
         <!-- SKILLS-->
         <div *ngIf="activeInfo === 'Skill'">
           <div class="attack-wrap">
@@ -276,7 +271,6 @@
             </div>
           </div>
         </div>
-
         <!-- DISCHARGE-->
         <div *ngIf="activeInfo === 'Discharge'">
           <div class="attack-wrap">
@@ -295,7 +289,6 @@
             </div>
           </div>
         </div>
-
         <!-- TRAIT-->
         <div *ngIf="activeInfo === 'Trait'">
           <div class="attack-wrap">
@@ -316,7 +309,6 @@
         </div>
       </div>
     </div>
-
     <div class="matrix-part">
       <!-- Display 2pc effect -->
       <div *ngIf="matrix['2pc'] && matrix['2pc'].effect">
@@ -340,6 +332,5 @@
         </div>
       </div>
     </div>
-
   </div>
 </section>
