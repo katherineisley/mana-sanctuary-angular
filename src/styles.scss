@@ -298,6 +298,10 @@ main {
     }
 }
 
+.num-clr { // temporary location
+    color: $link;
+}
+
 // UNIVERSAL MOBILE STYLES
 
 @media only screen and (max-width: $laptop) {

@@ -112,7 +112,7 @@
               </div>
               <div class="advancements-text-column">
                 <div *ngFor="let item of unit?.oneStar">
-                  <p>{{ item.paragraph }}</p>
+                  <p [innerHTML]="sanitizeHtml(item.paragraph)"></p>
                 </div>
               </div>
             </div>
@@ -122,7 +122,7 @@
               </div>
               <div class="advancements-text-column">
                 <div *ngFor="let item of unit?.twoStar">
-                  <p>{{ item.paragraph }}</p>
+                  <p [innerHTML]="sanitizeHtml(item.paragraph)"></p>
                 </div>
               </div>
             </div>
@@ -132,7 +132,7 @@
               </div>
               <div class="advancements-text-column">
                 <div *ngFor="let item of unit?.threeStar">
-                  <p>{{ item.paragraph }}</p>
+                  <p [innerHTML]="sanitizeHtml(item.paragraph)"></p>
                 </div>
               </div>
             </div>
@@ -142,7 +142,7 @@
               </div>
               <div class="advancements-text-column">
                 <div *ngFor="let item of unit?.fourStar">
-                  <p>{{ item.paragraph }}</p>
+                  <p [innerHTML]="sanitizeHtml(item.paragraph)"></p>
                 </div>
               </div>
             </div>
@@ -152,7 +152,7 @@
               </div>
               <div class="advancements-text-column">
                 <div *ngFor="let item of unit?.fiveStar">
-                  <p>{{ item.paragraph }}</p>
+                  <p [innerHTML]="sanitizeHtml(item.paragraph)"></p>
                 </div>
               </div>
             </div>
@@ -162,7 +162,7 @@
               </div>
               <div class="advancements-text-column">
                 <div *ngFor="let item of unit?.sixStar">
-                  <p>{{ item.paragraph }}</p>
+                  <p [innerHTML]="sanitizeHtml(item.paragraph)"></p>
                 </div>
               </div>
             </div>
@@ -179,7 +179,7 @@
               </div>
               <div class="attack-description">
                 <div class="attack-paragraph" *ngFor="let desc of item.description">
-                  <p>{{ desc.paragraph }}</p>
+                  <p [innerHTML]="sanitizeHtml(desc.paragraph)"></p>
                 </div>
               </div>
             </div>
@@ -204,7 +204,7 @@
               </div>
               <div class="attack-description">
                 <div class="attack-paragraph" *ngFor="let desc of item.description">
-                  <p>{{ desc.paragraph }}</p>
+                  <p [innerHTML]="sanitizeHtml(desc.paragraph)"></p>
                 </div>
               </div>
               <div *ngIf="item.hasChain">
@@ -238,7 +238,7 @@
               </div>
               <div class="attack-description">
                 <div class="attack-paragraph" *ngFor="let desc of item.description">
-                  <p>{{ desc.paragraph }}</p>
+                  <p [innerHTML]="sanitizeHtml(desc.paragraph)"></p>
                 </div>
               </div>
               <div *ngIf="item.hasChain">
@@ -265,7 +265,7 @@
               </div>
               <div class="attack-description">
                 <div class="attack-paragraph" *ngFor="let desc of item.description">
-                  <p>{{ desc.paragraph }}</p>
+                  <p [innerHTML]="sanitizeHtml(desc.paragraph)"></p>
                 </div>
               </div>
             </div>
@@ -283,7 +283,7 @@
               </div>
               <div class="attack-description">
                 <div class="attack-paragraph" *ngFor="let desc of item.description">
-                  <p>{{ desc.paragraph }}</p>
+                  <p [innerHTML]="sanitizeHtml(desc.paragraph)"></p>
                 </div>
               </div>
             </div>
@@ -301,7 +301,7 @@
               </div>
               <div class="attack-description">
                 <div class="attack-paragraph" *ngFor="let desc of item.description">
-                  <p>{{ desc.paragraph }}</p>
+                  <p [innerHTML]="sanitizeHtml(desc.paragraph)"></p>
                 </div>
               </div>
             </div>

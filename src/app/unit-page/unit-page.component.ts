@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 import * as $ from 'jquery';
 
@@ -19,7 +20,8 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
   
   constructor(
     private route: ActivatedRoute,
-    private http: HttpClient
+    private http: HttpClient,
+    private sanitizer: DomSanitizer
   ) { }
   
 
@@ -84,6 +86,10 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
       underline.style.left = `${rect.left - containerRect.left - 8}px`; // offset the width extension
       underline.style.width = `${rect.width + 16}px`; // make it a bit prettier
     }
+  }
+
+  sanitizeHtml(html: string): SafeHtml {
+    return this.sanitizer.bypassSecurityTrustHtml(html);
   }
 
   @ViewChildren('info') infos!: QueryList<ElementRef>;
