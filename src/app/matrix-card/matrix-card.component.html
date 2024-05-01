@@ -1,7 +1,6 @@
 <div class="unit-wrapper" [attr.data-unit]="matrix.slug" [routerLink]="'/matrix-page/' + matrix.slug">
   <div class="top-card" style="background-image: url(&quot;../../assets/backgrounds/hexagons.png&quot;);">
-    <div class="content-wrapper"
-      style="background-image: url(&quot;../assets/matrices/{{matrix.slug}}_matrix.webp&quot;);">
+    <div class="content-wrapper" style="background-image: url(&quot;../assets/matrices/{{matrix.slug}}_matrix.webp&quot;);">
       <div class="{{matrix.tag}}-tag">{{matrix.tag}}</div>
       <div class="details-container">
         <h5 class="name">{{matrix.name}}</h5>
@@ -17,11 +16,9 @@
       </div>
     </div>
   </div>
-
   <!-- TOP AND BACK SHUFFLE ON HOVER -->
-  <div class="back-card" style="background-image:  url(&quot;../../assets/backgrounds/hexagons.png&quot;);">
+  <div class="back-card" style="background-image: url(&quot;../../assets/backgrounds/hexagons.png&quot;);">
     <div class="back-card-content">
-      
       <div class="bc-wrapper" *ngIf="matrix['twopc'] && matrix['twopc'].effect">
         <div class="bc-header">
           <div class="bc-title" [class]="getRarityClass()">2-Piece</div>
@@ -35,9 +32,8 @@
           <div>{{buff}}</div>
         </div>
       </div>
-
       <div class="bc-wrapper" *ngIf="matrix['fourpc'] && matrix['fourpc'].effect">
-        <div class="bc-header" >
+        <div class="bc-header">
           <div class="bc-title" [class]="getRarityClass()">4-Piece</div>
           <div class="bc-roles">
             <div *ngFor="let role of matrix?.fourpc?.roles">
@@ -49,9 +45,8 @@
           <div>{{buff}}</div>
         </div>
       </div>
-
       <div class="bc-wrapper" *ngIf="matrix['threepc'] && matrix['threepc'].effect">
-        <div class="bc-header" >
+        <div class="bc-header">
           <div class="bc-title" [class]="getRarityClass()">3-Piece</div>
           <div class="bc-roles">
             <div *ngFor="let role of matrix?.threerpc?.roles">
@@ -63,7 +58,6 @@
           <div>{{buff}}</div>
         </div>
       </div>
-
     </div>
   </div>
 </div>

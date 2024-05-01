@@ -24,6 +24,9 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
     private sanitizer: DomSanitizer
   ) { }
   
+  sanitizeHtml(html: string): SafeHtml {
+    return this.sanitizer.bypassSecurityTrustHtml(html);
+  }
 
   ngOnInit() {
     this.slug = this.route.snapshot.paramMap.get('name')!;
@@ -86,10 +89,6 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
       underline.style.left = `${rect.left - containerRect.left - 8}px`; // offset the width extension
       underline.style.width = `${rect.width + 16}px`; // make it a bit prettier
     }
-  }
-
-  sanitizeHtml(html: string): SafeHtml {
-    return this.sanitizer.bypassSecurityTrustHtml(html);
   }
 
   @ViewChildren('info') infos!: QueryList<ElementRef>;
