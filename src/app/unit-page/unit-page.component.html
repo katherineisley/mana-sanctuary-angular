@@ -212,7 +212,7 @@
                   <li *ngFor="let combo of item.chain; let i = index">
                     <span class="number">{{ i + 1 }}</span>
                     <span>.</span>
-                    <span class="text">{{ combo.combo }}</span>
+                    <span class="text" [innerHTML]="sanitizeHtml(combo.combo)"></span>
                   </li>
                 </ul>
               </div>
@@ -246,7 +246,7 @@
                   <li *ngFor="let combo of item.chain; let i = index">
                     <span class="number">{{ i + 1 }}</span>
                     <span>.</span>
-                    <span class="text">{{ combo.combo }}</span>
+                    <span class="text" [innerHTML]="sanitizeHtml(combo.combo)"></span>
                   </li>
                 </ul>
               </div>
