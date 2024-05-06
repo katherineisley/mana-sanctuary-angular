@@ -23,7 +23,7 @@
   <div class="insertions">
     <div class="units">
       <div class="all-units" [style.display]="showAllUnits ? 'flex' : 'none'">
-        <div class="entry" [attr.data-name]="unit.slug" *ngFor="let unit of units" (click)="changeThumbnail(unit)">
+        <div class="entry" [attr.data-name]="unit.slug" *ngFor="let unit of units" (click)="changeThumbnailUnit(unit)">
           <img class="avatar" src="assets/simulacra/{{unit.slug}}_avatar.webp" alt="Avatar">
           <div class="wrapper">
             <span class="name">{{unit.name[0]}}</span>
@@ -32,7 +32,7 @@
         </div>
       </div>
       <div class="all-matrices" [style.display]="showAllMatrices ? 'flex' : 'none'">
-        <div class="entry" [attr.data-name]="matrix.slug" *ngFor="let matrix of matrices" (click)="changeThumbnail(matrix)">
+        <div class="entry" [attr.data-name]="matrix.slug" *ngFor="let matrix of matrices" (click)="changeThumbnailMatrix(matrix)">
           <img class="avatar" src="assets/matrices/{{matrix.slug}}_matrix.webp" alt="Avatar">
           <div class="wrapper">
             <span class="name">{{matrix.name}}</span>
@@ -43,7 +43,7 @@
       <div class="unit" data-unit="1">
         <div class="simulacra">
           <!-- <div class="subtitle">Weapons</div> -->
-          <div class="simulacra-select" (click)="toggleSelects(true, $event)">
+          <div class="simulacra-select" (click)="toggleUnitSelect($event, 1)">
             <img src="assets/other/simualcra_select.svg" alt="Select" class="image">
           </div>
           <div class="stars">
@@ -56,7 +56,7 @@
           <!-- <div class="subtitle">Matrices</div> -->
           <div class="matrix-wrapper">
             <div class="matrix-select-container">
-              <div class="matrix-select" (click)="toggleSelects(false, $event)">
+              <div class="matrix-select" (click)="toggleMatrixSelect($event, 1, 0)">
                 <img src="assets/other/matrix_select.svg" alt="Select" class="image">
               </div>
               <div class="stars">
@@ -66,7 +66,7 @@
               </div> 
             </div>
             <div class="matrix-select-container">
-              <div class="matrix-select" (click)="toggleSelects(false, $event)">
+              <div class="matrix-select" (click)="toggleMatrixSelect($event, 1, 1)">
                 <img src="assets/other/matrix_select.svg" alt="Select" class="image">
               </div>
               <div class="stars">
@@ -80,7 +80,7 @@
       </div>
       <div class="unit" data-unit="2">
         <div class="simulacra">
-          <div class="simulacra-select" (click)="toggleSelects(true, $event)">
+          <div class="simulacra-select" (click)="toggleUnitSelect($event, 2)">
             <img src="assets/other/simualcra_select.svg" alt="Select" class="image">
           </div>
           <div class="stars">
@@ -92,7 +92,7 @@
         <div class="matrices">
           <div class="matrix-wrapper">
             <div class="matrix-select-container">
-              <div class="matrix-select" (click)="toggleSelects(false, $event)">
+              <div class="matrix-select" (click)="toggleMatrixSelect($event, 2, 0)">
                 <img src="assets/other/matrix_select.svg" alt="Select" class="image">
               </div>
               <div class="stars">
@@ -102,7 +102,7 @@
               </div> 
             </div>
             <div class="matrix-select-container">
-              <div class="matrix-select" (click)="toggleSelects(false, $event)">
+              <div class="matrix-select" (click)="toggleMatrixSelect($event, 2, 1)">
                 <img src="assets/other/matrix_select.svg" alt="Select" class="image">
               </div>
               <div class="stars">
@@ -116,7 +116,7 @@
       </div>
       <div class="unit" data-unit="3">
         <div class="simulacra">
-          <div class="simulacra-select" (click)="toggleSelects(true, $event)">
+          <div class="simulacra-select" (click)="toggleUnitSelect($event, 3)">
             <img src="assets/other/simualcra_select.svg" alt="Select" class="image">
           </div>
           <div class="stars">
@@ -128,7 +128,7 @@
         <div class="matrices">
           <div class="matrix-wrapper">
             <div class="matrix-select-container">
-              <div class="matrix-select" (click)="toggleSelects(false, $event)">
+              <div class="matrix-select" (click)="toggleMatrixSelect($event, 3, 0)">
                 <img src="assets/other/matrix_select.svg" alt="Select" class="image">
               </div>
               <div class="stars">
@@ -138,7 +138,7 @@
               </div> 
             </div>
             <div class="matrix-select-container">
-              <div class="matrix-select" (click)="toggleSelects(false, $event)">
+              <div class="matrix-select" (click)="toggleMatrixSelect($event, 3, 1)">
                 <img src="assets/other/matrix_select.svg" alt="Select" class="image">
               </div>
               <div class="stars">

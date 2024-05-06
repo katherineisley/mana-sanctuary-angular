@@ -11,6 +11,8 @@ import { HttpClient } from '@angular/common/http';
 export class HealingCalculatorComponent implements OnInit {
   units: any[] = [];
   matrices: any[] = [];
+  currentUnitSetId!: number;
+  currentMatrixSelectIndex!: number;
   showAllUnits = false;
   showAllMatrices = false;
 
@@ -25,12 +27,11 @@ export class HealingCalculatorComponent implements OnInit {
     }, error => console.error(error));
   }
 
-  toggleSelects(showUnits: boolean, event: MouseEvent) { // IS NOT CONFIGURED FOR MOBILE
-    // this might not make sense at first glance, but because we only have 2 states, we can just flip the boolean
-    // true = show units, false = show matrices
+  toggleUnitSelect(event: Event, clickedUnitSetId: number) { // this shit needs to be refactored and optimized, shares a lot of code with toggleMatrixSelect
+    this.currentUnitSetId = clickedUnitSetId;
+
     event.stopPropagation();
-    this.showAllUnits = showUnits;
-    this.showAllMatrices = !showUnits;
+    this.showAllUnits = !this.showAllUnits;
   
     const clickedElement = event.target as HTMLElement;
     const rect = clickedElement.getBoundingClientRect();
@@ -39,18 +40,56 @@ export class HealingCalculatorComponent implements OnInit {
 
     const top = rect.top + window.pageYOffset - docEl.clientTop;
     const left = rect.left + window.pageXOffset - docEl.clientLeft;
-  
-    if (showUnits) {
-      const allUnitsElement = this.el.nativeElement.querySelector('.all-units');
-      this.renderer.setStyle(allUnitsElement, 'top', `${top}px`);
-      this.renderer.setStyle(allUnitsElement, 'left', `${left + rect.width + offset}px`);
-    } else {
-      const allMatricesElement = this.el.nativeElement.querySelector('.all-matrices');
-      this.renderer.setStyle(allMatricesElement, 'top', `${top}px`);
-      this.renderer.setStyle(allMatricesElement, 'left', `${left + rect.width + offset}px`);
-    }
+
+    const allUnitsElement = this.el.nativeElement.querySelector('.all-units');
+    this.renderer.setStyle(allUnitsElement, 'top', `${top}px`);
+    this.renderer.setStyle(allUnitsElement, 'left', `${left + rect.width + offset}px`);
   }
 
+  toggleMatrixSelect(event: Event, clickedUnitSetId: number, clickedMatrixSelect: number) { // this shit needs to be refactored and optimized, shares a lot of code with toggleUnitSelect
+    this.currentUnitSetId = clickedUnitSetId;
+    this.currentMatrixSelectIndex = clickedMatrixSelect;
+
+    event.stopPropagation();
+    this.showAllMatrices = !this.showAllMatrices;
+
+    const clickedElement = event.target as HTMLElement;
+    const rect = clickedElement.getBoundingClientRect();
+    const docEl = document.documentElement;
+    const offset = 20; // offset in pixels
+
+    const top = rect.top + window.pageYOffset - docEl.clientTop;
+    const left = rect.left + window.pageXOffset - docEl.clientLeft;
+
+    const allMatricesElement = this.el.nativeElement.querySelector('.all-matrices');
+    this.renderer.setStyle(allMatricesElement, 'top', `${top}px`);
+    this.renderer.setStyle(allMatricesElement, 'left', `${left + rect.width + offset}px`);
+  }
+
+  changeThumbnailUnit(clickedEntry: any) {
+    const value = clickedEntry.slug;
+  
+    const avatarSrc = `assets/simulacra/${value}_avatar.webp`;
+    const selectElement = this.el.nativeElement.querySelector(`.unit[data-unit="${this.currentUnitSetId}"] .simulacra-select img`);
+    selectElement.src = avatarSrc;
+  
+    console.log(clickedEntry);
+    console.log("Current Unit Set ID", this.currentUnitSetId);
+  }
+
+  changeThumbnailMatrix(clickedEntry: any) {
+    const value = clickedEntry.slug;
+  
+    const avatarSrc = `assets/matrices/${value}_matrix.webp`;
+    const selectElement = this.el.nativeElement.querySelector(`.unit[data-unit="${this.currentUnitSetId}"] .matrix-select-container:nth-child(${this.currentMatrixSelectIndex + 1}) .matrix-select img`);
+    selectElement.src = avatarSrc;
+  
+    console.log(clickedEntry);
+    console.log("Current Unit Set ID", this.currentUnitSetId);
+    console.log("Current Matrix Select Index", this.currentMatrixSelectIndex);
+  }
+  
+  
   currentAdvancementLevel(event: Event) {
     let target = event.target as HTMLElement;
 
@@ -78,11 +117,6 @@ export class HealingCalculatorComponent implements OnInit {
         }
       });
     }
-  }
-
-  changeThumbnail(clickedEntry: any) { // wip
-    const value = clickedEntry.slug; // grabs the slug for the avatar
-    console.log(value);
   }
 
   @HostListener('document:click', ['$event.target'])
