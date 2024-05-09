@@ -37,6 +37,8 @@
     }
 
     .insertions {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         margin: 40px 0 0 0;
 
         .units {
@@ -49,8 +51,8 @@
                 border-radius: 10px;
                 display: flex;
                 flex-direction: column;
-                max-height: 410px; // 4 entries + borders
-                max-width: 500px;
+                max-height: 372px; // 3 entries + borders
+                max-width: 450px;
                 width: 100%;
                 overflow-y: auto;
 
@@ -66,7 +68,7 @@
                     border-top: 4px solid $border;
 
                     .avatar {
-                        height: 80px;
+                        height: 70px;
                         margin: 10px;
                     }
 
@@ -93,9 +95,14 @@
 
             .unit {
                 display: flex;
+                align-items: center;
                 gap: 25px;
     
                 .simulacra, .matrices {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    
                     .subtitle {
                         align-self: center;
                         font-size: 24px;
@@ -107,7 +114,7 @@
 
                         .active {
                             path {
-                                fill: white;
+                                fill: $white;
                             }
                         }
 
@@ -119,10 +126,6 @@
                 }
     
                 .simulacra {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-
                     .simulacra-select {
                         align-self: center;
                         cursor: pointer;
@@ -136,8 +139,6 @@
                 }
     
                 .matrices {
-                    display: flex;
-
                     .matrix-wrapper {
                         display: flex;
                         align-items: center;
@@ -159,6 +160,44 @@
                                 }
                             }
                         }
+                    }
+                }
+            }
+        }
+
+        .gear-stats {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .stat {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .stat-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+
+                    .stat-input {
+                        padding: 4px 8px;
+                        background: transparent;
+                        border: 2px solid $white;
+                        border-radius: 10px;
+                        color: $white;
+                        -moz-appearance: textfield; // remove "spin buttons" (the up and down arrow)
+
+                        &::-webkit-outer-spin-button,
+                        &::-webkit-inner-spin-button {
+                            -webkit-appearance: none;
+                            margin: 0;
+                        }
+                    }
+
+                    .stat-input:focus {
+                        outline: none;
+                        border: 2px solid gold;
                     }
                 }
             }

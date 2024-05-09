@@ -28,6 +28,7 @@ import { MatrixCardComponent } from './matrix-card/matrix-card.component';
 import { MatrixPageComponent } from './matrix-page/matrix-page.component';
 import { RelicCardComponent } from './relic-card/relic-card.component';
 import { RelicPageComponent } from './relic-page/relic-page.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { RelicPageComponent } from './relic-page/relic-page.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgxSplideModule
+    NgxSplideModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

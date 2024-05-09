@@ -42,7 +42,7 @@
       </div>
       <div class="unit" data-unit="1">
         <div class="simulacra">
-          <!-- <div class="subtitle">Weapons</div> -->
+          <div class="subtitle">Weapons</div>
           <div class="simulacra-select" (click)="toggleUnitSelect($event, 1)">
             <img src="assets/other/simualcra_select.svg" alt="Select" class="image">
           </div>
@@ -53,7 +53,7 @@
           </div>
         </div>
         <div class="matrices">
-          <!-- <div class="subtitle">Matrices</div> -->
+          <div class="subtitle">Matrices</div>
           <div class="matrix-wrapper">
             <div class="matrix-select-container">
               <div class="matrix-select" (click)="toggleMatrixSelect($event, 1, 0)">
@@ -150,6 +150,77 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="titan-and-trait">
+
+    </div>
+    <div class="gear-stats">
+      <div class="stat">
+        <img class="stat-icon" src="assets/stats/icon_hp.webp" alt="HP Icon">
+        <div class="stat-wrapper">
+          <label class="stat-label">HP</label>
+          <input type="number" [(ngModel)]="hpStat" placeholder="0" class="stat-input">
+        </div>
+      </div>
+      <div class="stat">
+        <img class="stat-icon" src="assets/stats/icon_crit.webp" alt="Crit Icon">
+        <div class="stat-wrapper">
+          <label class="stat-label">Crit</label>
+          <input type="number" [(ngModel)]="critStat" placeholder="0" class="stat-input">
+        </div>
+      </div>
+      <div class="stat">
+        <img class="stat-icon" src="assets/stats/icon_crit.webp" alt="Crit Rate Icon">
+        <div class="stat-wrapper">
+          <label class="stat-label">Crit Rate</label>
+          <input type="number" [(ngModel)]="critRateStat" placeholder="0" class="stat-input">
+        </div>
+      </div>
+      <div class="stat">
+        <img class="stat-icon" src="assets/icons/physical_atk.webp" alt="Physical ATK Icon">
+        <div class="stat-wrapper">
+          <label class="stat-label">Physical ATK</label>
+          <input type="number" [(ngModel)]="physicalAtkStat" placeholder="0" class="stat-input">
+        </div>
+      </div>
+      <div class="stat">
+        <img class="stat-icon" src="assets/icons/flame_atk.svg" alt="Flame ATK Icon">
+        <div class="stat-wrapper">
+          <label class="stat-label">Flame ATK</label>
+          <input type="number" [(ngModel)]="flameAtkStat" placeholder="0" class="stat-input">
+        </div>
+      </div>
+      <div class="stat">
+        <img class="stat-icon" src="assets/icons/frost_atk.svg" alt="Frost ATK Icon">
+        <div class="stat-wrapper">
+          <label class="stat-label">Frost ATK</label>
+          <input type="number" [(ngModel)]="frostAtkStat" placeholder="0" class="stat-input">
+        </div>
+      </div>
+      <div class="stat">
+        <img class="stat-icon" src="assets/icons/volt_atk.svg" alt="Volt ATK Icon">
+        <div class="stat-wrapper">
+          <label class="stat-label">Volt ATK</label>
+          <input type="number" [(ngModel)]="voltAtkStat" placeholder="0" class="stat-input">
+        </div>
+      </div>
+      <div class="stat">
+        <img class="stat-icon" src="assets/icons/altered_atk.svg" alt="Altered ATK Icon">
+        <div class="stat-wrapper">
+          <label class="stat-label">Altered ATK</label>
+          <input type="number" [(ngModel)]="alteredAtkStat" placeholder="0" class="stat-input">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="overview">
+    <div class="tabs">
+      <!-- (click)="setActiveInfo($event)" #info -->
+      <a class="tab">Summary</a>
+      <a class="tab">Breakdown</a>
+      <a class="tab">Calculations</a>
+      <a class="tab">Possible Upgrades</a>
+      <div class="underline"></div>
     </div>
   </div>
 </section>

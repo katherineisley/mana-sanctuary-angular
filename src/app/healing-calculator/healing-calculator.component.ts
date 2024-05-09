@@ -1,7 +1,6 @@
 import { Component, HostListener, OnInit, Renderer2, ElementRef } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-
 @Component({
   selector: 'app-healing-calculator',
   templateUrl: './healing-calculator.component.html',
@@ -15,6 +14,16 @@ export class HealingCalculatorComponent implements OnInit {
   currentMatrixSelectIndex!: number;
   showAllUnits = false;
   showAllMatrices = false;
+
+  // STATS
+  hpStat!: number;
+  critStat!: number;
+  critRateStat!: number;
+  physicalAtkStat!: number;
+  flameAtkStat!: number;
+  frostAtkStat!: number;
+  voltAtkStat!: number;
+  alteredAtkStat!: number;
 
   constructor(private http: HttpClient, private renderer: Renderer2, private el: ElementRef) { }
 
@@ -127,5 +136,10 @@ export class HealingCalculatorComponent implements OnInit {
     if (!target.closest('.all-matrices')) {
       this.showAllMatrices = false;
     }
+  }
+
+  @HostListener('change', ['$event.target'])
+  onStatChange(target: HTMLInputElement) {
+    console.log(`Changed to ${target.value}`);  // This console logs the stats whenever changed
   }
 }
