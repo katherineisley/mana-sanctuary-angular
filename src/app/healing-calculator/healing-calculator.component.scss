@@ -36,6 +36,18 @@
         }
     }
 
+    .temp {
+        margin: 40px 0;
+        .log-button {
+            background-color: transparent;
+            border: 2px solid $white;
+            border-radius: 10px;
+            padding: 10px 20px;
+            color: $white;
+            cursor: pointer;
+        }
+    }
+
     .insertions {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -52,9 +64,10 @@
                 display: flex;
                 flex-direction: column;
                 max-height: 372px; // 3 entries + borders
-                max-width: 450px;
+                max-width: 600px;
                 width: 100%;
                 overflow-y: auto;
+                z-index: 2;
 
                 .entry:first-child {
                     border-top: none;
@@ -79,11 +92,31 @@
                         
                         .name, .description {
                             font-style: italic;
+                            text-transform: capitalize;
                         }
 
                         .name {
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
                             font-size: 18px;
                             color: $link;
+
+                            .twopc {
+                                color: $white;
+                                font-size: 14px;
+                                padding: 2px 8px;
+                                border-radius: 10px;
+                                background-color: blue;
+                            }
+
+                            .fourpc {
+                                color: $white;
+                                font-size: 14px;
+                                padding: 2px 8px;
+                                border-radius: 10px;
+                                background-color: red;
+                            }
                         }
 
                         .description {
@@ -170,6 +203,10 @@
             flex-direction: column;
             gap: 10px;
 
+            .subtitle {
+                font-size: 24px;
+            }
+
             .stat {
                 display: flex;
                 align-items: center;
@@ -186,6 +223,7 @@
                         border: 2px solid $white;
                         border-radius: 10px;
                         color: $white;
+                        appearance: none;
                         -moz-appearance: textfield; // remove "spin buttons" (the up and down arrow)
 
                         &::-webkit-outer-spin-button,
@@ -200,6 +238,38 @@
                         border: 2px solid gold;
                     }
                 }
+            }
+        }
+    }
+
+    .overview {
+        padding: unset;
+
+        .info-selection {
+            position: relative;
+            display: flex;
+            border-bottom: 1px solid $border;
+            padding: 0 0 5px 0;
+            margin: 10px 0 0 0;
+
+            .info {
+                text-align: center;
+                color: var(--element-color);
+                font-weight: 500;
+                cursor: pointer;
+                margin: auto; // might be the only time i ever use this 
+
+                font-size: 20px;
+            }
+
+            .underline {
+                position: absolute;
+                bottom: 0;
+                height: 3px;
+                background: white;
+                bottom: -2px;
+                width: 0;
+                left: 0;
             }
         }
     }

@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit, Renderer2, ElementRef } from '@angular/core';
+import { Component, HostListener, OnInit, Renderer2, ElementRef, QueryList, ViewChildren } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -14,6 +14,7 @@ export class HealingCalculatorComponent implements OnInit {
   currentMatrixSelectIndex!: number;
   showAllUnits = false;
   showAllMatrices = false;
+  activeInfo: string = 'Summary'; 
 
   // STATS
   hpStat!: number;
@@ -55,7 +56,7 @@ export class HealingCalculatorComponent implements OnInit {
     this.renderer.setStyle(allUnitsElement, 'left', `${left + rect.width + offset}px`);
   }
 
-  toggleMatrixSelect(event: Event, clickedUnitSetId: number, clickedMatrixSelect: number) { // this shit needs to be refactored and optimized, shares a lot of code with toggleUnitSelect
+  toggleMatrixSelect(event: Event, clickedUnitSetId: number, clickedMatrixSelect: number) { // this shit needs to be refactored and optimized, shares a lot of code with toggleUnitSelect 
     this.currentUnitSetId = clickedUnitSetId;
     this.currentMatrixSelectIndex = clickedMatrixSelect;
 
@@ -81,6 +82,7 @@ export class HealingCalculatorComponent implements OnInit {
     const avatarSrc = `assets/simulacra/${value}_avatar.webp`;
     const selectElement = this.el.nativeElement.querySelector(`.unit[data-unit="${this.currentUnitSetId}"] .simulacra-select img`);
     selectElement.src = avatarSrc;
+    selectElement.parentElement.setAttribute('data-simulacra', value);
   
     console.log(clickedEntry);
     console.log("Current Unit Set ID", this.currentUnitSetId);
@@ -92,6 +94,7 @@ export class HealingCalculatorComponent implements OnInit {
     const avatarSrc = `assets/matrices/${value}_matrix.webp`;
     const selectElement = this.el.nativeElement.querySelector(`.unit[data-unit="${this.currentUnitSetId}"] .matrix-select-container:nth-child(${this.currentMatrixSelectIndex + 1}) .matrix-select img`);
     selectElement.src = avatarSrc;
+    selectElement.parentElement.setAttribute('data-matrix', value);
   
     console.log(clickedEntry);
     console.log("Current Unit Set ID", this.currentUnitSetId);
@@ -128,6 +131,94 @@ export class HealingCalculatorComponent implements OnInit {
     }
   }
 
+  logEverything(event: Event) {
+    const stats = {
+      hp: this.hpStat ?? 0,
+      crit: this.critStat ?? 0,
+      critRate: this.critRateStat ?? 0,
+      physicalAtk: this.physicalAtkStat ?? 0,
+      flameAtk: this.flameAtkStat ?? 0,
+      frostAtk: this.frostAtkStat ?? 0,
+      voltAtk: this.voltAtkStat ?? 0,
+    };
+
+    type Matrix = {
+      matrixName: string;
+      starValue: number;
+    };
+    
+    type Unit = {
+      simulacraName: string;
+      starValue: number;
+      matricesSet: Map<string, Matrix>;
+    };
+    
+    const unitValues: Unit[] = [];
+    
+    const unitElements = document.querySelectorAll('[data-unit]');
+    
+    for (let i = 0; i < unitElements.length; i++) {
+      const unitElement = unitElements[i];
+      const simulacraSelect = unitElement.querySelector('.simulacra-select');
+      const starSelect = unitElement.querySelector('.stars');
+    
+      if (simulacraSelect && starSelect) {
+        const simulacraValue = simulacraSelect.getAttribute('data-simulacra') || '';
+    
+        if (simulacraValue === '') {
+          alert('Please fill out all the unit fields');
+          throw new Error('Please fill out all the unit fields');
+        }
+    
+        const starSelectChildren = starSelect.children;
+        let maxAdvancementLevel = -1;
+    
+        for (let j = 0; j < starSelectChildren.length; j++) {
+          const child = starSelectChildren[j];
+          if (child.classList.contains('active')) {
+            const advancementLevel = Number(child.getAttribute('data-advancement-level'));
+            if (advancementLevel > maxAdvancementLevel) {
+              maxAdvancementLevel = advancementLevel;
+            }
+          }
+        }
+    
+        unitValues.push({
+          simulacraName: simulacraValue,
+          starValue: maxAdvancementLevel,
+          matricesSet: new Map()  // We'll populate this later
+        });
+      }
+    }
+
+    console.log("Unit Values", unitValues);
+  
+    alert(
+      "HP: " + stats.hp + '\n' +
+      "Crit: " + stats.crit + '\n' +
+      "Crit Rate: " + stats.critRate + '\n' +
+      "Physical ATK: " + stats.physicalAtk + '\n' +
+      "Flame ATK: " + stats.flameAtk + '\n' +
+      "Frost ATK: " + stats.frostAtk + '\n' +
+      "Volt ATK: " + stats.voltAtk + '\n' +
+      unitValues.map(unit => unit.simulacraName + ": " + unit.starValue).join('\n')
+    );
+  }
+  
+  setActiveInfo(event: Event | string | null) {
+    if (typeof event === 'string') {
+      this.activeInfo = event;
+    } else if (event instanceof Event) {
+      const target = (event.target as HTMLElement);
+      this.activeInfo = target.textContent || ''; // Assuming the text content of the element is the desired information
+      const rect = target.getBoundingClientRect();
+      const underline = document.querySelector('.underline') as HTMLElement;
+      const containerRect = (underline.parentElement as HTMLElement).getBoundingClientRect();
+      underline.style.left = `${rect.left - containerRect.left - 8}px`; // offset the width extension
+      underline.style.width = `${rect.width + 16}px`; // make it a bit prettier
+    }
+  }
+
   @HostListener('document:click', ['$event.target'])
   onDocumentClick(target: HTMLElement) {
     if (!target.closest('.all-units')) {
@@ -141,5 +232,17 @@ export class HealingCalculatorComponent implements OnInit {
   @HostListener('change', ['$event.target'])
   onStatChange(target: HTMLInputElement) {
     console.log(`Changed to ${target.value}`);  // This console logs the stats whenever changed
+  }
+
+  @ViewChildren('info') infos!: QueryList<ElementRef>;
+
+  ngAfterViewInit() {
+    const underLineInit = new Event('custom');
+    Object.defineProperty(underLineInit, 'target', {value: this.infos.first.nativeElement, enumerable: true});
+    this.setActiveInfo(underLineInit); // make the underline appear under "Advancements" on page load
+
+    setTimeout(() => {
+      $('.underline').css('transition', 'left 0.3s ease, width 0.3s ease');
+    }, 1); // shit solution so it doesnt get applied mid-render
   }
 }
