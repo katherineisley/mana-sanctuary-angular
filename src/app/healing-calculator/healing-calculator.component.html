@@ -26,8 +26,8 @@
         <div class="entry" [attr.data-name]="unit.slug" *ngFor="let unit of units" (click)="changeThumbnailUnit(unit)">
           <img class="avatar" src="assets/simulacra/{{unit.slug}}_avatar.webp" alt="Avatar">
           <div class="wrapper">
-            <span class="name">{{unit.name[0]}}</span>
-            <span class="description">{{unit.resonance}}</span>
+            <span class="name">{{unit?.name[0]}}</span>
+            <span class="description">{{unit?.resonance}}</span>
           </div>
         </div>
       </div>
@@ -36,10 +36,10 @@
           <div class="entry" [attr.data-name]="matrix.slug" data-setpc="2pc" (click)="changeThumbnailMatrix(matrix)">
             <img class="avatar" src="assets/matrices/{{matrix.slug}}_matrix.webp" alt="Avatar">
             <div class="wrapper">
-              <span class="name">{{matrix.name}}
+              <span class="name">{{matrix?.name}}
                 <span class="twopc">2pc</span>
               </span>
-              <span class="description">{{matrix.twopc.buffs?.join(', ')}}</span>
+              <span class="description">{{matrix.twopc?.buffs?.join(', ')}}</span>
             </div>
           </div>
           <div class="entry" [attr.data-name]="matrix.slug" data-setpc="4pc" (click)="changeThumbnailMatrix(matrix)">
@@ -48,16 +48,35 @@
               <span class="name">{{matrix.name}}
                 <span class="fourpc">4pc</span>
               </span>
-              <span class="description">{{matrix.fourpc.buffs?.join(', ')}}</span>
+              <span class="description">{{matrix.fourpc?.buffs?.join(', ')}}</span>
             </div>
           </div>
         </ng-container>
+      </div>
+      <div class="all-traits" [style.display]="showAllTraits ? 'flex' : 'none'">
+        <div class="entry" [attr.data-name]="trait.slug" *ngFor="let trait of traits" (click)="changeThumbnailTrait(trait)">
+          <img class="avatar" src="assets/simulacra/{{trait.slug}}_avatar.webp" alt="Avatar">
+          <div class="wrapper">
+            <span class="name">{{trait?.name[0]}}</span>
+            <!-- {{trait.trait[1].description[0].paragraph}} -->
+            <span class="description">Lorem ipsum</span>
+          </div>
+        </div>
+      </div>
+      <div class="all-relics" [style.display]="showAllRelics ? 'flex' : 'none'">
+        <div class="entry" [attr.data-name]="relic.slug" *ngFor="let relic of relics" (click)="changeThumbnailRelic(relic)">
+          <img class="avatar" src="assets/relics/{{relic.slug}}_relic.webp" alt="Avatar">
+          <div class="wrapper">
+            <span class="name">{{relic.name}}</span>
+            <span class="description">Lorem ipsum</span>
+          </div>
+        </div>
       </div>
       <div class="unit" data-unit="1">
         <div class="simulacra">
           <div class="subtitle">Weapons</div>
           <div class="simulacra-select" (click)="toggleUnitSelect($event, 1)">
-            <img src="assets/other/simualcra_select.svg" alt="Select" class="image">
+            <img src="assets/other/circle_select.svg" alt="Select" class="image">
           </div>
           <div class="stars">
             <ng-container>
@@ -69,8 +88,8 @@
           <div class="subtitle">Matrices</div>
           <div class="matrix-wrapper">
             <div class="matrix-select-container">
-              <div class="matrix-select" (click)="toggleMatrixSelect($event, 1, 0)">
-                <img src="assets/other/matrix_select.svg" alt="Select" class="image">
+              <div class="matrix-select" (click)="toggleMatrixSelect($event, 1, 1)">
+                <img src="assets/other/square_select.svg" alt="Select" class="image">
               </div>
               <div class="stars">
                 <ng-container>
@@ -79,8 +98,8 @@
               </div> 
             </div>
             <div class="matrix-select-container">
-              <div class="matrix-select" (click)="toggleMatrixSelect($event, 1, 1)">
-                <img src="assets/other/matrix_select.svg" alt="Select" class="image">
+              <div class="matrix-select" (click)="toggleMatrixSelect($event, 1, 2)">
+                <img src="assets/other/square_select.svg" alt="Select" class="image">
               </div>
               <div class="stars">
                 <ng-container>
@@ -94,7 +113,7 @@
       <div class="unit" data-unit="2">
         <div class="simulacra">
           <div class="simulacra-select" (click)="toggleUnitSelect($event, 2)">
-            <img src="assets/other/simualcra_select.svg" alt="Select" class="image">
+            <img src="assets/other/circle_select.svg" alt="Select" class="image">
           </div>
           <div class="stars">
             <ng-container>
@@ -105,8 +124,8 @@
         <div class="matrices">
           <div class="matrix-wrapper">
             <div class="matrix-select-container">
-              <div class="matrix-select" (click)="toggleMatrixSelect($event, 2, 0)">
-                <img src="assets/other/matrix_select.svg" alt="Select" class="image">
+              <div class="matrix-select" (click)="toggleMatrixSelect($event, 2, 1)">
+                <img src="assets/other/square_select.svg" alt="Select" class="image">
               </div>
               <div class="stars">
                 <ng-container>
@@ -115,8 +134,8 @@
               </div> 
             </div>
             <div class="matrix-select-container">
-              <div class="matrix-select" (click)="toggleMatrixSelect($event, 2, 1)">
-                <img src="assets/other/matrix_select.svg" alt="Select" class="image">
+              <div class="matrix-select" (click)="toggleMatrixSelect($event, 2, 2)">
+                <img src="assets/other/square_select.svg" alt="Select" class="image">
               </div>
               <div class="stars">
                 <ng-container>
@@ -130,7 +149,7 @@
       <div class="unit" data-unit="3">
         <div class="simulacra">
           <div class="simulacra-select" (click)="toggleUnitSelect($event, 3)">
-            <img src="assets/other/simualcra_select.svg" alt="Select" class="image">
+            <img src="assets/other/circle_select.svg" alt="Select" class="image">
           </div>
           <div class="stars">
             <ng-container>
@@ -141,8 +160,8 @@
         <div class="matrices">
           <div class="matrix-wrapper">
             <div class="matrix-select-container">
-              <div class="matrix-select" (click)="toggleMatrixSelect($event, 3, 0)">
-                <img src="assets/other/matrix_select.svg" alt="Select" class="image">
+              <div class="matrix-select" (click)="toggleMatrixSelect($event, 3, 1)">
+                <img src="assets/other/square_select.svg" alt="Select" class="image">
               </div>
               <div class="stars">
                 <ng-container>
@@ -151,8 +170,8 @@
               </div> 
             </div>
             <div class="matrix-select-container">
-              <div class="matrix-select" (click)="toggleMatrixSelect($event, 3, 1)">
-                <img src="assets/other/matrix_select.svg" alt="Select" class="image">
+              <div class="matrix-select" (click)="toggleMatrixSelect($event, 3, 2)">
+                <img src="assets/other/square_select.svg" alt="Select" class="image">
               </div>
               <div class="stars">
                 <ng-container>
@@ -164,8 +183,55 @@
         </div>
       </div>
     </div>
-    <div class="titan-and-trait">
-
+    <div class="extras">
+      <div class="entry">
+        <div class="trait">
+          <div class="subtitle">Trait</div>
+          <div class="trait-select" (click)="toggleTraitSelect($event)">
+            <img src="assets/other/circle_select.svg" alt="Select" class="image">
+          </div>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="titan-stats">
+          <div class="subtitle">Titan Stats</div>
+          <div class="stat">
+            <img class="stat-icon" src="assets/stats/icon_incheal.webp" alt="Increased Healing Icon">
+            <div class="stat-wrapper">
+              <label class="stat-label">Increased Healing (Level)</label>
+              <input type="number" [(ngModel)]="titanHealing" placeholder="0" class="stat-input">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="relics">
+          <div class="subtitle">Relics</div>
+          <div class="relic-wrapper">
+            <div class="relic-select-container">
+              <div class="relic-select" (click)="toggleRelicSelect($event, 1)">
+                <img src="assets/other/square_select.svg" alt="Select" class="image">
+              </div>
+              <div class="stars">
+                <!-- USES UNIT STARS IDK IF THIS IS A PROBLEM -->
+                <ng-container>
+                  <ng-container *ngTemplateOutlet="svgTemplateUnit"></ng-container>
+                </ng-container>
+              </div>
+            </div>
+            <div class="relic-select-container">
+              <div class="relic-select" (click)="toggleRelicSelect($event, 2)">
+                <img src="assets/other/square_select.svg" alt="Select" class="image">
+              </div>
+              <div class="stars">
+                <ng-container>
+                  <ng-container *ngTemplateOutlet="svgTemplateUnit"></ng-container>
+                </ng-container>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="gear-stats">
       <div class="subtitle">Stats</div>
@@ -186,40 +252,47 @@
       <div class="stat">
         <img class="stat-icon" src="assets/stats/icon_crit.webp" alt="Crit Rate Icon">
         <div class="stat-wrapper">
-          <label class="stat-label">Crit Rate</label>
+          <label class="stat-label">Crit Rate %</label>
           <input type="number" [(ngModel)]="critRateStat" placeholder="0" class="stat-input">
         </div>
       </div>
       <div class="stat">
-        <img class="stat-icon" src="assets/icons/physical_atk.webp" alt="Physical ATK Icon">
+        <img class="stat-icon" src="assets/stats/icon_critdmg.webp" alt="Crit DMG Icon">
+        <div class="stat-wrapper">
+          <label class="stat-label">Crit DMG %</label>
+          <input type="number" [(ngModel)]="critDmgStat" placeholder="0" class="stat-input">
+        </div>
+      </div>
+      <div class="stat">
+        <img class="stat-icon" src="assets/stats/icon_atk.webp" alt="Physical ATK Icon">
         <div class="stat-wrapper">
           <label class="stat-label">Physical ATK</label>
           <input type="number" [(ngModel)]="physicalAtkStat" placeholder="0" class="stat-input">
         </div>
       </div>
       <div class="stat">
-        <img class="stat-icon" src="assets/icons/flame_atk.svg" alt="Flame ATK Icon">
+        <img class="stat-icon" src="assets/stats/icon_flame.webp" alt="Flame ATK Icon">
         <div class="stat-wrapper">
           <label class="stat-label">Flame ATK</label>
           <input type="number" [(ngModel)]="flameAtkStat" placeholder="0" class="stat-input">
         </div>
       </div>
       <div class="stat">
-        <img class="stat-icon" src="assets/icons/frost_atk.svg" alt="Frost ATK Icon">
+        <img class="stat-icon" src="assets/stats/icon_frost.webp" alt="Frost ATK Icon">
         <div class="stat-wrapper">
           <label class="stat-label">Frost ATK</label>
           <input type="number" [(ngModel)]="frostAtkStat" placeholder="0" class="stat-input">
         </div>
       </div>
       <div class="stat">
-        <img class="stat-icon" src="assets/icons/volt_atk.svg" alt="Volt ATK Icon">
+        <img class="stat-icon" src="assets/stats/icon_volt.webp" alt="Volt ATK Icon">
         <div class="stat-wrapper">
           <label class="stat-label">Volt ATK</label>
           <input type="number" [(ngModel)]="voltAtkStat" placeholder="0" class="stat-input">
         </div>
       </div>
       <div class="stat">
-        <img class="stat-icon" src="assets/icons/altered_atk.svg" alt="Altered ATK Icon">
+        <img class="stat-icon" src="assets/stats/icon_altered.webp" alt="Altered ATK Icon">
         <div class="stat-wrapper">
           <label class="stat-label">Altered ATK</label>
           <input type="number" [(ngModel)]="alteredAtkStat" placeholder="0" class="stat-input">

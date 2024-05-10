@@ -10,31 +10,45 @@ import { HttpClient } from '@angular/common/http';
 export class HealingCalculatorComponent implements OnInit {
   units: any[] = [];
   matrices: any[] = [];
+  traits: any[] = [];
+  relics: any[] = [];
   currentUnitSetId!: number;
   currentMatrixSelectIndex!: number;
+  currentRelicSelectIndex!: number;
   showAllUnits = false;
   showAllMatrices = false;
+  showAllTraits = false;
+  showAllRelics = false;
   activeInfo: string = 'Summary'; 
 
   // STATS
   hpStat!: number;
   critStat!: number;
   critRateStat!: number;
+  critDmgStat!: number;
   physicalAtkStat!: number;
   flameAtkStat!: number;
   frostAtkStat!: number;
   voltAtkStat!: number;
   alteredAtkStat!: number;
 
+  // TITAN
+  titanHealing!: number;
+
   constructor(private http: HttpClient, private renderer: Renderer2, private el: ElementRef) { }
 
   ngOnInit() {
     this.http.get<any>("assets/json/simulacra-data.json").subscribe(data => {
       this.units = data;
-    }, error => console.error(error));
+      this.traits = data; // Traits are a sub category of Units in the JSON
+    }),
     this.http.get<any>("assets/json/matrices-data.json").subscribe(data => {
       this.matrices = data;
-    }, error => console.error(error));
+    }),
+    this.http.get<any>("assets/json/relics-data.json").subscribe(data => {
+      this.relics = data;
+      console.log(this.relics);
+    })
   }
 
   toggleUnitSelect(event: Event, clickedUnitSetId: number) { // this shit needs to be refactored and optimized, shares a lot of code with toggleMatrixSelect
@@ -76,6 +90,42 @@ export class HealingCalculatorComponent implements OnInit {
     this.renderer.setStyle(allMatricesElement, 'left', `${left + rect.width + offset}px`);
   }
 
+  toggleTraitSelect(event: Event) {
+    event.stopPropagation();
+    this.showAllTraits = !this.showAllTraits;
+
+    const clickedElement = event.target as HTMLElement;
+    const rect = clickedElement.getBoundingClientRect();
+    const docEl = document.documentElement;
+    const offset = 20; // offset in pixels
+
+    const top = rect.top + window.pageYOffset - docEl.clientTop;
+    const left = rect.left + window.pageXOffset - docEl.clientLeft;
+
+    const allTraitsElement = this.el.nativeElement.querySelector('.all-traits');
+    this.renderer.setStyle(allTraitsElement, 'top', `${top}px`);
+    this.renderer.setStyle(allTraitsElement, 'left', `${left + rect.width + offset}px`);
+  }
+
+  toggleRelicSelect(event: Event, clickedRelicSelect: number) {
+    this.currentRelicSelectIndex = clickedRelicSelect;
+
+    event.stopPropagation();
+    this.showAllRelics = !this.showAllRelics;
+
+    const clickedElement = event.target as HTMLElement;
+    const rect = clickedElement.getBoundingClientRect();
+    const docEl = document.documentElement;
+    const offset = 20; // offset in pixels
+
+    const top = rect.top + window.pageYOffset - docEl.clientTop;
+    const left = rect.left + window.pageXOffset - docEl.clientLeft;
+
+    const allRelicsElement = this.el.nativeElement.querySelector('.all-relics');
+    this.renderer.setStyle(allRelicsElement, 'top', `${top}px`);
+    this.renderer.setStyle(allRelicsElement, 'left', `${left + rect.width + offset}px`);
+  }
+
   changeThumbnailUnit(clickedEntry: any) {
     const value = clickedEntry.slug;
   
@@ -92,7 +142,7 @@ export class HealingCalculatorComponent implements OnInit {
     const value = clickedEntry.slug;
   
     const avatarSrc = `assets/matrices/${value}_matrix.webp`;
-    const selectElement = this.el.nativeElement.querySelector(`.unit[data-unit="${this.currentUnitSetId}"] .matrix-select-container:nth-child(${this.currentMatrixSelectIndex + 1}) .matrix-select img`);
+    const selectElement = this.el.nativeElement.querySelector(`.unit[data-unit="${this.currentUnitSetId}"] .matrix-select-container:nth-child(${this.currentMatrixSelectIndex}) .matrix-select img`);
     selectElement.src = avatarSrc;
     selectElement.parentElement.setAttribute('data-matrix', value);
   
@@ -100,7 +150,29 @@ export class HealingCalculatorComponent implements OnInit {
     console.log("Current Unit Set ID", this.currentUnitSetId);
     console.log("Current Matrix Select Index", this.currentMatrixSelectIndex);
   }
+
+  changeThumbnailTrait(clickedEntry: any) {
+    const value = clickedEntry.slug;
+
+    const avatarSrc = `assets/simulacra/${value}_avatar.webp`;
+    const selectElement = this.el.nativeElement.querySelector(`.trait-select img`);
+    selectElement.src = avatarSrc;
+    selectElement.parentElement.setAttribute('data-trait', value);
   
+    console.log(clickedEntry);
+    console.log("Current Unit Set ID", this.currentUnitSetId);
+  }
+
+  changeThumbnailRelic(clickedEntry: any) {
+    const value = clickedEntry.slug;
+  
+    const avatarSrc = `assets/relics/${value}_relic.webp`;
+    const selectElement = this.el.nativeElement.querySelector(`.relic-select-container:nth-child(${this.currentRelicSelectIndex}) .relic-select img`);
+    selectElement.src = avatarSrc;
+    selectElement.parentElement.setAttribute('data-relic', value);
+  
+    console.log(clickedEntry);
+  }
   
   currentAdvancementLevel(event: Event) {
     let target = event.target as HTMLElement;
@@ -132,15 +204,22 @@ export class HealingCalculatorComponent implements OnInit {
   }
 
   logEverything(event: Event) {
+    // STATS & TITAN
+
     const stats = {
       hp: this.hpStat ?? 0,
       crit: this.critStat ?? 0,
       critRate: this.critRateStat ?? 0,
+      critDmg: this.critDmgStat ?? 0,
       physicalAtk: this.physicalAtkStat ?? 0,
       flameAtk: this.flameAtkStat ?? 0,
       frostAtk: this.frostAtkStat ?? 0,
       voltAtk: this.voltAtkStat ?? 0,
+
+      titanHealing: this.titanHealing ?? 0,
     };
+
+    // UNITS & MATRICES
 
     type Matrix = {
       matrixName: string;
@@ -154,7 +233,6 @@ export class HealingCalculatorComponent implements OnInit {
     };
     
     const unitValues: Unit[] = [];
-    
     const unitElements = document.querySelectorAll('[data-unit]');
     
     for (let i = 0; i < unitElements.length; i++) {
@@ -192,16 +270,28 @@ export class HealingCalculatorComponent implements OnInit {
     }
 
     console.log("Unit Values", unitValues);
+
+    // TRAIT
+
+    const traitValue = (document.querySelector('.trait-select')?.getAttribute('data-trait') || '').trim();
+
+    // RELICS
+
+    // THE ACTUAL LOGGER
   
     alert(
       "HP: " + stats.hp + '\n' +
       "Crit: " + stats.crit + '\n' +
-      "Crit Rate: " + stats.critRate + '\n' +
+      "Crit Rate %: " + stats.critRate + '\n' +
+      "Crit DMG %: " + stats.critDmg + '\n' +
       "Physical ATK: " + stats.physicalAtk + '\n' +
       "Flame ATK: " + stats.flameAtk + '\n' +
       "Frost ATK: " + stats.frostAtk + '\n' +
       "Volt ATK: " + stats.voltAtk + '\n' +
-      unitValues.map(unit => unit.simulacraName + ": " + unit.starValue).join('\n')
+      "Increased Healing Level: " + stats.titanHealing + '\n' +
+      unitValues.map(unit => unit.simulacraName + ": " + unit.starValue).join('\n') + '\n' +
+      "Trait: " + traitValue
+      // Relics
     );
   }
   
@@ -226,6 +316,12 @@ export class HealingCalculatorComponent implements OnInit {
     }
     if (!target.closest('.all-matrices')) {
       this.showAllMatrices = false;
+    }
+    if (!target.closest('.all-traits')) {
+      this.showAllTraits = false;
+    }
+    if (!target.closest('.all-relics')) {
+      this.showAllRelics = false;
     }
   }
 

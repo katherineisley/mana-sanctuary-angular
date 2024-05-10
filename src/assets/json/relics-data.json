@@ -5,7 +5,7 @@
     "tag": "battle",
     "elementBoost": "flameresistance",
     "rarity": "SR",
-    "onDPSGuide":false,
+    "onDPSGuide": false,
     "onHealingGuide": false,
     "onTankGuide": false,
     "roles": [
@@ -702,6 +702,49 @@
       }       
     ]
 
+  },
+  {
+    "slug": "confinement",
+    "name": "Confinement",
+    "tag": "battle",
+    "elementBoost": "element_physical",
+    "rarity": "SSR",
+    "onDPSGuide":false,
+    "onHealingGuide": false,
+    "onTankGuide": false,
+    "roles": [
+      ""
+    ],
+    "description": [
+      {
+          "paragraph":"Create an area of confinement with a radius of 7 meters for 10 seconds. Energy pulses within the area, dealing elemental damage equal to 73.4% of ATK to targets on the ground every second, based on the current weapon's element. Targets that touch the edge of the area are afflicted with a 2-second stun effect. 240-second cooldown."            
+      }       
+    ],
+    "oneStar": [
+      {
+          "paragraph":"Stun targets for 3 seconds. Cooldown: 180 seconds."            
+      }       
+    ],
+    "twoStar": [
+      {
+          "paragraph":"Increase damage dealt by energy pulses by 30%."            
+      }       
+    ],
+    "threeStar": [
+      {
+          "paragraph":"Reduce cooldown to 120 seconds."            
+      }       
+    ],
+    "fourStar": [
+      {
+          "paragraph":"Increase physical damage by 2%, even if not deployed. Unavailable in Apex League."            
+      }       
+    ],
+    "fiveStar": [
+      {
+          "paragraph":"Trigger an earthquake every 3 seconds, suspending targets. The waves can be dodged by jumping."            
+      }       
+    ]
   },
   {
     "slug": "hologramprojector",
