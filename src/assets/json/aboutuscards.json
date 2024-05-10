@@ -3,20 +3,20 @@
         "avatar": "kath",
         "name": "Kath",
         "discord": "@katherineisley",
-        "title": "Founder & OOW Tryhard",
-        "quote": "Lorem ipsum dolor sit amet, consecte tur adipiscing elit.",
+        "title": "Project Lead, Content, Web Dev",
+        "quote": "It will be a simple one-pager.",
         "favourite": "lyra1",
         "color1": "#FF0000",
         "color2": "#000000",
         "links": [
             {
                 "alt": "Twitch",
-                "url": "https://twitch.tv",
-                "icon": "twitch"
+                "url": "https://github.com/katherineisley",
+                "icon": "github"
             },
             {
                 "alt": "YouTube",
-                "url": "https://youtube.com",
+                "url": "https://youtube.com/@kath4613",
                 "icon": "youtube"
             }
         ]
@@ -25,8 +25,8 @@
         "avatar": "melly",
         "name": "Melly",
         "discord": "@neptunenx",
-        "title": "Developer & Code Janitor",
-        "quote": "Lorem ipsum dolor sit amet, consecte tur adipiscing elit.",
+        "title": "Main Developer & Code Janitor",
+        "quote": "",
         "favourite": "umi1",
         "color1": "#FF00F5",
         "color2": "#9E00FF",
@@ -41,6 +41,57 @@
                 "url": "https://github.com",
                 "icon": "github"
             }
+        ]
+    },
+    {
+        "avatar": "flamesword",
+        "name": "Flamesword",
+        "discord": "@flamesword.",
+        "title": "Content & Data",
+        "quote": " ",
+        "favourite": "nemesis1",
+        "color1":"#58B8EC",
+        "color2":  "#113F60",
+        "links": [
+        ]
+    },
+    {
+        "avatar": "melly",
+        "name": "Melly",
+        "discord": "@neptunenx",
+        "title": "Developer & Code Janitor",
+        "quote": "",
+        "favourite": "umi1",
+        "color1": "#FF00F5",
+        "color2": "#9E00FF",
+        "links": [
+
+        ]
+    },
+    {
+        "avatar": "melly",
+        "name": "Melly",
+        "discord": "@neptunenx",
+        "title": "Main Developer & Code Janitor",
+        "quote": "",
+        "favourite": "umi1",
+        "color1": "#FF00F5",
+        "color2": "#9E00FF",
+        "links": [
+
+        ]
+    },
+    {
+        "avatar": "melly",
+        "name": "Melly",
+        "discord": "@neptunenx",
+        "title": "Developer & Code Janitor",
+        "quote": "",
+        "favourite": "umi1",
+        "color1": "#FF00F5",
+        "color2": "#9E00FF",
+        "links": [
+
         ]
     }
 ]

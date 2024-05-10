@@ -3,7 +3,6 @@
     "slug": "rei",
     "name": "Rei",
     "tag": "new",
-    "avatar": "rei_avatar",
     "element": [
       "element_volt",
       "element_frost"
@@ -46,7 +45,6 @@
     "slug": "asuka",
     "name": "Asuka",
     "tag": "new",
-    "avatar": "asuka_avatar",
     "element": [
       "element_physical",
       "element_flame"
@@ -89,7 +87,6 @@
     "slug": "yanuo",
     "name": "Yanuo",
     "tag": "new",
-    "avatar": "yanuo_avatar",
     "element": [
       "element_frost",
       "element_volt"
@@ -126,7 +123,6 @@
     "slug": "plotti",
     "name": "Plotti",
     "tag": "new",
-    "avatar": "plotti_avatar",
     "element": [
       "element_flame",
       "element_physical"
@@ -163,7 +159,6 @@
     "slug": "brevey",
     "name": "Brevey",
     "tag": "new",
-    "avatar": "brevey_avatar",
     "element": [
       "element_volt",
       "element_frost"
@@ -206,7 +201,6 @@
     "slug": "yanmiao",
     "name": "Yan Miao",
     "tag": "new",
-    "avatar": "yanmiao_matrix",
     "element": [
        "element_physical",
        "element_flame"
@@ -249,7 +243,6 @@
     "slug": "nanyin",
     "name": "Nan Yin",
     "tag": "meta",
-    "avatar": "nanyin_avatar",
     "element": [
       "element_altered"
     ],
@@ -291,7 +284,6 @@
     "slug": "linghan",
     "name": "Ling Han",
     "tag": "meta",
-    "avatar": "linghan_avatar",
     "element": [
       "element_frost"
     ],
@@ -333,7 +325,6 @@
     "slug": "feise",
     "name": "Fei Se",
     "tag": "meta",
-    "avatar": "feise_avatar",
     "element": [
       "element_flame"
     ],
@@ -375,7 +366,6 @@
     "slug": "huang",
     "name": "Huang",
     "tag": "meta",
-    "avatar": "huang_avatar",
     "element": [
       "element_volt"
     ],
@@ -417,7 +407,6 @@
     "slug": "mingjing",
     "name": "Ming Jing",
     "tag": "meta",
-    "avatar": "mingjing_avatar",
     "element": [
       "element_physical",
       "element_flame"
@@ -460,7 +449,6 @@
     "slug": "yulan",
     "name": "Yu Lan",
     "tag": "meta",
-    "avatar": "yulan_avatar",
     "element": [
       "element_frost"
     ],
@@ -502,7 +490,6 @@
     "slug": "liuhuo",
     "name": "Liu Huo",
     "tag": "",
-    "avatar": "NEWCHARHERE",
     "element": [
       "element_flame"
     ],
@@ -544,7 +531,6 @@
     "slug": "rubilia",
     "name": "Rubilia",
     "tag": "",
-    "avatar": "rubilia_avatar",
     "element": [
       "element_volt"
     ],
@@ -586,7 +572,6 @@
     "slug": "gnonno",
     "name": "Gnonno",
     "tag": "",
-    "avatar": "gnonno_avatar",
     "element": [
       "element_physical"
     ],
@@ -628,7 +613,6 @@
     "slug": "fiona",
     "name": "Fiona",
     "tag": "meta",
-    "avatar": "fiona_avatar",
     "element": [
       "element_altered"
     ],
@@ -670,7 +654,6 @@
     "slug": "icarus",
     "name": "Icarus",
     "tag": "",
-    "avatar": "icarus_avatar",
     "element": [
       "element_frost"
     ],
@@ -712,7 +695,6 @@
     "slug": "lan",
     "name": "Lan",
     "tag": "",
-    "avatar": "lan_avatar",
     "element": [
       "element_flame"
     ],
@@ -754,7 +736,6 @@
     "slug": "haboela",
     "name": "Haboela",
     "tag": "",
-    "avatar": "haboela_avatar",
     "element": [
       "element_all"
     ],
@@ -793,7 +774,6 @@
     "slug": "scylla",
     "name": "Scylla",
     "tag": "",
-    "avatar": "scylla_avatar",
     "element": [
       "element_all"
     ],
@@ -832,7 +812,6 @@
     "slug": "fenrir",
     "name": "Fenrir",
     "tag": "",
-    "avatar": "fenrir_avatar",
     "element": [
       "element_volt"
     ],
@@ -874,7 +853,6 @@
     "slug": "umi",
     "name": "Umi",
     "tag": "",
-    "avatar": "umi_avatar",
     "element": [
       "element_physical"
     ],
@@ -916,7 +894,6 @@
     "slug": "alyss",
     "name": "Alyss",
     "tag": "standard",
-    "avatar": "alyss_avatar",
     "element": [
       "element_frost"
     ],
@@ -958,7 +935,6 @@
     "slug": "annabella",
     "name": "Annabella",
     "tag": "standard",
-    "avatar": "annabella_avatar",
     "element": [
       "element_flame"
     ],
@@ -1000,7 +976,6 @@
     "slug": "tianlang",
     "name": "Tian Lang",
     "tag": "standard",
-    "avatar": "tianlang_avatar",
     "element": [
       "element_volt"
     ],
@@ -1042,7 +1017,6 @@
     "slug": "lyra",
     "name": "Lyra",
     "tag": "standard",
-    "avatar": "lyra_avatar",
     "element": [
       "element_physical"
     ],
@@ -1078,7 +1052,6 @@
     "slug": "lin",
     "name": "Lin",
     "tag": "",
-    "avatar": "lin_avatar",
     "element": [
       "element_altered"
     ],
@@ -1120,7 +1093,6 @@
     "slug": "sakifuwa",
     "name": "Saki Fuwa",
     "tag": "standard",
-    "avatar": "sakifuwa_avatar",
     "element": [
       "element_frost"
     ],
@@ -1162,7 +1134,6 @@
     "slug": "ruby",
     "name": "Ruby",
     "tag": "standard",
-    "avatar": "ruby_avatar",
     "element": [
       "element_flame"
     ],
@@ -1201,7 +1172,6 @@
     "slug": "cobaltb",
     "name": "Cobalt-B",
     "tag": "standard",
-    "avatar": "cobaltb_avatar",
     "element": [
       "element_flame"
     ],
@@ -1237,7 +1207,6 @@
     "slug": "claudia",
     "name": "Claudia",
     "tag": "standard",
-    "avatar": "claudia_avatar",
     "element": [
       "element_physical"
     ],
@@ -1273,7 +1242,6 @@
     "slug": "frigg",
     "name": "Frigg",
     "tag": "standard",
-    "avatar": "frigg_avatar",
     "element": [
       "element_frost"
     ],
@@ -1312,7 +1280,6 @@
     "slug": "nemesis",
     "name": "Nemesis",
     "tag": "standard",
-    "avatar": "nemesis_avatar",
     "element": [
       "element_volt"
     ],
@@ -1354,7 +1321,6 @@
     "slug": "zero",
     "name": "Zero",
     "tag": "standard",
-    "avatar": "zero_avatar",
     "element": [
       "element_flame"
     ],
@@ -1390,7 +1356,6 @@
     "slug": "tsubasa",
     "name": "Tsubasa",
     "tag": "standard",
-    "avatar": "tsubasa_avatar",
     "element": [
       "element_frost"
     ],
@@ -1426,7 +1391,6 @@
     "slug": "shiro",
     "name": "Shiro",
     "tag": "standard",
-    "avatar": "shiro_avatar",
     "element": [
       "element_physical"
     ],
@@ -1462,7 +1426,6 @@
     "slug": "samir",
     "name": "Samir",
     "tag": "standard",
-    "avatar": "samir_avatar",
     "element": [
       "element_volt"
     ],
@@ -1498,7 +1461,6 @@
     "slug": "meryl",
     "name": "Meryl",
     "tag": "standard",
-    "avatar": "meryl_avatar",
     "element": [
       "element_frost"
     ],
@@ -1534,7 +1496,6 @@
     "slug": "king",
     "name": "King",
     "tag": "standard",
-    "avatar": "king_avatar",
     "element": [
       "element_flame"
     ],
@@ -1570,7 +1531,6 @@
     "slug": "huma",
     "name": "Huma",
     "tag": "standard",
-    "avatar": "huma_avatar",
     "element": [
       "element_flame"
     ],
@@ -1609,7 +1569,6 @@
     "slug": "crow",
     "name": "Crow",
     "tag": "standard",
-    "avatar": "crow_avatar",
     "element": [
       "element_volt"
     ],
@@ -1645,7 +1604,6 @@
     "slug": "cocoritter",
     "name": "Cocoritter",
     "tag": "standard",
-    "avatar": "cocoritter_avatar",
     "element": [
       "element_frost"
     ],
@@ -1684,7 +1642,6 @@
     "slug": "robarg",
     "name": "Robarg",
     "tag": "",
-    "avatar": "robarg_avatar",
     "element": [
       "element_all"
     ],
@@ -1707,7 +1664,6 @@
     "slug": "apophis",
     "name": "Apophis",
     "tag": "",
-    "avatar": "apophis_avatar",
     "element": [
       "element_all"
     ],
@@ -1730,7 +1686,6 @@
     "slug": "frostbot",
     "name": "Frostbot",
     "tag": "",
-    "avatar": "frostbot_avatar",
     "element": [
       "element_all"
     ],
@@ -1753,7 +1708,6 @@
     "slug": "sobek",
     "name": "Sobek",
     "tag": "",
-    "avatar": "sobek_avatar",
     "element": [
       "element_all"
     ],
@@ -1776,7 +1730,6 @@
     "slug": "barbarossa",
     "name": "Barbarossa",
     "tag": "",
-    "avatar": "barbarossa_avatar",
     "element": [
       "element_all"
     ],
@@ -1799,7 +1752,6 @@
     "slug": "pepper",
     "name": "Pepper",
     "tag": "",
-    "avatar": "pepper_avatar",
     "element": [
       "element_volt"
     ],
@@ -1822,7 +1774,6 @@
     "slug": "hilda",
     "name": "Hilda",
     "tag": "",
-    "avatar": "hilda_avatar",
     "element": [
       "element_frost"
     ],
@@ -1845,7 +1796,6 @@
     "slug": "ene",
     "name": "Ene",
     "tag": "",
-    "avatar": "ene_avatar",
     "element": [
       "element_frost"
     ],
@@ -1871,7 +1821,6 @@
     "slug": "echo",
     "name": "Echo",
     "tag": "",
-    "avatar": "echo_avatar",
     "element": [
       "element_volt"
     ],
@@ -1894,7 +1843,6 @@
     "slug": "bailing",
     "name": "Bai Ling",
     "tag": "",
-    "avatar": "bailing_avatar",
     "element": [
       "element_physical"
     ],
