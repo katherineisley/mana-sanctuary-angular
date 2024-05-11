@@ -20,6 +20,14 @@
     </div>
     <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa maxime sunt in, soluta dolorum aliquam reiciendis vitae omnis dicta doloremque saepe blanditiis, quam similique qui cumque accusamus, voluptate recusandae nulla?</p>
   </div>
+  <div class="error-notification" *ngIf="errors.length > 0">
+    <img class="error-icon" src="assets/other/error.svg" alt="Error">
+    <ul class="error-container">
+      <li *ngFor="let error of errors">
+        {{ error }}<br>
+      </li>
+    </ul>
+  </div>
   <div class="insertions">
     <div class="units">
       <div class="all-units" [style.display]="showAllUnits ? 'flex' : 'none'">

@@ -26,7 +26,7 @@
         "name": "Melly",
         "discord": "@neptunenx",
         "title": "Main Developer & Code Janitor",
-        "quote": "",
+        "quote": "I'd love to help! It'll just be a silly one-pager!",
         "favourite": "umi1",
         "color1": "#FF00F5",
         "color2": "#9E00FF",
@@ -50,46 +50,60 @@
         "title": "Content & Data",
         "quote": " ",
         "favourite": "alyss2",
-        "color1":"#58B8EC",
-        "color2":  "#113F60",
+        "color1": "#58B8EC",
+        "color2": "#113F60",
         "links": [
         ]
     },
     {
-        "avatar": "melly",
-        "name": "Melly",
-        "discord": "@neptunenx",
-        "title": "Developer & Code Janitor",
-        "quote": "",
-        "favourite": "umi1",
-        "color1": "#FF00F5",
-        "color2": "#9E00FF",
+        "avatar": "vilehead",
+        "name": "Vilehead",
+        "discord": "@vilehead",
+        "title": "Data Collection",
+        "quote": "Spreadsheets goes brrrrrrrr~",
+        "favourite": "cocoritter1",
+        "color1": "#FFFFFF",
+        "color2": "#020202",
+        "links": [
+            {
+                "alt": "LinkedIn",
+                "url": "https://www.linkedin.com/in/radek-bazak/",
+                "icon": "linkedin"
+            },
+            {
+                "alt": "YouTube",
+                "url": "https://youtube.com/@Vilehead",
+                "icon": "youtube"
+            },
+            {
+                "alt": "Facebook",
+                "url": "https://www.facebook.com/TheVilehead",
+                "icon": "facebook"
+            }
+        ]
+    },
+    {
+        "avatar": "kuragi",
+        "name": "Kuragi",
+        "discord": "@kurayami_01",
+        "title": "Tester",
+        "quote": "If you look and see nothing, you must simply look harder.",
+        "favourite": "asuka1",
+        "color1": "#b04402",
+        "color2": "#030001",
         "links": [
 
         ]
     },
     {
-        "avatar": "melly",
-        "name": "Melly",
-        "discord": "@neptunenx",
-        "title": "Main Developer & Code Janitor",
-        "quote": "",
-        "favourite": "umi1",
-        "color1": "#FF00F5",
-        "color2": "#9E00FF",
-        "links": [
-
-        ]
-    },
-    {
-        "avatar": "melly",
-        "name": "Melly",
-        "discord": "@neptunenx",
-        "title": "Developer & Code Janitor",
-        "quote": "",
-        "favourite": "umi1",
-        "color1": "#FF00F5",
-        "color2": "#9E00FF",
+        "avatar": "ibrahiar",
+        "name": "Ibrahiar",
+        "discord": "@ibrahiar",
+        "title": "Tester",
+        "quote": "Doing your Cetus Island grapple machine daily in 2024 is normal. I don't need help.",
+        "favourite": "nanyin2",
+        "color1": "#d3b491",
+        "color2": "#eaf1f1",
         "links": [
 
         ]

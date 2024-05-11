@@ -48,6 +48,29 @@
         }
     }
 
+    .error-notification {
+        margin: 40px 0 0;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        border: 2px solid red;
+        border-radius: 10px;
+        animation: 1s error 3;
+
+        .error-icon {
+            width: 36px;
+        }
+
+        .error-container {
+            list-style: unset;
+            padding: 0 0 0 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+    }
+
     .insertions {
         display: grid;
         // justify-items: center;
@@ -361,5 +384,19 @@
                 left: 0;
             }
         }
+    }
+}
+
+@keyframes error {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 0, 0, 0);
+    }
+    
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
     }
 }

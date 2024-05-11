@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 
 export class HealingCalculatorComponent implements OnInit {
+  errors: any[] = [];
   units: any[] = [];
   matrices: any[] = [];
   traits: any[] = [];
@@ -204,6 +205,8 @@ export class HealingCalculatorComponent implements OnInit {
   }
 
   logEverything(event: Event) {
+    this.errors = [];
+    
     // STATS & TITAN
 
     const stats = {
@@ -234,6 +237,7 @@ export class HealingCalculatorComponent implements OnInit {
     
     const unitValues: Unit[] = [];
     const unitElements = document.querySelectorAll('[data-unit]');
+    let isUnitErrorAdded = false;
     
     for (let i = 0; i < unitElements.length; i++) {
       const unitElement = unitElements[i];
@@ -243,9 +247,9 @@ export class HealingCalculatorComponent implements OnInit {
       if (simulacraSelect && starSelect) {
         const simulacraValue = simulacraSelect.getAttribute('data-simulacra') || '';
     
-        if (simulacraValue === '') {
-          alert('Please fill out all the unit fields');
-          throw new Error('Please fill out all the unit fields');
+        if (simulacraValue === '' && !isUnitErrorAdded) {
+          this.errors.push('Please fill out all the unit fields.');
+          isUnitErrorAdded = true;
         }
     
         const starSelectChildren = starSelect.children;
@@ -276,6 +280,16 @@ export class HealingCalculatorComponent implements OnInit {
     const traitValue = (document.querySelector('.trait-select')?.getAttribute('data-trait') || '').trim();
 
     // RELICS
+
+    // CONDITIONALS
+
+    if (this.titanHealing > 15) {
+      this.errors.push('Titan Healing level cannot be higher than 15.');
+    }
+
+    if (this.errors.length > 0) { // dont allow the calculator to run if there are errors
+      throw new Error(this.errors.join('\n'));
+    }
 
     // THE ACTUAL LOGGER
   
