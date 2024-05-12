@@ -46,24 +46,6 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
       };
       document.documentElement.style.setProperty('--element-color', elementColors[this.unit.element]);
 
-      const svgColors: {[key: string]: string} = {
-        "element_physical": '%23CF9B14',
-        "element_physicalflame": '%23CF9B14',
-        "element_flame": '%23E74412',
-        "element_flamephysical": '%23E74412',
-        "element_frost": '%233498DB',
-        "element_frostvolt": '%233498DB',
-        "element_volt": '%238C7ED0',
-        "element_voltfrost": '%238C7ED0',
-        "element_altered": '%2319C37D'
-      };
-  
-      // Replace hardcoded color in background-image with the dynamic color
-      const dynamicColor = svgColors[this.unit.element];
-      const backgroundImage = `url('data:image/svg+xml,%3Csvg width="1129" height="141" viewBox="0 0 1129 141" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M880.701 0L-0.000305176 0V141H1020.65L880.701 0Z" fill="%23242425"/%3E%3Cpath d="M989.051 0H922.053L1064.53 141H1129L989.051 0Z" fill="%23242425"/%3E%3Cpath d="M880.88 0H-0.00012207V7.32468H888L880.88 0Z" fill="${dynamicColor}"/%3E%3C/svg%3E'`;
-      console.log(backgroundImage)
-      document.documentElement.style.setProperty('--svg-color', dynamicColor);
-      document.documentElement.style.setProperty('--background-image', backgroundImage);
     }, error => console.error(error));
       // Fetch matrix data
       this.http.get<any>("assets/json/matrices-data.json").subscribe(data => {
