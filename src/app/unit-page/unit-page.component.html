@@ -190,7 +190,7 @@
           <div class="attack-wrap">
             <div class="attack-container" *ngFor="let item of unit?.attacks">
               <div class="attack-heading-wrap">
-                <img src="assets/simulacra/abilities/{{item.icon}}" alt="Normal Attack Icon">
+                <img class="attack-icon" src="assets/simulacra/abilities/{{item.icon}}" alt="Normal Attack Icon">
                 <div class="attack-heading">
                   <div class="attack-name">{{ item.name }}</div>
                   <div class="attack-method-wrap">
@@ -224,7 +224,7 @@
           <div class="attack-wrap">
             <div class="attack-container" *ngFor="let item of unit?.dodge">
               <div class="attack-heading-wrap">
-                <img src="assets/simulacra/abilities/{{item.icon}}" alt="Dodge Attack Icon">
+                <img class="attack-icon" src="assets/simulacra/abilities/{{item.icon}}" alt="Dodge Attack Icon">
                 <div class="attack-heading">
                   <div class="attack-name">{{ item.name }}</div>
                   <div class="attack-method-wrap">
@@ -258,7 +258,7 @@
           <div class="attack-wrap">
             <div class="attack-container" *ngFor="let item of unit?.skill">
               <div class="attack-heading-wrap">
-                <img src="assets/simulacra/abilities/{{item.icon}}" alt="Skill Icon">
+                <img class="attack-icon" src="assets/simulacra/abilities/{{item.icon}}" alt="Skill Icon">
                 <div class="attack-heading">
                   <div class="attack-name">{{ item.name }}</div>
                 </div>
@@ -276,7 +276,7 @@
           <div class="attack-wrap">
             <div class="attack-container" *ngFor="let item of unit?.discharge">
               <div class="attack-heading-wrap">
-                <img src="assets/simulacra/abilities/{{item.icon}}" alt="Discharge Icon">
+                <img class="attack-icon" src="assets/simulacra/abilities/{{item.icon}}" alt="Discharge Icon">
                 <div class="attack-heading">
                   <div class="attack-name">{{ item.name }}</div>
                 </div>
@@ -294,7 +294,7 @@
           <div class="attack-wrap">
             <div class="attack-container" *ngFor="let item of unit?.trait">
               <div class="attack-heading-wrap">
-                <img src="assets/simulacra/abilities/{{item.icon}}" alt="Trait Icon">
+                <img class="trait-icon" src="assets/trait/{{unit.slug}}_{{item.affinity}}.png" alt="Trait Icon">
                 <div class="attack-heading">
                   <div class="attack-name">{{ item.affinity }}</div>
                 </div>
