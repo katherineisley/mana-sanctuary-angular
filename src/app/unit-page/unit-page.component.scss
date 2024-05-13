@@ -275,9 +275,13 @@
                 gap: 20px;
                 margin-bottom: 20px;
 
-                img {
-                    width: 100px;
-                    height: 100px;
+                .attack-icon {
+                    width: 80px;
+                    height: 80px;
+                }
+                .trait-icon{
+                    height: 50px;
+                    width: 50px;
                 }
             }
 
