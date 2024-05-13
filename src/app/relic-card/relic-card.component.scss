@@ -45,7 +45,7 @@
     }
 }
 
-.unit-wrapper {
+.relic-wrapper {
     aspect-ratio: 0.9 / 1; // this might be problematic later so we'll see
     cursor: pointer;
     position: relative;
@@ -140,7 +140,6 @@
 
     .top-card,
     .back-card {
-
         background-size: cover;
         background-repeat: no-repeat; // weird edge case
         width: 100%;
@@ -148,7 +147,7 @@
         border-radius: 8px;
         padding: 10px;
 
-        // this is better on the cards themselves rather than the unit-wrapper
+        // this is better on the cards themselves rather than the relic-wrapper
         // as when the back-card gets put on top, it doesn't have a border to distinguish itself from the body
 
         border: 1px $border solid;
@@ -224,7 +223,7 @@
                         font-size: 20px;
                         display: flex;
                         flex-direction: row;
-                        gap: 1px;
+                        gap: 2px;
                     }
                 }
             }

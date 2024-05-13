@@ -16,90 +16,75 @@ export class RelicsIndexComponent implements OnInit {
   activeType: string | null = null;
   activeRole: string | null = null;
 
-  private physicalMatrices: string[] = [];
-  private flameMatrices: string[] = [];
-  private frostMatrices: string[] = [];
-  private voltMatrices: string[] = [];
-  private alteredMatrices: string[] = [];
-  private physicalFlameMatrices: string[] = [];
-  private flamePhysicalMatrices: string[] = [];
-  private frostVoltMatrices: string[] = [];
-  private voltFrostMatrices: string[] = [];
-  private SSRMatrices: string[] = [];
-  private SRMatrices: string[] = [];
-  private damageMatrices: string[] = [];
-  private benedictionMatrices: string[] = [];
-  private fortitudeMatrices: string[] = [];
-  private MDPSMatrices: string[] = [];
-  private BufferMatrices: string[] = [];
-  private HealerMatrices: string[] = [];
-  private SupportBufferMatrices: string[] = [];
-  private ShatterMatrices: string[] = [];
-  private TauntMatrices: string[] = [];
+  private physicalRelics: string[] = [];
+  private flameRelics: string[] = [];
+  private frostRelics: string[] = [];
+  private voltRelics: string[] = [];
+  private SSRRelics: string[] = [];
+  private SRRelics: string[] = [];
 
-  private allMatrices: string[] = [...this.SSRMatrices, ...this.SRMatrices];
+  private allRelics: string[] = [...this.SSRRelics, ...this.SRRelics];
 
   constructor(private cardDataService: RelicCardService) { }
 
   private populateArrays(data: any[]): void { // i know its a funny gag to say "the code is self-documenting" but this one really should be
     const elementMap = {
-      'element_physical': this.physicalMatrices,
-      'element_physicalflame': this.physicalFlameMatrices,
-      'element_flame': this.flameMatrices,
-      'element_flamephysical': this.flamePhysicalMatrices,
-      'element_frost': this.frostMatrices,
-      'element_frostvolt': this.frostVoltMatrices,
-      'element_volt': this.voltMatrices,
-      'element_voltfrost': this.voltFrostMatrices,
-      'element_altered': this.alteredMatrices
+      'physicalboost': this.physicalRelics,
+      'physicalresistance': this.physicalRelics,
+      'flameboost': this.flameRelics,
+      'flameresistance': this.flameRelics,
+      'frostboost': this.frostRelics,
+      'frostresistance': this.frostRelics,
+      'voltboost': this.voltRelics,
+      'voltresistance': this.voltRelics,
     };
     
     const rarityMap = {
-      'SSR': this.SSRMatrices,
-      'SR': this.SRMatrices
+      'SSR': this.SSRRelics,
+      'SR': this.SRRelics
     };
 
-    const resonanceMap = {
-      'attack': this.damageMatrices,
-      'benediction': this.benedictionMatrices,
-      'fortitude': this.fortitudeMatrices
-    };
+    // const resonanceMap = {
+    //   'attack': this.damageRelics,
+    //   'benediction': this.benedictionRelics,
+    //   'fortitude': this.fortitudeRelics
+    // };
 
-    const rolesMap = {
-      'MDPS': this.MDPSMatrices,
-      'Buffer': this.BufferMatrices,
-      'Healer': this.HealerMatrices,
-      'SupportBuffer': this.SupportBufferMatrices,
-      'Shatter': this.ShatterMatrices,
-      'Taunt': this.TauntMatrices
-    };
+    // const rolesMap = {
+    //   'MDPS': this.MDPSRelics,
+    //   'Buffer': this.BufferRelics,
+    //   'Healer': this.HealerRelics,
+    //   'SupportBuffer': this.SupportBufferRelics,
+    //   'Shatter': this.ShatterRelics,
+    //   'Taunt': this.TauntRelics
+    // };
 
-    data.forEach((matrix: any) => { // just nabs the matrix's element, rarity, and resonance and adds it to the appropriate array for the filter
-      //const elementKey = matrix.element as keyof typeof elementMap;
-      const rarityKey = matrix.rarity as keyof typeof rarityMap;
-      //const resonanceKey = matrix.resonance as keyof typeof resonanceMap;
+    data.forEach((relic: any) => { // just nabs the relic's element, rarity, and resonance and adds it to the appropriate array for the filter
+      const elementKey = relic.elementBoost as keyof typeof elementMap;
+      const rarityKey = relic.rarity as keyof typeof rarityMap;
+      //const resonanceKey = relic.resonance as keyof typeof resonanceMap;
 
-/*       if (elementMap[elementKey]) {
-        elementMap[elementKey].push(matrix.slug);
-      } */
+      if (elementMap[elementKey]) {
+        elementMap[elementKey].push(relic.slug);
+      }
 
       if (rarityMap[rarityKey]) {
-        rarityMap[rarityKey].push(matrix.slug);
+        rarityMap[rarityKey].push(relic.slug);
       }
 
 /*       if (resonanceMap[resonanceKey]) {
-        resonanceMap[resonanceKey].push(matrix.slug);
+        resonanceMap[resonanceKey].push(relic.slug);
       } */
 /* 
-      matrix.element.forEach((role: any) => {
+      relic.element.forEach((role: any) => {
         const elementMapKey = role as keyof typeof elementMap;
         if (elementMap[elementMapKey]) {
-          elementMap[elementMapKey].push(matrix.slug);
+          elementMap[elementMapKey].push(relic.slug);
         }
       }); */
     });
 
-    this.allMatrices = [...this.SSRMatrices, ...this.SRMatrices]; // update the allMatrices array
+    this.allRelics = [...this.SSRRelics, ...this.SRRelics]; // update the allRelics array
   }
 
   ngOnInit() {
@@ -107,36 +92,36 @@ export class RelicsIndexComponent implements OnInit {
       this.relics = data;
       this.populateArrays(data); // Call the new function to populate the arrays
     });
-/* 
+
     $('.element .wrapper img').click((event) => {
       const element = $(event.currentTarget).attr('data-element');
       this.activeElement = this.activeElement === element ? null : (element || null);
-      const relicsToShow = this.getMatricesToShow(this.activeElement, this.activeRarity, this.activeType, this.activeRole);
-      this.showMatrices(relicsToShow);
+      const relicsToShow = this.getRelicsToShow(this.activeElement, this.activeRarity, this.activeType, this.activeRole);
+      this.showRelics(relicsToShow);
       this.updateActiveClasses();
-    }); */
+    }); 
     
     $('.rarity .wrapper span').click((event) => {
       const rarity = $(event.currentTarget).attr('data-rarity');
       this.activeRarity = this.activeRarity === rarity ? null : (rarity || null);
-      const relicsToShow = this.getMatricesToShow(this.activeElement, this.activeRarity, this.activeType,this.activeRole);
-      this.showMatrices(relicsToShow);
+      const relicsToShow = this.getRelicsToShow(this.activeElement, this.activeRarity, this.activeType,this.activeRole);
+      this.showRelics(relicsToShow);
       this.updateActiveClasses();
     });
     
 /*     $('.type .wrapper img').click((event) => {
       const type = $(event.currentTarget).attr('data-type');
       this.activeType = this.activeType === type ? null : (type || null);
-      const relicsToShow = this.getMatricesToShow(this.activeElement, this.activeRarity, this.activeType,this.activeRole);
-      this.showMatrices(relicsToShow);
+      const relicsToShow = this.getRelicsToShow(this.activeElement, this.activeRarity, this.activeType,this.activeRole);
+      this.showRelics(relicsToShow);
       this.updateActiveClasses();
     }); */
 /* 
     $('.role .wrapper img').click((event) => {
       const role = $(event.currentTarget).attr('data-role');
       this.activeRole = this.activeRole === role ? null : (role || null);
-      const relicsToShow = this.getMatricesToShow(this.activeElement, this.activeRarity, this.activeType, this.activeRole);
-      this.showMatrices(relicsToShow);
+      const relicsToShow = this.getRelicsToShow(this.activeElement, this.activeRarity, this.activeType, this.activeRole);
+      this.showRelics(relicsToShow);
       this.updateActiveClasses();
     }); */
   }
@@ -146,9 +131,9 @@ export class RelicsIndexComponent implements OnInit {
     $('.element .wrapper img, .rarity .wrapper span, .type .wrapper img, .role .wrapper img').removeClass('active');
 
     // Add active class for each active state
-/*     if (this.activeElement !== null) {
+    if (this.activeElement !== null) {
       $(`.element .wrapper img[data-element="${this.activeElement}"]`).addClass('active');
-    } */
+    } 
     if (this.activeRarity !== null) {
       $(`.rarity .wrapper span[data-rarity="${this.activeRarity}"]`).addClass('active');
     }
@@ -160,41 +145,38 @@ export class RelicsIndexComponent implements OnInit {
     } */
   }
 
-  private getMatricesToShow(
+  private getRelicsToShow(
     elementFilter: string | null,
     rarityFilter: string | null,
     typeFilter: string | null,
     roleFilter: string | null
   ): string[] {
     // Use filters to narrow down the relics to show
-    let filteredMatrices: string[] = this.allMatrices;
-/*     if (elementFilter) {
+    let filteredRelics: string[] = this.allRelics;
+    if (elementFilter) {
       switch (elementFilter) {
-        case 'altered':
-          filteredMatrices = filteredMatrices.filter(unit => this.alteredMatrices.includes(unit));
-          break;
         case 'physical':
-          filteredMatrices = filteredMatrices.filter(unit => this.physicalMatrices.includes(unit) || this.physicalFlameMatrices.includes(unit));
+          filteredRelics = filteredRelics.filter(unit => this.physicalRelics.includes(unit));
           break;
         case 'flame':
-          filteredMatrices = filteredMatrices.filter(unit => this.flameMatrices.includes(unit) || this.flamePhysicalMatrices.includes(unit));
+          filteredRelics = filteredRelics.filter(unit => this.flameRelics.includes(unit));
           break;
         case 'frost':
-          filteredMatrices = filteredMatrices.filter(unit => this.frostMatrices.includes(unit) || this.frostVoltMatrices.includes(unit));
+          filteredRelics = filteredRelics.filter(unit => this.frostRelics.includes(unit));
           break;
         case 'volt':
-          filteredMatrices = filteredMatrices.filter(unit => this.voltMatrices.includes(unit) || this.voltFrostMatrices.includes(unit));
+          filteredRelics = filteredRelics.filter(unit => this.voltRelics.includes(unit));
           break;
       }
-    } */
+    }
     
     if (rarityFilter) {
       switch (rarityFilter) {
         case 'ssr':
-          filteredMatrices = filteredMatrices.filter(unit => this.SSRMatrices.includes(unit));
+          filteredRelics = filteredRelics.filter(unit => this.SSRRelics.includes(unit));
           break;
         case 'sr':
-          filteredMatrices = filteredMatrices.filter(unit => this.SRMatrices.includes(unit));
+          filteredRelics = filteredRelics.filter(unit => this.SRRelics.includes(unit));
           break;
       }
     }
@@ -202,43 +184,43 @@ export class RelicsIndexComponent implements OnInit {
 /*     if (typeFilter) {
       switch (typeFilter) {
         case 'damage':
-          filteredMatrices = filteredMatrices.filter(unit => this.damageMatrices.includes(unit));
+          filteredRelics = filteredRelics.filter(unit => this.damageRelics.includes(unit));
           break;
         case 'benediction':
-          filteredMatrices = filteredMatrices.filter(unit => this.benedictionMatrices.includes(unit));
+          filteredRelics = filteredRelics.filter(unit => this.benedictionRelics.includes(unit));
           break;
         case 'fortitude':
-          filteredMatrices = filteredMatrices.filter(unit => this.fortitudeMatrices.includes(unit));
+          filteredRelics = filteredRelics.filter(unit => this.fortitudeRelics.includes(unit));
           break;
       }
     } */
 /*     if (roleFilter) {
       switch (roleFilter) {
         case 'MDPS':
-          filteredMatrices = filteredMatrices.filter(unit => this.MDPSMatrices.includes(unit));
+          filteredRelics = filteredRelics.filter(unit => this.MDPSRelics.includes(unit));
           break;
         case 'Buffer':
-          filteredMatrices = filteredMatrices.filter(unit => this.BufferMatrices.includes(unit));
+          filteredRelics = filteredRelics.filter(unit => this.BufferRelics.includes(unit));
           break;
         case 'Healer':
-          filteredMatrices = filteredMatrices.filter(unit => this.HealerMatrices.includes(unit));
+          filteredRelics = filteredRelics.filter(unit => this.HealerRelics.includes(unit));
           break;
         case 'SupportBuffer':
-          filteredMatrices = filteredMatrices.filter(unit => this.SupportBufferMatrices.includes(unit));
+          filteredRelics = filteredRelics.filter(unit => this.SupportBufferRelics.includes(unit));
           break;
         case 'Shatter':
-          filteredMatrices = filteredMatrices.filter(unit => this.ShatterMatrices.includes(unit));
+          filteredRelics = filteredRelics.filter(unit => this.ShatterRelics.includes(unit));
           break;
         case 'Taunt':
-          filteredMatrices = filteredMatrices.filter(unit => this.TauntMatrices.includes(unit));
+          filteredRelics = filteredRelics.filter(unit => this.TauntRelics.includes(unit));
           break;
       }
     } */
-    return filteredMatrices;
+    return filteredRelics;
   }
 
-  private showMatrices(relicsToShow: string[]): void {
-    $('.unit-wrapper[data-unit]').parent().hide();
+  private showRelics(relicsToShow: string[]): void {
+    $('.relic-wrapper[data-unit]').parent().hide();
     relicsToShow.forEach(unit => {
       $(`[data-unit="${unit}"]`).parent().show();
     });

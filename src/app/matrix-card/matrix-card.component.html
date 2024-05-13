@@ -6,8 +6,7 @@
         <h5 class="name">{{matrix.name}}</h5>
         <div class="type-and-buffs">
           <div class="icons">
-            <img *ngFor="let element of matrix.element" [src]="'assets/elements/' + element.toLowerCase() + '.png'"
-              [alt]="element">
+            <img *ngFor="let element of matrix.element" [src]="'assets/elements/' + element + '.png'" [alt]="element">
           </div>
           <div class="buffs" [class]="getRarityClass()">
             {{matrix.rarity.toUpperCase()}}
