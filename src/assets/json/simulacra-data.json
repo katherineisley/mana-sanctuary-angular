@@ -17,7 +17,7 @@
     "shatter": "14",
     "charge": "14",
     "roles": [
-      ""
+      "MDPS", "Buffer"
     ],
     "effects": [
       {
@@ -333,7 +333,7 @@
     "shatter": "12",
     "charge": "10",
     "roles": [
-      ""
+      "Buffer", "Shatter", "SupportBuffer"
     ],
     "effects": [
       {
@@ -621,7 +621,7 @@
     "shatter": "16",
     "charge": "12",
     "roles": [
-      ""
+      "MDPS", "Buffer"
     ],
     "effects": [
       {
@@ -1003,7 +1003,7 @@
     "shatter": "14",
     "charge": "12",
     "roles": [
-      ""
+      "MDPS", "Buffer"
     ],
     "effects": [
       {
@@ -1379,7 +1379,7 @@
     "shatter": "12",
     "charge": "10",
     "roles": [
-      ""
+      "MDPS", "Buffer", "Healer", "SupportBuffer"
     ],
     "effects": [
       {
@@ -1718,7 +1718,7 @@
     "shatter": "16.00",
     "charge": "12.00",
     "roles": [
-      ""
+      "MDPS", "Buffer"
     ],
     "effects": [
       {
@@ -2409,7 +2409,7 @@
     "shatter": "16",
     "charge": "8",
     "roles": [
-      ""
+      "MDPS", "Buffer"
     ],
     "effects": [
       {
@@ -2709,7 +2709,7 @@
     "shatter": "14.00",
     "charge": "12.00",
     "roles": [
-      ""
+      "Buffer"
     ],
     "effects": [
       {
@@ -3040,7 +3040,7 @@
     "shatter": "14.00",
     "charge": "15.00",
     "roles": [
-      "MDPS", "Buffer"
+      "MDPS", "Buffer", "Taunt", "Shatter"
     ],
     "effects": [
       {
@@ -3374,7 +3374,7 @@
     "shatter": "14",
     "charge": "12",
     "roles": [
-      ""
+      "MDPS", "Buffer"
     ],
     "effects": [
       {
@@ -3718,7 +3718,7 @@
     "shatter": "13",
     "charge": "11",
     "roles": [
-      ""
+      "MDPS", "Buffer"
     ],
     "effects": [
       {
@@ -4177,7 +4177,7 @@
     "shatter": "12.50",
     "charge": "15",
     "roles": [
-      ""
+      "MDPS", "Buffer"
     ],
     "effects": [
       {
@@ -4584,7 +4584,7 @@
     "shatter": "10",
     "charge": "12",
     "roles": [
-      ""
+      "Buffer"
     ],
     "effects": [
       {
@@ -4881,7 +4881,7 @@
     "shatter": "12.50",
     "charge": "14.00",
     "roles": [
-      ""
+      "MDPS", "Buffer", "Shatter"
     ],
     "effects": [
       {
@@ -5211,7 +5211,7 @@
     "shatter": "11.5",
     "charge": "11.5",
     "roles": [
-      ""
+      "Buffer", "Healer", "SupportBuffer"
     ],
     "effects": [
       {
@@ -5648,7 +5648,7 @@
     "shatter": "9.50",
     "charge": "8.00",
     "roles": [
-      ""
+      "MDPS", "Buffer", "SupportBuffer"
     ],
     "effects": [
       {
@@ -5923,7 +5923,7 @@
     "shatter": "14.00",
     "charge": "8",
     "roles": [
-      ""
+      "Buffer", "Taunt","Shatter"
     ],
     "effects": [
       {
@@ -6223,7 +6223,7 @@
     "shatter": "13.5",
     "charge": "10.5",
     "roles": [
-      ""
+      "MDPS","Buffer"
     ],
     "effects": [
       {
@@ -6865,7 +6865,7 @@
     "shatter": "8",
     "charge": "12",
     "roles": [
-      ""
+      "MDPS", "Buffer"
     ],
     "effects": [
       {
@@ -7127,7 +7127,7 @@
     "shatter": "12.50",
     "charge": "9",
     "roles": [
-      ""
+      "MDPS", "Buffer"
     ],
     "effects": [
       {
@@ -7373,7 +7373,7 @@
     "shatter": "12.50",
     "charge": "8",
     "roles": [
-      ""
+      "MDPS", "Buffer"
     ],
     "effects": [
       {
@@ -7634,7 +7634,7 @@
     "shatter": "12.00",
     "charge": "10",
     "roles": [
-      ""
+      "MDPS", "Buffer", "Healer","SupportBuffer"
     ],
     "effects": [
       {
@@ -7947,7 +7947,7 @@
     "shatter": "11.50",
     "charge": "11.50",
     "roles": [
-      ""
+      "Buffer"
     ],
     "effects": [
       {
@@ -8243,7 +8243,7 @@
     "shatter": "13.9",
     "charge": "8",
     "roles": [
-      ""
+      "Buffer", "Taunt"
     ],
     "effects": [
       {
@@ -8509,7 +8509,7 @@
     "shatter": "11.5",
     "charge": "8",
     "roles": [
-      ""
+      "MDPS", "Buffer"
     ],
     "effects": [
       {
@@ -8751,7 +8751,7 @@
     "shatter": "12.5",
     "charge": "10",
     "roles": [
-      ""
+      "MDPS", "Buffer"
     ],
     "effects": [
       {
@@ -8977,7 +8977,7 @@
     "shatter": "7.5",
     "charge": "12.00",
     "roles": [
-      ""
+      "MDPS", "Buffer", "SupportBuffer"
     ],
     "effects": [
       {
@@ -9217,7 +9217,7 @@
     "shatter": "8",
     "charge": "8",
     "roles": [
-      ""
+      "MDPS", "Buffer"
     ],
     "effects": [
       {
@@ -9461,7 +9461,7 @@
     "shatter": "6",
     "charge": "11",
     "roles": [
-      ""
+      "Buffer", "Healer", "SupportBuffer"
     ],
     "effects": [
       {
@@ -9735,7 +9735,7 @@
     "shatter": "6",
     "charge": "8",
     "roles": [
-      ""
+      "MDPS", "Buffer", "SupportBuffer"
     ],
     "effects": [
       {
@@ -9979,7 +9979,7 @@
     "shatter": "10",
     "charge": "10",
     "roles": [
-      ""
+      "Taunt"
     ],
     "effects": [
       {
@@ -10236,7 +10236,7 @@
     "shatter": "6",
     "charge": "10.7",
     "roles": [
-      ""
+      "MDPS"
     ],
     "effects": [
       {
@@ -10440,7 +10440,7 @@
     "shatter": "5",
     "charge": "13",
     "roles": [
-      ""
+      "Healer", "SupportBuffer"
     ],
     "effects": [
       {
@@ -10692,7 +10692,7 @@
     "shatter": "13",
     "charge": "6",
     "roles": [
-      ""
+      "MDPS", "Buffer", "Shatter"
     ],
     "effects": [
       {
@@ -10921,7 +10921,7 @@
     "shatter": "14.3",
     "charge": "5",
     "roles": [
-      ""
+      "MDPS", "Shatter"
     ],
     "effects": [
       {
@@ -11176,7 +11176,7 @@
     "shatter": "4",
     "charge": "12.50",
     "roles": [
-      ""
+      "Healer", "SupportBuffer"
     ],
     "effects": [
       {
@@ -11450,7 +11450,7 @@
     "shatter": "4",
     "charge": "11.5",
     "roles": [
-      ""
+      "MDPS", "Buffer"
     ],
     "effects": [
       {
@@ -11654,7 +11654,7 @@
     "shatter": "13.8",
     "charge": "4",
     "roles": [
-      ""
+      "MDPS","Shatter"
     ],
     "effects": [
       {
@@ -11922,7 +11922,7 @@
     "shatter": "4",
     "charge": "10",
     "roles": [
-      ""
+      "Healer"
     ],
     "effects": [
       {
@@ -12177,7 +12177,7 @@
     "shatter": "16",
     "charge": "10",
     "roles": [
-      ""
+      "MDPS"
     ],
     "effects": [
       {
@@ -12308,7 +12308,7 @@
     "shatter": "10",
     "charge": "6",
     "roles": [
-      ""
+      "Taunt"
     ],
     "effects": [
       {
@@ -12587,7 +12587,7 @@
     "shatter": "11",
     "charge": "7",
     "roles": [
-      ""
+      "MDPS", "Buffer"
     ],
     "effects": [
       {
@@ -12842,7 +12842,7 @@
     "shatter": "6",
     "charge": "10",
     "roles": [
-      ""
+      "MDPS","Buffer", "SupportBuffer"
     ],
     "effects": [
       {
