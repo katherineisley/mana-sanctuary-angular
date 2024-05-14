@@ -1,1 +1,18 @@
-<p>glossary works!</p>
+<ng-template #glossaryEntryTemplate>
+  <div class="term" *ngFor="let term of terms">
+    <h5 class="term-name">{{term.name}}</h5>
+    <span class="term-description">{{term.description}}</span>
+  </div>
+</ng-template>
+<section class="main">
+  <div class="page-intro">
+    <div class="titles">
+      <h3 class="title">Glossary</h3>
+      <h4 class="subtitle">A Collection of Terms</h4>
+    </div>
+    <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa maxime sunt in, soluta dolorum aliquam reiciendis vitae omnis dicta doloremque saepe blanditiis, quam similique qui cumque accusamus, voluptate recusandae nulla?</p>
+  </div>
+  <div class="term-list">
+
+  </div>
+</section>

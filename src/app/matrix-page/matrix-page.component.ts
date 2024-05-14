@@ -2,6 +2,7 @@ import { AfterViewInit, Component, ElementRef, OnInit, QueryList, ViewChildren }
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { DataService } from '../data.service';
 
 import * as $ from 'jquery';
 
@@ -16,6 +17,7 @@ export class MatrixPageComponent  {
   matrix: any = {};
 
   constructor(
+    private dataService: DataService,
     private route: ActivatedRoute,
     private http: HttpClient,
     private sanitizer: DomSanitizer
@@ -27,7 +29,7 @@ export class MatrixPageComponent  {
 
   ngOnInit() {
     this.slug = this.route.snapshot.paramMap.get('name')!;
-    this.http.get<any>("assets/json/simulacra-data.json").subscribe(data => {
+    this.dataService.getMatricesData().subscribe((data: any) => {
       this.matrix = data.find((matrix: any) => matrix.slug === this.slug);
     }, error => console.error(error));
   }

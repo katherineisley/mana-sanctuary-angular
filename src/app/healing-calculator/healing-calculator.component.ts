@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit, Renderer2, ElementRef, QueryList, ViewChildren } from '@angular/core';
+import { DataService } from '../data.service';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -36,20 +37,18 @@ export class HealingCalculatorComponent implements OnInit {
   // TITAN
   titanHealing!: number;
 
-  constructor(private http: HttpClient, private renderer: Renderer2, private el: ElementRef) { }
+  constructor(private dataService: DataService, private http: HttpClient, private renderer: Renderer2, private el: ElementRef) { }
 
   ngOnInit() {
-    this.http.get<any>("assets/json/simulacra-data.json").subscribe(data => {
+    this.dataService.getSimulacraData().subscribe((data: any) => {
       this.units = data;
-      this.traits = data; // Traits are a sub category of Units in the JSON
-    }),
-    this.http.get<any>("assets/json/matrices-data.json").subscribe(data => {
+    });
+    this.dataService.getMatricesData().subscribe((data: any) => {
       this.matrices = data;
-    }),
-    this.http.get<any>("assets/json/relics-data.json").subscribe(data => {
+    });
+    this.dataService.getRelicsData().subscribe((data: any) => {
       this.relics = data;
-      console.log(this.relics);
-    })
+    });
   }
 
   toggleUnitSelect(event: Event, clickedUnitSetId: number) { // this shit needs to be refactored and optimized, shares a lot of code with toggleMatrixSelect

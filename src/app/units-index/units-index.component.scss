@@ -102,23 +102,6 @@
     }
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1180px;
-    width: 100%;
-    padding: 0px 20px;
-
-    
-    .title-big-center {
-        text-align: center;
-        font-size: 36px;
-        font-weight: 600;
-        margin: unset;
-    }
-}
-
 @media only screen and (max-width: $laptop) { // Card flip animation begins to look clip out of the borders
     .units-index {
         grid-template-columns: repeat(4, 1fr);

@@ -1,14 +1,8 @@
 @import '../../styles.scss';
 
 .main {
-    max-width: 1220px;
-    width: 100%;
-    //padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
     position: relative;
-
+    
     .header-element {
         display: flex;
         flex-direction: row;

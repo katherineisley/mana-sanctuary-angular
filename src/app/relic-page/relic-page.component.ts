@@ -2,6 +2,7 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { DataService } from '../data.service';
 
 import * as $ from 'jquery';
 
@@ -17,6 +18,7 @@ export class RelicPageComponent implements OnInit, AfterViewInit {
   activeTab: any = null;
 
   constructor(
+    private dataService: DataService,
     private route: ActivatedRoute,
     private http: HttpClient,
     private sanitizer: DomSanitizer
@@ -28,9 +30,9 @@ export class RelicPageComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
     this.slug = this.route.snapshot.paramMap.get('name')!;
-    this.http.get<any>("assets/json/relics-data.json").subscribe(data => {
+    this.dataService.getRelicsData().subscribe((data: any) => {
       this.relic = data.find((relic: any) => relic.slug === this.slug);
-    }, error => console.error(error));
+    });
   }
 
   setActiveTab(element: any) {

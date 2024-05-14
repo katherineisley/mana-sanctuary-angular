@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AboutUsCardService } from '../about-us-card.service';
+import { DataService } from '../data.service';
 import * as $ from 'jquery';
 
 @Component({
@@ -10,10 +10,10 @@ import * as $ from 'jquery';
 
 export class AboutUsComponent {
   cards: any[] = [];
-  constructor(private cardDataService: AboutUsCardService) { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.cardDataService.getCardData().subscribe((data: any) => {
+    this.dataService.getAboutUsData().subscribe((data: any) => {
       this.cards = data;
     });
   }

@@ -228,35 +228,6 @@ main {
     display: flex;
     flex-direction: column;
 
-    .intro {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-
-        .titles {
-            display: flex;
-            flex-direction: column;
-            gap: 4px;
-    
-            .title {
-                font-size: 36px;
-                font-weight: bold;
-                margin: unset;
-            }
-    
-            .subtitle {
-                font-size: 24px;
-                font-weight: 200;
-                color: $link;
-                margin: unset;
-            }
-        }
-
-        .description {
-            margin: unset;
-        }
-    }
-
     .entries {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -295,6 +266,64 @@ main {
                 }
             }
         }
+    }
+}
+
+// SECTION MAIN STYLES
+
+section.main {
+    max-width: 1220px;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+
+    .page-intro {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .titles {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+    
+            .title {
+                font-size: 36px;
+                font-weight: bold;
+                margin: unset;
+            }
+    
+            .subtitle {
+                font-size: 24px;
+                font-weight: 200;
+                color: $link;
+                margin: unset;
+            }
+        }
+
+        .description {
+            margin: unset;
+        }
+
+        .discord {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            .text {
+                max-width: 500px;
+                width: 100%;
+                margin: unset;
+            }
+        }
+    }
+
+    .title-big-center {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 600;
+        margin: unset;
     }
 }
 

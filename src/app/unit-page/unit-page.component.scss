@@ -1,12 +1,6 @@
 @import '../../styles.scss';
 
 .main {
-    max-width: 1220px;
-    width: 100%;
-    //padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
     position: relative;
 
     .header-element {
@@ -16,9 +10,9 @@
         min-height: 350px;
 
 
-        .header-splash{
+        .header-splash {
             position: absolute;
-            overflow:visible;
+            overflow: visible;
             height: 800px;
             right: 0px;
             top: -50px;
@@ -30,7 +24,6 @@
 
         }
         .header-content {
-
             padding: 20px 20px;
             display: grid;
             grid-template-columns: auto auto; /* Two columns of equal width */

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RelicCardService } from '../relic-card.service';
+import { DataService } from '../data.service';
 import * as $ from 'jquery';
 
 
@@ -25,7 +25,7 @@ export class RelicsIndexComponent implements OnInit {
 
   private allRelics: string[] = [...this.SSRRelics, ...this.SRRelics];
 
-  constructor(private cardDataService: RelicCardService) { }
+  constructor(private dataService: DataService) { }
 
   private populateArrays(data: any[]): void { // i know its a funny gag to say "the code is self-documenting" but this one really should be
     const elementMap = {
@@ -88,7 +88,7 @@ export class RelicsIndexComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.cardDataService.getCardData().subscribe((data: any) => {
+    this.dataService.getRelicsData().subscribe((data: any) => {
       this.relics = data;
       this.populateArrays(data); // Call the new function to populate the arrays
     });

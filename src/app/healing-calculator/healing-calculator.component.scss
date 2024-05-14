@@ -1,41 +1,6 @@
 @import '../../styles.scss';
 
 .main {
-    max-width: 1220px;
-    width: 100%;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-
-    .intro {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-
-        .titles {
-            display: flex;
-            flex-direction: column;
-            gap: 4px;
-    
-            .title {
-                font-size: 36px;
-                font-weight: bold;
-                margin: unset;
-            }
-    
-            .subtitle {
-                font-size: 24px;
-                font-weight: 200;
-                color: $link;
-                margin: unset;
-            }
-        }
-
-        .description {
-            margin: unset;
-        }
-    }
-
     .temp {
         margin: 40px 0;
         .log-button {

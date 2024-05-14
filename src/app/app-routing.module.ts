@@ -1,6 +1,7 @@
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DataResolver } from './shared/resolvers/data.resolver';
 
 import { HomeComponent } from './home/home.component';
 import { HealingComponent } from './healing/healing.component';

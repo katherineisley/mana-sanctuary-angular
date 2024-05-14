@@ -2,6 +2,7 @@ import { AfterViewInit, Component, ElementRef, OnInit, QueryList, ViewChildren }
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { DataService } from '../data.service';
 
 import * as $ from 'jquery';
 
@@ -19,6 +20,7 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
   activeInfo: string = 'Advancements'; 
   
   constructor(
+    private dataService: DataService,
     private route: ActivatedRoute,
     private http: HttpClient,
     private sanitizer: DomSanitizer
@@ -30,9 +32,8 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
     this.slug = this.route.snapshot.paramMap.get('name')!;
-    this.http.get<any>("assets/json/simulacra-data.json").subscribe(data => {
+    this.dataService.getSimulacraData().subscribe((data: any) => {
       this.unit = data.find((unit: any) => unit.slug === this.slug);
-      // console.log(this.unit);
       const elementColors: {[key: string]: string} = { // this sets the page color depending on the element
         "element_physical": '#CF9B14',
         "element_physicalflame": '#CF9B14',
@@ -45,14 +46,11 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
         "element_altered": '#0EA667'
       };
       document.documentElement.style.setProperty('--element-color', elementColors[this.unit.element]);
-
-    }, error => console.error(error));
-      // Fetch matrix data
-      this.http.get<any>("assets/json/matrices-data.json").subscribe(data => {
-        this.matrix = data.find((matrix: any) => matrix.slug === this.slug);
     }, error => console.error(error));
 
-    
+    this.dataService.getMatricesData().subscribe((data: any) => {
+      this.matrix = data.find((matrix: any) => matrix.slug === this.slug);
+    }, error => console.error(error));
   }
 
   setActiveTab(element: any) { 

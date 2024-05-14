@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./glossary.component.scss']
 })
 export class GlossaryComponent {
-
+  terms: any[] = [];
+  constructor() { }
 }
