@@ -102,7 +102,15 @@
                 flex-direction: column;
                 gap: 14px;
             }
-
+            .roles-grid{
+                
+                display: grid;
+                max-width: fit-content;
+                grid-template-columns:auto auto;
+                column-gap: 30px;
+                row-gap: 14px; /* Two rows of equal height */
+                //gap: 5px; /* Gap between grid items */
+            }
             .top-stats,
             .bottom-stats {
                 display: flex;
