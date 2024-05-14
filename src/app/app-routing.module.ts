@@ -29,14 +29,14 @@ const routes: Routes = [
   { path: 'healing/calculator', component: HealingCalculatorComponent },
   { path: 'guides', component: GuidesComponent },
   { path: 'index', component: IndexComponent },
-  { path: 'index/units-index', component: UnitsIndexComponent },
+  { path: 'index/units-index', component: UnitsIndexComponent, resolve: {data: DataResolver} },
   { path: 'unit-page/:name', component: UnitPageComponent },
-  { path: 'index/matrices-index', component: MatricesIndexComponent },
+  { path: 'index/matrices-index', component: MatricesIndexComponent, resolve: {data: DataResolver} },
   { path: 'matrix-page/:name', component: MatrixPageComponent },
-  { path: 'index/relics-index', component: RelicsIndexComponent },
+  { path: 'index/relics-index', component: RelicsIndexComponent, resolve: {data: DataResolver} },
   { path: 'relic-page/:name', component: RelicPageComponent },
-  { path: 'glossary', component: GlossaryComponent },
-  { path: 'about-us', component: AboutUsComponent },
+  { path: 'glossary', component: GlossaryComponent, resolve: {data: DataResolver} },
+  { path: 'about-us', component: AboutUsComponent, resolve: {data: DataResolver} },
   { path: '**', component: PageNotFoundComponent }, // keep this as the last route
 ];
 

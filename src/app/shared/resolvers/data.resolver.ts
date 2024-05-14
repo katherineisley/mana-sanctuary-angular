@@ -10,11 +10,11 @@ export const DataResolver: ResolveFn<any> = (route: ActivatedRouteSnapshot, stat
 
   // this is nonfunctional atm
 
-  return forkJoin([
-    dataService.getSimulacraData(),
-    dataService.getMatricesData(),
-    dataService.getRelicsData(),
-    dataService.getGlossaryData(),
-    dataService.getAboutUsData(),
-  ]);
+  return forkJoin({
+    simulacra: dataService.getSimulacraData(),
+    matrices: dataService.getMatricesData(),
+    relics: dataService.getRelicsData(),
+    glossary: dataService.getGlossaryData(),
+    aboutUs: dataService.getAboutUsData(),
+  });
 }

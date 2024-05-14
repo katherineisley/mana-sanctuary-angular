@@ -1,20 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../data.service';
-import * as $ from 'jquery';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-about-us',
   templateUrl: './about-us.component.html',
   styleUrls: ['./about-us.component.scss']
 })
-
-export class AboutUsComponent {
+export class AboutUsComponent implements OnInit {
   cards: any[] = [];
-  constructor(private dataService: DataService) { }
+
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
-    this.dataService.getAboutUsData().subscribe((data: any) => {
-      this.cards = data;
-    });
+    const data = this.route.snapshot.data['data'];
+    this.cards = data.aboutUs;
   }
 }
