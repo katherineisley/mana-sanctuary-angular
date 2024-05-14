@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "mana-sanctuary-angular:build:production"
+              "buildTarget": "mana-sanctuary-angular:build:production"
             },
             "development": {
-              "browserTarget": "mana-sanctuary-angular:build:development"
+              "buildTarget": "mana-sanctuary-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mana-sanctuary-angular:build"
+            "buildTarget": "mana-sanctuary-angular:build"
           }
         },
         "test": {
