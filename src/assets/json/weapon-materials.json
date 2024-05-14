@@ -1,0 +1,149 @@
+[
+{
+    "slug": "element_volt",
+    "upgrade":
+    [
+        {
+            "level": 10,
+            "enhance": 400,
+            "augmentGold": 0
+    
+        },
+        {
+            "level": 20,
+            "enhance": 600,
+            "augmentGold": 400,
+            "augmentAmount": 2,
+            "augmentMaterials":[ "magcore" ]
+        },
+        {
+            "level": 30,
+            "enhance": 900,
+            "augmentGold": 800,
+            "augmentAmount": 2,
+            "augmentMaterials":[ "magcore" ]
+    
+        },
+        {
+            "level": 40,
+            "enhance": 1200,
+            "augmentGold": 1200,
+            "augmentAmount": 3,
+            "augmentMaterials":[ "magcore", "acidproof1" ]
+        },
+        {
+            "level": 50,
+            "enhance": 1700,
+            "augmentGold": 1600,
+            "augmentAmount": 3,
+            "augmentMaterials":[ "magcore", "acidproof1", "nanofiber1" ]
+        },
+        {
+            "level": 60,
+            "enhance": 2200,
+            "augmentGold": 2000,
+            "augmentAmount": 4,
+            "augmentMaterials":[ "magcore", "acidproof1", "nanofiber1" ]
+        },
+        {
+            "level": 70,
+            "enhance": 2900,
+            "augmentGold": 2400,
+            "augmentAmount": 6,
+            "augmentMaterials":[ "magcore", "acidproof1", "nanofiber1" ]
+        },
+        {
+            "level": 80,
+            "enhance": 3900,
+            "augmentGold": 2800,
+            "augmentAmount": 8,
+            "augmentMaterials":[ "magcore", "acidproof1", "nanofiber1" ]
+        },
+        {
+            "level": 90,
+            "enhance": 5000,
+            "augmentGold": 3200,
+            "augmentAmount": 11,
+            "augmentMaterials":[ "magcore", "acidproof1", "nanofiber1" ]
+        }
+
+    ]
+},
+{
+    "slug": "element_frost",
+    "upgrade":
+    [
+        {
+            "level": 10,
+            "enhanceGold": "",
+            "enhanceExperience": "",
+            "augmentGold": "",
+            "augmentMaterials":[
+                {
+                    "amount":"",
+                    "type":""
+                }
+            ]
+    
+        }
+    ]
+},
+{
+    "slug": "element_flame",
+    "upgrade":
+    [
+        {
+            "level": 10,
+            "enhanceGold": "",
+            "enhanceExperience": "",
+            "augmentGold": "",
+            "augmentMaterials":[
+                {
+                    "amount":"",
+                    "type":""
+                }
+            ]
+    
+        }
+    ]
+},
+{
+    "slug": "element_physical",
+    "upgrade":
+    [
+        {
+            "level": 10,
+            "enhanceGold": "",
+            "enhanceExperience": "",
+            "augmentGold": "",
+            "augmentMaterials":[
+                {
+                    "amount":"",
+                    "type":""
+                }
+            ]
+    
+        }
+    ]
+},
+{
+    "slug": "element_altered",
+    "upgrade":
+    [
+        {
+            "level": 10,
+            "enhanceGold": "",
+            "enhanceExperience": "",
+            "augmentGold": "",
+            "augmentMaterials":[
+                {
+                    "amount":"",
+                    "type":""
+                }
+            ]
+    
+        }
+    ]
+}
+
+]

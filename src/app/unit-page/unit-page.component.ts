@@ -16,6 +16,7 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
   slug!: string;
   unit: any = {};
   matrix: any = {};
+  upgradeData: any = {} ;
   activeTab: any = null;
   activeInfo: string = 'Advancements'; 
   
@@ -34,18 +35,29 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
     this.slug = this.route.snapshot.paramMap.get('name')!;
     this.dataService.getSimulacraData().subscribe((data: any) => {
       this.unit = data.find((unit: any) => unit.slug === this.slug);
-      const elementColors: {[key: string]: string} = { // this sets the page color depending on the element
-        "element_physical": '#CF9B14',
-        "element_physicalflame": '#CF9B14',
-        "element_flame": '#E74412',
-        "element_flamephysical": '#E74412',
-        "element_frost": '#3498DB',
-        "element_frostvolt": '#3498DB',
-        "element_volt": '#8C7ED0',
-        "element_voltfrost": '#8C7ED0',
-        "element_altered": '#0EA667'
-      };
-      document.documentElement.style.setProperty('--element-color', elementColors[this.unit.element]);
+      if (this.unit) {
+        const element = this.unit.element;
+        // Set page color depending on the element
+        const elementColors: {[key: string]: string} = {
+          "element_physical": '#CF9B14',
+          "element_physicalflame": '#CF9B14',
+          "element_flame": '#E74412',
+          "element_flamephysical": '#E74412',
+          "element_frost": '#3498DB',
+          "element_frostvolt": '#3498DB',
+          "element_volt": '#8C7ED0',
+          "element_voltfrost": '#8C7ED0',
+          "element_altered": '#0EA667'
+        };
+        document.documentElement.style.setProperty('--element-color', elementColors[element]);
+
+        // Fetch upgrade data
+        this.dataService.getWeaponMaterialsData().subscribe((allUpgradeData: any[]) => {
+          this.upgradeData = allUpgradeData.find((upgradeData: any) => upgradeData.slug === element);
+          console.log(this.upgradeData)
+          console.log(this.unit)
+        }, error => console.error(error));
+      }
     }, error => console.error(error));
 
     this.dataService.getMatricesData().subscribe((data: any) => {

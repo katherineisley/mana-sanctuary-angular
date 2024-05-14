@@ -27,4 +27,8 @@ export class DataService {
   getAboutUsData(): Observable<any> {
     return this.http.get('assets/json/aboutuscards.json');
   }
+
+  getWeaponMaterialsData(): Observable<any> {
+    return this.http.get('assets/json/weapon-materials.json');
+  }
 }
