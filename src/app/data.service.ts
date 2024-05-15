@@ -21,14 +21,14 @@ export class DataService {
   }
 
   getGlossaryData(): Observable<any> {
-    return this.http.get('assets/json/glossary.json');
+    return this.http.get('assets/json/glossary-data.json');
   }
 
   getAboutUsData(): Observable<any> {
-    return this.http.get('assets/json/aboutuscards.json');
+    return this.http.get('assets/json/about-us-data.json');
   }
 
   getWeaponMaterialsData(): Observable<any> {
-    return this.http.get('assets/json/weapon-materials.json');
+    return this.http.get('assets/json/weapon-materials-data.json');
   }
 }
