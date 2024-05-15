@@ -1,5 +1,5 @@
 import { Component, HostListener, OnInit, Renderer2, ElementRef, QueryList, ViewChildren } from '@angular/core';
-import { DataService } from '../data.service';
+import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -37,18 +37,17 @@ export class HealingCalculatorComponent implements OnInit {
   // TITAN
   titanHealing!: number;
 
-  constructor(private dataService: DataService, private http: HttpClient, private renderer: Renderer2, private el: ElementRef) { }
+  constructor(private route: ActivatedRoute, private http: HttpClient, private renderer: Renderer2, private el: ElementRef) { }
 
   ngOnInit() {
-    this.dataService.getSimulacraData().subscribe((data: any) => {
-      this.units = data;
-    });
-    this.dataService.getMatricesData().subscribe((data: any) => {
-      this.matrices = data;
-    });
-    this.dataService.getRelicsData().subscribe((data: any) => {
-      this.relics = data;
-    });
+    const data = this.route.snapshot.data['data'];
+    const simulacraData = data.simulacra;
+    const matricesData = data.matrices;
+    const relicsData = data.relics;
+
+    this.units = simulacraData;
+    this.matrices = matricesData;
+    this.relics = relicsData;
   }
 
   toggleUnitSelect(event: Event, clickedUnitSetId: number) { // this shit needs to be refactored and optimized, shares a lot of code with toggleMatrixSelect

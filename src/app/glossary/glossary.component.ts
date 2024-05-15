@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-glossary',
@@ -7,5 +8,13 @@ import { Component } from '@angular/core';
 })
 export class GlossaryComponent {
   terms: any[] = [];
-  constructor() { }
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit() {
+    const data = this.route.snapshot.data['data'];
+    this.terms = data.glossary;
+  
+    // sort alphabetically
+    this.terms.sort((a, b) => a.name.localeCompare(b.name));
+  }
 }

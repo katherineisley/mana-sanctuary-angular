@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../data.service';
+import { ActivatedRoute } from '@angular/router';
 import * as $ from 'jquery';
 
 @Component({
@@ -38,7 +38,7 @@ export class UnitsIndexComponent implements OnInit {
 
   private allUnits: string[] = [...this.SSRUnits, ...this.SRUnits];
 
-  constructor(private dataService: DataService) { }
+  constructor(private route: ActivatedRoute) { }
 
   private populateArrays(data: any[]): void { // i know its a funny gag to say "the code is self-documenting" but this one really should be
     const elementMap = {
@@ -102,10 +102,10 @@ export class UnitsIndexComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.dataService.getSimulacraData().subscribe((data: any) => {
-      this.units = data;
-      this.populateArrays(data); // Call the new function to populate the arrays
-    });
+    const data = this.route.snapshot.data['data'];
+    const simulacraData = data.simulacra;
+    this.units = simulacraData;
+    this.populateArrays(simulacraData);
 
     $('.element .wrapper img').click((event) => {
       const element = $(event.currentTarget).attr('data-element');

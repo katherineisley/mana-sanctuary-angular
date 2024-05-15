@@ -8,7 +8,6 @@
                 "paragraph": "Weapons/matrices that you use actively for charging / skills / attacks all the time. When used to describe buffs, it means that the buff is only active while you are on the corresponding weapon/matrix."               
             }
         ]
-
     },
     {
         "slug": "offfield",
@@ -19,7 +18,6 @@
                 "paragraph": "Weapons/matrices that you use once in a while for a short period, then switch to on-field weapon/matrix. When used to describe buffs, it means that the buff is active at all times, no matter what weapon/matrix is currently used."               
             }
         ]
-
     },
     {
         "slug": "hybrid",
@@ -30,7 +28,6 @@
                 "paragraph": "Weapons/matrices that can be used as both on- and off-field, depending on your team composition. When used to describe buffs, it means that the buff is activated on-field, but the effect remains off-field."               
             }
         ]
-
     },
     {
         "slug": "hyperbody",
@@ -41,7 +38,6 @@
                 "paragraph": "A state when the wielder isn’t affected by push/stun control effects (seen as yellow glow on your character)"               
             }
         ]
-
     },
     {
         "slug": "aoe",
@@ -52,7 +48,6 @@
                 "paragraph": "Area of effect, a skill that covers a large area, not just a single point."               
             }
         ]
-
     },
     {
         "slug": "atk",
@@ -63,7 +58,6 @@
                 "paragraph": "Attack value of your element."               
             }
         ]
-
     },
     {
         "slug": "hp",
@@ -74,7 +68,6 @@
                 "paragraph": "Health points."               
             }
         ]
-
     },
     {
         "slug": "cd",
@@ -85,7 +78,6 @@
                 "paragraph": "Skill cooldown."               
             }
         ]
-
     },
     {
         "slug": "f2p",
@@ -96,7 +88,6 @@
                 "paragraph": "Free to play (non-money-spender)."               
             }
         ]
-
     },
     {
         "slug": "qol",
@@ -107,7 +98,6 @@
                 "paragraph": "Quality of life. Something that makes playing the game easier or your execution of skills."               
             }
         ]
-
     },
     {
         "slug": "rng",
@@ -118,7 +108,6 @@
                 "paragraph": "Random Number Generator. A chance of obtaining something. Not a guaranteed outcome."               
             }
         ]
-
     },
     {
         "slug": "passive",
@@ -129,7 +118,6 @@
                 "paragraph": "A skill/benefit that is triggered by you doing something else like healing or using a skill."               
             }
         ]
-
     },
     {
         "slug": "pieces",
@@ -140,7 +128,6 @@
                 "paragraph": "2 or 4 pieces of the same matrix."               
             }
         ]
-
     },
     {
         "slug": "oow",
@@ -151,7 +138,6 @@
                 "paragraph": "Origin of War, endgame mode where a team of 4 fights against 28 levels of mobs and bosses."               
             }
         ]
-
     },
     {
         "slug": "va",
@@ -162,6 +148,5 @@
                 "paragraph": "Void Abyss, endgame mode where a team of 4 fights against 6 stages of bosses."               
             }
         ]
-
     }
 ]

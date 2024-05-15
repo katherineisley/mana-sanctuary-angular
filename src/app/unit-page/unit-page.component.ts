@@ -1,8 +1,6 @@
 import { AfterViewInit, Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import { DataService } from '../data.service';
 
 import * as $ from 'jquery';
 
@@ -21,9 +19,7 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
   activeInfo: string = 'Advancements'; 
   
   constructor(
-    private dataService: DataService,
     private route: ActivatedRoute,
-    private http: HttpClient,
     private sanitizer: DomSanitizer
   ) { }
   
@@ -32,38 +28,38 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
+    const data = this.route.snapshot.data['data'];
+    const simulacraData = data.simulacra;
+    const matricesData = data.matrices;
+    const weaponMaterialsData = data.weaponMaterials;
+  
     this.slug = this.route.snapshot.paramMap.get('name')!;
-    this.dataService.getSimulacraData().subscribe((data: any) => {
-      this.unit = data.find((unit: any) => unit.slug === this.slug);
-      if (this.unit) {
-        const element = this.unit.element;
-        // Set page color depending on the element
-        const elementColors: {[key: string]: string} = {
-          "element_physical": '#CF9B14',
-          "element_physicalflame": '#CF9B14',
-          "element_flame": '#E74412',
-          "element_flamephysical": '#E74412',
-          "element_frost": '#3498DB',
-          "element_frostvolt": '#3498DB',
-          "element_volt": '#8C7ED0',
-          "element_voltfrost": '#8C7ED0',
-          "element_altered": '#0EA667'
-        };
-        document.documentElement.style.setProperty('--element-color', elementColors[element]);
-
-        // Fetch upgrade data
-        this.dataService.getWeaponMaterialsData().subscribe((allUpgradeData: any[]) => {
-          this.upgradeData = allUpgradeData.find((upgradeData: any) => upgradeData.slug === element);
-          console.log(this.upgradeData)
-          console.log(this.unit)
-        }, error => console.error(error));
-      }
-    }, error => console.error(error));
-
-    this.dataService.getMatricesData().subscribe((data: any) => {
-      this.matrix = data.find((matrix: any) => matrix.slug === this.slug);
-    }, error => console.error(error));
-  }
+    this.unit = simulacraData.find((unit: any) => unit.slug === this.slug);
+  
+    if (this.unit) {
+      const element = this.unit.element;
+      // Set page color depending on the element
+      const elementColors: {[key: string]: string} = {
+        "element_physical": '#CF9B14',
+        "element_physicalflame": '#CF9B14',
+        "element_flame": '#E74412',
+        "element_flamephysical": '#E74412',
+        "element_frost": '#3498DB',
+        "element_frostvolt": '#3498DB',
+        "element_volt": '#8C7ED0',
+        "element_voltfrost": '#8C7ED0',
+        "element_altered": '#0EA667'
+      };
+      document.documentElement.style.setProperty('--element-color', elementColors[element]);
+  
+      // Fetch upgrade data
+      this.upgradeData = weaponMaterialsData.find((upgradeData: any) => upgradeData.slug === element);
+      console.log(this.upgradeData)
+      console.log(this.unit)
+    }
+  
+    this.matrix = matricesData.find((matrix: any) => matrix.slug === this.slug);
+  }  
 
   setActiveTab(element: any) { 
     this.activeTab = element;
