@@ -29,6 +29,7 @@ import { MatrixPageComponent } from './matrix-page/matrix-page.component';
 import { RelicCardComponent } from './relic-card/relic-card.component';
 import { RelicPageComponent } from './relic-page/relic-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
   declarations: [
@@ -62,9 +63,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     NgxSplideModule,
-    FormsModule
+    FormsModule,
+    MatSliderModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

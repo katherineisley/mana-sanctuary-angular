@@ -1,4 +1,5 @@
 <section class="main" *ngIf="unit">
+
   <div class="header-element">
     <div class="header-content">
       <div class="unit-wrapper">
@@ -331,6 +332,27 @@
           <p>{{ effect.paragraph }}</p>
         </div>
       </div>
+    </div>
+    <div class="materials-part">
+      <mat-slider min="0" max="200">
+        <input value="0" matSliderStartThumb>
+        <input value="200" matSliderEndThumb>
+      </mat-slider>
+      <!-- <div *ngFor="let item of upgradeData">
+        <h2>{{ item.slug }}</h2>
+        <ul>
+          <li *ngFor="let upgrade of item.upgrade">
+            <p>Level: {{ upgrade.level }}</p>
+            <p>Enhance: {{ upgrade.enhance }}</p>
+            <p>Augment Gold: {{ upgrade.augmentGold }}</p>
+            
+          </li>
+        </ul>
+      </div>
+       -->
+      
+      
+      <h2>hi</h2>
     </div>
   </div>
 </section>

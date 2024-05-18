@@ -53,9 +53,16 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
       document.documentElement.style.setProperty('--element-color', elementColors[element]);
       // Fetch upgrade data
 
-      this.upgradeData = weaponMaterialsData.find((upgradeData: any) => upgradeData.slug === element);
-      console.log(this.upgradeData)
-      console.log(this.unit)
+      this.upgradeData = weaponMaterialsData.find((upgradeData: any) => {
+        if (element !== 'element_altered') {
+            return upgradeData.slug === 'element_all';
+        } else {
+            return upgradeData.slug === element;
+        }
+    });
+    console.log(this.upgradeData);
+    console.log(this.unit);
+    
     }
   
     this.matrix = matricesData.find((matrix: any) => matrix.slug === this.slug);
