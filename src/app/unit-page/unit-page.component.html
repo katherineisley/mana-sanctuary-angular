@@ -20,7 +20,8 @@
         </div>
       </div>
       <div class="unit-description">
-        <span><i style="font-size:24px; margin: 0 4px 0 0;" class="fa fa-quote-left"></i>{{unit?.weaponDescription}}</span>
+        <span><i style="font-size:24px; margin: 0 4px 0 0;"
+            class="fa fa-quote-left"></i>{{unit?.weaponDescription}}</span>
       </div>
       <div class="unit-stats">
         <div class="stats-title">Attributes</div>
@@ -69,7 +70,8 @@
         </div>
       </div>
     </div>
-    <div class="header-splash" style="background-image: url(&quot;../assets/splashart/{{unit?.slug}}_a3_splashart.webp&quot;);">
+    <div class="header-splash"
+      style="background-image: url(&quot;../assets/splashart/{{unit?.slug}}_a3_splashart.webp&quot;);">
 
     </div>
   </div>
@@ -312,47 +314,54 @@
     </div>
     <div class="matrix-part">
       <!-- Display 2pc effect -->
-      <div *ngIf="matrix['2pc'] && matrix['2pc'].effect">
+      <div *ngIf="matrix['twopc'] && matrix['twopc'].effect">
         <h3>2pc Effect:</h3>
-        <div *ngFor="let effect of matrix['2pc'].effect">
+        <div *ngFor="let effect of matrix['twopc'].effect">
           <p>{{ effect.paragraph }}</p>
         </div>
       </div>
       <!-- Display 3pc effect -->
-      <div *ngIf="matrix['3pc'] && matrix['3pc'].effect">
+      <div *ngIf="matrix['threepc'] && matrix['threepc'].effect">
         <h3>3pc Effect:</h3>
-        <div *ngFor="let effect of matrix['3pc'].effect">
+        <div *ngFor="let effect of matrix['threepc'].effect">
           <p>{{ effect.paragraph }}</p>
         </div>
       </div>
       <!-- Display 4pc effect -->
-      <div *ngIf="matrix['4pc'] && matrix['4pc'].effect">
+      <div *ngIf="matrix['fourpc'] && matrix['fourpc'].effect">
         <h3>4pc Effect:</h3>
-        <div *ngFor="let effect of matrix['4pc'].effect">
+        <div *ngFor="let effect of matrix['fourpc'].effect">
           <p>{{ effect.paragraph }}</p>
         </div>
       </div>
     </div>
     <div class="materials-part">
-      <mat-slider min="0" max="200">
-        <input value="0" matSliderStartThumb>
-        <input value="200" matSliderEndThumb>
+
+
+      <mat-slider [min]="0" [max]="200" [step]="10" [showTickMarks]="true" [(ngModel)]="sliderValues"
+        (input)="onSliderChange()">
+        <input matSliderStartThumb [(ngModel)]="startvalue" (change)="onSliderChange()">
+        <input matSliderEndThumb [(ngModel)]="endvalue" (change)="onSliderChange()">
       </mat-slider>
-      <!-- <div *ngFor="let item of upgradeData">
-        <h2>{{ item.slug }}</h2>
-        <ul>
-          <li *ngFor="let upgrade of item.upgrade">
-            <p>Level: {{ upgrade.level }}</p>
-            <p>Enhance: {{ upgrade.enhance }}</p>
-            <p>Augment Gold: {{ upgrade.augmentGold }}</p>
-            
-          </li>
-        </ul>
+      <br>
+
+      <label>Selected slider Start value is {{startvalue}}</label>
+      <br>
+      <label>Selected slider End value is {{endvalue}}</label>
+
+
+      <div class="material-wrap">
+        <div *ngFor="let material of totalMaterialsArray; let i = index">
+          <div class="material-card" [style.background-color]="materialsColour[i]">
+            <div class="content-wrapper"
+              style="background-image: url(&quot;../assets/materials/{{material[0]}}.png&quot;);">
+              <div class="details-container">
+                <h5 class="name">{{ material[1] }}</h5>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-       -->
-      
-      
-      <h2>hi</h2>
     </div>
   </div>
 </section>

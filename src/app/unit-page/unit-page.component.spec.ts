@@ -6,7 +6,7 @@ describe('UnitPageComponent', () => {
   let component: UnitPageComponent;
   let fixture: ComponentFixture<UnitPageComponent>;
 
-  beforeEach(() => {
+  beforeEach(async() => {
     TestBed.configureTestingModule({
       declarations: [UnitPageComponent]
     });

@@ -1,5 +1,44 @@
 @import '../../styles.scss';
+.material-wrap{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
 
+.material-card{
+    background-size: cover;
+    background-repeat: no-repeat; 
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    padding: 5px 10px;
+    border: 1px $border solid;
+
+    .content-wrapper {
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        background-position:center;
+        background-size: 150%;
+        background-repeat: no-repeat; 
+
+        .details-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .name {
+                font-size: 22px;
+                font-weight: 600;
+                text-transform: uppercase;
+                margin: unset;
+              //  -webkit-text-stroke: 0.5px black; 
+            }
+        }
+    }
+}
 .main {
     position: relative;
 
