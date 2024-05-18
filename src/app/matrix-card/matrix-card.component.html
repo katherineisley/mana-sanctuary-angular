@@ -21,10 +21,8 @@
       <div class="bc-wrapper" *ngIf="matrix['twopc'] && matrix['twopc'].effect">
         <div class="bc-header">
           <div class="bc-title" [class]="getRarityClass()">2-Piece</div>
-          <div class="bc-roles">
-            <div *ngFor="let role of matrix?.twopc?.roles">
-              <img src="assets/elements/{{role}}.png" alt="{{role}} resonance">
-            </div>
+          <div class="bc-resonance">
+            <img src="assets/elements/{{role}}.png" alt="{{role}} resonance" *ngFor="let role of matrix?.twopc?.resonance">
           </div>
         </div>
         <div *ngFor="let buff of matrix?.twopc?.buffs">
@@ -34,10 +32,8 @@
       <div class="bc-wrapper" *ngIf="matrix['fourpc'] && matrix['fourpc'].effect">
         <div class="bc-header">
           <div class="bc-title" [class]="getRarityClass()">4-Piece</div>
-          <div class="bc-roles">
-            <div *ngFor="let role of matrix?.fourpc?.roles">
-              <img src="assets/elements/{{role}}.png" alt="{{role}} resonance">
-            </div>
+          <div class="bc-resonance">
+            <img src="assets/elements/{{role}}.png" alt="{{role}} resonance" *ngFor="let role of matrix?.fourpc?.resonance">
           </div>
         </div>
         <div *ngFor="let buff of matrix?.fourpc?.buffs">
@@ -47,8 +43,8 @@
       <div class="bc-wrapper" *ngIf="matrix['threepc'] && matrix['threepc'].effect">
         <div class="bc-header">
           <div class="bc-title" [class]="getRarityClass()">3-Piece</div>
-          <div class="bc-roles">
-            <div *ngFor="let role of matrix?.threerpc?.roles">
+          <div class="bc-resonance">
+            <div *ngFor="let role of matrix?.threerpc?.resonance">
               <img src="assets/elements/{{role}}.png" alt="{{role}} resonance">
             </div>
           </div>

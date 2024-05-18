@@ -198,6 +198,7 @@
                 display: flex;
                 flex-direction: column;
                 width: 100%;
+                gap: 2px;
 
                 .name {
                     font-size: 20px;
@@ -211,19 +212,21 @@
                     height: fit-content;
                 }
 
-                .type-and-buffs {
+                .type-and-rarity {
                     display: flex;
                     width: 100%;
                     flex-direction: row;
                     justify-content: space-between;
 
                     .icons,
-                    .buffs {
+                    .rarity {
                         font-weight: 600;
                         font-size: 20px;
                         display: flex;
                         flex-direction: row;
                         gap: 2px;
+                        align-items: center;
+                        line-height: normal;
                     }
                 }
             }

@@ -12,7 +12,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         "attack"
       ],
       "buffs": [
@@ -28,7 +28,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         "attack"
       ],
       "buffs": [
@@ -54,7 +54,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         "attack", "benediction"
       ],
       "buffs": [
@@ -70,7 +70,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         "attack", "fortitude"
       ],
       "buffs": [
@@ -96,7 +96,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -109,7 +109,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -132,7 +132,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -145,7 +145,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -168,7 +168,7 @@
       "onField": false,
       "onHealingGuide": true,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -184,7 +184,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -210,7 +210,7 @@
       "onField": false,
       "onHealingGuide": true,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -226,7 +226,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -251,7 +251,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -267,7 +267,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -292,7 +292,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -308,7 +308,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -333,7 +333,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -349,7 +349,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -374,7 +374,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -390,7 +390,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -416,7 +416,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -432,7 +432,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -457,7 +457,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -473,7 +473,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -498,7 +498,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -514,7 +514,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -539,7 +539,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -555,7 +555,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -580,7 +580,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -596,7 +596,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -621,7 +621,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -637,7 +637,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -662,7 +662,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -678,7 +678,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -703,7 +703,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -719,7 +719,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -744,7 +744,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -757,7 +757,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -782,7 +782,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -795,7 +795,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -820,7 +820,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -836,7 +836,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -861,7 +861,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -877,7 +877,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -902,7 +902,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -918,7 +918,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -943,7 +943,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -959,7 +959,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -984,7 +984,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1000,7 +1000,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1025,7 +1025,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1038,7 +1038,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1060,7 +1060,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1076,7 +1076,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1101,7 +1101,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1117,7 +1117,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1142,7 +1142,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1158,7 +1158,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1180,7 +1180,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1193,7 +1193,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1215,7 +1215,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1228,7 +1228,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1250,7 +1250,7 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1266,7 +1266,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1288,7 +1288,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1304,7 +1304,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1329,7 +1329,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1342,7 +1342,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1364,7 +1364,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1377,7 +1377,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1399,7 +1399,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1412,7 +1412,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1434,7 +1434,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1447,7 +1447,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1469,7 +1469,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1482,7 +1482,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1504,7 +1504,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1517,7 +1517,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1539,7 +1539,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1552,7 +1552,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1577,7 +1577,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1590,7 +1590,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1612,7 +1612,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1625,7 +1625,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1650,7 +1650,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1672,7 +1672,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1694,7 +1694,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1716,7 +1716,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1738,7 +1738,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1760,7 +1760,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1782,7 +1782,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1804,7 +1804,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1829,7 +1829,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [
@@ -1851,7 +1851,7 @@
       "onField": true,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
+      "resonance": [
         ""
       ],
       "effect": [

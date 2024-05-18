@@ -8,9 +8,7 @@
     "onDPSGuide": false,
     "onHealingGuide": false,
     "onTankGuide": false,
-    "roles": [
-      ""
-    ],
+    "roles": [""],
     "description": [
       {
           "paragraph":"Summon a droid and generate a shield for 5 seconds. The shield disappears after 5 seconds or after being struck once. When it disappears, it knocks back nearby enemies, dealing damage equal to 100% of ATK. If broken within 1 second of being created, the shield will stun enemies for 2 seconds. Cooldown: 30 seconds."            
@@ -52,9 +50,7 @@
     "onDPSGuide":false,
     "onHealingGuide": false,
     "onTankGuide": false,
-    "roles": [
-      ""
-    ],
+    "roles": [""],
     "description": [
       {
           "paragraph":"Fire a Cybernetic Arm to pull the selected target to you, or you to the target. Deal 100% damage on hit, strongly suspend the target, and regenerate weapon charge by 300. Can be used to access hard-to-reach areas, and stores up to 2 charges at a time. Regain 1 charge every 30 seconds."            
@@ -96,9 +92,7 @@
     "onDPSGuide":false,
     "onHealingGuide": false,
     "onTankGuide": false,
-    "roles": [
-      ""
-    ],
+    "roles": [""],
     "description": [
       {
           "paragraph":"Summon a Hovering Cannon for 20 seconds. 240-second cooldown. The Hovering Cannon has the skill: Laser Beam, which deals 5.6% ATK damage to the target each time."            

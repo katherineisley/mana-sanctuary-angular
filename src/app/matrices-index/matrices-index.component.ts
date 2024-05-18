@@ -40,6 +40,23 @@ export class MatricesIndexComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) { }
 
+  // private getUniqueMatricesResonanceValues(data: any[]): string[] {
+  //   const resonanceSet = new Set<string>();
+
+  //   if (data.twopc && data.twopc.resonance) {
+  //       data.twopc.resonance.forEach((resonance: string) => {
+  //           resonanceSet.add(resonance);
+  //       });
+  //   }
+  //   if (data.fourpc && data.fourpc.resonance) {
+  //       data.fourpc.resonance.forEach((resonance: string) => {
+  //           resonanceSet.add(resonance);
+  //       });
+  //   }
+  //   const uniqueResonanceValues = Array.from(resonanceSet);
+  //   return uniqueResonanceValues;
+  // }
+
   private populateArrays(data: any[]): void { // i know its a funny gag to say "the code is self-documenting" but this one really should be
     const elementMap = {
       'element_physical': this.physicalMatrices,
@@ -74,24 +91,21 @@ export class MatricesIndexComponent implements OnInit {
     };
 
     data.forEach((matrix: any) => { // just nabs the matrix's element, rarity, and resonance and adds it to the appropriate array for the filter
-      //const elementKey = matrix.element as keyof typeof elementMap;
       const rarityKey = matrix.rarity as keyof typeof rarityMap;
-      //const resonanceKey = matrix.resonance as keyof typeof resonanceMap;
-
-/*       if (elementMap[elementKey]) {
-        elementMap[elementKey].push(matrix.slug);
-      } */
 
       if (rarityMap[rarityKey]) {
         rarityMap[rarityKey].push(matrix.slug);
       }
 
-/*       if (resonanceMap[resonanceKey]) {
-        resonanceMap[resonanceKey].push(matrix.slug);
-      } */
+      // matrix.resonance.forEach((resonance: any) => { // requires special solution to grab unique values from twopc and fourpc entry arrays
+      //   const resonanceMapKey = resonance as keyof typeof resonanceMap;
+      //   if (resonanceMap[resonanceMapKey]) {
+      //     resonanceMap[resonanceMapKey].push(matrix.slug);
+      //   }
+      // })
 
-      matrix.element.forEach((role: any) => {
-        const elementMapKey = role as keyof typeof elementMap;
+      matrix.element.forEach((element: any) => {
+        const elementMapKey = element as keyof typeof elementMap;
         if (elementMap[elementMapKey]) {
           elementMap[elementMapKey].push(matrix.slug);
         }
@@ -123,13 +137,13 @@ export class MatricesIndexComponent implements OnInit {
       this.updateActiveClasses();
     });
     
-/*     $('.type .wrapper img').click((event) => {
+    $('.type .wrapper img').click((event) => {
       const type = $(event.currentTarget).attr('data-type');
       this.activeType = this.activeType === type ? null : (type || null);
       const matricesToShow = this.getMatricesToShow(this.activeElement, this.activeRarity, this.activeType,this.activeRole);
       this.showMatrices(matricesToShow);
       this.updateActiveClasses();
-    }); */
+    });
 /* 
     $('.role .wrapper img').click((event) => {
       const role = $(event.currentTarget).attr('data-role');
@@ -151,9 +165,9 @@ export class MatricesIndexComponent implements OnInit {
     if (this.activeRarity !== null) {
       $(`.rarity .wrapper span[data-rarity="${this.activeRarity}"]`).addClass('active');
     }
-/*     if (this.activeType !== null) {
+    if (this.activeType !== null) {
       $(`.type .wrapper img[data-type="${this.activeType}"]`).addClass('active');
-    }
+    } /*
     if (this.activeRole !== null) {
       $(`.role .wrapper img[data-role="${this.activeRole}"]`).addClass('active');
     } */
@@ -198,7 +212,7 @@ export class MatricesIndexComponent implements OnInit {
       }
     }
 
-/*     if (typeFilter) {
+    if (typeFilter) {
       switch (typeFilter) {
         case 'damage':
           filteredMatrices = filteredMatrices.filter(unit => this.damageMatrices.includes(unit));
@@ -210,7 +224,7 @@ export class MatricesIndexComponent implements OnInit {
           filteredMatrices = filteredMatrices.filter(unit => this.fortitudeMatrices.includes(unit));
           break;
       }
-    } */
+    }
 /*     if (roleFilter) {
       switch (roleFilter) {
         case 'MDPS':

@@ -59,10 +59,10 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
         } else {
             return upgradeData.slug === element;
         }
-    });
-    console.log(this.upgradeData);
-    console.log(this.unit);
-    
+      });
+
+      console.log(this.upgradeData);
+      console.log(this.unit);
     }
   
     this.matrix = matricesData.find((matrix: any) => matrix.slug === this.slug);

@@ -23,6 +23,13 @@ export class RelicsIndexComponent implements OnInit {
   private SSRRelics: string[] = [];
   private SRRelics: string[] = [];
 
+  private MDPSRelics: string[] = [];
+  private BufferRelics: string[] = [];
+  private HealerRelics: string[] = [];
+  private SupportBufferRelics: string[] = [];
+  private ShatterRelics: string[] = [];
+  private TauntRelics: string[] = [];
+
   private allRelics: string[] = [...this.SSRRelics, ...this.SRRelics];
 
   constructor(private route: ActivatedRoute) { }
@@ -50,14 +57,14 @@ export class RelicsIndexComponent implements OnInit {
     //   'fortitude': this.fortitudeRelics
     // };
 
-    // const rolesMap = {
-    //   'MDPS': this.MDPSRelics,
-    //   'Buffer': this.BufferRelics,
-    //   'Healer': this.HealerRelics,
-    //   'SupportBuffer': this.SupportBufferRelics,
-    //   'Shatter': this.ShatterRelics,
-    //   'Taunt': this.TauntRelics
-    // };
+    const rolesMap = {
+      'MDPS': this.MDPSRelics,
+      'Buffer': this.BufferRelics,
+      'Healer': this.HealerRelics,
+      'SupportBuffer': this.SupportBufferRelics,
+      'Shatter': this.ShatterRelics,
+      'Taunt': this.TauntRelics
+    };
 
     data.forEach((relic: any) => { // just nabs the relic's element, rarity, and resonance and adds it to the appropriate array for the filter
       const elementKey = relic.elementBoost as keyof typeof elementMap;
@@ -75,13 +82,13 @@ export class RelicsIndexComponent implements OnInit {
 /*       if (resonanceMap[resonanceKey]) {
         resonanceMap[resonanceKey].push(relic.slug);
       } */
-/* 
-      relic.element.forEach((role: any) => {
-        const elementMapKey = role as keyof typeof elementMap;
-        if (elementMap[elementMapKey]) {
-          elementMap[elementMapKey].push(relic.slug);
+
+      relic.roles.forEach((role: any) => {
+        const rolesMapKey = role as keyof typeof rolesMap;
+        if (rolesMap[rolesMapKey]) {
+          rolesMap[rolesMapKey].push(relic.slug);
         }
-      }); */
+      });
     });
 
     this.allRelics = [...this.SSRRelics, ...this.SRRelics]; // update the allRelics array
@@ -116,14 +123,14 @@ export class RelicsIndexComponent implements OnInit {
       this.showRelics(relicsToShow);
       this.updateActiveClasses();
     }); */
-/* 
+
     $('.role .wrapper img').click((event) => {
       const role = $(event.currentTarget).attr('data-role');
       this.activeRole = this.activeRole === role ? null : (role || null);
       const relicsToShow = this.getRelicsToShow(this.activeElement, this.activeRarity, this.activeType, this.activeRole);
       this.showRelics(relicsToShow);
       this.updateActiveClasses();
-    }); */
+    });
   }
 
   private updateActiveClasses(): void {
@@ -139,10 +146,10 @@ export class RelicsIndexComponent implements OnInit {
     }
 /*     if (this.activeType !== null) {
       $(`.type .wrapper img[data-type="${this.activeType}"]`).addClass('active');
-    }
+    } */
     if (this.activeRole !== null) {
       $(`.role .wrapper img[data-role="${this.activeRole}"]`).addClass('active');
-    } */
+    } 
   }
 
   private getRelicsToShow(
@@ -194,7 +201,8 @@ export class RelicsIndexComponent implements OnInit {
           break;
       }
     } */
-/*     if (roleFilter) {
+
+    if (roleFilter) {
       switch (roleFilter) {
         case 'MDPS':
           filteredRelics = filteredRelics.filter(unit => this.MDPSRelics.includes(unit));
@@ -215,7 +223,7 @@ export class RelicsIndexComponent implements OnInit {
           filteredRelics = filteredRelics.filter(unit => this.TauntRelics.includes(unit));
           break;
       }
-    } */
+    }
     return filteredRelics;
   }
 
