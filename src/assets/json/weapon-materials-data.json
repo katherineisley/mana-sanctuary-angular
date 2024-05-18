@@ -7,7 +7,7 @@
                 "enhance": 400,
                 "augmentGold": 0,
                 "augmentAmount": 0,
-                "augmentMaterials": [""],
+                "augmentMaterials": [],
                 "requiredLevel": 0
             },
             {
