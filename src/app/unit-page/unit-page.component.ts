@@ -51,8 +51,8 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
         "element_altered": '#0EA667'
       };
       document.documentElement.style.setProperty('--element-color', elementColors[element]);
-  
       // Fetch upgrade data
+
       this.upgradeData = weaponMaterialsData.find((upgradeData: any) => upgradeData.slug === element);
       console.log(this.upgradeData)
       console.log(this.unit)

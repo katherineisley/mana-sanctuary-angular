@@ -35,10 +35,7 @@ export class DynamicContentHeightDirective {
     const windowHeight = $(window).height() || 0;
     
     if (headerHeight + footerHeight + contentHeight < windowHeight) {
-      // console.log("adjusting");
       const newHeight = windowHeight - headerHeight - footerHeight - this.getBotTopMargin();
-      // console.log(windowHeight, headerHeight, footerHeight, this.getBotTopMargin());
-      // console.log(newHeight);
       this.renderer.setStyle(this.el.nativeElement, 'height', `${newHeight}px`);
     }
   }
