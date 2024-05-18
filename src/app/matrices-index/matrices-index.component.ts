@@ -40,23 +40,6 @@ export class MatricesIndexComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) { }
 
-  // private getUniqueMatricesResonanceValues(data: any[]): string[] {
-  //   const resonanceSet = new Set<string>();
-
-  //   if (data.twopc && data.twopc.resonance) {
-  //       data.twopc.resonance.forEach((resonance: string) => {
-  //           resonanceSet.add(resonance);
-  //       });
-  //   }
-  //   if (data.fourpc && data.fourpc.resonance) {
-  //       data.fourpc.resonance.forEach((resonance: string) => {
-  //           resonanceSet.add(resonance);
-  //       });
-  //   }
-  //   const uniqueResonanceValues = Array.from(resonanceSet);
-  //   return uniqueResonanceValues;
-  // }
-
   private populateArrays(data: any[]): void { // i know its a funny gag to say "the code is self-documenting" but this one really should be
     const elementMap = {
       'element_physical': this.physicalMatrices,
@@ -97,12 +80,27 @@ export class MatricesIndexComponent implements OnInit {
         rarityMap[rarityKey].push(matrix.slug);
       }
 
-      // matrix.resonance.forEach((resonance: any) => { // requires special solution to grab unique values from twopc and fourpc entry arrays
-      //   const resonanceMapKey = resonance as keyof typeof resonanceMap;
-      //   if (resonanceMap[resonanceMapKey]) {
-      //     resonanceMap[resonanceMapKey].push(matrix.slug);
-      //   }
-      // })
+      const resonanceSet = new Set<string>();
+      if (matrix.twopc && matrix.twopc.resonance) {
+        matrix.twopc.resonance.forEach((resonance: string) => {
+          resonanceSet.add(resonance);
+        });
+      }
+
+      if (matrix.fourpc && matrix.fourpc.resonance) {
+        matrix.fourpc.resonance.forEach((resonance: string) => {
+          resonanceSet.add(resonance);
+        });
+      }
+
+      const uniqueResonanceValues = Array.from(resonanceSet);
+
+      uniqueResonanceValues.forEach((resonance: any) => {
+        const resonanceMapKey = resonance as keyof typeof resonanceMap;
+        if (resonanceMap[resonanceMapKey]) {
+          resonanceMap[resonanceMapKey].push(matrix.slug);
+        }
+      });
 
       matrix.element.forEach((element: any) => {
         const elementMapKey = element as keyof typeof elementMap;
