@@ -6,7 +6,9 @@
                 "level": 10,
                 "enhance": 400,
                 "augmentGold": 0,
-                "augmentAmount": 0,
+                "augmentAmount": [
+                    0
+                ],
                 "augmentMaterials": [],
                 "requiredLevel": 0
             },
@@ -14,7 +16,9 @@
                 "level": 20,
                 "enhance": 600,
                 "augmentGold": 400,
-                "augmentAmount": 2,
+                "augmentAmount": [
+                    2
+                ],
                 "augmentMaterials": [
                     "elementalCore_A"
                 ],
@@ -24,7 +28,9 @@
                 "level": 30,
                 "enhance": 900,
                 "augmentGold": 800,
-                "augmentAmount": 2,
+                "augmentAmount": [
+                    2
+                ],
                 "augmentMaterials": [
                     "elementalCore_A"
                 ],
@@ -34,7 +40,10 @@
                 "level": 40,
                 "enhance": 1200,
                 "augmentGold": 1200,
-                "augmentAmount": 3,
+                "augmentAmount": [
+                    3,
+                    3
+                ],
                 "augmentMaterials": [
                     "elementalCore_A",
                     "upgradeA_A"
@@ -45,7 +54,11 @@
                 "level": 50,
                 "enhance": 1700,
                 "augmentGold": 1600,
-                "augmentAmount": 3,
+                "augmentAmount": [
+                    3,
+                    3,
+                    3
+                ],
                 "augmentMaterials": [
                     "elementalCore_A",
                     "upgradeA_A",
@@ -57,7 +70,11 @@
                 "level": 60,
                 "enhance": 2200,
                 "augmentGold": 2000,
-                "augmentAmount": 4,
+                "augmentAmount": [
+                    4,
+                    4,
+                    4
+                ],
                 "augmentMaterials": [
                     "elementalCore_A",
                     "upgradeA_A",
@@ -69,7 +86,11 @@
                 "level": 70,
                 "enhance": 2900,
                 "augmentGold": 2400,
-                "augmentAmount": 6,
+                "augmentAmount": [
+                    6,
+                    6,
+                    6
+                ],
                 "augmentMaterials": [
                     "elementalCore_A",
                     "upgradeA_A",
@@ -81,7 +102,11 @@
                 "level": 80,
                 "enhance": 3900,
                 "augmentGold": 2800,
-                "augmentAmount": 8,
+                "augmentAmount": [
+                    8,
+                    8,
+                    8
+                ],
                 "augmentMaterials": [
                     "elementalCore_A",
                     "upgradeA_A",
@@ -93,7 +118,11 @@
                 "level": 90,
                 "enhance": 5000,
                 "augmentGold": 3200,
-                "augmentAmount": 11,
+                "augmentAmount": [
+                    11,
+                    11,
+                    11
+                ],
                 "augmentMaterials": [
                     "elementalCore_A",
                     "upgradeA_A",
@@ -105,7 +134,11 @@
                 "level": 100,
                 "enhance": 5800,
                 "augmentGold": 3600,
-                "augmentAmount": 5,
+                "augmentAmount": [
+                    5,
+                    5,
+                    5
+                ],
                 "augmentMaterials": [
                     "elementalCore_B",
                     "upgradeA_B",
@@ -117,7 +150,11 @@
                 "level": 110,
                 "enhance": 6400,
                 "augmentGold": 4000,
-                "augmentAmount": 6,
+                "augmentAmount": [
+                    6,
+                    6,
+                    6
+                ],
                 "augmentMaterials": [
                     "elementalCore_B",
                     "upgradeA_B",
@@ -129,7 +166,11 @@
                 "level": 120,
                 "enhance": 7100,
                 "augmentGold": 4400,
-                "augmentAmount": 8,
+                "augmentAmount": [
+                    8,
+                    8,
+                    8
+                ],
                 "augmentMaterials": [
                     "elementalCore_B",
                     "upgradeA_B",
@@ -141,7 +182,11 @@
                 "level": 130,
                 "enhance": 7600,
                 "augmentGold": 4800,
-                "augmentAmount": 11,
+                "augmentAmount": [
+                    11,
+                    11,
+                    11
+                ],
                 "augmentMaterials": [
                     "elementalCore_B",
                     "upgradeA_B",
@@ -153,7 +198,11 @@
                 "level": 140,
                 "enhance": 8000,
                 "augmentGold": 5200,
-                "augmentAmount": 15,
+                "augmentAmount": [
+                    15,
+                    15,
+                    15
+                ],
                 "augmentMaterials": [
                     "elementalCore_B",
                     "upgradeA_B",
@@ -165,7 +214,11 @@
                 "level": 150,
                 "enhance": 8500,
                 "augmentGold": 5600,
-                "augmentAmount": 20,
+                "augmentAmount": [
+                    20,
+                    20,
+                    20
+                ],
                 "augmentMaterials": [
                     "elementalCore_B",
                     "upgradeA_B",
@@ -177,7 +230,11 @@
                 "level": 160,
                 "enhance": 9000,
                 "augmentGold": 6000,
-                "augmentAmount": 5,
+                "augmentAmount": [
+                    5,
+                    5,
+                    5
+                ],
                 "augmentMaterials": [
                     "elementalCore_C",
                     "upgradeA_C",
@@ -189,7 +246,11 @@
                 "level": 170,
                 "enhance": 9600,
                 "augmentGold": 6400,
-                "augmentAmount": 5,
+                "augmentAmount": [
+                    5,
+                    5,
+                    5
+                ],
                 "augmentMaterials": [
                     "elementalCore_C",
                     "upgradeA_C",
@@ -201,7 +262,11 @@
                 "level": 180,
                 "enhance": 10200,
                 "augmentGold": 6800,
-                "augmentAmount": 5,
+                "augmentAmount": [
+                    5,
+                    5,
+                    5
+                ],
                 "augmentMaterials": [
                     "elementalCore_C",
                     "upgradeA_C",
@@ -213,7 +278,11 @@
                 "level": 190,
                 "enhance": 11000,
                 "augmentGold": 7200,
-                "augmentAmount": 5,
+                "augmentAmount": [
+                    5,
+                    5,
+                    5
+                ],
                 "augmentMaterials": [
                     "elementalCore_C",
                     "upgradeA_C",
@@ -223,9 +292,13 @@
             },
             {
                 "level": 200,
-                "enhance": 11000,
+                "enhance": 11800,
                 "augmentGold": 7200,
-                "augmentAmount": 5,
+                "augmentAmount": [
+                    5,
+                    5,
+                    5
+                ],
                 "augmentMaterials": [
                     "elementalCore_C",
                     "upgradeA_C",
@@ -235,21 +308,348 @@
             }
         ]
     },
-    
     {
         "slug": "element_altered",
         "upgrade": [
             {
                 "level": 10,
-                "enhanceGold": "",
-                "enhanceExperience": "",
-                "augmentGold": "",
+                "enhance": 400,
+                "augmentGold": 0,
+                "augmentAmount": [
+                    0
+                ],
+                "augmentMaterials": [],
+                "requiredLevel": 0
+            },
+            {
+                "level": 20,
+                "enhance": 600,
+                "augmentGold": 600,
+                "augmentAmount": [
+                    1,
+                    1
+                ],
                 "augmentMaterials": [
-                    {
-                        "amount": "",
-                        "type": ""
-                    }
-                ]
+                    "upgradeA_A",
+                    "upgradeB_A"
+                ],
+                "requiredLevel": 10
+            },
+            {
+                "level": 30,
+                "enhance": 900,
+                "augmentGold": 1200,
+                "augmentAmount": [
+                    1,
+                    1
+                ],
+                "augmentMaterials": [
+                    "upgradeA_A",
+                    "upgradeB_A"
+                ],
+                "requiredLevel": 15
+            },
+            {
+                "level": 40,
+                "enhance": 1200,
+                "augmentGold": 1800,
+                "augmentAmount": [
+                    2,
+                    2
+                ],
+                "augmentMaterials": [
+                    "upgradeA_A",
+                    "upgradeB_A"
+                ],
+                "requiredLevel": 20
+            },
+            {
+                "level": 50,
+                "enhance": 1700,
+                "augmentGold": 2400,
+                "augmentAmount": [
+                    2,
+                    2,
+                    2,
+                    2
+                ],
+                "augmentMaterials": [
+                    "upgradeA_A",
+                    "upgradeB_A",
+                    "upgradeC_A",
+                    "upgradeD_A"
+                ],
+                "requiredLevel": 25
+            },
+            {
+                "level": 60,
+                "enhance": 2200,
+                "augmentGold": 3000,
+                "augmentAmount": [
+                    3,
+                    3,
+                    3,
+                    3
+                ],
+                "augmentMaterials": [
+                    "upgradeA_A",
+                    "upgradeB_A",
+                    "upgradeC_A",
+                    "upgradeD_A"
+                ],
+                "requiredLevel": 30
+            },
+            {
+                "level": 70,
+                "enhance": 2900,
+                "augmentGold": 3600,
+                "augmentAmount": [
+                    4,
+                    4,
+                    5,
+                    5
+                ],
+                "augmentMaterials": [
+                    "upgradeA_A",
+                    "upgradeB_A",
+                    "upgradeC_A",
+                    "upgradeD_A"
+                ],
+                "requiredLevel": 35
+            },
+            {
+                "level": 80,
+                "enhance": 3900,
+                "augmentGold": 4200,
+                "augmentAmount": [
+                    6,
+                    6,
+                    7,
+                    7
+                ],
+                "augmentMaterials": [
+                    "upgradeA_A",
+                    "upgradeB_A",
+                    "upgradeC_A",
+                    "upgradeD_A"
+                ],
+                "requiredLevel": 40
+            },
+            {
+                "level": 90,
+                "enhance": 5000,
+                "augmentGold": 4800,
+                "augmentAmount": [
+                    9,
+                    9,
+                    9,
+                    9
+                ],
+                "augmentMaterials": [
+                    "upgradeA_A",
+                    "upgradeB_A",
+                    "upgradeC_A",
+                    "upgradeD_A"
+                ],
+                "requiredLevel": 45
+            },
+            {
+                "level": 100,
+                "enhance": 5800,
+                "augmentGold": 5400,
+                "augmentAmount": [
+                    3,
+                    3,
+                    3,
+                    3
+                ],
+                "augmentMaterials": [
+                    "upgradeA_B",
+                    "upgradeB_B",
+                    "upgradeC_B",
+                    "upgradeD_B"
+                ],
+                "requiredLevel": 50
+            },
+            {
+                "level": 110,
+                "enhance": 6400,
+                "augmentGold": 6000,
+                "augmentAmount": [
+                    4,
+                    4,
+                    4,
+                    4
+                ],
+                "augmentMaterials": [
+                    "upgradeA_B",
+                    "upgradeB_B",
+                    "upgradeC_B",
+                    "upgradeD_B"
+                ],
+                "requiredLevel": 55
+            },
+            {
+                "level": 120,
+                "enhance": 7100,
+                "augmentGold": 6600,
+                "augmentAmount": [
+                    6,
+                    6,
+                    6,
+                    6
+                ],
+                "augmentMaterials": [
+                    "upgradeA_B",
+                    "upgradeB_B",
+                    "upgradeC_B",
+                    "upgradeD_B"
+                ],
+                "requiredLevel": 60
+            },
+            {
+                "level": 130,
+                "enhance": 7600,
+                "augmentGold": 7200,
+                "augmentAmount": [
+                    9,
+                    9,
+                    9,
+                    9
+                ],
+                "augmentMaterials": [
+                    "upgradeA_B",
+                    "upgradeB_B",
+                    "upgradeC_B",
+                    "upgradeD_B"
+                ],
+                "requiredLevel": 65
+            },
+            {
+                "level": 140,
+                "enhance": 8000,
+                "augmentGold": 7800,
+                "augmentAmount": [
+                    12,
+                    12,
+                    12,
+                    12
+                ],
+                "augmentMaterials": [
+                    "upgradeA_B",
+                    "upgradeB_B",
+                    "upgradeC_B",
+                    "upgradeD_B"
+                ],
+                "requiredLevel": 70
+            },
+            {
+                "level": 150,
+                "enhance": 8500,
+                "augmentGold": 8400,
+                "augmentAmount": [
+                    16,
+                    16,
+                    16,
+                    16
+                ],
+                "augmentMaterials": [
+                    "upgradeA_B",
+                    "upgradeB_B",
+                    "upgradeC_B",
+                    "upgradeD_B"
+                ],
+                "requiredLevel": 75
+            },
+            {
+                "level": 160,
+                "enhance": 9000,
+                "augmentGold": 9000,
+                "augmentAmount": [
+                    4,
+                    4,
+                    4,
+                    4
+                ],
+                "augmentMaterials": [
+                    "upgradeA_C",
+                    "upgradeB_C",
+                    "upgradeC_C",
+                    "upgradeD_C"
+                ],
+                "requiredLevel": 80
+            },
+            {
+                "level": 170,
+                "enhance": 9600,
+                "augmentGold": 9600,
+                "augmentAmount": [
+                    4,
+                    4,
+                    4,
+                    4
+                ],
+                "augmentMaterials": [
+                    "upgradeA_C",
+                    "upgradeB_C",
+                    "upgradeC_C",
+                    "upgradeD_C"
+                ],
+                "requiredLevel": 85
+            },
+            {
+                "level": 180,
+                "enhance": 10200,
+                "augmentGold": 10200,
+                "augmentAmount": [
+                    4,
+                    4,
+                    4,
+                    4
+                ],
+                "augmentMaterials": [
+                    "upgradeA_C",
+                    "upgradeB_C",
+                    "upgradeC_C",
+                    "upgradeD_C"
+                ],
+                "requiredLevel": 90
+            },
+            {
+                "level": 190,
+                "enhance": 11000,
+                "augmentGold": 10800,
+                "augmentAmount": [
+                    4,
+                    4,
+                    4,
+                    4
+                ],
+                "augmentMaterials": [
+                    "upgradeA_C",
+                    "upgradeB_C",
+                    "upgradeC_C",
+                    "upgradeD_C"
+                ],
+                "requiredLevel": 95
+            },
+            {
+                "level": 200,
+                "enhance": 11800,
+                "augmentGold": 11400,
+                "augmentAmount": [
+                    5,
+                    5,
+                    5,
+                    5
+                ],
+                "augmentMaterials": [
+                    "upgradeA_C",
+                    "upgradeB_C",
+                    "upgradeC_C",
+                    "upgradeD_C"
+                ],
+                "requiredLevel": 100
             }
         ]
     }

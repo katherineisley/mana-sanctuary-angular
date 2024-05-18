@@ -336,30 +336,59 @@
       </div>
     </div>
     <div class="materials-part">
-
-
-      <mat-slider [min]="0" [max]="200" [step]="10" [showTickMarks]="true" [(ngModel)]="sliderValues"
-        (input)="onSliderChange()">
-        <input matSliderStartThumb [(ngModel)]="startvalue" (change)="onSliderChange()">
-        <input matSliderEndThumb [(ngModel)]="endvalue" (change)="onSliderChange()">
-      </mat-slider>
-      <br>
-
-      <label>Selected slider Start value is {{startvalue}}</label>
-      <br>
-      <label>Selected slider End value is {{endvalue}}</label>
-
-
-      <div class="material-wrap">
-        <div *ngFor="let material of totalMaterialsArray; let i = index">
-          <div class="material-card" [style.background-color]="materialsColour[i]">
-            <div class="content-wrapper"
-              style="background-image: url(&quot;../assets/materials/{{material[0]}}.png&quot;);">
-              <div class="details-container">
-                <h5 class="name">{{ material[1] }}</h5>
+      <div class="slider-wrap">
+        <div class="materials-title">Select Level</div>
+        <mat-slider [min]="0" [max]="200" [step]="10" [discrete]="true" [showTickMarks]="true"
+          [(ngModel)]="sliderValues" (input)="onSliderChange()">
+          <input matSliderStartThumb [(ngModel)]="startvalue" (change)="onSliderChange()">
+          <input matSliderEndThumb [(ngModel)]="endvalue" (change)="onSliderChange()">
+        </mat-slider>
+        <div class="materials-title">Augment</div>
+        <div class="materials-text">Materials required for augmentation from level {{startvalue}} to level {{endvalue}}
+        </div>
+        <div class="materials-text materials-req">Required wanderer level {{endvalue/2}} </div>
+        <div class="material-wrap">
+          <ng-container *ngFor="let material of totalMaterialsArray; let i = index">
+            <ng-container *ngIf="i !== 0">
+              <div class="material-card" [style.background-color]="materialsColour[i]">
+                <div class="content-wrapper"
+                  style="background-image: url(&quot;../assets/materials/{{material[0]}}.png&quot;);">
+                  <div class="details-container">
+                    <h5 class="name">{{ material[1] }}</h5>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
+            </ng-container>
+          </ng-container>
+        </div>
+        <div class="materials-title">Enhance</div>
+        <div class="materials-text">Materials required for enhancement from level {{startvalue}} to level {{endvalue}}
+        </div>
+        <div class="material-wrap">
+          <ng-container *ngFor="let material of totalMaterialsArray; let i = index">
+            <ng-container *ngIf="i == 0">
+              <div class="material-card" [style.background-color]="materialsColour[i]">
+                <div class="content-wrapper"
+                  style="background-image: url(&quot;../assets/materials/augmentGold.png&quot;);">
+                  <div class="details-container">
+                    <h5 class="name">{{ material[1] }}</h5>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+          </ng-container>
+          <ng-container *ngFor="let material of totalMaterialsArray; let i = index">
+            <ng-container *ngIf="i == 0">
+              <div class="material-card" [style.background-color]="materialsColour[i]">
+                <div class="content-wrapper"
+                  style="background-image: url(&quot;../assets/materials/experience.png&quot;);">
+                  <div class="details-container">
+                    <h5 class="name">{{ material[1] }}</h5>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+          </ng-container>
         </div>
       </div>
     </div>

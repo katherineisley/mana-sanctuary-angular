@@ -1,44 +1,67 @@
 @import '../../styles.scss';
-.material-wrap{
+
+.slider-wrap {
+    padding: 20px 80px;
+
+    mat-slider {
+        width: 100%;
+    }
+    .materials-title{
+        font-size: 28px;
+        font-weight: 600;
+        padding: 20px 0px 10px 0px;
+    }
+    .materials-text{
+        font-size: 20px;
+        font-weight: 200;
+        padding: 0px 0px 10px 0px;
+    }
+    .materials-req{
+        color: #7DC9FF;
+    }
+}
+
+.material-wrap {
     display: flex;
     gap: 10px;
     width: 100%;
     flex-wrap: wrap;
-}
 
-.material-card{
-    background-size: cover;
-    background-repeat: no-repeat; 
-    width: 100px;
-    height: 100px;
-    border-radius: 8px;
-    padding: 5px 10px;
-    border: 1px $border solid;
+    .material-card {
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 100px;
+        border-radius: 8px;
+        padding: 5px 10px;
+        border: 1px $border solid;
 
-    .content-wrapper {
-        position: relative;
-        height: 100%;
-        display: flex;
-        align-items: flex-end;
-        background-position:center;
-        background-size: 150%;
-        background-repeat: no-repeat; 
-
-        .details-container {
+        .content-wrapper {
+            position: relative;
+            height: 100%;
             display: flex;
-            flex-direction: column;
-            width: 100%;
+            align-items: flex-end;
+            background-position: center;
+            background-size: 140%;
+            background-repeat: no-repeat;
 
-            .name {
-                font-size: 22px;
-                font-weight: 600;
-                text-transform: uppercase;
-                margin: unset;
-              //  -webkit-text-stroke: 0.5px black; 
+            .details-container {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                .name {
+                    font-size: 22px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    margin: unset;
+
+                }
             }
         }
     }
 }
+
 .main {
     position: relative;
 
@@ -59,22 +82,26 @@
             z-index: -100;
             background-position: top;
             background-size: contain;
-            background-repeat: no-repeat; 
+            background-repeat: no-repeat;
 
         }
+
         .header-content {
             padding: 20px 20px;
             display: grid;
-            grid-template-columns: auto auto; /* Two columns of equal width */
-            grid-template-rows: auto auto; /* Two rows of equal height */
-            gap: 10px; /* Gap between grid items */
- 
-            .unit-description{
+            grid-template-columns: auto auto;
+            /* Two columns of equal width */
+            grid-template-rows: auto auto;
+            /* Two rows of equal height */
+            gap: 10px;
+            /* Gap between grid items */
+
+            .unit-description {
                 font-size: 15px;
                 font-weight: 300;
                 font-style: italic;
                 max-width: 400px;
-            } 
+            }
 
             .unit-wrapper {
                 display: flex;
@@ -125,24 +152,29 @@
                     }
                 }
             }
-            .unit-stats{
+
+            .unit-stats {
                 margin: 0 40px 0 0;
             }
+
             .unit-stats,
             .unit-roles {
                 display: flex;
                 flex-direction: column;
                 gap: 14px;
             }
-            .roles-grid{
-                
+
+            .roles-grid {
+
                 display: grid;
                 max-width: fit-content;
-                grid-template-columns:auto auto;
+                grid-template-columns: auto auto;
                 column-gap: 30px;
-                row-gap: 14px; /* Two rows of equal height */
+                row-gap: 14px;
+                /* Two rows of equal height */
                 //gap: 5px; /* Gap between grid items */
             }
+
             .top-stats,
             .bottom-stats {
                 display: flex;
@@ -180,7 +212,7 @@
         width: 100%;
         padding: 20px 20px;
         background-color: rgba(41, 41, 42, 0.9);
-     
+
         .tabs {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -319,7 +351,8 @@
                     width: 80px;
                     height: 80px;
                 }
-                .trait-icon{
+
+                .trait-icon {
                     height: 50px;
                     width: 50px;
                 }
