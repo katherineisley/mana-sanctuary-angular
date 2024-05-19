@@ -22,7 +22,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
-  { path: 'home', component: HomeComponent },
+  { path: 'home', component: HomeComponent, resolve: {data: DataResolver} },
   { path: 'healing', component: HealingComponent },
   { path: 'healing/guide', component: HealingGuideComponent },
   { path: 'healing/teams', component: HealingTeamsComponent },

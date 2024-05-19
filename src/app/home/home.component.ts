@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +7,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 
-export class HomeComponent {
+export class HomeComponent implements OnInit {
+  unit: any = {};
+  matrix: any = {};
+  relic: any = {};
+
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit() {
+    const data = this.route.snapshot.data['data'];
+    const simulacraData = data.simulacra[0];
+    const matrixData = data.matrices[0];
+    const relicData = data.relics[0];
+    this.unit = simulacraData;
+    this.matrix = matrixData;
+    this.relic = relicData;
+  }
+
   animateBars() {
     $('.single-bar-container').each(function () {
       const parentID = $(this).attr('id');

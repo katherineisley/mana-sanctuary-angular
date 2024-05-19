@@ -358,6 +358,101 @@
                     }
                 }
             }
+
+            .wrapper#indexes {
+                .indexes-block {
+                    .card#middle {
+                        width: 220px;
+                        height: 280px;
+                    }
+
+                    .card {
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat; // weird edge case
+                        border-radius: 8px;
+                        padding: 10px;
+                
+                        // this is better on the cards themselves rather than the unit-wrapper
+                        // as when the back-card gets put on top, it doesn't have a border to distinguish itself from the body
+                
+                        border: 1px $border solid;
+                
+                        .content-wrapper {
+                            position: relative;
+                            height: 100%;
+                            display: flex;
+                            align-items: flex-end;
+                
+                            .new-tag {
+                                font-size: 10px;
+                                background-color: #AE150B;
+                                border-radius: 8px 0 8px 0;
+                                width: fit-content;
+                                padding: 2px 6px;
+                                position: absolute;
+                                text-transform: capitalize;
+                                top: 0;
+                            }
+                
+                            .meta-tag {
+                                font-size: 10px;
+                                background-color: #1f71b4;
+                                border-radius: 8px 0 8px 0;
+                                width: fit-content;
+                                padding: 2px 6px;
+                                position: absolute;
+                                text-transform: capitalize;
+                                top: 0;
+                            }
+                
+                            .standard-tag {
+                                font-size: 10px;
+                                background-color: rgb(192, 112, 15);
+                                border-radius: 8px 0 8px 0;
+                                width: fit-content;
+                                padding: 2px 6px;
+                                position: absolute;
+                                text-transform: capitalize;
+                                top: 0;
+                            }
+                
+                            .details-container {
+                                display: flex;
+                                flex-direction: column;
+                                width: 100%;
+                                gap: 2px;
+                
+                                .name {
+                                    font-size: 20px;
+                                    font-weight: 600;
+                                    text-transform: uppercase;
+                                    margin: unset;
+                                }
+                
+                                img {
+                                    width: 28px;
+                                    height: fit-content;
+                                }
+                
+                                .type-and-buffs {
+                                    display: flex;
+                                    width: 100%;
+                                    flex-direction: row;
+                                    justify-content: space-between;
+                
+                                    .icons,
+                                    .buffs {
+                                        display: flex;
+                                        flex-direction: row;
+                                        gap: 2px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 
