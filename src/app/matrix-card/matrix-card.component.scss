@@ -11,8 +11,6 @@
     /* Define styles for SR rarity */
 }
 
-
-
 .back-card-content {
     display: flex;
     flex-direction: column;
@@ -145,7 +143,6 @@
 
     .top-card,
     .back-card {
-
         background-size: cover;
         background-repeat: no-repeat; // weird edge case
         width: 100%;

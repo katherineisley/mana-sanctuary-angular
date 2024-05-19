@@ -24,6 +24,10 @@ export class HomeComponent implements OnInit {
     this.relic = relicData;
   }
 
+  getRarityClass(): string {
+    return this.matrix.rarity.toLowerCase() === 'ssr' ? 'ssr-class' : 'sr-class';
+  }
+
   animateBars() {
     $('.single-bar-container').each(function () {
       const parentID = $(this).attr('id');

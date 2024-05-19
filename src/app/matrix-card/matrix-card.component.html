@@ -44,12 +44,12 @@
         <div class="bc-header">
           <div class="bc-title" [class]="getRarityClass()">3-Piece</div>
           <div class="bc-resonance">
-            <div *ngFor="let role of matrix?.threerpc?.resonance">
+            <div *ngFor="let role of matrix?.threepc?.resonance">
               <img src="assets/elements/{{role}}.png" alt="{{role}} resonance">
             </div>
           </div>
         </div>
-        <div *ngFor="let buff of matrix?.threerpc?.buffs">
+        <div *ngFor="let buff of matrix?.threepc?.buffs">
           <div>{{buff}}</div>
         </div>
       </div>

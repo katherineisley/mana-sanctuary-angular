@@ -80,13 +80,76 @@
     <div class="half text">
       <div class="wrapper">
         <div class="quote-block">
-          <h3 class="title">Healing Guide</h3>
+          <h3 class="title">Indexes</h3>
           <p class="quote">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut tortor eget felis
             maximus ullamcorper.“</p>
           <span class="name">- Someone</span>
         </div>
       </div>
     </div>
+    <div class="half visual">
+      <div class="wrapper" id="indexes">
+        <div class="indexes-block">
+          <div class="side-card" id="left" style="background-image: url(&quot;../../assets/backgrounds/hexagons.png&quot;);">
+            <div class="content-wrapper" style="background-image: url(&quot;../assets/matrices/{{matrix?.slug}}_matrix.webp&quot;);">
+              <div class="{{matrix.tag}}-tag">{{matrix.tag}}</div>
+              <div class="details-container">
+                <h5 class="name">{{matrix.name}}</h5>
+                <div class="type-and-buffs">
+                  <div class="icons">
+                    <img *ngFor="let element of matrix.element" [src]="'assets/elements/' + element + '.png'" [alt]="element">
+                  </div>
+                  <div class="buffs" [class]="getRarityClass()">
+                    {{matrix.rarity.toUpperCase()}}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-card" id="middle" style="background-image: linear-gradient(0deg, #232323 0%, rgba(35, 35, 35, 0.00) 50%), url(&quot;../assets/cards/{{unit?.slug}}2.webp&quot;);">
+            <div class="content-wrapper">
+              <div class="{{unit?.tag}}-tag">{{unit?.tag}}</div>
+              <div class="details-container">
+                <h5 class="name">{{unit?.name[0]}}</h5>
+                <div class="type-and-buffs">
+                  <div class="icons">
+                    <img src="assets/elements/{{unit?.resonance}}.png" alt="{{unit?.resonance}} resonance">
+                    <img src="assets/elements/{{unit?.element}}.png" alt="{{unit?.element}} element">
+                  </div>
+                  <div class="buffs">
+                    <img *ngFor="let role of unit?.roles" [src]="'assets/effects/buff_' + role?.toLowerCase() + '.png'" [alt]="role">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="side-card" id="right" style="background-image: url(&quot;../../assets/backgrounds/hexagons.png&quot;);">
+            <div class="content-wrapper" style="background-image: url(&quot;../assets/relics/{{relic.slug}}_relic.webp&quot;);">
+              <div class="{{relic.tag}}-tag">{{relic.tag}}</div>
+              <div class="details-container">
+                <h5 class="name">{{relic.name}}</h5>
+                <div class="type-and-rarity">
+                  <div class="icons">
+                    <img *ngFor="let role of relic.roles" [src]="'assets/effects/buff_' + role.toLowerCase() + '.png'" [alt]="role">
+                    <img [src]="'assets/elements/element_' + relic.elementBoost.replace('boost', '').replace('resistance', '') + '.png'" [alt]="relic.elementBoost">
+                  </div>
+                  <div class="rarity" [class]="getRarityClass()">
+                    {{relic.rarity.toUpperCase()}}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buttons-block">
+          <a routerLink="/index" class="black-white-medium">Index</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="main-home">
+  <div class="inner">
     <div class="half visual">
       <div class="wrapper" id="geo">
         <div class="top-left">
@@ -108,10 +171,30 @@
         </div>
       </div>
     </div>
+    <div class="half text">
+      <div class="wrapper">
+        <div class="quote-block">
+          <h3 class="title">Healing Guide</h3>
+          <p class="quote">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut tortor eget felis
+            maximus ullamcorper.“</p>
+          <span class="name">- Someone</span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 <section class="main-home">
   <div class="inner">
+    <div class="half text">
+      <div class="wrapper">
+        <div class="quote-block">
+          <h3 class="title">Teams & Calculator</h3>
+          <p class="quote">“No idea if your team is looking right for the job you need? Look no further, it’s all here -
+            in one place.“</p>
+          <span class="name">- Someone</span>
+        </div>
+      </div>
+    </div>
     <div class="half visual">
       <div class="wrapper" id="teams">
         <div class="bars-block">
@@ -182,30 +265,10 @@
         </div>
       </div>
     </div>
-    <div class="half text">
-      <div class="wrapper">
-        <div class="quote-block">
-          <h3 class="title">Teams & Calculator</h3>
-          <p class="quote">“No idea if your team is looking right for the job you need? Look no further, it’s all here -
-            in one place.“</p>
-          <span class="name">- Someone</span>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 <section class="main-home">
   <div class="inner">
-    <div class="half text">
-      <div class="wrapper">
-        <div class="quote-block">
-          <h3 class="title">Glossary</h3>
-          <p class="quote">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut tortor eget felis
-            maximus ullamcorper.“</p>
-          <span class="name">- Someone</span>
-        </div>
-      </div>
-    </div>
     <div class="half visual">
       <div class="wrapper" id="glossary">
         <div class="terms-block">
@@ -227,43 +290,10 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
-<section class="main-home">
-  <div class="inner">
-    <div class="half visual">
-      <div class="wrapper" id="indexes">
-        <div class="indexes-block">
-          <div class="card" id="middle" style="background-image: linear-gradient(0deg, #232323 0%, rgba(35, 35, 35, 0.00) 50%), url(&quot;../assets/cards/{{unit?.slug}}2.webp&quot;);">
-            <div class="content-wrapper">
-              <div class="{{unit?.tag}}-tag">{{unit?.tag}}</div>
-              <div class="details-container">
-                <h5 class="name">{{unit?.name[0]}}</h5>
-                <div class="type-and-buffs">
-                  <div class="icons">
-                    <img src="assets/elements/{{unit?.resonance}}.png" alt="{{unit?.resonance}} resonance">
-                    <img src="assets/elements/{{unit?.element}}.png" alt="{{unit?.element}} element">
-                  </div>
-                  <div class="buffs">
-                    <img *ngFor="let role of unit?.roles" [src]="'assets/effects/buff_' + role?.toLowerCase() + '.png'" [alt]="role">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card" id="left" style="background-image: url(&quot;../assets/matrices/{{matrix?.slug}}_matrix.webp&quot;);">
-
-          </div>
-          <div class="card" id="right">
-
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="half text">
       <div class="wrapper">
         <div class="quote-block">
-          <h3 class="title">Indexes</h3>
+          <h3 class="title">Glossary</h3>
           <p class="quote">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut tortor eget felis
             maximus ullamcorper.“</p>
           <span class="name">- Someone</span>
