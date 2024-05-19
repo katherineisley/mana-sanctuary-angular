@@ -311,29 +311,80 @@
         </div>
       </div>
     </div>
+
+    <!-- Matrices-->
     <div class="matrix-part">
-      <!-- Display 2pc effect -->
-      <div *ngIf="matrix['twopc'] && matrix['twopc'].effect">
-        <h3>2pc Effect:</h3>
-        <div *ngFor="let effect of matrix['twopc'].effect">
-          <p>{{ effect.paragraph }}</p>
+      <div class="attack-wrap">
+        <!-- Display 2pc effect -->
+        <div *ngIf="matrix['twopc'] && matrix['twopc'].effect">
+          <div class="attack-container" *ngFor="let effect of matrix['twopc'].effect">
+            <div class="attack-heading-wrap">
+              <div class="attack-heading">
+                <div class="attack-name">2-Piece</div>
+                <div class="attack-method-wrap">
+                  <div class="attack-method" *ngFor="let buff of matrix['twopc'].buffs">
+                    <div *ngIf="buff">
+                      <p>{{ buff }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="attack-description">
+              <div class="attack-paragraph">
+                <p [innerHTML]="sanitizeHtml(effect.paragraph)"></p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <!-- Display 3pc effect -->
-      <div *ngIf="matrix['threepc'] && matrix['threepc'].effect">
-        <h3>3pc Effect:</h3>
-        <div *ngFor="let effect of matrix['threepc'].effect">
-          <p>{{ effect.paragraph }}</p>
+        <!-- Display 3pc effect -->
+        <div *ngIf="matrix['threepc'] && matrix['threepc'].effect">
+          <div class="attack-container" *ngFor="let effect of matrix['threepc'].effect">
+            <div class="attack-heading-wrap">
+              <div class="attack-heading">
+                <div class="attack-name">3-Piece</div>
+                <div class="attack-method-wrap">
+                  <div class="attack-method" *ngFor="let buff of matrix['threepc'].buffs">
+                    <div *ngIf="buff">
+                      <p>{{ buff }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="attack-description">
+              <div class="attack-paragraph">
+                <p [innerHTML]="sanitizeHtml(effect.paragraph)"></p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <!-- Display 4pc effect -->
-      <div *ngIf="matrix['fourpc'] && matrix['fourpc'].effect">
-        <h3>4pc Effect:</h3>
-        <div *ngFor="let effect of matrix['fourpc'].effect">
-          <p>{{ effect.paragraph }}</p>
+        <!-- Display 4pc effect -->
+        <div *ngIf="matrix['fourpc'] && matrix['fourpc'].effect">
+          <div class="attack-container" *ngFor="let effect of matrix['fourpc'].effect">
+            <div class="attack-heading-wrap">
+              <div class="attack-heading">
+                <div class="attack-name">4-Piece</div>
+                <div class="attack-method-wrap">
+                  <div class="attack-method" *ngFor="let buff of matrix['fourpc'].buffs">
+                    <div *ngIf="buff">
+                      <p>{{ buff }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="attack-description">
+              <div class="attack-paragraph">
+                <p [innerHTML]="sanitizeHtml(effect.paragraph)"></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- Materials -->
     <div class="materials-part">
       <div class="slider-wrap">
         <div class="materials-title">Select Level</div>

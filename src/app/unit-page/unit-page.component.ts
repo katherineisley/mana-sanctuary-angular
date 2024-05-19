@@ -23,7 +23,8 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
   startvalue: number = 0;
   endvalue: number = 200;
   materialsElement!: string;
-  
+
+
   frostMappings: { [key: string]: string } = {
     'elementalCore_A': 'icecore_A',
     'upgradeA_A': 'acidproofglaze_A',
@@ -109,6 +110,8 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
 
     if (this.unit) {
       const element = this.unit.element;
+      const rarity = this.unit.rarity;
+
       // Set page color depending on the element
       const elementColors: { [key: string]: string } = {
         "element_physical": '#CF9B14',
@@ -138,10 +141,14 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
       // Fetch upgrade data
 
       this.upgradeData = weaponMaterialsData.find((upgradeData: any) => {
-        if (element !== 'element_altered') {
+        if (element !== 'element_altered' && rarity == 'SSR') {
           return upgradeData.slug === 'element_all';
-        } else {
+        } else if (element === 'element_altered') {
           return upgradeData.slug === element;
+        } else if (rarity === 'SR') {
+          return upgradeData.slug === 'element_sr';
+        } else {
+          return upgradeData.slug === 'element_all';
         }
       });
 
@@ -200,10 +207,10 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
       "upgradeC_C": "#D99F44",
       "upgradeD_C": "#D99F44",
     };
-    let augmentAmountIndex = 0; 
+    let augmentAmountIndex = 0;
     for (let i = 0; i < this.upgradeData.upgrade.length; i++) {
       const upgrade = this.upgradeData.upgrade[i];
-      if (upgrade.level >= startLevel && upgrade.level <= endLevel) {
+      if (upgrade.level > startLevel && upgrade.level <= endLevel) {
         // Sum up the materials for each upgrade level
         totalMaterials['enhance'] = (totalMaterials['enhance'] || 0) + upgrade.enhance;
         totalMaterials['augmentGold'] = (totalMaterials['augmentGold'] || 0) + upgrade.augmentGold;
