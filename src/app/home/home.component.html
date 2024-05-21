@@ -90,7 +90,7 @@
     <div class="half visual">
       <div class="wrapper" id="indexes">
         <div class="indexes-block">
-          <div class="side-card" id="left" style="background-image: url(&quot;../../assets/backgrounds/hexagons.png&quot;);">
+          <div class="side-card" routerLink="/index/matrices-index" id="left" style="background-image: url(&quot;../../assets/backgrounds/hexagons.png&quot;);">
             <div class="content-wrapper" style="background-image: url(&quot;../assets/matrices/{{matrix?.slug}}_matrix.webp&quot;);">
               <div class="{{matrix.tag}}-tag">{{matrix.tag}}</div>
               <div class="details-container">
@@ -106,7 +106,7 @@
               </div>
             </div>
           </div>
-          <div class="main-card" id="middle" style="background-image: linear-gradient(0deg, #232323 0%, rgba(35, 35, 35, 0.00) 50%), url(&quot;../assets/cards/{{unit?.slug}}2.webp&quot;);">
+          <div class="main-card" routerLink="/index/units-index" id="middle" style="background-image: linear-gradient(0deg, #232323 0%, rgba(35, 35, 35, 0.00) 50%), url(&quot;../assets/cards/{{unit?.slug}}2.webp&quot;);">
             <div class="content-wrapper">
               <div class="{{unit?.tag}}-tag">{{unit?.tag}}</div>
               <div class="details-container">
@@ -123,7 +123,7 @@
               </div>
             </div>
           </div>
-          <div class="side-card" id="right" style="background-image: url(&quot;../../assets/backgrounds/hexagons.png&quot;);">
+          <div class="side-card" routerLink="/index/relics-index" id="right" style="background-image: url(&quot;../../assets/backgrounds/hexagons.png&quot;);">
             <div class="content-wrapper" style="background-image: url(&quot;../assets/relics/{{relic.slug}}_relic.webp&quot;);">
               <div class="{{relic.tag}}-tag">{{relic.tag}}</div>
               <div class="details-container">

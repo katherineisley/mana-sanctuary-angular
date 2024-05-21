@@ -370,6 +370,15 @@
                     align-items: center;
                     position: relative;
 
+                    .side-card, .main-card {
+                        transition: 0.2s ease-in-out;
+                        cursor: pointer;
+
+                        &:hover {
+                            transform: translateY(-15px);
+                        }
+                    }
+
                     .side-card#right {
                         position: relative;
                         rotate: 15deg;
