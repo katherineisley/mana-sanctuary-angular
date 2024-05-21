@@ -317,20 +317,20 @@
       <div class="attack-wrap">
         <!-- Display 2pc effect -->
         <div *ngIf="matrix['twopc'] && matrix['twopc'].effect">
-          <div class="attack-container" *ngFor="let effect of matrix['twopc'].effect">
-            <div class="attack-heading-wrap">
-              <div class="attack-heading">
-                <div class="attack-name">2-Piece</div>
-                <div class="attack-method-wrap">
-                  <div class="attack-method" *ngFor="let buff of matrix['twopc'].buffs">
-                    <div *ngIf="buff">
-                      <p>{{ buff }}</p>
-                    </div>
+          <div class="attack-heading-wrap">
+            <div class="attack-heading">
+              <div class="attack-name">2-Piece</div>
+              <div class="attack-method-wrap">
+                <div class="attack-method" *ngFor="let buff of matrix['twopc'].buffs">
+                  <div *ngIf="buff">
+                    <p>{{ buff }}</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="attack-description">
+          </div>
+          <div *ngFor="let effect of matrix['twopc'].effect">
+            <div class="attack-container">
               <div class="attack-paragraph">
                 <p [innerHTML]="sanitizeHtml(effect.paragraph)"></p>
               </div>
@@ -339,20 +339,20 @@
         </div>
         <!-- Display 3pc effect -->
         <div *ngIf="matrix['threepc'] && matrix['threepc'].effect">
-          <div class="attack-container" *ngFor="let effect of matrix['threepc'].effect">
-            <div class="attack-heading-wrap">
-              <div class="attack-heading">
-                <div class="attack-name">3-Piece</div>
-                <div class="attack-method-wrap">
-                  <div class="attack-method" *ngFor="let buff of matrix['threepc'].buffs">
-                    <div *ngIf="buff">
-                      <p>{{ buff }}</p>
-                    </div>
+          <div class="attack-heading-wrap">
+            <div class="attack-heading">
+              <div class="attack-name">3-Piece</div>
+              <div class="attack-method-wrap">
+                <div class="attack-method" *ngFor="let buff of matrix['threepc'].buffs">
+                  <div *ngIf="buff">
+                    <p>{{ buff }}</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="attack-description">
+          </div>
+          <div *ngFor="let effect of matrix['threepc'].effect">
+            <div class="attack-container">
               <div class="attack-paragraph">
                 <p [innerHTML]="sanitizeHtml(effect.paragraph)"></p>
               </div>
@@ -361,20 +361,20 @@
         </div>
         <!-- Display 4pc effect -->
         <div *ngIf="matrix['fourpc'] && matrix['fourpc'].effect">
-          <div class="attack-container" *ngFor="let effect of matrix['fourpc'].effect">
-            <div class="attack-heading-wrap">
-              <div class="attack-heading">
-                <div class="attack-name">4-Piece</div>
-                <div class="attack-method-wrap">
-                  <div class="attack-method" *ngFor="let buff of matrix['fourpc'].buffs">
-                    <div *ngIf="buff">
-                      <p>{{ buff }}</p>
-                    </div>
+          <div class="attack-heading-wrap">
+            <div class="attack-heading">
+              <div class="attack-name">4-Piece</div>
+              <div class="attack-method-wrap">
+                <div class="attack-method" *ngFor="let buff of matrix['fourpc'].buffs">
+                  <div *ngIf="buff">
+                    <p>{{ buff }}</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="attack-description">
+          </div>
+          <div *ngFor="let effect of matrix['fourpc'].effect">
+            <div class="attack-container">
               <div class="attack-paragraph">
                 <p [innerHTML]="sanitizeHtml(effect.paragraph)"></p>
               </div>
