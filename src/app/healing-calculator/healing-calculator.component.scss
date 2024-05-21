@@ -68,10 +68,11 @@
                     gap: 8px;
                     cursor: pointer;
                     border-top: 4px solid $border;
+                    padding: 10px 0;
 
                     .avatar {
                         height: 70px;
-                        margin: 10px;
+                        margin: 0 10px;
                     }
 
                     .wrapper {
@@ -110,6 +111,10 @@
 
                         .description {
                             font-size: 16px;
+                        }
+
+                        .description:not(:last-child) {
+                            margin-bottom: 4px;
                         }
                     }
                 }

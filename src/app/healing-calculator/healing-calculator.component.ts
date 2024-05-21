@@ -47,15 +47,10 @@ export class HealingCalculatorComponent implements OnInit {
 
     this.units = simulacraData;
     this.matrices = matricesData;
+    this.traits = simulacraData; // the traits are in the same JSON as simulacra
     this.relics = relicsData;
   }
-
-  toggleUnitSelect(event: Event, clickedUnitSetId: number) { // this shit needs to be refactored and optimized, shares a lot of code with toggleMatrixSelect
-    this.currentUnitSetId = clickedUnitSetId;
-
-    event.stopPropagation();
-    this.showAllUnits = !this.showAllUnits;
-  
+  setPositionAndStyle(event: Event, selector: string, renderer: Renderer2, el: ElementRef) {
     const clickedElement = event.target as HTMLElement;
     const rect = clickedElement.getBoundingClientRect();
     const docEl = document.documentElement;
@@ -64,46 +59,35 @@ export class HealingCalculatorComponent implements OnInit {
     const top = rect.top + window.pageYOffset - docEl.clientTop;
     const left = rect.left + window.pageXOffset - docEl.clientLeft;
 
-    const allUnitsElement = this.el.nativeElement.querySelector('.all-units');
-    this.renderer.setStyle(allUnitsElement, 'top', `${top}px`);
-    this.renderer.setStyle(allUnitsElement, 'left', `${left + rect.width + offset}px`);
+    const targetElement = el.nativeElement.querySelector(selector);
+    renderer.setStyle(targetElement, 'top', `${top}px`);
+    renderer.setStyle(targetElement, 'left', `${left + rect.width + offset}px`);
   }
 
-  toggleMatrixSelect(event: Event, clickedUnitSetId: number, clickedMatrixSelect: number) { // this shit needs to be refactored and optimized, shares a lot of code with toggleUnitSelect 
+  toggleUnitSelect(event: Event, clickedUnitSetId: number) {
+    this.currentUnitSetId = clickedUnitSetId;
+
+    event.stopPropagation();
+    this.showAllUnits = !this.showAllUnits;
+
+    this.setPositionAndStyle(event, '.all-units', this.renderer, this.el);
+  }
+
+  toggleMatrixSelect(event: Event, clickedUnitSetId: number, clickedMatrixSelect: number) {
     this.currentUnitSetId = clickedUnitSetId;
     this.currentMatrixSelectIndex = clickedMatrixSelect;
 
     event.stopPropagation();
     this.showAllMatrices = !this.showAllMatrices;
 
-    const clickedElement = event.target as HTMLElement;
-    const rect = clickedElement.getBoundingClientRect();
-    const docEl = document.documentElement;
-    const offset = 20; // offset in pixels
-
-    const top = rect.top + window.pageYOffset - docEl.clientTop;
-    const left = rect.left + window.pageXOffset - docEl.clientLeft;
-
-    const allMatricesElement = this.el.nativeElement.querySelector('.all-matrices');
-    this.renderer.setStyle(allMatricesElement, 'top', `${top}px`);
-    this.renderer.setStyle(allMatricesElement, 'left', `${left + rect.width + offset}px`);
+    this.setPositionAndStyle(event, '.all-matrices', this.renderer, this.el);
   }
 
   toggleTraitSelect(event: Event) {
     event.stopPropagation();
     this.showAllTraits = !this.showAllTraits;
 
-    const clickedElement = event.target as HTMLElement;
-    const rect = clickedElement.getBoundingClientRect();
-    const docEl = document.documentElement;
-    const offset = 20; // offset in pixels
-
-    const top = rect.top + window.pageYOffset - docEl.clientTop;
-    const left = rect.left + window.pageXOffset - docEl.clientLeft;
-
-    const allTraitsElement = this.el.nativeElement.querySelector('.all-traits');
-    this.renderer.setStyle(allTraitsElement, 'top', `${top}px`);
-    this.renderer.setStyle(allTraitsElement, 'left', `${left + rect.width + offset}px`);
+    this.setPositionAndStyle(event, '.all-traits', this.renderer, this.el);
   }
 
   toggleRelicSelect(event: Event, clickedRelicSelect: number) {
@@ -112,17 +96,7 @@ export class HealingCalculatorComponent implements OnInit {
     event.stopPropagation();
     this.showAllRelics = !this.showAllRelics;
 
-    const clickedElement = event.target as HTMLElement;
-    const rect = clickedElement.getBoundingClientRect();
-    const docEl = document.documentElement;
-    const offset = 20; // offset in pixels
-
-    const top = rect.top + window.pageYOffset - docEl.clientTop;
-    const left = rect.left + window.pageXOffset - docEl.clientLeft;
-
-    const allRelicsElement = this.el.nativeElement.querySelector('.all-relics');
-    this.renderer.setStyle(allRelicsElement, 'top', `${top}px`);
-    this.renderer.setStyle(allRelicsElement, 'left', `${left + rect.width + offset}px`);
+    this.setPositionAndStyle(event, '.all-relics', this.renderer, this.el);
   }
 
   changeThumbnailUnit(clickedEntry: any) {
@@ -175,7 +149,6 @@ export class HealingCalculatorComponent implements OnInit {
   
   currentAdvancementLevel(event: Event) {
     let target = event.target as HTMLElement;
-
     // this is retarded because the path is on TOP of the svg, despite the path being the child of the svg WITH NO Z-INDEX
     // this wasted like 20 minutes of my life because i couldn't figure out why stars with "active" kept getting its "active" removed when clicked
     // but it worked properly if i clicked the very edge of the star
@@ -222,17 +195,17 @@ export class HealingCalculatorComponent implements OnInit {
 
     // UNITS & MATRICES
 
-    type Matrix = {
-      matrixName: string;
-      starValue: number;
+    type Matrix = { 
+      matrixName: string; 
+      starValue: number; 
     };
-    
-    type Unit = {
-      simulacraName: string;
-      starValue: number;
-      matricesSet: Map<string, Matrix>;
+
+    type Unit = { 
+      simulacraName: string; 
+      starValue: number; 
+      matricesSet: Map<string, Matrix>; 
     };
-    
+
     const unitValues: Unit[] = [];
     const unitElements = document.querySelectorAll('[data-unit]');
     let isUnitErrorAdded = false;
@@ -244,7 +217,6 @@ export class HealingCalculatorComponent implements OnInit {
     
       if (simulacraSelect && starSelect) {
         const simulacraValue = simulacraSelect.getAttribute('data-simulacra') || '';
-    
         if (simulacraValue === '' && !isUnitErrorAdded) {
           this.errors.push('Please fill out all the unit fields.');
           isUnitErrorAdded = true;
@@ -252,7 +224,6 @@ export class HealingCalculatorComponent implements OnInit {
     
         const starSelectChildren = starSelect.children;
         let maxAdvancementLevel = -1;
-    
         for (let j = 0; j < starSelectChildren.length; j++) {
           const child = starSelectChildren[j];
           if (child.classList.contains('active')) {
@@ -263,11 +234,36 @@ export class HealingCalculatorComponent implements OnInit {
           }
         }
     
-        unitValues.push({
-          simulacraName: simulacraValue,
-          starValue: maxAdvancementLevel,
-          matricesSet: new Map()  // We'll populate this later
-        });
+        const matricesSet = new Map();
+    
+        const matrixSelectContainers = unitElement.querySelectorAll('.matrix-select-container');
+        for (let j = 0; j < matrixSelectContainers.length; j++) {
+          const matrixSelectContainer = matrixSelectContainers[j];
+          const matrixSelect = matrixSelectContainer.querySelector('.matrix-select');
+          const matrixStars = matrixSelectContainer.querySelector('.stars');
+    
+          if (matrixSelect && matrixStars) {
+            const matrixValue = matrixSelect.getAttribute('data-matrix') || '';
+            if (matrixValue !== '') { // Check if matrixValue is not empty
+              const matrixStarsChildren = matrixStars.children;
+              let matrixMaxAdvancementLevel = -1;
+    
+              for (let k = 0; k < matrixStarsChildren.length; k++) {
+                const child = matrixStarsChildren[k];
+                if (child.classList.contains('active')) {
+                  const advancementLevel = Number(child.getAttribute('data-advancement-level'));
+                  if (advancementLevel > matrixMaxAdvancementLevel) {
+                    matrixMaxAdvancementLevel = advancementLevel;
+                  }
+                }
+              }
+    
+              matricesSet.set(matrixValue, { matrixName: matrixValue, starValue: matrixMaxAdvancementLevel });
+            }
+          }
+        }
+    
+        unitValues.push({ simulacraName: simulacraValue, starValue: maxAdvancementLevel, matricesSet });
       }
     }
 
@@ -301,7 +297,13 @@ export class HealingCalculatorComponent implements OnInit {
       "Frost ATK: " + stats.frostAtk + '\n' +
       "Volt ATK: " + stats.voltAtk + '\n' +
       "Increased Healing Level: " + stats.titanHealing + '\n' +
-      unitValues.map(unit => unit.simulacraName + ": " + unit.starValue).join('\n') + '\n' +
+      unitValues.map(unit => {
+        const matricesString = Array.from(unit.matricesSet.entries())
+          .map(([matrixName, matrix]) => `${matrixName}: ${matrix.starValue}`)
+          .join(', ');
+        return `${unit.simulacraName}: ${unit.starValue} (Matrices: ${matricesString})`;
+      }).join('\n') +
+      '\n' +
       "Trait: " + traitValue
       // Relics
     );

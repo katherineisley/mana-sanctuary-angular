@@ -53,7 +53,7 @@
           <div class="entry" [attr.data-name]="matrix.slug" data-setpc="4pc" (click)="changeThumbnailMatrix(matrix)">
             <img class="avatar" src="assets/matrices/{{matrix.slug}}_matrix.webp" alt="Avatar">
             <div class="wrapper">
-              <span class="name">{{matrix.name}}
+              <span class="name">{{matrix?.name}}
                 <span class="fourpc">4pc</span>
               </span>
               <span class="description">{{matrix.fourpc?.buffs?.join(', ')}}</span>
@@ -67,7 +67,9 @@
           <div class="wrapper">
             <span class="name">{{trait?.name[0]}}</span>
             <!-- {{trait.trait[1].description[0].paragraph}} -->
-            <span class="description">Lorem ipsum</span>
+            <span class="description" *ngFor="let description of trait?.trait[1].description">
+              {{description.paragraph}}
+            </span>
           </div>
         </div>
       </div>
@@ -75,7 +77,7 @@
         <div class="entry" [attr.data-name]="relic.slug" *ngFor="let relic of relics" (click)="changeThumbnailRelic(relic)">
           <img class="avatar" src="assets/relics/{{relic.slug}}_relic.webp" alt="Avatar">
           <div class="wrapper">
-            <span class="name">{{relic.name}}</span>
+            <span class="name">{{relic?.name}}</span>
             <span class="description">Lorem ipsum</span>
           </div>
         </div>
