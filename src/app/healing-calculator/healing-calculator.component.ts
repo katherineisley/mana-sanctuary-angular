@@ -1,6 +1,7 @@
 import { Component, HostListener, OnInit, Renderer2, ElementRef, QueryList, ViewChildren } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+import { Unit, Matrix, Heal, Buff, Data, Character } from './models'; 
 
 @Component({
   selector: 'app-healing-calculator',
@@ -14,6 +15,7 @@ export class HealingCalculatorComponent implements OnInit {
   matrices: any[] = [];
   traits: any[] = [];
   relics: any[] = [];
+  unitsNumbers: any[] = [];
   currentUnitSetId!: number;
   currentMatrixSelectIndex!: number;
   currentRelicSelectIndex!: number;
@@ -37,19 +39,28 @@ export class HealingCalculatorComponent implements OnInit {
   // TITAN
   titanHealing!: number;
 
+
+  professionResonance: any[] = [];
+  elementResonance: any[] = [];
+
+ splittingPatterns: Record<string, string[]> = {
+    "element_frostvolt": ["element_frost", "element_volt"],
+    "element_voltfrost": ["element_volt", "element_frost"],
+    "element_physicalflame": ["element_physical", "element_flame"],
+    "element_flamephysical": ["element_flame", "element_physical"],
+};
+
   constructor(private route: ActivatedRoute, private http: HttpClient, private renderer: Renderer2, private el: ElementRef) { }
 
   ngOnInit() {
     const data = this.route.snapshot.data['data'];
-    const simulacraData = data.simulacra;
-    const matricesData = data.matrices;
-    const relicsData = data.relics;
-
-    this.units = simulacraData;
-    this.matrices = matricesData;
-    this.traits = simulacraData; // the traits are in the same JSON as simulacra
-    this.relics = relicsData;
+    this.units = data.simulacra;
+    this.traits = data.simulacra;
+    this.matrices = data.matrices;
+    this.relics = data.relics;
+    this.unitsNumbers = data.simulacraNumbers;
   }
+
   setPositionAndStyle(event: Event, selector: string, renderer: Renderer2, el: ElementRef) {
     const clickedElement = event.target as HTMLElement;
     const rect = clickedElement.getBoundingClientRect();
@@ -174,7 +185,61 @@ export class HealingCalculatorComponent implements OnInit {
       });
     }
   }
+// Finds the profession resonance of the team
+ findProfessionResonance(unitValues: Unit[]): string[] {
+    const resonanceCount: { [key: string]: number } = {};
+  
+    unitValues.forEach(unit => {
+      const simulacra = this.units.find(s => s.slug === unit.simulacraName);
+      const resonance = simulacra ? simulacra.resonance : 'Unknown resonance';
+      if (resonance in resonanceCount) {
+        resonanceCount[resonance]++;
+      } else {
+        resonanceCount[resonance] = 1;
+      }
+    });
+  
+    // Find a resonance that appears at least twice
+    for (const resonance in resonanceCount) {
+      if (resonanceCount[resonance] >= 2) {
+        return [resonance];
+      }
+    }
+    return [];
+  }
 
+  // Finds the elemental resonance/s of the team
+ findElementResonance(unitValues: Unit[]): string[] {
+    const characterElements: string[] = unitValues.map(unit => {
+      const characterData = this.units.find(simulacra => simulacra.slug === unit.simulacraName);
+      return characterData ? characterData.element : '';
+    });
+
+    const mappedElements: string[] = characterElements.map(element => {
+      const pattern = this.splittingPatterns[element];
+      return pattern ? pattern : [element];
+    }).flat();
+
+    const elementCount: { [key: string]: number } = {};
+  
+    mappedElements.forEach(element => {
+      if (element in elementCount) {
+        elementCount[element]++;
+      } else {
+        elementCount[element] = 1;
+      }
+    });
+  
+    // Collect all elements that appear at least twice
+    const commonElements: string[] = [];
+    for (const element in elementCount) {
+        if (elementCount[element] >= 2) {
+            commonElements.push(element);
+        }
+    }
+    return commonElements;
+  }
+  
   logEverything(event: Event) {
     this.errors = [];
     
@@ -194,18 +259,6 @@ export class HealingCalculatorComponent implements OnInit {
     };
 
     // UNITS & MATRICES
-
-    type Matrix = { 
-      matrixName: string; 
-      starValue: number; 
-    };
-
-    type Unit = { 
-      simulacraName: string; 
-      starValue: number; 
-      matricesSet: Map<string, Matrix>; 
-    };
-
     const unitValues: Unit[] = [];
     const unitElements = document.querySelectorAll('[data-unit]');
     let isUnitErrorAdded = false;
@@ -265,6 +318,11 @@ export class HealingCalculatorComponent implements OnInit {
     
         unitValues.push({ simulacraName: simulacraValue, starValue: maxAdvancementLevel, matricesSet });
       }
+
+      this.professionResonance = this.findProfessionResonance(unitValues);
+      this.elementResonance = this.findElementResonance(unitValues);
+      console.log(this.professionResonance,this.elementResonance)
+
     }
 
     console.log("Unit Values", unitValues);

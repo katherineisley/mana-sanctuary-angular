@@ -1,0 +1,667 @@
+[
+    {
+        "slug": "cocoritter",
+        "on-charge": [],
+        "resonance": [
+            {
+                "buff": {
+                    "module": "Attack",
+                    "type": "Frost",
+                    "affect": "team",
+                    "value": 5,
+                    "requiredStar": 0,
+                    "range": "infinite",
+                    "duration": "infinite",
+                    "cooldown": 0,
+                    "stacks": 1,
+                    "applicationRequirement": "benediction",
+                    "comment": ""
+                }
+            },
+            {
+                "buff": {
+                    "module": "Attack",
+                    "type": "Frost",
+                    "affect": "self",
+                    "value": 15,
+                    "requiredStar": 0,
+                    "range": "infinite",
+                    "duration": "infinite",
+                    "cooldown": 0,
+                    "stacks": 1,
+                    "applicationRequirement": "frost",
+                    "comment": ""
+                }
+            },
+            {
+                "buff": {
+                    "module": "kath",
+                    "type": "FrostDamageReduction",
+                    "affect": "self",
+                    "value": 25,
+                    "requiredStar": 0,
+                    "range": "infinite",
+                    "duration": "infinite",
+                    "cooldown": 0,
+                    "stacks": 1,
+                    "applicationRequirement": "frost",
+                    "comment": ""
+                }
+            }
+        ],
+        "skill": [
+            {
+                "heal": {
+                    "multiplier": 95,
+                    "stat": "ATK",
+                    "affect": "team",
+                    "type": "heal",
+                    "requiredStar": 0,
+                    "range": 9, 
+                    "duration": 6,
+                    "cooldown": 60,
+                    "ticks": 12,
+                    "applicationRequirement": 0,
+                    "comment": ""
+                }
+            },
+            {
+                "buff": {
+                    "module": "kath",
+                    "type": "Damage",
+                    "affect": "team",
+                    "value": 20,
+                    "requiredStar": 3,
+                    "range": 9, 
+                    "duration": 6, 
+                    "cooldown": 60,
+                    "stacks": 1, 
+                    "applicationRequirement": 0,
+                    "comment": ""
+                }
+            },
+            {
+                "buff": {
+                    "module": "kath",
+                    "type": "Shatter",
+                    "affect": "team",
+                    "value": 20,
+                    "requiredStar": 3,
+                    "range": 9, 
+                    "duration": 6, 
+                    "cooldown": 60,
+                    "stacks": 1, 
+                    "applicationRequirement": 0,
+                    "comment": ""
+                }
+            },
+            {
+                "utility": {
+                    "type": "Remove Debuffs",
+                    "affect": "team",
+                    "requiredStar": 3,
+                    "range": 9, 
+                    "duration": 6,
+                    "cooldown": 60,
+                    "stacks": 1,
+                    "applicationRequirement": 0,
+                    "comment": ""
+                }
+            },
+            {
+                "utility": {
+                    "type": "Immunity to Control Effects",
+                    "affect": "team",
+                    "requiredStar": 3,
+                    "range": 9, 
+                    "duration": 6,
+                    "cooldown": 60,
+                    "stacks": 1,
+                    "applicationRequirement": 0,
+                    "comment": ""
+                }
+            }
+        ],
+        "discharge": [
+            {
+                "heal": {
+                    "multiplier": 118.8,
+                    "stat": "ATK",
+                    "affect": "team",
+                    "type": "heal",
+                    "requiredStar": 0,
+                    "range": 9,  
+                    "duration": 7,
+                    "cooldown": 0,
+                    "ticks": 7, 
+                    "applicationRequirement": "",
+                    "comment": ""
+                }
+            },
+            {
+                "utility": {
+                    "type": "Remove Debuffs",
+                    "affect": "team",
+                    "requiredStar": 0,
+                    "range": 9, 
+                    "duration": 7,
+                    "cooldown": 0,
+                    "stacks": 1,
+                    "applicationRequirement": 0,
+                    "comment": ""
+                }
+            }
+        ],
+        "dodge": [
+            {
+                "utility": {
+                    "type": "Charge",
+                    "affect": "self",
+                    "requiredStar": 0,
+                    "range": 0,
+                    "duration": 1,
+                    "cooldown": 0,
+                    "stacks": 1,
+                    "applicationRequirement": 0,
+                    "comment": "Grants 75 weapon charge upon dodge attack"
+                }
+            },
+            {
+                "heal": {
+                    "multiplier": 25,
+                    "stat": "ATK",
+                    "affect": 1,
+                    "type": "heal",
+                    "requiredStar": 1,
+                    "range": 15,
+                    "duration": 25,
+                    "cooldown": 25,
+                    "ticks": 25,
+                    "applicationRequirement": 0,
+                    "comment": ""
+                }
+            },
+            {
+                "utility": {
+                    "type": "Charge",
+                    "affect": 1,
+                    "requiredStar": 1,
+                    "range": 15,
+                    "duration": 25,
+                    "cooldown": 25,
+                    "stacks": 1,
+                    "applicationRequirement": 0,
+                    "comment": ""
+                }
+            },
+            {
+                "buff": {
+                    "module": "kath",
+                    "type": "Damage",
+                    "affect": "team",
+                    "value": 15,
+                    "requiredStar": 6,
+                    "range": 10,
+                    "duration": 25, 
+                    "cooldown": 25,
+                    "stacks": 1,
+                    "applicationRequirement": 0,
+                    "comment": ""
+                }
+            },
+            {
+                "buff": {
+                    "module": "kath",
+                    "type": "Healing",
+                    "affect": "team",
+                    "value": 15,
+                    "requiredStar": 6,
+                    "range": 10,
+                    "duration": 25,
+                    "cooldown": 25,
+                    "stacks": 1,
+                    "applicationRequirement": 0,
+                    "comment": ""
+                }
+            },
+            {
+                "heal": {
+                    "multiplier": 100,
+                    "stat": "ATK",
+                    "affect": "team",
+                    "type": "heal",
+                    "requiredStar": 6,
+                    "range": 10,
+                    "duration": 0,
+                    "cooldown": 25,
+                    "ticks": 2,
+                    "applicationRequirement": 0,
+                    "comment": ""
+                }
+            }
+        ],
+        "attack": [],
+        "passive": [
+            {
+                "buff": {
+                    "module": "kath",
+                    "type": "Healing",
+                    "affect": "self",
+                    "value": 15,
+                    "requiredStar": 5,
+                    "range": 0,
+                    "duration": 0,
+                    "cooldown": 0,
+                    "stacks": 1,
+                    "applicationRequirement": 0,
+                    "comment": ""
+                }
+            },
+            {
+                "buff": {
+                    "module": "kath",
+                    "type": "Healing",
+                    "affect": "self",
+                    "value": 20,
+                    "requiredStar": 5,
+                    "range": 0,
+                    "duration": 0,
+                    "cooldown": 0,
+                    "stacks": 1,
+                    "applicationRequirement": 0,
+                    "comment": "Activates on targets under 60% HP"
+                }
+            }
+        ]
+    },
+    
+    {
+        "slug": "nemesis",
+        "on-charge": [],
+        "resonance": [
+            {
+                "buff": {
+                    "module": "Attack",
+                    "type": "Volt",
+                    "affect": "team",
+                    "value": 5,
+                    "requiredStar": 0,
+                    "range": "infinite",
+                    "duration": "infinite",
+                    "cooldown": 0,
+                    "stacks": 1,
+                    "applicationRequirement": "benediction",
+                    "comment": ""
+                }
+            },
+            {
+                "buff": {
+                    "module": "Attack",
+                    "type": "Volt",
+                    "affect": "self",
+                    "value": 15,
+                    "requiredStar": 0,
+                    "range": "infinite",
+                    "duration": "infinite",
+                    "cooldown": 0,
+                    "stacks": 1,
+                    "applicationRequirement": "volt",
+                    "comment": ""
+                }
+            },
+            {
+                "buff": {
+                    "module": "kath",
+                    "type": "VoltDamageReduction",
+                    "affect": "self",
+                    "value": 25,
+                    "requiredStar": 0,
+                    "range": "infinite",
+                    "duration": "infinite",
+                    "cooldown": 0,
+                    "stacks": 1,
+                    "applicationRequirement": "volt",
+                    "comment": ""
+                }
+            }
+        ],
+        "skill": [
+            {
+                "heal": {
+                    "multiplier": 303.75,
+                    "stat": "ATK",
+                    "affect": "team", 
+                    "type": "heal",
+                    "requiredStar": 1,
+                    "range": 12,
+                    "duration": 1,
+                    "cooldown": 25,
+                    "ticks": 1,
+                    "applicationRequirement": 0,
+                    "comment": ""
+                }
+            }
+        ],
+        "discharge": [
+            {
+                "heal": {
+                    "multiplier": 303.75,
+                    "stat": "ATK",
+                    "affect": "team", 
+                    "type": "heal",
+                    "requiredStar": 1,
+                    "range": 12,
+                    "duration": 1,
+                    "cooldown": 0,
+                    "ticks": 1,
+                    "applicationRequirement": 0,
+                    "comment": ""
+                }
+            },
+            {
+                "utility": {
+                    "type": "Crowd Control",
+                    "affect": "enemy",
+                    "requiredStar": 0,
+                    "range": 12,
+                    "duration": 5,
+                    "cooldown": 0,
+                    "stacks": 1,
+                    "applicationRequirement": 0,
+                    "comment": "Slow enemies' movement speed by 70%."
+                }
+            }
+        ],
+        "dodge": [
+            {
+                "heal": {
+                    "multiplier": 152.325,
+                    "stat": "ATK",
+                    "affect": "team",
+                    "type": "heal",
+                    "requiredStar": 0,
+                    "range": 12,
+                    "duration": 1,
+                    "cooldown": 0,
+                    "ticks": 1,
+                    "applicationRequirement": 0,
+                    "comment": ""
+                }
+            },
+            {
+                "heal": {
+                    "multiplier": 50.625,
+                    "stat": "ATK",
+                    "affect": "team",
+                    "type": "heal",
+                    "requiredStar": 0,
+                    "range": 12,
+                    "duration": 10,
+                    "cooldown": 0,
+                    "ticks": 5,
+                    "applicationRequirement": 0,
+                    "comment": ""
+                }
+            },
+            {
+                "utility": {
+                    "type": "Crowd Control",
+                    "affect": "enemy",
+                    "requiredStar": 0,
+                    "range": 17,
+                    "duration": 3,
+                    "cooldown": 0,
+                    "stacks": 1,
+                    "applicationRequirement": 0,
+                    "comment": "Use back dodge to generate a slowing magnetic field, reducing the movement and attack speed of all enemies inside by 35%."
+                }
+            }
+        ],
+        "attack": [],
+        "passive": [
+            {
+                "buff": {
+                    "module": "Attack",
+                    "type": "Volt",
+                    "affect": "self",
+                    "value": 10,
+                    "requiredStar": 5,
+                    "range": "infinite",
+                    "duration": 25,
+                    "cooldown": 0,
+                    "stacks": 1,
+                    "applicationRequirement": 0,
+                    "comment": ""
+                }
+            },
+            {
+                "buff": {
+                    "module": "Attack",
+                    "type": "Volt",
+                    "affect": "self",
+                    "value": 5,
+                    "requiredStar": 6,
+                    "range": "infinite",
+                    "duration": 25,
+                    "cooldown": 0,
+                    "stacks": 1,
+                    "applicationRequirement": 0,
+                    "comment": ""
+                }
+            }
+        ]
+    },
+    {
+        "slug": "zero",
+        "on-charge": [],
+        "resonance": [
+            {
+                "buff": {
+                    "module": "Attack",
+                    "type": "Flame",
+                    "affect": "team",
+                    "value": 5,
+                    "requiredStar": 0,
+                    "range": "infinite",
+                    "duration": "infinite",
+                    "cooldown": 0,
+                    "stacks": 1,
+                    "applicationRequirement": "benediction",
+                    "comment": ""
+                }
+            },
+            {
+                "buff": {
+                    "module": "Attack",
+                    "type": "Flame",
+                    "affect": "self",
+                    "value": 15,
+                    "requiredStar": 0,
+                    "range": "infinite",
+                    "duration": "infinite",
+                    "cooldown": 0,
+                    "stacks": 1,
+                    "applicationRequirement": "element_flame",
+                    "comment": ""
+                }
+            },
+            {
+                "buff": {
+                    "module": "Standard",
+                    "type": "FlameDamageReduction",
+                    "affect": "self",
+                    "value": 25,
+                    "requiredStar": 0,
+                    "range": "infinite",
+                    "duration": "infinite",
+                    "cooldown": 0,
+                    "stacks": 1,
+                    "applicationRequirement": "element_flame",
+                    "comment": ""
+                }
+            }
+        ],
+        "skill": [
+            {
+                "heal": {
+                    "multiplier": 800,
+                    "stat": "ATK",
+                    "affect": "team",
+                    "type": "shield",
+                    "requiredStar": 0,
+                    "range": 10,
+                    "duration": 10,
+                    "cooldown": 60,
+                    "ticks": 1,
+                    "applicationRequirement": 0,
+                    "comment": "",
+                    "ignore": [3,4,5,6]
+                }
+            },
+            {
+                "heal": {
+                    "multiplier": 160,
+                    "stat": "ATK",
+                    "affect": "team",
+                    "type": "shield",
+                    "requiredStar": 0,
+                    "range": 10,
+                    "duration": 10,
+                    "cooldown": 60,
+                    "ticks": 5,
+                    "applicationRequirement": 0,
+                    "comment": "",
+                    "ignore": [3,4,5,6]
+                }
+            },
+            {
+                "heal": {
+                    "multiplier": 800,
+                    "stat": "ATK",
+                    "affect": "team",
+                    "type": "shield",
+                    "requiredStar": 3,
+                    "range": 10,
+                    "duration": 10,
+                    "cooldown": 30,
+                    "ticks": 1,
+                    "applicationRequirement": 0,
+                    "comment": "",
+                    "ignore": [0,1,2]
+                }
+            },
+            {
+                "heal": {
+                    "multiplier": 160,
+                    "stat": "ATK",
+                    "affect": "team",
+                    "type": "shield",
+                    "requiredStar": 3,
+                    "range": 10,
+                    "duration": 10,
+                    "cooldown": 30,
+                    "ticks": 5,
+                    "applicationRequirement": 0,
+                    "comment": "",
+                    "ignore": [0,1,2]
+                }
+            },
+            {
+                "heal": {
+                    "multiplier": 30,
+                    "stat": "ATK",
+                    "affect": "team",
+                    "type": "heal",
+                    "requiredStar": 3,
+                    "range": 10,
+                    "duration": 10,
+                    "cooldown": 30,
+                    "ticks": 10,
+                    "applicationRequirement": 0,
+                    "comment": ""
+                }
+            },
+            {
+                "heal": {
+                    "multiplier": 60,
+                    "stat": "ATK",
+                    "affect": "team",
+                    "type": "heal",
+                    "requiredStar": 6,
+                    "range": 10,
+                    "duration": 1,
+                    "cooldown": 30,
+                    "ticks": 5,
+                    "applicationRequirement": 0,
+                    "comment": ""
+                }
+            }
+    
+        ],
+        "discharge": [
+            {
+                "utility": {
+                    "type": "Damage Immunity",
+                    "affect": "team",
+                    "requiredStar": 0,
+                    "range": 6, 
+                    "duration": 3,
+                    "cooldown": 0,
+                    "stacks": 1,
+                    "applicationRequirement": 0,
+                    "comment": "User also gains 5 cubes upon cast"
+                }
+            }
+        ],
+        "dodge": [
+        ],
+        "attack": [
+            {
+                "heal": {
+                    "multiplier": 60,
+                    "stat": "ATK",
+                    "affect": 1,
+                    "type": "heal",
+                    "requiredStar": 1,
+                    "range": 0,
+                    "duration": 1,
+                    "cooldown": 2,
+                    "ticks": 1,
+                    "applicationRequirement": 0,
+                    "comment": ""
+                }
+            },
+            {
+                "buff": {
+                    "module": "WeaponPassive",
+                    "type": "Damage",
+                    "affect": 1,
+                    "value": 2,
+                    "requiredStar": 5,
+                    "range": 0,
+                    "duration": 30,
+                    "cooldown": 2.5,
+                    "stacks": 10,
+                    "applicationRequirement": 0,
+                    "comment": ""
+                }
+            },
+            {
+                "buff": {
+                    "module": "Standard",
+                    "type": "Healing",
+                    "affect": 1,
+                    "value": 2,
+                    "requiredStar": 5,
+                    "range": 0,
+                    "duration": 30,
+                    "cooldown": 2.5,
+                    "stacks": 10,
+                    "applicationRequirement": 0,
+                    "comment": ""
+                }
+            }
+        ],
+        "passive": []
+    }
+]

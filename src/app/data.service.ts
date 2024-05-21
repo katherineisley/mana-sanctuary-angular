@@ -31,4 +31,8 @@ export class DataService {
   getWeaponMaterialsData(): Observable<any> {
     return this.http.get('assets/json/weapon-materials-data.json');
   }
+
+  getSimulacraNumbers(): Observable<any> {
+    return this.http.get('assets/json/simulacra-numbers.json');
+  }
 }

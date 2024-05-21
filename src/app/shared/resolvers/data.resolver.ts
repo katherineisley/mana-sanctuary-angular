@@ -12,6 +12,7 @@ export const DataResolver: ResolveFn<any> = (route: ActivatedRouteSnapshot, stat
     relics: dataService.getRelicsData(),
     glossary: dataService.getGlossaryData(),
     aboutUs: dataService.getAboutUsData(),
-    weaponMaterials: dataService.getWeaponMaterialsData()
+    weaponMaterials: dataService.getWeaponMaterialsData(),
+    simulacraNumbers: dataService.getSimulacraNumbers()
   });
 }
