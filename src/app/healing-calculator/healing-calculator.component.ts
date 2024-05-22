@@ -39,7 +39,6 @@ export class HealingCalculatorComponent implements OnInit {
   // TITAN
   titanHealing!: number;
 
-
   professionResonance: string[] = [];
   elementResonance: string[] = [];
   buffs: Buff[] = [];
@@ -59,12 +58,23 @@ export class HealingCalculatorComponent implements OnInit {
   calculatedVoltATK!: number;
   calculatedPhysicalATK!: number;
 
+  calculatedHP!: number;
+
   calculatedCrit!: number;
+  calculatedCritRate!: number;
   calculatedCritDamage!: number;
-  
+
+  dodgeCooldown: number = 4;
+  dischargeCooldown: number = 10;
+
   ATKCritRatio!: number;
   healingBuff!: number;
-  
+
+  critFormulaMulti:number = 282.13;
+  critPercent!:number;
+
+  totalHeal: number = 0;
+  totalShield: number = 0;
 
   splittingPatterns: Record<string, string[]> = {
     "element_frostvolt": ["element_frost", "element_volt"],
@@ -442,27 +452,26 @@ export class HealingCalculatorComponent implements OnInit {
     console.log(this.teamBuffsSummary)
   }
 
-//   calculateAttack(){
-//     this.calculatedPhysicalBase = this.physicalAtkStat + this.physicalAtkStat * (buffSummary['Attack']?.['Base'] ?? 0)
-//     this.calculatedFlameBase = this.flameAtkStat + this.flameAtkStat * (buffSummary['Attack']?.['Base'] ?? 0)
-//     this.calculatedFrostBase = this.frostAtkStat + this.frostAtkStat * (buffSummary['Attack']?.['Base'] ?? 0)
-//     this.calculatedVoltBase = this.voltAtkStat + this.voltAtkStat * (buffSummary['Attack']?.['Base'] ?? 0)
+  calculateAttackCritHeal(){
 
-//     this.calculatedFlameATK = this.calculatedFlameBase + (this.calculatedFlameBase * (((buffSummary['Attack']?.['Flame'] ?? 0) + (buffSummary['Attack']?.['Common'] ?? 0)) / 100));
-//     this.calculatedFrostATK = this.calculatedFrostBase + (this.calculatedFrostBase * (((buffSummary['Attack']?.['Frost'] ?? 0) + (buffSummary['Attack']?.['Common'] ?? 0)) / 100));
-//     this.calculatedVoltATK = this.calculatedVoltBase + (this.calculatedVoltBase * (((buffSummary['Attack']?.['Volt'] ?? 0) + (buffSummary['Attack']?.['Common'] ?? 0)) / 100));
-//     this.calculatedPhysicalATK = this.calculatedPhysicalBase + (this.calculatedPhysicalBase * (((buffSummary['Attack']?.['Physical'] ?? 0) + (buffSummary['Attack']?.['Common'] ?? 0)) / 100));
+    this.critPercent = this.critStat / this.critFormulaMulti;
+
+    this.calculatedPhysicalBase = this.physicalAtkStat + this.physicalAtkStat * (this.buffsSummary['Attack']?.['Base'] ?? 0)
+    this.calculatedFlameBase = this.flameAtkStat + this.flameAtkStat * (this.buffsSummary['Attack']?.['Base'] ?? 0)
+    this.calculatedFrostBase = this.frostAtkStat + this.frostAtkStat * (this.buffsSummary['Attack']?.['Base'] ?? 0)
+    this.calculatedVoltBase = this.voltAtkStat + this.voltAtkStat * (this.buffsSummary['Attack']?.['Base'] ?? 0)
+
+    this.calculatedFlameATK = this.calculatedFlameBase + (this.calculatedFlameBase * (((this.buffsSummary['Attack']?.['Flame'] ?? 0) + (this.buffsSummary['Attack']?.['Common'] ?? 0)) / 100));
+    this.calculatedFrostATK = this.calculatedFrostBase + (this.calculatedFrostBase * (((this.buffsSummary['Attack']?.['Frost'] ?? 0) + (this.buffsSummary['Attack']?.['Common'] ?? 0)) / 100));
+    this.calculatedVoltATK = this.calculatedVoltBase + (this.calculatedVoltBase * (((this.buffsSummary['Attack']?.['Volt'] ?? 0) + (this.buffsSummary['Attack']?.['Common'] ?? 0)) / 100));
+    this.calculatedPhysicalATK = this.calculatedPhysicalBase + (this.calculatedPhysicalBase * (((this.buffsSummary['Attack']?.['Physical'] ?? 0) + (this.buffsSummary['Attack']?.['Common'] ?? 0)) / 100));
     
-//     this.calculatedCrit = this.critPercent + this.critRate + (buffSummary['Crit']?.['CritRate'] ?? 0);
-//     this.calculatedCritDamage = this.critDamage + (buffSummary['Crit']?.['CritDamage'] ?? 0);
+    this.calculatedCrit = this.critPercent + this.critRateStat + (this.buffsSummary['Crit']?.['CritRate'] ?? 0);
+    this.calculatedCritDamage = this.critDmgStat + (this.buffsSummary['Crit']?.['CritDamage'] ?? 0);
 
-
-// ATKCritRatio = calculateATKCritRatio(weaponOneElement);
-
-// healingBuff = ProfessionResonance.includes("benediction") ? 2 : 1;
-// healingBuff = healingBuff * (buffSummary['Standard']?.['Healing'] ?? 1) * (buffSummary['Matrix']?.['Healing'] ?? 1) * (buffSummary['WeaponPassive']?.['Healing'] ?? 1) * (buffSummary['WeaponActive']?.['Healing'] ?? 1);
-
-//   }
+    this.healingBuff = this.professionResonance.includes("benediction") ? 2 : 1;
+    this.healingBuff = this.healingBuff * (this.buffsSummary['Standard']?.['Healing'] ?? 1) * (this.buffsSummary['Matrix']?.['Healing'] ?? 1) * (this.buffsSummary['WeaponPassive']?.['Healing'] ?? 1) * (this.buffsSummary['WeaponActive']?.['Healing'] ?? 1);
+  }
 
   clearData() {
     this.buffs = [];
@@ -563,6 +572,7 @@ export class HealingCalculatorComponent implements OnInit {
       this.collectAllBuffs(unitValues)
       console.log(this.buffs)
       this.collectBuffsSummary()
+      this.calculateAttackCritHeal();
       this.clearData();
 
     }
