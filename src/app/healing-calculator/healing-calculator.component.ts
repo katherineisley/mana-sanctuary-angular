@@ -1,7 +1,7 @@
 import { Component, HostListener, OnInit, Renderer2, ElementRef, QueryList, ViewChildren } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-import { Unit, Matrix, Heal, Buff, Data, Character } from './models'; 
+import { Unit, Matrix, Heal, Buff, Data, Character } from './models';
 
 @Component({
   selector: 'app-healing-calculator',
@@ -23,7 +23,7 @@ export class HealingCalculatorComponent implements OnInit {
   showAllMatrices = false;
   showAllTraits = false;
   showAllRelics = false;
-  activeInfo: string = 'Summary'; 
+  activeInfo: string = 'Summary';
 
   // STATS
   hpStat!: number;
@@ -40,22 +40,23 @@ export class HealingCalculatorComponent implements OnInit {
   titanHealing!: number;
 
 
-  professionResonance: any[] = [];
-  elementResonance: any[] = [];
+  professionResonance: string[] = [];
+  elementResonance: string[] = [];
+  buffs: Buff[] = [];
 
- splittingPatterns: Record<string, string[]> = {
+  splittingPatterns: Record<string, string[]> = {
     "element_frostvolt": ["element_frost", "element_volt"],
     "element_voltfrost": ["element_volt", "element_frost"],
     "element_physicalflame": ["element_physical", "element_flame"],
     "element_flamephysical": ["element_flame", "element_physical"],
-};
+  };
 
   constructor(private route: ActivatedRoute, private http: HttpClient, private renderer: Renderer2, private el: ElementRef) { }
 
   ngOnInit() {
     const data = this.route.snapshot.data['data'];
-    this.units = data.simulacra;
-    this.traits = data.simulacra;
+    this.units = data.simulacraHealingCalculator;
+    this.traits = data.simulacraHealingCalculator;
     this.matrices = data.matrices;
     this.relics = data.relics;
     this.unitsNumbers = data.simulacraNumbers;
@@ -112,24 +113,24 @@ export class HealingCalculatorComponent implements OnInit {
 
   changeThumbnailUnit(clickedEntry: any) {
     const value = clickedEntry.slug;
-  
+
     const avatarSrc = `assets/simulacra/${value}_avatar.webp`;
     const selectElement = this.el.nativeElement.querySelector(`.unit[data-unit="${this.currentUnitSetId}"] .simulacra-select img`);
     selectElement.src = avatarSrc;
     selectElement.parentElement.setAttribute('data-simulacra', value);
-  
+
     console.log(clickedEntry);
     console.log("Current Unit Set ID", this.currentUnitSetId);
   }
 
   changeThumbnailMatrix(clickedEntry: any) {
     const value = clickedEntry.slug;
-  
+
     const avatarSrc = `assets/matrices/${value}_matrix.webp`;
     const selectElement = this.el.nativeElement.querySelector(`.unit[data-unit="${this.currentUnitSetId}"] .matrix-select-container:nth-child(${this.currentMatrixSelectIndex}) .matrix-select img`);
     selectElement.src = avatarSrc;
     selectElement.parentElement.setAttribute('data-matrix', value);
-  
+
     console.log(clickedEntry);
     console.log("Current Unit Set ID", this.currentUnitSetId);
     console.log("Current Matrix Select Index", this.currentMatrixSelectIndex);
@@ -142,22 +143,22 @@ export class HealingCalculatorComponent implements OnInit {
     const selectElement = this.el.nativeElement.querySelector(`.trait-select img`);
     selectElement.src = avatarSrc;
     selectElement.parentElement.setAttribute('data-trait', value);
-  
+
     console.log(clickedEntry);
     console.log("Current Unit Set ID", this.currentUnitSetId);
   }
 
   changeThumbnailRelic(clickedEntry: any) {
     const value = clickedEntry.slug;
-  
+
     const avatarSrc = `assets/relics/${value}_relic.webp`;
     const selectElement = this.el.nativeElement.querySelector(`.relic-select-container:nth-child(${this.currentRelicSelectIndex}) .relic-select img`);
     selectElement.src = avatarSrc;
     selectElement.parentElement.setAttribute('data-relic', value);
-  
+
     console.log(clickedEntry);
   }
-  
+
   currentAdvancementLevel(event: Event) {
     let target = event.target as HTMLElement;
     // this is retarded because the path is on TOP of the svg, despite the path being the child of the svg WITH NO Z-INDEX
@@ -166,17 +167,17 @@ export class HealingCalculatorComponent implements OnInit {
     if (target.tagName.toLowerCase() === 'path') {
       target = target.closest('svg') as unknown as HTMLElement;
     }
-  
+
     const advancementLevel = Number(target.getAttribute('data-advancement-level'));
     const parentStarsDiv = target.closest('.stars'); // prevents from selecting ALL the stars on the page
-  
+
     if (parentStarsDiv) {
       const svgElements = parentStarsDiv.querySelectorAll('svg');
-  
+
       svgElements.forEach((svg: SVGSVGElement) => {
         const level = Number(svg.getAttribute('data-advancement-level'));
         const shouldBeActive = level <= advancementLevel;
-  
+
         if (shouldBeActive) {
           this.renderer.addClass(svg, 'active');
         } else {
@@ -185,10 +186,10 @@ export class HealingCalculatorComponent implements OnInit {
       });
     }
   }
-// Finds the profession resonance of the team
- findProfessionResonance(unitValues: Unit[]): string[] {
+  // Finds the profession resonance of the team
+  findProfessionResonance(unitValues: Unit[]){
     const resonanceCount: { [key: string]: number } = {};
-  
+
     unitValues.forEach(unit => {
       const simulacra = this.units.find(s => s.slug === unit.simulacraName);
       const resonance = simulacra ? simulacra.resonance : 'Unknown resonance';
@@ -198,18 +199,18 @@ export class HealingCalculatorComponent implements OnInit {
         resonanceCount[resonance] = 1;
       }
     });
-  
+
     // Find a resonance that appears at least twice
     for (const resonance in resonanceCount) {
       if (resonanceCount[resonance] >= 2) {
-        return [resonance];
+        this.professionResonance.push(resonance);
       }
     }
-    return [];
+
   }
 
   // Finds the elemental resonance/s of the team
- findElementResonance(unitValues: Unit[]): string[] {
+  findElementResonance(unitValues: Unit[]) {
     const characterElements: string[] = unitValues.map(unit => {
       const characterData = this.units.find(simulacra => simulacra.slug === unit.simulacraName);
       return characterData ? characterData.element : '';
@@ -221,7 +222,7 @@ export class HealingCalculatorComponent implements OnInit {
     }).flat();
 
     const elementCount: { [key: string]: number } = {};
-  
+
     mappedElements.forEach(element => {
       if (element in elementCount) {
         elementCount[element]++;
@@ -229,20 +230,150 @@ export class HealingCalculatorComponent implements OnInit {
         elementCount[element] = 1;
       }
     });
-  
+
     // Collect all elements that appear at least twice
     const commonElements: string[] = [];
     for (const element in elementCount) {
-        if (elementCount[element] >= 2) {
-            commonElements.push(element);
-        }
+      if (elementCount[element] >= 2) {
+        commonElements.push(element);
+      }
     }
-    return commonElements;
+    this.elementResonance = commonElements;
   }
-  
+
+  collectResonanceBuffs(unitValues: Unit[]) {
+    unitValues.forEach(unit => {
+      for (const data of this.unitsNumbers) {
+        if (data.slug === unit.simulacraName) {
+          for (const resonance of data.resonance) {
+            if (resonance.buff && this.professionResonance.includes(resonance.buff.applicationRequirement) && resonance.buff.requiredStar <= unit.starValue && (!resonance.buff.ignore || !resonance.buff.ignore.includes(unit.starValue))) {
+
+              const copiedBuff = { ...resonance.buff };
+
+              copiedBuff.maxBuff = resonance.buff.value * resonance.buff.stacks;
+              copiedBuff.avgBuff = resonance.buff.value * resonance.buff.stacks;
+              copiedBuff.originItem = data.slug;
+              copiedBuff.originSource = "resonance";
+              this.buffs.push(copiedBuff);
+
+            }
+          }
+          for (const resonance of data.resonance) {
+            if (resonance.buff && this.elementResonance.includes(resonance.buff.applicationRequirement) && resonance.buff.requiredStar <= unit.starValue && (!resonance.buff.ignore || !resonance.buff.ignore.includes(unit.starValue))) {
+
+              const copiedBuff = { ...resonance.buff };
+
+              copiedBuff.maxBuff = resonance.buff.value * resonance.buff.stacks;
+              copiedBuff.avgBuff = resonance.buff.value * resonance.buff.stacks;
+              copiedBuff.originItem = data.slug;
+              copiedBuff.originSource = "resonance";
+              this.buffs.push(copiedBuff);
+
+            }
+          }
+        }
+      }
+    });
+  }
+
+
+  collectAllBuffs(unitValues: Unit[]) {
+    unitValues.forEach(unit => {
+      const weapon = unit.simulacraName;
+      const star = unit.starValue;
+      for (const data of this.unitsNumbers) {
+        if (data.slug === weapon) {
+          for (const dodge of data.dodge) {
+            if (dodge.buff && dodge.buff.requiredStar <= star && (!dodge.buff.ignore || !dodge.buff.ignore.includes(star))) {
+
+              const copiedBuff = { ...dodge.buff };
+
+              copiedBuff.maxBuff = 'value1';
+              copiedBuff.avgBuff = 'value2';
+              copiedBuff.originItem = data.slug;
+              copiedBuff.originSource = "dodge";
+              this.buffs.push(copiedBuff);
+
+            }
+          }
+
+          for (const skill of data.skill) {
+            if (skill.buff && skill.buff.requiredStar <= star && (!skill.buff.ignore || !skill.buff.ignore.includes(star))) {
+
+              const copiedBuff = { ...skill.buff };
+
+              copiedBuff.maxBuff = 'value1';
+              copiedBuff.avgBuff = 'value2';
+              copiedBuff.originItem = data.slug;
+              copiedBuff.originSource = "skill";
+              this.buffs.push(copiedBuff);
+
+            }
+          }
+
+          for (const discharge of data.discharge) {
+            if (discharge.buff && discharge.buff.requiredStar <= star && (!discharge.buff.ignore || !discharge.buff.ignore.includes(star))) {
+
+              const copiedBuff = { ...discharge.buff };
+
+              copiedBuff.maxBuff = 'value1';
+              copiedBuff.avgBuff = 'value2';
+              copiedBuff.originItem = data.slug;
+              copiedBuff.originSource = "discharge";
+              this.buffs.push(copiedBuff);
+
+            }
+          }
+
+          for (const attack of data.attack) {
+            if (attack.buff && attack.buff.requiredStar <= star && (!attack.buff.ignore || !attack.buff.ignore.includes(star))) {
+
+              const copiedBuff = { ...attack.buff };
+
+              copiedBuff.maxBuff = attack.buff.value * attack.buff.stacks;
+
+              if ((attack.buff.duration / attack.buff.cooldown) >= 1) {
+                copiedBuff.avgBuff = copiedBuff.maxBuff
+              }
+              else {
+                copiedBuff.avgBuff = (attack.buff.duration / attack.buff.cooldown) * copiedBuff.maxBuff
+              }
+
+              copiedBuff.originItem = data.slug;
+              copiedBuff.originSource = "attack";
+              this.buffs.push(copiedBuff);
+
+            }
+          }
+
+          for (const passive of data.passive) {
+            if (passive.buff && passive.buff.requiredStar <= star && (!passive.buff.ignore || !passive.buff.ignore.includes(star))) {
+
+              const copiedBuff = { ...passive.buff };
+
+              copiedBuff.maxBuff = 'value1';
+              copiedBuff.avgBuff = 'value2';
+              copiedBuff.originItem = data.slug;
+              copiedBuff.originSource = "passive";
+              this.buffs.push(copiedBuff);
+
+            }
+          }
+        }
+      }
+    });
+  }
+
+  clearData(){
+    this.buffs = [];
+    this.professionResonance = [];
+    this.elementResonance = [];
+
+  }
+
   logEverything(event: Event) {
     this.errors = [];
-    
+
     // STATS & TITAN
 
     const stats = {
@@ -262,19 +393,19 @@ export class HealingCalculatorComponent implements OnInit {
     const unitValues: Unit[] = [];
     const unitElements = document.querySelectorAll('[data-unit]');
     let isUnitErrorAdded = false;
-    
+
     for (let i = 0; i < unitElements.length; i++) {
       const unitElement = unitElements[i];
       const simulacraSelect = unitElement.querySelector('.simulacra-select');
       const starSelect = unitElement.querySelector('.stars');
-    
+
       if (simulacraSelect && starSelect) {
         const simulacraValue = simulacraSelect.getAttribute('data-simulacra') || '';
         if (simulacraValue === '' && !isUnitErrorAdded) {
           this.errors.push('Please fill out all the unit fields.');
           isUnitErrorAdded = true;
         }
-    
+
         const starSelectChildren = starSelect.children;
         let maxAdvancementLevel = -1;
         for (let j = 0; j < starSelectChildren.length; j++) {
@@ -286,21 +417,21 @@ export class HealingCalculatorComponent implements OnInit {
             }
           }
         }
-    
+
         const matricesSet = new Map();
-    
+
         const matrixSelectContainers = unitElement.querySelectorAll('.matrix-select-container');
         for (let j = 0; j < matrixSelectContainers.length; j++) {
           const matrixSelectContainer = matrixSelectContainers[j];
           const matrixSelect = matrixSelectContainer.querySelector('.matrix-select');
           const matrixStars = matrixSelectContainer.querySelector('.stars');
-    
+
           if (matrixSelect && matrixStars) {
             const matrixValue = matrixSelect.getAttribute('data-matrix') || '';
             if (matrixValue !== '') { // Check if matrixValue is not empty
               const matrixStarsChildren = matrixStars.children;
               let matrixMaxAdvancementLevel = -1;
-    
+
               for (let k = 0; k < matrixStarsChildren.length; k++) {
                 const child = matrixStarsChildren[k];
                 if (child.classList.contains('active')) {
@@ -310,18 +441,23 @@ export class HealingCalculatorComponent implements OnInit {
                   }
                 }
               }
-    
+
               matricesSet.set(matrixValue, { matrixName: matrixValue, starValue: matrixMaxAdvancementLevel });
             }
           }
         }
-    
+
         unitValues.push({ simulacraName: simulacraValue, starValue: maxAdvancementLevel, matricesSet });
       }
 
-      this.professionResonance = this.findProfessionResonance(unitValues);
-      this.elementResonance = this.findElementResonance(unitValues);
-      console.log(this.professionResonance,this.elementResonance)
+      this.findProfessionResonance(unitValues);
+      this.findElementResonance(unitValues);
+      console.log(this.professionResonance, this.elementResonance)
+      this.collectResonanceBuffs(unitValues)
+      console.log(this.buffs)
+      this.collectAllBuffs(unitValues)
+      console.log(this.buffs)
+      this.clearData();
 
     }
 
@@ -344,7 +480,7 @@ export class HealingCalculatorComponent implements OnInit {
     }
 
     // THE ACTUAL LOGGER
-  
+
     alert(
       "HP: " + stats.hp + '\n' +
       "Crit: " + stats.crit + '\n' +
@@ -366,7 +502,7 @@ export class HealingCalculatorComponent implements OnInit {
       // Relics
     );
   }
-  
+
   setActiveInfo(event: Event | string | null) {
     if (typeof event === 'string') {
       this.activeInfo = event;
@@ -406,7 +542,7 @@ export class HealingCalculatorComponent implements OnInit {
 
   ngAfterViewInit() {
     const underLineInit = new Event('custom');
-    Object.defineProperty(underLineInit, 'target', {value: this.infos.first.nativeElement, enumerable: true});
+    Object.defineProperty(underLineInit, 'target', { value: this.infos.first.nativeElement, enumerable: true });
     this.setActiveInfo(underLineInit); // make the underline appear under "Advancements" on page load
 
     setTimeout(() => {

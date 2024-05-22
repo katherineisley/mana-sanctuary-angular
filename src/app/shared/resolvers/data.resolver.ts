@@ -13,6 +13,7 @@ export const DataResolver: ResolveFn<any> = (route: ActivatedRouteSnapshot, stat
     glossary: dataService.getGlossaryData(),
     aboutUs: dataService.getAboutUsData(),
     weaponMaterials: dataService.getWeaponMaterialsData(),
-    simulacraNumbers: dataService.getSimulacraNumbers()
+    simulacraNumbers: dataService.getSimulacraNumbers(),
+    simulacraHealingCalculator: dataService.getHealingCalculatorSimulacraData()
   });
 }

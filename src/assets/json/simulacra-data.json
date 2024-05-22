@@ -1378,6 +1378,7 @@
     "hasRes": false,
     "shatter": "12",
     "charge": "10",
+    "onHealingCalculator": true,
     "roles": [
       "MDPS", "Buffer", "Healer", "SupportBuffer"
     ],
@@ -5210,6 +5211,7 @@
     "hasRes": true,
     "shatter": "11.5",
     "charge": "11.5",
+    "onHealingCalculator": true,
     "roles": [
       "Buffer", "Healer", "SupportBuffer"
     ],
@@ -7637,6 +7639,7 @@
     "hasRes": true,
     "shatter": "12.00",
     "charge": "10",
+    "onHealingCalculator": true,
     "roles": [
       "MDPS", "Buffer", "Healer","SupportBuffer"
     ],
@@ -9464,6 +9467,7 @@
     "hasRes": false,
     "shatter": "6",
     "charge": "11",
+    "onHealingCalculator": true,
     "roles": [
       "Buffer", "Healer", "SupportBuffer"
     ],
@@ -10443,6 +10447,7 @@
     "hasRes": true,
     "shatter": "5",
     "charge": "13",
+    "onHealingCalculator": true,
     "roles": [
       "Healer", "SupportBuffer"
     ],
@@ -11179,6 +11184,7 @@
     "hasRes": true,
     "shatter": "4",
     "charge": "12.50",
+    "onHealingCalculator": true,
     "roles": [
       "Healer", "SupportBuffer"
     ],
@@ -11925,6 +11931,7 @@
     "hasRes": true,
     "shatter": "4",
     "charge": "10",
+    "onHealingCalculator": true,
     "roles": [
       "Healer"
     ],
