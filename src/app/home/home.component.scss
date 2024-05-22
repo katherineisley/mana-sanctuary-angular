@@ -56,7 +56,8 @@
     .inner {
         // this part needs to be re-evaluated for responsive later
         // edit: reevaluated once
-        max-width: 1440px;
+        max-width: 1400px;
+        padding: 0 20px;
         width: 100%;
         margin: 0 auto; // figma has 140px
         // end
@@ -109,16 +110,14 @@
                     flex-direction: column;
                     align-items: center;
                     gap: 12px;
+                    max-width: 500px;
+                    width: 100%;
 
                     .title {
                         font-size: 42px;
+                        text-align: center;
                         font-weight: bold;
                         margin: unset;
-                    }
-
-                    .quote {
-                        max-width: 500px;
-                        width: 100%;
                     }
 
                     .quote,
@@ -211,12 +210,12 @@
 
                 .bars-block {
                     display: flex;
-                    gap: 30px;
+                    gap: 20px;
 
                     .single-bar-container {
                         .title {
                             text-align: center;
-                            font-size: 20px;
+                            font-size: 24px;
                             font-weight: 700;
                             margin: 0 0 10px 0;
                             line-height: 0.9;
@@ -225,8 +224,7 @@
                         .items-container {
                             .icon-block {
                                 background-color: $content;
-                                width: 100px;
-                                height: 100px;
+                                height: 125px;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
@@ -234,32 +232,38 @@
                                 font-style: italic;
                                 font-weight: 400;
                                 border-radius: 10px 10px 0 0;
+
+                                img {
+                                    width: 62.5px;
+                                }
                             }
 
                             .stat-wrapper {
                                 background-color: $content;
-                                width: 100px;
-                                height: 200px;
+                                height: 250px;
                                 display: flex;
                                 flex-direction: column;
                                 align-items: center;
                                 justify-content: center;
                                 gap: 5px;
                                 border-radius: 0 0 10px 10px;
-                                padding: 8px 15px;
+                                padding: 10px 15px;
 
                                 .anim-bars-container,
                                 .icons-container {
                                     display: flex;
                                     align-items: flex-end;
-                                    gap: 5px;
+                                    gap: 10px;
+                                    width: 100%;
+                                    align-items: flex-end;
+                                    justify-content: space-around;
                                 }
 
                                 .anim-bars-container {
                                     height: 100%;
 
                                     .anim-bar {
-                                        width: 20px;
+                                        width: 100%;
                                         height: 0px;
                                         transition: 1s ease-in;
                                         border-radius: 2px;
@@ -281,8 +285,8 @@
 
                                 .icons-container {
                                     img {
-                                        width: 20px;
-                                        height: 20px;
+                                        width: 25px;
+                                        height: 25px;
                                     }
                                 }
                             }
@@ -685,6 +689,7 @@
             .subtitle {
                 font-size: 24px;
                 font-style: italic;
+                text-align: center;
                 font-weight: 400;
             }
 
@@ -717,3 +722,166 @@
 //     font-weight: 400;
 //     font-style: normal;
 // }
+
+@media only screen and (max-width: 1240px) {
+    .main-home {
+        margin: 80px 0 0 0;
+
+        .inner {
+            display: flex;
+            flex-direction: column;
+            grid-template-columns: unset;
+            justify-items: unset;
+            gap: 48px;
+
+            .half {
+                .wrapper {
+                    .quote-block {
+                        max-width: 700px;
+                    }
+                }
+
+                .wrapper#glossary {
+                    .terms-block {
+                        .term-container {
+                            max-width: 500px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .main-home:nth-child(odd) {
+        .inner {
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+@media only screen and (max-width: $laptop) {
+    .banner {
+        height: 500px;
+
+        .content-container {
+            margin: unset;
+            top: unset;
+            bottom: 40px;
+            left: 40px;
+
+            .inner {
+                .title {
+                    font-size: 64px;
+                }
+                
+                .introduction {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
+    .main-home {
+        .inner:has(.discord) {
+            .discord {
+                .images {
+                    gap: 25px;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        height: 175px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $tablet) {
+    .banner {
+        height: 400px;
+
+        .content-container {
+            bottom: 20px;
+            left: 20px;
+
+            .inner {
+                .title {
+                    font-size: 48px;
+                }
+
+                .introduction {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .main-home {
+        .inner {
+            gap: 32px;
+            width: 100%;
+
+            .half.text {
+                .wrapper {
+                    .quote-block {
+                        gap: 8px;
+                        max-width: 600px;
+
+                        .title {
+                            font-size: 32px;
+                        }
+
+                        .quote, .name {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+
+            .half.visual {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                .wrapper#book {
+                    max-width: 600px;
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    
+                    .handbook {
+                        width: unset;
+                        height: 300px;
+                    }
+                    
+                    .handbook:hover {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
+
+        .inner:has(.discord) {
+            .discord {
+                gap: 8px;
+                padding: 20px;
+
+                .subtitle {
+                    font-size: 20px;
+                }
+
+                .images {
+                    img:first-child, img:last-child {
+                        display: none;
+                    }
+
+                    img {
+                        height: 150px;
+                    }
+                }
+            }
+        }
+    }
+}
