@@ -1,7 +1,7 @@
 import { Component, HostListener, OnInit, Renderer2, ElementRef, QueryList, ViewChildren } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-import { Unit, Matrix, Heal, Buff, Data, Character } from './models';
+import { Unit, Matrix, Heal, Buff, Data, Character, BuffSummary } from './models';
 
 @Component({
   selector: 'app-healing-calculator',
@@ -43,6 +43,28 @@ export class HealingCalculatorComponent implements OnInit {
   professionResonance: string[] = [];
   elementResonance: string[] = [];
   buffs: Buff[] = [];
+  teamBuffs: Buff[] = [];
+  selfBuffs: Buff[] = [];
+  buffsSummary: BuffSummary;
+  teamBuffsSummary: BuffSummary;
+  selfBuffsSummary: BuffSummary;
+
+  calculatedPhysicalBase!: number;
+  calculatedFlameBase!: number;
+  calculatedFrostBase!: number;
+  calculatedVoltBase!: number;
+  
+  calculatedFlameATK!: number;
+  calculatedFrostATK!: number;
+  calculatedVoltATK!: number;
+  calculatedPhysicalATK!: number;
+
+  calculatedCrit!: number;
+  calculatedCritDamage!: number;
+  
+  ATKCritRatio!: number;
+  healingBuff!: number;
+  
 
   splittingPatterns: Record<string, string[]> = {
     "element_frostvolt": ["element_frost", "element_volt"],
@@ -51,7 +73,11 @@ export class HealingCalculatorComponent implements OnInit {
     "element_flamephysical": ["element_flame", "element_physical"],
   };
 
-  constructor(private route: ActivatedRoute, private http: HttpClient, private renderer: Renderer2, private el: ElementRef) { }
+  constructor(private route: ActivatedRoute, private http: HttpClient, private renderer: Renderer2, private el: ElementRef) {
+    this.buffsSummary = {};
+    this.teamBuffsSummary = {};
+    this.selfBuffsSummary = {};
+  }
 
   ngOnInit() {
     const data = this.route.snapshot.data['data'];
@@ -187,7 +213,7 @@ export class HealingCalculatorComponent implements OnInit {
     }
   }
   // Finds the profession resonance of the team
-  findProfessionResonance(unitValues: Unit[]){
+  findProfessionResonance(unitValues: Unit[]) {
     const resonanceCount: { [key: string]: number } = {};
 
     unitValues.forEach(unit => {
@@ -364,10 +390,89 @@ export class HealingCalculatorComponent implements OnInit {
     });
   }
 
-  clearData(){
+  summarizeBuffs(): Record<string, Record<string, number>> {
+    const summary: Record<string, Record<string, number>> = {};
+
+    this.buffs.forEach(buff => {
+      if (!summary[buff.module]) {
+        summary[buff.module] = {};
+      }
+      if (!summary[buff.module][buff.type]) {
+        summary[buff.module][buff.type] = 0;
+      }
+      summary[buff.module][buff.type] += buff.value;
+    });
+    return summary;
+  }
+
+  summarizeBuffGroups() {
+
+    this.buffs.forEach(buff => {
+      if (buff.affect === "team") {
+        if (!this.teamBuffsSummary[buff.module]) {
+          this.teamBuffsSummary[buff.module] = {};
+        }
+        if (!this.teamBuffsSummary[buff.module][buff.type]) {
+          this.teamBuffsSummary[buff.module][buff.type] = 0;
+        }
+        this.teamBuffsSummary[buff.module][buff.type] += buff.value;
+      } else if (buff.affect === "self") {
+        if (!this.selfBuffsSummary[buff.module]) {
+          this.selfBuffsSummary[buff.module] = {};
+        }
+        if (!this.selfBuffsSummary[buff.module][buff.type]) {
+          this.selfBuffsSummary[buff.module][buff.type] = 0;
+        }
+        this.selfBuffsSummary[buff.module][buff.type] += buff.value;
+      }
+    });
+
+  }
+
+  collectBuffsSummary() {
+    this.teamBuffs = this.buffs.filter(buff => buff.affect === 'team');
+    this.selfBuffs = this.buffs.filter(buff => buff.affect === 'self');
+    this.summarizeBuffGroups();
+    this.buffsSummary = this.summarizeBuffs();
+
+    console.log(this.teamBuffs)
+    console.log(this.selfBuffs)
+    console.log(this.buffsSummary)
+    console.log(this.selfBuffsSummary)
+    console.log(this.teamBuffsSummary)
+  }
+
+//   calculateAttack(){
+//     this.calculatedPhysicalBase = this.physicalAtkStat + this.physicalAtkStat * (buffSummary['Attack']?.['Base'] ?? 0)
+//     this.calculatedFlameBase = this.flameAtkStat + this.flameAtkStat * (buffSummary['Attack']?.['Base'] ?? 0)
+//     this.calculatedFrostBase = this.frostAtkStat + this.frostAtkStat * (buffSummary['Attack']?.['Base'] ?? 0)
+//     this.calculatedVoltBase = this.voltAtkStat + this.voltAtkStat * (buffSummary['Attack']?.['Base'] ?? 0)
+
+//     this.calculatedFlameATK = this.calculatedFlameBase + (this.calculatedFlameBase * (((buffSummary['Attack']?.['Flame'] ?? 0) + (buffSummary['Attack']?.['Common'] ?? 0)) / 100));
+//     this.calculatedFrostATK = this.calculatedFrostBase + (this.calculatedFrostBase * (((buffSummary['Attack']?.['Frost'] ?? 0) + (buffSummary['Attack']?.['Common'] ?? 0)) / 100));
+//     this.calculatedVoltATK = this.calculatedVoltBase + (this.calculatedVoltBase * (((buffSummary['Attack']?.['Volt'] ?? 0) + (buffSummary['Attack']?.['Common'] ?? 0)) / 100));
+//     this.calculatedPhysicalATK = this.calculatedPhysicalBase + (this.calculatedPhysicalBase * (((buffSummary['Attack']?.['Physical'] ?? 0) + (buffSummary['Attack']?.['Common'] ?? 0)) / 100));
+    
+//     this.calculatedCrit = this.critPercent + this.critRate + (buffSummary['Crit']?.['CritRate'] ?? 0);
+//     this.calculatedCritDamage = this.critDamage + (buffSummary['Crit']?.['CritDamage'] ?? 0);
+
+
+// ATKCritRatio = calculateATKCritRatio(weaponOneElement);
+
+// healingBuff = ProfessionResonance.includes("benediction") ? 2 : 1;
+// healingBuff = healingBuff * (buffSummary['Standard']?.['Healing'] ?? 1) * (buffSummary['Matrix']?.['Healing'] ?? 1) * (buffSummary['WeaponPassive']?.['Healing'] ?? 1) * (buffSummary['WeaponActive']?.['Healing'] ?? 1);
+
+//   }
+
+  clearData() {
     this.buffs = [];
     this.professionResonance = [];
     this.elementResonance = [];
+    this.buffsSummary = {};
+    this.teamBuffsSummary = {};
+    this.selfBuffsSummary = {};
+    this.teamBuffs = [];
+    this.selfBuffs = [];
 
   }
 
@@ -457,6 +562,7 @@ export class HealingCalculatorComponent implements OnInit {
       console.log(this.buffs)
       this.collectAllBuffs(unitValues)
       console.log(this.buffs)
+      this.collectBuffsSummary()
       this.clearData();
 
     }

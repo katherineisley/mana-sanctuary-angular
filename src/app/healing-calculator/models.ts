@@ -49,13 +49,19 @@ export interface Character {
     resonance: string;
 }
 
-export interface Matrix { 
-    matrixName: string; 
-    starValue: number; 
+export interface Matrix {
+    matrixName: string;
+    starValue: number;
 };
 
-export interface Unit { 
-    simulacraName: string; 
-    starValue: number; 
-    matricesSet: Map<string, Matrix>; 
+export interface Unit {
+    simulacraName: string;
+    starValue: number;
+    matricesSet: Map<string, Matrix>;
 };
+
+export interface BuffSummary {
+    [module: string]: {
+        [type: string]: number;
+    };
+}
