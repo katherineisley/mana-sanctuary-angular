@@ -3,10 +3,9 @@
 .announcement {
     display: flex;
     background-color: $main;
-    height: 56px;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 20px;
+    padding: 16px 20px;
 
     .announcement-container,
     .hyperlink-container {
@@ -374,7 +373,29 @@
                     align-items: center;
                     position: relative;
 
+                    .side-card {
+                        position: relative;
+                        height: 232px;
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat; // weird edge case
+                        border-radius: 8px;
+                        padding: 10px;
+                        border: 1px $border solid;
+
+                        .content-wrapper {
+                            position: relative;
+                            height: 100%;
+                            display: flex;
+                            align-items: flex-end;
+                            background-position: 80% -10%;
+                            background-size: 90%;
+                            background-repeat: no-repeat; // weird edge case
+                        }
+                    }
+
                     .side-card, .main-card {
+                        width: 212px;
                         transition: 0.2s ease-in-out;
                         cursor: pointer;
 
@@ -384,31 +405,11 @@
                     }
 
                     .side-card#right {
-                        position: relative;
                         rotate: 15deg;
                         top: 20px;
                         right: 50px;
-                        width: 210px;
-                        height: 230px;
-                        background-size: cover;
-                        background-repeat: no-repeat; // weird edge case
-                        border-radius: 8px;
-                        padding: 10px;
-                
-                        // this is better on the cards themselves rather than the relic-wrapper
-                        // as when the back-card gets put on top, it doesn't have a border to distinguish itself from the body
-                
-                        border: 1px $border solid;
                 
                         .content-wrapper {
-                            position: relative;
-                            height: 100%;
-                            display: flex;
-                            align-items: flex-end;
-                            background-position: 80% -10%;
-                            background-size: 90%;
-                            background-repeat: no-repeat; // weird edge case
-                
                             .utility-tag {
                                 font-size: 10px;
                                 background-color: #AE150B;
@@ -482,32 +483,11 @@
                     }
 
                     .side-card#left {
-                        position: relative;
                         rotate: -15deg;
                         top: 20px;
                         left: 50px;
-                        width: 210px;
-                        height: 230px;
-                        background-position: center;
-                        background-size: cover;
-                        background-repeat: no-repeat; // weird edge case
-                        border-radius: 8px;
-                        padding: 10px;
                 
-                        // this is better on the cards themselves rather than the unit-wrapper
-                        // as when the back-card gets put on top, it doesn't have a border to distinguish itself from the body
-                
-                        border: 1px $border solid;
-                
-                        .content-wrapper {
-                            position: relative;
-                            height: 100%;
-                            display: flex;
-                            align-items: flex-end;
-                            background-position: 80% -10%;
-                            background-size: 90%;
-                            background-repeat: no-repeat; // weird edge case
-                
+                        .content-wrapper {                
                             .new-tag {
                                 font-size: 10px;
                                 background-color: #AE150B;
@@ -581,8 +561,8 @@
                     .main-card#middle {
                         z-index: 3;
                         position: relative;
-                        width: 220px;
-                        height: 280px;
+                        width: 212px;
+                        height: 286px;
                         background-position: center;
                         background-size: cover;
                         background-repeat: no-repeat; // weird edge case
@@ -799,6 +779,12 @@
 }
 
 @media only screen and (max-width: $tablet) {
+    .announcement {
+        .join-discord {
+            display: none;
+        }
+    }
+
     .banner {
         height: 400px;
 
@@ -860,6 +846,18 @@
                         transform: scale(1.05);
                     }
                 }
+
+                .wrapper#indexes {
+                    .indexes-block {
+                        .side-card#left {
+                            left: 75px;
+                        }
+    
+                        .side-card#right {
+                            right: 75px;
+                        }
+                    }
+                }
             }
         }
 
@@ -883,5 +881,9 @@
                 }
             }
         }
+    }
+
+    .main-home:nth-child(3) { // look away
+        margin: 40px 0 0 0;
     }
 }
