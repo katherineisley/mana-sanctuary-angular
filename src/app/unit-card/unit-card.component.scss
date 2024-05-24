@@ -183,3 +183,64 @@
         }
     }
 }
+
+@media only screen and (max-width: $tablet) {
+    .unit-wrapper {
+        .reverse-animation {
+            animation: onTopReverseMobile 0.5s ease-in-out forwards;
+        }
+    
+        // surely a shuffle animation will be easy, clueless
+        &:hover {
+            .back-card {
+                animation: onTopMobile 0.5s ease-in-out forwards;
+            }
+        }
+    }
+
+    @keyframes onTopMobile {
+        0% {
+            transform: translateY(0);
+            z-index: 1;
+            left: 0;
+            top: 0;
+        }
+
+        50% {
+            transform: translateY(-25px);
+            z-index: 1;
+            left: 10px;
+            top: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            z-index: 2;
+            left: 10px;
+            top: -15px;
+        }
+    }
+
+    @keyframes onTopReverseMobile {
+        0% {
+            transform: translateY(0);
+            z-index: 2;
+            left: 10px;
+            top: -15px;
+        }
+
+        50% {
+            transform: translateY(-25px);
+            z-index: 1;
+            left: 10px;
+            top: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            z-index: 1;
+            left: 0;
+            top: 0;
+        }
+    }
+}

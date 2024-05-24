@@ -701,7 +701,7 @@
     "slug": "confinement",
     "name": "Confinement",
     "tag": "battle",
-    "elementBoost": "element_physical",
+    "elementBoost": "physicalboost",
     "rarity": "SSR",
     "onDPSGuide":false,
     "onHealingGuide": false,
