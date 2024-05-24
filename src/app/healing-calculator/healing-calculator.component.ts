@@ -52,7 +52,7 @@ export class HealingCalculatorComponent implements OnInit {
   calculatedFlameBase!: number;
   calculatedFrostBase!: number;
   calculatedVoltBase!: number;
-  
+
   calculatedFlameATK!: number;
   calculatedFrostATK!: number;
   calculatedVoltATK!: number;
@@ -70,8 +70,8 @@ export class HealingCalculatorComponent implements OnInit {
   ATKCritRatio!: number;
   healingBuff!: number;
 
-  critFormulaMulti:number = 282.13;
-  critPercent!:number;
+  critFormulaMulti: number = 282.13;
+  critPercent!: number;
 
   totalHeal: number = 0;
   totalShield: number = 0;
@@ -452,7 +452,7 @@ export class HealingCalculatorComponent implements OnInit {
     console.log(this.teamBuffsSummary)
   }
 
-  calculateAttackCritHeal(){
+  calculateAttackCritHeal() {
 
     this.critPercent = this.critStat / this.critFormulaMulti;
 
@@ -465,13 +465,128 @@ export class HealingCalculatorComponent implements OnInit {
     this.calculatedFrostATK = this.calculatedFrostBase + (this.calculatedFrostBase * (((this.buffsSummary['Attack']?.['Frost'] ?? 0) + (this.buffsSummary['Attack']?.['Common'] ?? 0)) / 100));
     this.calculatedVoltATK = this.calculatedVoltBase + (this.calculatedVoltBase * (((this.buffsSummary['Attack']?.['Volt'] ?? 0) + (this.buffsSummary['Attack']?.['Common'] ?? 0)) / 100));
     this.calculatedPhysicalATK = this.calculatedPhysicalBase + (this.calculatedPhysicalBase * (((this.buffsSummary['Attack']?.['Physical'] ?? 0) + (this.buffsSummary['Attack']?.['Common'] ?? 0)) / 100));
-    
+
     this.calculatedCrit = this.critPercent + this.critRateStat + (this.buffsSummary['Crit']?.['CritRate'] ?? 0);
     this.calculatedCritDamage = this.critDmgStat + (this.buffsSummary['Crit']?.['CritDamage'] ?? 0);
+    /// add buffs for hp 
+    this.calculatedHP = this.hpStat;
 
     this.healingBuff = this.professionResonance.includes("benediction") ? 2 : 1;
     this.healingBuff = this.healingBuff * (this.buffsSummary['Standard']?.['Healing'] ?? 1) * (this.buffsSummary['Matrix']?.['Healing'] ?? 1) * (this.buffsSummary['WeaponPassive']?.['Healing'] ?? 1) * (this.buffsSummary['WeaponActive']?.['Healing'] ?? 1);
   }
+
+
+  calculateATKCritRatio(element: string | undefined): number {
+    const Flame = this.calculatedFlameATK * (1 + this.calculatedCritDamage / 100) * (this.calculatedCrit / 100) + this.calculatedFlameATK * ((100 - this.calculatedCrit) / 100);
+    const Physical = this.calculatedPhysicalATK * (1 + this.calculatedCritDamage / 100) * (this.calculatedCrit / 100) + this.calculatedPhysicalATK * ((100 - this.calculatedCrit) / 100);
+    const Volt = this.calculatedVoltATK * (1 + this.calculatedCritDamage / 100) * (this.calculatedCrit / 100) + this.calculatedVoltATK * ((100 - this.calculatedCrit) / 100);
+    const Frost = this.calculatedFrostATK * (1 + this.calculatedCritDamage / 100) * (this.calculatedCrit / 100) + this.calculatedFrostATK * ((100 - this.calculatedCrit) / 100);
+    const elementsArray = [Flame, Physical, Volt, Frost]
+
+    switch (element) {
+      case 'element_flame':
+        return Flame
+      case 'element_physical':
+        return Physical
+      case 'element_volt':
+        return Volt
+      case 'element_frost':
+        return Frost
+      case 'element_altered':
+        return Math.max(...elementsArray);
+      default:
+        throw new Error('Invalid element');
+    }
+  }
+
+  calculateHealing(unitValues: Unit[]) {
+    unitValues.forEach(unit => {
+      const weapon = unit.simulacraName;
+      const star = unit.starValue;
+      const data = this.units.find(simulacra => simulacra.slug === unit.simulacraName);
+      const elementString = this.splittingPatterns[data.element] ?? [data.element];
+      const element = elementString[0]
+
+      this.ATKCritRatio = this.calculateATKCritRatio(element);
+
+      for (const data of this.unitsNumbers) {
+        if (data.slug === weapon) {
+          for (const dodge of data.dodge) {
+            if (dodge.heal && dodge.heal.requiredStar <= star && (!dodge.heal.ignore || !dodge.heal.ignore.includes(star))) {
+
+              const multiplierStat = dodge.heal.stat.toLowerCase() === "atk" ? this.ATKCritRatio : this.calculatedHP;
+              const healValue = ((dodge.heal.multiplier / 100) * multiplierStat * dodge.heal.ticks * this.healingBuff) / this.dodgeCooldown;
+
+              if (dodge.heal.type === "heal") {
+                this.totalHeal += healValue;
+              } else if (dodge.heal.type === "shield") {
+                this.totalShield += healValue;
+              }
+            }
+          }
+
+          for (const skill of data.skill) {
+            if (skill.heal && skill.heal.requiredStar <= star && (!skill.heal.ignore || !skill.heal.ignore.includes(star))) {
+
+              const multiplierStat = skill.heal.stat.toLowerCase() === "atk" ? this.ATKCritRatio : this.calculatedHP;
+              const healValue = ((skill.heal.multiplier / 100) * multiplierStat * skill.heal.ticks * this.healingBuff) / skill.heal.cooldown;
+
+              if (skill.heal.type === "heal") {
+                this.totalHeal += healValue;
+              } else if (skill.heal.type === "shield") {
+                this.totalShield += healValue;
+              }
+            }
+          }
+
+          for (const discharge of data.discharge) {
+            if (discharge.heal && discharge.heal.requiredStar <= star && (!discharge.heal.ignore || !discharge.heal.ignore.includes(star))) {
+
+              const multiplierStat = discharge.heal.stat.toLowerCase() === "atk" ? this.ATKCritRatio : this.calculatedHP;
+              const healValue = ((discharge.heal.multiplier / 100) * multiplierStat * discharge.heal.ticks * this.healingBuff) / this.dischargeCooldown;
+
+              if (discharge.heal.type === "heal") {
+                this.totalHeal += healValue;
+              } else if (discharge.heal.type === "shield") {
+                this.totalShield += healValue;
+              }
+            }
+          }
+
+          for (const attack of data.attack) {
+            if (attack.heal && attack.heal.requiredStar <= star && (!attack.heal.ignore || !attack.heal.ignore.includes(star))) {
+
+              const multiplierStat = attack.heal.stat.toLowerCase() === "atk" ? this.ATKCritRatio : this.calculatedHP;
+              const healValue = ((attack.heal.multiplier / 100) * multiplierStat * attack.heal.ticks * this.healingBuff) / attack.heal.cooldown;
+
+              if (attack.heal.type === "heal") {
+                this.totalHeal += healValue;
+              } else if (attack.heal.type === "shield") {
+                this.totalShield += healValue;
+              }
+            }
+          }
+
+          for (const passive of data.passive) {
+            if (passive.heal && passive.heal.requiredStar <= star && (!passive.heal.ignore || !passive.heal.ignore.includes(star))) {
+
+              const multiplierStat = passive.heal.stat.toLowerCase() === "atk" ? this.ATKCritRatio : this.calculatedHP;
+              const healValue = ((passive.heal.multiplier / 100) * multiplierStat * passive.heal.ticks * this.healingBuff) / passive.heal.cooldown;
+
+              if (passive.heal.type === "heal") {
+                this.totalHeal += healValue;
+              } else if (passive.heal.type === "shield") {
+                this.totalShield += healValue;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    )
+  }
+
 
   clearData() {
     this.buffs = [];
@@ -563,21 +678,8 @@ export class HealingCalculatorComponent implements OnInit {
 
         unitValues.push({ simulacraName: simulacraValue, starValue: maxAdvancementLevel, matricesSet });
       }
-
-      this.findProfessionResonance(unitValues);
-      this.findElementResonance(unitValues);
-      console.log(this.professionResonance, this.elementResonance)
-      this.collectResonanceBuffs(unitValues)
-      console.log(this.buffs)
-      this.collectAllBuffs(unitValues)
-      console.log(this.buffs)
-      this.collectBuffsSummary()
-      this.calculateAttackCritHeal();
-      this.clearData();
-
     }
-
-    console.log("Unit Values", unitValues);
+    //console.log("Unit Values", unitValues);
 
     // TRAIT
 
@@ -617,6 +719,19 @@ export class HealingCalculatorComponent implements OnInit {
       "Trait: " + traitValue
       // Relics
     );
+    this.findProfessionResonance(unitValues);
+    this.findElementResonance(unitValues);
+    console.log(this.professionResonance, this.elementResonance)
+    this.collectResonanceBuffs(unitValues)
+    console.log(this.buffs)
+    this.collectAllBuffs(unitValues)
+    console.log(this.buffs)
+    this.collectBuffsSummary()
+    this.calculateAttackCritHeal();
+    this.calculateHealing(unitValues);
+    console.log("heal", this.totalHeal, "shield", this.totalShield)
+
+    this.clearData();
   }
 
   setActiveInfo(event: Event | string | null) {
