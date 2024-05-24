@@ -333,7 +333,7 @@
     "shatter": "12",
     "charge": "10",
     "roles": [
-      "Buffer", "Shatter", "SupportBuffer"
+      "Buffer", "Shatter", "Support Buffer"
     ],
     "effects": [
       {
@@ -1380,7 +1380,7 @@
     "charge": "10",
     "onHealingCalculator": true,
     "roles": [
-      "MDPS", "Buffer", "Healer", "SupportBuffer"
+      "MDPS", "Buffer", "Healer", "Support Buffer"
     ],
     "effects": [
       {
@@ -5213,7 +5213,7 @@
     "charge": "11.5",
     "onHealingCalculator": true,
     "roles": [
-      "Buffer", "Healer", "SupportBuffer"
+      "Buffer", "Healer", "Support Buffer"
     ],
     "effects": [
       {
@@ -5650,7 +5650,7 @@
     "shatter": "9.50",
     "charge": "8.00",
     "roles": [
-      "MDPS", "Buffer", "SupportBuffer"
+      "MDPS", "Buffer", "Support Buffer"
     ],
     "effects": [
       {
@@ -7641,7 +7641,7 @@
     "charge": "10",
     "onHealingCalculator": true,
     "roles": [
-      "MDPS", "Buffer", "Healer","SupportBuffer"
+      "MDPS", "Buffer", "Healer","Support Buffer"
     ],
     "effects": [
       {
@@ -8984,7 +8984,7 @@
     "shatter": "7.5",
     "charge": "12.00",
     "roles": [
-      "MDPS", "Buffer", "SupportBuffer"
+      "MDPS", "Buffer", "Support Buffer"
     ],
     "effects": [
       {
@@ -9469,7 +9469,7 @@
     "charge": "11",
     "onHealingCalculator": true,
     "roles": [
-      "Buffer", "Healer", "SupportBuffer"
+      "Buffer", "Healer", "Support Buffer"
     ],
     "effects": [
       {
@@ -9743,7 +9743,7 @@
     "shatter": "6",
     "charge": "8",
     "roles": [
-      "MDPS", "Buffer", "SupportBuffer"
+      "MDPS", "Buffer", "Support Buffer"
     ],
     "effects": [
       {
@@ -10449,7 +10449,7 @@
     "charge": "13",
     "onHealingCalculator": true,
     "roles": [
-      "Healer", "SupportBuffer"
+      "Healer", "Support Buffer"
     ],
     "effects": [
       {
@@ -11186,7 +11186,7 @@
     "charge": "12.50",
     "onHealingCalculator": true,
     "roles": [
-      "Healer", "SupportBuffer"
+      "Healer", "Support Buffer"
     ],
     "effects": [
       {
@@ -12853,7 +12853,7 @@
     "shatter": "6",
     "charge": "10",
     "roles": [
-      "MDPS","Buffer", "SupportBuffer"
+      "MDPS","Buffer", "Support Buffer"
     ],
     "effects": [
       {

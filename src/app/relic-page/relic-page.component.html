@@ -23,7 +23,7 @@
         <div class="stats-title">Roles</div>
         <div class="top-stats">
           <div *ngFor="let roles of relic.roles" class="roles">
-            <img src="assets/effects/buff_{{roles.toLowerCase()}}.png">
+            <img [src]="processRoleSlug(roles)">
             <span>{{roles}}</span>
           </div>
         </div>

@@ -20,6 +20,10 @@ export class RelicPageComponent implements OnInit, AfterViewInit {
     private sanitizer: DomSanitizer
   ) { }
 
+  processRoleSlug(role: string): string {
+    return `assets/effects/buff_${role.toLowerCase().replace(/\s+/g, '')}.png`;
+  }
+
   sanitizeHtml(html: string): SafeHtml {
     return this.sanitizer.bypassSecurityTrustHtml(html);
   }

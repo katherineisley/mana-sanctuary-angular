@@ -14,6 +14,10 @@ export class HomeComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) {}
 
+  processRoleSlug(role: string): string {
+    return `assets/effects/buff_${role.toLowerCase().replace(/\s+/g, '')}.png`;
+  }
+
   ngOnInit() {
     const data = this.route.snapshot.data['data'];
     const simulacraData = data.simulacra[0];

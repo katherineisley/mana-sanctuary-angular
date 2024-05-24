@@ -9,6 +9,10 @@ import * as $ from 'jquery';
 export class UnitCardComponent implements AfterViewInit {
   @Input() unit: any;
 
+  processRoleSlug(role: string): string {
+    return `assets/effects/buff_${role.toLowerCase().replace(/\s+/g, '')}.png`;
+  }
+
   ngAfterViewInit() {
     $('.back-card').on('mouseleave', function() {
       $(this).addClass('reverse-animation');

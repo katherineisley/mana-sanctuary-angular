@@ -63,7 +63,7 @@
         <div class="stats-title">Roles</div>
         <div class="roles-grid">
           <div *ngFor="let roles of unit.roles" class="roles">
-            <img src="assets/effects/buff_{{roles.toLowerCase()}}.png">
+            <img [src]="processRoleSlug(roles)">
             <span>{{roles}}</span>
           </div>
         </div>

@@ -11,7 +11,7 @@
             <img src="assets/elements/{{unit.element}}.png" alt="{{unit.element}} element">
           </div>
           <div class="buffs">
-            <img *ngFor="let role of unit.roles" [src]="'assets/effects/buff_' + role.toLowerCase() + '.png'" [alt]="role">
+            <img *ngFor="let role of unit.roles" [src]="processRoleSlug(role)" [alt]="role">
           </div>
         </div>
       </div>
@@ -30,7 +30,7 @@
             <img src="assets/elements/{{unit.element}}.png" alt="{{unit.element}} element">
           </div>
           <div class="buffs">
-            <img *ngFor="let role of unit.roles" [src]="'assets/effects/buff_' + role.toLowerCase() + '.png'" [alt]="role">
+            <img *ngFor="let role of unit.roles" [src]="processRoleSlug(role)" [alt]="role">
           </div>
         </div>
       </div>

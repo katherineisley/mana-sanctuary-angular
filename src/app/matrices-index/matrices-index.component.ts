@@ -234,7 +234,7 @@ export class MatricesIndexComponent implements OnInit {
         case 'Healer':
           filteredMatrices = filteredMatrices.filter(unit => this.HealerMatrices.includes(unit));
           break;
-        case 'SupportBuffer':
+        case 'Support Buffer':
           filteredMatrices = filteredMatrices.filter(unit => this.SupportBufferMatrices.includes(unit));
           break;
         case 'Shatter':

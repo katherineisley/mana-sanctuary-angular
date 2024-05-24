@@ -233,3 +233,13 @@
         }
     }
 }
+
+@media only screen and (max-width: $mobile) {
+    .relic-wrapper {
+        .top-card, .back-card {
+            .content-wrapper {
+                background-position: 50% 10%;
+            }
+        }
+    }
+}

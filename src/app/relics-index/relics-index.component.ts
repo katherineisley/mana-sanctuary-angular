@@ -213,7 +213,7 @@ export class RelicsIndexComponent implements OnInit {
         case 'Healer':
           filteredRelics = filteredRelics.filter(unit => this.HealerRelics.includes(unit));
           break;
-        case 'SupportBuffer':
+        case 'Support Buffer':
           filteredRelics = filteredRelics.filter(unit => this.SupportBufferRelics.includes(unit));
           break;
         case 'Shatter':

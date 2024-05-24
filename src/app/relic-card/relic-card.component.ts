@@ -10,6 +10,10 @@ import * as $ from 'jquery';
 export class RelicCardComponent {
   @Input() relic: any;
 
+  processRoleSlug(role: string): string {
+    return `assets/effects/buff_${role.toLowerCase().replace(/\s+/g, '')}.png`;
+  }
+
   getRarityClass(): string {
     return this.relic.rarity.toLowerCase() === 'ssr' ? 'ssr-class' : 'sr-class';
   }

@@ -94,6 +94,10 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
     private cdr: ChangeDetectorRef
   ) { }
 
+  processRoleSlug(role: string): string {
+    return `assets/effects/buff_${role.toLowerCase().replace(/\s+/g, '')}.png`;
+  }
+
   sanitizeHtml(html: string): SafeHtml {
     return this.sanitizer.bypassSecurityTrustHtml(html);
   }

@@ -47,7 +47,7 @@
     }
 }
 
-.unit-wrapper {
+.matrix-wrapper {
     aspect-ratio: 0.9 / 1; // this might be problematic later so we'll see
     cursor: pointer;
     position: relative;
@@ -230,6 +230,16 @@
                         gap: 2px;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .matrix-wrapper {
+        .top-card, .back-card {
+            .content-wrapper {
+                background-position: 50% 10%;
             }
         }
     }

@@ -68,7 +68,7 @@ export class UnitsIndexComponent implements OnInit {
       'MDPS': this.MDPSUnits,
       'Buffer': this.BufferUnits,
       'Healer': this.HealerUnits,
-      'SupportBuffer': this.SupportBufferUnits,
+      'Support Buffer': this.SupportBufferUnits,
       'Shatter': this.ShatterUnits,
       'Taunt': this.TauntUnits
     };
@@ -234,7 +234,7 @@ export class UnitsIndexComponent implements OnInit {
         case 'Healer':
           filteredUnits = filteredUnits.filter(unit => this.HealerUnits.includes(unit));
           break;
-        case 'SupportBuffer':
+        case 'Support Buffer':
           filteredUnits = filteredUnits.filter(unit => this.SupportBufferUnits.includes(unit));
           break;
         case 'Shatter':
