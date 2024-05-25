@@ -4,8 +4,8 @@
     "name": "Ji Yu",
     "tag": "new",
     "element": [
-      "flame",
-      "physical"
+      "element_flame",
+      "element_physical"
     ],
     "rarity": "SSR",
     "twopc": {

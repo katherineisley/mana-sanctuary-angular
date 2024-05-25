@@ -121,7 +121,7 @@
             /* Gap between grid items */
 
             .unit-description {
-                font-size: 15px;
+                font-size: 16px;
                 font-weight: 300;
                 font-style: italic;
                 max-width: 400px;
@@ -131,7 +131,6 @@
                 display: flex;
                 flex-direction: row;
                 margin: 0 40px 0 0;
-
 
                 .unit-avatar {
                     margin: 0 25px 0 0;
@@ -463,7 +462,8 @@
             }
 
             .header-splash_mobile {
-                display: block;
+                // display: block;
+                display: none;
 
                 img {
                     width: 100%;
@@ -472,6 +472,31 @@
 
             .header-content {
                 background-color: $content;
+                gap: 20px;
+
+                .unit-wrapper {
+                    gap: 24px;
+                    margin: unset;
+
+                    .unit-avatar {
+                        margin: unset;
+                    }
+                }
+
+                .unit-description {
+                    max-width: unset;
+                }
+
+                .unit-stats {
+                    margin: unset;
+                }
+
+                .unit-roles {
+                    .roles-grid {
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+                }
             }
         }
 
@@ -531,12 +556,8 @@
             .scroll {
                 margin: 32px 0 0 0;
 
-                .advancements-table, .attack-wrap {
+                .attack-wrap {
                     padding: unset;
-
-                    .advancements-table-row {
-                        gap: 24px;
-                    }
 
                     .attack-container {
                         .attack-heading-wrap {
@@ -548,6 +569,65 @@
                         }
                     }
                 }
+
+                .advancements-table {
+                    padding: unset;
+                    row-gap: 20px;
+
+                    .advancements-table-row {
+                        flex-direction: column;
+                        align-items: unset;
+                        gap: 16px;
+                        border-bottom: 1px solid #6A6666;
+                        padding: 0 0 20px;
+
+                        .advancements-star-column {
+                            width: unset;
+                            font-size: 24px;
+                        }
+                    }
+
+                    .advancements-table-row:last-child {
+                        border-bottom: unset;
+                        padding: unset;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .main {
+        .header-element {
+            .header-content {
+                display: flex;
+                flex-direction: column;
+
+                .unit-wrapper {
+                    .unit-name-element {
+                        gap: unset;
+                        justify-content: space-around;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .main {
+        .body-element {
+            .tabs {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .info-selection {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .attack-method-wrap {
+                flex-wrap: wrap;
             }
         }
     }
