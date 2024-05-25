@@ -1,5 +1,48 @@
 [
   {
+    "slug": "jiyu",
+    "name": "Ji Yu",
+    "tag": "new",
+    "element": [
+      "flame",
+      "physical"
+    ],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "onHealingGuide": false,
+      "onTankGuide": false,
+      "roles": [
+        ""
+      ],
+      "buffs": [
+        "ATK %"
+      ],
+      "effect": [
+        {
+          "paragraph": "Increase flame ATK by 20% / 22% / 24% / 26%. While Step into the Game is active, each move deals an additional damage equal to 120% of ATK to all targets on the board. This set effects works in the off-hand slot, and only the set with the highest star rating will take effect."
+        }
+      ]
+    },
+    "fourpc": {
+      "onField": false,
+      "onHealingGuide": false,
+      "onTankGuide": false,
+      "roles": [
+        ""
+      ],
+      "buffs": [
+        "Final Damage %",
+        "Crit Damage %"
+      ],
+      "effect": [
+        {
+          "paragraph": "Increase final damage by 22% / 24% / 26% / 28%. When Freeflow is equipped, increase crit damage by 10%. Upon entering combat, gain an additional 9 stacks of Decisive Placement. This set effect works in the off-hand slot, and only the set effect with the highest star rating will take effect."
+        }
+      ]
+    }
+  },
+  {
     "slug": "rei",
     "name": "Rei",
     "tag": "new",
@@ -16,7 +59,8 @@
         "attack"
       ],
       "buffs": [
-        "Elemental Damage %", "RES Ignore %"
+        "Elemental Damage %",
+        "RES Ignore %"
       ],
       "effect": [
         {
@@ -32,7 +76,8 @@
         "attack"
       ],
       "buffs": [
-        "Final Damage %", "ATK %"
+        "Final Damage %",
+        "ATK %"
       ],
       "effect": [
         {
@@ -55,7 +100,8 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        "attack", "benediction"
+        "attack",
+        "benediction"
       ],
       "buffs": [
         "ATK %"
@@ -71,10 +117,13 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        "attack", "fortitude"
+        "attack",
+        "fortitude"
       ],
       "buffs": [
-        "Elemental Damage %", "Final Damage %", "Aggro %"
+        "Elemental Damage %",
+        "Final Damage %",
+        "Aggro %"
       ],
       "effect": [
         {
@@ -202,8 +251,8 @@
     "name": "Yan Miao",
     "tag": "new",
     "element": [
-       "element_physical",
-       "element_flame"
+      "element_physical",
+      "element_flame"
     ],
     "rarity": "SSR",
     "twopc": {

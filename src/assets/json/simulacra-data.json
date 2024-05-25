@@ -1,5 +1,303 @@
 [
   {
+    "slug": "jiyu",
+    "name": [
+      "Ji Yu"
+    ],
+    "weapon": "Freeflow",
+    "weaponDescription": "A long history and a vast wild world.",
+    "avatar": "jiyu_avatar",
+    "resonance": "attack",
+    "element": "element_flamephysical",
+    "rarity": "SSR",
+    "tag": "new",
+    "hasAtk": true,
+    "hasHP": true,
+    "hasCrit": true,
+    "hasRes": false,
+    "shatter": "16",
+    "charge": "12",
+    "roles": [
+      ""
+    ],
+    "effects": [
+      {
+        "name": "Armor Dissolve",
+        "description": [
+          {
+            "paragraph": "When the weapon is fully charged, the next attack inflicts armor dissolve effect on the target for 45 seconds, increasing their flame and physical damage taken by 10% (and an additional 15% in team play). This effect will replace the grievous status on the target, and targets with this effect cannot become grievous. Physical attacks will stun targets under the dissolve effect for 2 seconds, and flame attacks will decrease the targets' speed by 50% for 5 seconds. This effect can only trigger 1 time every 15 seconds on the same target."
+          }
+        ]
+      },
+      {
+        "name": "Fusion of Mass and Flame",
+        "description": [
+          {
+            "paragraph": "When the weapon deals damage, damage is calculated using the currently equipped weapon's highest physical/flame base ATK, the highest equipped physical/flame ATK percentage, and the highest equipped physical/flame damage boost, and the weapon is considered both a physical and flame weapon."
+          }
+        ]
+      },
+      {
+        "name": "Physical Resonance",
+        "description": [
+          {
+            "paragraph": "Increase Physical ATK by 15% and Physical Resistance by 25%. Activate by equipping 2 or more Physical weapons. This set effect works in the off-hand slot. Cannot stack with other Physical Resonance or Physical Reaction effects, with Physical Resonance taking precedence."
+          }
+        ]
+      },
+      {
+        "name": "Flame Resonance",
+        "description": [
+          {
+            "paragraph": "Increase Flame ATK by 15% and Physical Resistance by 25%. Activate by equipping 2 or more Flame weapons. This set effect works in the off-hand slot. Cannot stack with other Flame Resonance or Flame Reaction effects, with Flame Resonance taking precedence."
+          }
+        ]
+      },
+      {
+        "name": "Central Nexus: On-Field",
+        "description": [
+          {
+            "paragraph": "When hitting any target with Freeflow, deal damage equal to 256% of flame ATK plus 3.6% of Max HP plus 133% of the sum of all the Wanderer's resistance types plus 4.9% of crit to nearby targets. Can be triggered up to 1 time every 1.5 seconds. Central Nexus damage counts as normal attack damage. If any 1 frost or volt weapon is equipped, Central Nexus damage is multiplied by 1.3. In addition, Central Nexus damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects."
+          }
+        ]
+      }
+    ],
+    "oneStar": [
+      {
+        "paragraph": "Increase the maximum stacks of Decisive Placement to 18. The additional damage from each stack of Decisive Placement is increased to 400% of ATK."
+      }
+    ],
+    "twoStar": [
+      {
+        "paragraph": "Increase the current weapon's base ATK growth by 16%."
+      }
+    ],
+    "threeStar": [
+      {
+        "paragraph": "When Freeflow is equipped, ignore 15% flame resistance of the targets in the zone. This effect works in the off-hand slot. Each element's total resistance ignored cannot exceed 50%."
+      }
+    ],
+    "fourStar": [
+      {
+        "paragraph": "Increase the current weapon's base ATK growth by 32%."
+      }
+    ],
+    "fiveStar": [
+      {
+        "paragraph": "When Step into the Game is active, damage taken is reduced by 30%. When receiving lethal damage, restore 100% of Max HP immediately. This effect can only be triggered 1 time per skill activation."
+      }
+    ],
+    "sixStar": [
+      {
+        "paragraph": "Increase flame damage to 5% for each stack of Scorching Sun."
+      }
+    ],
+    "attacks": [
+      {
+        "name": "Shifting Stars",
+        "icon": "",
+        "method": [
+          "Attack x5"
+        ],
+        "description": [
+          {
+            "paragraph": "While on the ground, use normal attack to launch 5 consecutive attacks."
+          }
+        ],
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "First Attack: Deal damage equal to 242% of ATK to the target."
+          },
+          {
+            "combo": "Second Attack: Deal damage equal to 242% of ATK to the target."
+          },
+          {
+            "combo": "Third Attack: Deal damage equal to 370% of ATK to the target."
+          },
+          {
+            "combo": "Fourth Attack: Deal damage equal to 301% of ATK to the target."
+          },
+          {
+            "combo": "Fifth Attack: Deal damage equal to 469% of ATK to the target."
+          }
+        ]
+      },
+      {
+        "name": "Starting Move",
+        "icon": "",
+        "method": [
+          "Attack x4"
+        ],
+        "description": [
+          {
+            "paragraph": "While airborne, use normal attack to launch 4 consecutive attacks in mid-air, consuming endurance."
+          }
+        ],
+        "hasChain": true,
+        "chain": [
+          {
+            "combo": "First Attack: Deal damage equal to 242% of ATK to the target."
+          },
+          {
+            "combo": "Second Attack: Deal damage equal to 242% of ATK to the target."
+          },
+          {
+            "combo": "Third Attack: Deal damage equal to 250% of ATK to the target."
+          },
+          {
+            "combo": "Fourth Attack: Deal damage equal to 434% of ATK to the target."
+          }
+        ]
+      },
+      {
+        "name": "Review Board",
+        "icon": "",
+        "method": [
+          "Attack x1",
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "While on the ground, hold normal attack to activate Review Board. Gather up to 5 pieces that launch out and follow targets, with each piece dealing damage equal to 352% of ATK."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Generational Leap",
+        "icon": "",
+        "method": [
+          "Jump",
+          "Attack x1",
+          "Hold"
+        ],
+        "description": [
+          {
+            "paragraph": "While airborne, tap and hold normal attack to trigger Generational Leap."
+          },
+          {
+            "paragraph": "Unleash the twin fish upon landing and deal damage equal to 197% of ATK to nearby targets and launch them."
+          }
+        ],
+        "hasChain": false
+      }
+    ],
+    "dodge": [
+      {
+        "name": "Dodge",
+        "icon": "",
+        "method": [
+          "Directional Dodge"
+        ],
+        "description": [
+          {
+            "paragraph": "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for 0.5 seconds."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Seize Advantage",
+        "icon": "",
+        "method": [
+          "Directional Dodge",
+          "Attack x1"
+        ],
+        "description": [
+          {
+            "paragraph": "Use normal attack during the short perfect dodge window (tap an arrow button before dodging) to place 1 black piece in front. The piece briefly draws in and slows nearby targets, dealing damage equal to 381% of ATK to targets ahead."
+          }
+        ],
+        "hasChain": false
+      },
+      {
+        "name": "Starfall",
+        "icon": "",
+        "method": [
+          "Dodge",
+          "Attack x1"
+        ],
+        "description": [
+          {
+            "paragraph": "Use normal attack during the short period after dodging backward to place 3 white pieces in front. Each white piece deals area damage equal to 57% of ATK to nearby targets upon landing. The pieces also set traps that explode when enemies come close, briefly slowing them and dealing an additional 57% damage."
+          }
+        ],
+        "hasChain": false
+      }
+    ],
+    "skill": [
+      {
+        "name": "Step into the Game",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "Leap into the air, transforming the battlefield into a Go board, and float in mid-air (unable to move during this time). Gain an elevated view for up to 10 seconds. During this time, your attacks become Go pieces and your skills are replaced with Half-Piece Advantage. Tap the Go board to place 18 pieces in order, each dealing damage equal to 250% of ATK to all targets on the board and briefly slowing them down."
+          },
+          {
+            "paragraph": "Cooldown: 40 seconds. This is not affected by other cooldown clearing, resetting, or changing effects."
+          },
+          {
+            "paragraph": "Decisive Placement: Using Review Board, Seize Advantage, Starfall, and This Ends Here or creating (not refreshing an existing one) summons grants Decisive Placement stacks, up to a maximum of 9 stacks. While Decisive Placement is active, each Go piece consumes 1 stack to deal additional damage equal to 200% of ATK to all targets on the board. No stacks can be gained while the skill is active."
+          }
+        ]
+      },
+      {
+        "name": "Half-Piece Advantage",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "While Step into the Game is active, manually use or automatically trigger Half-Piece Advantage at the end of the duration. Fall from the sky, dealing damage equal to 1,350% of ATK to all targets on the board. Additionally, deal damage equal to the number of Decisive Placement stacks consumed during the skill duration times 200% of ATK. The twin fish then circle outward, pushing away nearby targets and dealing damage equal to 270% of ATK."
+          }
+        ]
+      }
+    ],
+    "discharge": [
+      {
+        "name": "This Ends Here",
+        "icon": "",
+        "description": [
+          {
+            "paragraph": "When weapon charge is full or Phantasia is triggered, upon switching to this weapon, remove all debuffs from the Wanderer. Deploy a zone and place 1 piece in front that deals damage equal to 1,361% of ATK to nearby targets. During this time, the Wanderer is immune to damage for 1.5 seconds (not available in Apex League)."
+          },
+          {
+            "paragraph": "Activate the zone to deal 200% damage per second to a wide area around the Wanderer. The zone exists for 30 seconds or disappears 5 seconds after leaving combat. Each summon extends the zone's duration by 3 seconds."
+          },
+          {
+            "paragraph": "Tactical Deployment: Each summon adds 1 stack of Tactical Deployment, increasing the zone's damage by an additional 50% of ATK per second, up to 8 stacks."
+          },
+          {
+            "paragraph": "Scorching Sun: Gaining Tactical Deployment stacks also grants equivalent stacks of Scorching Sun, with each stack increasing flame damage by an additional 2.5%, up to 8 stacks."
+          },
+          {
+            "paragraph": "Blazing Core: When using any flame weapon's discharge skill, gain hyperbody for 8 seconds."
+          }
+        ]
+      }
+    ],
+    "trait": [
+      {
+        "affinity": "1200",
+        "description": [
+          {
+            "paragraph": "Increase final damage by 14%"
+          }
+        ]
+      },
+      {
+        "affinity": "4000",
+        "description": [
+          {
+            "paragraph": "Increase final damage by 18%."
+          },
+          {
+            "paragraph": "When Freeflow is equipped, if there is only 1 target in the zone, increase flame damage by 10%. If there are 2 or more targets, increase flame damage to 14%."
+          }
+        ]
+      }
+    ]
+  },
+  {
     "slug": "rei",
     "name": [
       "Rei"
@@ -17,7 +315,8 @@
     "shatter": "14",
     "charge": "14",
     "roles": [
-      "MDPS", "Buffer"
+      "MDPS",
+      "Buffer"
     ],
     "effects": [
       {
@@ -333,7 +632,9 @@
     "shatter": "12",
     "charge": "10",
     "roles": [
-      "Buffer", "Shatter", "Support Buffer"
+      "Buffer",
+      "Shatter",
+      "Support Buffer"
     ],
     "effects": [
       {
@@ -621,7 +922,8 @@
     "shatter": "16",
     "charge": "12",
     "roles": [
-      "MDPS", "Buffer"
+      "MDPS",
+      "Buffer"
     ],
     "effects": [
       {
@@ -1003,7 +1305,8 @@
     "shatter": "14",
     "charge": "12",
     "roles": [
-      "MDPS", "Buffer"
+      "MDPS",
+      "Buffer"
     ],
     "effects": [
       {
@@ -1380,7 +1683,10 @@
     "charge": "10",
     "onHealingCalculator": true,
     "roles": [
-      "MDPS", "Buffer", "Healer", "Support Buffer"
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "Support Buffer"
     ],
     "effects": [
       {
@@ -1719,7 +2025,8 @@
     "shatter": "16.00",
     "charge": "12.00",
     "roles": [
-      "MDPS", "Buffer"
+      "MDPS",
+      "Buffer"
     ],
     "effects": [
       {
@@ -2410,7 +2717,8 @@
     "shatter": "16",
     "charge": "8",
     "roles": [
-      "MDPS", "Buffer"
+      "MDPS",
+      "Buffer"
     ],
     "effects": [
       {
@@ -3041,7 +3349,10 @@
     "shatter": "14.00",
     "charge": "15.00",
     "roles": [
-      "MDPS", "Buffer", "Taunt", "Shatter"
+      "MDPS",
+      "Buffer",
+      "Taunt",
+      "Shatter"
     ],
     "effects": [
       {
@@ -3375,7 +3686,8 @@
     "shatter": "14",
     "charge": "12",
     "roles": [
-      "MDPS", "Buffer"
+      "MDPS",
+      "Buffer"
     ],
     "effects": [
       {
@@ -3719,7 +4031,8 @@
     "shatter": "13",
     "charge": "11",
     "roles": [
-      "MDPS", "Buffer"
+      "MDPS",
+      "Buffer"
     ],
     "effects": [
       {
@@ -4178,7 +4491,8 @@
     "shatter": "12.50",
     "charge": "15",
     "roles": [
-      "MDPS", "Buffer"
+      "MDPS",
+      "Buffer"
     ],
     "effects": [
       {
@@ -4882,7 +5196,9 @@
     "shatter": "12.50",
     "charge": "14.00",
     "roles": [
-      "MDPS", "Buffer", "Shatter"
+      "MDPS",
+      "Buffer",
+      "Shatter"
     ],
     "effects": [
       {
@@ -5213,7 +5529,9 @@
     "charge": "11.5",
     "onHealingCalculator": true,
     "roles": [
-      "Buffer", "Healer", "Support Buffer"
+      "Buffer",
+      "Healer",
+      "Support Buffer"
     ],
     "effects": [
       {
@@ -5650,7 +5968,9 @@
     "shatter": "9.50",
     "charge": "8.00",
     "roles": [
-      "MDPS", "Buffer", "Support Buffer"
+      "MDPS",
+      "Buffer",
+      "Support Buffer"
     ],
     "effects": [
       {
@@ -5925,7 +6245,9 @@
     "shatter": "14.00",
     "charge": "8",
     "roles": [
-      "Buffer", "Taunt","Shatter"
+      "Buffer",
+      "Taunt",
+      "Shatter"
     ],
     "effects": [
       {
@@ -6225,7 +6547,8 @@
     "shatter": "13.5",
     "charge": "10.5",
     "roles": [
-      "MDPS","Buffer"
+      "MDPS",
+      "Buffer"
     ],
     "effects": [
       {
@@ -6716,7 +7039,6 @@
         "description": [
           {
             "paragraph": "Tap and hold normal attack while airborne, or use normal attack while climbing, jumping backward, or using the Jetpack to trigger Pummel."
-            
           },
           {
             "paragraph": "Plummet from the skies, dealing damage equal to 121.5% of ATK and launching the target."
@@ -6762,7 +7084,7 @@
         "description": [
           {
             "paragraph": "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for 0.5 seconds."
-        }
+          }
         ],
         "hasChain": false
       }
@@ -6871,7 +7193,8 @@
     "shatter": "8",
     "charge": "12",
     "roles": [
-      "MDPS", "Buffer"
+      "MDPS",
+      "Buffer"
     ],
     "effects": [
       {
@@ -7133,7 +7456,8 @@
     "shatter": "12.50",
     "charge": "9",
     "roles": [
-      "MDPS", "Buffer"
+      "MDPS",
+      "Buffer"
     ],
     "effects": [
       {
@@ -7379,7 +7703,8 @@
     "shatter": "12.50",
     "charge": "8",
     "roles": [
-      "MDPS", "Buffer"
+      "MDPS",
+      "Buffer"
     ],
     "effects": [
       {
@@ -7641,7 +7966,10 @@
     "charge": "10",
     "onHealingCalculator": true,
     "roles": [
-      "MDPS", "Buffer", "Healer","Support Buffer"
+      "MDPS",
+      "Buffer",
+      "Healer",
+      "Support Buffer"
     ],
     "effects": [
       {
@@ -8250,7 +8578,8 @@
     "shatter": "13.9",
     "charge": "8",
     "roles": [
-      "Buffer", "Taunt"
+      "Buffer",
+      "Taunt"
     ],
     "effects": [
       {
@@ -8516,7 +8845,8 @@
     "shatter": "11.5",
     "charge": "8",
     "roles": [
-      "MDPS", "Buffer"
+      "MDPS",
+      "Buffer"
     ],
     "effects": [
       {
@@ -8758,7 +9088,8 @@
     "shatter": "12.5",
     "charge": "10",
     "roles": [
-      "MDPS", "Buffer"
+      "MDPS",
+      "Buffer"
     ],
     "effects": [
       {
@@ -8984,7 +9315,9 @@
     "shatter": "7.5",
     "charge": "12.00",
     "roles": [
-      "MDPS", "Buffer", "Support Buffer"
+      "MDPS",
+      "Buffer",
+      "Support Buffer"
     ],
     "effects": [
       {
@@ -9224,7 +9557,8 @@
     "shatter": "8",
     "charge": "8",
     "roles": [
-      "MDPS", "Buffer"
+      "MDPS",
+      "Buffer"
     ],
     "effects": [
       {
@@ -9469,7 +9803,9 @@
     "charge": "11",
     "onHealingCalculator": true,
     "roles": [
-      "Buffer", "Healer", "Support Buffer"
+      "Buffer",
+      "Healer",
+      "Support Buffer"
     ],
     "effects": [
       {
@@ -9743,7 +10079,9 @@
     "shatter": "6",
     "charge": "8",
     "roles": [
-      "MDPS", "Buffer", "Support Buffer"
+      "MDPS",
+      "Buffer",
+      "Support Buffer"
     ],
     "effects": [
       {
@@ -10449,7 +10787,8 @@
     "charge": "13",
     "onHealingCalculator": true,
     "roles": [
-      "Healer", "Support Buffer"
+      "Healer",
+      "Support Buffer"
     ],
     "effects": [
       {
@@ -10701,7 +11040,9 @@
     "shatter": "13",
     "charge": "6",
     "roles": [
-      "MDPS", "Buffer", "Shatter"
+      "MDPS",
+      "Buffer",
+      "Shatter"
     ],
     "effects": [
       {
@@ -10930,7 +11271,8 @@
     "shatter": "14.3",
     "charge": "5",
     "roles": [
-      "MDPS", "Shatter"
+      "MDPS",
+      "Shatter"
     ],
     "effects": [
       {
@@ -11186,7 +11528,8 @@
     "charge": "12.50",
     "onHealingCalculator": true,
     "roles": [
-      "Healer", "Support Buffer"
+      "Healer",
+      "Support Buffer"
     ],
     "effects": [
       {
@@ -11460,7 +11803,8 @@
     "shatter": "4",
     "charge": "11.5",
     "roles": [
-      "MDPS", "Buffer"
+      "MDPS",
+      "Buffer"
     ],
     "effects": [
       {
@@ -11664,7 +12008,8 @@
     "shatter": "13.8",
     "charge": "4",
     "roles": [
-      "MDPS","Shatter"
+      "MDPS",
+      "Shatter"
     ],
     "effects": [
       {
@@ -12598,7 +12943,8 @@
     "shatter": "11",
     "charge": "7",
     "roles": [
-      "MDPS", "Buffer"
+      "MDPS",
+      "Buffer"
     ],
     "effects": [
       {
@@ -12853,7 +13199,9 @@
     "shatter": "6",
     "charge": "10",
     "roles": [
-      "MDPS","Buffer", "Support Buffer"
+      "MDPS",
+      "Buffer",
+      "Support Buffer"
     ],
     "effects": [
       {
