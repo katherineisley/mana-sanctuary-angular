@@ -168,17 +168,26 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
     this.activeTab = element;
   }
 
-  setActiveInfo(event: Event | string | null) {
+  setActiveInfo(event: Event | string | null) {    
     if (typeof event === 'string') {
       this.activeInfo = event;
     } else if (event instanceof Event) {
       const target = (event.target as HTMLElement);
-      this.activeInfo = target.textContent || ''; // Assuming the text content of the element is the desired information
+      this.activeInfo = target.textContent || ''; // assuming the text content of the element is the desired information
       const rect = target.getBoundingClientRect();
       const underline = document.querySelector('.underline') as HTMLElement;
       const containerRect = (underline.parentElement as HTMLElement).getBoundingClientRect();
       underline.style.left = `${rect.left - containerRect.left - 8}px`; // offset the width extension
       underline.style.width = `${rect.width + 16}px`; // make it a bit prettier
+
+      // remove the class "active" from all the other infos
+      const infoElements = document.querySelectorAll('.info');
+      infoElements.forEach(element => {
+        element.classList.remove('active');
+      });
+
+      // add the class "active" to the current info
+      target.classList.add('active');
     }
   }
   onSliderChange() {

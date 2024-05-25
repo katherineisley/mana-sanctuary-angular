@@ -107,215 +107,200 @@
       </div>
       <div class="scroll">
         <!-- ADVANCEMENTS-->
-        <div *ngIf="activeInfo === 'Advancements'">
-          <div class="advancements-table">
-            <div class="advancements-table-row">
-              <div class="advancements-star-column">
-                1 ★
-              </div>
-              <div class="advancements-text-column">
-                <div *ngFor="let item of unit?.oneStar">
-                  <p [innerHTML]="sanitizeHtml(item.paragraph)"></p>
-                </div>
+        <div class="advancements-table" *ngIf="activeInfo === 'Advancements'">
+          <div class="advancements-table-row">
+            <div class="advancements-star-column">
+              1 ★
+            </div>
+            <div class="advancements-text-column">
+              <div *ngFor="let item of unit?.oneStar">
+                <p [innerHTML]="sanitizeHtml(item.paragraph)"></p>
               </div>
             </div>
-            <div class="advancements-table-row">
-              <div class="advancements-star-column">
-                2 ★
-              </div>
-              <div class="advancements-text-column">
-                <div *ngFor="let item of unit?.twoStar">
-                  <p [innerHTML]="sanitizeHtml(item.paragraph)"></p>
-                </div>
+          </div>
+          <div class="advancements-table-row">
+            <div class="advancements-star-column">
+              2 ★
+            </div>
+            <div class="advancements-text-column">
+              <div *ngFor="let item of unit?.twoStar">
+                <p [innerHTML]="sanitizeHtml(item.paragraph)"></p>
               </div>
             </div>
-            <div class="advancements-table-row">
-              <div class="advancements-star-column">
-                3 ★
-              </div>
-              <div class="advancements-text-column">
-                <div *ngFor="let item of unit?.threeStar">
-                  <p [innerHTML]="sanitizeHtml(item.paragraph)"></p>
-                </div>
+          </div>
+          <div class="advancements-table-row">
+            <div class="advancements-star-column">
+              3 ★
+            </div>
+            <div class="advancements-text-column">
+              <div *ngFor="let item of unit?.threeStar">
+                <p [innerHTML]="sanitizeHtml(item.paragraph)"></p>
               </div>
             </div>
-            <div class="advancements-table-row">
-              <div class="advancements-star-column">
-                4 ★
-              </div>
-              <div class="advancements-text-column">
-                <div *ngFor="let item of unit?.fourStar">
-                  <p [innerHTML]="sanitizeHtml(item.paragraph)"></p>
-                </div>
+          </div>
+          <div class="advancements-table-row">
+            <div class="advancements-star-column">
+              4 ★
+            </div>
+            <div class="advancements-text-column">
+              <div *ngFor="let item of unit?.fourStar">
+                <p [innerHTML]="sanitizeHtml(item.paragraph)"></p>
               </div>
             </div>
-            <div class="advancements-table-row">
-              <div class="advancements-star-column">
-                5 ★
-              </div>
-              <div class="advancements-text-column">
-                <div *ngFor="let item of unit?.fiveStar">
-                  <p [innerHTML]="sanitizeHtml(item.paragraph)"></p>
-                </div>
+          </div>
+          <div class="advancements-table-row">
+            <div class="advancements-star-column">
+              5 ★
+            </div>
+            <div class="advancements-text-column">
+              <div *ngFor="let item of unit?.fiveStar">
+                <p [innerHTML]="sanitizeHtml(item.paragraph)"></p>
               </div>
             </div>
-            <div class="advancements-table-row">
-              <div class="advancements-star-column">
-                6 ★
-              </div>
-              <div class="advancements-text-column">
-                <div *ngFor="let item of unit?.sixStar">
-                  <p [innerHTML]="sanitizeHtml(item.paragraph)"></p>
-                </div>
+          </div>
+          <div class="advancements-table-row">
+            <div class="advancements-star-column">
+              6 ★
+            </div>
+            <div class="advancements-text-column">
+              <div *ngFor="let item of unit?.sixStar">
+                <p [innerHTML]="sanitizeHtml(item.paragraph)"></p>
               </div>
             </div>
           </div>
         </div>
         <!-- EFFECTS -->
-        <div *ngIf="activeInfo === 'Effects'">
-          <div class="attack-wrap">
-            <div class="attack-container" *ngFor="let item of unit?.effects">
-              <div class="attack-heading-wrap">
-                <div class="attack-heading">
-                  <div class="attack-name">{{ item.name }}</div>
-                </div>
+        <div class="attack-wrap" *ngIf="activeInfo === 'Effects'">
+          <div class="attack-container" *ngFor="let item of unit?.effects">
+            <div class="attack-heading-wrap">
+              <div class="attack-heading">
+                <div class="attack-name">{{ item.name }}</div>
               </div>
-              <div class="attack-description">
-                <div class="attack-paragraph" *ngFor="let desc of item.description">
-                  <p [innerHTML]="sanitizeHtml(desc.paragraph)"></p>
-                </div>
+            </div>
+            <div class="attack-description">
+              <div class="attack-paragraph" *ngFor="let desc of item.description">
+                <p [innerHTML]="sanitizeHtml(desc.paragraph)"></p>
               </div>
             </div>
           </div>
         </div>
         <!-- ATTACKS-->
-        <div class="attacks-scroll" *ngIf="activeInfo === 'Attacks'">
-          <div class="attack-wrap">
-            <div class="attack-container" *ngFor="let item of unit?.attacks">
-              <div class="attack-heading-wrap">
-                <img class="attack-icon" src="assets/simulacra/abilities/{{item.icon}}" alt="Normal Attack Icon">
-                <div class="attack-heading">
-                  <div class="attack-name">{{ item.name }}</div>
-                  <div class="attack-method-wrap">
-                    <div class="attack-method" *ngFor="let meth of item.method">
-                      <div *ngIf="meth">
-                        <p>{{ meth }}</p>
-                      </div>
+        <div class="attack-wrap" *ngIf="activeInfo === 'Attacks'">
+          <div class="attack-container" *ngFor="let item of unit?.attacks">
+            <div class="attack-heading-wrap">
+              <img class="attack-icon" src="assets/simulacra/abilities/{{item.icon}}" alt="Normal Attack Icon">
+              <div class="attack-heading">
+                <div class="attack-name">{{ item.name }}</div>
+                <div class="attack-method-wrap">
+                  <div class="attack-method" *ngFor="let meth of item.method">
+                    <div *ngIf="meth">
+                      <p>{{ meth }}</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="attack-description">
-                <div class="attack-paragraph" *ngFor="let desc of item.description">
-                  <p [innerHTML]="sanitizeHtml(desc.paragraph)"></p>
-                </div>
+            </div>
+            <div class="attack-description">
+              <div class="attack-paragraph" *ngFor="let desc of item.description">
+                <p [innerHTML]="sanitizeHtml(desc.paragraph)"></p>
               </div>
-              <div *ngIf="item.hasChain">
-                <ul>
-                  <li *ngFor="let combo of item.chain; let i = index">
-                    <span class="number">{{ i + 1 }}</span>
-                    <span>.</span>
-                    <span class="text" [innerHTML]="sanitizeHtml(combo.combo)"></span>
-                  </li>
-                </ul>
-              </div>
+            </div>
+            <div *ngIf="item.hasChain">
+              <ul>
+                <li *ngFor="let combo of item.chain; let i = index">
+                  <span class="number">{{ i + 1 }}</span>
+                  <span>.</span>
+                  <span class="text" [innerHTML]="sanitizeHtml(combo.combo)"></span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
         <!-- DODGE-->
-        <div *ngIf="activeInfo === 'Dodge'">
-          <div class="attack-wrap">
-            <div class="attack-container" *ngFor="let item of unit?.dodge">
-              <div class="attack-heading-wrap">
-                <img class="attack-icon" src="assets/simulacra/abilities/{{item.icon}}" alt="Dodge Attack Icon">
-                <div class="attack-heading">
-                  <div class="attack-name">{{ item.name }}</div>
-                  <div class="attack-method-wrap">
-                    <div class="attack-method" *ngFor="let meth of item.method">
-                      <div *ngIf="meth">
-                        <p>{{ meth }}</p>
-                      </div>
+        <div class="attack-wrap" *ngIf="activeInfo === 'Dodge'">
+          <div class="attack-container" *ngFor="let item of unit?.dodge">
+            <div class="attack-heading-wrap">
+              <img class="attack-icon" src="assets/simulacra/abilities/{{item.icon}}" alt="Dodge Attack Icon">
+              <div class="attack-heading">
+                <div class="attack-name">{{ item.name }}</div>
+                <div class="attack-method-wrap">
+                  <div class="attack-method" *ngFor="let meth of item.method">
+                    <div *ngIf="meth">
+                      <p>{{ meth }}</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="attack-description">
-                <div class="attack-paragraph" *ngFor="let desc of item.description">
-                  <p [innerHTML]="sanitizeHtml(desc.paragraph)"></p>
-                </div>
+            </div>
+            <div class="attack-description">
+              <div class="attack-paragraph" *ngFor="let desc of item.description">
+                <p [innerHTML]="sanitizeHtml(desc.paragraph)"></p>
               </div>
-              <div *ngIf="item.hasChain">
-                <ul>
-                  <li *ngFor="let combo of item.chain; let i = index">
-                    <span class="number">{{ i + 1 }}</span>
-                    <span>.</span>
-                    <span class="text" [innerHTML]="sanitizeHtml(combo.combo)"></span>
-                  </li>
-                </ul>
-              </div>
+            </div>
+            <div *ngIf="item.hasChain">
+              <ul>
+                <li *ngFor="let combo of item.chain; let i = index">
+                  <span class="number">{{ i + 1 }}</span>
+                  <span>.</span>
+                  <span class="text" [innerHTML]="sanitizeHtml(combo.combo)"></span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
         <!-- SKILLS-->
-        <div *ngIf="activeInfo === 'Skill'">
-          <div class="attack-wrap">
-            <div class="attack-container" *ngFor="let item of unit?.skill">
-              <div class="attack-heading-wrap">
-                <img class="attack-icon" src="assets/simulacra/abilities/{{item.icon}}" alt="Skill Icon">
-                <div class="attack-heading">
-                  <div class="attack-name">{{ item.name }}</div>
-                </div>
+        <div class="attack-wrap" *ngIf="activeInfo === 'Skill'">
+          <div class="attack-container" *ngFor="let item of unit?.skill">
+            <div class="attack-heading-wrap">
+              <img class="attack-icon" src="assets/simulacra/abilities/{{item.icon}}" alt="Skill Icon">
+              <div class="attack-heading">
+                <div class="attack-name">{{ item.name }}</div>
               </div>
-              <div class="attack-description">
-                <div class="attack-paragraph" *ngFor="let desc of item.description">
-                  <p [innerHTML]="sanitizeHtml(desc.paragraph)"></p>
-                </div>
+            </div>
+            <div class="attack-description">
+              <div class="attack-paragraph" *ngFor="let desc of item.description">
+                <p [innerHTML]="sanitizeHtml(desc.paragraph)"></p>
               </div>
             </div>
           </div>
         </div>
         <!-- DISCHARGE-->
-        <div *ngIf="activeInfo === 'Discharge'">
-          <div class="attack-wrap">
-            <div class="attack-container" *ngFor="let item of unit?.discharge">
-              <div class="attack-heading-wrap">
-                <img class="attack-icon" src="assets/simulacra/abilities/{{item.icon}}" alt="Discharge Icon">
-                <div class="attack-heading">
-                  <div class="attack-name">{{ item.name }}</div>
-                </div>
+        <div class="attack-wrap" *ngIf="activeInfo === 'Discharge'">
+          <div class="attack-container" *ngFor="let item of unit?.discharge">
+            <div class="attack-heading-wrap">
+              <img class="attack-icon" src="assets/simulacra/abilities/{{item.icon}}" alt="Discharge Icon">
+              <div class="attack-heading">
+                <div class="attack-name">{{ item.name }}</div>
               </div>
-              <div class="attack-description">
-                <div class="attack-paragraph" *ngFor="let desc of item.description">
-                  <p [innerHTML]="sanitizeHtml(desc.paragraph)"></p>
-                </div>
+            </div>
+            <div class="attack-description">
+              <div class="attack-paragraph" *ngFor="let desc of item.description">
+                <p [innerHTML]="sanitizeHtml(desc.paragraph)"></p>
               </div>
             </div>
           </div>
         </div>
         <!-- TRAIT-->
-        <div *ngIf="activeInfo === 'Trait'">
-          <div class="attack-wrap">
-            <div class="attack-container" *ngFor="let item of unit?.trait">
-              <div class="attack-heading-wrap">
-                <img class="trait-icon" src="assets/trait/{{unit.slug}}_{{item.affinity}}.png" alt="Trait Icon">
-                <div class="attack-heading">
-                  <div class="attack-name">{{ item.affinity }}</div>
-                </div>
+        <div class="attack-wrap" *ngIf="activeInfo === 'Trait'">
+          <div class="attack-container" *ngFor="let item of unit?.trait">
+            <div class="attack-heading-wrap">
+              <img class="trait-icon" src="assets/trait/{{unit.slug}}_{{item.affinity}}.png" alt="Trait Icon">
+              <div class="attack-heading">
+                <div class="attack-name">{{ item.affinity }}</div>
               </div>
-              <div class="attack-description">
-                <div class="attack-paragraph" *ngFor="let desc of item.description">
-                  <p [innerHTML]="sanitizeHtml(desc.paragraph)"></p>
-                </div>
+            </div>
+            <div class="attack-description">
+              <div class="attack-paragraph" *ngFor="let desc of item.description">
+                <p [innerHTML]="sanitizeHtml(desc.paragraph)"></p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
     <!-- Matrices-->
     <div class="matrix-part">
-      <div class="attack-wrap">
+      <div class="attack-wrap" *ngIf="matrix['twopc'] && matrix['twopc'].effect">
         <!-- Display 2pc effect -->
         <div *ngIf="matrix['twopc'] && matrix['twopc'].effect">
           <div class="attack-heading-wrap">
@@ -384,62 +369,71 @@
         </div>
       </div>
     </div>
-
     <!-- Materials -->
     <div class="materials-part">
       <div class="slider-wrap">
-        <div class="materials-title">Select Level</div>
-        <mat-slider [min]="0" [max]="200" [step]="10" [discrete]="true" [showTickMarks]="true"
-          [(ngModel)]="sliderValues" (input)="onSliderChange()">
-          <input matSliderStartThumb [(ngModel)]="startvalue" (change)="onSliderChange()">
-          <input matSliderEndThumb [(ngModel)]="endvalue" (change)="onSliderChange()">
-        </mat-slider>
-        <div class="materials-title">Augment</div>
-        <div class="materials-text">Materials required for augmentation from level {{startvalue}} to level {{endvalue}}
+        <div class="materials-slider">
+          <div class="materials-title">Select Level</div>
+          <mat-slider [min]="0" [max]="200" [step]="10" [discrete]="true" [showTickMarks]="true"
+            [(ngModel)]="sliderValues" (input)="onSliderChange()">
+            <input matSliderStartThumb [(ngModel)]="startvalue" (change)="onSliderChange()">
+            <input matSliderEndThumb [(ngModel)]="endvalue" (change)="onSliderChange()">
+          </mat-slider>
         </div>
-        <div class="materials-text materials-req">Required wanderer level {{endvalue/2}} </div>
-        <div class="material-wrap">
-          <ng-container *ngFor="let material of totalMaterialsArray; let i = index">
-            <ng-container *ngIf="i !== 0">
-              <div class="material-card" [style.background-color]="materialsColour[i]">
-                <div class="content-wrapper"
-                  style="background-image: url(&quot;../assets/materials/{{material[0]}}.png&quot;);">
-                  <div class="details-container">
-                    <h5 class="name">{{ material[1] }}</h5>
+        <div class="materials-augment">
+          <div class="materials-title">Augment</div>
+          <div class="materials-augment-details">
+            <div class="materials-augment-text">
+              <div class="materials-text">Materials required for augmentation from level {{startvalue}} to level {{endvalue}}</div>
+              <div class="materials-text materials-req">Required wanderer level {{endvalue/2}}</div>
+            </div>
+            <div class="materials-wrap">
+              <ng-container *ngFor="let material of totalMaterialsArray; let i = index">
+                <ng-container *ngIf="i !== 0">
+                  <div class="material-card" [style.background-color]="materialsColour[i]">
+                    <div class="content-wrapper"
+                      style="background-image: url(&quot;../assets/materials/{{material[0]}}.png&quot;);">
+                      <div class="details-container">
+                        <h5 class="name">{{ material[1] }}</h5>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </ng-container>
-          </ng-container>
+                </ng-container>
+              </ng-container>
+            </div>
+          </div>
         </div>
-        <div class="materials-title">Enhance</div>
-        <div class="materials-text">Materials required for enhancement from level {{startvalue}} to level {{endvalue}}
-        </div>
-        <div class="material-wrap">
-          <ng-container *ngFor="let material of totalMaterialsArray; let i = index">
-            <ng-container *ngIf="i == 0">
-              <div class="material-card" [style.background-color]="materialsColour[i]">
-                <div class="content-wrapper"
-                  style="background-image: url(&quot;../assets/materials/augmentGold.png&quot;);">
-                  <div class="details-container">
-                    <h5 class="name">{{ material[1] }}</h5>
+        <div class="materials-enhance">
+          <div class="materials-title">Enhance</div>
+          <div class="materials-enhance-details">
+            <div class="materials-text">Materials required for enhancement from level {{startvalue}} to level {{endvalue}}</div>
+            <div class="materials-wrap">
+              <ng-container *ngFor="let material of totalMaterialsArray; let i = index">
+                <ng-container *ngIf="i == 0">
+                  <div class="material-card" [style.background-color]="materialsColour[i]">
+                    <div class="content-wrapper"
+                      style="background-image: url(&quot;../assets/materials/augmentGold.png&quot;);">
+                      <div class="details-container">
+                        <h5 class="name">{{ material[1] }}</h5>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </ng-container>
-          </ng-container>
-          <ng-container *ngFor="let material of totalMaterialsArray; let i = index">
-            <ng-container *ngIf="i == 0">
-              <div class="material-card" [style.background-color]="materialsColour[i]">
-                <div class="content-wrapper"
-                  style="background-image: url(&quot;../assets/materials/experience.png&quot;);">
-                  <div class="details-container">
-                    <h5 class="name">{{ material[1] }}</h5>
+                </ng-container>
+              </ng-container>
+              <ng-container *ngFor="let material of totalMaterialsArray; let i = index">
+                <ng-container *ngIf="i == 0">
+                  <div class="material-card" [style.background-color]="materialsColour[i]">
+                    <div class="content-wrapper"
+                      style="background-image: url(&quot;../assets/materials/experience.png&quot;);">
+                      <div class="details-container">
+                        <h5 class="name">{{ material[1] }}</h5>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </ng-container>
-          </ng-container>
+                </ng-container>
+              </ng-container>
+            </div>
+          </div>
         </div>
       </div>
     </div>
