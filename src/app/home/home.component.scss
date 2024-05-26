@@ -68,6 +68,36 @@
 
         .half {
             .wrapper {
+                .quote-block {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 12px;
+                    max-width: 500px;
+                    width: 100%;
+
+                    .title {
+                        font-size: 42px;
+                        text-align: center;
+                        font-weight: bold;
+                        margin: unset;
+                    }
+
+                    .quote,
+                    .name {
+                        font-size: 24px;
+                        font-weight: 400;
+                        font-style: italic;
+                        text-align: center;
+                        margin: unset;
+                    }
+                }
+            }
+
+            .wrapper#book {
+                display: flex;
+                gap: 20px;
+
                 .handbook {
                     width: 140px;
                     height: 325px;
@@ -103,36 +133,6 @@
                         }
                     }
                 }
-
-                .quote-block {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    gap: 12px;
-                    max-width: 500px;
-                    width: 100%;
-
-                    .title {
-                        font-size: 42px;
-                        text-align: center;
-                        font-weight: bold;
-                        margin: unset;
-                    }
-
-                    .quote,
-                    .name {
-                        font-size: 24px;
-                        font-weight: 400;
-                        font-style: italic;
-                        text-align: center;
-                        margin: unset;
-                    }
-                }
-            }
-
-            .wrapper#book {
-                display: flex;
-                gap: 20px;
             }
 
             // oh boy this whole section is going to be one NASTY hack
@@ -820,7 +820,7 @@
                         }
 
                         .quote, .name {
-                            font-size: 18px;
+                            font-size: 16px;
                         }
                     }
                 }
@@ -830,7 +830,9 @@
                 width: 100%;
                 display: flex;
                 justify-content: center;
+            }
 
+            .half {
                 .wrapper#book {
                     max-width: 600px;
                     width: 100%;
@@ -840,6 +842,12 @@
                     .handbook {
                         width: unset;
                         height: 300px;
+
+                        .title-container {
+                            .title {
+                                font-size: 20px;
+                            }
+                        }
                     }
                     
                     .handbook:hover {
@@ -848,6 +856,8 @@
                 }
 
                 .wrapper#indexes {
+                    overflow-x: hidden;
+
                     .indexes-block {
                         .side-card#left {
                             left: 75px;
@@ -858,6 +868,16 @@
                         }
                     }
                 }
+
+                .wrapper#glossary {
+                    .terms-block {
+                        .term-container {
+                            .title {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
             }
         }
 
@@ -865,6 +885,7 @@
             .discord {
                 gap: 8px;
                 padding: 20px;
+                border-radius: 20px;
 
                 .subtitle {
                     font-size: 20px;
@@ -888,7 +909,184 @@
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .main-home {
+        .inner {
+            .half {
+                .wrapper#indexes {
+                    .indexes-block {
+                        .side-card#left {
+                            left: 125px;
+                        }
+
+                        .side-card#right {
+                            right: 125px;
+                        }
+                    }
+                }
+
+                .wrapper#geo {
+                    max-width: 500px;
+                    height: unset;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    .black-white-medium.special {
+                        position: unset;
+                        width: max-content;
+                        align-self: center;
+                    }
+                    
+                    .top-left, .bottom-right {
+                        .icon-block {
+                            display: none;
+                        }
+
+                        .text-rectangle {
+                            border-radius: 10px;
+                            max-width: 275px;
+                            height: 80px;
+                            width: 100%;
+                        }
+                    }
+
+                    .top-left {
+                        .text-rectangle {
+                            background-image: linear-gradient(90deg, #35E419 0%, rgba(35, 35, 35, 0) 50%);
+                        }
+                    }
+
+                    .bottom-right {
+                        position: unset;
+                        
+                        .text-rectangle {
+                            background-image: linear-gradient(90deg, rgba(35, 35, 35, 0) 50%, #E41919 100%);
+                        }
+                    }
+                }
+
+                .wrapper#teams {
+                    .title {
+                        font-size: 20px;
+                    }
+
+                    .bars-block {
+                        .single-bar-container {
+                            .items-container {
+                                .icon-block {
+                                    height: 100px;
+
+                                    img {
+                                        width: 50px;
+                                    }
+                                }
+
+                                .stat-wrapper {
+                                    width: 100px;
+                                    height: 200px;
+                                    padding: 8px 15px;
+
+                                    .anim-bars-container {
+                                        gap: 5px;
+                                    }
+
+                                    .icons-container {
+                                        gap: 5px;
+
+                                        img {
+                                            width: 20px;
+                                            height: 20px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .inner:has(.discord) {
+            .discord {
+                border-radius: 10px;
+
+                .images {
+                    img {
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .main-home {
+        .inner {
+            .half {
+                .wrapper#indexes {
+                    .indexes-block {
+                        .side-card {
+                            display: none;
+                        }
+                    }
+                }
+
+                .wrapper#glossary {
+                    .terms-block {
+                        .term-container {
+                            flex-direction: column;
+                            align-items: flex-start;
+                            gap: 12px;
+
+                            .title {
+                                text-align: left;
+                                width: 100%;
+                                padding: 0 0 8px 0;
+                                border-bottom: 1px solid #6A6666;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .half.text {
+                .wrapper {
+                    .quote-block {
+                        gap: 4px;
+
+                        .title {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: $mobile) {
+    .announcement {
+        padding: 12px 20px;
+    }
+
+    .banner {
+        .content-container {
+            .inner {
+                .title {
+                    font-size: 32px;
+                    margin: 0 0 8px 0;
+                }
+
+                .introduction {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
     .main-home {
         .inner {
             .half {
@@ -900,6 +1098,28 @@
                             }
                         }
                     }
+                }
+
+                .wrapper#book {      
+                    .handbook {
+                        .title-container {
+                            .title {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .inner:has(.discord) {
+            .discord {
+                .images:nth-child(2) {
+                    display: none;
+                }
+
+                .subtitle {
+                    font-size: 16px;
                 }
             }
         }

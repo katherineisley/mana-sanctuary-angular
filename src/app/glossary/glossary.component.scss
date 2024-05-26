@@ -10,7 +10,7 @@
         .term {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 12px;
 
             .term-name {
                 margin: unset;
@@ -19,6 +19,14 @@
                 border-bottom: 1px solid $border;
                 color: $link;
             }
+        }
+    }
+}
+
+@media only screen and (max-width: $tablet) {
+    .main {
+        .term-list {
+            gap: 24px;
         }
     }
 }
