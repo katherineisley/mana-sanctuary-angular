@@ -60,6 +60,11 @@ export interface Unit {
     matricesSet: Map<string, Matrix>;
 };
 
+export interface Relic {
+    relicName: string;
+    starValue: number;
+}
+
 export interface BuffSummary {
     [module: string]: {
         [type: string]: number;

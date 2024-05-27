@@ -1,7 +1,7 @@
 import { Component, HostListener, OnInit, Renderer2, ElementRef, QueryList, ViewChildren } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-import { Unit, Matrix, Heal, Buff, Data, Character, BuffSummary } from './models';
+import { Unit, Matrix, Relic, Heal, Buff, Data, Character, BuffSummary } from './models';
 
 @Component({
   selector: 'app-healing-calculator',
@@ -10,7 +10,7 @@ import { Unit, Matrix, Heal, Buff, Data, Character, BuffSummary } from './models
 })
 
 export class HealingCalculatorComponent implements OnInit {
-  errors: any[] = [];
+  errors = new Set<string>();
   units: any[] = [];
   matrices: any[] = [];
   traits: any[] = [];
@@ -674,11 +674,10 @@ export class HealingCalculatorComponent implements OnInit {
     this.selfBuffsSummary = {};
     this.teamBuffs = [];
     this.selfBuffs = [];
-
   }
 
   logEverything(event: Event) {
-    this.errors = [];
+    this.errors = new Set<string>();
 
     // STATS & TITAN
 
@@ -698,6 +697,8 @@ export class HealingCalculatorComponent implements OnInit {
     // UNITS & MATRICES
     const unitValues: Unit[] = [];
     const unitElements = document.querySelectorAll('[data-unit]');
+
+    const selectedUnits = new Set<string>();
     let isUnitErrorAdded = false;
 
     for (let i = 0; i < unitElements.length; i++) {
@@ -708,9 +709,13 @@ export class HealingCalculatorComponent implements OnInit {
       if (simulacraSelect && starSelect) {
         const simulacraValue = simulacraSelect.getAttribute('data-simulacra') || '';
         if (simulacraValue === '' && !isUnitErrorAdded) {
-          this.errors.push('Please fill out all the unit fields.');
+          this.errors.add('Please fill out all the unit fields.');
           isUnitErrorAdded = true;
+        } else if (selectedUnits.has(simulacraValue)) { // or if (selectedUnits[simulacraValue])
+          this.errors.add(`${simulacraValue[0].toUpperCase() + simulacraValue.slice(1)} has already been selected. Please choose a different unit.`);
+          continue; // Skip processing this unit
         }
+        selectedUnits.add(simulacraValue);
 
         const starSelectChildren = starSelect.children;
         let maxAdvancementLevel = -1;
@@ -756,7 +761,8 @@ export class HealingCalculatorComponent implements OnInit {
         unitValues.push({ simulacraName: simulacraValue, starValue: maxAdvancementLevel, matricesSet });
       }
     }
-    //console.log("Unit Values", unitValues);
+
+    console.log("AAAAAAAAA", selectedUnits);
 
     // TRAIT
 
@@ -764,14 +770,47 @@ export class HealingCalculatorComponent implements OnInit {
 
     // RELICS
 
-    // CONDITIONALS
+    const relicValues: Relic[] = [];
+    const relicWrappers = document.querySelectorAll('.relic-wrapper');
 
-    if (this.titanHealing > 15) {
-      this.errors.push('Titan Healing level cannot be higher than 15.');
+    for (let i = 0; i < relicWrappers.length; i++) {
+      const relicWrapper = relicWrappers[i];
+      const relicSelectContainers = relicWrapper.querySelectorAll('.relic-select-container');
+    
+      for (let j = 0; j < relicSelectContainers.length; j++) {
+        const relicSelectContainer = relicSelectContainers[j];
+        const relicSelect = relicSelectContainer.querySelector('.relic-select');
+        const stars = relicSelectContainer.querySelector('.stars');
+    
+        if (relicSelect && stars) {
+          const relicName = relicSelect.getAttribute('data-relic') || '';
+          if (relicName !== '') {
+            const starsChildren = stars.children;
+            let maxAdvancementLevel = -1;
+      
+            for (let k = 0; k < starsChildren.length; k++) {
+              const child = starsChildren[k];
+              if (child.classList.contains('active')) {
+                const advancementLevel = Number(child.getAttribute('data-advancement-level'));
+                if (advancementLevel > maxAdvancementLevel) {
+                  maxAdvancementLevel = advancementLevel;
+                }
+              }
+            }
+            relicValues.push({ relicName, starValue: maxAdvancementLevel });
+          }
+        }
+      }
     }
 
-    if (this.errors.length > 0) { // dont allow the calculator to run if there are errors
-      throw new Error(this.errors.join('\n'));
+    // OTHER CONDITIONALS
+
+    if (this.titanHealing > 15) {
+      this.errors.add('Titan Healing level cannot be higher than 15.');
+    }
+
+    if (Array.from(this.errors).length > 0) { // dont allow the calculator to run if there are errors
+      throw new Error(Array.from(this.errors).join('\n'));
     }
 
     // THE ACTUAL LOGGER
@@ -793,9 +832,11 @@ export class HealingCalculatorComponent implements OnInit {
         return `${unit.simulacraName}: ${unit.starValue} (Matrices: ${matricesString})`;
       }).join('\n') +
       '\n' +
-      "Trait: " + traitValue
-      // Relics
+      "Trait: " + traitValue + '\n' +
+      "Relics: " + relicValues.map(relic => `(${relic.relicName}: ${relic.starValue})`).join(', ') +
+      '\n'
     );
+
     this.findProfessionResonance(unitValues);
     this.findElementResonance(unitValues);
     console.log(this.professionResonance, this.elementResonance)
