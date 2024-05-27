@@ -1,25 +1,28 @@
 <section class="main" *ngIf="relic">
   <div class="header-element">
+    <div class="header-splash" 
+      style="background-image: url(&quot;../assets/backgrounds/relic_page_background.webp&quot;);">
+    </div>
     <div class="header-content">
-      <div class="unit-wrapper">
-        <div class="unit-avatar" style="background-image: url(&quot;../assets/other/relic_frame.png&quot;);">
+      <div class="relic-wrapper">
+        <div class="relic-avatar" style="background-image: url(&quot;../assets/other/relic_frame.png&quot;);">
           <img src="assets/relics/{{relic?.slug}}_relic.webp" alt="Relic">
         </div>
-        <div class="unit-name-element">
-          <div class="unit-name">
+        <div class="relic-name-element">
+          <div class="relic-name">
             <span>{{relic?.name}}</span>
           </div>
-          <div class="unit-weapon-name">
+          <div class="relic-weapon-name">
             <span>{{relic?.tag}}</span>
           </div>
         </div>
       </div>
-      <div class="unit-description">
+      <div class="relic-description">
         <div *ngFor="let item of relic?.description">
           <p [innerHTML]="sanitizeHtml(item.paragraph)"></p>
         </div>
       </div>
-<!--       <div class="unit-roles">
+<!--       <div class="relic-roles">
         <div class="stats-title">Roles</div>
         <div class="top-stats">
           <div *ngFor="let roles of relic.roles" class="roles">
@@ -28,9 +31,6 @@
           </div>
         </div>
       </div> -->
-    </div>
-    <div class="header-splash" style="background-image: url(&quot;../assets/backgrounds/relic_page_background.webp&quot;);">
-
     </div>
   </div>
   <div class="body-element">

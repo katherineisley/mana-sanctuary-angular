@@ -103,7 +103,6 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
-
     const data = this.route.snapshot.data['data'];
     const simulacraData = data.simulacra;
     const matricesData = data.matrices;

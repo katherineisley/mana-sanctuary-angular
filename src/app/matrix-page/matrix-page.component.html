@@ -1,1 +1,116 @@
-<p>matrix-page works!</p>
+<section class="main" *ngIf="matrix">
+  <div class="header-element">
+    <div class="header-splash"
+      style="background-image: url(&quot;../assets/splashart/{{matrix?.slug}}_a0_splashart.webp&quot;);">
+    </div>
+    <div class="header-content">
+      <div class="matrix-wrapper">
+        <div class="matrix-avatar">
+          <!-- <div class="matrix-frame" style="background-image: url(&quot;../assets/other/relic_frame.png&quot;);"> -->
+          <img src="assets/matrices/{{matrix?.slug}}_matrix.webp" alt="Character avatar">
+          <!-- </div> -->
+        </div>
+        <div class="matrix-name-element">
+          <div class="matrix-name">
+            <span>{{matrix?.name}}</span>
+          </div>
+          <div class="matrix-element">
+            <img *ngFor="let element of matrix?.element" [src]="'assets/elements/' + element + '.png'" [alt]="element">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="body-element">
+    <div class="tabs">
+      <div class="tab" data-tab="profile" (click)="setActiveTab(matrix)" [class.active]="activeTab === matrix">
+        <img src="assets/other/profile-icon.svg" alt="Profile Icon">
+        <span>Profile</span>
+      </div>
+      <div class="tab" data-tab="buff-breakdown" (click)="setActiveTab(matrix)" [class.active]="activeTab === matrix">
+        <img src="assets/other/matrix-icon.svg" alt="Buff Breakdown Icon">
+        <span>Buff Breakdown</span>
+      </div>
+      <div class="tab" data-tab="notes" (click)="setActiveTab(matrix)" [class.active]="activeTab === matrix">
+        <img src="assets/other/guide-icon.svg" alt="Notes Icon">
+        <span>Notes</span>
+      </div>
+    </div>
+    <div class="profile-part">
+      <div class="attack-wrap" *ngIf="matrix['twopc'] && matrix['twopc'].effect">
+        <!-- Display 2pc effect -->
+        <div *ngIf="matrix['twopc'] && matrix['twopc'].effect">
+          <div class="attack-heading-wrap">
+            <div class="attack-heading">
+              <div class="attack-name">2-Piece</div>
+              <div class="attack-method-wrap">
+                <div class="attack-method" *ngFor="let buff of matrix['twopc'].buffs">
+                  <div *ngIf="buff">
+                    <p>{{ buff }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div *ngFor="let effect of matrix['twopc'].effect">
+            <div class="attack-container">
+              <div class="attack-paragraph">
+                <p [innerHTML]="sanitizeHtml(effect.paragraph)"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Display 3pc effect -->
+        <div *ngIf="matrix['threepc'] && matrix['threepc'].effect">
+          <div class="attack-heading-wrap">
+            <div class="attack-heading">
+              <div class="attack-name">3-Piece</div>
+              <div class="attack-method-wrap">
+                <div class="attack-method" *ngFor="let buff of matrix['threepc'].buffs">
+                  <div *ngIf="buff">
+                    <p>{{ buff }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div *ngFor="let effect of matrix['threepc'].effect">
+            <div class="attack-container">
+              <div class="attack-paragraph">
+                <p [innerHTML]="sanitizeHtml(effect.paragraph)"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Display 4pc effect -->
+        <div *ngIf="matrix['fourpc'] && matrix['fourpc'].effect">
+          <div class="attack-heading-wrap">
+            <div class="attack-heading">
+              <div class="attack-name">4-Piece</div>
+              <div class="attack-method-wrap">
+                <div class="attack-method" *ngFor="let buff of matrix['fourpc'].buffs">
+                  <div *ngIf="buff">
+                    <p>{{ buff }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div *ngFor="let effect of matrix['fourpc'].effect">
+            <div class="attack-container">
+              <div class="attack-paragraph">
+                <p [innerHTML]="sanitizeHtml(effect.paragraph)"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="buff-breakdown-part">
+      
+    </div>
+    <div class="notes-part">
+
+    </div>
+  </div>
+</section>

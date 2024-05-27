@@ -1,0 +1,248 @@
+@import '../../styles.scss';
+
+.main {
+    position: relative;
+
+    .header-element {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        min-height: 350px;
+
+        .header-splash {
+            position: absolute;
+            overflow: visible;
+            height: 800px;
+            right: 0px;
+            top: -50px;
+            width: 550px;
+            z-index: -100;
+            background-position: top;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .header-splash_mobile {
+            display: none;
+        }
+
+        .header-content {
+            padding: 20px 20px;
+
+            .matrix-description {
+                font-size: 16px;
+                font-weight: 300;
+                font-style: italic;
+                max-width: 400px;
+            }
+
+            .matrix-wrapper {
+                display: flex;
+                flex-direction: row;
+                height: max-content;
+                align-items: center;
+
+                .matrix-avatar {
+                    margin: 0 25px 0 0;
+
+                    // .matrix-frame {
+                    //     width: 150px;
+                    //     height: 150px;
+                    //     background-position: center;
+                    //     background-size: cover;
+                    //     display: flex;
+                    //     flex-direction: column;
+                    //     align-items: center;
+                    //     justify-content: center;
+
+                    //     img {
+                    //         width: 100px;
+                    //     }
+                    // }
+
+                    img {
+                        width: 100px;
+                    }
+                }
+
+                .matrix-name-element {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+
+                    .matrix-name {
+                        color: #F5F5F5;
+                        font-size: 24px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        line-height: 24px;
+                    }
+
+                    .matrix-element {
+                        display: flex;
+                        justify-content: left;
+                        align-items: center;
+                        gap: 4px;
+                    }
+
+                    .matrix-element img {
+                        width: 36px;
+                    }
+                }
+            }
+        }
+    }
+
+    .body-element {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        padding: 20px 20px;
+        background-color: rgba($content, 0.9);
+
+        .tabs {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+
+            .tab {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                padding: 12px 20px;
+                cursor: pointer;
+                border: 1px solid var(--element-color, var(--element-gradient-color1));
+
+                // border: 1px solid transparent; // i love gradients
+                // border-image: linear-gradient(90deg, var(--element-gradient-color1), var(--element-gradient-color2)) 1;
+
+                img {
+                    width: 28px;
+                    height: 28px;
+                }
+
+                span {
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+            }
+
+            .tab.active {
+                background: var(--element-color, linear-gradient(90deg, var(--element-gradient-color1), var(--element-gradient-color2)));
+            }
+        }
+
+        p {
+            font-weight: 300;
+            margin: unset;
+        }
+
+        .buff-breakdown-part,
+        .notes-part {
+            display: none;
+        }
+
+        .profile-part {
+            .attack-wrap,
+            .slider-wrap {
+                margin: 10px 0 0 0;
+            }
+
+            .attack-wrap {
+                padding: 0px 80px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+                font-weight: 300;
+
+                ul {
+                    list-style-position: outside;
+                    padding-left: 0;
+                }
+
+                li {
+                    list-style-type: none;
+                    display: flex;
+                    align-items: flex-start;
+                }
+
+                span.number {
+                    width: 0.8rem;
+                    /* Adjust the width based on your needs */
+                    text-align: center;
+
+                }
+
+                span.text {
+                    margin-left: 0.5rem;
+                    flex: 1;
+                }
+            }
+
+            .attack-heading-wrap {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                margin-bottom: 20px;
+
+                .attack-icon {
+                    width: 80px;
+                    height: 80px;
+                }
+
+                .trait-icon {
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+
+            .attack-name {
+                font-size: 24px;
+                font-weight: 500;
+            }
+
+            .attack-container {
+                border-bottom: 1px solid $border;
+                padding: 0 0 20px;
+            }
+
+            .attack-container:last-child {
+                border-bottom: none;
+                padding: unset;
+            }
+
+            .attack-heading {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            .attack-method-wrap {
+                display: flex;
+                gap: 8px;
+            }
+
+            .attack-method {
+                padding: 2px 10px;
+                color: var(--element-color, var(--element-gradient-color1));
+                border-color: var(--element-color, var(--element-gradient-color1));
+                border-style: solid;
+                border-width: 1px;
+            }
+
+            .attack-method p {
+                font-weight: 400;
+            }
+
+            .attack-description {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin: 0 0 20px 0;
+            }
+        }
+    }
+}

@@ -32,21 +32,21 @@
 
             gap: 10px;
 
-            .unit-description {
+            .relic-description {
                 font-size: 16px;
                 font-weight: 300;
                 max-width: 600px;
                 padding: 0 0 0 10px;
             }
 
-            .unit-wrapper {
+            .relic-wrapper {
                 display: flex;
                 flex-direction: row;
                 margin: 0 40px 0 0;
                 //height: 150px;
 
 
-                .unit-avatar {
+                .relic-avatar {
                     display: flex;
                     margin: 0 25px 0 0;
                     background-position: top;
@@ -58,17 +58,17 @@
                     align-items: center; /* Vertically center the image */
                 }
 
-                .unit-avatar img {
+                .relic-avatar img {
                     width: 100px;
 
                 }
 
-                .unit-name-element {
+                .relic-name-element {
                     display: flex;
                     justify-content: center;                  
                     flex-direction: column;
 
-                    .unit-name {
+                    .relic-name {
                         color: #F5F5F5;
                         font-size: 24px;
                         font-weight: 600;
@@ -76,7 +76,7 @@
                         line-height: 24px;
                     }
 
-                    .unit-weapon-name {
+                    .relic-weapon-name {
                         color: #F5F5F5;
                         font-size: 20px;
                         font-weight: 300;
@@ -84,25 +84,25 @@
                         padding: 4px 0px;
                     }
 
-                    .unit-element {
+                    .relic-element {
                         display: flex;
                         justify-content: left;
                         align-items: center;
                         gap: 5px;
                     }
 
-                    .unit-element img {
+                    .relic-element img {
                         width: 36px;
                     }
                 }
             }
 
-            .unit-stats {
+            .relic-stats {
                 margin: 0 40px 0 0;
             }
 
-            .unit-stats,
-            .unit-roles {
+            .relic-stats,
+            .relic-roles {
                 display: flex;
                 flex-direction: column;
                 gap: 14px;
