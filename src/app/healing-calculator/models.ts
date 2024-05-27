@@ -64,4 +64,5 @@ export interface BuffSummary {
     [module: string]: {
         [type: string]: number;
     };
-}
+};
+

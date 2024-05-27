@@ -323,4 +323,40 @@
       <div class="underline"></div>
     </div>
   </div>
+  <div *ngIf="isButtonPressed"> <!-- Display only if button is pressed -->
+
+    all buffs
+    <div *ngFor="let module of buffsSummaryFrontEnd">
+      <h2>{{ module.module }}</h2>
+      <ul>
+        <li *ngFor="let buff of module.buffs">
+          Type: {{ buff.type }}, Value: {{ buff.value }}
+        </li>
+      </ul>
+    </div>
+
+
+    team buffs
+    <div *ngFor="let module of teamBuffsSummaryFrontEnd">
+      <h2>{{ module.module }}</h2>
+      <ul>
+        <li *ngFor="let buff of module.buffs">
+          Type: {{ buff.type }}, Value: {{ buff.value }}
+        </li>
+      </ul>
+    </div>
+
+    self buffs
+    <div *ngFor="let module of selfBuffsSummaryFrontEnd">
+      <h2>{{ module.module }}</h2>
+      <ul>
+        <li *ngFor="let buff of module.buffs">
+          Type: {{ buff.type }}, Value: {{ buff.value }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+
+
 </section>

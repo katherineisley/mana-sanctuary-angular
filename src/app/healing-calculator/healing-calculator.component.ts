@@ -38,15 +38,19 @@ export class HealingCalculatorComponent implements OnInit {
 
   // TITAN
   titanHealing!: number;
+  isButtonPressed: boolean = false;
 
   professionResonance: string[] = [];
   elementResonance: string[] = [];
   buffs: Buff[] = [];
   teamBuffs: Buff[] = [];
   selfBuffs: Buff[] = [];
+  buffsSummaryFrontEnd: any[] = [];
   buffsSummary: BuffSummary;
   teamBuffsSummary: BuffSummary;
   selfBuffsSummary: BuffSummary;
+  teamBuffsSummaryFrontEnd: any[] = [];
+  selfBuffsSummaryFrontEnd: any[] = [];
 
   calculatedPhysicalBase!: number;
   calculatedFlameBase!: number;
@@ -415,6 +419,74 @@ export class HealingCalculatorComponent implements OnInit {
     return summary;
   }
 
+  summarizeBuffsFrontEnd(): any[] {
+    const summary: any[] = [];
+
+    // Loop through each buff
+    this.buffs.forEach(buff => {
+      // Check if there is an existing entry for the module
+      const moduleIndex = summary.findIndex((item: any) => item.module === buff.module);
+      if (moduleIndex === -1) {
+        // If module doesn't exist in summary, add a new entry
+        summary.push({ module: buff.module, buffs: [{ type: buff.type, value: buff.value }] });
+      } else {
+        // If module exists, check if the buff type already exists
+        const buffIndex = summary[moduleIndex].buffs.findIndex((b: any) => b.type === buff.type);
+        if (buffIndex === -1) {
+          // If buff type doesn't exist, add a new entry
+          summary[moduleIndex].buffs.push({ type: buff.type, value: buff.value });
+        } else {
+          // If buff type exists, update its value
+          summary[moduleIndex].buffs[buffIndex].value += buff.value;
+        }
+      }
+    });
+
+    return summary;
+  }
+
+  summarizeBuffGroupsFrontEnd() {
+    // Loop through each buff
+    this.buffs.forEach(buff => {
+      if (buff.affect === "team") {
+        // Check if there is an existing entry for the module
+        const moduleIndex = this.teamBuffsSummaryFrontEnd.findIndex((item: any) => item.module === buff.module);
+        if (moduleIndex === -1) {
+          // If module doesn't exist in summary, add a new entry
+          this.teamBuffsSummaryFrontEnd.push({ module: buff.module, buffs: [{ type: buff.type, value: buff.value }] });
+        } else {
+          // If module exists, check if the buff type already exists
+          const buffIndex = this.teamBuffsSummaryFrontEnd[moduleIndex].buffs.findIndex((b: any) => b.type === buff.type);
+          if (buffIndex === -1) {
+            // If buff type doesn't exist, add a new entry
+            this.teamBuffsSummaryFrontEnd[moduleIndex].buffs.push({ type: buff.type, value: buff.value });
+          } else {
+            // If buff type exists, update its value
+            this.teamBuffsSummaryFrontEnd[moduleIndex].buffs[buffIndex].value += buff.value;
+          }
+        }
+      }
+      else if (buff.affect === "self") {
+        // Check if there is an existing entry for the module
+        const moduleIndex = this.selfBuffsSummaryFrontEnd.findIndex((item: any) => item.module === buff.module);
+        if (moduleIndex === -1) {
+          // If module doesn't exist in summary, add a new entry
+          this.selfBuffsSummaryFrontEnd.push({ module: buff.module, buffs: [{ type: buff.type, value: buff.value }] });
+        } else {
+          // If module exists, check if the buff type already exists
+          const buffIndex = this.selfBuffsSummaryFrontEnd[moduleIndex].buffs.findIndex((b: any) => b.type === buff.type);
+          if (buffIndex === -1) {
+            // If buff type doesn't exist, add a new entry
+            this.selfBuffsSummaryFrontEnd[moduleIndex].buffs.push({ type: buff.type, value: buff.value });
+          } else {
+            // If buff type exists, update its value
+            this.selfBuffsSummaryFrontEnd[moduleIndex].buffs[buffIndex].value += buff.value;
+          }
+        }
+      }
+    });
+
+  }
   summarizeBuffGroups() {
 
     this.buffs.forEach(buff => {
@@ -443,7 +515,9 @@ export class HealingCalculatorComponent implements OnInit {
     this.teamBuffs = this.buffs.filter(buff => buff.affect === 'team');
     this.selfBuffs = this.buffs.filter(buff => buff.affect === 'self');
     this.summarizeBuffGroups();
+    this.summarizeBuffGroupsFrontEnd();
     this.buffsSummary = this.summarizeBuffs();
+    this.buffsSummaryFrontEnd = this.summarizeBuffsFrontEnd();
 
     console.log(this.teamBuffs)
     console.log(this.selfBuffs)
@@ -497,6 +571,9 @@ export class HealingCalculatorComponent implements OnInit {
       default:
         throw new Error('Invalid element');
     }
+  }
+  getObjectKeys(obj: any): string[] {
+    return Object.keys(obj);
   }
 
   calculateHealing(unitValues: Unit[]) {
@@ -730,7 +807,7 @@ export class HealingCalculatorComponent implements OnInit {
     this.calculateAttackCritHeal();
     this.calculateHealing(unitValues);
     console.log("heal", this.totalHeal, "shield", this.totalShield)
-
+    this.isButtonPressed = true;
     this.clearData();
   }
 
