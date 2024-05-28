@@ -61,7 +61,7 @@ export class RelicsIndexComponent implements OnInit {
       'MDPS': this.MDPSRelics,
       'Buffer': this.BufferRelics,
       'Healer': this.HealerRelics,
-      'SupportBuffer': this.SupportBufferRelics,
+      'Support Buffer': this.SupportBufferRelics,
       'Shatter': this.ShatterRelics,
       'Taunt': this.TauntRelics
     };

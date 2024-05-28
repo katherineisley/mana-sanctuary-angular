@@ -12,6 +12,7 @@ export class MatrixCardComponent {
   getRarityClass(): string {
     return this.matrix.rarity.toLowerCase() === 'ssr' ? 'ssr-class' : 'sr-class';
   }
+  
   ngAfterViewInit() {
     $('.back-card').on('mouseleave', function() {
       $(this).addClass('reverse-animation');

@@ -2,6 +2,7 @@ import { Component, HostListener, OnInit, Renderer2, ElementRef, QueryList, View
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { Unit, Matrix, Relic, Heal, Buff, Data, Character, BuffSummary } from './models';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-healing-calculator',
@@ -87,10 +88,14 @@ export class HealingCalculatorComponent implements OnInit {
     "element_flamephysical": ["element_flame", "element_physical"],
   };
 
-  constructor(private route: ActivatedRoute, private http: HttpClient, private renderer: Renderer2, private el: ElementRef) {
+  constructor(private route: ActivatedRoute, private sanitizer: DomSanitizer, private http: HttpClient, private renderer: Renderer2, private el: ElementRef) {
     this.buffsSummary = {};
     this.teamBuffsSummary = {};
     this.selfBuffsSummary = {};
+  }
+
+  sanitizeHtml(html: string): SafeHtml {
+    return this.sanitizer.bypassSecurityTrustHtml(html);
   }
 
   ngOnInit() {

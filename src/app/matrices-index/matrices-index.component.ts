@@ -68,7 +68,7 @@ export class MatricesIndexComponent implements OnInit {
       'MDPS': this.MDPSMatrices,
       'Buffer': this.BufferMatrices,
       'Healer': this.HealerMatrices,
-      'SupportBuffer': this.SupportBufferMatrices,
+      'Support Buffer': this.SupportBufferMatrices,
       'Shatter': this.ShatterMatrices,
       'Taunt': this.TauntMatrices
     };
@@ -249,7 +249,7 @@ export class MatricesIndexComponent implements OnInit {
   }
 
   private showMatrices(matricesToShow: string[]): void {
-    $('.unit-wrapper[data-unit]').parent().hide();
+    $('.matrix-wrapper[data-unit]').parent().hide();
     matricesToShow.forEach(unit => {
       $(`[data-unit="${unit}"]`).parent().show();
     });
