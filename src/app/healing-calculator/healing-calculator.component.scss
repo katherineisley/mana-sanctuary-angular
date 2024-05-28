@@ -82,7 +82,7 @@
                         
                         .name, .description {
                             font-style: italic;
-                            text-transform: capitalize;
+                            // text-transform: capitalize; wtf is this for? maybe lazy copy paste
                             
                             p {
                                 margin: unset;

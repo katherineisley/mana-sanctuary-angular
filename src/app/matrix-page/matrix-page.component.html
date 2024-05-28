@@ -1,4 +1,4 @@
-<section class="main" *ngIf="matrix">
+<section class="main" [attr.data-matrix]="matrix?.slug" *ngIf="matrix">
   <div class="header-element">
     <div class="header-splash"
       style="background-image: url(&quot;../assets/splashart/{{matrix?.slug}}_a0_splashart.webp&quot;);">
@@ -16,6 +16,19 @@
           </div>
           <div class="matrix-element">
             <img *ngFor="let element of matrix?.element" [src]="'assets/elements/' + element + '.png'" [alt]="element">
+          </div>
+        </div>
+      </div>
+      <div class="matrix-links" *ngIf="validLinks > 0">
+        <h3 class="subtitle">Links</h3>
+        <div class="matrix-links-container">
+          <div class="entry" *ngIf="specificUnit">
+            <div class="link-wrapper" [routerLink]="'/unit-page/' + specificUnit.slug" style="background-image: linear-gradient(0deg, #232323 0%, rgba(35, 35, 35, 0.00) 50%), url(&quot;../assets/cards/{{specificUnit.slug}}2.webp&quot;);">
+              <div class="text-wrapper">
+                <h5 class="subtitle">{{specificUnit.name[0]}}</h5>
+                <p class="description">Weapon</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

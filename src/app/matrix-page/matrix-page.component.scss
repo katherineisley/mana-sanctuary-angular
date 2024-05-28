@@ -28,6 +28,9 @@
 
         .header-content {
             padding: 20px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
 
             .matrix-description {
                 font-size: 16px;
@@ -87,6 +90,49 @@
 
                     .matrix-element img {
                         width: 36px;
+                    }
+                }
+            }
+
+            .matrix-links-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+
+                .entry {
+                    width: 150px;
+                    height: 200px;
+
+                    .link-wrapper {
+                        cursor: pointer;
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        padding: 8px;
+                        border-radius: 10px;
+                        border: 1px solid $border;
+
+                        .text-wrapper {
+                            display: flex;
+                            flex-direction: column;
+                            align-self: flex-end;
+
+                            .subtitle, .description {
+                                margin: unset;
+                            }
+
+                            .subtitle {
+                                text-transform: uppercase;
+                            }
+
+                            .description {
+                                font-style: italic;
+                                font-weight: 300;
+                            }
+                        }
                     }
                 }
             }

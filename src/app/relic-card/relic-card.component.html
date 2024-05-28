@@ -1,64 +1,19 @@
 <div class="relic-wrapper" [attr.data-unit]="relic.slug" [routerLink]="'/relic-page/' + relic.slug">
-    <div class="top-card" style="background-image: url(&quot;../../assets/backgrounds/hexagons.png&quot;);">
-      <div class="content-wrapper" style="background-image: url(&quot;../assets/relics/{{relic.slug}}_relic.webp&quot;);">
-        <div class="{{relic.tag}}-tag">{{relic.tag}}</div>
-        <div class="details-container">
-          <h5 class="name">{{relic.name}}</h5>
-          <div class="type-and-rarity">
-            <div class="icons">
-              <img *ngFor="let role of relic.roles" [src]="processRoleSlug(role)" [alt]="role">
-              <img [src]="'assets/elements/element_' + relic.elementBoost.replace('boost', '').replace('resistance', '') + '.png'" [alt]="relic.elementBoost">
-            </div>
-            <div class="rarity" [class]="getRarityClass()">
-              {{relic.rarity.toUpperCase()}}
-            </div>
+  <div class="top-card" style="background-image: url(&quot;../../assets/backgrounds/hexagons.png&quot;);">
+    <div class="content-wrapper" style="background-image: url(&quot;../assets/relics/{{relic.slug}}_relic.webp&quot;);">
+      <div class="{{relic.tag}}-tag">{{relic.tag}}</div>
+      <div class="details-container">
+        <h5 class="name">{{relic.name}}</h5>
+        <div class="type-and-rarity">
+          <div class="icons">
+            <img *ngFor="let role of relic.roles" [src]="processRoleSlug(role)" [alt]="role">
+            <img [src]="'assets/elements/element_' + relic.elementBoost.replace('boost', '').replace('resistance', '') + '.png'" [alt]="relic.elementBoost">
+          </div>
+          <div class="rarity" [class]="getRarityClass()">
+            {{relic.rarity.toUpperCase()}}
           </div>
         </div>
       </div>
     </div>
-  
-    <!-- TOP AND BACK SHUFFLE ON HOVER -->
- <!--    <div class="back-card" style="background-image:  url(&quot;../../assets/backgrounds/hexagons.png&quot;);">
-      <div class="back-card-content">
-        <div class="bc-wrapper" *ngIf="matrix['twopc'] && matrix['twopc'].effect">
-          <div class="bc-header">
-            <div class="bc-title" [class]="getRarityClass()">2-Piece</div>
-            <div class="bc-roles">
-              <div *ngFor="let role of matrix?.twopc?.roles">
-                <img src="assets/elements/{{role}}.png" alt="{{role}} resonance">
-              </div>
-            </div>
-          </div>
-          <div *ngFor="let buff of matrix?.twopc?.buffs">
-            <div>{{buff}}</div>
-          </div>
-        </div>
-        <div class="bc-wrapper" *ngIf="matrix['fourpc'] && matrix['fourpc'].effect">
-          <div class="bc-header" >
-            <div class="bc-title" [class]="getRarityClass()">4-Piece</div>
-            <div class="bc-roles">
-              <div *ngFor="let role of matrix?.fourpc?.roles">
-                <img src="assets/elements/{{role}}.png" alt="{{role}} resonance">
-              </div>
-            </div>
-          </div>
-          <div *ngFor="let buff of matrix?.fourpc?.buffs">
-            <div>{{buff}}</div>
-          </div>
-        </div>
-        <div class="bc-wrapper" *ngIf="matrix['threepc'] && matrix['threepc'].effect">
-          <div class="bc-header" >
-            <div class="bc-title" [class]="getRarityClass()">3-Piece</div>
-            <div class="bc-roles">
-              <div *ngFor="let role of matrix?.threerpc?.roles">
-                <img src="assets/elements/{{role}}.png" alt="{{role}} resonance">
-              </div>
-            </div>
-          </div>
-          <div *ngFor="let buff of matrix?.threerpc?.buffs">
-            <div>{{buff}}</div>
-          </div>
-        </div>
-      </div>
-    </div> -->
   </div>
+</div>

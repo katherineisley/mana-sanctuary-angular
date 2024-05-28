@@ -1,4 +1,4 @@
-<section class="main" *ngIf="unit">
+<section class="main" [attr.data-unit]="unit?.slug" *ngIf="unit">
   <div class="header-element">
     <div class="header-splash"
       style="background-image: url(&quot;../assets/splashart/{{unit?.slug}}_a3_splashart.webp&quot;);">
