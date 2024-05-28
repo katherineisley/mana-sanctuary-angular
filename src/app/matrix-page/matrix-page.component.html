@@ -20,10 +20,10 @@
         </div>
       </div>
       <div class="matrix-links" *ngIf="validLinks > 0">
-        <h3 class="subtitle">Links</h3>
+        <h4 class="subtitle">Links</h4>
         <div class="matrix-links-container">
           <div class="entry" *ngIf="specificUnit">
-            <div class="link-wrapper" [routerLink]="'/unit-page/' + specificUnit.slug" style="background-image: linear-gradient(0deg, #232323 0%, rgba(35, 35, 35, 0.00) 50%), url(&quot;../assets/cards/{{specificUnit.slug}}2.webp&quot;);">
+            <div class="link-wrapper" [routerLink]="'/unit-page/' + specificUnit.slug" style="background-image: linear-gradient(0deg, #0e0d0d 0%, rgba(10, 10, 10, 0) 50%), url(&quot;../assets/cards/{{specificUnit.slug}}2.webp&quot;);">
               <div class="text-wrapper">
                 <h5 class="subtitle">{{specificUnit.name[0]}}</h5>
                 <p class="description">Weapon</p>
@@ -50,7 +50,7 @@
       </div>
     </div>
     <div class="profile-part">
-      <div class="attack-wrap" *ngIf="matrix['twopc'] && matrix['twopc'].effect">
+      <div class="attack-wrap" >
         <!-- Display 2pc effect -->
         <div *ngIf="matrix['twopc'] && matrix['twopc'].effect">
           <div class="attack-heading-wrap">

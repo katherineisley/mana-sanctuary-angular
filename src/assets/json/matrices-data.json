@@ -12,8 +12,9 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
-        ""
+      "resonance": [
+        "attack",
+        "benediction"
       ],
       "buffs": [
         "ATK %"
@@ -28,8 +29,8 @@
       "onField": false,
       "onHealingGuide": false,
       "onTankGuide": false,
-      "roles": [
-        ""
+      "resonance": [
+        "attack"
       ],
       "buffs": [
         "Final Damage %",
@@ -146,7 +147,12 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack"
+      ],
+      "buffs": [
+        "Elemental Damage %",
+        "ATK %",
+        "Movement Speed %"
       ],
       "effect": [
         {
@@ -159,7 +165,11 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack"
+      ],
+      "buffs": [
+        "Elemental Damage %",
+        "Final Damage %"
       ],
       "effect": [
         {
@@ -182,7 +192,12 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack",
+        "benediction"
+      ],
+      "buffs": [
+        "ATK %",
+        "Dodge Regen"
       ],
       "effect": [
         {
@@ -195,7 +210,11 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack"
+      ],
+      "buffs": [
+        "Elemental Damage %",
+        "Final Damage %"
       ],
       "effect": [
         {
@@ -218,7 +237,12 @@
       "onHealingGuide": true,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack",
+        "benediction"
+      ],
+      "buffs": [
+        "Elemental Damage %",
+        "Outgoing Healing"
       ],
       "effect": [
         {
@@ -234,7 +258,13 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack",
+        "benediction"
+      ],
+      "buffs": [
+        "Final Damage %",
+        "ATK %",
+        "Team ATK %"
       ],
       "effect": [
         {
@@ -260,7 +290,11 @@
       "onHealingGuide": true,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack",
+        "benediction"
+      ],
+      "buffs": [
+        "ATK %"
       ],
       "effect": [
         {
@@ -276,7 +310,10 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack"
+      ],
+      "buffs": [
+        "Elemental Damage %"
       ],
       "effect": [
         {
@@ -301,7 +338,11 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack",
+        "benediction"
+      ],
+      "buffs": [
+        "ATK %"
       ],
       "effect": [
         {
@@ -317,7 +358,11 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack"
+      ],
+      "buffs": [
+        "Crit Damage %",
+        "Final Damage %"
       ],
       "effect": [
         {
@@ -342,7 +387,10 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack"
+      ],
+      "buffs": [
+        "Elemental Damage %"
       ],
       "effect": [
         {
@@ -358,7 +406,11 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack"
+      ],
+      "buffs": [
+        "Final Damage %",
+        "ATK %"
       ],
       "effect": [
         {
@@ -383,7 +435,11 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack",
+        "benediction"
+      ],
+      "buffs": [
+        "ATK %"
       ],
       "effect": [
         {
@@ -399,7 +455,11 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack"
+      ],
+      "buffs": [
+        "Elemental Damage %",
+        "Final Damage %"
       ],
       "effect": [
         {
@@ -424,7 +484,11 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack"
+      ],
+      "buffs": [
+        "Final Damage %",
+        "Skill Damage %"
       ],
       "effect": [
         {
@@ -440,7 +504,11 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack"
+      ],
+      "buffs": [
+        "Elemental Damage %",
+        "Crit Damage %"
       ],
       "effect": [
         {
@@ -466,7 +534,11 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack",
+        "benediction"
+      ],
+      "buffs": [
+        "ATK %"
       ],
       "effect": [
         {
@@ -482,7 +554,11 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack"
+      ],
+      "buffs": [
+        "ATK %",
+        "Final Damage %"
       ],
       "effect": [
         {
@@ -507,7 +583,10 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack"
+      ],
+      "buffs": [
+        "Final Damage %"
       ],
       "effect": [
         {
@@ -523,7 +602,11 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack"
+      ],
+      "buffs": [
+        "Final Damage %",
+        "Elemental Damage %"
       ],
       "effect": [
         {
@@ -548,7 +631,10 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack"
+      ],
+      "buffs": [
+        "Final Damage %"
       ],
       "effect": [
         {
@@ -564,7 +650,10 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack"
+      ],
+      "buffs": [
+        "Elemental Damage %"
       ],
       "effect": [
         {
@@ -589,7 +678,11 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack",
+        "benediction"
+      ],
+      "buffs": [
+        "ATK %"
       ],
       "effect": [
         {
@@ -605,7 +698,10 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack"
+      ],
+      "buffs": [
+        "Elemental Damage %"
       ],
       "effect": [
         {
@@ -620,7 +716,7 @@
   {
     "slug": "gnonno",
     "name": "Gnonno",
-    "tag": "",
+    "tag": "standard",
     "element": [
       "element_physical"
     ],
@@ -630,7 +726,10 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack"
+      ],
+      "buffs": [
+        "Elemental Damage %"
       ],
       "effect": [
         {
@@ -646,7 +745,11 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack"
+      ],
+      "buffs": [
+        "Elemental Damage %",
+        "Endurance Boost"
       ],
       "effect": [
         {
@@ -671,7 +774,11 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack",
+        "benediction"
+      ],
+      "buffs": [
+        "ATK %"
       ],
       "effect": [
         {
@@ -687,7 +794,12 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack",
+        "benediction"
+      ],
+      "buffs": [
+        "Final Damage %",
+        "Team Final Damage %"
       ],
       "effect": [
         {
@@ -702,7 +814,7 @@
   {
     "slug": "icarus",
     "name": "Icarus",
-    "tag": "",
+    "tag": "standard",
     "element": [
       "element_frost"
     ],
@@ -712,7 +824,10 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack"
+      ],
+      "buffs": [
+        "Elemental Damage %"
       ],
       "effect": [
         {
@@ -728,7 +843,10 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack"
+      ],
+      "buffs": [
+        "Elemental Damage %"
       ],
       "effect": [
         {
@@ -743,7 +861,7 @@
   {
     "slug": "lan",
     "name": "Lan",
-    "tag": "",
+    "tag": "standard",
     "element": [
       "element_flame"
     ],
@@ -753,7 +871,11 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack"
+      ],
+      "buffs": [
+        "ATK %",
+        "Elemental Damage %"
       ],
       "effect": [
         {
@@ -769,7 +891,11 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack"
+      ],
+      "buffs": [
+        "Elemental Damage %",
+        "Final Damage %"
       ],
       "effect": [
         {
@@ -794,7 +920,10 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack"
+      ],
+      "buffs": [
+        "Final Damage %"
       ],
       "effect": [
         {
@@ -807,7 +936,10 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack"
+      ],
+      "buffs": [
+        "Final Damage %"
       ],
       "effect": [
         {
@@ -860,7 +992,7 @@
   {
     "slug": "fenrir",
     "name": "Fenrir",
-    "tag": "",
+    "tag": "standard",
     "element": [
       "element_volt"
     ],
@@ -901,7 +1033,7 @@
   {
     "slug": "umi",
     "name": "Umi",
-    "tag": "",
+    "tag": "standard",
     "element": [
       "element_physical"
     ],
@@ -1810,7 +1942,10 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "benediction","fortitude"
+      ],
+      "buffs":[
+        "Charge"
       ],
       "effect": [
         {
@@ -1832,7 +1967,10 @@
       "onHealingGuide": false,
       "onTankGuide": false,
       "resonance": [
-        ""
+        "attack"
+      ],
+      "buffs":[
+        "Damage %"
       ],
       "effect": [
         {

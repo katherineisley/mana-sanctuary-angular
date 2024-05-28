@@ -95,7 +95,7 @@
         "icon": "",
         "description": [
             {
-                "paragraph": "Quality of life. Something that makes playing the game easier or your execution of skills."               
+                "paragraph": "Quality of life. Something that makes playing the game easier for you."               
             }
         ]
     },
@@ -146,6 +146,16 @@
         "description": [
             {
                 "paragraph": "Void Abyss, endgame mode where a team of 4 fights against 6 stages of bosses."               
+            }
+        ]
+    },
+    {
+        "slug": "mdps",
+        "name": "MDPS",
+        "icon": "",
+        "description": [
+            {
+                "paragraph": "Main damage dealer. It refers to the weapon in your team that you will be using mostly to deal damage with."               
             }
         ]
     }

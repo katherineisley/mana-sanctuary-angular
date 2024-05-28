@@ -30,6 +30,7 @@ import { RelicCardComponent } from './relic-card/relic-card.component';
 import { RelicPageComponent } from './relic-page/relic-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSliderModule } from '@angular/material/slider';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { MatSliderModule } from '@angular/material/slider';
     HttpClientModule,
     NgxSplideModule,
     FormsModule,
-    MatSliderModule
+    MatSliderModule,
+    MatTooltipModule
   ],
   providers: [
   ],

@@ -65,21 +65,21 @@ export class MatricesIndexComponent implements OnInit {
     };
 
     const rolesMap = {
-      'MDPS': this.MDPSMatrices,
-      'Buffer': this.BufferMatrices,
-      'Healer': this.HealerMatrices,
-      'Support Buffer': this.SupportBufferMatrices,
-      'Shatter': this.ShatterMatrices,
-      'Taunt': this.TauntMatrices
+      'ATK %': this.MDPSMatrices,
+      'Final Damage %': this.BufferMatrices,
+      'Elemental Damage %': this.HealerMatrices,
+      'Damage %': this.SupportBufferMatrices,
+      'Crit Damage %': this.ShatterMatrices,
+      'Shatter %': this.TauntMatrices
     };
 
     data.forEach((matrix: any) => { // just nabs the matrix's element, rarity, and resonance and adds it to the appropriate array for the filter
       const rarityKey = matrix.rarity as keyof typeof rarityMap;
-
+      //rarity
       if (rarityMap[rarityKey]) {
         rarityMap[rarityKey].push(matrix.slug);
       }
-
+      // resonance
       const resonanceSet = new Set<string>();
       if (matrix.twopc && matrix.twopc.resonance) {
         matrix.twopc.resonance.forEach((resonance: string) => {
@@ -87,6 +87,12 @@ export class MatricesIndexComponent implements OnInit {
         });
       }
 
+      if (matrix.threepc && matrix.threepc.resonance) {
+        matrix.threepc.resonance.forEach((resonance: string) => {
+          resonanceSet.add(resonance);
+        });
+      }
+      
       if (matrix.fourpc && matrix.fourpc.resonance) {
         matrix.fourpc.resonance.forEach((resonance: string) => {
           resonanceSet.add(resonance);
@@ -102,6 +108,36 @@ export class MatricesIndexComponent implements OnInit {
         }
       });
 
+      //roles - buffs
+      const rolesSet = new Set<string>();
+      if (matrix.twopc && matrix.twopc.buffs) {
+        matrix.twopc.buffs.forEach((buffs: string) => {
+          rolesSet.add(buffs);
+        });
+      }
+
+      if (matrix.threepc && matrix.threepc.buffs) {
+        matrix.threepc.buffs.forEach((buffs: string) => {
+          rolesSet.add(buffs);
+        });
+      }
+
+      if (matrix.fourpc && matrix.fourpc.buffs) {
+        matrix.fourpc.buffs.forEach((buffs: string) => {
+          rolesSet.add(buffs);
+        });
+      }
+
+      const uniqueRolesValues = Array.from(rolesSet);
+
+      uniqueRolesValues.forEach((buffs: any) => {
+        const rolesMapKey = buffs as keyof typeof rolesMap;
+        if (rolesMap[rolesMapKey]) {
+          rolesMap[rolesMapKey].push(matrix.slug);
+        }
+      });
+
+      // elements
       matrix.element.forEach((element: any) => {
         const elementMapKey = element as keyof typeof elementMap;
         if (elementMap[elementMapKey]) {
@@ -142,14 +178,14 @@ export class MatricesIndexComponent implements OnInit {
       this.showMatrices(matricesToShow);
       this.updateActiveClasses();
     });
-/* 
+
     $('.role .wrapper img').click((event) => {
       const role = $(event.currentTarget).attr('data-role');
       this.activeRole = this.activeRole === role ? null : (role || null);
       const matricesToShow = this.getMatricesToShow(this.activeElement, this.activeRarity, this.activeType, this.activeRole);
       this.showMatrices(matricesToShow);
       this.updateActiveClasses();
-    }); */
+    }); 
   }
 
   private updateActiveClasses(): void {
@@ -165,10 +201,10 @@ export class MatricesIndexComponent implements OnInit {
     }
     if (this.activeType !== null) {
       $(`.type .wrapper img[data-type="${this.activeType}"]`).addClass('active');
-    } /*
+    } 
     if (this.activeRole !== null) {
       $(`.role .wrapper img[data-role="${this.activeRole}"]`).addClass('active');
-    } */
+    } 
   }
 
   private getMatricesToShow(
@@ -223,28 +259,28 @@ export class MatricesIndexComponent implements OnInit {
           break;
       }
     }
-/*     if (roleFilter) {
+       if (roleFilter) {
       switch (roleFilter) {
-        case 'MDPS':
+        case 'ATK %':
           filteredMatrices = filteredMatrices.filter(unit => this.MDPSMatrices.includes(unit));
           break;
-        case 'Buffer':
+        case 'Final Damage %':
           filteredMatrices = filteredMatrices.filter(unit => this.BufferMatrices.includes(unit));
           break;
-        case 'Healer':
+        case 'Elemental Damage %':
           filteredMatrices = filteredMatrices.filter(unit => this.HealerMatrices.includes(unit));
           break;
-        case 'Support Buffer':
+        case 'Damage %':
           filteredMatrices = filteredMatrices.filter(unit => this.SupportBufferMatrices.includes(unit));
           break;
-        case 'Shatter':
+        case 'Crit Damage %':
           filteredMatrices = filteredMatrices.filter(unit => this.ShatterMatrices.includes(unit));
           break;
-        case 'Taunt':
+        case 'Shatter %':
           filteredMatrices = filteredMatrices.filter(unit => this.TauntMatrices.includes(unit));
           break;
       }
-    } */
+    } 
     return filteredMatrices;
   }
 

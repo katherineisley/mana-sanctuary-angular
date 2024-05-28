@@ -64,14 +64,14 @@
                     // }
 
                     img {
-                        width: 100px;
+                        width: 120px;
                     }
                 }
 
                 .matrix-name-element {
                     display: flex;
                     flex-direction: column;
-                    gap: 4px;
+                    gap: 10px;
 
                     .matrix-name {
                         color: #F5F5F5;
@@ -93,15 +93,18 @@
                     }
                 }
             }
-
+            .subtitle{
+                font-size: 20px;
+                font-weight: 500;
+            }
             .matrix-links-container {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 gap: 20px;
 
                 .entry {
-                    width: 150px;
-                    height: 200px;
+                    width: 140px;
+                    height: 170px;
 
                     .link-wrapper {
                         cursor: pointer;
@@ -126,6 +129,7 @@
 
                             .subtitle {
                                 text-transform: uppercase;
+                                font-weight: 600;
                             }
 
                             .description {
