@@ -18,7 +18,7 @@
     "shatter": "16",
     "charge": "12",
     "roles": [
-      ""
+      "MDPS", "Buffer"
     ],
     "effects": [
       {
@@ -95,7 +95,7 @@
     "attacks": [
       {
         "name": "Shifting Stars",
-        "icon": "",
+        "icon": "jiyu_attack_1.webp",
         "method": [
           "Attack x5"
         ],
@@ -125,7 +125,7 @@
       },
       {
         "name": "Starting Move",
-        "icon": "",
+        "icon": "jiyu_attack_2.webp",
         "method": [
           "Attack x4"
         ],
@@ -152,7 +152,7 @@
       },
       {
         "name": "Review Board",
-        "icon": "",
+        "icon": "jiyu_attack_3.webp",
         "method": [
           "Attack x1",
           "Hold"
@@ -166,7 +166,7 @@
       },
       {
         "name": "Generational Leap",
-        "icon": "",
+        "icon": "jiyu_attack_4.webp",
         "method": [
           "Jump",
           "Attack x1",
@@ -186,7 +186,7 @@
     "dodge": [
       {
         "name": "Dodge",
-        "icon": "",
+        "icon": "common_dodge.webp",
         "method": [
           "Directional Dodge"
         ],
@@ -199,7 +199,7 @@
       },
       {
         "name": "Seize Advantage",
-        "icon": "",
+        "icon": "jiyu_dodge_2.webp",
         "method": [
           "Directional Dodge",
           "Attack x1"
@@ -213,7 +213,7 @@
       },
       {
         "name": "Starfall",
-        "icon": "",
+        "icon": "jiyu_dodge_3.webp",
         "method": [
           "Dodge",
           "Attack x1"
@@ -229,7 +229,7 @@
     "skill": [
       {
         "name": "Step into the Game",
-        "icon": "",
+        "icon": "jiyu_skill_1.webp",
         "description": [
           {
             "paragraph": "Leap into the air, transforming the battlefield into a Go board, and float in mid-air (unable to move during this time). Gain an elevated view for up to 10 seconds. During this time, your attacks become Go pieces and your skills are replaced with Half-Piece Advantage. Tap the Go board to place 18 pieces in order, each dealing damage equal to 250% of ATK to all targets on the board and briefly slowing them down."
@@ -244,7 +244,7 @@
       },
       {
         "name": "Half-Piece Advantage",
-        "icon": "",
+        "icon": "jiyu_skill_2.webp",
         "description": [
           {
             "paragraph": "While Step into the Game is active, manually use or automatically trigger Half-Piece Advantage at the end of the duration. Fall from the sky, dealing damage equal to 1,350% of ATK to all targets on the board. Additionally, deal damage equal to the number of Decisive Placement stacks consumed during the skill duration times 200% of ATK. The twin fish then circle outward, pushing away nearby targets and dealing damage equal to 270% of ATK."
@@ -255,7 +255,7 @@
     "discharge": [
       {
         "name": "This Ends Here",
-        "icon": "",
+        "icon": "jiyu_discharge_1.webp",
         "description": [
           {
             "paragraph": "When weapon charge is full or Phantasia is triggered, upon switching to this weapon, remove all debuffs from the Wanderer. Deploy a zone and place 1 piece in front that deals damage equal to 1,361% of ATK to nearby targets. During this time, the Wanderer is immune to damage for 1.5 seconds (not available in Apex League)."
