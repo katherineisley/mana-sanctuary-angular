@@ -75,7 +75,7 @@
             <span class="name">{{trait?.name[0]}}</span>
             <!-- {{trait.trait[1].description[0].paragraph}} -->
             <span class="description" *ngFor="let description of trait?.trait[1].description">
-              {{description.paragraph}}
+              <p [innerHTML]="sanitizeHtml(description.paragraph)"></p>
             </span>
           </div>
         </div>

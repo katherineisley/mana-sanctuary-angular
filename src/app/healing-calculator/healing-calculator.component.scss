@@ -83,6 +83,10 @@
                         .name, .description {
                             font-style: italic;
                             text-transform: capitalize;
+                            
+                            p {
+                                margin: unset;
+                            }
                         }
 
                         .name {
