@@ -1,21 +1,21 @@
 <ng-template #svgTemplateUnit>
   <img data-advancement-level="0" class="active" (click)="currentAdvancementLevel($event)" src="assets/other/locked_star.svg" alt="Locked Star">
   <svg width="25" *ngFor="let i of [1, 2, 3, 4, 5, 6]" [attr.data-advancement-level]="i" (click)="currentAdvancementLevel($event)" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M11.7527 3.59726C11.9928 3.11086 12.1129 2.86766 12.2758 2.78996C12.4176 2.72236 12.5824 2.72236 12.7242 2.78996C12.8871 2.86766 13.0072 3.11086 13.2473 3.59725L15.525 8.2118C15.5959 8.3554 15.6314 8.4272 15.6832 8.48294C15.729 8.5323 15.784 8.57229 15.8451 8.6007C15.9141 8.63278 15.9933 8.64436 16.1518 8.66752L21.2468 9.41224C21.7834 9.49067 22.0516 9.52988 22.1758 9.66092C22.2838 9.77494 22.3346 9.93161 22.314 10.0873C22.2904 10.2663 22.0962 10.4554 21.7078 10.8338L18.0223 14.4234C17.9074 14.5353 17.85 14.5913 17.8129 14.6578C17.7801 14.7168 17.7591 14.7815 17.7509 14.8485C17.7418 14.9241 17.7553 15.0032 17.7824 15.1612L18.652 20.2314C18.7437 20.7662 18.7896 21.0336 18.7034 21.1922C18.6284 21.3303 18.4951 21.4271 18.3407 21.4558C18.1631 21.4887 17.923 21.3624 17.4428 21.1099L12.8879 18.7145C12.746 18.6398 12.675 18.6025 12.6002 18.5878C12.534 18.5749 12.466 18.5749 12.3998 18.5878C12.325 18.6025 12.254 18.6398 12.1121 18.7145L7.55719 21.1099C7.07697 21.3624 6.83687 21.4887 6.65933 21.4558C6.50486 21.4271 6.37157 21.3303 6.29658 21.1922C6.2104 21.0336 6.25626 20.7662 6.34797 20.2314L7.21757 15.1612C7.24468 15.0032 7.25823 14.9241 7.24906 14.8485C7.24094 14.7815 7.21989 14.7168 7.18707 14.6578C7.15 14.5913 7.09256 14.5353 6.97767 14.4234L3.29223 10.8338C2.9038 10.4554 2.70958 10.2663 2.68594 10.0873C2.66538 9.93161 2.71618 9.77494 2.8242 9.66092C2.94835 9.52988 3.21662 9.49067 3.75315 9.41224L8.84822 8.66752C9.00667 8.64436 9.0859 8.63278 9.15489 8.6007C9.21598 8.57229 9.27098 8.5323 9.31684 8.48294C9.36863 8.4272 9.40407 8.3554 9.47495 8.2118L11.7527 3.59726Z" stroke="#F5F5F5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M11.7527 3.59726C11.9928 3.11086 12.1129 2.86766 12.2758 2.78996C12.4176 2.72236 12.5824 2.72236 12.7242 2.78996C12.8871 2.86766 13.0072 3.11086 13.2473 3.59725L15.525 8.2118C15.5959 8.3554 15.6314 8.4272 15.6832 8.48294C15.729 8.5323 15.784 8.57229 15.8451 8.6007C15.9141 8.63278 15.9933 8.64436 16.1518 8.66752L21.2468 9.41224C21.7834 9.49067 22.0516 9.52988 22.1758 9.66092C22.2838 9.77494 22.3346 9.93161 22.314 10.0873C22.2904 10.2663 22.0962 10.4554 21.7078 10.8338L18.0223 14.4234C17.9074 14.5353 17.85 14.5913 17.8129 14.6578C17.7801 14.7168 17.7591 14.7815 17.7509 14.8485C17.7418 14.9241 17.7553 15.0032 17.7824 15.1612L18.652 20.2314C18.7437 20.7662 18.7896 21.0336 18.7034 21.1922C18.6284 21.3303 18.4951 21.4271 18.3407 21.4558C18.1631 21.4887 17.923 21.3624 17.4428 21.1099L12.8879 18.7145C12.746 18.6398 12.675 18.6025 12.6002 18.5878C12.534 18.5749 12.466 18.5749 12.3998 18.5878C12.325 18.6025 12.254 18.6398 12.1121 18.7145L7.55719 21.1099C7.07697 21.3624 6.83687 21.4887 6.65933 21.4558C6.50486 21.4271 6.37157 21.3303 6.29658 21.1922C6.2104 21.0336 6.25626 20.7662 6.34797 20.2314L7.21757 15.1612C7.24468 15.0032 7.25823 14.9241 7.24906 14.8485C7.24094 14.7815 7.21989 14.7168 7.18707 14.6578C7.15 14.5913 7.09256 14.5353 6.97767 14.4234L3.29223 10.8338C2.9038 10.4554 2.70958 10.2663 2.68594 10.0873C2.66538 9.93161 2.71618 9.77494 2.8242 9.66092C2.94835 9.52988 3.21662 9.49067 3.75315 9.41224L8.84822 8.66752C9.00667 8.64436 9.0859 8.63278 9.15489 8.6007C9.21598 8.57229 9.27098 8.5323 9.31684 8.48294C9.36863 8.4272 9.40407 8.3554 9.47495 8.2118L11.7527 3.59726Z" stroke="#F5F5F5" stroke-linecap="round" stroke-linejoin="round" />
   </svg>
 </ng-template>
 
 <ng-template #svgTemplateMatrix>
   <img data-advancement-level="0" class="active" (click)="currentAdvancementLevel($event)" src="assets/other/locked_star.svg" alt="Locked Star">
   <svg width="25" *ngFor="let i of [1, 2, 3]" [attr.data-advancement-level]="i" (click)="currentAdvancementLevel($event)" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M11.7527 3.59726C11.9928 3.11086 12.1129 2.86766 12.2758 2.78996C12.4176 2.72236 12.5824 2.72236 12.7242 2.78996C12.8871 2.86766 13.0072 3.11086 13.2473 3.59725L15.525 8.2118C15.5959 8.3554 15.6314 8.4272 15.6832 8.48294C15.729 8.5323 15.784 8.57229 15.8451 8.6007C15.9141 8.63278 15.9933 8.64436 16.1518 8.66752L21.2468 9.41224C21.7834 9.49067 22.0516 9.52988 22.1758 9.66092C22.2838 9.77494 22.3346 9.93161 22.314 10.0873C22.2904 10.2663 22.0962 10.4554 21.7078 10.8338L18.0223 14.4234C17.9074 14.5353 17.85 14.5913 17.8129 14.6578C17.7801 14.7168 17.7591 14.7815 17.7509 14.8485C17.7418 14.9241 17.7553 15.0032 17.7824 15.1612L18.652 20.2314C18.7437 20.7662 18.7896 21.0336 18.7034 21.1922C18.6284 21.3303 18.4951 21.4271 18.3407 21.4558C18.1631 21.4887 17.923 21.3624 17.4428 21.1099L12.8879 18.7145C12.746 18.6398 12.675 18.6025 12.6002 18.5878C12.534 18.5749 12.466 18.5749 12.3998 18.5878C12.325 18.6025 12.254 18.6398 12.1121 18.7145L7.55719 21.1099C7.07697 21.3624 6.83687 21.4887 6.65933 21.4558C6.50486 21.4271 6.37157 21.3303 6.29658 21.1922C6.2104 21.0336 6.25626 20.7662 6.34797 20.2314L7.21757 15.1612C7.24468 15.0032 7.25823 14.9241 7.24906 14.8485C7.24094 14.7815 7.21989 14.7168 7.18707 14.6578C7.15 14.5913 7.09256 14.5353 6.97767 14.4234L3.29223 10.8338C2.9038 10.4554 2.70958 10.2663 2.68594 10.0873C2.66538 9.93161 2.71618 9.77494 2.8242 9.66092C2.94835 9.52988 3.21662 9.49067 3.75315 9.41224L8.84822 8.66752C9.00667 8.64436 9.0859 8.63278 9.15489 8.6007C9.21598 8.57229 9.27098 8.5323 9.31684 8.48294C9.36863 8.4272 9.40407 8.3554 9.47495 8.2118L11.7527 3.59726Z" stroke="#F5F5F5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M11.7527 3.59726C11.9928 3.11086 12.1129 2.86766 12.2758 2.78996C12.4176 2.72236 12.5824 2.72236 12.7242 2.78996C12.8871 2.86766 13.0072 3.11086 13.2473 3.59725L15.525 8.2118C15.5959 8.3554 15.6314 8.4272 15.6832 8.48294C15.729 8.5323 15.784 8.57229 15.8451 8.6007C15.9141 8.63278 15.9933 8.64436 16.1518 8.66752L21.2468 9.41224C21.7834 9.49067 22.0516 9.52988 22.1758 9.66092C22.2838 9.77494 22.3346 9.93161 22.314 10.0873C22.2904 10.2663 22.0962 10.4554 21.7078 10.8338L18.0223 14.4234C17.9074 14.5353 17.85 14.5913 17.8129 14.6578C17.7801 14.7168 17.7591 14.7815 17.7509 14.8485C17.7418 14.9241 17.7553 15.0032 17.7824 15.1612L18.652 20.2314C18.7437 20.7662 18.7896 21.0336 18.7034 21.1922C18.6284 21.3303 18.4951 21.4271 18.3407 21.4558C18.1631 21.4887 17.923 21.3624 17.4428 21.1099L12.8879 18.7145C12.746 18.6398 12.675 18.6025 12.6002 18.5878C12.534 18.5749 12.466 18.5749 12.3998 18.5878C12.325 18.6025 12.254 18.6398 12.1121 18.7145L7.55719 21.1099C7.07697 21.3624 6.83687 21.4887 6.65933 21.4558C6.50486 21.4271 6.37157 21.3303 6.29658 21.1922C6.2104 21.0336 6.25626 20.7662 6.34797 20.2314L7.21757 15.1612C7.24468 15.0032 7.25823 14.9241 7.24906 14.8485C7.24094 14.7815 7.21989 14.7168 7.18707 14.6578C7.15 14.5913 7.09256 14.5353 6.97767 14.4234L3.29223 10.8338C2.9038 10.4554 2.70958 10.2663 2.68594 10.0873C2.66538 9.93161 2.71618 9.77494 2.8242 9.66092C2.94835 9.52988 3.21662 9.49067 3.75315 9.41224L8.84822 8.66752C9.00667 8.64436 9.0859 8.63278 9.15489 8.6007C9.21598 8.57229 9.27098 8.5323 9.31684 8.48294C9.36863 8.4272 9.40407 8.3554 9.47495 8.2118L11.7527 3.59726Z" stroke="#F5F5F5" stroke-linecap="round" stroke-linejoin="round" />
   </svg>
 </ng-template>
 
 <ng-template #svgTemplateRelic>
   <img data-advancement-level="0" class="active" (click)="currentAdvancementLevel($event)" src="assets/other/locked_star.svg" alt="Locked Star">
   <svg width="25" *ngFor="let i of [1, 2, 3, 4, 5]" [attr.data-advancement-level]="i" (click)="currentAdvancementLevel($event)" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M11.7527 3.59726C11.9928 3.11086 12.1129 2.86766 12.2758 2.78996C12.4176 2.72236 12.5824 2.72236 12.7242 2.78996C12.8871 2.86766 13.0072 3.11086 13.2473 3.59725L15.525 8.2118C15.5959 8.3554 15.6314 8.4272 15.6832 8.48294C15.729 8.5323 15.784 8.57229 15.8451 8.6007C15.9141 8.63278 15.9933 8.64436 16.1518 8.66752L21.2468 9.41224C21.7834 9.49067 22.0516 9.52988 22.1758 9.66092C22.2838 9.77494 22.3346 9.93161 22.314 10.0873C22.2904 10.2663 22.0962 10.4554 21.7078 10.8338L18.0223 14.4234C17.9074 14.5353 17.85 14.5913 17.8129 14.6578C17.7801 14.7168 17.7591 14.7815 17.7509 14.8485C17.7418 14.9241 17.7553 15.0032 17.7824 15.1612L18.652 20.2314C18.7437 20.7662 18.7896 21.0336 18.7034 21.1922C18.6284 21.3303 18.4951 21.4271 18.3407 21.4558C18.1631 21.4887 17.923 21.3624 17.4428 21.1099L12.8879 18.7145C12.746 18.6398 12.675 18.6025 12.6002 18.5878C12.534 18.5749 12.466 18.5749 12.3998 18.5878C12.325 18.6025 12.254 18.6398 12.1121 18.7145L7.55719 21.1099C7.07697 21.3624 6.83687 21.4887 6.65933 21.4558C6.50486 21.4271 6.37157 21.3303 6.29658 21.1922C6.2104 21.0336 6.25626 20.7662 6.34797 20.2314L7.21757 15.1612C7.24468 15.0032 7.25823 14.9241 7.24906 14.8485C7.24094 14.7815 7.21989 14.7168 7.18707 14.6578C7.15 14.5913 7.09256 14.5353 6.97767 14.4234L3.29223 10.8338C2.9038 10.4554 2.70958 10.2663 2.68594 10.0873C2.66538 9.93161 2.71618 9.77494 2.8242 9.66092C2.94835 9.52988 3.21662 9.49067 3.75315 9.41224L8.84822 8.66752C9.00667 8.64436 9.0859 8.63278 9.15489 8.6007C9.21598 8.57229 9.27098 8.5323 9.31684 8.48294C9.36863 8.4272 9.40407 8.3554 9.47495 8.2118L11.7527 3.59726Z" stroke="#F5F5F5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M11.7527 3.59726C11.9928 3.11086 12.1129 2.86766 12.2758 2.78996C12.4176 2.72236 12.5824 2.72236 12.7242 2.78996C12.8871 2.86766 13.0072 3.11086 13.2473 3.59725L15.525 8.2118C15.5959 8.3554 15.6314 8.4272 15.6832 8.48294C15.729 8.5323 15.784 8.57229 15.8451 8.6007C15.9141 8.63278 15.9933 8.64436 16.1518 8.66752L21.2468 9.41224C21.7834 9.49067 22.0516 9.52988 22.1758 9.66092C22.2838 9.77494 22.3346 9.93161 22.314 10.0873C22.2904 10.2663 22.0962 10.4554 21.7078 10.8338L18.0223 14.4234C17.9074 14.5353 17.85 14.5913 17.8129 14.6578C17.7801 14.7168 17.7591 14.7815 17.7509 14.8485C17.7418 14.9241 17.7553 15.0032 17.7824 15.1612L18.652 20.2314C18.7437 20.7662 18.7896 21.0336 18.7034 21.1922C18.6284 21.3303 18.4951 21.4271 18.3407 21.4558C18.1631 21.4887 17.923 21.3624 17.4428 21.1099L12.8879 18.7145C12.746 18.6398 12.675 18.6025 12.6002 18.5878C12.534 18.5749 12.466 18.5749 12.3998 18.5878C12.325 18.6025 12.254 18.6398 12.1121 18.7145L7.55719 21.1099C7.07697 21.3624 6.83687 21.4887 6.65933 21.4558C6.50486 21.4271 6.37157 21.3303 6.29658 21.1922C6.2104 21.0336 6.25626 20.7662 6.34797 20.2314L7.21757 15.1612C7.24468 15.0032 7.25823 14.9241 7.24906 14.8485C7.24094 14.7815 7.21989 14.7168 7.18707 14.6578C7.15 14.5913 7.09256 14.5353 6.97767 14.4234L3.29223 10.8338C2.9038 10.4554 2.70958 10.2663 2.68594 10.0873C2.66538 9.93161 2.71618 9.77494 2.8242 9.66092C2.94835 9.52988 3.21662 9.49067 3.75315 9.41224L8.84822 8.66752C9.00667 8.64436 9.0859 8.63278 9.15489 8.6007C9.21598 8.57229 9.27098 8.5323 9.31684 8.48294C9.36863 8.4272 9.40407 8.3554 9.47495 8.2118L11.7527 3.59726Z" stroke="#F5F5F5" stroke-linecap="round" stroke-linejoin="round" />
   </svg>
 </ng-template>
 
@@ -25,7 +25,9 @@
       <h3 class="title">Healing - Calculator</h3>
       <h4 class="subtitle">Lorem ipsum</h4>
     </div>
-    <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa maxime sunt in, soluta dolorum aliquam reiciendis vitae omnis dicta doloremque saepe blanditiis, quam similique qui cumque accusamus, voluptate recusandae nulla?</p>
+    <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa maxime sunt in, soluta dolorum
+      aliquam reiciendis vitae omnis dicta doloremque saepe blanditiis, quam similique qui cumque accusamus, voluptate
+      recusandae nulla?</p>
   </div>
   <div class="error-notification" *ngIf="errors?.size !== undefined && errors.size > 0">
     <img class="error-icon" src="assets/other/error.svg" alt="Error">
@@ -42,7 +44,7 @@
           <img class="avatar" src="assets/simulacra/{{unit.slug}}_avatar.webp" alt="Avatar">
           <div class="wrapper">
             <span class="name">{{unit?.name[0]}}</span>
-            <span class="description">{{unit?.resonance}}</span>
+            <span class="description">{{unit?.resonance.charAt(0).toUpperCase() + unit?.resonance.slice(1)}}</span>
           </div>
         </div>
       </div>
@@ -69,7 +71,8 @@
         </ng-container>
       </div>
       <div class="all-traits" [style.display]="showAllTraits ? 'flex' : 'none'">
-        <div class="entry" [attr.data-name]="trait.slug" *ngFor="let trait of traits" (click)="changeThumbnailTrait(trait)">
+        <div class="entry" [attr.data-name]="trait.slug" *ngFor="let trait of traits"
+          (click)="changeThumbnailTrait(trait)">
           <img class="avatar" src="assets/simulacra/{{trait.slug}}_avatar.webp" alt="Avatar">
           <div class="wrapper">
             <span class="name">{{trait?.name[0]}}</span>
@@ -81,7 +84,8 @@
         </div>
       </div>
       <div class="all-relics" [style.display]="showAllRelics ? 'flex' : 'none'">
-        <div class="entry" [attr.data-name]="relic.slug" *ngFor="let relic of relics" (click)="changeThumbnailRelic(relic)">
+        <div class="entry" [attr.data-name]="relic.slug" *ngFor="let relic of relics"
+          (click)="changeThumbnailRelic(relic)">
           <img class="avatar" src="assets/relics/{{relic.slug}}_relic.webp" alt="Avatar">
           <div class="wrapper">
             <span class="name">{{relic?.name}}</span>
@@ -112,7 +116,7 @@
                 <ng-container>
                   <ng-container *ngTemplateOutlet="svgTemplateMatrix"></ng-container>
                 </ng-container>
-              </div> 
+              </div>
             </div>
             <div class="matrix-select-container">
               <div class="matrix-select" (click)="toggleMatrixSelect($event, 1, 2)">
@@ -148,7 +152,7 @@
                 <ng-container>
                   <ng-container *ngTemplateOutlet="svgTemplateMatrix"></ng-container>
                 </ng-container>
-              </div> 
+              </div>
             </div>
             <div class="matrix-select-container">
               <div class="matrix-select" (click)="toggleMatrixSelect($event, 2, 2)">
@@ -184,7 +188,7 @@
                 <ng-container>
                   <ng-container *ngTemplateOutlet="svgTemplateMatrix"></ng-container>
                 </ng-container>
-              </div> 
+              </div>
             </div>
             <div class="matrix-select-container">
               <div class="matrix-select" (click)="toggleMatrixSelect($event, 3, 2)">
@@ -230,7 +234,6 @@
                 <img src="assets/other/square_select.svg" alt="Select" class="image">
               </div>
               <div class="stars">
-                <!-- USES UNIT STARS IDK IF THIS IS A PROBLEM -->
                 <ng-container>
                   <ng-container *ngTemplateOutlet="svgTemplateRelic"></ng-container>
                 </ng-container>
@@ -322,48 +325,90 @@
   </div>
   <div class="overview">
     <div class="info-selection">
-      <!-- (click)="setActiveInfo($event)" #info -->
       <a class="info" (click)="setActiveInfo($event)" #info>Summary</a>
       <a class="info" (click)="setActiveInfo($event)" #info>Breakdown</a>
       <a class="info" (click)="setActiveInfo($event)" #info>Calculations</a>
       <a class="info" (click)="setActiveInfo($event)" #info>Possible Upgrades</a>
       <div class="underline"></div>
     </div>
+    <div class="overview-info" *ngIf="isButtonPressed">
+      <div class="summary-block" *ngIf="activeInfo === 'Summary'">
+        <div class="healing">
+          <div class="inner">
+            <div class="heading">
+              <img class="heading-icon" src="assets/other/double-cross.svg" alt="Healing Icon">
+              <h3 class="heading-title">Healing</h3>
+            </div>
+            <div class="healing-wrapper">
+              <div class="totals">
+                <div class="healing-block">
+                  <span class="healing-subtitle">Healing</span>
+                  <span class="healing-value">{{ totalHeal.toFixed(2) }}</span>
+                </div>
+                <div class="shielding-block">
+                  <span class="shielding-subtitle">Shielding</span>
+                  <span class="shielding-value">{{ totalShield.toFixed(2) }}</span>
+                </div>
+              </div>
+              <div class="singles">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buffs">
+          <div class="inner">
+            <div class="heading">
+              <img class="heading-icon" src="assets/other/double-cross.svg" alt="Buffs Icon">
+              <h3 class="heading-title">Buffs</h3>
+            </div>
+            <div class="buffs-wrapper">
+              <!-- <div class="buffs-summary" *ngIf="buffsSummaryFrontEnd">
+              <h3 class="subtitle">All</h3>
+              <div class="buffs-entry" *ngFor="let module of buffsSummaryFrontEnd">
+                <h5>{{ module.module }}</h5>
+                <div class="single-buff" *ngFor="let buff of module.buffs">
+                  <div class="buff-name">Type: {{ buff.type }}</div>
+                  <div class="buff-value">Value: {{ buff.value }}%</div>
+                </div>
+              </div>
+            </div> -->
+              <div class="buffs-summary team" *ngIf="teamBuffsSummaryFrontEnd">
+                <h3 class="subtitle">Team</h3>
+                <div class="buffs-entries" >
+                  <div class="buffs-entry" *ngFor="let module of teamBuffsSummaryFrontEnd">
+                    <h5 class="module">{{ module.module }}</h5>
+                    <div class="single-buff" *ngFor="let buff of module.buffs">
+                      <div class="buff-name">Type: {{ buff.type }}</div>
+                      <div class="buff-value">Value: {{ buff.value }}%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="buffs-summary self" *ngIf="selfBuffsSummaryFrontEnd">
+                <h3 class="subtitle">Self</h3>
+                <div class="buffs-entries">
+                  <div class="buffs-entry" *ngFor="let module of selfBuffsSummaryFrontEnd">
+                    <h5 class="module">{{ module.module }}</h5>
+                    <div class="single-buff" *ngFor="let buff of module.buffs">
+                      <div class="buff-name">Type: {{ buff.type }}</div>
+                      <div class="buff-value">Value: {{ buff.value }}%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="utility">
+          <div class="inner">
+            <div class="heading">
+              <img class="heading-icon" src="assets/other/double-cross.svg" alt="Utility Icon">
+              <h3 class="heading-title">Utility</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div *ngIf="isButtonPressed"> <!-- Display only if button is pressed -->
-
-    all buffs
-    <div *ngFor="let module of buffsSummaryFrontEnd">
-      <h2>{{ module.module }}</h2>
-      <ul>
-        <li *ngFor="let buff of module.buffs">
-          Type: {{ buff.type }}, Value: {{ buff.value }}
-        </li>
-      </ul>
-    </div>
-
-
-    team buffs
-    <div *ngFor="let module of teamBuffsSummaryFrontEnd">
-      <h2>{{ module.module }}</h2>
-      <ul>
-        <li *ngFor="let buff of module.buffs">
-          Type: {{ buff.type }}, Value: {{ buff.value }}
-        </li>
-      </ul>
-    </div>
-
-    self buffs
-    <div *ngFor="let module of selfBuffsSummaryFrontEnd">
-      <h2>{{ module.module }}</h2>
-      <ul>
-        <li *ngFor="let buff of module.buffs">
-          Type: {{ buff.type }}, Value: {{ buff.value }}
-        </li>
-      </ul>
-    </div>
-  </div>
-  
-
-
 </section>

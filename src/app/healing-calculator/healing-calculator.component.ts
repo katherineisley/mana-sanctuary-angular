@@ -493,7 +493,6 @@ export class HealingCalculatorComponent implements OnInit {
 
   }
   summarizeBuffGroups() {
-
     this.buffs.forEach(buff => {
       if (buff.affect === "team") {
         if (!this.teamBuffsSummary[buff.module]) {
@@ -513,7 +512,6 @@ export class HealingCalculatorComponent implements OnInit {
         this.selfBuffsSummary[buff.module][buff.type] += buff.value;
       }
     });
-
   }
 
   collectBuffsSummary() {
@@ -532,7 +530,6 @@ export class HealingCalculatorComponent implements OnInit {
   }
 
   calculateAttackCritHeal() {
-
     this.critPercent = this.critStat / this.critFormulaMulti;
 
     this.calculatedPhysicalBase = this.physicalAtkStat + this.physicalAtkStat * (this.buffsSummary['Attack']?.['Base'] ?? 0)
@@ -664,9 +661,7 @@ export class HealingCalculatorComponent implements OnInit {
           }
         }
       }
-    }
-
-    )
+    })
   }
 
 
@@ -767,8 +762,6 @@ export class HealingCalculatorComponent implements OnInit {
       }
     }
 
-    console.log("AAAAAAAAA", selectedUnits);
-
     // TRAIT
 
     const traitValue = (document.querySelector('.trait-select')?.getAttribute('data-trait') || '').trim();
@@ -815,32 +808,33 @@ export class HealingCalculatorComponent implements OnInit {
     }
 
     if (Array.from(this.errors).length > 0) { // dont allow the calculator to run if there are errors
+      window.scrollTo(0, 0);
       throw new Error(Array.from(this.errors).join('\n'));
     }
 
     // THE ACTUAL LOGGER
 
-    alert(
-      "HP: " + stats.hp + '\n' +
-      "Crit: " + stats.crit + '\n' +
-      "Crit Rate %: " + stats.critRate + '\n' +
-      "Crit DMG %: " + stats.critDmg + '\n' +
-      "Physical ATK: " + stats.physicalAtk + '\n' +
-      "Flame ATK: " + stats.flameAtk + '\n' +
-      "Frost ATK: " + stats.frostAtk + '\n' +
-      "Volt ATK: " + stats.voltAtk + '\n' +
-      "Increased Healing Level: " + stats.titanHealing + '\n' +
-      unitValues.map(unit => {
-        const matricesString = Array.from(unit.matricesSet.entries())
-          .map(([matrixName, matrix]) => `${matrixName}: ${matrix.starValue}`)
-          .join(', ');
-        return `${unit.simulacraName}: ${unit.starValue} (Matrices: ${matricesString})`;
-      }).join('\n') +
-      '\n' +
-      "Trait: " + traitValue + '\n' +
-      "Relics: " + relicValues.map(relic => `(${relic.relicName}: ${relic.starValue})`).join(', ') +
-      '\n'
-    );
+    // alert(
+    //   "HP: " + stats.hp + '\n' +
+    //   "Crit: " + stats.crit + '\n' +
+    //   "Crit Rate %: " + stats.critRate + '\n' +
+    //   "Crit DMG %: " + stats.critDmg + '\n' +
+    //   "Physical ATK: " + stats.physicalAtk + '\n' +
+    //   "Flame ATK: " + stats.flameAtk + '\n' +
+    //   "Frost ATK: " + stats.frostAtk + '\n' +
+    //   "Volt ATK: " + stats.voltAtk + '\n' +
+    //   "Increased Healing Level: " + stats.titanHealing + '\n' +
+    //   unitValues.map(unit => {
+    //     const matricesString = Array.from(unit.matricesSet.entries())
+    //       .map(([matrixName, matrix]) => `${matrixName}: ${matrix.starValue}`)
+    //       .join(', ');
+    //     return `${unit.simulacraName}: ${unit.starValue} (Matrices: ${matricesString})`;
+    //   }).join('\n') +
+    //   '\n' +
+    //   "Trait: " + traitValue + '\n' +
+    //   "Relics: " + relicValues.map(relic => `(${relic.relicName}: ${relic.starValue})`).join(', ') +
+    //   '\n'
+    // );
 
     this.findProfessionResonance(unitValues);
     this.findElementResonance(unitValues);
@@ -897,7 +891,7 @@ export class HealingCalculatorComponent implements OnInit {
   ngAfterViewInit() {
     const underLineInit = new Event('custom');
     Object.defineProperty(underLineInit, 'target', { value: this.infos.first.nativeElement, enumerable: true });
-    this.setActiveInfo(underLineInit); // make the underline appear under "Advancements" on page load
+    this.setActiveInfo(underLineInit); // make the underline appear under "Summary" on page load
 
     setTimeout(() => {
       $('.underline').css('transition', 'left 0.3s ease, width 0.3s ease');

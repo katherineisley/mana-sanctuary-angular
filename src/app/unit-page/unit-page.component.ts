@@ -24,7 +24,6 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
   endvalue: number = 200;
   materialsElement!: string;
 
-
   frostMappings: { [key: string]: string } = {
     'elementalCore_A': 'icecore_A',
     'upgradeA_A': 'acidproofglaze_A',
@@ -296,13 +295,10 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
     }, 1); // shit solution so it doesnt get applied mid-render
 
     $('.tabs .tab:first-child').addClass('active'); // make "Profile" tab active on page load
-
     $('.tabs .tab').click(function () {
       var tabName = $(this).data('tab');
       $(this).addClass('active').siblings().removeClass('active');
-
       $('.profile-part, .matrix-part, .materials-part, .guide-part').hide(); // Hide all parts initially
-
       switch (tabName) {
         case 'profile':
           $('.profile-part').show();

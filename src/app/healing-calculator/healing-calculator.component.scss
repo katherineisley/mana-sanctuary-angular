@@ -357,6 +357,96 @@
                 left: 0;
             }
         }
+
+        .overview-info {
+            margin: 30px 0 0 0;
+
+            .summary-block {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .healing, .buffs, .utility {
+                    padding: 0 0 20px 0;
+                    border-bottom: 1px solid $border;
+
+                    .inner {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 24px;
+
+                        .heading {
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+
+                            .heading-icon {
+                                width: 36px;
+                                height: 36px;
+                            }
+
+                            .heading-title {
+                                font-size: 24px;
+                                margin: unset;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+
+                    .buffs-wrapper {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 40px;
+
+                        .buffs-summary {
+                            display: flex;
+                            flex-direction: column;
+                            background: $content;
+                            border-radius: 10px;
+                            padding: 20px;
+
+                            .buffs-entries {
+                                display: flex;
+                                gap: 40px;
+                            }
+                        }
+                    }
+                }
+
+                :last-child {
+                    border-bottom: none;
+                    padding: unset;
+                }
+
+                .healing {
+                    .inner {
+                        .healing-wrapper {
+                            .totals {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 16px;
+
+                                .healing-block, .shielding-block {
+                                    padding: 10px 20px;
+                                    border-radius: 20px;
+                                    display: flex;
+                                    gap: 16px;
+                                    font-style: italic;
+                                }
+
+                                .healing-block {
+                                    background: green;
+                                }
+
+                                .shielding-block {
+                                    background: goldenrod;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
