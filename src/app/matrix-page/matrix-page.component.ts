@@ -54,7 +54,6 @@ export class MatrixPageComponent implements OnInit {
         "element_voltfrost": '#8C7ED0',
         "element_altered": '#0EA667',
         "element_all":  "#C49860"
-
       };
 
       if (element.length > 1) {

@@ -8,7 +8,7 @@ function colourDataPages(filePath) {
   let matchesFound = 0;
 
   const coloredContent = fileContent.replace(regex, (match, key, _, paragraph) => {
-    const coloredParagraph = paragraph.replace(/(?<!<span class=\\"num-clr\\">)\b(\d{1,3}(?:,\d{3})*(?:\.\d+)?%?|\d+(?:\.\d+)?%?)(?![^<]*<\/span>)/g, (match) => {
+    const coloredParagraph = paragraph.replace(/(?<!<span class="num-clr">)(?<![a-wyzA-Z0-9-])(\d{1,3}(?:,\d{3})*(?:\.\d+)?%?|\d+(?:\.\d+)?%?)(?![a-zA-Z0-9-])(?![^<]*<\/span>)/g, (match) => {
       matchesFound++;
       return `<span class=\\"num-clr\\">${match}</span>`;
     });
