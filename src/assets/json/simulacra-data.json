@@ -2022,8 +2022,8 @@
     "hasHP": true,
     "hasCrit": true,
     "hasRes": false,
-    "shatter": "16.00",
-    "charge": "12.00",
+    "shatter": "16",
+    "charge": "12",
     "roles": [
       "MDPS",
       "Buffer"
@@ -3015,8 +3015,8 @@
     "hasHP": true,
     "hasCrit": true,
     "hasRes": false,
-    "shatter": "14.00",
-    "charge": "12.00",
+    "shatter": "14",
+    "charge": "12",
     "roles": [
       "Buffer"
     ],
@@ -3025,7 +3025,7 @@
         "name": "Flame",
         "description": [
           {
-            "paragraph": "When the weapon is fully charged, the next attack will ignite the target for 8 seconds, dealing damage equal to 58.00% of ATK every second. While ignited, targets' healing effect is reduced by 50%."
+            "paragraph": "When the weapon is fully charged, the next attack will ignite the target for 8 seconds, dealing damage equal to 58% of ATK every second. While ignited, targets' healing effect is reduced by 50%."
           }
         ]
       },
@@ -3346,8 +3346,8 @@
     "hasHP": true,
     "hasCrit": false,
     "hasRes": true,
-    "shatter": "14.00",
-    "charge": "15.00",
+    "shatter": "14",
+    "charge": "15",
     "roles": [
       "MDPS",
       "Buffer",
@@ -3359,7 +3359,7 @@
         "name": "Volt",
         "description": [
           {
-            "paragraph": "When the weapon is fully charged, the next attack will strongly paralyze targets for 1 second and electrify them for 6 seconds, removing all their buffs and dealing damage equal to 151.00% of ATK. Electrified targets can't receive any buffs for the next 6 seconds."
+            "paragraph": "When the weapon is fully charged, the next attack will strongly paralyze targets for 1 second and electrify them for 6 seconds, removing all their buffs and dealing damage equal to 151% of ATK. Electrified targets can't receive any buffs for the next 6 seconds."
           }
         ]
       },
@@ -4499,7 +4499,7 @@
         "name": "Flame",
         "description": [
           {
-            "paragraph": "When the weapon is fully charged, the next attack will ignite the target for 8 seconds, dealing damage equal to 58.00% of ATK every second. While ignited, targets' healing effect is reduced by 50%."
+            "paragraph": "When the weapon is fully charged, the next attack will ignite the target for 8 seconds, dealing damage equal to 58% of ATK every second. While ignited, targets' healing effect is reduced by 50%."
           }
         ]
       },
@@ -4906,7 +4906,7 @@
         "name": "Volt",
         "description": [
           {
-            "paragraph": "When the weapon is fully charged, the next attack will strongly paralyze targets for 1 second and electrify them for 6 seconds, removing all their buffs and dealing damage equal to 151.00% of ATK. Electrified targets can't receive any buffs for the next 6 seconds."
+            "paragraph": "When the weapon is fully charged, the next attack will strongly paralyze targets for 1 second and electrify them for 6 seconds, removing all their buffs and dealing damage equal to 151% of ATK. Electrified targets can't receive any buffs for the next 6 seconds."
           }
         ]
       },
@@ -5194,7 +5194,7 @@
     "hasCrit": true,
     "hasRes": false,
     "shatter": "12.50",
-    "charge": "14.00",
+    "charge": "14",
     "roles": [
       "MDPS",
       "Buffer",
@@ -5205,7 +5205,7 @@
         "name": "Grievous",
         "description": [
           {
-            "paragraph": "When the weapon is fully charged, the next attack will cause enemies to become grievous for 7 seconds, increasing their damage received by 20+% and dealing damage equal to 137% of ATK. When in team play, physical damage dealt to grievous targets is increased by an additional 20%."
+            "paragraph": "When the weapon is fully charged, the next attack will cause enemies to become grievous for 7 seconds, increasing their damage received by 20% and dealing damage equal to 137% of ATK. When in team play, physical damage dealt to grievous targets is increased by an additional 20%."
           }
         ]
       },
@@ -5966,7 +5966,7 @@
     "hasCrit": true,
     "hasRes": false,
     "shatter": "9.50",
-    "charge": "8.00",
+    "charge": "8",
     "roles": [
       "MDPS",
       "Buffer",
@@ -5977,7 +5977,7 @@
         "name": "Ice shell",
         "description": [
           {
-            "paragraph": "When the weapon is fully charged, the next attack will strongly freeze targets for 2 seconds and leave them frostbitten for 6 seconds. Breaking the ice shell deals damage equal to 144.00% of ATK. While frostbitten, the target's weapon charge rate is reduced by 50%."
+            "paragraph": "When the weapon is fully charged, the next attack will strongly freeze targets for 2 seconds and leave them frostbitten for 6 seconds. Breaking the ice shell deals damage equal to 144% of ATK. While frostbitten, the target's weapon charge rate is reduced by 50%."
           }
         ]
       },
@@ -6242,7 +6242,7 @@
     "hasHP": true,
     "hasCrit": false,
     "hasRes": true,
-    "shatter": "14.00",
+    "shatter": "14",
     "charge": "8",
     "roles": [
       "Buffer",
@@ -6910,7 +6910,7 @@
         "name": "Grievous",
         "description": [
           {
-            "paragraph": "Fully charged weapons will inflict damage equal to 137.00% of ATK with the next attack, and make the target grievous for 7 seconds, taking 20% extra damage. When in team play, grevious targets recieve and additional 20% physical damage."
+            "paragraph": "Fully charged weapons will inflict damage equal to 137% of ATK with the next attack, and make the target grievous for 7 seconds, taking 20% extra damage. When in team play, grevious targets recieve and additional 20% physical damage."
           }
         ]
       },
@@ -7464,7 +7464,7 @@
         "name": "Flame",
         "description": [
           {
-            "paragraph": "When the weapon is fully charged, the next attack will ignite the target for 8 seconds, dealing damage equal to 58.00% of ATK every second. While ignited, targets' healing effect is reduced by 50%."
+            "paragraph": "When the weapon is fully charged, the next attack will ignite the target for 8 seconds, dealing damage equal to 58% of ATK every second. While ignited, targets' healing effect is reduced by 50%."
           }
         ]
       },
@@ -7711,7 +7711,7 @@
         "name": "Volt",
         "description": [
           {
-            "paragraph": "When the weapon is fully charged, the next attack will strongly paralyze targets for 1 second and electrify them for 6 seconds, removing all their buffs and dealing damage equal to 151.00% of ATK. Electrified targets can't receive any buffs for the next 6 seconds."
+            "paragraph": "When the weapon is fully charged, the next attack will strongly paralyze targets for 1 second and electrify them for 6 seconds, removing all their buffs and dealing damage equal to 151% of ATK. Electrified targets can't receive any buffs for the next 6 seconds."
           }
         ]
       },
@@ -7962,7 +7962,7 @@
     "hasHP": true,
     "hasCrit": false,
     "hasRes": true,
-    "shatter": "12.00",
+    "shatter": "12",
     "charge": "10",
     "onHealingCalculator": true,
     "roles": [
@@ -7976,7 +7976,7 @@
         "name": "Grievous",
         "description": [
           {
-            "paragraph": "When the weapon is fully charged, the next attack will cause enemies to become grievous for 7 seconds, increasing their damage received by 20+% and dealing damage equal to 137% of ATK. When in team play, physical damage dealt to grievous targets is increased by an additional 20%."
+            "paragraph": "When the weapon is fully charged, the next attack will cause enemies to become grievous for 7 seconds, increasing their damage received by 20% and dealing damage equal to 137% of ATK. When in team play, physical damage dealt to grievous targets is increased by an additional 20%."
           }
         ]
       },
@@ -9313,7 +9313,7 @@
     "hasCrit": false,
     "hasRes": true,
     "shatter": "7.5",
-    "charge": "12.00",
+    "charge": "12",
     "roles": [
       "MDPS",
       "Buffer",
@@ -9324,7 +9324,7 @@
         "name": "Grievous",
         "description": [
           {
-            "paragraph": "When the weapon is fully charged, the next attack will cause enemies to become grievous for 7 seconds, increasing their damage received by 20+% and dealing damage equal to 137% of ATK. When in team play, physical damage dealt to grievous targets is increased by an additional 20%."
+            "paragraph": "When the weapon is fully charged, the next attack will cause enemies to become grievous for 7 seconds, increasing their damage received by 20% and dealing damage equal to 137% of ATK. When in team play, physical damage dealt to grievous targets is increased by an additional 20%."
           }
         ]
       },
@@ -9565,7 +9565,7 @@
         "name": "Ice Shell",
         "description": [
           {
-            "paragraph": "When the weapon is fully charged, the next attack will strongly freeze targets for 2 seconds and leave them frostbitten for 6 seconds. Breaking the ice shell deals damage equal to 144.00% of the ATK. While frostbitten, the target's weapon charge rate is reduced by 50%."
+            "paragraph": "When the weapon is fully charged, the next attack will strongly freeze targets for 2 seconds and leave them frostbitten for 6 seconds. Breaking the ice shell deals damage equal to 144% of the ATK. While frostbitten, the target's weapon charge rate is reduced by 50%."
           }
         ]
       },
@@ -9812,7 +9812,7 @@
         "name": "Volt",
         "description": [
           {
-            "paragraph": "When the weapon is fully charged, the next attack will strongly paralyze targets for 1 second and electrify them for 6 seconds, removing all their buffs and dealing damage equal to 151.00% of ATK. Electrified targets can't receive any buffs for the next 6 seconds."
+            "paragraph": "When the weapon is fully charged, the next attack will strongly paralyze targets for 1 second and electrify them for 6 seconds, removing all their buffs and dealing damage equal to 151% of ATK. Electrified targets can't receive any buffs for the next 6 seconds."
           }
         ]
       },
@@ -10589,7 +10589,7 @@
         "name": "Volt",
         "description": [
           {
-            "paragraph": "When the weapon is fully charged, the next attack will strongly paralyze targets for 1 second and electrify them for 6 seconds, removing all their buffs and dealing damage equal to 151.00% of ATK. Electrified targets can't receive any buffs for the next 6 seconds."
+            "paragraph": "When the weapon is fully charged, the next attack will strongly paralyze targets for 1 second and electrify them for 6 seconds, removing all their buffs and dealing damage equal to 151% of ATK. Electrified targets can't receive any buffs for the next 6 seconds."
           }
         ]
       }
@@ -10678,7 +10678,7 @@
         ],
         "description": [
           {
-            "paragraph": "Hold attack button to maintain constant fire, each hit dealing 27.6 if ATK damage."
+            "paragraph": "Hold attack button to maintain constant fire, each hit dealing 27.6% of ATK damage."
           }
         ],
         "hasChain": false
@@ -10733,7 +10733,7 @@
         "icon": "samir_skill_1.webp",
         "description": [
           {
-            "paragraph": "Fire an energy field at the target location, reflecting beams within the barrier. Deal damage equal to 323.8.8% of ATK, and the last hit strongly suspends targets. Cooldown: 45 seconds."
+            "paragraph": "Fire an energy field at the target location, reflecting beams within the barrier. Deal damage equal to 323.8% of ATK, and the last hit strongly suspends targets. Cooldown: 45 seconds."
           }
         ]
       }
@@ -10744,7 +10744,7 @@
         "icon": "samir_discharge_1.webp",
         "description": [
           {
-            "paragraph": "When weapon charge is full or Phantasia is triggered, upon switching to this weapon, remove all debuffs from the wanderer, and create a Domain of Thunder at the target location, strongly suspending targets within range and dealing a total of 286% of ATK damage over 3 attacks to them while dispelling their buffs. The domain lasts for 3.5 seconds and deals damage equal to 50.9 of ATK to a target every 0.5 seconds."
+            "paragraph": "When weapon charge is full or Phantasia is triggered, upon switching to this weapon, remove all debuffs from the wanderer, and create a Domain of Thunder at the target location, strongly suspending targets within range and dealing a total of 286% of ATK damage over 3 attacks to them while dispelling their buffs. The domain lasts for 3.5 seconds and deals damage equal to 50.9% of ATK to a target every 0.5 seconds."
           }
         ]
       }
@@ -11049,7 +11049,7 @@
         "name": "Grievous",
         "description": [
           {
-            "paragraph": "When the weapon is fully charged, the next attack will cause enemies to become grievous for 7 seconds, increasing their damage received by 20+% and dealing damage equal to 137% of ATK. When in team play, physical damage dealt to grievous targets is increased by an additional 20%."
+            "paragraph": "When the weapon is fully charged, the next attack will cause enemies to become grievous for 7 seconds, increasing their damage received by 20% and dealing damage equal to 137% of ATK. When in team play, physical damage dealt to grievous targets is increased by an additional 20%."
           }
         ]
       }
@@ -11536,7 +11536,7 @@
         "name": "Ice Shell",
         "description": [
           {
-            "paragraph": "When the weapon is fully charged, the next attack will strongly freeze targets for 2 seconds and leave them frostbitten for 6 seconds. Breaking the ice shell deals damage equal to 144.00% of the ATK. While frostbitten, the target's weapon charge rate is reduced by 50%."
+            "paragraph": "When the weapon is fully charged, the next attack will strongly freeze targets for 2 seconds and leave them frostbitten for 6 seconds. Breaking the ice shell deals damage equal to 144% of the ATK. While frostbitten, the target's weapon charge rate is reduced by 50%."
           }
         ]
       },
