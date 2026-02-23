@@ -42,17 +42,17 @@ export class UnitsIndexComponent implements OnInit {
 
   private populateArrays(data: any[]): void { // i know its a funny gag to say "the code is self-documenting" but this one really should be
     const elementMap = {
-      'element_physical': this.physicalUnits,
-      'element_physicalflame': this.physicalFlameUnits,
-      'element_flame': this.flameUnits,
-      'element_flamephysical': this.flamePhysicalUnits,
-      'element_frost': this.frostUnits,
-      'element_frostvolt': this.frostVoltUnits,
-      'element_volt': this.voltUnits,
-      'element_voltfrost': this.voltFrostUnits,
-      'element_altered': this.alteredUnits
+      'physical': this.physicalUnits,
+      'physicalflame': this.physicalFlameUnits,
+      'flame': this.flameUnits,
+      'flamephysical': this.flamePhysicalUnits,
+      'frost': this.frostUnits,
+      'frostvolt': this.frostVoltUnits,
+      'volt': this.voltUnits,
+      'voltfrost': this.voltFrostUnits,
+      'altered': this.alteredUnits
     };
-    
+
     const rarityMap = {
       'SSR': this.SSRUnits,
       'SR': this.SRUnits
@@ -114,7 +114,7 @@ export class UnitsIndexComponent implements OnInit {
       this.showUnits(unitsToShow);
       this.updateActiveClasses();
     });
-    
+
     $('.rarity .wrapper span').click((event) => {
       const rarity = $(event.currentTarget).attr('data-rarity');
       this.activeRarity = this.activeRarity === rarity ? null : (rarity || null);
@@ -122,7 +122,7 @@ export class UnitsIndexComponent implements OnInit {
       this.showUnits(unitsToShow);
       this.updateActiveClasses();
     });
-    
+
     $('.type .wrapper img').click((event) => {
       const type = $(event.currentTarget).attr('data-type');
       this.activeType = this.activeType === type ? null : (type || null);
@@ -198,7 +198,7 @@ export class UnitsIndexComponent implements OnInit {
           break;
       }
     }
-    
+
     if (rarityFilter) {
       switch (rarityFilter) {
         case 'ssr':

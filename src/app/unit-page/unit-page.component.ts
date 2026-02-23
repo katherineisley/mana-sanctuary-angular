@@ -11,6 +11,8 @@ import * as $ from 'jquery';
 })
 
 export class UnitPageComponent implements OnInit, AfterViewInit {
+
+
   slug!: string;
   unit: any = {};
   matrix: any = {};
@@ -116,26 +118,26 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
 
       // Set page color depending on the element
       const elementColors: { [key: string]: string } = {
-        "element_physical": '#CF9B14',
-        "element_physicalflame": '#CF9B14',
-        "element_flame": '#E74412',
-        "element_flamephysical": '#E74412',
-        "element_frost": '#3498DB',
-        "element_frostvolt": '#3498DB',
-        "element_volt": '#8C7ED0',
-        "element_voltfrost": '#8C7ED0',
-        "element_altered": '#0EA667'
+        "physical": '#CF9B14',
+        "physicalflame": '#CF9B14',
+        "flame": '#E74412',
+        "flamephysical": '#E74412',
+        "frost": '#3498DB',
+        "frostvolt": '#3498DB',
+        "volt": '#8C7ED0',
+        "voltfrost": '#8C7ED0',
+        "altered": '#0EA667'
       };
       const materialMappings: { [key: string]: string } = {
-        "element_physical": 'element_physical',
-        "element_physicalflame": 'element_physical',
-        "element_flame": 'element_flame',
-        "element_flamephysical": 'element_flame',
-        "element_frost": 'element_frost',
-        "element_frostvolt": 'element_frost',
-        "element_volt": 'element_volt',
-        "element_voltfrost": 'element_volt',
-        "element_altered": 'element_altered'
+        "physical": 'physical',
+        "physicalflame": 'physical',
+        "flame": 'flame',
+        "flamephysical": 'flame',
+        "frost": 'frost',
+        "frostvolt": 'frost',
+        "volt": 'volt',
+        "voltfrost": 'volt',
+        "altered": 'altered'
       };
 
       this.materialsElement = materialMappings[element];
@@ -166,7 +168,7 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
     this.activeTab = element;
   }
 
-  setActiveInfo(event: Event | string | null) {    
+  setActiveInfo(event: Event | string | null) {
     if (typeof event === 'string') {
       this.activeInfo = event;
     } else if (event instanceof Event) {
@@ -253,27 +255,27 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
       const innerArray = this.totalMaterialsArray[i];
       const firstElement = innerArray[0];
 
-      if (this.materialsElement == 'element_volt') {
+      if (this.materialsElement == 'volt') {
         if (this.voltMappings.hasOwnProperty(firstElement)) {
           innerArray[0] = this.voltMappings[firstElement];
         }
       }
-      if (this.materialsElement == 'element_frost') {
+      if (this.materialsElement == 'frost') {
         if (this.frostMappings.hasOwnProperty(firstElement)) {
           innerArray[0] = this.frostMappings[firstElement];
         }
       }
-      if (this.materialsElement == 'element_flame') {
+      if (this.materialsElement == 'flame') {
         if (this.flameMappings.hasOwnProperty(firstElement)) {
           innerArray[0] = this.flameMappings[firstElement];
         }
       }
-      if (this.materialsElement == 'element_physical') {
+      if (this.materialsElement == 'physical') {
         if (this.physicalMappings.hasOwnProperty(firstElement)) {
           innerArray[0] = this.physicalMappings[firstElement];
         }
       }
-      if (this.materialsElement == 'element_altered') {
+      if (this.materialsElement == 'altered') {
         if (this.alteredMappings.hasOwnProperty(firstElement)) {
           innerArray[0] = this.alteredMappings[firstElement];
         }
@@ -284,6 +286,7 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
   }
 
   @ViewChildren('info') infos!: QueryList<ElementRef>;
+
 
   ngAfterViewInit() {
     const underLineInit = new Event('custom');

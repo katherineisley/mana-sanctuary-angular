@@ -32,6 +32,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -68,8 +69,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatSliderModule,
     MatTooltipModule
   ],
-  providers: [
-  ],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

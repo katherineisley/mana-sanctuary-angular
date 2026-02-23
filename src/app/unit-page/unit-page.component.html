@@ -1,15 +1,15 @@
 <section class="main" [attr.data-unit]="unit?.slug" *ngIf="unit">
   <div class="header-element">
     <div class="header-splash"
-      style="background-image: url(&quot;../assets/splashart/{{unit?.slug}}_a3_splashart.webp&quot;);">
+      style="background-image: url(&quot;../assets/simulacra/splash/{{unit?.splash_V3}}&quot;);">
     </div>
     <div class="header-splash_mobile">
-      <img src="assets/splashart/{{unit?.slug}}_a3_splashart.webp" alt="Character splash art"> 
+      <img src="assets/simulacra/splash/{{unit?.splash_V3}}" alt="Character splash art">
     </div>
     <div class="header-content">
       <div class="unit-wrapper">
         <div class="unit-avatar">
-          <img src="assets/simulacra/{{unit?.slug}}_avatar.webp" alt="Character avatar">
+          <img src="assets/simulacra/avatar/{{unit?.avatar}}" alt="Character avatar">
         </div>
         <div class="unit-name-element">
           <div class="unit-name">
@@ -25,7 +25,7 @@
         </div>
       </div>
       <div class="unit-description">
-        <span><i style="font-size:24px; margin: 0 6px 0 0;"class="fa fa-quote-left"></i>{{unit?.weaponDescription}}</span>
+        <span><i style="font-size:24px; margin: 0 6px 0 0;"class="fa fa-quote-left"></i>{{unit?.weapon_description}}</span>
       </div>
       <div class="unit-stats">
         <div class="stats-title">Attributes</div>
@@ -81,7 +81,7 @@
         <img src="assets/other/profile-icon.svg" alt="Profile Icon">
         <span>Profile</span>
       </div>
-      <div class="tab" data-tab="matrix" (click)="setActiveTab(unit)" [class.active]="activeTab === unit">
+      <div class="tab" data-tab="matrix" (click)="setActiveTab(unit)" [class.active]="activeTab === unit" *ngIf="unit?.server === 'gacha'">
         <img src="assets/other/matrix-icon.svg" alt="Matrix Icon">
         <span>Matrix</span>
       </div>
@@ -102,72 +102,23 @@
         <a class="info" (click)="setActiveInfo($event)" #info>Dodge</a>
         <a class="info" (click)="setActiveInfo($event)" #info>Skill</a>
         <a class="info" (click)="setActiveInfo($event)" #info>Discharge</a>
-        <a class="info" (click)="setActiveInfo($event)" #info>Trait</a>
+        <a class="info" (click)="setActiveInfo($event)" #info *ngIf="unit?.server === 'gacha'">Trait</a>
         <div class="underline"></div>
       </div>
       <div class="content-info">
         <!-- ADVANCEMENTS-->
         <div class="advancements-table" *ngIf="activeInfo === 'Advancements'">
-          <div class="advancements-table-row">
+          <div class="advancements-table-row" *ngFor="let item of unit?.stars">
             <div class="advancements-star-column">
-              1 ★
+              {{ item.name }} ★
             </div>
             <div class="advancements-text-column">
-              <div *ngFor="let item of unit?.oneStar">
-                <p [innerHTML]="sanitizeHtml(item.paragraph)"></p>
+              <div *ngFor="let desc of item.description">
+                <p [innerHTML]="sanitizeHtml(desc.paragraph)"></p>
               </div>
             </div>
           </div>
-          <div class="advancements-table-row">
-            <div class="advancements-star-column">
-              2 ★
-            </div>
-            <div class="advancements-text-column">
-              <div *ngFor="let item of unit?.twoStar">
-                <p [innerHTML]="sanitizeHtml(item.paragraph)"></p>
-              </div>
-            </div>
-          </div>
-          <div class="advancements-table-row">
-            <div class="advancements-star-column">
-              3 ★
-            </div>
-            <div class="advancements-text-column">
-              <div *ngFor="let item of unit?.threeStar">
-                <p [innerHTML]="sanitizeHtml(item.paragraph)"></p>
-              </div>
-            </div>
-          </div>
-          <div class="advancements-table-row">
-            <div class="advancements-star-column">
-              4 ★
-            </div>
-            <div class="advancements-text-column">
-              <div *ngFor="let item of unit?.fourStar">
-                <p [innerHTML]="sanitizeHtml(item.paragraph)"></p>
-              </div>
-            </div>
-          </div>
-          <div class="advancements-table-row">
-            <div class="advancements-star-column">
-              5 ★
-            </div>
-            <div class="advancements-text-column">
-              <div *ngFor="let item of unit?.fiveStar">
-                <p [innerHTML]="sanitizeHtml(item.paragraph)"></p>
-              </div>
-            </div>
-          </div>
-          <div class="advancements-table-row">
-            <div class="advancements-star-column">
-              6 ★
-            </div>
-            <div class="advancements-text-column">
-              <div *ngFor="let item of unit?.sixStar">
-                <p [innerHTML]="sanitizeHtml(item.paragraph)"></p>
-              </div>
-            </div>
-          </div>
+
         </div>
         <!-- EFFECTS -->
         <div class="attack-wrap" *ngIf="activeInfo === 'Effects'">
@@ -188,7 +139,7 @@
         <div class="attack-wrap" *ngIf="activeInfo === 'Attacks'">
           <div class="attack-container" *ngFor="let item of unit?.attacks">
             <div class="attack-heading-wrap">
-              <img class="attack-icon" src="assets/simulacra/abilities/{{item.icon}}" alt="Normal Attack Icon">
+              <img class="attack-icon" src="assets/simulacra/skills/{{item.icon}}" alt="Normal Attack Icon">
               <div class="attack-heading">
                 <div class="attack-name">{{ item.name }}</div>
                 <div class="attack-method-wrap">
@@ -220,7 +171,7 @@
         <div class="attack-wrap" *ngIf="activeInfo === 'Dodge'">
           <div class="attack-container" *ngFor="let item of unit?.dodge">
             <div class="attack-heading-wrap">
-              <img class="attack-icon" src="assets/simulacra/abilities/{{item.icon}}" alt="Dodge Attack Icon">
+              <img class="attack-icon" src="assets/simulacra/skills/{{item.icon}}" alt="Dodge Attack Icon">
               <div class="attack-heading">
                 <div class="attack-name">{{ item.name }}</div>
                 <div class="attack-method-wrap">
@@ -252,7 +203,7 @@
         <div class="attack-wrap" *ngIf="activeInfo === 'Skill'">
           <div class="attack-container" *ngFor="let item of unit?.skill">
             <div class="attack-heading-wrap">
-              <img class="attack-icon" src="assets/simulacra/abilities/{{item.icon}}" alt="Skill Icon">
+              <img class="attack-icon" src="assets/simulacra/skills/{{item.icon}}" alt="Skill Icon">
               <div class="attack-heading">
                 <div class="attack-name">{{ item.name }}</div>
               </div>
@@ -268,7 +219,7 @@
         <div class="attack-wrap" *ngIf="activeInfo === 'Discharge'">
           <div class="attack-container" *ngFor="let item of unit?.discharge">
             <div class="attack-heading-wrap">
-              <img class="attack-icon" src="assets/simulacra/abilities/{{item.icon}}" alt="Discharge Icon">
+              <img class="attack-icon" src="assets/simulacra/skills/{{item.icon}}" alt="Discharge Icon">
               <div class="attack-heading">
                 <div class="attack-name">{{ item.name }}</div>
               </div>
@@ -299,7 +250,7 @@
       </div>
     </div>
     <!-- Matrices-->
-    <div class="matrix-part">
+    <div class="matrix-part" *ngIf="unit?.server === 'gacha'">
       <div class="attack-wrap" >
         <!-- Display 2pc effect -->
         <div *ngIf="matrix['twopc'] && matrix['twopc'].effect">
@@ -436,6 +387,21 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="guide-part">
+      {{unit?.skill_description}}
+<!-- <div>
+<div chartType="radar">
+  <canvas
+    baseChart
+    attr.data="{{radarChartData}}"
+    attr.options="{{radarChartOptions}}"
+    attr.type="{{radarChartType}}"></canvas>
+
+
+</div>
+</div> -->
+
     </div>
   </div>
 </section>

@@ -1,7 +1,7 @@
 @import '../../styles.scss';
 
 .unit-wrapper {
-    // width: 100%; 
+    // width: 100%;
     // height: 220px;
     aspect-ratio: 0.75 / 1; // this might be problematic later so we'll see
     cursor: pointer;
@@ -189,7 +189,7 @@
         .reverse-animation {
             animation: onTopReverseMobile 0.5s ease-in-out forwards;
         }
-    
+
         // surely a shuffle animation will be easy, clueless
         &:hover {
             .back-card {
