@@ -31,7 +31,7 @@ import { RelicPageComponent } from './relic-page/relic-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatTooltipModule } from '@angular/material/tooltip';
-
+import { BaseChartDirective, provideCharts, withDefaultRegisterables } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -67,9 +67,12 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     NgxSplideModule,
     FormsModule,
     MatSliderModule,
-    MatTooltipModule
+    MatTooltipModule,
+    BaseChartDirective
   ],
-
+  providers: [
+    provideCharts(withDefaultRegisterables())
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

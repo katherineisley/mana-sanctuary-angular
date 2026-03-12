@@ -1,2051 +1,3379 @@
 [
   {
-    "slug": "jiyu",
-    "name": "Ji Yu",
-    "tag": "new",
+    "slug": "salidy",
+    "server": "gacha",
+    "name": "Salidy",
+    "matrix_name": "Deadly Rapture",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR64_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Sheer Value",
+      "Forsaken Girl",
+      "World Dialysis",
+      "Dire Need"
+    ],
+    "slot_desc": [
+      "Life is dictated by sheer value. That is the cold rule and I have no say.",
+      "A girl born amidst evil and poverty, living a life of deceit and pain.",
+      "Viruses carried by mice have spread across the world - regular dialysis is in need.",
+      "Hear the desperate cry for love and shelter."
+    ],
     "element": [
-      "element_flame",
-      "element_physical"
+      "flame",
+      "physical"
     ],
     "rarity": "SSR",
     "twopc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack",
-        "benediction"
-      ],
-      "buffs": [
-        "ATK %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase flame ATK by 20% / 22% / 24% / 26%. While Step into the Game is active, each move deals an additional damage equal to 120% of ATK to all targets on the board. This set effects works in the off-hand slot, and only the set with the highest star rating will take effect."
+          "paragraph": "Increases Flame Attack by 26%/28.0%/30%/32%. Active in the off-hand slot, and only the highest star rating effect is applied. Increases <span class=\"num-clr\">Bloodfin</span>'s damage by <span class=\"num-clr\">300%</span> within <span class=\"num-clr\">10</span>s of casting <span class=\"num-clr\">Deadly Devour</span>."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack"
-      ],
-      "buffs": [
-        "Final Damage %",
-        "Crit Damage %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase final damage by 22% / 24% / 26% / 28%. When Freeflow is equipped, increase crit damage by 10%. Upon entering combat, gain an additional 9 stacks of Decisive Placement. This set effect works in the off-hand slot, and only the set effect with the highest star rating will take effect."
+          "paragraph": "Increases Flame Damage by 22%/26%/30%/34%. When <span class=\"num-clr\">Bloodfin</span> is equipped, grants an extra 17% Flame Damage bonus."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "lana",
+    "server": "gacha",
+    "name": "Lana",
+    "matrix_name": "Endless",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR63_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Me and Me",
+      "Cries and Laughter",
+      "Love and Fear",
+      "Leave and Reunion"
+    ],
+    "slot_desc": [
+      "- I don't like you. - But I like you.",
+      "- Human memories are full of noise: all those cries and laughter ever since they were born. - Isn't that fun?",
+      "- They've always had fear, but sometimes that fear just disappears. Why is that? - Because of love. That's what Agleia said.",
+      "- Humans hate loneliness, but they wouldn't join me even when I invite them; they'd rather stay alone. How confusing. - Indeed!"
+    ],
+    "element": [
+      "altered"
+    ],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increases all ATK by 26%/28.0%/30%/32%. Reduces Endurance consumption of <span class=\"num-clr\">Infinite Compute</span>. Ignores 15% of the target's Crit Resistance when equipped with <span class=\"num-clr\">Evolution Cube</span>."
+        }
+      ]
+    },
+    "threepc": {},
+    "fourpc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increases Final DMG by 13%/17%/21%/25%. When equipped with <span class=\"num-clr\">Evolution Cube</span>, increases all Element Damage by 6% and Crit Damage by 19%. Active in the off-hand slot, and only the highest star rating effect is applied."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "veronika",
+    "server": "gacha",
+    "name": "Veronika",
+    "matrix_name": "Kneel Before",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR62_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Veronika: Logic Prime",
+      "Veronika: Final Bastion",
+      "Veronika: Crownfall",
+      "Veronika: Heartfire"
+    ],
+    "slot_desc": [
+      "Every teardrop is perfectly calculated as part of a grand plan.",
+      "She takes fate by the throat until she's sure she has fate on her side.",
+      "She's come through thick and thin, only to be prepared for the crown.",
+      "She's here all thanks to the ever-burning fire in her heart."
+    ],
+    "element": [
+      "volt",
+      "frost"
+    ],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increases Volt Attack by 26%/28.0%/30%/32%, Rapid Salvo's total damage to 3600%, Phantom Strike's total damage to 7800%, and Zero Lock's total damage to 22500%. Active in the off-hand slot and only the highest star rating effect is applied."
+        }
+      ]
+    },
+    "threepc": {},
+    "fourpc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increases Final Damage by 20%/24%/28.0%/32%. Grants 15% Volt Damage when Visios is deployed. Active in the off-hand slot and only the highest star rating effect is applied."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "nanto",
+    "server": "gacha",
+    "name": "Nanto",
+    "matrix_name": "Edgewalker",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR61_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Nanto: Infinite Lineage",
+      "Nanto: Total Trust",
+      "Nanto: True Desire",
+      "Nanto: Faded Echo"
+    ],
+    "slot_desc": [
+      "Never hesitant to use colleagues as stepping stones — a silent rebel.",
+      "Skilled at disarming suspicion with a smile — a master of disguise.",
+      "Always moving forward without hesitation — a merciless executor.",
+      "Keeping a long-faded past in the depths of heart — an unexpected nostalgic."
+    ],
+    "element": [
+      "physical",
+      "flame"
+    ],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increases Physical Attack by 26%/28.0%/30%/32%, the 1st strike of <span class=\"num-clr\">Eclipse Tempest</span>'s total damage to 2,400%, and the 2nd strike of <span class=\"num-clr\">Eclipse Tempest</span>'s total damage to 3,750%."
+        }
+      ]
+    },
+    "threepc": {},
+    "fourpc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increases all Elemental Damage by 18%/22%/26%/30%. Increases Final Damage by <span class=\"num-clr\">15%</span> when Frostfang is deployed."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "helene",
+    "server": "gacha",
+    "name": "Helene",
+    "matrix_name": "Endless Whispers",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR60_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Helene: Puppet Gala",
+      "Helene: Time Cage",
+      "Helene: Cosmic Sojourn",
+      "Helene: Memory Echo"
+    ],
+    "slot_desc": [
+      "Welcome to the Puppet Gala. Tea is ready, please have a seat.",
+      "I feel like I have been here before, about ten years ago. My older brother, he died on this very day.",
+      "The Black Moon Gang's journey will finally calm, and everyone will be able to return home.",
+      "Brother, Father, Mother, ah, it was all just a dream."
+    ],
+    "element": [
+      "frost"
+    ],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increases Frost ATK by 26%/28.0%/30%/32% and Radiant Resonance's multiplier to 36,000%. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+        }
+      ]
+    },
+    "threepc": {},
+    "fourpc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increases Final Damage by 18%/22%/26%/30%. Equipping Pollux grants an additional 11% Frost Damage. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "lechesis",
+    "server": "gacha",
+    "name": "Lechesis",
+    "matrix_name": "Life Fugue",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR59_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Lechesis: Final Pause",
+      "Lechesis: Blind Roamer",
+      "Lechesis: Dance of Life",
+      "Lechesis: Healing Touch"
+    ],
+    "slot_desc": [
+      "As long as even one breath remains, there's hope and a reason to keep fighting.",
+      "To forget the past, to forget why you stand here—that's like wandering blind.",
+      "So dance freely, sing loudly, and celebrate the beauty of life.",
+      "And when weariness comes, remember—you can always find comfort in my embrace."
+    ],
+    "element": [
+      "flame"
+    ],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increases all ATK by 26%/28.0%/30%/32% and Radiant Shock damage to 19075%. Increases healing effect by 25%. Active in the off-hand slot and only the highest star rating effect is applied."
+        }
+      ]
+    },
+    "threepc": {},
+    "fourpc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increases Final Damage by 16%/20%/24%/28.0% when Eternal Salvation is deployed. While non-Benediction Resonance is active, increases all Elemental Damage by 14.0%. While Benediction Resonance is active, increases Final Damage equal to Lechesis's highest attribute Base Attack divided by 200,000, capped at 30% across the team. Active in the off-hand slot and only the highest star rating effect is applied."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "hipper",
+    "server": "gacha",
+    "name": "Hipper",
+    "matrix_name": "Starlit Future",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR58_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Hipper: Beyond Stars",
+      "Hipper: Chaos Spiral",
+      "Hipper: Duty Bound",
+      "Hipper: Silent Bond"
+    ],
+    "slot_desc": [
+      "Beyond those distant stars lies an even vaster future.",
+      "Past pains now drift as silent phantoms across the universe.",
+      "Forward motion is the only way to dispel the shadows haunting the OreZero Zone.",
+      "The wellspring of perseverance flows from the mine that nurtured the Kailians."
+    ],
+    "element": [
+      "volt"
+    ],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increases Volt ATK by 26%/28.0%/30%/32%. Increases the damage of <span class=\"num-clr\">AF-010 Servion</span>'s fifth normal attack to 1,588%. Increases the multiplier of the fifth enhanced normal attack to 4,990%."
+        }
+      ]
+    },
+    "threepc": {},
+    "fourpc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increases Volt DMG by 11%/13%/15%/17% When equipped with <span class=\"num-clr\">AF-010 Servion</span>, increases Crit DMG by 11%/13%/15%/17% and Final DMG by %13%. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "aster",
+    "server": "gacha",
+    "name": "Aster",
+    "matrix_name": "Nebula Aria",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR57_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Aster: Stellar Prelude",
+      "Aster: Cosmic Aria",
+      "Aster: Fearless Echo",
+      "Aster: Galactic Symphony"
+    ],
+    "slot_desc": [
+      "With breathtaking views ahead, courage follows.",
+      "In boundless exploration, I am not alone.",
+      "With every step, endless progress.",
+      "Illuminating the deep sky, it is here."
+    ],
+    "element": [
+      "physical"
+    ],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increases Physical ATK by 26%/28.0%/30%/32%. Increases Final Damage by 3% for 60s for each target killed, up to 2 stacks. Active in the off-hand slot and only the highest star rating effect is applied."
+        }
+      ]
+    },
+    "threepc": {},
+    "fourpc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increases all Elemental Damage by 21%/25%/29.0%/33%. Increases Final Damage by an extra 14.0% when Twin Stars is deployed. Increases Shatter by 100% while Fortitude Resonance is active. Active in the off-hand slot and only the highest star rating effect is applied."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "lyncis",
+    "server": "gacha",
+    "name": "Lyncis",
+    "matrix_name": "New Show",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR56_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Lyncis: Stardust Dream",
+      "Lyncis: Freedom Legacy",
+      "Lyncis: Unique Expertise",
+      "Lyncis: Emotion Insight"
+    ],
+    "slot_desc": [
+      "If it's shimmering, it's captivating.",
+      "United we stand, the heart of our mining community.",
+      "Originality is priceless.",
+      "Streamer rule No. 1: Always delight the audience."
+    ],
+    "element": [
+      "frost"
+    ],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increases frost ATK by 26%/28.0%/30%/32% and <span class=\"num-clr\">Focused Impact</span>'s damage to <span class=\"num-clr\">5250%</span>. This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+        }
+      ]
+    },
+    "threepc": {},
+    "fourpc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increases frost damage by 18%/22%/26%/30%. Lyncis gains 10% extra frost damage for <span class=\"num-clr\">30</span> seconds after casting the skill. This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "carrot",
+    "server": "gacha",
+    "name": "Carrot",
+    "matrix_name": "Unexpected Guests",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR55_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Viva Pirate",
+      "Granny Lola",
+      "Mechanical Genius",
+      "Carrot"
+    ],
+    "slot_desc": [
+      "We're the Wednesday Crew, the toughest in the whole universe!",
+      "Grandma is the best to me. No one is allowed to hurt her!",
+      "I can make more than just SLAP. I've got plenty of creations up my sleeve!",
+      "There's no way anyone in the world doesn't like carrots!"
+    ],
+    "element": [
+      "flame"
+    ],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increases flame ATK by 26%/28.0%/30%/32% and <span class=\"num-clr\">Loud Slap</span> damage to 9800%. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+        }
+      ]
+    },
+    "threepc": {},
+    "fourpc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increases Flame damage by 24%/28.0%/32%/36%. Increases final damage by an extra 10% for 30s after casting <span class=\"num-clr\">Carrot Kombat</span>. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "antoria",
+    "server": "gacha",
+    "name": "Antoria",
+    "matrix_name": "Watchman",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR54_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Antoria (Defense Force)",
+      "Antoria (The Executor)",
+      "Antoria (The Authorizer)",
+      "Antoria (Commander)"
+    ],
+    "slot_desc": [
+      "A brave heroine, standing steadfast for the people.",
+      "The guardian of Aida, carrying out the plan.",
+      "The keeper of the key to the future.",
+      "The master of strategy, guiding the troops."
+    ],
+    "element": [
+      "volt"
+    ],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increases Volt Attack by 24%/26%/28.0%/30%. Increases S.A.S Support Strike damage to 2,700% of ATK. Reduces endurance consumption for Dodge - Highspeed Cruise Mode - Cloud by 20%. This effect applies in the off-hand slot, and only the set with the highest star rating takes effect."
+        }
+      ]
+    },
+    "threepc": {},
+    "fourpc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increases Volt Damage by 18%/22%/26%/30%. Equipping Requiem grants an additional 12% Final Damage. This set effect applies in the off-hand slot, and only the set with the highest star rating takes effect."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "nemesisvoidpiercer",
+    "server": "gacha",
+    "name": "Nemesis Voidpiercer",
+    "matrix_name": "Heart of Humanity",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR53_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Voidpiercer: Heart of Dreams",
+      "Voidpiercer: Heart of Wander",
+      "Voidpiercer: Heart of Bonds",
+      "Voidpiercer: Heart of Unity"
+    ],
+    "slot_desc": [
+      "Hope arises from expectations or dreams.",
+      "Your wanderings together were her everything.",
+      "Her guilt toward Shirli never faded.",
+      "The hope of unity with you will never waver."
+    ],
+    "element": [
+      "altered"
+    ],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increase all elemental ATK by 26%/28.0%/30%/32%, and ignore 35% of the target's shield when equipped with Star of Oblivion. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+        }
+      ]
+    },
+    "threepc": {},
+    "fourpc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increase final damage by 10%/14.0%/18%/22%. When equipped with Star of Oblivion, increase final damage by 8% and crit damage by 15%. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "claudiastormeye",
+    "server": "gacha",
+    "name": "Claudia Storm Eye",
+    "matrix_name": "Blazing Lotus",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR52_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Claudia: Day of Reckoning",
+      "Claudia: Storm's Embrace",
+      "Claudia: Bathed in Flames",
+      "Claudia: Heart's Haven"
+    ],
+    "slot_desc": [
+      "With this sharp blade, I sever the roots of evil.",
+      "A raging storm that sweeps away even the past.",
+      "Undying faith.",
+      "For the tomorrow I yearn for."
+    ],
+    "element": [
+      "physical"
+    ],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increase physical ATK by 24%/26%/28.0%/30% and <span class=\"num-clr\">Blade of Unity</span> damage to <span class=\"num-clr\">4800%</span>. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+        }
+      ]
+    },
+    "threepc": {},
+    "fourpc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increase all elemental damage by 10%/14.0%/18%/22%. When equipped with <span class=\"num-clr\">Scarlet Gale</span>, increase final damage by <span class=\"num-clr\">22%</span>. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "grayfox",
+    "server": "gacha",
+    "name": "Gray Fox",
+    "matrix_name": "Source of Magic",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR51_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Gray Fox: Independence",
+      "Gray Fox: Flesh & Blood",
+      "Gray Fox: Price of Growth",
+      "Gray Fox: Mutual Feelings"
+    ],
+    "slot_desc": [
+      "The growth of a witch stems from her solitary journey.",
+      "Time will come and go, but family is forever.",
+      "The adherence to truth comes at a cost.",
+      "The meaning of friendship lies in shared feelings."
+    ],
+    "element": [
+      "frost"
+    ],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "When non-Benediction Resonance is active, increase frost ATK by 24%/26%/28.0%/30%. When Benediction Resonance is active, increase all attack by 24%/26%/28.0%/30%. Increase healing by 20%. When dealing damage for the first time in combat, gain 1000 weapon charge. Can only trigger once every 15 seconds. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+        }
+      ]
+    },
+    "threepc": {},
+    "fourpc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "After using Spacetime Spark, increases Final Damage by 11%/15%/19%/23%. If Benediction Resonance is inactive, increases Frost Damage by 20%. If Benediction Resonance is active, increases the Wanderer's and nearby allies' Crit Rate by 20% and Crit Damage by 12%. These effects last for 40 seconds. This set effect applies in the off-hand slot, and only the set with the highest star rating takes effect."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "asurada",
+    "server": "gacha",
+    "name": "Asurada",
+    "matrix_name": "Interpretation",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR50_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Asurada: Self-Cultivation",
+      "Asurada: Beyond Recall",
+      "Asurada: Best Performance",
+      "Asurada: Safe Distance"
+    ],
+    "slot_desc": [
+      "As the heir of the Todd family, I try to maintain a certain elegance and be polite before using force.",
+      "Immersing oneself in memories only brings remorse and pain. Life should move forward.",
+      "To spend my life completing the perfect performance—this is the destiny I cannot abandon.",
+      "If you don't want to lose yourself in your many roles, you must remain calm at all times and maintain a certain sense of detachment."
+    ],
+    "element": [
+      "flame"
+    ],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increase flame ATK by 26%/28.0%/30%/32% and Unstoppable Momentum multiplier to 525.4%. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+        }
+      ]
+    },
+    "threepc": {},
+    "fourpc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increase all elemental damage by 16%/18%/20%/22%. When equipped with <span class=\"num-clr\">Hellfire</span>, increase final damage by an additional 16%/18%/20%/22%. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "merylironheart",
+    "server": "gacha",
+    "name": "Meryl Ironheart",
+    "matrix_name": "Blade's Edge",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR49_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Meryl Ironheart: Relentless",
+      "Meryl Ironheart: Refined",
+      "Meryl Ironheart: Defender",
+      "Meryl Ironheart: Defiant"
+    ],
+    "slot_desc": [
+      "Driven by her father's dying wish, Meryl remains steadfast in her relentless search.",
+      "Polish your blade, waiting patiently until the time is right. Then, let your strike be as thunderous as a storm.",
+      "Having reunited with her family, Meryl was determined to protect this precious hope.",
+      "As an agent, Meryl was prepared to fight against all nefarious forces to the very end."
+    ],
+    "element": [
+      "volt"
+    ],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increase volt damage by 14.0%/16%/18%/20%. Each time <span class=\"num-clr\">Chain Static</span> is triggered, increase crit damage by <span class=\"num-clr\">6%</span> for <span class=\"num-clr\">5</span> seconds, stacking up to <span class=\"num-clr\">4</span> times. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+        }
+      ]
+    },
+    "threepc": {},
+    "fourpc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "When <span class=\"num-clr\">Siege Edge</span> is equipped, increase volt ATK by 21%/24%/27%/30%. When an enemy inflicted with <span class=\"num-clr\">Static</span> is hit by <span class=\"num-clr\">Magnetic Tempest</span>, it enters the Amplification state for <span class=\"num-clr\">20</span> seconds, taking <span class=\"num-clr\">250%</span> damage every second (this is counted as skill damage). When <span class=\"num-clr\">Fortitude Resonance</span> is triggered, increase the Wanderer's crit rate by <span class=\"num-clr\">7.0%</span> and decrease nearby enemies' crit resistance by <span class=\"num-clr\">8%</span>. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "nola",
+    "server": "gacha",
+    "name": "Nola",
+    "matrix_name": "Night's Splendor",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR48_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Nola: Raging Wind",
+      "Nola: In Memorium",
+      "Nola: Revelation",
+      "Nola: Cherishing"
+    ],
+    "slot_desc": [
+      "Increase horsepower, pursue speed.",
+      "What kind of person was I in the past?",
+      "A badge, revealing my past.",
+      "All of you are the ones I cherish. I won't allow anyone to harm any of you."
+    ],
+    "element": [
+      "altered"
+    ],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "When Rumble is equipped, increase all ATK by 24%/26%/28.0%/30% and increase Extreme Charge's multiplier to 400% of ATK. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+        }
+      ]
+    },
+    "threepc": {},
+    "fourpc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increase all elemental damage by 21%/24%/27%/30%. After entering Superspeed Mode, additionally increase all elemental damage by 10% for 30 seconds. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "anka",
+    "server": "gacha",
+    "name": "Anka",
+    "matrix_name": "Wednesday",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR47_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Anka: Together as One",
+      "Anka: Ghost of the Past",
+      "Anka: Stealing Justice",
+      "Anka: Blood Boiling"
+    ],
+    "slot_desc": [
+      "It's because the day the group was founded was a Wednesday, so it was named Wednesday.",
+      "She stood before you once again, smiling as she called out the name that no longer exists.",
+      "I will reclaim the stolen truth for everyone!",
+      "I can't wait to get into action! I just want to knock all the bad guys silly NOW!"
+    ],
+    "element": [
+      "physical"
+    ],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increase physical ATK by 22%/24%/26%/28.0% and heavy attack damage to 1080%. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+        }
+      ]
+    },
+    "threepc": {},
+    "fourpc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "The damage interval of the Disorient effect is reduced to 0.5 seconds. Increase final damage by 21%/24%/27%/30%. After equipping <span class=\"num-clr\">Poppin' Stick</span>, additionally increase crit damage by 15%. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "roslyn",
+    "server": "gacha",
+    "name": "Roslyn",
+    "matrix_name": "Heartetched",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR46_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Roslyn: The Path of Righteousness",
+      "Roslyn: Lingering Dreams of the Heart",
+      "Roslyn: Creed of Justice",
+      "Roslyn: True Friendship"
+    ],
+    "slot_desc": [
+      "The key to walking down the right path lies in conducting oneself with integrity and honor.",
+      "My childhood memories still run vividly in my mind, and the old promises still linger in my heart.",
+      "An unwritten creed, an internalized truth.",
+      "True friendship never dims with the passage of time."
+    ],
+    "element": [
+      "frost"
+    ],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increase frost damage by 12%/14.0%/16%/18%. After a target's <span class=\"num-clr\">Icebound</span> is removed, receive bleed damage equal to 200 times the Wanderer's ATK every second for 10 seconds (this damage is unaffected by any damage-boosting effects). This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+        }
+      ]
+    },
+    "threepc": {},
+    "fourpc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "For every 1 frost weapon equipped, increase final damage by 5%. After entering <span class=\"num-clr\">Bitter Cold</span>, increase frost ATK by 30%/32%/34%/36% for 40 seconds. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "jiyu",
+    "server": "gacha",
+    "name": "Ji Yu",
+    "matrix_name": "Profound Insight",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR45_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Ji Yu: Wind Rises",
+      "Ji Yu: Across States",
+      "Ji Yu: Above the Clouds",
+      "Ji Yu: Remnant Memories"
+    ],
+    "slot_desc": [
+      "When the winds rise again, nothing remains as it once was.",
+      "Bamboo breezes sweep through Joltville and snowstorms blanket Marshville. All is seen and etched on her heart.",
+      "Her sword targets the Darkness, her spirit rising high above the clouds.",
+      "Warm wine and a board ready to go, yet the promises are unfulfilled."
+    ],
+    "element": [
+      "flame"
+    ],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increase flame ATK by 20%/22%/24%/26%. While <span class=\"num-clr\">Step into the Game</span> is active, each move deals an additional damage equal to <span class=\"num-clr\">120%</span> of ATK to all targets on the board. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+        }
+      ]
+    },
+    "threepc": {},
+    "fourpc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increases final damage by 22%/24%/26%/28.0%. Increases crit damage by 10% when Freeflow is equipped. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     }
   },
   {
     "slug": "rei",
+    "server": "gacha",
     "name": "Rei",
-    "tag": "new",
+    "matrix_name": "Rei's Refrain",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR44_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Rei Ayanami: The Power of Bonds",
+      "Rei Ayanami: Soul's Vessel",
+      "Rei Ayanami: Oath of Protection",
+      "Rei Ayanami: Under Ice & Snow"
+    ],
+    "slot_desc": [
+      "Let the bond with others become the strength to fight!",
+      "Their physical composition and appearance are the same, but the difference is the people they have met and the lives they have lived.",
+      "Protecting without regrets is the meaning of her existence.",
+      "Can you feel the warmth of the soul under the ice and snow..."
+    ],
     "element": [
-      "element_volt",
-      "element_frost"
+      "volt"
     ],
     "rarity": "SSR",
     "twopc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack"
-      ],
-      "buffs": [
-        "Elemental Damage %",
-        "RES Ignore %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase volt and frost damage by 10% / 12% / 14% / 16%. After equipping Salvation, the Wanderer ignores 15% of targets' volt resistance and frost resistance (each element's total resistance ignored cannot exceed 50%). This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+          "paragraph": "Increase volt and frost damage by 10%/12%/14.0%/16%. After equipping Salvation, the Wanderer ignores 15% of targets' volt resistance and frost resistance (each element's total resistance ignored cannot exceed 50%). This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack"
-      ],
-      "buffs": [
-        "Final Damage %",
-        "ATK %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase final damage by 22% / 24% / 26% / 28%. After Salvation deals damage, increase volt and frost ATK by 12% for 5 seconds. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+          "paragraph": "Increase final damage by 22%/24%/26%/28.0%. After Salvation deals damage, increase volt and frost ATK by 12% for 5 seconds. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     }
   },
   {
     "slug": "asuka",
+    "server": "gacha",
     "name": "Asuka",
-    "tag": "new",
+    "matrix_name": "Future",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR43_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Asuka: EVA-02",
+      "Asuka: Bonds",
+      "Asuka: Cherish",
+      "Asuka: Pride"
+    ],
+    "slot_desc": [
+      "The world's first true Evangelion!",
+      "It feels good to be together with others.",
+      "I will fight with all my strength for the present.",
+      "I am Asuka, the star of tomorrow!"
+    ],
     "element": [
-      "element_physical",
-      "element_flame"
+      "physical"
     ],
     "rarity": "SSR",
     "twopc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack",
-        "benediction"
-      ],
-      "buffs": [
-        "ATK %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase physical and flame ATK by 20% / 22% / 24% / 26%. Using dodge attacks can additionally consume 1 stack of Vengeance and is not limited by the trigger interval. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+          "paragraph": "Increase physical and flame ATK by 20%/22%/24%/26%. Using dodge attacks can additionally consume <span class=\"num-clr\">1</span> stack of Vengeance and is not limited by the trigger interval. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack",
-        "fortitude"
-      ],
-      "buffs": [
-        "Elemental Damage %",
-        "Final Damage %",
-        "Aggro %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase all elemental damage by 22% / 24% / 26% / 28%. After equipping Spear of Longinus, increase final damage by 9%, increase Vengeance's multiplier to 720%. When Fortitude Resonance is activated, aggro generated from attacks is increased by 150% / 200% / 250% / 300%. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+          "paragraph": "Increase all elemental damage by 22%/24%/26%/28.0%. After equipping Spear of Longinus, increase final damage by 9%, Increase Vengeance's multiplier to <span class=\"num-clr\">864%</span>. When <span class=\"num-clr\">Fortitude Resonance</span> is activated, aggro generated from attacks is increased by 150%/200%/250%/300%. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     }
   },
   {
     "slug": "yanuo",
+    "server": "gacha",
     "name": "Yanuo",
-    "tag": "new",
+    "matrix_name": "A Thousand Faces",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR42_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Yanuo: Sentience",
+      "Yanuo: Radio Wave",
+      "Yanuo: Magic",
+      "Yanuo: Echo"
+    ],
+    "slot_desc": [
+      "You feel a sharp gaze from someone in a sea of people.\t\t\t",
+      "Communication simply requires tuning into the right frequency.",
+      "Magic probably exists. Do you want to see a spell for quickly making friends with someone you want to meet?",
+      "The secret messages that ordinary people don't bother to understand are suddenly receiving replies in the form of echoes."
+    ],
     "element": [
-      "element_frost",
-      "element_volt"
+      "frost"
     ],
     "rarity": "SSR",
     "twopc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack"
-      ],
-      "buffs": [
-        "Elemental Damage %",
-        "ATK %",
-        "Movement Speed %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase frost and volt damage by 13% / 15% / 17% / 19%, frost and volt ATK by 5%, and movement speed increases while concealed by 20%. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+          "paragraph": "Increase frost and volt damage by 13%/15%/17%/19%, frost and volt ATK by 5%, and movement speed while concealed by 20%. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack"
-      ],
-      "buffs": [
-        "Elemental Damage %",
-        "Final Damage %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase all elemental damage by 22% / 24% / 26% / 28% when at least 1 frost weapon is equipped. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect. After using Arctic Bite, increase final damage by 8% for 60 seconds. When entering combat with Wicked in the main slot, trigger a fully buffed Fevered Hunt 1 time (this does not count towards Wicked's Fevered Hunt cooldown, but it can only be triggered 1 time every 15 seconds)."
+          "paragraph": "Increase all elemental damage by 22%/24%/26%/28.0% when at least 1 frost weapon is equipped. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect. After using Arctic Bite, increase final damage by 8% for 60 seconds. When entering combat with Wicked in the main slot, trigger a fully buffed Fevered Hunt 1 time (this does not count toward Wicked's Fevered Hunt cooldown, but it can only be triggered 1 time every 15 seconds)."
         }
       ]
     }
   },
   {
     "slug": "plotti",
+    "server": "gacha",
     "name": "Plotti",
-    "tag": "new",
+    "matrix_name": "Paradox",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR41_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Plotti: Future Humanity",
+      "Plotti: Poppa",
+      "Plotti: Authorizer",
+      "Plotti: The You Within Me"
+    ],
+    "slot_desc": [
+      "Omnium technology is the future of humanity. The Blue Aidans must be stopped.",
+      "Happy memories that have been destroyed and buried in the past.",
+      "Watching over the most important things to humanity.",
+      "You are me and I am you. You are who I rely on."
+    ],
     "element": [
-      "element_flame",
-      "element_physical"
+      "flame"
     ],
     "rarity": "SSR",
     "twopc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack",
-        "benediction"
-      ],
-      "buffs": [
-        "ATK %",
-        "Dodge Regen"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase flame and physical ATK by 19% / 21% / 23% / 25% and EP-7000 Skyfire's dodge energy regen by 100%. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+          "paragraph": "Increase flame and physical ATK by 19%/21%/23%/25% and EP-7000 Skyfire's dodge energy regen by 100%. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack"
-      ],
-      "buffs": [
-        "Elemental Damage %",
-        "Final Damage %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "When equipped with at least 1 flame weapon, increase all elemental damage by 21% / 23% / 25% / 27%. After using Heavy Energy Round, increase final damage by an additional 8% for 10 seconds. After hitting a target with Mirror Image, refresh the durations of Mirror Reflection and Armor Dissolve. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+          "paragraph": "When equipped with at least 1 flame weapon, increase all elemental damage by 21%/23%/25%/27%. After using Heavy Energy Round, increase final damage by an additional 8% for 10 seconds. After hitting a target with Mirror Image, refresh the durations of Mirror Reflection and Armor Dissolve. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     }
   },
   {
     "slug": "brevey",
+    "server": "gacha",
     "name": "Brevey",
-    "tag": "new",
+    "matrix_name": "Blossoming Talent",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR40_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Brevey: Transformation",
+      "Brevey: Thesis",
+      "Brevey: Reclusion",
+      "Brevey: Revelation"
+    ],
+    "slot_desc": [
+      "Since ancient times, science has transformed things that were once miracles into commonplace occurrences.",
+      "In an era where the shoulders of giants are already high enough, ordinary scientific findings are insignificant.",
+      "Perhaps part of the reason why we are immersed in our own world or behave strangely is that we don't want others to impose their expectations on us again.",
+      "Can you believe it? In a part of the world I have yet to experience, there is pure beauty and incredible existences that need not be explained."
+    ],
     "element": [
-      "element_volt",
-      "element_frost"
+      "volt"
     ],
     "rarity": "SSR",
     "twopc": {
       "onField": false,
-      "onHealingGuide": true,
-      "onTankGuide": false,
-      "resonance": [
-        "attack",
-        "benediction"
-      ],
-      "buffs": [
-        "Elemental Damage %",
-        "Outgoing Healing"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase all elemental damage by 7.5% / 9% / 10.5% / 12%. After using any discharge skill, increase the Wanderer's outgoing healing by 30% for 30 seconds."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "Increase all elemental damage by 7.5%/9%/10.5%/12%. After using any discharge skill, increase the Wanderer's outgoing healing by 30% for 30 seconds. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack",
-        "benediction"
-      ],
-      "buffs": [
-        "Final Damage %",
-        "ATK %",
-        "Team ATK %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "After using Pink Chain Frenzy, charging is possible even after releasing normal attack. After Million-Metz Shockwave hits, increase final damage by 10% for 30 seconds. When non-Benediction Resonances are active, increase all attack by 26% / 30% / 34% / 38%. When Benediction Resonance is active, increase all attack of the Wanderer and nearby teammates by 14% / 16% / 18% / 20%."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "After using <span class=\"num-clr\">Pink Chain Frenzy</span>, charging is possible even after releasing the hold on normal attack. After using <span class=\"num-clr\">Million-Metz Shockwave</span>, increase final damage by <span class=\"num-clr\">10%</span> for <span class=\"num-clr\">30</span> seconds. When <span class=\"num-clr\">non-Benediction Resonances are active</span>, increase all attack by 26%/30%/34%/38%. When <span class=\"num-clr\">Benediction Resonance is active</span>, increase all attack of the Wanderer and nearby teammates by 14.0%/16%/18%/20%. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     }
   },
   {
     "slug": "yanmiao",
+    "server": "gacha",
     "name": "Yan Miao",
-    "tag": "new",
+    "matrix_name": "Passion",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR39_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Yan Miao: Hope",
+      "Yan Miao: Against the Odds",
+      "Yan Miao: Clever",
+      "Yan Miao: Unyielding"
+    ],
+    "slot_desc": [
+      "Carrying the expectations of a great many people.",
+      "Knowingly venturing into the lion's den.",
+      "Gifted with amazing charm and wits.",
+      "Ordinary yet extraordinary."
+    ],
     "element": [
-      "element_physical",
-      "element_flame"
+      "physical"
     ],
     "rarity": "SSR",
     "twopc": {
       "onField": false,
-      "onHealingGuide": true,
-      "onTankGuide": false,
-      "resonance": [
-        "attack",
-        "benediction"
-      ],
-      "buffs": [
-        "ATK %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase physical and flame ATK by 19% / 21% / 23% / 25%."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "Increase physical and flame ATK by 19%/21%/23%/25%. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack"
-      ],
-      "buffs": [
-        "Elemental Damage %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "When equipped with at least 1 physical weapon, increase all elemental damage by 20% / 22% / 24% / 26%. When Equilibrium is equipped, increase all elemental damage by an additional 9%."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "When equipped with at least 1 physical weapon, increase all elemental damage by 20%/22%/24%/26%. When Equilibrium is equipped, increase all elemental damage by an additional 9%. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     }
   },
   {
     "slug": "nanyin",
+    "server": "gacha",
     "name": "Nan Yin",
-    "tag": "meta",
+    "matrix_name": "Unchanging",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR38_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Nan Yin: Karma",
+      "Nan Yin: Shadowing",
+      "Nan Yin: Tender Strength",
+      "Nan Yin: Lone Shadow"
+    ],
+    "slot_desc": [
+      "Right and wrong, love and hate.",
+      "The pain has been sealed away, but it follows her like a shadow.",
+      "Beliefs are indestructible.",
+      "Her time has passed, and she finds solace in solitude."
+    ],
     "element": [
-      "element_altered"
+      "altered"
     ],
     "rarity": "SSR",
     "twopc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack",
-        "benediction"
-      ],
-      "buffs": [
-        "ATK %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase all attack by 19% / 21% / 23% / 25%. Void Trace inherits an additional 30% of the Wanderer's ATK. When dealing damage for the first time in combat, gain 1,000 weapon charge."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "Increase all attack by 19%/21%/23%/25%. Void Trace inherits an additional 30% of the Wanderer's ATK. When dealing damage for the first time in combat, gain 1000 weapon charge. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack"
-      ],
-      "buffs": [
-        "Crit Damage %",
-        "Final Damage %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "After Purple Bamboo is equipped, increase crit damage by 8% and final damage by 17% / 20% / 23% / 26%."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "After Purple Bamboo is equipped, increase crit damage by 8% and final damage by 17%/20%/23%/26%. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     }
   },
   {
     "slug": "linghan",
+    "server": "gacha",
     "name": "Ling Han",
-    "tag": "meta",
+    "matrix_name": "Frost Shadow",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR37_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Ling Han: Misty",
+      "Ling Han: Chill in the Air",
+      "Ling Han: Flowing Clouds",
+      "Ling Han: Snow Plum"
+    ],
+    "slot_desc": [
+      "The sword is like a mist, traveling swiftly and indiscriminately.",
+      "Proud as pure snow, unsullied by dust.",
+      "Like the flowing water and drifting clouds.",
+      "The fragrance of plum blossoms cuts through the bitter cold."
+    ],
     "element": [
-      "element_frost"
+      "frost"
     ],
     "rarity": "SSR",
     "twopc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack"
-      ],
-      "buffs": [
-        "Elemental Damage %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase all elemental damage by 7% / 8% / 9% / 10%. When firing Frost Blades, deal additional damage equal to 416% of ATK to nearby targets."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "Increase all elemental damage by 7.0%/8%/9%/10%. When firing Frost Blades, deal additional damage equal to 416% of ATK to nearby targets. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack"
-      ],
-      "buffs": [
-        "Final Damage %",
-        "ATK %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "After using any frost weapon's discharge skill, increase final damage by 12% / 15% / 19% / 23% for 30 seconds. When Alabaster Tiger is equipped, increase all attack by 12%."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "After using any frost weapon's discharge skill, increase final damage by 12%/15%/19%/23% for 30 seconds. When Alabaster Tiger is equipped, increase all attack by 12%. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     }
   },
   {
     "slug": "feise",
+    "server": "gacha",
     "name": "Fei Se",
-    "tag": "meta",
+    "matrix_name": "Lissom",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR36_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Fei Se: Traceless",
+      "Fei Se: Whirling Sleeves",
+      "Fei Se: Solitary Radiance",
+      "Fei Se: Keeping Watch"
+    ],
+    "slot_desc": [
+      "She's hard to pin down, but the moment you wish to see her, she gracefully appears.",
+      "Her skirt's soft caress showcases her finesse.",
+      "In solitude, she goes against the tide.",
+      "She... reminds me of you."
+    ],
     "element": [
-      "element_flame"
+      "flame"
     ],
     "rarity": "SSR",
     "twopc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack",
-        "benediction"
-      ],
-      "buffs": [
-        "ATK %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "After using any flame weapon skill or discharge, increase all attack by 14% / 16% / 18% / 20% for 30 seconds."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "After using any flame weapon skill or discharge, increase all attack by 14.0%/16%/18%/20% for 30 seconds. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack"
-      ],
-      "buffs": [
-        "Elemental Damage %",
-        "Final Damage %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "When equipped with at least 1 flame weapon, increase all elemental damage by 14% / 17% / 20% / 23%. After triggering Fei Se's Phantasia, increase final damage by 9% for 25 seconds."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "When equipped with at least 1 flame weapon, increase all elemental damage by 14.0%/17%/20%/23%. After creating Fei Se's Phantasia, additionally increase final damage by 9% for 25 seconds. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     }
   },
   {
     "slug": "huang",
+    "server": "gacha",
     "name": "Huang",
-    "tag": "meta",
+    "matrix_name": "Resounding Chant",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR35_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Huang: Ruler's Dominion",
+      "Huang: Bright Sun",
+      "Huang: Blessing",
+      "Huang: Ambition"
+    ],
+    "slot_desc": [
+      "The fate of all the world is connected to me.",
+      "A bright sun in the clear sky, these radiant days are fleeting.",
+      "Tianzhang Pavilion is paramount to protecting all lives.",
+      "Ambitions are meant to be heavy."
+    ],
     "element": [
-      "element_volt"
+      "volt"
     ],
     "rarity": "SSR",
     "twopc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack"
-      ],
-      "buffs": [
-        "Final Damage %",
-        "Skill Damage %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase final damage by 7% / 8% / 9% / 10%. After Azura's shockwave lands a hit, increase skill damage by 15% for 30 seconds."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "Increase final damage by 7.0%/8%/9%/10%. After Azura's shockwave lands a hit, increase skill damage by 15% for 30 seconds. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack"
-      ],
-      "buffs": [
-        "Elemental Damage %",
-        "Crit Damage %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "When equipped with at least 1 volt weapon, increase all elemental damage by 14% / 17% / 20% / 23%. After using Azure Moon / Soaring Dragon, increase crit damage by 6% for 30 seconds."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "When equipped with at least 1 volt weapon, increase all elemental damage by 14.0%/17%/20%/23%. After using Azure Moon / Soaring Dragon, increase crit damage by 6% for 30 seconds. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     }
   },
   {
     "slug": "mingjing",
+    "server": "gacha",
     "name": "Ming Jing",
-    "tag": "meta",
+    "matrix_name": "Lost at Heart",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR34_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Ming Jing: Infused in Tea",
+      "Ming Jing: Blank Slate",
+      "Ming Jing: Rebuilding",
+      "Ming Jing: Passionate"
+    ],
+    "slot_desc": [
+      "Deep thoughts buried within a strong fragrance.",
+      "In the midst of the fog, there is something that must be held onto dearly, lest it be gone once more.",
+      "Picking the pieces back up is the first step toward putting things back together.",
+      "Burning thoughts masked in blank expression."
+    ],
     "element": [
-      "element_physical",
-      "element_flame"
+      "physical"
     ],
     "rarity": "SSR",
     "twopc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack",
-        "benediction"
-      ],
-      "buffs": [
-        "ATK %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase Serpent Chain member limit to 5. When at least 1 physical or flame weapon is equipped, increase physical ATK and flame ATK by 14% / 16% / 18% / 20%."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "Increase Serpent Chain member limit to <span class=\"num-clr\">5</span>. When at least <span class=\"num-clr\">1</span> physical or flame weapon is equipped, increase physical ATK and flame ATK by 14.0%/16%/18%/20%. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack"
-      ],
-      "buffs": [
-        "ATK %",
-        "Final Damage %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "After applying the snake bite effect, increase physical ATK and flame ATK by 9% for 30 seconds. While in the combat state, increase final damage by 14% / 17% / 20% / 23%."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "After applying the snake bite effect, increase physical ATK and flame ATK by 9% for 30 second(s), effective in the off-hand slot. When entering combat, increase final damage by 14.0%/17%/20%/23%."
         }
       ]
     }
   },
   {
     "slug": "yulan",
+    "server": "gacha",
     "name": "Yu Lan",
-    "tag": "meta",
+    "matrix_name": "Sincerity",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR33_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Yu Lan: Embrace Sincerity",
+      "Yu Lan: Always Diligent",
+      "Yu Lan: Sincerity Moves Mountains",
+      "Yu Lan: Sincere & Earnest"
+    ],
+    "slot_desc": [
+      "Stay true and sincere, pure and natural.",
+      "I have never slacked off since I started practicing martial arts.",
+      "The longest path is the shortcut.",
+      "Being honest with people can sometimes lead to misunderstandings."
+    ],
     "element": [
-      "element_frost"
+      "frost"
     ],
     "rarity": "SSR",
     "twopc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack"
-      ],
-      "buffs": [
-        "Final Damage %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "When equipped with at least 1 frost weapon, while in the combat state, deal damage equal to 85% of ATK to nearby targets every second. After using any frost weapon skill or discharge skill, increase final damage by 7% / 8% / 9% / 10% for 30 seconds."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "When equipped with at least 1 frost weapon, while in the combat state, deal damage equal to 85% of ATK to nearby targets every second. After using any frost weapon skill or discharge skill, increase final damage by 7.0%/8%/9%/10% for 30 seconds. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack"
-      ],
-      "buffs": [
-        "Final Damage %",
-        "Elemental Damage %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "After Unity consumes Internal Strength or Fighting Spirit, increase final damage by 6% for 15 seconds. After dealing frost damage, increase all elemental damage by 12% / 15% / 19% / 23% for 30 seconds."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "After Unity consumes Internal Strength or Fighting Spirit, increase final damage by 6% for 15 seconds. After dealing frost damage, increase all elemental damage by 12%/15%/19%/23% for 30 seconds. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     }
   },
   {
     "slug": "liuhuo",
+    "server": "gacha",
     "name": "Liu Huo",
+    "matrix_name": "Spring & Autumn Brush",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR32_512.webp",
     "tag": "",
+    "slot_names": [
+      "Liu Huo: Storytelling",
+      "Liu Huo: Anecdote",
+      "Liu Huo: Ascent",
+      "Liu Huo: Elegance"
+    ],
+    "slot_desc": [
+      "In the vast expanse of poetic art, my love for literacy halted just before the covers' part...",
+      "\"C'mere, take this pancake home and eat it while it's hot, and don't forget to give one to your little brother!\"",
+      "The journey within requires effort and sweat, yet the peak's view stays hidden in the haze.",
+      "Grace and sophistication are built upon a steady foundation of personal growth, not a last-minute scramble for improvement."
+    ],
     "element": [
-      "element_flame"
+      "flame"
     ],
     "rarity": "SSR",
     "twopc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack"
-      ],
-      "buffs": [
-        "Final Damage %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase final damage by 9% / 10% / 11% / 12%. The number of Sparrow Feathers obtained from dodging after using Pine Comet increases to 20."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "Increase final damage by 9%/10%/11%/12%. The number of Sparrow Feathers obtained from dodging while using Pine Comet increases to 20. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack"
-      ],
-      "buffs": [
-        "Elemental Damage %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "When equipped with at least 1 flame weapon, increase all elemental damage by 11% / 14% / 17% / 20%. After using In All Directions, increase all elemental damage boost by an additional 7% and gradually reduce to 4% over 25 seconds."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "When equipped with at least 1 flame weapon, increase all elemental damage by 11%/14.0%/17%/20%. After using In All Directions, increase all elemental damage boost by an additional 7.0% and gradually reduce to 4% over 25 seconds. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     }
   },
   {
     "slug": "rubilia",
+    "server": "gacha",
     "name": "Rubilia",
+    "matrix_name": "Seeker",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR31_512.webp",
     "tag": "",
+    "slot_names": [
+      "Rubilia: Wayfarer",
+      "Rubilia: Enlightenment",
+      "Rubilia: Rebirth",
+      "Rubilia: Kinship"
+    ],
+    "slot_desc": [
+      "She is hesitant, yet still clings to the darkest of hopes.",
+      "Enlighten me, guide me.",
+      "There were many ways she thought it could end, but this was completely different from her expectations.",
+      "Her instinct and humanity are calling out to her. Do you worry about her choices?"
+    ],
     "element": [
-      "element_volt"
+      "volt"
     ],
     "rarity": "SSR",
     "twopc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack",
-        "benediction"
-      ],
-      "buffs": [
-        "ATK %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase volt ATK by 14.5% / 16.5% / 18.5% / 20.5%."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "Increase volt ATK by 14.5%/16.5%/18.5%/20.5%. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack"
-      ],
-      "buffs": [
-        "Elemental Damage %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase Crystamax thorn limit to 6. Increase all elemental damage by 13% / 16% / 19% / 22% when a volt weapon lands an attack, lasting for 30 seconds."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "Increase Crystamax thorn limit to 6. After landing a hit with a volt weapon, all elemental damage is increased by 13%/16%/19%/22% for 30 seconds. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     }
   },
   {
     "slug": "gnonno",
+    "server": "gacha",
     "name": "Gnonno",
-    "tag": "standard",
+    "matrix_name": "Adventure Asteroid",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR30_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Gnonno: Unintended Excursion",
+      "Gnonno: Unknown Companion",
+      "Gnonno: Reclamation",
+      "Gnonno: Paradox Discard"
+    ],
+    "slot_desc": [
+      "Tragedy is born from impulsive, risky decisions.",
+      "It's not that the memories are gone; rather, they can only be recalled when one is fully awake.",
+      "It drifts off into the universe, taking most of the sane with it.",
+      "If I don't do this, then I won't be able to feel the simple happiness that I used to..."
+    ],
     "element": [
-      "element_physical"
+      "physical"
     ],
     "rarity": "SSR",
     "twopc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack"
-      ],
-      "buffs": [
-        "Elemental Damage %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase all elemental damage by 8% / 9% / 10% / 11% when at least 1 physical weapon is equipped."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "Increase all elemental damage by 8%/9%/10%/11% when at least 1 physical weapon is equipped. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack"
-      ],
-      "buffs": [
-        "Elemental Damage %",
-        "Endurance Boost"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "After using any physical weapon skill or discharge skill, increase all elemental damage by 13% / 16% / 19% / 22% for 25 seconds. Endurance consumed when using Mini Hurricane is reduced by 40%."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "After using any physical weapon skill or discharge skill, increase all elemental damage by 13%/16%/19%/22% for 25 seconds. Endurance consumed when using Mini Hurricane is reduced by 40%. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     }
   },
   {
     "slug": "fiona",
+    "server": "gacha",
     "name": "Fiona",
-    "tag": "meta",
+    "matrix_name": "Stimulus",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR29_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Fiona: Brain and Brawn",
+      "Fiona: Pioneer",
+      "Fiona: Unyielding",
+      "Fiona: Path of Succession"
+    ],
+    "slot_desc": [
+      "A powerful Executor and an outstanding Archon.",
+      "On her shoulders is the responsibility to build a home for everyone.",
+      "Stand up over and over again in the face of failure, that is what it means to be part of Vera.",
+      "I inherit the path of my predecessor, and those who come after shall inherit mine."
+    ],
     "element": [
-      "element_altered"
+      "altered"
     ],
     "rarity": "SSR",
     "twopc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack",
-        "benediction"
-      ],
-      "buffs": [
-        "ATK %"
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "After dealing damage, increase ATK by 16% / 18% / 20% / 22% for 30 seconds."
-        },
-        {
-          "paragraph": "This effect does not stack. Only the effect with the highest star rating is applied when obtained repeatedly."
+          "paragraph": "After dealing damage, increase ATK by 16%/18%/20%/22% for 30 seconds. This effect does not stack. Only the effect with the highest star rating is applied when obtained repeatedly."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack",
-        "benediction"
-      ],
-      "buffs": [
-        "Final Damage %",
-        "Team Final Damage %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "While Benediction Resonance is not active, after using Scatter Technique, increase final damage by 17% / 19% / 21% / 23% for 20 seconds. While Benediction Resonance is active, after using Scatter Technique, increase final damage for self and teammates by 8.5% / 9.5% / 10.5% / 11.5% for 20 seconds. Final damage is additionally increased based on base attack by (Base ATK/10,000)%, up to 5%."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "While Benediction Resonance is not active, after using Scatter Technique, increase final damage by 17%/19%/21%/23% for 20 seconds. While Benediction Resonance is active, after using Scatter Technique, increase final damage for self and teammates by 8.5%/9.5%/10.5%/11.5% for 20 seconds. Final damage is additionally increased based on base attack by (Base ATK/10,000)%, up to 5%. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
         }
       ]
     }
   },
   {
     "slug": "icarus",
+    "server": "gacha",
     "name": "Icarus",
-    "tag": "standard",
+    "matrix_name": "With Frost",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR28_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Icarus: Solipsism",
+      "Icarus: Witness",
+      "Icarus: Thin Ice",
+      "Icarus: Passerby"
+    ],
+    "slot_desc": [
+      "Strategies and plans. My fate lies in my hands.",
+      "It's all about witnessing that leads to the path.",
+      "Keep marching on thin ice.",
+      "Strangers come and go as they pass by."
+    ],
     "element": [
-      "element_frost"
+      "frost"
     ],
     "rarity": "SSR",
     "twopc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack"
-      ],
-      "buffs": [
-        "Elemental Damage %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Equipping Precious One, 2 or more weapons of different elements, or 2 or more types of weapons increases all elemental damage by 8% / 9% / 10% / 11%."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "Equipping Precious One, <span class=\"num-clr\">2</span> or more weapons of different elements, or <span class=\"num-clr\">2</span> or more types of weapons increases all elemental damage by 8%/9%/10%/11%. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack"
-      ],
-      "buffs": [
-        "Elemental Damage %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "When dealing frost damage, increase all elemental damage by 13% / 16% / 19% / 22% for 25 seconds."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "When dealing frost damage, increase all elemental damage by 13%/16%/19%/22% for 25 seconds. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     }
   },
   {
     "slug": "lan",
+    "server": "gacha",
     "name": "Lan",
-    "tag": "standard",
-    "element": [
-      "element_flame"
-    ],
-    "rarity": "SSR",
-    "twopc": {
-      "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack"
-      ],
-      "buffs": [
-        "ATK %",
-        "Elemental Damage %"
-      ],
-      "effect": [
-        {
-          "paragraph": "When equipped with at least 1 flame weapon, increase flame ATK by 6% / 7% / 8% / 9% and flame damage by 3.2% / 3.8% / 4.4% / 5%."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
-        }
-      ]
-    },
-    "fourpc": {
-      "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack"
-      ],
-      "buffs": [
-        "Elemental Damage %",
-        "Final Damage %"
-      ],
-      "effect": [
-        {
-          "paragraph": "Gain different effects based on the number of different elemental weapons equipped: Increase flame/frost/physical/volt damage by 4% / 5% / 6% / 7% for every flame/frost/physical/volt weapon equipped. Increase final damage by 5% / 6% / 7% / 8% for every altered weapon equipped."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
-        }
-      ]
-    }
-  },
-  {
-    "slug": "haboela",
-    "name": "Haboela",
+    "matrix_name": "Firestorm",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR27_512.webp",
     "tag": "",
+    "slot_names": [
+      "Lan: Solitude",
+      "Lan: A Hundred Faces",
+      "Lan: Compassion",
+      "Lan: Obscurity"
+    ],
+    "slot_desc": [
+      "She often explores dangerous situations by herself.",
+      "Every name has a unique history behind it.",
+      "Her compassion for the vulnerable signifies that her true self remains intact.",
+      "Hiding in plain sight and waiting for the right opportunity to strike."
+    ],
     "element": [
-      "element_all"
+      "flame"
     ],
     "rarity": "SSR",
     "twopc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack"
-      ],
-      "buffs": [
-        "Final Damage %"
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Equipping this matrix on the current weapon increases final damage by 8.5% / 10.5% / 12.5% / 14.5%."
+          "paragraph": "When equipped with at least 1 flame weapon, increase flame ATK by 6%/7.0%/8%/9% and flame damage by 3.2%/3.8%/4.4%/5%. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack"
-      ],
-      "buffs": [
-        "Final Damage %"
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase final damage by 9% / 11% / 13% / 15%."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "Gain different effects based on the number of different elemental weapons equipped: Increase flame/frost/physical/volt damage by 4%/5%/6%/7.0% for every flame/frost/physical/volt weapon equipped. Increase final damage by 5%/6%/7.0%/8% for every altered weapon equipped. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
       ]
     }
   },
   {
     "slug": "scylla",
+    "server": "gacha",
     "name": "Scylla",
+    "matrix_name": "Reverberating Drums",
+    "hasWeapon": false,
+    "hasSimulacra": false,
+    "icon": "icon_matrix_SSR26_512.webp",
     "tag": "",
-    "element": [
-      "element_all"
+    "slot_names": [
+      "Scylla: Rip",
+      "Scylla: Improvise",
+      "Scylla: Discord",
+      "Scylla: Rhythm"
     ],
+    "slot_desc": [
+      "The barbaric gesture doesn't match its elegant appearance.",
+      "A spur-of-the-moment performance.",
+      "This may be your final opportunity to listen to a melody.",
+      "Heavy and sticky..."
+    ],
+    "element": [],
     "rarity": "SSR",
     "twopc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Equipping this matrix on the current weapon increases crit damage by 13% / 16% / 19% / 23% and shatter by 13% / 16% / 19% / 23%."
+          "paragraph": "Equipping this matrix on the current weapon increases crit damage by 13%/16%/19%/23% and shatter by 13%/16%/19%/23%."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Equipping 2 or more elemental weapons or multiple class weapons increases all elemental damage by 9.5% / 11.5% / 13.5% / 15.5%."
-        },
+          "paragraph": "Equipping 2 or more weapons of different elements or types increases all elemental damage by 9.5%/11.5%/13.5%/15.5%. The effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "haboela",
+    "server": "gacha",
+    "name": "Haboela",
+    "matrix_name": "Volcanic Ash Rain",
+    "hasWeapon": false,
+    "hasSimulacra": false,
+    "icon": "icon_matrix_SSR25_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Haboela: Scorching Island",
+      "Haboela: Circuit Breaker",
+      "Haboela: Erupt",
+      "Haboela: Wrath"
+    ],
+    "slot_desc": [
+      "It's getting hot in here.",
+      "How did it get here after the terrain change?",
+      "Gather and absorb the lava, and then...",
+      "The guardian of the volcano with a temper. A very, very bad temper."
+    ],
+    "element": [],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
         {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "Equipping this matrix on the current weapon increases final damage by 8.5%/10.5%/12.5%/14.5%."
+        }
+      ]
+    },
+    "threepc": {},
+    "fourpc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increase final damage by 9%/11%/13%/15%. The effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
         }
       ]
     }
   },
   {
     "slug": "fenrir",
+    "server": "gacha",
     "name": "Fenrir",
-    "tag": "standard",
+    "matrix_name": "Symphony of Life",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR24_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Fenrir: Dream",
+      "Fenrir: Abandoned Dog",
+      "Fenrir: Home",
+      "Fenrir: Dependence"
+    ],
+    "slot_desc": [
+      "I dream of chocolate. Can I believe that this is real?",
+      "A shackled past, a wandering present.",
+      "Will I ever have a home?",
+      "If there are no more goodbyes, I am alright with being used."
+    ],
     "element": [
-      "element_volt"
+      "volt"
     ],
     "rarity": "SSR",
     "twopc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increases crit damage by 14% / 15% / 16% / 18%. This effect does not stack."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "Increase crit damage by 14.0%/15%/16%/18%. This effect does not stack. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "When dealing volt damage, increase final damage by 2.75% for 10 seconds, stacking up to 5 / 6 / 7 / 8 times."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "When dealing volt damage, increase final damage by 2.8% for 10 seconds, stacking up to 5/6/7/8 times. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
         }
       ]
     }
   },
   {
     "slug": "umi",
+    "server": "gacha",
     "name": "Umi",
-    "tag": "standard",
+    "matrix_name": "Double Magic",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR23_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Umi: Bewitch",
+      "Umi: Mystify",
+      "Umi: Beguile",
+      "Umi: Deceive"
+    ],
+    "slot_desc": [
+      "Slowly and patiently guide the audience and self into the magic illusion.",
+      "The most fundamental laws are \"deception,\" \"misdirection,\" and \"manipulation.\" This is what I tell myself before each performance.",
+      "Sometimes \"she\" can't decide whether to be blissfully unaware or feign ignorance.",
+      "She has to deceive everyone, including herself."
+    ],
     "element": [
-      "element_physical"
+      "physical"
     ],
     "rarity": "SSR",
     "twopc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "When dealing physical damage, increase final damage by 4% / 5% / 6% / 7% and physical damage by 2% / 2.5% / 3% / 3.5% for 3 seconds."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "When dealing physical damage, increase final damage by 4%/5%/6%/7.0% and physical damage by an additional 2%/2.5%/3%/3.5% for 3 seconds. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "When equipping 2 or more physical weapons, increase final damage by 15% / 17% / 19% / 21%."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "When equipping 2 or more physical weapons, increase final damage by 15%/17%/19%/21%. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
         }
       ]
     }
   },
   {
     "slug": "alyss",
+    "server": "gacha",
     "name": "Alyss",
-    "tag": "standard",
+    "matrix_name": "Spiritual Reconstruction",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR22_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Alyss: Vortex Shadow",
+      "Alyss: Shared Vision",
+      "Alyss: Legacy",
+      "Alyss: Lasting Motive"
+    ],
+    "slot_desc": [
+      "Elegant, powerful, precise, and proud.",
+      "Become someone who can protect everybody...",
+      "The mission is passed on from generation to generation.",
+      "Even if we are battered and broken, we won't back down."
+    ],
     "element": [
-      "element_frost"
+      "frost"
     ],
     "rarity": "SSR",
     "twopc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase final damage by 4.5% / 5.5% / 6.5% / 7.5% upon switching to this weapon. Increase frost damage by an additional 3% for 18 seconds if it's a frost weapon."
-        },
-        {
-          "paragraph": "Only the set with the highest star rating will take effect."
+          "paragraph": "Increase final damage by 4.5%/5.5%/6.5%/7.5% every time you switch to this weapon. Increase frost damage by an additional 3% for 18 seconds if it's a frost weapon. Only the set with the highest star rating will take effect."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase final damage by 6% / 7.5% / 9% / 10.5% for 18 seconds when using Unyielding Wing's discharge skill, stacking up to 2 times. Remove 1 stack when the duration ends."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect. The endurance consumption is reduced by 50% in its Latent State."
+          "paragraph": "Increase final damage by 6%/7.5%/9%/10.5% for 18 seconds every time you use Unyielding Wing's discharge skill, stacking up to 2 times. Remove 1 stack when the duration ends. This set effect works in the off-hand slot and the same Matrix's effect cannot be stacked repeatedly. Endurance consumption in the Latent State is reduced by 50%."
         }
       ]
     }
   },
   {
     "slug": "annabella",
+    "server": "gacha",
     "name": "Annabella",
-    "tag": "standard",
+    "matrix_name": "Bloody Anecdote",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR21_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Annabella: Declutter",
+      "Annabella: Blank Command",
+      "Annabella: Altruism",
+      "Annabella: Dead Leaves"
+    ],
+    "slot_desc": [
+      "Such boring gossip. Hush.",
+      "It easily becomes unresponsive without a command.",
+      "—One of the last words you would use to describe a vampire.",
+      "There will always be people who are only willing to act within their comfort zone."
+    ],
     "element": [
-      "element_flame"
+      "flame"
     ],
     "rarity": "SSR",
     "twopc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "After hitting a target with a flame weapon, increase final damage by 3% / 3.4% / 3.8% / 4.2% and final crit rate by 2% / 2% / 2.4% / 2.4% for 25 seconds, stacking up to 2 times."
-        },
-        {
-          "paragraph": "Only the set with the highest star rating will take effect."
+          "paragraph": "After hitting a target with a flame weapon, increase final damage by 3%/3.4%/3.8%/4.2% and final crit rate by 2%/2%/2.4%/2.4% for 25 seconds, stacking up to 2 times. Only the effect with the highest star rating is applied when obtained repeatedly."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "When equipping 2 or more flame weapons, gain the Flowing Fire effect, which increases final damage by 7% / 8% / 9% / 10%, and increases crit damage by an additional 12% / 14% / 16% / 18% within 25 seconds of landing a critical hit. For every 3 charged attacks that hit the target, restore 1 dodge attempt. Cooldown: 2 seconds."
-        },
-        {
-          "paragraph": "Only the set with the highest star rating will take effect."
+          "paragraph": "When equipping 2 or more flame weapons, gain Flowing Fire, which increases final damage by 7.0%/8%/9%/10%, and increases crit damage by an additional 12%/14.0%/16%/18% for 25 seconds after landing a critical hit. For every 3 charged attacks that hit the target, restore 1 dodge attempt. Cooldown: 2 seconds. Only the effect with the highest star rating is applied when obtained repeatedly."
         }
       ]
     }
   },
   {
     "slug": "tianlang",
+    "server": "gacha",
     "name": "Tian Lang",
-    "tag": "standard",
+    "matrix_name": "Savage Wolf",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR20_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Tian Lang: Astral General",
+      "Tian Lang: Avoiding Conflict",
+      "Tian Lang: Turmoil",
+      "Tian Lang: Unyielding"
+    ],
+    "slot_desc": [
+      "If he was born in ancient times, he might have been a great general defending his land.",
+      "Rather than fighting, he prefers to spend time with flowers and plants in peace.",
+      "The trees long for peace, but the wind will never cease. There is nothing that can be done.",
+      "Nothing can waver my determination."
+    ],
     "element": [
-      "element_volt"
+      "volt"
     ],
     "rarity": "SSR",
     "twopc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Every time volt damage is dealt, there is a 40% chance of triggering chain lightning, dealing damage equal to 50% / 65% / 90% / 120% of volt ATK to targets, up to 7 targets. Cooldown: 2 seconds. Every time chain lightning is triggered, increase volt damage by 6% for 6 seconds (chain lightning will not trigger attack effects). This effect cannot be stacked."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "Every time volt damage is dealt, there is a 40% chance of triggering chain lighting, dealing damage equal to 50%/65%/90%/120% of volt ATK to up to 7 targets. Cooldown: 2 seconds. Every time chain lightning is triggered, increase volt damage by 6% for 6 seconds (chain lightning will not trigger attack effects). This effect cannot be stacked. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Every time a volt weapon's skill or discharge skill is used, increase volt damage by 12% / 14% / 16% / 18% for 15 seconds. This effect cannot be stacked."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "Every time a volt weapon's skill or discharge skill is used, increase volt damage by 12%/14.0%/16%/18% for 15 seconds. This effect cannot be stacked. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
         }
       ]
     }
   },
   {
     "slug": "lyra",
+    "server": "gacha",
     "name": "Lyra",
-    "tag": "standard",
+    "matrix_name": "The Confession of Memory",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR19_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Lyra: Software Reconstruction",
+      "Lyra: Revived Symphony",
+      "Lyra: Candlelight",
+      "Lyra: Endless Study"
+    ],
+    "slot_desc": [
+      "They call this the Heartswitch.",
+      "Even the most perfect and precise performance does not come close to the symphony on that day...",
+      "Protecting this flickering candlelight is not just a term of the will.",
+      "It may take a lifetime to uncover the true meaning of that book."
+    ],
     "element": [
-      "element_physical"
+      "physical"
     ],
     "rarity": "SSR",
     "twopc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Use this weapon to increase all attack types by 13% / 17% / 21% / 25%. The lower the HP, the higher the healing received, which can be increased by up to 100%."
+          "paragraph": "Use this weapon to increase all attack types by 13%/17%/21%/25%. The lower the HP, the higher the healing received, which can be increased by up to 100%."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "When dealing physical damage, increase physical damage by 2.7% with a cooldown of 0.1 seconds, Stack up to 5 times, Upon reaching the maximum stacks, increase physical damage by an additional 3.5% / 7% / 10.5% / 14% for 5 seconds. Only the effect with the highest star rating is applied when obtained repeatedly, Obtain 1 block for each dodge, blocking damage up to 60% of current HP, but not less than 20% of Max HP. Stack up to 3 blocks for 10 seconds."
+          "paragraph": "When dealing physical damage, increase physical damage by 2.7% with a cooldown of 0.1 seconds. Stack up to 5 times. Upon reaching the maximum stacks, increase physical damage by an additional 3.5%/7.0%/10.5%/14.0% for 5 seconds. Only the effect with the highest star rating is applied when obtained repeatedly. Obtain 1 block for each dodge, blocking damage up to 60% of current HP, but not less than 20% of Max HP. Stack up to 3 blocks for 10 seconds."
         }
       ]
     }
   },
   {
     "slug": "lin",
+    "server": "gacha",
     "name": "Lin",
+    "matrix_name": "Night City Never Sleeps",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR18_512.webp",
     "tag": "",
+    "slot_names": [
+      "Lin: Bow Down",
+      "Lin: Light Pollution",
+      "Lin: Standing in a Mirror",
+      "Lin: Black Fox Mask"
+    ],
+    "slot_desc": [
+      "Responsibility that comes with identity, a burden and a trial.",
+      "Light that flows through every corner of the city, and above it...",
+      "An impeccable and dazzling figure, regardless of the angle.",
+      "Sometimes, she transforms into a shadow that moves freely between buildings."
+    ],
     "element": [
-      "element_altered"
+      "altered"
     ],
     "rarity": "SSR",
     "twopc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase ATK by 2.1% / 2.6% / 3.1% / 3.6% on hit for 18 seconds, stacking up to 5 times."
-        },
-        {
-          "paragraph": "Only the set with the highest star rating will take effect."
+          "paragraph": "Increase ATK by 2.1%/2.6%/3.1%/3.6% on hit for 18 seconds, stacking up to 5 times. Only the effect of the highest level is applied when obtained repeatedly."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Every 5m traveled within Moonlight Realm grants 1 stack of Moonlight, increasing final damage by 4% / 4.9% / 5.8% / 6.7% for 15 seconds, stacking up to 3 times."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "Every 5m traveled within Moonlight Realm grants 1 stack of Moonlight, increasing final damage by 4%/4.9%/5.8%/6.7% for 15 seconds, stacking up to 3 times. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
         }
       ]
     }
   },
   {
     "slug": "sakifuwa",
+    "server": "gacha",
     "name": "Saki Fuwa",
-    "tag": "standard",
+    "matrix_name": "Super Flow",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR17_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Saki Fuwa: Immersed",
+      "Saki Fuwa: Challenge",
+      "Saki Fuwa: Anxiety Reliever",
+      "Saki Fuwa: In Control"
+    ],
+    "slot_desc": [
+      "An immersive action.",
+      "A challenging action.",
+      "An anxiety-relieving action.",
+      "An action that feels like everything is under control."
+    ],
     "element": [
-      "element_frost"
+      "frost"
     ],
     "rarity": "SSR",
     "twopc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "When Frost Resonance gets triggered: Every 3 seconds, deal frost damage equal to 65% / 80% / 95% / 110% of frost ATK to enemies within a 10-meter radius and apply the Icefrost effect: Inflict 5% slow effect that lasts for 3.5 seconds, freeze targets for 3 seconds at 3 stacks (does not apply to bosses), and increase frost damage taken by the target by 5% for 18 seconds."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "When Frost Resonance gets triggered: Every 3 seconds, deal frost damage equal to 65%/80%/95%/110% of frost ATK to enemies within a 10-meter radius and apply the Icefrost effect: Inflict 5% slow effect that lasts for 3.5 seconds, freeze targets for 3 seconds after 3 stacks (does not apply to bosses), and increase frost damage taken by the target by 5% for 18 seconds. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Attack the target 10 times to inflict a 12-second Flashfreeze mark. Flashfreeze: Increase frost damage dealt to the marked target by 11% / 13% / 15% / 17%."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "Attack the target 10 times to inflict a 12-second Flashfreeze mark. Flashfreeze: Increase frost damage dealt to the marked target by 11%/13%/15%/17%. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
         }
       ]
     }
   },
   {
     "slug": "ruby",
+    "server": "gacha",
     "name": "Ruby",
-    "tag": "standard",
+    "matrix_name": "White Rabbit Dance",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR16_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Ruby: From Behind",
+      "Ruby: Vapor",
+      "Ruby: Shadowing",
+      "Ruby: Dolly and Spark"
+    ],
+    "slot_desc": [
+      "This delicate bud is always carefully protected, but she also wants to walk to the frontline and be side by side with her, even if she needs to stand on her tiptoes.",
+      "As hazy as transpiring vapor, are the so-called past events just illusions in dreams?",
+      "You have to trot to keep up with her, but if you do fall behind, she'll be waiting for you not far away.",
+      "Ruby's friend, Ruby's best friend."
+    ],
     "element": [
-      "element_flame"
+      "flame"
     ],
     "rarity": "SSR",
     "twopc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase flame ATK after casting weapon skill by 8% / 10% / 12% / 15% for 25 seconds."
-        },
-        {
-          "paragraph": "If multiple star rating effects are triggered, the one triggered last prevails. This effect does not stack."
+          "paragraph": "Increases flame ATK after casting weapon skill by 8%/10%/12%/15% for 25 seconds. If multiple star rating effects are triggered, the one triggered last prevails. This effect does not stack."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Grant Mastery after casting weapon skill for 15 seconds, with a cooldown of 15 seconds (Mastery shares cooldowns across levels). Mastery is not stackable. Increase flame damage by 2% / 2.5% / 3% / 3.5% every time the target is hit with a normal attack until the end of Mastery. Stack up to 6 times, adding a maximum of 1 stack every 0.2 seconds. At 6 stacks, grant a shield that can block damage for 1 time."
-        }
-      ]
-    }
-  },
-  {
-    "slug": "cobaltb",
-    "name": "Cobalt-B",
-    "tag": "standard",
-    "element": [
-      "element_flame"
-    ],
-    "rarity": "SSR",
-    "twopc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
-      "effect": [
-        {
-          "paragraph": "Increase damage against debuffed targets by 14% / 16% / 18% / 20%."
-        }
-      ]
-    },
-    "fourpc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
-      "effect": [
-        {
-          "paragraph": "Restore 1 dodge attempt every 3 dodges. Dodge skills inflict burn upon hit, dealing damage equal to 24% / 30% / 36% / 42% of ATK every 0.5 seconds for 4 seconds."
-        }
-      ]
-    }
-  },
-  {
-    "slug": "claudia",
-    "name": "Claudia",
-    "tag": "standard",
-    "element": [
-      "element_physical"
-    ],
-    "rarity": "SSR",
-    "twopc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
-      "effect": [
-        {
-          "paragraph": "Increase damage by 13% / 17% / 20% / 23% when hitting a target in mid-air or initiating an aerial attack. Reset double-jump upon hitting the target in mid-air."
-        }
-      ]
-    },
-    "fourpc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
-      "effect": [
-        {
-          "paragraph": "Hitting an enemy with a skill reduces the cooldowns of all weapon skills by 1.5 / 2 / 2.5 / 3 seconds and increases the damage of discharge skills by 58% / 80% / 103% / 126% for 15 seconds."
+          "paragraph": "Grant Mastery after casting weapon skill for 15 seconds, with a cooldown of 15 seconds (Mastery shares cooldowns across levels). Mastery is not stackable. Increases flame damage by 2%/2.5%/3%/3.5% every time the target is hit with a normal attack until the end of Mastery, adding a maximum of 1 stack every 0.2 seconds, up to 6 stacks. After 6 stacks, grants a shield that can block damage 1 time."
         }
       ]
     }
   },
   {
     "slug": "frigg",
+    "server": "gacha",
     "name": "Frigg",
-    "tag": "standard",
+    "matrix_name": "Iron Mind and Body",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR15_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Frigg: Soulblade",
+      "Frigg: Post-Cataclysm",
+      "Frigg: Stance",
+      "Frigg: Doubt"
+    ],
+    "slot_desc": [
+      "I will cut off your greed for the forbidden things.",
+      "My family... friends... I'm the only one left now...",
+      "You have your definition, so what is justice to me?",
+      "Who's behind all this? Can anybody tell me?"
+    ],
     "element": [
-      "element_frost"
+      "frost"
     ],
     "rarity": "SSR",
     "twopc": {
       "onField": false,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase frost ATK by 8% / 10% / 12% / 15% for 10 seconds when switching between frost weapons."
-        },
-        {
-          "paragraph": "This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+          "paragraph": "Increase frost ATK by 8%/10%/12%/15% for 10 seconds when switching between frost weapons. This set effect works in the off-hand slot, but only the set with the highest star rating will take effect."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "When unleashing a frost domain with the weapon Balmung, enemies within the frost domain receive frost damage equal to 55% / 65% / 75% / 85% of ATK every second."
+          "paragraph": "When unleashing a Frost Domain with the weapon \"Balmung,\" enemies within the Frost Domain receive frost damage equal to 55%/65%/75%/85% of ATK every second."
         }
       ]
     }
   },
   {
     "slug": "nemesis",
+    "server": "gacha",
     "name": "Nemesis",
-    "tag": "standard",
+    "matrix_name": "Life Bridging",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR14_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Nemesis: Alloy Cells",
+      "Nemesis: Teddy Bear",
+      "Nemesis: Refreshed",
+      "Nemesis: Inner Drive"
+    ],
+    "slot_desc": [
+      "More than half of the hull has been replaced. I wonder if there is a way to measure the proportion of souls?",
+      "I have lost two places to call home, but fortunately I've managed to hold on to some belongings from those times.",
+      "The courage of maturity shines through as innocence is worn away.",
+      "The memory and heart of humanity can be a stumbling block or a driving force."
+    ],
     "element": [
-      "element_volt"
+      "volt"
     ],
     "rarity": "SSR",
     "twopc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "When a target is being healed, their volt ATK is increased by / 8% / 10% / 12% / 15% for 20 seconds."
-        },
-        {
-          "paragraph": "Only the set with the highest star rating will take effect."
+          "paragraph": "When a target is being healed, their volt ATK is increased by 8%/10%/12%/15% for 20 seconds. This effect does not stack, and only the highest level's effect is applied when obtained repeatedly."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "When healing yourself or your Electrode, the target of healing gains a charge of Lightning. The next attack within 30 seconds will cast lightning upon the target, dealing volt damage equal to 240% / 300% / 360% / 420% of volt ATK (damage caused by Electrodes is reduced by 50%). Cannot be triggered more than once in 10 seconds. Lightning charges do not stack."
-        },
-        {
-          "paragraph": "Only the set with the highest star rating will take effect."
+          "paragraph": "When healing yourself or your Electrode, the target of healing gains a charge of \"Lightning.\" The next attack within 30 seconds will cast Lightning, dealing volt damage equal to 240%/300%/360%/420% of volt ATK on the first target hit, and damage caused by Electrodes is reduced by 50%. Cannot be triggered more than once in 10 seconds. \"Lightning\" charges do not stack. Only the highest level's effect is applied when obtained repeatedly."
         }
       ]
     }
   },
   {
-    "slug": "zero",
-    "name": "Zero",
-    "tag": "standard",
+    "slug": "baiyuekui",
+    "server": "gacha",
+    "name": "Bai Yuekui",
+    "matrix_name": "Motive Sublimation",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR13_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Bai Yuekui: Seeking Truth",
+      "Bai Yuekui: Memory & Life",
+      "Bai Yuekui: Window of Opportunity",
+      "Bai Yuekui: Spiritual Advent"
+    ],
+    "slot_desc": [
+      "Have the courage to make mistakes in course of seeking scientific truth.",
+      "One can keep making new memories as long as one keeps on living.",
+      "Always be prepared for the opportunity to escape the doom.",
+      "Emotion is the source of power to advent our spirit."
+    ],
     "element": [
-      "element_flame"
+      "volt"
     ],
     "rarity": "SSR",
     "twopc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Upon using a discharge skill to switch to the current weapon, gain a shield equal to 150% / 200% / 250% / 300% of ATK for 6 seconds."
+          "paragraph": "Upon switching to this weapon, if weapon charge is between 200 and 999, consume 200 weapon charge to increase ATK by 15%/18%/21%/25% for 15 seconds with 5-second cooldown. This effect does not stack."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "While the shield is active, you and your teammates deal 16% / 20% / 24% / 28% more damage."
+          "paragraph": "For every 0.6 seconds maintained in a dischargeable state, the next discharge skill deals extra area damage for 1 time in a 5-meter radius around the first target hit. Area damage is equal to 106%/122%/140%/160% of ATK and can stack up to 530%/610%/700%/800%. In addition, increase shatter by 7%/14%/21%/28% for 4 seconds. This effect does not stack. This set effect works in the off-hand slot, but only the set with the highest star rating will take effect."
         }
       ]
     }
   },
   {
-    "slug": "tsubasa",
-    "name": "Tsubasa",
-    "tag": "standard",
+    "slug": "marc",
+    "server": "gacha",
+    "name": "Marc",
+    "matrix_name": "Vanguard",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR12_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Marc: Burden",
+      "Marc: Sister's Hope",
+      "Marc: Fair World",
+      "Marc: Dreamworld"
+    ],
+    "slot_desc": [
+      "I'm the mightiest warrior and the people here need me.",
+      "I drink a bottle of milk everyday now... Can you see it?",
+      "Every one of us is a unique creation.",
+      "Dreaming of walking into the Hall with you one day."
+    ],
     "element": [
-      "element_frost"
+      "physical"
     ],
     "rarity": "SSR",
     "twopc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase damage dealt by 14% / 16% / 18% / 20% when there are no enemies within 4 meters."
+          "paragraph": "Upon attacking an enemy, grant a shield to all teammates equal to 15% of the user's current HP. Last for 15 seconds, and reset after leaving the battle for 10 seconds. Upon activation, this shield's value will combine with any other active HP shields. While shielding, there is an 11%/13%/15%/17% damage reduction, lasting for 15 seconds. Unstackable. This Matrix's effect works with others, but only the set with the highest star rating will take effect."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Upon a headshot or hitting the target with Icewind Arrow: Piercing Shot, increase ATK by 15% / 18% / 21% / 25% for 8 seconds."
-        }
-      ]
-    }
-  },
-  {
-    "slug": "shiro",
-    "name": "Shiro",
-    "tag": "standard",
-    "element": [
-      "element_physical"
-    ],
-    "rarity": "SSR",
-    "twopc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
-      "effect": [
-        {
-          "paragraph": "Increase both damage and shatter to targets with more than 50% HP by 15% / 19% / 22.5% / 26%."
-        }
-      ]
-    },
-    "fourpc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
-      "effect": [
-        {
-          "paragraph": "Upon entering battle, gain a 20% / 25% / 30% / 35% damage boost for 35 seconds. Reset 5 seconds after exiting battle."
-        }
-      ]
-    }
-  },
-  {
-    "slug": "samir",
-    "name": "Samir",
-    "tag": "standard",
-    "element": [
-      "element_volt"
-    ],
-    "rarity": "SSR",
-    "twopc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
-      "effect": [
-        {
-          "paragraph": "Increase damage progressively by 1% upon hitting a target. Stack up to 10 / 13 / 16 / 20 times. Last for 1.5 seconds."
-        }
-      ]
-    },
-    "fourpc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
-      "effect": [
-        {
-          "paragraph": "Increase Dual EM Stars' electrical explosion damage by 16% / 22% / 30% / 40% of ATK."
-        }
-      ]
-    }
-  },
-  {
-    "slug": "meryl",
-    "name": "Meryl",
-    "tag": "standard",
-    "element": [
-      "element_frost"
-    ],
-    "rarity": "SSR",
-    "twopc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
-      "effect": [
-        {
-          "paragraph": "If HP is less than 30% after being attacked, gain a shield equal to 20% / 26% / 32% / 40% of Max HP for 10 seconds. Cooldown: 90 seconds."
-        }
-      ]
-    },
-    "fourpc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
-      "effect": [
-        {
-          "paragraph": "Increase Whirlwind's damage by 36% / 45% / 54% / 63% and restore HP equal to 30% / 38% / 44% / 50% of the damage dealt while Whirlwind is active. The maximum HP restored every 0.5 seconds cannot exceed 60% / 72% / 81% / 90% of ATK."
-        }
-      ]
-    }
-  },
-  {
-    "slug": "king",
-    "name": "King",
-    "tag": "standard",
-    "element": [
-      "element_flame"
-    ],
-    "rarity": "SSR",
-    "twopc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
-      "effect": [
-        {
-          "paragraph": "When a target is shattered, grant 8% / 10% / 12% / 14% damage boost for 25 seconds. Only the highest level's effect is applied when obtained repeatedly."
-        }
-      ]
-    },
-    "fourpc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
-      "effect": [
-        {
-          "paragraph": "When there are 2 enemies around, hit restore HP equal to 14% / 18% / 22% / 26% of damage dealt upon attacking. The maximum HP restored every 0.5 seconds must not exceed 36% / 42% / 48% / 54% of ATK."
-        }
-      ]
-    }
-  },
-  {
-    "slug": "huma",
-    "name": "Huma",
-    "tag": "standard",
-    "element": [
-      "element_flame"
-    ],
-    "rarity": "SSR",
-    "twopc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
-      "effect": [
-        {
-          "paragraph": "Hitting targets with dodge skills inflicts bleed, dealing damage equal to / 15% / 19% / 22.5% / 26% of ATK every second for 5 seconds."
-        }
-      ]
-    },
-    "fourpc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
-      "effect": [
-        {
-          "paragraph": "Reduce ATK of all targets within 8 meters that are taking damage over time by 10% / 12% / 13% / 15%."
-        },
-        {
-          "paragraph": "Only the set with the highest star rating will take effect."
+          "paragraph": "After gaining an HP Shield, increase ATK by 6%/7.5%/9%/11.5% and increase the ATK of allies by 3%/3.5%/4.5%/5.75% for 15 seconds. Stack up to 3 times. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
         }
       ]
     }
   },
   {
     "slug": "crow",
+    "server": "gacha",
     "name": "Crow",
-    "tag": "standard",
+    "matrix_name": "Fanatical Pursuit",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR11_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Crow: Eleventh Dimension",
+      "Crow: Formitized",
+      "Crow: Dire Survivor",
+      "Crow: Rendition"
+    ],
+    "slot_desc": [
+      "Some things are intangible but do truly exist.",
+      "The past is in the past. The present is what you need to seize.",
+      "Never give up, even though it's more than a long shot.",
+      "A bizarre clown show, sometimes very hard to fathom."
+    ],
     "element": [
-      "element_volt"
+      "volt"
     ],
     "rarity": "SSR",
     "twopc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase crit damage to targets with less than 60% HP by 24% / 30% / 36% / 42%."
+          "paragraph": "Increase crit damage to targets with less than 60% HP by 24%/30%/36%/42%."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Crits deal additional damage over time every second equal to 18% / 22% / 26% / 30% of ATK for 5 seconds. This effect does not stack."
+          "paragraph": "Crits deal additional damage over time equal to 18%/22%/26%/30% of ATK every second for 5 seconds. Does not stack."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "huma",
+    "server": "gacha",
+    "name": "Huma",
+    "matrix_name": "Slightly Awakened",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR10_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Huma: Disoriented",
+      "Huma: Blank Slate",
+      "Huma: Easy Does It",
+      "Huma: Innocent"
+    ],
+    "slot_desc": [
+      "It was the instinct to see the light that led the baby birds out of their shells.",
+      "Start writing the program for a completely new personality right now.",
+      "An amnesiac, just like you. Always tries to do whatever can be done first.",
+      "The stiff expression is a part of the package."
+    ],
+    "element": [
+      "flame"
+    ],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Hitting targets with dodge skills inflicts bleed, dealing damage equal to 15%/19%/22.5%/26% of ATK every second for 5 seconds."
+        }
+      ]
+    },
+    "threepc": {},
+    "fourpc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Reduce ATK of all targets within 8 meters that are taking damage over time by 10%/12%/13%/15%. Only the highest level's effect is applied when obtained repeatedly."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "samir",
+    "server": "gacha",
+    "name": "Samir",
+    "matrix_name": "Rational Liberation",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR9_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Samir: Just Kidding",
+      "Samir: Dearly Departed",
+      "Samir: Silver Bullet",
+      "Samir: Future Focus"
+    ],
+    "slot_desc": [
+      "If you said her jokes are corny, she would reply, \"Why so serious?\"",
+      "One who lives in the past is unreachable and can't let go.",
+      "She owns a silver bullet. Is she hunting vampires?",
+      "She's always certain of her destiny."
+    ],
+    "element": [
+      "volt"
+    ],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increase damage progressively by 1% upon hitting a target. Stack up to 10/13/16/20 times. Lasts for 1.5 seconds."
+        }
+      ]
+    },
+    "threepc": {},
+    "fourpc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increase Dual EM Stars' electrical explosion damage by 16%/22%/30%/40% of ATK."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "zero",
+    "server": "gacha",
+    "name": "Zero",
+    "matrix_name": "Incredible Connection",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR8_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Zero: Paranormal Calculation",
+      "Zero: Terminal Protocol",
+      "Zero: Info Sort",
+      "Zero: Survival of Fittest"
+    ],
+    "slot_desc": [
+      "Break through logic, subvert reality, completely abandon formulas based on experience to arrive at the final result.",
+      "Memories are just matters of imprints. As for whether they're real or false, you must decide for yourself.",
+      "Intel is generated through sorting loose info and data.",
+      "Survival of the fittest is the law of nature and the manifestation of individual superiority."
+    ],
+    "element": [
+      "flame"
+    ],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Upon using a discharge skill to switch to the current weapon, gain a shield equal to 150%/200%/250%/300% of ATK for 6 seconds."
+        }
+      ]
+    },
+    "threepc": {},
+    "fourpc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "While the shield is active, you and your teammates deal 16%/20%/24%/28% more damage."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "shiro",
+    "server": "gacha",
+    "name": "Shiro",
+    "matrix_name": "Poem of Departure",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR7_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Shiro: Isolated",
+      "Shiro: Longing for Sea",
+      "Shiro: Great Singer",
+      "Shiro: Cat-like"
+    ],
+    "slot_desc": [
+      "Like a wild cat, she is skittish toward others. Yet sometimes she'll sit by a pond and play with the water, wondering why she is so lonely.",
+      "A big part of the ocean's beauty stems from the fact that it could never be fully understood.",
+      "Proof of her awesome singing voice, from a researcher who defied death to smuggle the recording out.",
+      "Every touch is cautious, every gaze deftly avoided... That's her humble way to pursue happiness."
+    ],
+    "element": [
+      "physical"
+    ],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increase both damage and shatter to targets with more than 50% HP by 15%/19%/22.5%/26%."
+        }
+      ]
+    },
+    "threepc": {},
+    "fourpc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Upon entering battle, gain a 20%/25%/30%/35% damage boost for 35 seconds. Reset 5 seconds after exiting battle."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "claudia",
+    "server": "gacha",
+    "name": "Claudia",
+    "matrix_name": "Multi-directional Strike",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR6_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Claudia: Rational Analysis",
+      "Claudia: True Self",
+      "Claudia: Righteous",
+      "Claudia: Aura of Determination"
+    ],
+    "slot_desc": [
+      "First, learn to accept popular opinions, then make judgments about the issue at hand.",
+      "Be true to yourself so you're no longer bound by the past and will hold the future.",
+      "All efforts made to uphold justice will be proven worthwhile.",
+      "Bring values into action, even spread them around without being aware."
+    ],
+    "element": [
+      "physical"
+    ],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increase damage by 13%/17%/20%/23% when hitting a target in mid-air or initiating an aerial attack. Reset double-jump upon hitting the target in mid-air."
+        }
+      ]
+    },
+    "threepc": {},
+    "fourpc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Hitting an enemy with a skill reduces the cooldowns of all weapon skills by 1.5/2/2.5/3 seconds and increases the damage of discharge skills by 58%/80%/103%/126% for 15 seconds."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "cobaltb",
+    "server": "gacha",
+    "name": "Cobalt-B",
+    "matrix_name": "Intuitive Tactic",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR5_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Cobalt-B: Sixth Sense",
+      "Cobalt-B: Starting Capital",
+      "Cobalt-B: Master Artist",
+      "Cobalt-B: Rise and Shine"
+    ],
+    "slot_desc": [
+      "It's as keen as forced static observation upon various planes, with some strong luck to boot.",
+      "Two pieces of collateral, uncollected even after the debt had been repaid, were seemingly left as a sort of generous memento... or perhaps they were simply forgotten.",
+      "What's wrong with calling this \"artwork\"? You don't think a wrench is as elegant as a paintbrush?",
+      "Put an alarm clock on the mini-drone to wake you up in the morning."
+    ],
+    "element": [
+      "flame"
+    ],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increase damage against debuffed targets by 14%/16%/18%/20%."
+        }
+      ]
+    },
+    "threepc": {},
+    "fourpc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Restore 1 dodge attempt every 3 dodges. Dodge skills inflict burn upon hit, dealing damage equal to 24%/30%/36%/42% of ATK every 0.5 seconds for 4 seconds."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "king",
+    "server": "gacha",
+    "name": "KING",
+    "matrix_name": "Advocate of Violence",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR4_512.webp",
+    "tag": "",
+    "slot_names": [
+      "KING: Underground Ruler",
+      "KING: Live to Fight",
+      "KING: Thrillseeker",
+      "KING: One Man Army"
+    ],
+    "slot_desc": [
+      "A good reputation still won't change the inability to get by with an empty wallet, so let's fill it up first and ask questions later.",
+      "These miners work mindlessly like zombies. You'll become one of them if you don't get away.",
+      "Craves excitement and seemingly over-the-top joy... which does not include career aspirations.",
+      "Still, there's a limit to fighting with just fists, which he learned at a very young age."
+    ],
+    "element": [
+      "flame"
+    ],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "When a target is shattered, grant 8%/10%/12%/14% damage boost for 25 seconds. Only the highest level's effect is applied when obtained repeatedly."
+        }
+      ]
+    },
+    "threepc": {},
+    "fourpc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "When there are more than 2 enemies around, hit restore HP equal to 14%/18%/22%/26% of damage dealt upon attacking. The maximum HP restored every 0.5 seconds cannot exceed 36%/42%/48%/54% of ATK."
         }
       ]
     }
   },
   {
     "slug": "cocoritter",
+    "server": "gacha",
     "name": "Cocoritter",
-    "tag": "standard",
+    "matrix_name": "Proof of Trust",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR3_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Cocoritter: Artistic Instinct",
+      "Cocoritter: Identity Overlap",
+      "Cocoritter: Caregiver",
+      "Cocoritter: Helper"
+    ],
+    "slot_desc": [
+      "The thoughts behind the creation of craft can also be applied on the battlefield.",
+      "Her silhouette is overlapping with the protector she remembered.",
+      "Her expectation is simple—just easing your pain.",
+      "Trust me, leave the support to me."
+    ],
     "element": [
-      "element_frost"
+      "frost"
     ],
     "rarity": "SSR",
     "twopc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase healing capability and healing received by 10% / 12% / 14% / 16%."
+          "paragraph": "Increase healing capability and healing received by 10%/12%/14%/16%."
         }
       ]
     },
+    "threepc": {},
     "fourpc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "When you or your teammates are healed, increase ATK by 12.5% / 15% / 17.5% / 20% for 6 seconds."
-        },
+          "paragraph": "When you or your teammates are healed, increase ATK by 12.5%/15%/17.5%/20% for 6 seconds. Only the highest level's effect is applied when obtained repeatedly."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "tsubasa",
+    "server": "gacha",
+    "name": "Tsubasa",
+    "matrix_name": "Eye of Wind",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR2_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Tsubasa: Weather Vane",
+      "Tsubasa: Gravitator",
+      "Tsubasa: Drifter",
+      "Tsubasa: Stone Cold"
+    ],
+    "slot_desc": [
+      "\"The wind blows.\" That sums up every cause for leaving and setting off again.",
+      "She's always moving about and only stays in the spot she had thoroughly scouted.",
+      "How can you tell which faith is the right one? Answer: The one that ultimately emerges victorious.",
+      "A rational assessment of relationships."
+    ],
+    "element": [
+      "frost"
+    ],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
         {
-          "paragraph": "Only the set with the highest star rating will take effect."
+          "paragraph": "Increase damage dealt by 14%/16%/18%/20% when there are no enemies within 4 meters."
+        }
+      ]
+    },
+    "threepc": {},
+    "fourpc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Upon a headshot or hitting the target with Icewind Arrow: Piercing Shot, increase ATK by 15%/18%/21%/25% for 8 seconds."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "meryl",
+    "server": "gacha",
+    "name": "Meryl",
+    "matrix_name": "Pure White Guardian",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SSR1_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Meryl: Swordfight Simulation",
+      "Meryl: Wake-Up Call",
+      "Meryl: Absolute Authority",
+      "Meryl: Detached"
+    ],
+    "slot_desc": [
+      "Complex swordfight simulation seemingly used for calibration. Anyway, not something for the average person.",
+      "Chained memory shards used to implant consciousness. Note that it doesn't come with an instruction manual.",
+      "It, of course, represents the self-approval and outside recognition of an Executor's power.",
+      "Mental communication barriers set up by rejecting all socialization."
+    ],
+    "element": [
+      "frost"
+    ],
+    "rarity": "SSR",
+    "twopc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "If HP is less than 30% after receiving damage, gain a shield equal to 20%/26%/32%/40% of Max HP for 10 seconds. Cooldown: 90 seconds."
+        }
+      ]
+    },
+    "threepc": {},
+    "fourpc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Increase Whirlwind's damage by 36%/45%/54%/63% and restore HP equal to 30%/38%/44%/50% of the damage dealt while Whirlwind is active. The maximum HP restored every 0.5 seconds cannot exceed 60%/72%/81%/90% of ATK."
         }
       ]
     }
   },
   {
     "slug": "robarg",
+    "server": "gacha",
     "name": "Robarg",
+    "matrix_name": "Devourer",
+    "hasWeapon": false,
+    "hasSimulacra": false,
+    "icon": "icon_matrix_SR1_512.webp",
     "tag": "",
-    "element": [
-      "element_all"
+    "slot_names": [
+      "Robarg: Greed",
+      "Robarg: Instinct",
+      "Robarg: Exhaustion",
+      "Robarg: The End"
     ],
+    "slot_desc": [
+      "Rooted in avarice and without an end in sight.",
+      "Its instinct is always surging ahead.",
+      "Devours everything, from body and energy to your will to survive.",
+      "It has been looking forward to the end."
+    ],
+    "element": [],
     "rarity": "SR",
+    "twopc": {},
     "threepc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "When a target is shattered, poison the target and deal damage equal to 45% / 56% / 67.5% of ATK every second for 10 seconds."
+          "paragraph": "When a target is shattered, poison the target and deal damage equal to 45%/56%/67.5% of ATK every second for 10 seconds."
         }
       ]
-    }
+    },
+    "fourpc": {}
   },
   {
     "slug": "apophis",
+    "server": "gacha",
     "name": "Apophis",
+    "matrix_name": "Internal Struggle",
+    "hasWeapon": false,
+    "hasSimulacra": false,
+    "icon": "icon_matrix_SR2_512.webp",
     "tag": "",
-    "element": [
-      "element_all"
+    "slot_names": [
+      "Apophis: Giant Body",
+      "Apophis: Confrontation",
+      "Apophis: Weak Point",
+      "Apophis: Hatred"
     ],
+    "slot_desc": [
+      "Huge in size, with every move causing great changes.",
+      "What am I fighting against? Fate or myself?",
+      "The weakness is the security configurations embedded in the chip, which cannot be overcome or resisted.",
+      "Why was it made, and why was it modified?"
+    ],
+    "element": [],
     "rarity": "SR",
+    "twopc": {},
     "threepc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Deal higher damage at lower HP. Deal maximum damage when HP is 20%. The damage can be increased by up to 20% / 25% / 30%."
+          "paragraph": "Deal higher damage at lower HP. Deal maximum damage when HP is 60%. The damage can be increased by up to 10%/12.5%/15%."
         }
       ]
-    }
+    },
+    "fourpc": {}
   },
   {
     "slug": "frostbot",
-    "name": "Frostbot",
+    "server": "gacha",
+    "name": "Frost Bot",
+    "matrix_name": "Extreme Zero",
+    "hasWeapon": false,
+    "hasSimulacra": false,
+    "icon": "icon_matrix_SR3_512.webp",
     "tag": "",
-    "element": [
-      "element_all"
+    "slot_names": [
+      "Frost Bot: Formidable",
+      "Frost Bot: Swift End",
+      "Frost Bot: Quick Freeze",
+      "Frost Bot: Ruthless"
     ],
+    "slot_desc": [
+      "It looks like food, indeed, but that doesn't mean you shouldn't be cautious.",
+      "The combat system of armor has only one goal: End the fight as swiftly as possible.",
+      "Freeze the surrounding in blocks of ice.",
+      "Not wise to fight it."
+    ],
+    "element": [],
     "rarity": "SR",
+    "twopc": {},
     "threepc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "When HP is below 40%, using a discharge skill to switch to the current weapon restores HP equal to 160% / 200% / 240% of ATK."
+          "paragraph": "When HP is below 40%, using a discharge skill to switch to the current weapon restores HP equal to 160%/200%/240% of ATK."
         }
       ]
-    }
+    },
+    "fourpc": {}
   },
   {
     "slug": "sobek",
+    "server": "gacha",
     "name": "Sobek",
+    "matrix_name": "Swamp Shadow",
+    "hasWeapon": false,
+    "hasSimulacra": false,
+    "icon": "icon_matrix_SR4_512.webp",
     "tag": "",
-    "element": [
-      "element_all"
+    "slot_names": [
+      "Sobek: Scheme",
+      "Sobek: Opportunity",
+      "Sobek: Confusion",
+      "Sobek: Restlessness"
     ],
+    "slot_desc": [
+      "Be careful not to get dragged into the mire it's in.",
+      "It's always patient, enough for some unlucky sap to step on it eventually.",
+      "It's not moving. Is it asleep or just conserving energy?",
+      "It gets bored too, and when it feels restless, it's some innocent passersby who might suffer."
+    ],
+    "element": [],
     "rarity": "SR",
+    "twopc": {},
     "threepc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase damage dealt by 6% / 7.5% / 9% for each enemy nearby. Up to 3 stacks."
+          "paragraph": "Increase damage dealt by 6%/7.5%/9% for each enemy nearby. Up to 3 stacks."
         }
       ]
-    }
+    },
+    "fourpc": {}
   },
   {
     "slug": "barbarossa",
+    "server": "gacha",
     "name": "Barbarossa",
+    "matrix_name": "Double Nightmares",
+    "hasWeapon": false,
+    "hasSimulacra": false,
+    "icon": "icon_matrix_SR5_512.webp",
     "tag": "",
-    "element": [
-      "element_all"
+    "slot_names": [
+      "Barbarossa: Power Play",
+      "Barbarossa: Divided Land",
+      "Barbarossa: Natural Aggression",
+      "Barbarossa: Intimidating Roar"
     ],
+    "slot_desc": [
+      "The two heads usually fight over who gets to kill the prey. A little instigation and the fight turns physical.",
+      "Where was it from? Maybe it still somewhat knows.",
+      "It never gets tired of the eternal biting and grinding, always eagerly awaits the next victim.",
+      "It starts with a roar—that is also the death knell for the innocent victims."
+    ],
+    "element": [],
     "rarity": "SR",
+    "twopc": {},
     "threepc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Upon switching to the weapon, gain 50% / 62.5% / 75% damage reflection for 3 seconds. Cooldown: 30 seconds. Upon switching to another weapon, gain a 20% / 25% / 30% damage boost for 5 seconds. Cooldown: 30 seconds."
+          "paragraph": "Upon switching to the weapon, gain 50%/62.5%/75% damage reflection for 3 seconds. Cooldown: 30 seconds. Upon switching to another weapon, gain a 20%/25%/30% damage boost for 5 seconds. Cooldown: 30 seconds."
         }
       ]
-    }
+    },
+    "fourpc": {}
   },
   {
     "slug": "pepper",
+    "server": "gacha",
     "name": "Pepper",
+    "matrix_name": "Nonstop",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SR6_512.webp",
     "tag": "",
+    "slot_names": [
+      "Pepper: Assembly Line",
+      "Pepper: Surgical Scar",
+      "Pepper: Armband",
+      "Pepper: Sleeping Pill"
+    ],
+    "slot_desc": [
+      "Who can explain to her that she has been toiling away for a long time now?",
+      "Aberrations cannot be reversed. Just like post-surgery scars, you don't get a chance.",
+      "As a doctor, you cannot turn away, cannot be complacent, cannot be helpless.",
+      "She has insomnia from not wanting to face the dead in her dreams."
+    ],
     "element": [
-      "element_volt"
+      "volt"
     ],
     "rarity": "SR",
+    "twopc": {},
     "threepc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "benediction","fortitude"
-      ],
-      "buffs":[
-        "Charge"
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase the speed of obtaining weapon charge by 10% / 12.5% / 15%."
+          "paragraph": "Increase speed of obtaining weapon charge by 10%/12.5%/15%."
         }
       ]
-    }
+    },
+    "fourpc": {}
   },
   {
     "slug": "hilda",
+    "server": "gacha",
     "name": "Hilda",
+    "matrix_name": "Parabola",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SR7_512.webp",
     "tag": "",
+    "slot_names": [
+      "Hilda: Acumen",
+      "Hilda: Dockbred",
+      "Hilda: Haggler",
+      "Hilda: Smash Ball"
+    ],
+    "slot_desc": [
+      "Full of business acumen.",
+      "The nostrils have been smelling the salty scent of the sea for far too long. They're uncomfortable when it's missing.",
+      "Never buy things at full price, always haggle till your last breath!",
+      "There are not many recreations you can do with physically handicapped friends."
+    ],
     "element": [
-      "element_frost"
+      "frost"
     ],
     "rarity": "SR",
+    "twopc": {},
     "threepc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        "attack"
-      ],
-      "buffs":[
-        "Damage %"
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase damage by 12% / 15% / 18% when there are no enemies within 6 meters."
+          "paragraph": "Increase damage by 12%/15%/18% when there are no enemies within 6 meters."
         }
       ]
-    }
+    },
+    "fourpc": {}
   },
   {
     "slug": "ene",
+    "server": "gacha",
     "name": "Ene",
+    "matrix_name": "Overload",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SR8_512.webp",
     "tag": "",
+    "slot_names": [
+      "Ene: Competitive",
+      "Ene: Loose Cannon",
+      "Ene: Second Life",
+      "Ene: Family Photo"
+    ],
+    "slot_desc": [
+      "The accelerated output when power is increased will also be delivered in faint tremors to the weapon.",
+      "The Hykros Suppressor Lab never forgets the fight she put up.",
+      "A body without pain will function to the last ounce of energy until complete destruction.",
+      "It was taken only because her father begged her to."
+    ],
     "element": [
-      "element_frost"
+      "frost"
     ],
     "rarity": "SR",
+    "twopc": {},
     "threepc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "When dealing damage greater than 100% of ATK, deal additional damage equal to 60% / 75% / 90% of ATK."
-        },
-        {
-          "paragraph": "Cooldown: 3 seconds."
+          "paragraph": "When dealing damage greater than 100% of ATK, deal additional damage equal to 60%/75%/90% of ATK. Cooldown: 3 seconds."
         }
       ]
-    }
-  },
-  {
-    "slug": "echo",
-    "name": "Echo",
-    "tag": "",
-    "element": [
-      "element_volt"
-    ],
-    "rarity": "SR",
-    "threepc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
-      "effect": [
-        {
-          "paragraph": "Using a discharge skill to switch to the current weapon grants 150 / 200 / 250 weapon charge."
-        }
-      ]
-    }
+    },
+    "fourpc": {}
   },
   {
     "slug": "bailing",
+    "server": "gacha",
     "name": "Bai Ling",
+    "matrix_name": "Deadly Lock",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SR9_512.webp",
     "tag": "",
+    "slot_names": [
+      "Bai Ling: Diverse",
+      "Bai Ling: Dissipation",
+      "Bai Ling: Fair Trade",
+      "Bai Ling: Nth Power"
+    ],
+    "slot_desc": [
+      "What to do when you think about it and it spreads?",
+      "From disorderly to orderly? Outside interference is probably needed. Probably, I said.",
+      "Goods should be traded according to their own value. But how do you put a value on something that's immeasurable?",
+      "If only experience gained and ROI worked exponentially..."
+    ],
     "element": [
-      "element_physical"
+      "physical"
     ],
     "rarity": "SR",
+    "twopc": {},
     "threepc": {
-      "onField": true,
-      "onHealingGuide": false,
-      "onTankGuide": false,
-      "resonance": [
-        ""
-      ],
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
       "effect": [
         {
-          "paragraph": "Increase damage dealt to grievous targets by 12% / 15% / 18%."
+          "paragraph": "Increase damage dealt to grievous targets by 12%/15%/18%."
         }
       ]
-    }
+    },
+    "fourpc": {}
+  },
+  {
+    "slug": "echo",
+    "server": "gacha",
+    "name": "Echo",
+    "matrix_name": "Uproot",
+    "hasWeapon": true,
+    "hasSimulacra": true,
+    "icon": "icon_matrix_SR12_512.webp",
+    "tag": "",
+    "slot_names": [
+      "Echo: Until the End",
+      "Echo: Post Crisis",
+      "Echo: Black or White",
+      "Echo: Homesick"
+    ],
+    "slot_desc": [
+      "A straight line of thought to completing the current goal.",
+      "Memory of the snowfield on a truck after surviving a crisis.",
+      "It's too hard for her to comprehend anything complicated.",
+      "Two homes, two shelters, both cozy. Either way, it's the homecoming."
+    ],
+    "element": [
+      "volt"
+    ],
+    "rarity": "SR",
+    "twopc": {},
+    "threepc": {
+      "onField": false,
+      "resonance": [],
+      "buffs": [],
+      "effect": [
+        {
+          "paragraph": "Using a discharge skill to switch to the current weapon grants 150/200/250 weapon charge."
+        }
+      ]
+    },
+    "fourpc": {}
   }
 ]

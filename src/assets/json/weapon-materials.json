@@ -1,0 +1,224 @@
+[
+  {
+    "lv": 1,
+    "gold": 1000,
+    "items": [
+      {
+        "id": "A",
+        "amount": 6
+      }
+    ]
+  },
+  {
+    "lv": 2,
+    "gold": 2500,
+    "items": [
+      {
+        "id": "A",
+        "amount": 12
+      }
+    ]
+  },
+  {
+    "lv": 3,
+    "gold": 4750,
+    "items": [
+      {
+        "id": "A",
+        "amount": 18
+      }
+    ]
+  },
+  {
+    "lv": 4,
+    "gold": 8120,
+    "items": [
+      {
+        "id": "A",
+        "amount": 22
+      },
+      {
+        "id": "B",
+        "amount": 8
+      }
+    ]
+  },
+  {
+    "lv": 5,
+    "gold": 13170,
+    "items": [
+      {
+        "id": "A",
+        "amount": 36
+      },
+      {
+        "id": "B",
+        "amount": 14
+      }
+    ]
+  },
+  {
+    "lv": 6,
+    "gold": 20670,
+    "items": [
+      {
+        "id": "A",
+        "amount": 67
+      },
+      {
+        "id": "B",
+        "amount": 25
+      }
+    ]
+  },
+  {
+    "lv": 7,
+    "gold": 31870,
+    "items": [
+      {
+        "id": "A",
+        "amount": 110
+      },
+      {
+        "id": "B",
+        "amount": 40
+      }
+    ]
+  },
+  {
+    "lv": 8,
+    "gold": 48670,
+    "items": [
+      {
+        "id": "A",
+        "amount": 190
+      },
+      {
+        "id": "B",
+        "amount": 70
+      }
+    ]
+  },
+  {
+    "lv": 9,
+    "gold": 73870,
+    "items": [
+      {
+        "id": "A",
+        "amount": 330
+      },
+      {
+        "id": "B",
+        "amount": 120
+      }
+    ]
+  },
+  {
+    "lv": 10,
+    "gold": 111670,
+    "items": [
+      {
+        "id": "A",
+        "amount": 580
+      },
+      {
+        "id": "B",
+        "amount": 210
+      },
+      {
+        "id": "C",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "lv": 11,
+    "gold": 168370,
+    "items": [
+      {
+        "id": "A",
+        "amount": 1000
+      },
+      {
+        "id": "B",
+        "amount": 370
+      },
+      {
+        "id": "C",
+        "amount": 25
+      }
+    ]
+  },
+  {
+    "lv": 12,
+    "gold": 253370,
+    "items": [
+      {
+        "id": "A",
+        "amount": 1800
+      },
+      {
+        "id": "B",
+        "amount": 650
+      },
+      {
+        "id": "C",
+        "amount": 50
+      }
+    ]
+  },
+  {
+    "lv": 13,
+    "gold": 380370,
+    "items": [
+      {
+        "id": "A",
+        "amount": 1800
+      },
+      {
+        "id": "B",
+        "amount": 650
+      },
+      {
+        "id": "C",
+        "amount": 100
+      }
+    ]
+  },
+  {
+    "lv": 14,
+    "gold": 570370,
+    "items": [
+      {
+        "id": "A",
+        "amount": 1800
+      },
+      {
+        "id": "B",
+        "amount": 650
+      },
+      {
+        "id": "D",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "lv": 15,
+    "gold": 855370,
+    "items": [
+      {
+        "id": "A",
+        "amount": 1800
+      },
+      {
+        "id": "B",
+        "amount": 650
+      },
+      {
+        "id": "D",
+        "amount": 25
+      }
+    ]
+  }
+]

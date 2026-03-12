@@ -35,7 +35,7 @@ export class UnitsIndexComponent implements OnInit {
   private SupportBufferUnits: string[] = [];
   private ShatterUnits: string[] = [];
   private TauntUnits: string[] = [];
-
+  slug!: string;
   private allUnits: string[] = [...this.SSRUnits, ...this.SRUnits];
 
   constructor(private route: ActivatedRoute) { }
@@ -102,10 +102,16 @@ export class UnitsIndexComponent implements OnInit {
   }
 
   ngOnInit() {
-    const data = this.route.snapshot.data['data'];
-    const simulacraData = data.simulacra;
-    this.units = simulacraData;
-    this.populateArrays(simulacraData);
+    this.route.paramMap.subscribe(params => {
+      const data = this.route.snapshot.data['data'];
+      const simulacraData = data.simulacra;
+
+      this.slug = params.get('server')!;
+      this.units = simulacraData.filter(
+        (unit: any) => unit.server === this.slug
+      );
+    });
+    this.populateArrays( this.units);
 
     $('.element .wrapper img').click((event) => {
       const element = $(event.currentTarget).attr('data-element');

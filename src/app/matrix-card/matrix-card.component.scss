@@ -159,8 +159,8 @@
             height: 100%;
             display: flex;
             align-items: flex-end;
-            background-position: 80% -10%;
-            background-size: 90%;
+            background-position: 50% 80%;
+            background-size: 140%;
             background-repeat: no-repeat; // weird edge case
 
             .new-tag {
@@ -239,7 +239,7 @@
         .reverse-animation {
             animation: onTopReverseMobile 0.5s ease-in-out forwards;
         }
-    
+
         // surely a shuffle animation will be easy, clueless
         &:hover {
             .back-card {

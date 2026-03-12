@@ -72,13 +72,22 @@ main {
         margin: 0 0 80px 0;
     }
 
-    app-index, app-units-index, app-unit-page, app-matrix-page, app-relic-page, app-matrices-index, app-relics-index, app-healing, app-healing-guide, app-healing-teams, app-healing-calculator, app-guides, app-glossary,  app-about-us, app-page-not-found { // with how Angular loads pages, just do this for every main component
+    app-index, app-units-index, app-matrix-page, app-relic-page, app-matrices-index, app-relics-index, app-healing, app-healing-guide, app-healing-teams, app-healing-calculator, app-guides, app-glossary,  app-about-us, app-page-not-found { // with how Angular loads pages, just do this for every main component
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 40px 0 80px 0;
     }
+
+    app-unit-page {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 0 80px 0;
+    }
+
 
     app-page-not-found {
         margin: unset;
@@ -326,12 +335,12 @@ section.main {
     }
 }
 
-.num-clr { // temporary location
+.num-clr {
     color: $link;
     font-weight: 400;
 
 }
-.red-clr { // temporary location
+.red-clr {
     color: $red;
     font-weight: 400;
 }

@@ -1,7 +1,8 @@
-import { AfterViewInit, Component, ElementRef, OnInit, QueryList, ViewChildren, ChangeDetectorRef } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, QueryList, ViewChildren, ViewChild, ChangeDetectorRef } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-
+import { ChartConfiguration, ChartData, ChartType } from 'chart.js';
+import { BaseChartDirective } from 'ng2-charts';
 import * as $ from 'jquery';
 
 @Component({
@@ -12,82 +13,8 @@ import * as $ from 'jquery';
 
 export class UnitPageComponent implements OnInit, AfterViewInit {
 
-
-  slug!: string;
-  unit: any = {};
-  matrix: any = {};
-  upgradeData: any = {};
-  activeTab: any = null;
-  activeInfo: string = 'Advancements';
-  sliderValues: number[] = [0, 200];
-  materialsColour: any = [];
-  totalMaterialsArray: [string, number][] = [];
-  startvalue: number = 0;
-  endvalue: number = 200;
-  materialsElement!: string;
-
-  frostMappings: { [key: string]: string } = {
-    'elementalCore_A': 'icecore_A',
-    'upgradeA_A': 'acidproofglaze_A',
-    'upgradeB_A': 'nanofiberframe_A',
-    'elementalCore_B': 'icecore_B',
-    'upgradeA_B': 'acidproofglaze_B',
-    'upgradeB_B': 'nanofiberframe_B',
-    'elementalCore_C': 'icecore_C',
-    'upgradeA_C': 'acidproofglaze_C',
-    'upgradeB_C': 'nanofiberframe_C',
-  };
-
-  voltMappings: { [key: string]: string } = {
-    'elementalCore_A': 'magcore_A',
-    'upgradeA_A': 'nanocoating_A',
-    'upgradeB_A': 'boosterframe_A',
-    'elementalCore_B': 'magcore_B',
-    'upgradeA_B': 'nanocoating_B',
-    'upgradeB_B': 'boosterframe_B',
-    'elementalCore_C': 'magcore_C',
-    'upgradeA_C': 'nanocoating_C',
-    'upgradeB_C': 'boosterframe_C',
-  };
-
-  physicalMappings: { [key: string]: string } = {
-    'elementalCore_A': 'rockcore_A',
-    'upgradeA_A': 'nanocoating_A',
-    'upgradeB_A': 'boosterframe_A',
-    'elementalCore_B': 'rockcore_B',
-    'upgradeA_B': 'nanocoating_B',
-    'upgradeB_B': 'boosterframe_B',
-    'elementalCore_C': 'rockcore_C',
-    'upgradeA_C': 'nanocoating_C',
-    'upgradeB_C': 'boosterframe_C',
-  };
-
-  flameMappings: { [key: string]: string } = {
-    'elementalCore_A': 'firecore_A',
-    'upgradeA_A': 'acidproofglaze_A',
-    'upgradeB_A': 'nanofiberframe_A',
-    'elementalCore_B': 'firecore_B',
-    'upgradeA_B': 'acidproofglaze_B',
-    'upgradeB_B': 'nanofiberframe_B',
-    'elementalCore_C': 'firecore_C',
-    'upgradeA_C': 'acidproofglaze_C',
-    'upgradeB_C': 'nanofiberframe_C',
-  };
-
-  alteredMappings: { [key: string]: string } = {
-    'upgradeA_A': 'nanocoating_A',
-    'upgradeB_A': 'acidproofglaze_A',
-    'upgradeC_A': 'boosterframe_A',
-    'upgradeD_A': 'nanofiberframe_A',
-    'upgradeA_B': 'nanocoating_B',
-    'upgradeB_B': 'acidproofglaze_B',
-    'upgradeC_B': 'boosterframe_B',
-    'upgradeD_B': 'nanofiberframe_B',
-    'upgradeA_C': 'nanocoating_C',
-    'upgradeB_C': 'acidproofglaze_B',
-    'upgradeC_C': 'boosterframe_C',
-    'upgradeD_C': 'nanofiberframe_C',
-  };
+  @ViewChildren('info') infos!: QueryList<ElementRef>;
+  @ViewChild(BaseChartDirective) chart?: BaseChartDirective;
 
   constructor(
     private route: ActivatedRoute,
@@ -95,6 +22,61 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
     private cdr: ChangeDetectorRef
   ) { }
 
+  // Radar Chart
+  radarChartType: ChartType = 'radar';
+  radarChartLabels: string[] = [];
+  radarChartData: ChartData<'radar'> = {
+    labels: this.radarChartLabels,
+    datasets: [{
+      data: [],
+      backgroundColor: 'rgba(255, 99, 132, 0.2)',
+      borderColor: 'rgb(255, 99, 132)',
+      pointBackgroundColor: 'rgb(255, 99, 132)',
+      pointBorderColor: '#fff',
+      pointHoverBackgroundColor: '#fff',
+      pointHoverBorderColor: 'rgb(255, 99, 132)'
+    }]
+  };
+  radarChartOptions: ChartConfiguration['options'] = {
+    responsive: true,
+    plugins: {
+      legend: {
+        display: false  // <-- disables the legend
+      }
+    },
+    elements: {
+      line: { borderWidth: 2 } // line thickness
+    },
+    scales: {
+      r: {
+        beginAtZero: true,
+        grid: {
+          color: 'rgba(255, 255, 255, 0.6)' // color of the web lines
+        },
+        angleLines: {
+          color: 'rgba(255, 255, 255, 0.6)' // color of the lines going from center to each label
+        },
+        pointLabels: {
+          color: '#ffffff', // color of the labels around the chart
+          font: {
+            size: 16
+          }
+        },
+        ticks: {
+          display: false
+        }
+      }
+    }
+  };
+
+  updateRadarChart(newLabels: string[], newData: number[]) {
+    this.radarChartLabels = newLabels;
+    this.radarChartData.labels = this.radarChartLabels;
+    this.radarChartData.datasets[0].data = newData;
+    this.chart?.update();
+  }
+
+  // Utility
   processRoleSlug(role: string): string {
     return `assets/effects/buff_${role.toLowerCase().replace(/\s+/g, '')}.png`;
   }
@@ -103,67 +85,146 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
     return this.sanitizer.bypassSecurityTrustHtml(html);
   }
 
-  ngOnInit() {
-    const data = this.route.snapshot.data['data'];
-    const simulacraData = data.simulacra;
-    const matricesData = data.matrices;
-    const weaponMaterialsData = data.weaponMaterials;
-
-    this.slug = this.route.snapshot.paramMap.get('name')!;
-    this.unit = simulacraData.find((unit: any) => unit.slug === this.slug);
-
-    if (this.unit) {
-      const element = this.unit.element;
-      const rarity = this.unit.rarity;
-
-      // Set page color depending on the element
-      const elementColors: { [key: string]: string } = {
-        "physical": '#CF9B14',
-        "physicalflame": '#CF9B14',
-        "flame": '#E74412',
-        "flamephysical": '#E74412',
-        "frost": '#3498DB',
-        "frostvolt": '#3498DB',
-        "volt": '#8C7ED0',
-        "voltfrost": '#8C7ED0',
-        "altered": '#0EA667'
-      };
-      const materialMappings: { [key: string]: string } = {
-        "physical": 'physical',
-        "physicalflame": 'physical',
-        "flame": 'flame',
-        "flamephysical": 'flame',
-        "frost": 'frost',
-        "frostvolt": 'frost',
-        "volt": 'volt',
-        "voltfrost": 'volt',
-        "altered": 'altered'
-      };
-
-      this.materialsElement = materialMappings[element];
-      document.documentElement.style.setProperty('--element-color', elementColors[element]);
-      // Fetch upgrade data
-
-      this.upgradeData = weaponMaterialsData.find((upgradeData: any) => {
-        if (element !== 'element_altered' && rarity == 'SSR') {
-          return upgradeData.slug === 'element_all';
-        } else if (element === 'element_altered') {
-          return upgradeData.slug === element;
-        } else if (rarity === 'SR') {
-          return upgradeData.slug === 'element_sr';
-        } else {
-          return upgradeData.slug === 'element_all';
-        }
-      });
-
-      console.log(this.upgradeData);
-      console.log(this.unit);
+  // Materials
+  onSliderChange() {
+    if (this.unit.server == "gacha") {
+      this.calculateTotalMaterials();
     }
-
-    this.matrix = matricesData.find((matrix: any) => matrix.slug === this.slug);
-    this.calculateTotalMaterials();
+    if (this.unit.server == "warp") {
+      this.calculateTotalMaterialsMMO(this.element);
+    }
   }
 
+  elementMaterialMappings: Record<string, Record<string, string>> = {
+    frost: {
+      elementalCore_A: 'icecore_A',
+      upgradeA_A: 'acidproofglaze_A',
+      upgradeB_A: 'nanofiberframe_A',
+      elementalCore_B: 'icecore_B',
+      upgradeA_B: 'acidproofglaze_B',
+      upgradeB_B: 'nanofiberframe_B',
+      elementalCore_C: 'icecore_C',
+      upgradeA_C: 'acidproofglaze_C',
+      upgradeB_C: 'nanofiberframe_C',
+    },
+
+    volt: {
+      elementalCore_A: 'magcore_A',
+      upgradeA_A: 'nanocoating_A',
+      upgradeB_A: 'boosterframe_A',
+      elementalCore_B: 'magcore_B',
+      upgradeA_B: 'nanocoating_B',
+      upgradeB_B: 'boosterframe_B',
+      elementalCore_C: 'magcore_C',
+      upgradeA_C: 'nanocoating_C',
+      upgradeB_C: 'boosterframe_C',
+    },
+
+    physical: {
+      elementalCore_A: 'rockcore_A',
+      upgradeA_A: 'nanocoating_A',
+      upgradeB_A: 'boosterframe_A',
+      elementalCore_B: 'rockcore_B',
+      upgradeA_B: 'nanocoating_B',
+      upgradeB_B: 'boosterframe_B',
+      elementalCore_C: 'rockcore_C',
+      upgradeA_C: 'nanocoating_C',
+      upgradeB_C: 'boosterframe_C',
+    },
+
+    flame: {
+      elementalCore_A: 'firecore_A',
+      upgradeA_A: 'acidproofglaze_A',
+      upgradeB_A: 'nanofiberframe_A',
+      elementalCore_B: 'firecore_B',
+      upgradeA_B: 'acidproofglaze_B',
+      upgradeB_B: 'nanofiberframe_B',
+      elementalCore_C: 'firecore_C',
+      upgradeA_C: 'acidproofglaze_C',
+      upgradeB_C: 'nanofiberframe_C',
+    },
+
+    altered: {
+      upgradeA_A: 'nanocoating_A',
+      upgradeB_A: 'acidproofglaze_A',
+      upgradeC_A: 'boosterframe_A',
+      upgradeD_A: 'nanofiberframe_A',
+      upgradeA_B: 'nanocoating_B',
+      upgradeB_B: 'acidproofglaze_B',
+      upgradeC_B: 'boosterframe_B',
+      upgradeD_B: 'nanofiberframe_B',
+      upgradeA_C: 'nanocoating_C',
+      upgradeB_C: 'acidproofglaze_C',
+      upgradeC_C: 'boosterframe_C',
+      upgradeD_C: 'nanofiberframe_C',
+    }
+  };
+
+  calculateTotalMaterials() {
+    const start = this.startvalue;
+    const end = this.endvalue;
+
+    const totals: Record<string, number> = {};
+
+    const colourMap: Record<string, string> = {
+      enhance: "#4286DC",
+      augmentGold: "#4286DC",
+
+      elementalCore_A: "#4286DC",
+      upgradeA_A: "#4286DC",
+      upgradeB_A: "#4286DC",
+      upgradeC_A: "#4286DC",
+      upgradeD_A: "#4286DC",
+
+      elementalCore_B: "#986BB5",
+      upgradeA_B: "#986BB5",
+      upgradeB_B: "#986BB5",
+      upgradeC_B: "#986BB5",
+      upgradeD_B: "#986BB5",
+
+      elementalCore_C: "#D99F44",
+      upgradeA_C: "#D99F44",
+      upgradeB_C: "#D99F44",
+      upgradeC_C: "#D99F44",
+      upgradeD_C: "#D99F44",
+    };
+
+    // 🔹 1. Sum materials
+    for (const upgrade of this.upgradeData.upgrade) {
+      if (upgrade.level > start && upgrade.level <= end) {
+
+        totals['enhance'] = (totals['enhance'] || 0) + upgrade['enhance'];
+        totals['augmentGold'] = (totals['augmentGold'] || 0) + upgrade['augmentGold'];
+
+        upgrade['augmentMaterials'].forEach((material: string, index: number) => {
+          const amount = upgrade['augmentAmount'][index] || 0;
+          totals[material] = (totals[material] || 0) + amount;
+        });
+      }
+    }
+
+    // 🔹 2. Get correct element mapping object dynamically
+    const elementMap = this.getElementMapping();
+
+    // 🔹 3. Convert to array + rename materials + assign colours
+    this.totalMaterialsArray = Object.entries(totals).map(([key, value]) => {
+      const renamedKey = elementMap[key] ?? key;
+      return [renamedKey, value];
+    });
+
+    // 🔹 Assign colours based on ORIGINAL keys
+    this.materialsColour = Object.keys(totals).map(key =>
+      colourMap[key] ?? "#FFFFFF"
+    );
+
+    this.cdr.detectChanges();
+  }
+
+  getElementMapping(): Record<string, string> {
+    return this.elementMaterialMappings[this.materialsElement] ?? {};
+  }
+
+  // Tabs
   setActiveTab(element: any) {
     this.activeTab = element;
   }
@@ -190,105 +251,169 @@ export class UnitPageComponent implements OnInit, AfterViewInit {
       target.classList.add('active');
     }
   }
-  onSliderChange() {
-    this.calculateTotalMaterials();
-  }
 
-  private calculateTotalMaterials() {
-    // Calculate the total number of each material between the selected levels
-    let startLevel = this.startvalue;
-    let endLevel = this.endvalue;
+  tierColours: Record<string, string> = {
+    A: '#69c26c',   // Green
+    B: "#4286DC",   // Blue
+    C: "#986BB5",   // Purple
+    D: "#D99F44"    // Gold
+  };
 
-    let totalMaterials: { [material: string]: number } = {}; // Object to store total materials
 
-    const thirdValueMappings: { [key: string]: string } = {
-      'enhance': "#4286DC",
-      'augmentGold': "#4286DC",
-      "elementalCore_A": "#4286DC",
-      "upgradeA_A": "#4286DC",
-      "upgradeB_A": "#4286DC",
-      "upgradeC_A": "#4286DC",
-      "upgradeD_A": "#4286DC",
-      "elementalCore_B": "#986BB5",
-      "upgradeA_B": "#986BB5",
-      "upgradeB_B": "#986BB5",
-      "upgradeC_B": "#986BB5",
-      "upgradeD_B": "#986BB5",
-      "elementalCore_C": "#D99F44",
-      "upgradeA_C": "#D99F44",
-      "upgradeB_C": "#D99F44",
-      "upgradeC_C": "#D99F44",
-      "upgradeD_C": "#D99F44",
-    };
-    let augmentAmountIndex = 0;
-    for (let i = 0; i < this.upgradeData.upgrade.length; i++) {
-      const upgrade = this.upgradeData.upgrade[i];
-      if (upgrade.level > startLevel && upgrade.level <= endLevel) {
-        // Sum up the materials for each upgrade level
-        totalMaterials['enhance'] = (totalMaterials['enhance'] || 0) + upgrade.enhance;
-        totalMaterials['augmentGold'] = (totalMaterials['augmentGold'] || 0) + upgrade.augmentGold;
-        // Loop through augmentM  aterials array and count each material
-        upgrade.augmentMaterials.forEach((material: string) => { // Specify type string for material
+  calculateTotalMaterialsMMO(element: string) {
+    const start = this.startvalue;
+    const end = this.endvalue;
 
-          totalMaterials[material] = (totalMaterials[material] || 0) + upgrade.augmentAmount[augmentAmountIndex++];
-        });
-        if (augmentAmountIndex >= upgrade.augmentAmount.length) {
-          augmentAmountIndex = 0;
+    const totals: Record<string, number> = {};
+    let totalGold = 0;
+
+    for (const level of this.weaponMaterialsData) {
+      if (level.lv > start && level.lv <= end) {
+
+        totalGold += level.gold;
+
+        for (const item of level.items) {
+          const key = item.id=="A" ? item.id : `${item.id}_${element}`;
+          totals[key] = (totals[key] || 0) + item.amount;
         }
       }
     }
 
-    // Convert the object into an array of {material: total} pairs
-    this.totalMaterialsArray = Object.entries(totalMaterials);
-    this.materialsColour = [];
-    // Iterate over each array and create an entry value if the first element matches a specific value
-    for (let i = 0; i < this.totalMaterialsArray.length; i++) {
-      let firstElement = this.totalMaterialsArray[i][0];
-      if (thirdValueMappings.hasOwnProperty(firstElement)) {
-        // If a mapping exists for the first element, add the corresponding entry value to the materialsColour array
-        let entryValue = thirdValueMappings[firstElement];
-        this.materialsColour.push(entryValue);
-      }
-    }
-    // Iterate over the array of arrays and modify the inner arrays
-    for (let i = 0; i < this.totalMaterialsArray.length; i++) {
-      const innerArray = this.totalMaterialsArray[i];
-      const firstElement = innerArray[0];
+    // Convert to array with colours
+    this.totalMaterialsArray = Object.entries(totals);
 
-      if (this.materialsElement == 'volt') {
-        if (this.voltMappings.hasOwnProperty(firstElement)) {
-          innerArray[0] = this.voltMappings[firstElement];
-        }
-      }
-      if (this.materialsElement == 'frost') {
-        if (this.frostMappings.hasOwnProperty(firstElement)) {
-          innerArray[0] = this.frostMappings[firstElement];
-        }
-      }
-      if (this.materialsElement == 'flame') {
-        if (this.flameMappings.hasOwnProperty(firstElement)) {
-          innerArray[0] = this.flameMappings[firstElement];
-        }
-      }
-      if (this.materialsElement == 'physical') {
-        if (this.physicalMappings.hasOwnProperty(firstElement)) {
-          innerArray[0] = this.physicalMappings[firstElement];
-        }
-      }
-      if (this.materialsElement == 'altered') {
-        if (this.alteredMappings.hasOwnProperty(firstElement)) {
-          innerArray[0] = this.alteredMappings[firstElement];
-        }
-      }
+    this.materialsColour = this.totalMaterialsArray.map(([id]) => {
+      const tier = id[0];
+      return tier ? this.tierColours[tier] : '#FFFFFF';
+    });
+
+    // Add gold separately if you want it displayed
+    if (totalGold > 0) {
+      this.totalMaterialsArray.unshift(['augmentGold', totalGold]);
+      this.materialsColour.unshift("#4286DC");
     }
-    // Trigger change detection
+
     this.cdr.detectChanges();
   }
 
-  @ViewChildren('info') infos!: QueryList<ElementRef>;
+  // Variables
+  slug!: string;
+  server!:string;
+  unit: any = {};
+  matrix: any = {};
+  upgradeData: any = {};
+  activeTab: any = null;
+  activeInfo: string = 'Advancements';
+  sliderValues!: number[];
+  materialsColour: any = [];
+  totalMaterialsArray: [string, number][] = [];
+  startvalue!: number;
+  endvalue!: number;
+  materialsElement!: string;
+  weaponMaterialsData: any = [];
+  element!:string;
+  simulacraData!: any;
+  matricesData!: any;
+
+
+  ngOnInit() {
+    const data = this.route.snapshot.data['data'];
+
+    this.route.paramMap.subscribe(params => {
+      this.simulacraData = data.simulacra;
+      this.matricesData = data.matrices;
+      this.slug = this.route.snapshot.paramMap.get('name')!;
+      this.server = this.route.snapshot.paramMap.get('server')!;
+      this.unit = this.simulacraData.find((unit: any) => unit.slug === this.slug && unit.server === this.server);
+      this.matrix = this.matricesData.find((matrix: any) => matrix.slug === this.slug);
+
+    // set initial values first
+    this.startvalue = 0;
+    this.endvalue = this.unit.server === 'warp' ? 15 : 200;
+    this.sliderValues = this.unit.server === 'warp' ? [0, 15] : [0, 200];
+
+    if (this.unit.server == "warp") {
+      this.weaponMaterialsData = data.weaponMaterialsWarp;
+
+    }
+    if (this.unit.server == "gacha") {
+      this.weaponMaterialsData = data.weaponMaterials;
+
+    }
+
+    this.element = this.unit.element;
+    const rarity = this.unit.rarity;
+
+    // Set page color depending on the element
+    const elementColors: { [key: string]: string } = {
+      "physical": '#CF9B14',
+      "physicalflame": '#CF9B14',
+      "flame": '#E74412',
+      "flamephysical": '#E74412',
+      "frost": '#3498DB',
+      "frostvolt": '#3498DB',
+      "volt": '#8C7ED0',
+      "voltfrost": '#8C7ED0',
+      "altered": '#0EA667'
+    };
+
+    document.documentElement.style.setProperty('--element-color', elementColors[this.element]);
+
+    // Weapon Element for materials
+    const materialMappings: { [key: string]: string } = {
+      "physical": 'physical',
+      "physicalflame": 'physical',
+      "flame": 'flame',
+      "flamephysical": 'flame',
+      "frost": 'frost',
+      "frostvolt": 'frost',
+      "volt": 'volt',
+      "voltfrost": 'volt',
+      "altered": 'altered'
+    };
+
+    this.materialsElement = materialMappings[this.element];
+
+    // Fetch upgrade data
+
+    if (this.unit.server == "gacha") {
+      this.upgradeData = this.weaponMaterialsData.find((upgradeData: any) => {
+        if (this.element !== 'altered' && rarity == 'SSR') {
+          return upgradeData.slug === 'element_all';
+        } else if (this.element === 'altered') {
+          return upgradeData.slug === this.element;
+        } else if (rarity === 'SR') {
+          return upgradeData.slug === 'element_sr';
+        } else {
+          return upgradeData.slug === 'element_all';
+        }
+      });
+    }
+
+    if (this.unit.server == "gacha") {
+      this.calculateTotalMaterials();
+    }
+    if (this.unit.server == "warp") {
+      this.calculateTotalMaterialsMMO(this.element);
+    }
+       });
+  }
 
 
   ngAfterViewInit() {
+
+    // Radar Chart
+    if (this.unit && this.unit.ability_maps) {
+      const labels = this.unit.ability_maps.map((a: any) => {
+        const key = Object.keys(a)[0];
+        const value = Object.values(a)[0];
+        return `${key} ${value}`;  // Combine name and value
+      });
+      const data = this.unit.ability_maps.map((a: any) => Object.values(a)[0]);
+      this.updateRadarChart(labels, data);
+    }
+
+    // Tabs
     const underLineInit = new Event('custom');
     Object.defineProperty(underLineInit, 'target', { value: this.infos.first.nativeElement, enumerable: true });
     this.setActiveInfo(underLineInit); // make the underline appear under "Advancements" on page load

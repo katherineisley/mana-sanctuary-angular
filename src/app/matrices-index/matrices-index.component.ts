@@ -42,17 +42,17 @@ export class MatricesIndexComponent implements OnInit {
 
   private populateArrays(data: any[]): void { // i know its a funny gag to say "the code is self-documenting" but this one really should be
     const elementMap = {
-      'element_physical': this.physicalMatrices,
-      'element_physicalflame': this.physicalFlameMatrices,
-      'element_flame': this.flameMatrices,
-      'element_flamephysical': this.flamePhysicalMatrices,
-      'element_frost': this.frostMatrices,
-      'element_frostvolt': this.frostVoltMatrices,
-      'element_volt': this.voltMatrices,
-      'element_voltfrost': this.voltFrostMatrices,
-      'element_altered': this.alteredMatrices
+      'physical': this.physicalMatrices,
+      'physicalflame': this.physicalFlameMatrices,
+      'flame': this.flameMatrices,
+      'flamephysical': this.flamePhysicalMatrices,
+      'frost': this.frostMatrices,
+      'frostvolt': this.frostVoltMatrices,
+      'volt': this.voltMatrices,
+      'voltfrost': this.voltFrostMatrices,
+      'altered': this.alteredMatrices
     };
-    
+
     const rarityMap = {
       'SSR': this.SSRMatrices,
       'SR': this.SRMatrices
@@ -92,7 +92,7 @@ export class MatricesIndexComponent implements OnInit {
           resonanceSet.add(resonance);
         });
       }
-      
+
       if (matrix.fourpc && matrix.fourpc.resonance) {
         matrix.fourpc.resonance.forEach((resonance: string) => {
           resonanceSet.add(resonance);
@@ -162,7 +162,7 @@ export class MatricesIndexComponent implements OnInit {
       this.showMatrices(matricesToShow);
       this.updateActiveClasses();
     });
-    
+
     $('.rarity .wrapper span').click((event) => {
       const rarity = $(event.currentTarget).attr('data-rarity');
       this.activeRarity = this.activeRarity === rarity ? null : (rarity || null);
@@ -170,7 +170,7 @@ export class MatricesIndexComponent implements OnInit {
       this.showMatrices(matricesToShow);
       this.updateActiveClasses();
     });
-    
+
     $('.type .wrapper img').click((event) => {
       const type = $(event.currentTarget).attr('data-type');
       this.activeType = this.activeType === type ? null : (type || null);
@@ -185,7 +185,7 @@ export class MatricesIndexComponent implements OnInit {
       const matricesToShow = this.getMatricesToShow(this.activeElement, this.activeRarity, this.activeType, this.activeRole);
       this.showMatrices(matricesToShow);
       this.updateActiveClasses();
-    }); 
+    });
   }
 
   private updateActiveClasses(): void {
@@ -201,10 +201,10 @@ export class MatricesIndexComponent implements OnInit {
     }
     if (this.activeType !== null) {
       $(`.type .wrapper img[data-type="${this.activeType}"]`).addClass('active');
-    } 
+    }
     if (this.activeRole !== null) {
       $(`.role .wrapper img[data-role="${this.activeRole}"]`).addClass('active');
-    } 
+    }
   }
 
   private getMatricesToShow(
@@ -234,7 +234,7 @@ export class MatricesIndexComponent implements OnInit {
           break;
       }
     }
-    
+
     if (rarityFilter) {
       switch (rarityFilter) {
         case 'ssr':
@@ -280,7 +280,7 @@ export class MatricesIndexComponent implements OnInit {
           filteredMatrices = filteredMatrices.filter(unit => this.TauntMatrices.includes(unit));
           break;
       }
-    } 
+    }
     return filteredMatrices;
   }
 

@@ -38,22 +38,22 @@ export class MatrixPageComponent implements OnInit {
 
     this.slug = this.route.snapshot.paramMap.get('name')!;
     this.matrix = matricesData.find((matrix: any) => matrix.slug === this.slug);
-    
+
     if(this.matrix) {
       const element = this.matrix.element;
       console.log(element);
 
       const elementColors: { [key: string]: string } = {
-        "element_physical": '#CF9B14',
-        "element_physicalflame": '#CF9B14',
-        "element_flame": '#E74412',
-        "element_flamephysical": '#E74412',
-        "element_frost": '#3498DB',
-        "element_frostvolt": '#3498DB',
-        "element_volt": '#8C7ED0',
-        "element_voltfrost": '#8C7ED0',
-        "element_altered": '#0EA667',
-        "element_all":  "#C49860"
+        "physical": '#CF9B14',
+        "physicalflame": '#CF9B14',
+        "flame": '#E74412',
+        "flamephysical": '#E74412',
+        "frost": '#3498DB',
+        "frostvolt": '#3498DB',
+        "volt": '#8C7ED0',
+        "voltfrost": '#8C7ED0',
+        "altered": '#0EA667',
+        "all":  "#C49860"
       };
 
       if (element.length > 1) {

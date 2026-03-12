@@ -7,7 +7,7 @@
       <div class="matrix-wrapper">
         <div class="matrix-avatar">
           <!-- <div class="matrix-frame" style="background-image: url(&quot;../assets/other/relic_frame.png&quot;);"> -->
-          <img src="assets/matrices/{{matrix?.slug}}_matrix.webp" alt="Character avatar">
+          <img src="assets/matrices/{{matrix?.icon}}" alt="Character avatar">
           <!-- </div> -->
         </div>
         <div class="matrix-name-element">
@@ -23,7 +23,7 @@
         <h4 class="subtitle">Links</h4>
         <div class="matrix-links-container">
           <div class="entry" *ngIf="specificUnit">
-            <div class="link-wrapper" [routerLink]="'/unit-page/' + specificUnit.slug" style="background-image: linear-gradient(0deg, #0e0d0d 0%, rgba(10, 10, 10, 0) 50%), url(&quot;../assets/cards/{{specificUnit.slug}}2.webp&quot;);">
+            <div class="link-wrapper" [routerLink]="'/weapons/' + specificUnit.slug" style="background-image: linear-gradient(0deg, #0e0d0d 0%, rgba(10, 10, 10, 0) 50%), url(&quot;../assets/cards/{{specificUnit.slug}}2.webp&quot;);">
               <div class="text-wrapper">
                 <h5 class="subtitle">{{specificUnit.name[0]}}</h5>
                 <p class="description">Weapon</p>
@@ -120,7 +120,7 @@
       </div>
     </div>
     <div class="buff-breakdown-part">
-      
+
     </div>
     <div class="notes-part">
 

@@ -4,23 +4,18 @@
       <a routerLink="/home">Arcana</a>
     </li>
     <li class="menu-item">
-      <a routerLink="/index">Index
+      <a routerLink="/index/warp">Warp
         <img src="assets/other/chevron-down.svg">
       </a>
       <div class="header-dropdown-menu">
-        <a routerLink="/index/units-index">
+        <a routerLink="/index/warp/weapons">
           <div class="title-tags">
             <span class="title">Simulacra</span>
           </div>
           <p class="description">Information about the weapons in the game.</p>
         </a>
-        <a routerLink="/index/matrices-index">
-          <div class="title-tags">
-            <span class="title">Matrices</span>
-          </div>
-          <p class="description">Matrix chips that can be equipped on weapons.</p>
-        </a>
-        <a routerLink="/index/relics-index">
+
+        <a routerLink="/index/warp/relics">
           <div class="title-tags">
             <span class="title">Relics</span>
           </div>
@@ -28,7 +23,32 @@
         </a>
       </div>
     </li>
-    <li class="menu-item">
+        <li class="menu-item">
+      <a routerLink="/index/gacha">Gacha
+        <img src="assets/other/chevron-down.svg">
+      </a>
+      <div class="header-dropdown-menu">
+        <a routerLink="/index/gacha/weapons">
+          <div class="title-tags">
+            <span class="title">Simulacra</span>
+          </div>
+          <p class="description">Information about the weapons in the game.</p>
+        </a>
+        <a routerLink="/index/gacha/matrices">
+          <div class="title-tags">
+            <span class="title">Matrices</span>
+          </div>
+          <p class="description">Matrix chips that can be equipped on weapons.</p>
+        </a>
+        <a routerLink="/index/gacha/relics">
+          <div class="title-tags">
+            <span class="title">Relics</span>
+          </div>
+          <p class="description">Tools that assist the Wanderer in combat and exploration.</p>
+        </a>
+      </div>
+    </li>
+    <!-- <li class="menu-item">
       <a routerLink="/healing">Healing
         <img src="assets/other/chevron-down.svg">
       </a>
@@ -54,11 +74,11 @@
           <p class="description">A support calculator to help you estimate the buffs and healing your team provides.</p>
         </a>
       </div>
-    </li>
-    <li class="menu-item wip">
+    </li> -->
+    <!-- <li class="menu-item wip">
       <a routerLink="/guides">Guides</a>
       <span class="wip-tag">WIP</span>
-    </li>
+    </li> -->
     <!-- <li class="menu-item beta" EXAMPLE BETA TAG USAGE>
       -- main div stuff --
       <span class="beta-tag">Beta</span>
@@ -77,15 +97,24 @@
     <img class="menu-icon" src="assets/other/menu-icon.svg" alt="">
     <ul class="burger-menu">
       <li class="menu-item beta">
-        <a class="hyperlink" routerLink="/index">
+        <a class="hyperlink" routerLink="/index/warp">
           <div class="item-wrapper">
             <img class="item-icon" src="assets/other/guides.svg" alt="Beta Icon">
-            <span class="item-text">Index</span>
+            <span class="item-text">Warp</span>
           </div>
           <img class="arrow" src="assets/other/arrow-right.svg" alt="Right Arrow">
         </a>
       </li>
-      <li class="menu-item">
+            <li class="menu-item beta">
+        <a class="hyperlink" routerLink="/index/gacha">
+          <div class="item-wrapper">
+            <img class="item-icon" src="assets/other/guides.svg" alt="Beta Icon">
+            <span class="item-text">Gacha</span>
+          </div>
+          <img class="arrow" src="assets/other/arrow-right.svg" alt="Right Arrow">
+        </a>
+      </li>
+      <!-- <li class="menu-item">
         <a class="hyperlink" routerLink="/healing">
           <div class="item-wrapper">
             <img class="item-icon" src="assets/other/double-cross.svg" alt="Healing Guide Icon">
@@ -102,7 +131,7 @@
           </div>
           <img class="arrow" src="assets/other/arrow-right.svg" alt="Right Arrow">
         </a>
-      </li>
+      </li> -->
       <li class="menu-item">
         <a class="hyperlink" routerLink="/glossary">
           <div class="item-wrapper">
