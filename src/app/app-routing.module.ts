@@ -19,7 +19,8 @@ import { RelicPageComponent } from './relic-page/relic-page.component';
 import { GlossaryComponent } from './glossary/glossary.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-
+import { AnchorPageComponent } from './anchor-page/anchor-page.component';
+import { JointOperationComponent } from './joint-operation/joint-operation.component';
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
   { path: 'home', component: HomeComponent, resolve: {data: DataResolver} },
@@ -28,6 +29,8 @@ const routes: Routes = [
   // { path: 'healing/teams', component: HealingTeamsComponent },
   // { path: 'healing/calculator', component: HealingCalculatorComponent, resolve: {data: DataResolver} },
   // { path: 'guides', component: GuidesComponent },
+  { path: 'jointop', component: JointOperationComponent },
+  { path: 'anchors', component: AnchorPageComponent },
   { path: 'index/:server', component: IndexComponent },
   { path: 'index/:server/weapons', component: UnitsIndexComponent, resolve: {data: DataResolver} },
   { path: 'index/:server/weapons/:name', component: UnitPageComponent, resolve: {data: DataResolver} },

@@ -1,0 +1,2306 @@
+[
+    {
+        "ItemID": "Hat_60_4_4",
+        "Weight": 1.5589887640449438,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_shipin_143.webp",
+        "Level": 1,
+        "PickUpPoint": 560,
+        "MaxPickUpNum": 1
+    },
+    {
+        "ItemID": "Hat_24_4_4",
+        "Weight": 1.5589887640449438,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_shipin_091.webp",
+        "Level": 1,
+        "PickUpPoint": 160,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Hat_36_4_4",
+        "Weight": 1.5589887640449438,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_shipin_114.webp",
+        "Level": 1,
+        "PickUpPoint": 160,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Hat_37_4_4",
+        "Weight": 1.5589887640449438,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_shipin_113.webp",
+        "Level": 1,
+        "PickUpPoint": 160,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Hat_88_4_4",
+        "Weight": 1.5589887640449438,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_shipin_201.webp",
+        "Level": 1,
+        "PickUpPoint": 360,
+        "MaxPickUpNum": 2
+    },
+    {
+        "ItemID": "Hat_89_4_4",
+        "Weight": 1.5589887640449438,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_shipin_195.webp",
+        "Level": 1,
+        "PickUpPoint": 360,
+        "MaxPickUpNum": 2
+    },
+    {
+        "ItemID": "Hotta_Ornament_11",
+        "Weight": 1.5589887640449438,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_shipin_227.webp",
+        "Level": 1,
+        "PickUpPoint": 360,
+        "MaxPickUpNum": 2
+    },
+    {
+        "ItemID": "Hotta_Ornament_34",
+        "Weight": 1.1657303370786516,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_shipin_261.webp",
+        "Level": 1,
+        "PickUpPoint": 360,
+        "MaxPickUpNum": 2
+    },
+    {
+        "ItemID": "frag_Hotta_Ornament_91",
+        "Weight": 0,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_Ornament_91.webp",
+        "Level": 1,
+        "PickUpPoint": 360,
+        "MaxPickUpNum": 2
+    },
+    {
+        "ItemID": "fashion_decoration_64_4",
+        "Weight": 1.1657303370786516,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_shipin_073.webp",
+        "Level": 1,
+        "PickUpPoint": 160,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "fashion_decoration_69_4",
+        "Weight": 1.1657303370786516,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_shipin_086.webp",
+        "Level": 1,
+        "PickUpPoint": 160,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "fashion_decoration_78_4",
+        "Weight": 1.1657303370786516,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_shipin_115.webp",
+        "Level": 1,
+        "PickUpPoint": 160,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "makeup_face_052",
+        "Weight": 0.5337078651685393,
+        "Quality": "EPIC",
+        "Icon": "54.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "makeup_face_058",
+        "Weight": 0.5337078651685393,
+        "Quality": "EPIC",
+        "Icon": "60.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "makeup_Eyeball_025",
+        "Weight": 0.5337078651685393,
+        "Quality": "EPIC",
+        "Icon": "yantong_29.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "makeup_Eyelash_030",
+        "Weight": 0.5337078651685393,
+        "Quality": "EPIC",
+        "Icon": null,
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_Action_JiangBao",
+        "Weight": 0.5337078651685393,
+        "Quality": "LEGENDRY",
+        "Icon": "chat_Action_JiangBao.webp",
+        "Level": 1,
+        "PickUpPoint": 360,
+        "MaxPickUpNum": 2
+    },
+    {
+        "ItemID": "chat_Action_JOJO2",
+        "Weight": 0.5337078651685393,
+        "Quality": "LEGENDRY",
+        "Icon": "chat_Action_JOJO2.webp",
+        "Level": 1,
+        "PickUpPoint": 360,
+        "MaxPickUpNum": 2
+    },
+    {
+        "ItemID": "chat_Action_NiuYangGe2",
+        "Weight": 0.5337078651685393,
+        "Quality": "LEGENDRY",
+        "Icon": "chat_Action_NiuYangGe2.webp",
+        "Level": 1,
+        "PickUpPoint": 360,
+        "MaxPickUpNum": 2
+    },
+    {
+        "ItemID": "chat_Action_Imitation2",
+        "Weight": 0.5337078651685393,
+        "Quality": "LEGENDRY",
+        "Icon": "chat_Action_Imitation_02.webp",
+        "Level": 1,
+        "PickUpPoint": 360,
+        "MaxPickUpNum": 2
+    },
+    {
+        "ItemID": "chat_Action_Imitation3",
+        "Weight": 0.5337078651685393,
+        "Quality": "LEGENDRY",
+        "Icon": "chat_Action_Imitation_03.webp",
+        "Level": 1,
+        "PickUpPoint": 360,
+        "MaxPickUpNum": 2
+    },
+    {
+        "ItemID": "Avatar30",
+        "Weight": 0.5337078651685393,
+        "Quality": "LEGENDRY",
+        "Icon": "Item_Avatar_30.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Avatar40",
+        "Weight": 0.5337078651685393,
+        "Quality": "LEGENDRY",
+        "Icon": "Item_Avatar_40.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Avatar_50",
+        "Weight": 0.5337078651685393,
+        "Quality": "LEGENDRY",
+        "Icon": "Item_Avatar_50.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Avatar_86",
+        "Weight": 1.4044943820224718,
+        "Quality": "LEGENDRY",
+        "Icon": "Item_Avatar_86.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Avatar_105",
+        "Weight": 0.46348314606741575,
+        "Quality": "LEGENDRY",
+        "Icon": "Item_Avatar_105.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Avatar_139",
+        "Weight": 0.46348314606741575,
+        "Quality": "LEGENDRY",
+        "Icon": "Item_Avatar_139.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Avatar_164",
+        "Weight": 0.7022471910112359,
+        "Quality": "LEGENDRY",
+        "Icon": "Item_Avatar_164.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Avatar_179",
+        "Weight": 0.7022471910112359,
+        "Quality": "LEGENDRY",
+        "Icon": "Item_Avatar_179.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Avatar_191",
+        "Weight": 0.46348314606741575,
+        "Quality": "LEGENDRY",
+        "Icon": "Item_Avatar_191.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Avatar_201",
+        "Weight": 0.7022471910112359,
+        "Quality": "LEGENDRY",
+        "Icon": "Item_Avatar_201.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Avatar_211",
+        "Weight": 0.46348314606741575,
+        "Quality": "LEGENDRY",
+        "Icon": "item_Avatar_211.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "AvatarFrame17",
+        "Weight": 0.46348314606741575,
+        "Quality": "LEGENDRY",
+        "Icon": "AvatarFrame_Coffee.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "AvatarFrame20",
+        "Weight": 0.46348314606741575,
+        "Quality": "LEGENDRY",
+        "Icon": "AvatarFrame_baiyuekui.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "AvatarFrame30",
+        "Weight": 0.7022471910112359,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_AvatarFrame_30.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "AvatarFrame50",
+        "Weight": 0.7022471910112359,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_AvatarFrame_50.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "AvatarFrame_74",
+        "Weight": 0.7022471910112359,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_AvatarFrame_74.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "AvatarFrame_86",
+        "Weight": 0.46348314606741575,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_AvatarFrame_86.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "AvatarFrame_139",
+        "Weight": 0.46348314606741575,
+        "Quality": "LEGENDRY",
+        "Icon": "Icon_AvatarFrame_139.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "AvatarFrame_164",
+        "Weight": 0.46348314606741575,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_AvatarFrame_164.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "AvatarFrame_179",
+        "Weight": 0.8426966292134831,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_AvatarFrame_179.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "AvatarFrame_191",
+        "Weight": 0.8426966292134831,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_AvatarFrame_191.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "AvatarFrame_201",
+        "Weight": 0.8426966292134831,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_AvatarFrame_201.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "AvatarFrame_211",
+        "Weight": 0.8426966292134831,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_AvatarFrame_211.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_qipao17",
+        "Weight": 4.213483146067416,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_qipao_018.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_qipao30",
+        "Weight": 3.51123595505618,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_qipao_030.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_qipao34",
+        "Weight": 3.51123595505618,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_qipao_34.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_qipao40",
+        "Weight": 2.106741573033708,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_qipao_40.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_qipao50",
+        "Weight": 2.106741573033708,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_qipao_50.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_qipao_74",
+        "Weight": 3.51123595505618,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_qipao_74.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_qipao_86",
+        "Weight": 0.7022471910112359,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_qipao_86.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_qipao_105",
+        "Weight": 0.7022471910112359,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_qipao_105.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_qipao_139",
+        "Weight": 0.7022471910112359,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_qipao_139.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_qipao_164",
+        "Weight": 2.106741573033708,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_qipao_164.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_qipao_179",
+        "Weight": 2.106741573033708,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_qipao_179.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_qipao_191",
+        "Weight": 1.053370786516854,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_qipao_191.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_qipao_201",
+        "Weight": 1.053370786516854,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_qipao_201.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_qipao_211",
+        "Weight": 1.053370786516854,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_qipao_211.webp",
+        "Level": 1,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_34",
+        "Weight": 1.053370786516854,
+        "Quality": "EPIC",
+        "Icon": "emoji_34.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_35",
+        "Weight": 1.053370786516854,
+        "Quality": "EPIC",
+        "Icon": "emoji_35.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_36",
+        "Weight": 1.053370786516854,
+        "Quality": "EPIC",
+        "Icon": "emoji_37.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_37",
+        "Weight": 1.053370786516854,
+        "Quality": "EPIC",
+        "Icon": "emoji_38.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_38",
+        "Weight": 1.053370786516854,
+        "Quality": "EPIC",
+        "Icon": "emoji_39.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_39",
+        "Weight": 1.053370786516854,
+        "Quality": "EPIC",
+        "Icon": "emoji_40.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_40",
+        "Weight": 1.053370786516854,
+        "Quality": "EPIC",
+        "Icon": "emoji_41.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_41",
+        "Weight": 1.053370786516854,
+        "Quality": "EPIC",
+        "Icon": "emoji_42.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_42",
+        "Weight": 1.053370786516854,
+        "Quality": "EPIC",
+        "Icon": "emoji_43.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_43",
+        "Weight": 1.053370786516854,
+        "Quality": "EPIC",
+        "Icon": "emoji_44.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_44",
+        "Weight": 1.053370786516854,
+        "Quality": "EPIC",
+        "Icon": "emoji_45.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_45",
+        "Weight": 1.053370786516854,
+        "Quality": "EPIC",
+        "Icon": "emoji_46.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_46",
+        "Weight": 1.053370786516854,
+        "Quality": "EPIC",
+        "Icon": "emoji_47.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_47",
+        "Weight": 1.053370786516854,
+        "Quality": "EPIC",
+        "Icon": "emoji_48.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_48",
+        "Weight": 1.053370786516854,
+        "Quality": "EPIC",
+        "Icon": "emoji_49.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_49",
+        "Weight": 1.053370786516854,
+        "Quality": "EPIC",
+        "Icon": "emoji_50.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "CardBackground_14",
+        "Weight": 1.053370786516854,
+        "Quality": "RARE",
+        "Icon": "Icon_NmCardH5Award.webp",
+        "Level": 1,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "CardBackground_24",
+        "Weight": 1.053370786516854,
+        "Quality": "RARE",
+        "Icon": "Icon_NmCardSpring.webp",
+        "Level": 1,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "CardBackground_25",
+        "Weight": 1.053370786516854,
+        "Quality": "RARE",
+        "Icon": "Icon__NmCardMialove.webp",
+        "Level": 1,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "ActorBackground_14",
+        "Weight": 1.053370786516854,
+        "Quality": "RARE",
+        "Icon": "Icon_ModelBgH5Award.webp",
+        "Level": 1,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "ActorBackground_24",
+        "Weight": 1.053370786516854,
+        "Quality": "RARE",
+        "Icon": "Icon_ModelBg_Spring.webp",
+        "Level": 1,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "ActorBackground_25",
+        "Weight": 1.053370786516854,
+        "Quality": "RARE",
+        "Icon": "Icon_ModelBgMialove.webp",
+        "Level": 1,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "CardFrame_14",
+        "Weight": 1.053370786516854,
+        "Quality": "RARE",
+        "Icon": "Icon_NmCardFrameH5Award.webp",
+        "Level": 1,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "CardFrame_24",
+        "Weight": 0.46348314606741575,
+        "Quality": "RARE",
+        "Icon": "Icon_NmCardFrameSpring.webp",
+        "Level": 1,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "CardFrame_25",
+        "Weight": 0.46348314606741575,
+        "Quality": "RARE",
+        "Icon": "Icon_NmCardFrameMialove.webp",
+        "Level": 1,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "ActorFrame_14",
+        "Weight": 0.46348314606741575,
+        "Quality": "RARE",
+        "Icon": "Icon_ModelFrameH5Award.webp",
+        "Level": 1,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "ActorFrame_24",
+        "Weight": 0.46348314606741575,
+        "Quality": "RARE",
+        "Icon": "Icon_ModelFrameZazhi.webp",
+        "Level": 1,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "ActorFrame_25",
+        "Weight": 0.46348314606741575,
+        "Quality": "RARE",
+        "Icon": "Icon_ModelFrameMialove.webp",
+        "Level": 1,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "SelfCardParticle_8",
+        "Weight": 0.46348314606741575,
+        "Quality": "RARE",
+        "Icon": "Icon_Decals_guaiwu_04.webp",
+        "Level": 1,
+        "PickUpPoint": 250,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Badge_3_1_45",
+        "Weight": 0.46348314606741575,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_stamps_NTxiluo.webp",
+        "Level": 1,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Badge_3_1_46",
+        "Weight": 0.46348314606741575,
+        "Quality": "LEGENDRY",
+        "Icon": "Icon_Stamps_NTxinghuan01.webp",
+        "Level": 1,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Badge_3_1_47",
+        "Weight": 0.46348314606741575,
+        "Quality": "LEGENDRY",
+        "Icon": "Icon_Stamps_NTxiuma.webp",
+        "Level": 1,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Badge_3_1_48",
+        "Weight": 0.46348314606741575,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_stamps_NTyanmiao.webp",
+        "Level": 1,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Badge_3_1_50",
+        "Weight": 0.46348314606741575,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_stamps_NTyikaluosi.webp",
+        "Level": 1,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_All_4_1",
+        "Weight": 0.46348314606741575,
+        "Quality": "RARE",
+        "Icon": "Icon__DecalsMusic01.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_All_4_2",
+        "Weight": 2.106741573033708,
+        "Quality": "RARE",
+        "Icon": "Icon__DecalsMusic02.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_All_4_3",
+        "Weight": 0.3230337078651685,
+        "Quality": "RARE",
+        "Icon": "Icon__DecalsMusic03.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_All_4_4",
+        "Weight": 0.3230337078651685,
+        "Quality": "RARE",
+        "Icon": "Icon__DecalsMusic04.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_All_4_5",
+        "Weight": 0.3230337078651685,
+        "Quality": "RARE",
+        "Icon": "Icon__DecalsMusic05.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_All_4_6",
+        "Weight": 0.3230337078651685,
+        "Quality": "RARE",
+        "Icon": "Icon__DecalsMusic06.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_All_4_7",
+        "Weight": 0.3230337078651685,
+        "Quality": "RARE",
+        "Icon": "Icon__DecalsMusic07.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_All_4_8",
+        "Weight": 0.3230337078651685,
+        "Quality": "RARE",
+        "Icon": "Icon__DecalsMusic08.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_All_4_9",
+        "Weight": 0.3230337078651685,
+        "Quality": "RARE",
+        "Icon": "Icon__DecalsMusic09.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_All_4_10",
+        "Weight": 0.3230337078651685,
+        "Quality": "RARE",
+        "Icon": "Img_DecalsMusic010.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_All_4_11",
+        "Weight": 0.3230337078651685,
+        "Quality": "RARE",
+        "Icon": "Img_DecalsMusic011.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_Part_4_1",
+        "Weight": 0.3230337078651685,
+        "Quality": "RARE",
+        "Icon": "Icon_Decals_poison01.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_Part_4_2",
+        "Weight": 0.3230337078651685,
+        "Quality": "RARE",
+        "Icon": "Icon_Decals_poison02.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_Part_4_3",
+        "Weight": 0.3230337078651685,
+        "Quality": "RARE",
+        "Icon": "Icon_Decals_poison03.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_Part_4_4",
+        "Weight": 0.3230337078651685,
+        "Quality": "RARE",
+        "Icon": "Icon_Decals_poison04.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_Part_4_5",
+        "Weight": 0.3230337078651685,
+        "Quality": "RARE",
+        "Icon": "Icon_Decals_poison05.webp",
+        "Level": 1,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "mmo_frag_Mount_034",
+        "Weight": 2.932551319648094,
+        "Quality": "LEGENDRY",
+        "Icon": "Mount_034.webp",
+        "Level": 2,
+        "PickUpPoint": 250,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "mmo_frag_Mount_038",
+        "Weight": 1.7595307917888565,
+        "Quality": "LEGENDRY",
+        "Icon": "Mount_038.webp",
+        "Level": 2,
+        "PickUpPoint": 250,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "MountWater2_a",
+        "Weight": 0.5865102639296188,
+        "Quality": "LEGENDRY",
+        "Icon": "MountWater2_a.webp",
+        "Level": 2,
+        "PickUpPoint": 680,
+        "MaxPickUpNum": 1
+    },
+    {
+        "ItemID": "MountWater2_b",
+        "Weight": 3.519061583577713,
+        "Quality": "LEGENDRY",
+        "Icon": "MountWater2_b.webp",
+        "Level": 2,
+        "PickUpPoint": 680,
+        "MaxPickUpNum": 1
+    },
+    {
+        "ItemID": "mmo_frag_Mount_Water_009_Skin_02",
+        "Weight": 0.05865102639296188,
+        "Quality": "LEGENDRY",
+        "Icon": "MountWater9_2.webp",
+        "Level": 2,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "mmo_frag_fashion_dress_42_4",
+        "Weight": 0.05865102639296188,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_dress_43.webp",
+        "Level": 2,
+        "PickUpPoint": 250,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "mmo_frag_fashion_dress_71_4",
+        "Weight": 0.11730205278592376,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_shipin_TYY.webp",
+        "Level": 2,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "mmo_frag_fashion_dress_85_4",
+        "Weight": 0.11730205278592376,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_shipin_270.webp",
+        "Level": 2,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "mmo_frag_fashion_dress_88_4",
+        "Weight": 0.11730205278592376,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_dress_88.webp",
+        "Level": 2,
+        "PickUpPoint": 250,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "frag_imitation_extra_6",
+        "Weight": 0.8797653958944283,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_XM02_MMO.webp",
+        "Level": 2,
+        "PickUpPoint": 250,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "frag_imitation_extra_76",
+        "Weight": 0.8797653958944283,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_WLNK02_MMO.webp",
+        "Level": 2,
+        "PickUpPoint": 250,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "frag_imitation_extra_24",
+        "Weight": 0.8797653958944283,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_XH02_MMO.webp",
+        "Level": 2,
+        "PickUpPoint": 250,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "frag_imitation_extra_27",
+        "Weight": 1.1730205278592376,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_GNN02_MMO.webp",
+        "Level": 2,
+        "PickUpPoint": 250,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "frag_imitation_extra_72",
+        "Weight": 0.7741935483870968,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_AST02_MMO.webp",
+        "Level": 2,
+        "PickUpPoint": 250,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "frag_imitation_extra_49",
+        "Weight": 0.8797653958944283,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_NY02_MMO.webp",
+        "Level": 2,
+        "PickUpPoint": 250,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "mmo_frag_imitation_fashion_49_w",
+        "Weight": 1.3020527859237538,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_nanyin_w.webp",
+        "Level": 2,
+        "PickUpPoint": 190,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Hat_60_4_4",
+        "Weight": 1.3020527859237538,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_shipin_143.webp",
+        "Level": 2,
+        "PickUpPoint": 560,
+        "MaxPickUpNum": 1
+    },
+    {
+        "ItemID": "Hat_24_4_4",
+        "Weight": 1.3020527859237538,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_shipin_091.webp",
+        "Level": 2,
+        "PickUpPoint": 160,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Hat_36_4_4",
+        "Weight": 1.3020527859237538,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_shipin_114.webp",
+        "Level": 2,
+        "PickUpPoint": 160,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Hat_37_4_4",
+        "Weight": 1.3020527859237538,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_shipin_113.webp",
+        "Level": 2,
+        "PickUpPoint": 160,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Hat_88_4_4",
+        "Weight": 1.3020527859237538,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_shipin_201.webp",
+        "Level": 2,
+        "PickUpPoint": 360,
+        "MaxPickUpNum": 2
+    },
+    {
+        "ItemID": "Hat_89_4_4",
+        "Weight": 1.3020527859237538,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_shipin_195.webp",
+        "Level": 2,
+        "PickUpPoint": 360,
+        "MaxPickUpNum": 2
+    },
+    {
+        "ItemID": "Hotta_Ornament_11",
+        "Weight": 1.3020527859237538,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_shipin_227.webp",
+        "Level": 2,
+        "PickUpPoint": 360,
+        "MaxPickUpNum": 2
+    },
+    {
+        "ItemID": "Hotta_Ornament_34",
+        "Weight": 0.9736070381231673,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_shipin_261.webp",
+        "Level": 2,
+        "PickUpPoint": 360,
+        "MaxPickUpNum": 2
+    },
+    {
+        "ItemID": "frag_Hotta_Ornament_91",
+        "Weight": 0,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_Ornament_91.webp",
+        "Level": 2,
+        "PickUpPoint": 360,
+        "MaxPickUpNum": 2
+    },
+    {
+        "ItemID": "fashion_decoration_64_4",
+        "Weight": 0.9736070381231673,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_shipin_073.webp",
+        "Level": 2,
+        "PickUpPoint": 160,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "fashion_decoration_69_4",
+        "Weight": 0.9736070381231673,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_shipin_086.webp",
+        "Level": 2,
+        "PickUpPoint": 160,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "fashion_decoration_78_4",
+        "Weight": 0.9736070381231673,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_shipin_115.webp",
+        "Level": 2,
+        "PickUpPoint": 160,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "makeup_face_052",
+        "Weight": 0.44574780058651026,
+        "Quality": "EPIC",
+        "Icon": "54.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "makeup_face_058",
+        "Weight": 0.44574780058651026,
+        "Quality": "EPIC",
+        "Icon": "60.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "makeup_Eyeball_025",
+        "Weight": 0.44574780058651026,
+        "Quality": "EPIC",
+        "Icon": "yantong_29.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "makeup_Eyelash_030",
+        "Weight": 0.44574780058651026,
+        "Quality": "EPIC",
+        "Icon": null,
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_Action_JiangBao",
+        "Weight": 0.44574780058651026,
+        "Quality": "LEGENDRY",
+        "Icon": "chat_Action_JiangBao.webp",
+        "Level": 2,
+        "PickUpPoint": 360,
+        "MaxPickUpNum": 2
+    },
+    {
+        "ItemID": "chat_Action_JOJO2",
+        "Weight": 0.44574780058651026,
+        "Quality": "LEGENDRY",
+        "Icon": "chat_Action_JOJO2.webp",
+        "Level": 2,
+        "PickUpPoint": 360,
+        "MaxPickUpNum": 2
+    },
+    {
+        "ItemID": "chat_Action_NiuYangGe2",
+        "Weight": 0.44574780058651026,
+        "Quality": "LEGENDRY",
+        "Icon": "chat_Action_NiuYangGe2.webp",
+        "Level": 2,
+        "PickUpPoint": 360,
+        "MaxPickUpNum": 2
+    },
+    {
+        "ItemID": "chat_Action_Imitation2",
+        "Weight": 0.44574780058651026,
+        "Quality": "LEGENDRY",
+        "Icon": "chat_Action_Imitation_02.webp",
+        "Level": 2,
+        "PickUpPoint": 360,
+        "MaxPickUpNum": 2
+    },
+    {
+        "ItemID": "chat_Action_Imitation3",
+        "Weight": 0.44574780058651026,
+        "Quality": "LEGENDRY",
+        "Icon": "chat_Action_Imitation_03.webp",
+        "Level": 2,
+        "PickUpPoint": 360,
+        "MaxPickUpNum": 2
+    },
+    {
+        "ItemID": "chat_miaAction_MusicBox",
+        "Weight": 0.44574780058651026,
+        "Quality": "LEGENDRY",
+        "Icon": "item_MusicBox.webp",
+        "Level": 2,
+        "PickUpPoint": 1000,
+        "MaxPickUpNum": 1
+    },
+    {
+        "ItemID": "Avatar30",
+        "Weight": 0.44574780058651026,
+        "Quality": "LEGENDRY",
+        "Icon": "Item_Avatar_30.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Avatar40",
+        "Weight": 0.44574780058651026,
+        "Quality": "LEGENDRY",
+        "Icon": "Item_Avatar_40.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Avatar_50",
+        "Weight": 0.44574780058651026,
+        "Quality": "LEGENDRY",
+        "Icon": "Item_Avatar_50.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Avatar_86",
+        "Weight": 1.1730205278592376,
+        "Quality": "LEGENDRY",
+        "Icon": "Item_Avatar_86.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Avatar_105",
+        "Weight": 0.3870967741935484,
+        "Quality": "LEGENDRY",
+        "Icon": "Item_Avatar_105.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Avatar_139",
+        "Weight": 0.3870967741935484,
+        "Quality": "LEGENDRY",
+        "Icon": "Item_Avatar_139.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Avatar_164",
+        "Weight": 0.5865102639296188,
+        "Quality": "LEGENDRY",
+        "Icon": "Item_Avatar_164.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Avatar_179",
+        "Weight": 0.5865102639296188,
+        "Quality": "LEGENDRY",
+        "Icon": "Item_Avatar_179.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Avatar_191",
+        "Weight": 0.3870967741935484,
+        "Quality": "LEGENDRY",
+        "Icon": "Item_Avatar_191.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Avatar_201",
+        "Weight": 0.5865102639296188,
+        "Quality": "LEGENDRY",
+        "Icon": "Item_Avatar_201.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Avatar_211",
+        "Weight": 0.3870967741935484,
+        "Quality": "LEGENDRY",
+        "Icon": "item_Avatar_211.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "AvatarFrame17",
+        "Weight": 0.3870967741935484,
+        "Quality": "LEGENDRY",
+        "Icon": "AvatarFrame_Coffee.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "AvatarFrame20",
+        "Weight": 0.3870967741935484,
+        "Quality": "LEGENDRY",
+        "Icon": "AvatarFrame_baiyuekui.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "AvatarFrame30",
+        "Weight": 0.5865102639296188,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_AvatarFrame_30.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "AvatarFrame50",
+        "Weight": 0.5865102639296188,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_AvatarFrame_50.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "AvatarFrame_74",
+        "Weight": 0.5865102639296188,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_AvatarFrame_74.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "AvatarFrame_86",
+        "Weight": 0.3870967741935484,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_AvatarFrame_86.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "AvatarFrame_139",
+        "Weight": 0.3870967741935484,
+        "Quality": "LEGENDRY",
+        "Icon": "Icon_AvatarFrame_139.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "AvatarFrame_164",
+        "Weight": 0.3870967741935484,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_AvatarFrame_164.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "AvatarFrame_179",
+        "Weight": 0.7038123167155426,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_AvatarFrame_179.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "AvatarFrame_191",
+        "Weight": 0.7038123167155426,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_AvatarFrame_191.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "AvatarFrame_201",
+        "Weight": 0.7038123167155426,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_AvatarFrame_201.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "AvatarFrame_211",
+        "Weight": 0.7038123167155426,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_AvatarFrame_211.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_qipao17",
+        "Weight": 3.519061583577713,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_qipao_018.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_qipao30",
+        "Weight": 2.932551319648094,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_qipao_030.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_qipao34",
+        "Weight": 2.932551319648094,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_qipao_34.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_qipao40",
+        "Weight": 1.7595307917888565,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_qipao_40.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_qipao50",
+        "Weight": 1.7595307917888565,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_qipao_50.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_qipao_74",
+        "Weight": 2.932551319648094,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_qipao_74.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_qipao_86",
+        "Weight": 0.5865102639296188,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_qipao_86.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_qipao_105",
+        "Weight": 0.5865102639296188,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_qipao_105.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_qipao_139",
+        "Weight": 0.5865102639296188,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_qipao_139.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_qipao_164",
+        "Weight": 1.7595307917888565,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_qipao_164.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_qipao_179",
+        "Weight": 1.7595307917888565,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_qipao_179.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_qipao_191",
+        "Weight": 0.8797653958944283,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_qipao_191.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_qipao_201",
+        "Weight": 0.8797653958944283,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_qipao_201.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_qipao_211",
+        "Weight": 0.8797653958944283,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_qipao_211.webp",
+        "Level": 2,
+        "PickUpPoint": 70,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_34",
+        "Weight": 0.8797653958944283,
+        "Quality": "EPIC",
+        "Icon": "emoji_34.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_35",
+        "Weight": 0.8797653958944283,
+        "Quality": "EPIC",
+        "Icon": "emoji_35.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_36",
+        "Weight": 0.8797653958944283,
+        "Quality": "EPIC",
+        "Icon": "emoji_37.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_37",
+        "Weight": 0.8797653958944283,
+        "Quality": "EPIC",
+        "Icon": "emoji_38.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_38",
+        "Weight": 0.8797653958944283,
+        "Quality": "EPIC",
+        "Icon": "emoji_39.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_39",
+        "Weight": 0.8797653958944283,
+        "Quality": "EPIC",
+        "Icon": "emoji_40.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_40",
+        "Weight": 0.8797653958944283,
+        "Quality": "EPIC",
+        "Icon": "emoji_41.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_41",
+        "Weight": 0.8797653958944283,
+        "Quality": "EPIC",
+        "Icon": "emoji_42.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_42",
+        "Weight": 0.8797653958944283,
+        "Quality": "EPIC",
+        "Icon": "emoji_43.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_43",
+        "Weight": 0.8797653958944283,
+        "Quality": "EPIC",
+        "Icon": "emoji_44.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_44",
+        "Weight": 0.8797653958944283,
+        "Quality": "EPIC",
+        "Icon": "emoji_45.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_45",
+        "Weight": 0.8797653958944283,
+        "Quality": "EPIC",
+        "Icon": "emoji_46.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_46",
+        "Weight": 0.8797653958944283,
+        "Quality": "EPIC",
+        "Icon": "emoji_47.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_47",
+        "Weight": 0.8797653958944283,
+        "Quality": "EPIC",
+        "Icon": "emoji_48.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_48",
+        "Weight": 0.8797653958944283,
+        "Quality": "EPIC",
+        "Icon": "emoji_49.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "chat_emoji_49",
+        "Weight": 0.8797653958944283,
+        "Quality": "EPIC",
+        "Icon": "emoji_50.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "CardBackground_14",
+        "Weight": 0.8797653958944283,
+        "Quality": "RARE",
+        "Icon": "Icon_NmCardH5Award.webp",
+        "Level": 2,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "CardBackground_24",
+        "Weight": 0.8797653958944283,
+        "Quality": "RARE",
+        "Icon": "Icon_NmCardSpring.webp",
+        "Level": 2,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "CardBackground_25",
+        "Weight": 0.8797653958944283,
+        "Quality": "RARE",
+        "Icon": "Icon__NmCardMialove.webp",
+        "Level": 2,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "ActorBackground_14",
+        "Weight": 0.8797653958944283,
+        "Quality": "RARE",
+        "Icon": "Icon_ModelBgH5Award.webp",
+        "Level": 2,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "ActorBackground_24",
+        "Weight": 0.8797653958944283,
+        "Quality": "RARE",
+        "Icon": "Icon_ModelBg_Spring.webp",
+        "Level": 2,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "ActorBackground_25",
+        "Weight": 0.8797653958944283,
+        "Quality": "RARE",
+        "Icon": "Icon_ModelBgMialove.webp",
+        "Level": 2,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "CardFrame_14",
+        "Weight": 0.8797653958944283,
+        "Quality": "RARE",
+        "Icon": "Icon_NmCardFrameH5Award.webp",
+        "Level": 2,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "CardFrame_24",
+        "Weight": 0.3870967741935484,
+        "Quality": "RARE",
+        "Icon": "Icon_NmCardFrameSpring.webp",
+        "Level": 2,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "CardFrame_25",
+        "Weight": 0.3870967741935484,
+        "Quality": "RARE",
+        "Icon": "Icon_NmCardFrameMialove.webp",
+        "Level": 2,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "ActorFrame_14",
+        "Weight": 0.3870967741935484,
+        "Quality": "RARE",
+        "Icon": "Icon_ModelFrameH5Award.webp",
+        "Level": 2,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "ActorFrame_24",
+        "Weight": 0.3870967741935484,
+        "Quality": "RARE",
+        "Icon": "Icon_ModelFrameZazhi.webp",
+        "Level": 2,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "ActorFrame_25",
+        "Weight": 0.3870967741935484,
+        "Quality": "RARE",
+        "Icon": "Icon_ModelFrameMialove.webp",
+        "Level": 2,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "SelfCardParticle_8",
+        "Weight": 0.3870967741935484,
+        "Quality": "RARE",
+        "Icon": "Icon_Decals_guaiwu_04.webp",
+        "Level": 2,
+        "PickUpPoint": 250,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Badge_3_1_45",
+        "Weight": 0.3870967741935484,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_stamps_NTxiluo.webp",
+        "Level": 2,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Badge_3_1_46",
+        "Weight": 0.3870967741935484,
+        "Quality": "LEGENDRY",
+        "Icon": "Icon_Stamps_NTxinghuan01.webp",
+        "Level": 2,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Badge_3_1_47",
+        "Weight": 0.3870967741935484,
+        "Quality": "LEGENDRY",
+        "Icon": "Icon_Stamps_NTxiuma.webp",
+        "Level": 2,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Badge_3_1_48",
+        "Weight": 0.3870967741935484,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_stamps_NTyanmiao.webp",
+        "Level": 2,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Badge_3_1_50",
+        "Weight": 0.3870967741935484,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_stamps_NTyikaluosi.webp",
+        "Level": 2,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_All_4_1",
+        "Weight": 0.3870967741935484,
+        "Quality": "RARE",
+        "Icon": "Icon__DecalsMusic01.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_All_4_2",
+        "Weight": 1.7595307917888565,
+        "Quality": "RARE",
+        "Icon": "Icon__DecalsMusic02.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_All_4_3",
+        "Weight": 0.2697947214076246,
+        "Quality": "RARE",
+        "Icon": "Icon__DecalsMusic03.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_All_4_4",
+        "Weight": 0.2697947214076246,
+        "Quality": "RARE",
+        "Icon": "Icon__DecalsMusic04.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_All_4_5",
+        "Weight": 0.2697947214076246,
+        "Quality": "RARE",
+        "Icon": "Icon__DecalsMusic05.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_All_4_6",
+        "Weight": 0.2697947214076246,
+        "Quality": "RARE",
+        "Icon": "Icon__DecalsMusic06.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_All_4_7",
+        "Weight": 0.2697947214076246,
+        "Quality": "RARE",
+        "Icon": "Icon__DecalsMusic07.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_All_4_8",
+        "Weight": 0.2697947214076246,
+        "Quality": "RARE",
+        "Icon": "Icon__DecalsMusic08.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_All_4_9",
+        "Weight": 0.2697947214076246,
+        "Quality": "RARE",
+        "Icon": "Icon__DecalsMusic09.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_All_4_10",
+        "Weight": 0.2697947214076246,
+        "Quality": "RARE",
+        "Icon": "Img_DecalsMusic010.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_All_4_11",
+        "Weight": 0.2697947214076246,
+        "Quality": "RARE",
+        "Icon": "Img_DecalsMusic011.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_Part_4_1",
+        "Weight": 0.2697947214076246,
+        "Quality": "RARE",
+        "Icon": "Icon_Decals_poison01.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_Part_4_2",
+        "Weight": 0.2697947214076246,
+        "Quality": "RARE",
+        "Icon": "Icon_Decals_poison02.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_Part_4_3",
+        "Weight": 0.2697947214076246,
+        "Quality": "RARE",
+        "Icon": "Icon_Decals_poison03.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_Part_4_4",
+        "Weight": 0.2697947214076246,
+        "Quality": "RARE",
+        "Icon": "Icon_Decals_poison04.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "Sticks_Part_4_5",
+        "Weight": 0.2697947214076246,
+        "Quality": "RARE",
+        "Icon": "Icon_Decals_poison05.webp",
+        "Level": 2,
+        "PickUpPoint": 20,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "mmo_frag_fashion_Guidenpc_mia_7",
+        "Weight": 5.274261603375527,
+        "Quality": "LEGENDRY",
+        "Icon": "256mia09.webp",
+        "Level": 3,
+        "PickUpPoint": 250,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "mmo_frag_Mount_034",
+        "Weight": 15.822784810126583,
+        "Quality": "LEGENDRY",
+        "Icon": "Mount_034.webp",
+        "Level": 3,
+        "PickUpPoint": 250,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "mmo_frag_Mount_038",
+        "Weight": 9.49367088607595,
+        "Quality": "LEGENDRY",
+        "Icon": "Mount_038.webp",
+        "Level": 3,
+        "PickUpPoint": 250,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "MountWater2_a",
+        "Weight": 3.1645569620253164,
+        "Quality": "LEGENDRY",
+        "Icon": "MountWater2_a.webp",
+        "Level": 3,
+        "PickUpPoint": 680,
+        "MaxPickUpNum": 1
+    },
+    {
+        "ItemID": "MountWater2_b",
+        "Weight": 18.9873417721519,
+        "Quality": "LEGENDRY",
+        "Icon": "MountWater2_b.webp",
+        "Level": 3,
+        "PickUpPoint": 680,
+        "MaxPickUpNum": 1
+    },
+    {
+        "ItemID": "mmo_frag_Mount_Water_009_Skin_02",
+        "Weight": 0.29535864978902954,
+        "Quality": "LEGENDRY",
+        "Icon": "MountWater9_2.webp",
+        "Level": 3,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "mmo_frag_fashion_dress_21_4",
+        "Weight": 0.08438818565400844,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_dress_20.webp",
+        "Level": 3,
+        "PickUpPoint": 390,
+        "MaxPickUpNum": 2
+    },
+    {
+        "ItemID": "mmo_frag_fashion_dress_42_4",
+        "Weight": 0.29535864978902954,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_dress_43.webp",
+        "Level": 3,
+        "PickUpPoint": 250,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "mmo_frag_fashion_dress_49_4",
+        "Weight": 0.08438818565400844,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_dress_50.webp",
+        "Level": 3,
+        "PickUpPoint": 990,
+        "MaxPickUpNum": 1
+    },
+    {
+        "ItemID": "mmo_frag_fashion_dress_71_4",
+        "Weight": 0.6329113924050633,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_shipin_TYY.webp",
+        "Level": 3,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "mmo_frag_fashion_dress_85_4",
+        "Weight": 0.6329113924050633,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_shipin_270.webp",
+        "Level": 3,
+        "PickUpPoint": 130,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "mmo_frag_fashion_dress_88_4",
+        "Weight": 0.6329113924050633,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_icon_dress_88.webp",
+        "Level": 3,
+        "PickUpPoint": 250,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "frag_imitation_extra_6",
+        "Weight": 4.725738396624473,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_XM02_MMO.webp",
+        "Level": 3,
+        "PickUpPoint": 250,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "frag_imitation_extra_76",
+        "Weight": 4.725738396624473,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_WLNK02_MMO.webp",
+        "Level": 3,
+        "PickUpPoint": 250,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "frag_imitation_extra_24",
+        "Weight": 4.725738396624473,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_XH02_MMO.webp",
+        "Level": 3,
+        "PickUpPoint": 250,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "frag_imitation_extra_27",
+        "Weight": 6.329113924050633,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_GNN02_MMO.webp",
+        "Level": 3,
+        "PickUpPoint": 250,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "frag_imitation_extra_72",
+        "Weight": 4.177215189873418,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_AST02_MMO.webp",
+        "Level": 3,
+        "PickUpPoint": 250,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "frag_imitation_extra_49",
+        "Weight": 4.725738396624473,
+        "Quality": "LEGENDRY",
+        "Icon": "icon_NY02_MMO.webp",
+        "Level": 3,
+        "PickUpPoint": 250,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "mmo_frag_imitation_fashion_49",
+        "Weight": 2.320675105485232,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_nanyin.webp",
+        "Level": 3,
+        "PickUpPoint": 590,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "mmo_frag_imitation_fashion_49_w",
+        "Weight": 7.0042194092827,
+        "Quality": "LEGENDRY",
+        "Icon": "fashion_nanyin_w.webp",
+        "Level": 3,
+        "PickUpPoint": 190,
+        "MaxPickUpNum": 3
+    },
+    {
+        "ItemID": "makeup_Hair_010",
+        "Weight": 1.729957805907173,
+        "Quality": "LEGENDRY",
+        "Icon": null,
+        "Level": 3,
+        "PickUpPoint": 1000,
+        "MaxPickUpNum": 1
+    },
+    {
+        "ItemID": "makeup_Hair_013",
+        "Weight": 1.729957805907173,
+        "Quality": "LEGENDRY",
+        "Icon": null,
+        "Level": 3,
+        "PickUpPoint": 1000,
+        "MaxPickUpNum": 1
+    },
+    {
+        "ItemID": "chat_miaAction_MusicBox",
+        "Weight": 2.4050632911392404,
+        "Quality": "LEGENDRY",
+        "Icon": "item_MusicBox.webp",
+        "Level": 3,
+        "PickUpPoint": 1000,
+        "MaxPickUpNum": 1
+    }
+]

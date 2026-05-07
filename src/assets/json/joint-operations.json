@@ -1,0 +1,4688 @@
+{
+    "Joint Operation I": {
+        "Multi": {
+            "droplist_frag_WeaponGashaponCoin": {
+                "Meta": {
+                    "MinLevel": 1,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 0.0,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "frag_WeaponGashaponCoin",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": -1,
+                        "Icon": "WeaponGashaponCoin.webp",
+                        "ItemType": "FRAGMENT"
+                    }
+                ]
+            },
+            "T0.1_Orange_Equip_8": {
+                "Meta": {
+                    "MinLevel": 1,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 0.35,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.1_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_3bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_3legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Orange_shoes",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_3shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Orange_shawl",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_3Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Orange_cloth",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_3breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Orange_glove",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_3glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Orange_belt",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 3,
+                        "Icon": "S2t001_3belt.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Orange_helmet",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 3,
+                        "Icon": "S2t001_3helmet.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.1_Purple_Equip_8": {
+                "Meta": {
+                    "MinLevel": 1,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 0.65,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.1_Purple_armband",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_2bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Purple_pants",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_2legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Purple_shoes",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_2shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Purple_shawl",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_2Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Purple_cloth",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_2breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Purple_glove",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_2glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Purple_belt",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_2belt.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Purple_helmet",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_2helmet.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.1_Blue_Equip_8": {
+                "Meta": {
+                    "MinLevel": 1,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 2,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.1_Blue_armband",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_1bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Blue_pants",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_1legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Blue_shoes",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_1shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Blue_shawl",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_1Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Blue_cloth",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_1breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Blue_glove",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_1glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Blue_belt",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_1belt.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Blue_helmet",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_1helmet.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "Drop_teamFB_explist_MMO": {
+                "Meta": {
+                    "MinLevel": 1,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "DropExpItem2",
+                        "Quality": null,
+                        "Num": 6000,
+                        "Weight": 1,
+                        "Icon": null,
+                        "ItemType": null
+                    }
+                ]
+            }
+        },
+        "Multi_Poor": {
+            "droplist_frag_WeaponGashaponCoin": {
+                "Meta": {
+                    "MinLevel": 1,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 0.0,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "frag_WeaponGashaponCoin",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": -1,
+                        "Icon": "WeaponGashaponCoin.webp",
+                        "ItemType": "FRAGMENT"
+                    }
+                ]
+            },
+            "T0.1_Orange_Equip_Poor_8": {
+                "Meta": {
+                    "MinLevel": 1,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 0.035,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.1_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_3bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_3legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Orange_shoes",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_3shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Orange_shawl",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_3Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Orange_cloth",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_3breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Orange_glove",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_3glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Orange_belt",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_3belt.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Orange_helmet",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_3helmet.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.1_Purple_Equip_8": {
+                "Meta": {
+                    "MinLevel": 1,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 0.3,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.1_Purple_armband",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_2bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Purple_pants",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_2legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Purple_shoes",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_2shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Purple_shawl",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_2Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Purple_cloth",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_2breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Purple_glove",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_2glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Purple_belt",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_2belt.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Purple_helmet",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_2helmet.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.1_Blue_Equip_8": {
+                "Meta": {
+                    "MinLevel": 1,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 2,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.1_Blue_armband",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_1bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Blue_pants",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_1legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Blue_shoes",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_1shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Blue_shawl",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_1Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Blue_cloth",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_1breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Blue_glove",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_1glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Blue_belt",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_1belt.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.1_Blue_helmet",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t001_1helmet.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "Drop_teamFB_explist_poor_MMO": {
+                "Meta": {
+                    "MinLevel": 1,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "DropExpItem2",
+                        "Quality": null,
+                        "Num": 1500,
+                        "Weight": 1,
+                        "Icon": null,
+                        "ItemType": null
+                    }
+                ]
+            }
+        }
+    },
+    "Joint Operation II": {
+        "Multi": {
+            "droplist_frag_WeaponGashaponCoin": {
+                "Meta": {
+                    "MinLevel": 1,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 0.0,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "frag_WeaponGashaponCoin",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": -1,
+                        "Icon": "WeaponGashaponCoin.webp",
+                        "ItemType": "FRAGMENT"
+                    }
+                ]
+            },
+            "T0.2_Orange_Equip_2": {
+                "Meta": {
+                    "MinLevel": 30,
+                    "MaxLevel": 38,
+                    "SequenceWeight": 0.35,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.2_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.2_Purple_Equip_2": {
+                "Meta": {
+                    "MinLevel": 30,
+                    "MaxLevel": 38,
+                    "SequenceWeight": 0.65,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.2_Purple_armband",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_pants",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.2_Blue_Equip_2": {
+                "Meta": {
+                    "MinLevel": 30,
+                    "MaxLevel": 38,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 2,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.2_Blue_armband",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_pants",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.2_Orange_Equip_4": {
+                "Meta": {
+                    "MinLevel": 39,
+                    "MaxLevel": 43,
+                    "SequenceWeight": 0.35,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.2_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_shoes",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_shawl",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.2_Purple_Equip_4": {
+                "Meta": {
+                    "MinLevel": 39,
+                    "MaxLevel": 43,
+                    "SequenceWeight": 0.65,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.2_Purple_armband",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_pants",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_shoes",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_shawl",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.2_Blue_Equip_4": {
+                "Meta": {
+                    "MinLevel": 39,
+                    "MaxLevel": 43,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 2,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.2_Blue_armband",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_pants",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_shoes",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_shawl",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.2_Orange_Equip_6": {
+                "Meta": {
+                    "MinLevel": 44,
+                    "MaxLevel": 45,
+                    "SequenceWeight": 0.35,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.2_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_shoes",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_shawl",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_cloth",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 2,
+                        "Icon": "S2t002_3breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_glove",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 2,
+                        "Icon": "S2t002_3glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.2_Purple_Equip_6": {
+                "Meta": {
+                    "MinLevel": 44,
+                    "MaxLevel": 45,
+                    "SequenceWeight": 0.65,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.2_Purple_armband",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_pants",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_shoes",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_shawl",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_cloth",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_glove",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.2_Blue_Equip_6": {
+                "Meta": {
+                    "MinLevel": 44,
+                    "MaxLevel": 45,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 2,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.2_Blue_armband",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_pants",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_shoes",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_shawl",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_cloth",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_glove",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.2_Orange_Equip_8": {
+                "Meta": {
+                    "MinLevel": 46,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 0.35,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.2_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_shoes",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_shawl",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_cloth",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_glove",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_belt",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 3,
+                        "Icon": "S2t002_3belt.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_helmet",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 3,
+                        "Icon": "S2t002_3helmet.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.2_Purple_Equip_8": {
+                "Meta": {
+                    "MinLevel": 46,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 0.65,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.2_Purple_armband",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_pants",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_shoes",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_shawl",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_cloth",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_glove",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_belt",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2belt.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_helmet",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2helmet.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.2_Blue_Equip_8": {
+                "Meta": {
+                    "MinLevel": 46,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 2,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.2_Blue_armband",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_pants",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_shoes",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_shawl",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_cloth",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_glove",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_belt",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1belt.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_helmet",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1helmet.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "Drop_teamFB_explist_MMO": {
+                "Meta": {
+                    "MinLevel": 30,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "DropExpItem2",
+                        "Quality": null,
+                        "Num": 6000,
+                        "Weight": 1,
+                        "Icon": null,
+                        "ItemType": null
+                    }
+                ]
+            }
+        },
+        "Multi_Poor": {
+            "droplist_frag_WeaponGashaponCoin": {
+                "Meta": {
+                    "MinLevel": 1,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 0.0,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "frag_WeaponGashaponCoin",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": -1,
+                        "Icon": "WeaponGashaponCoin.webp",
+                        "ItemType": "FRAGMENT"
+                    }
+                ]
+            },
+            "T0.2_Orange_Equip_Poor_2": {
+                "Meta": {
+                    "MinLevel": 30,
+                    "MaxLevel": 38,
+                    "SequenceWeight": 0.035,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.2_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.2_Purple_Equip_2": {
+                "Meta": {
+                    "MinLevel": 30,
+                    "MaxLevel": 38,
+                    "SequenceWeight": 0.3,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.2_Purple_armband",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_pants",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.2_Blue_Equip_2": {
+                "Meta": {
+                    "MinLevel": 30,
+                    "MaxLevel": 38,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 2,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.2_Blue_armband",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_pants",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.2_Orange_Equip_Poor_4": {
+                "Meta": {
+                    "MinLevel": 39,
+                    "MaxLevel": 43,
+                    "SequenceWeight": 0.035,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.2_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_shoes",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_shawl",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.2_Purple_Equip_4": {
+                "Meta": {
+                    "MinLevel": 39,
+                    "MaxLevel": 43,
+                    "SequenceWeight": 0.3,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.2_Purple_armband",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_pants",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_shoes",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_shawl",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.2_Blue_Equip_4": {
+                "Meta": {
+                    "MinLevel": 39,
+                    "MaxLevel": 43,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 2,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.2_Blue_armband",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_pants",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_shoes",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_shawl",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.2_Orange_Equip_Poor_6": {
+                "Meta": {
+                    "MinLevel": 44,
+                    "MaxLevel": 45,
+                    "SequenceWeight": 0.035,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.2_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_shoes",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_shawl",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_cloth",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_glove",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.2_Purple_Equip_6": {
+                "Meta": {
+                    "MinLevel": 44,
+                    "MaxLevel": 45,
+                    "SequenceWeight": 0.3,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.2_Purple_armband",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_pants",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_shoes",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_shawl",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_cloth",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_glove",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.2_Blue_Equip_6": {
+                "Meta": {
+                    "MinLevel": 44,
+                    "MaxLevel": 45,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 2,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.2_Blue_armband",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_pants",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_shoes",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_shawl",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_cloth",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_glove",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.2_Orange_Equip_Poor_8": {
+                "Meta": {
+                    "MinLevel": 46,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 0.035,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.2_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_shoes",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_shawl",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_cloth",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_glove",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_belt",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3belt.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Orange_helmet",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_3helmet.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.2_Purple_Equip_8": {
+                "Meta": {
+                    "MinLevel": 46,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 0.3,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.2_Purple_armband",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_pants",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_shoes",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_shawl",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_cloth",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_glove",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_belt",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2belt.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Purple_helmet",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_2helmet.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.2_Blue_Equip_8": {
+                "Meta": {
+                    "MinLevel": 46,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 2,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.2_Blue_armband",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_pants",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_shoes",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_shawl",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_cloth",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_glove",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_belt",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1belt.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.2_Blue_helmet",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t002_1helmet.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "Drop_teamFB_explist_poor_MMO": {
+                "Meta": {
+                    "MinLevel": 30,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "DropExpItem2",
+                        "Quality": null,
+                        "Num": 1500,
+                        "Weight": 1,
+                        "Icon": null,
+                        "ItemType": null
+                    }
+                ]
+            }
+        }
+    },
+    "Joint Operation III": {
+        "Multi": {
+            "droplist_frag_WeaponGashaponCoin": {
+                "Meta": {
+                    "MinLevel": 1,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 0.0,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "frag_WeaponGashaponCoin",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": -1,
+                        "Icon": "WeaponGashaponCoin.webp",
+                        "ItemType": "FRAGMENT"
+                    }
+                ]
+            },
+            "T0.3_Orange_Equip_2": {
+                "Meta": {
+                    "MinLevel": 49,
+                    "MaxLevel": 53,
+                    "SequenceWeight": 0.35,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.3_Purple_Equip_2": {
+                "Meta": {
+                    "MinLevel": 49,
+                    "MaxLevel": 53,
+                    "SequenceWeight": 0.65,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Purple_armband",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_pants",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.3_Blue_Equip_2": {
+                "Meta": {
+                    "MinLevel": 49,
+                    "MaxLevel": 53,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 2,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Blue_armband",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_pants",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.3_Orange_Equip_4": {
+                "Meta": {
+                    "MinLevel": 54,
+                    "MaxLevel": 59,
+                    "SequenceWeight": 0.35,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_shoes",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_shawl",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.3_Purple_Equip_4": {
+                "Meta": {
+                    "MinLevel": 54,
+                    "MaxLevel": 59,
+                    "SequenceWeight": 0.65,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Purple_armband",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_pants",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_shoes",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_shawl",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.3_Blue_Equip_4": {
+                "Meta": {
+                    "MinLevel": 54,
+                    "MaxLevel": 59,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 2,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Blue_armband",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_pants",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_shoes",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_shawl",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.3_Orange_Equip_6": {
+                "Meta": {
+                    "MinLevel": 60,
+                    "MaxLevel": 63,
+                    "SequenceWeight": 0.35,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_shoes",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_shawl",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_cloth",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 2,
+                        "Icon": "S2t003_3breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_glove",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 2,
+                        "Icon": "S2t003_3glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.3_Purple_Equip_6": {
+                "Meta": {
+                    "MinLevel": 60,
+                    "MaxLevel": 63,
+                    "SequenceWeight": 0.65,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Purple_armband",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_pants",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_shoes",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_shawl",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_cloth",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_glove",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.3_Blue_Equip_6": {
+                "Meta": {
+                    "MinLevel": 60,
+                    "MaxLevel": 63,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 2,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Blue_armband",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_pants",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_shoes",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_shawl",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_cloth",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_glove",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.3_Orange_Equip_8": {
+                "Meta": {
+                    "MinLevel": 64,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 0.35,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_shoes",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_shawl",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_cloth",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_glove",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_belt",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 3,
+                        "Icon": "S2t003_3belt.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_helmet",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 3,
+                        "Icon": "S2t003_3helmet.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.3_Purple_Equip_8": {
+                "Meta": {
+                    "MinLevel": 64,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 0.65,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Purple_armband",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_pants",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_shoes",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_shawl",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_cloth",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_glove",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_belt",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2belt.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_helmet",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2helmet.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.3_Blue_Equip_8": {
+                "Meta": {
+                    "MinLevel": 64,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 2,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Blue_armband",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_pants",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_shoes",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_shawl",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_cloth",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_glove",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_belt",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1belt.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_helmet",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1helmet.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "Drop_teamFB_explist_MMO": {
+                "Meta": {
+                    "MinLevel": 49,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "DropExpItem2",
+                        "Quality": null,
+                        "Num": 6000,
+                        "Weight": 1,
+                        "Icon": null,
+                        "ItemType": null
+                    }
+                ]
+            }
+        },
+        "Multi_Poor": {
+            "droplist_frag_WeaponGashaponCoin": {
+                "Meta": {
+                    "MinLevel": 1,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 0.0,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "frag_WeaponGashaponCoin",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": -1,
+                        "Icon": "WeaponGashaponCoin.webp",
+                        "ItemType": "FRAGMENT"
+                    }
+                ]
+            },
+            "T0.3_Orange_Equip_Poor_2": {
+                "Meta": {
+                    "MinLevel": 49,
+                    "MaxLevel": 53,
+                    "SequenceWeight": 0.035,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.3_Purple_Equip_2": {
+                "Meta": {
+                    "MinLevel": 49,
+                    "MaxLevel": 53,
+                    "SequenceWeight": 0.3,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Purple_armband",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_pants",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.3_Blue_Equip_2": {
+                "Meta": {
+                    "MinLevel": 49,
+                    "MaxLevel": 53,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 2,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Blue_armband",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_pants",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.3_Orange_Equip_Poor_4": {
+                "Meta": {
+                    "MinLevel": 54,
+                    "MaxLevel": 59,
+                    "SequenceWeight": 0.035,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_shoes",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_shawl",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.3_Purple_Equip_4": {
+                "Meta": {
+                    "MinLevel": 54,
+                    "MaxLevel": 59,
+                    "SequenceWeight": 0.3,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Purple_armband",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_pants",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_shoes",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_shawl",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.3_Blue_Equip_4": {
+                "Meta": {
+                    "MinLevel": 54,
+                    "MaxLevel": 59,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 2,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Blue_armband",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_pants",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_shoes",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_shawl",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.3_Orange_Equip_Poor_6": {
+                "Meta": {
+                    "MinLevel": 60,
+                    "MaxLevel": 63,
+                    "SequenceWeight": 0.035,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_shoes",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_shawl",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_cloth",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_glove",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.3_Purple_Equip_6": {
+                "Meta": {
+                    "MinLevel": 60,
+                    "MaxLevel": 63,
+                    "SequenceWeight": 0.3,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Purple_armband",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_pants",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_shoes",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_shawl",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_cloth",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_glove",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.3_Blue_Equip_6": {
+                "Meta": {
+                    "MinLevel": 60,
+                    "MaxLevel": 63,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 2,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Blue_armband",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_pants",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_shoes",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_shawl",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_cloth",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_glove",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.3_Orange_Equip_Poor_8": {
+                "Meta": {
+                    "MinLevel": 64,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 0.035,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_shoes",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_shawl",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_cloth",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_glove",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_belt",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3belt.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Orange_helmet",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_3helmet.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.3_Purple_Equip_8": {
+                "Meta": {
+                    "MinLevel": 64,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 0.3,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Purple_armband",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_pants",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_shoes",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_shawl",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_cloth",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_glove",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_belt",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2belt.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_helmet",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2helmet.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.3_Blue_Equip_8": {
+                "Meta": {
+                    "MinLevel": 64,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 2,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Blue_armband",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_pants",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_shoes",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_shawl",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_cloth",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_glove",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_belt",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1belt.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_helmet",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1helmet.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "Drop_teamFB_explist_poor_MMO": {
+                "Meta": {
+                    "MinLevel": 49,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "DropExpItem2",
+                        "Quality": null,
+                        "Num": 1500,
+                        "Weight": 1,
+                        "Icon": null,
+                        "ItemType": null
+                    }
+                ]
+            }
+        }
+    },
+    "Joint Operation IV": {
+        "Multi": {
+            "Frag_T1_Orange_Equip_2": {
+                "Meta": {
+                    "MinLevel": 70,
+                    "MaxLevel": 71,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 3,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "frag_S2_T1_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3bracelet.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3legging.webp",
+                        "ItemType": "FRAGMENT"
+                    }
+                ]
+            },
+            "Frag_T1_Orange_Equip_4": {
+                "Meta": {
+                    "MinLevel": 72,
+                    "MaxLevel": 73,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 3,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "frag_S2_T1_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3bracelet.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3legging.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_shoes",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3shoe.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_shawl",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3Shoulder.webp",
+                        "ItemType": "FRAGMENT"
+                    }
+                ]
+            },
+            "Frag_T1_Orange_Equip_6": {
+                "Meta": {
+                    "MinLevel": 74,
+                    "MaxLevel": 75,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 3,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "frag_S2_T1_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3bracelet.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3legging.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_shoes",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3shoe.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_shawl",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3Shoulder.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_cloth",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 2,
+                        "Icon": "S2t010_3breastplate.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_glove",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 2,
+                        "Icon": "S2t010_3glove.webp",
+                        "ItemType": "FRAGMENT"
+                    }
+                ]
+            },
+            "Frag_T1_Orange_Equip_8": {
+                "Meta": {
+                    "MinLevel": 76,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 3,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "frag_S2_T1_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3bracelet.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3legging.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_shoes",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3shoe.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_shawl",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3Shoulder.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_cloth",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3breastplate.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_glove",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3glove.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_belt",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 3,
+                        "Icon": "S2t010_3belt.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_helmet",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 3,
+                        "Icon": "S2t010_3helmet.webp",
+                        "ItemType": "FRAGMENT"
+                    }
+                ]
+            },
+            "T0.3_Purple_Equip_8": {
+                "Meta": {
+                    "MinLevel": 70,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 2,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Purple_armband",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_pants",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_shoes",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_shawl",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_cloth",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_glove",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_belt",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2belt.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_helmet",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2helmet.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.3_Blue_Equip_8": {
+                "Meta": {
+                    "MinLevel": 70,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 8,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Blue_armband",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_pants",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_shoes",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_shawl",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_cloth",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_glove",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_belt",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1belt.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_helmet",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1helmet.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "Drop_teamFB_explist_MMO": {
+                "Meta": {
+                    "MinLevel": 70,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "DropExpItem2",
+                        "Quality": null,
+                        "Num": 6000,
+                        "Weight": 1,
+                        "Icon": null,
+                        "ItemType": null
+                    }
+                ]
+            },
+            "Trade_MMOTicket_JointClone_T1": {
+                "Meta": {
+                    "MinLevel": 70,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 0.025,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "MMOTicket_JointClone_T1",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "MMOTicketT1_JointClone.webp",
+                        "ItemType": "MATERIAL"
+                    }
+                ]
+            }
+        },
+        "Multi_Poor": {
+            "Frag_T1_Orange_Equip_Poor_2": {
+                "Meta": {
+                    "MinLevel": 70,
+                    "MaxLevel": 71,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "frag_S2_T1_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3bracelet.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3legging.webp",
+                        "ItemType": "FRAGMENT"
+                    }
+                ]
+            },
+            "Frag_T1_Orange_Equip_Poor_4": {
+                "Meta": {
+                    "MinLevel": 72,
+                    "MaxLevel": 73,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "frag_S2_T1_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3bracelet.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3legging.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_shoes",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3shoe.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_shawl",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3Shoulder.webp",
+                        "ItemType": "FRAGMENT"
+                    }
+                ]
+            },
+            "Frag_T1_Orange_Equip_Poor_6": {
+                "Meta": {
+                    "MinLevel": 74,
+                    "MaxLevel": 75,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "frag_S2_T1_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3bracelet.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3legging.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_shoes",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3shoe.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_shawl",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3Shoulder.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_cloth",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3breastplate.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_glove",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3glove.webp",
+                        "ItemType": "FRAGMENT"
+                    }
+                ]
+            },
+            "Frag_T1_Orange_Equip_Poor_8": {
+                "Meta": {
+                    "MinLevel": 76,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "frag_S2_T1_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3bracelet.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3legging.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_shoes",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3shoe.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_shawl",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3Shoulder.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_cloth",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3breastplate.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_glove",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3glove.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_belt",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3belt.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T1_Orange_helmet",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3helmet.webp",
+                        "ItemType": "FRAGMENT"
+                    }
+                ]
+            },
+            "T0.3_Purple_Equip_8": {
+                "Meta": {
+                    "MinLevel": 70,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 0.3,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Purple_armband",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_pants",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_shoes",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_shawl",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_cloth",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_glove",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_belt",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2belt.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_helmet",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2helmet.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.3_Blue_Equip_8": {
+                "Meta": {
+                    "MinLevel": 70,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 2,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Blue_armband",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_pants",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_shoes",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_shawl",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_cloth",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_glove",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_belt",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1belt.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_helmet",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1helmet.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "Drop_teamFB_explist_poor_MMO": {
+                "Meta": {
+                    "MinLevel": 70,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "DropExpItem2",
+                        "Quality": null,
+                        "Num": 1500,
+                        "Weight": 1,
+                        "Icon": null,
+                        "ItemType": null
+                    }
+                ]
+            }
+        }
+    },
+    "Joint Operation V": {
+        "Multi": {
+            "Frag_T2_Orange_Equip_2": {
+                "Meta": {
+                    "MinLevel": 78,
+                    "MaxLevel": 79,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 3,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "frag_S2_T2_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3bracelet.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3legging.webp",
+                        "ItemType": "FRAGMENT"
+                    }
+                ]
+            },
+            "Frag_T2_Orange_Equip_4": {
+                "Meta": {
+                    "MinLevel": 80,
+                    "MaxLevel": 81,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 3,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "frag_S2_T2_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3bracelet.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3legging.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_shoes",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3shoe.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_shawl",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3Shoulder.webp",
+                        "ItemType": "FRAGMENT"
+                    }
+                ]
+            },
+            "Frag_T2_Orange_Equip_6": {
+                "Meta": {
+                    "MinLevel": 82,
+                    "MaxLevel": 83,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 3,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "frag_S2_T2_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3bracelet.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3legging.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_shoes",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3shoe.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_shawl",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3Shoulder.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_cloth",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 2,
+                        "Icon": "S2t010_3breastplate.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_glove",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 2,
+                        "Icon": "S2t010_3glove.webp",
+                        "ItemType": "FRAGMENT"
+                    }
+                ]
+            },
+            "Frag_T2_Orange_Equip_8": {
+                "Meta": {
+                    "MinLevel": 84,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 3,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "frag_S2_T2_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3bracelet.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3legging.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_shoes",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3shoe.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_shawl",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3Shoulder.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_cloth",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3breastplate.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_glove",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3glove.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_belt",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 3,
+                        "Icon": "S2t010_3belt.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_helmet",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 3,
+                        "Icon": "S2t010_3helmet.webp",
+                        "ItemType": "FRAGMENT"
+                    }
+                ]
+            },
+            "T0.3_Purple_Equip_8": {
+                "Meta": {
+                    "MinLevel": 78,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 2,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Purple_armband",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_pants",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_shoes",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_shawl",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_cloth",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_glove",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_belt",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2belt.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_helmet",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2helmet.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.3_Blue_Equip_8": {
+                "Meta": {
+                    "MinLevel": 78,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 8,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Blue_armband",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_pants",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_shoes",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_shawl",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_cloth",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_glove",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_belt",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1belt.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_helmet",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1helmet.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "Drop_teamFB_explist_MMO": {
+                "Meta": {
+                    "MinLevel": 78,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "DropExpItem2",
+                        "Quality": null,
+                        "Num": 6000,
+                        "Weight": 1,
+                        "Icon": null,
+                        "ItemType": null
+                    }
+                ]
+            },
+            "Trade_MMOTicket_JointClone_T2": {
+                "Meta": {
+                    "MinLevel": 78,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 0.025,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "MMOTicket_JointClone_T2",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "MMOTicket2T_JointClone.webp",
+                        "ItemType": "MATERIAL"
+                    }
+                ]
+            }
+        },
+        "Multi_Poor": {
+            "Frag_T2_Orange_Equip_Poor_2": {
+                "Meta": {
+                    "MinLevel": 78,
+                    "MaxLevel": 79,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "frag_S2_T2_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3bracelet.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3legging.webp",
+                        "ItemType": "FRAGMENT"
+                    }
+                ]
+            },
+            "Frag_T2_Orange_Equip_Poor_4": {
+                "Meta": {
+                    "MinLevel": 80,
+                    "MaxLevel": 81,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "frag_S2_T2_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3bracelet.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3legging.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_shoes",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3shoe.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_shawl",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3Shoulder.webp",
+                        "ItemType": "FRAGMENT"
+                    }
+                ]
+            },
+            "Frag_T2_Orange_Equip_Poor_6": {
+                "Meta": {
+                    "MinLevel": 82,
+                    "MaxLevel": 83,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "frag_S2_T2_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3bracelet.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3legging.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_shoes",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3shoe.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_shawl",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3Shoulder.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_cloth",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3breastplate.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_glove",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3glove.webp",
+                        "ItemType": "FRAGMENT"
+                    }
+                ]
+            },
+            "Frag_T2_Orange_Equip_Poor_8": {
+                "Meta": {
+                    "MinLevel": 84,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "frag_S2_T2_Orange_armband",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3bracelet.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_pants",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3legging.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_shoes",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3shoe.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_shawl",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3Shoulder.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_cloth",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3breastplate.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_glove",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3glove.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_belt",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3belt.webp",
+                        "ItemType": "FRAGMENT"
+                    },
+                    {
+                        "ItemID": "frag_S2_T2_Orange_helmet",
+                        "Quality": "LEGENDRY",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t010_3helmet.webp",
+                        "ItemType": "FRAGMENT"
+                    }
+                ]
+            },
+            "T0.3_Purple_Equip_8": {
+                "Meta": {
+                    "MinLevel": 78,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 0.3,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Purple_armband",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_pants",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_shoes",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_shawl",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_cloth",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_glove",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_belt",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2belt.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Purple_helmet",
+                        "Quality": "EPIC",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_2helmet.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "T0.3_Blue_Equip_8": {
+                "Meta": {
+                    "MinLevel": 78,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 2,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "S2_T0.3_Blue_armband",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1bracelet.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_pants",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1legging.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_shoes",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1shoe.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_shawl",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1Shoulder.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_cloth",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1breastplate.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_glove",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1glove.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_belt",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1belt.webp",
+                        "ItemType": "EQUIPMENT"
+                    },
+                    {
+                        "ItemID": "S2_T0.3_Blue_helmet",
+                        "Quality": "RARE",
+                        "Num": 1,
+                        "Weight": 1,
+                        "Icon": "S2t003_1helmet.webp",
+                        "ItemType": "EQUIPMENT"
+                    }
+                ]
+            },
+            "Drop_teamFB_explist_poor_MMO": {
+                "Meta": {
+                    "MinLevel": 78,
+                    "MaxLevel": 100,
+                    "SequenceWeight": 1.0,
+                    "ModifyNum": 1,
+                    "ModifyCount": 1
+                },
+                "Items": [
+                    {
+                        "ItemID": "DropExpItem2",
+                        "Quality": null,
+                        "Num": 1500,
+                        "Weight": 1,
+                        "Icon": null,
+                        "ItemType": null
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -41,6 +41,12 @@ export class DataService {
     return this.http.get('assets/json/weapon-materials.json');
   }
 
+  getAnchors(): Observable<any> {
+    return this.http.get('assets/json/anchors-cosmetic.json');
+  }
+  getJointOps(): Observable<any> {
+    return this.http.get('/assets/json/joint-operations.json');
+  }
   getHealingCalculatorSimulacraData(): Observable<any[]> {
     return this.http.get<any[]>('assets/json/simulacra-data.json').pipe(
       map(data => data.filter(entry => entry.onHealingCalculator === true))

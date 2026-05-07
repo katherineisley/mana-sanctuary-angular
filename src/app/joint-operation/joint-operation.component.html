@@ -1,0 +1,79 @@
+<div *ngFor="let dungeon of dungeons">
+
+  <h2 class="title">{{ dungeon.name }}</h2>
+
+  <!-- Mode headers -->
+  <div class="mode-header">
+    <div>Vitality</div>
+    <div>No Vitality</div>
+  </div>
+
+  <!-- Sequences -->
+  <div *ngFor="let seq of dungeon.sequences" class="sequence-row">
+
+    <!-- ================= LEFT (MULTI) ================= -->
+    <div class="mode-column" *ngIf="seq.modeA">
+
+      <div class="meta">
+        Lv {{ seq.modeA.Meta.MinLevel }} - {{ seq.modeA.Meta.MaxLevel }}
+
+        | Chance:
+      {{ (seq.modeA.Meta.SequenceWeight * 100) | number:'1.2-2' }} %
+
+        | Drops Amount: {{ seq.modeA.Meta.ModifyNum }}
+      </div>
+
+      <div class="items-grid">
+
+        <div
+          class="item"
+          *ngFor="let item of seq.modeA.Items"
+          [ngClass]="getRarityClass(item.Quality)"
+        >
+
+          <img class="icon" [src]="'../assets/jointop/' + item.Icon" />
+
+          <div class="bottom-row">
+            <span>{{ getItemLabel(item.ItemType) }}</span>
+            <span>{{ getItemDropPercent(item, seq.modeA.Items) }}</span>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ================= RIGHT (POOR) ================= -->
+    <div class="mode-column" *ngIf="seq.modeB">
+
+      <div class="meta">
+        Lv {{ seq.modeB.Meta.MinLevel }} - {{ seq.modeB.Meta.MaxLevel }}
+
+        | Chance:
+        {{ (seq.modeB.Meta.SequenceWeight * 100) | number:'1.2-2' }} %
+
+        | Drops Amount: {{ seq.modeB.Meta.ModifyNum }}
+      </div>
+
+      <div class="items-grid">
+
+        <div
+          class="item"
+          *ngFor="let item of seq.modeB.Items"
+          [ngClass]="getRarityClass(item.Quality)"
+        >
+
+          <img class="icon" [src]="'../assets/jointop/' + item.Icon" />
+
+          <div class="bottom-row">
+            <span>{{ getItemLabel(item.ItemType) }}</span>
+            <span>{{ getItemDropPercent(item, seq.modeB.Items) }}</span>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
