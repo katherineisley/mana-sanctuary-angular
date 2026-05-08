@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://panel.mazelab.uk/'
+  apiUrl: 'https://v0-api-for-logs.vercel.app'
 };
