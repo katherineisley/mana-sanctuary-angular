@@ -198,8 +198,8 @@ this.skillGroupStats = Object.keys(multipliers).map(name => {
 
 private getSkillGroupKey(skill: string): string {
   return skill
-.replace(/(?:SSR|[Ll]evel|[Ll]v)\d+|\d+(?=_|$)/g, (match) => {
-    return /^(?:SSR|[Ll]evel|[Ll]v)/.test(match) ? match : '';
+.replace(/(?:SSR|SSR_|[Ll]evel|[Ll]v)\d+|\d+(?=_|$)/g, (match) => {
+    return /^(?:SSR|SSR_|[Ll]evel|[Ll]v)/.test(match) ? match : '';
 })
 .replace(/__+/g, '_')
 .replace(/^_|_$/g, '')
