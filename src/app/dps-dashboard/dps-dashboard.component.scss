@@ -3,7 +3,45 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
+.share-section {
 
+  label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-size: 0.85rem;
+    opacity: 0.7;
+  }
+}
+
+.share-input-row {
+  display: flex;
+  gap: 0.5rem;
+
+  input {
+    flex: 1;
+    padding: 0.4rem 0.6rem;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 4px;
+    color: inherit;
+    font-size: 0.8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  button {
+    padding: 0.4rem 0.9rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    //background: #5b7fff;
+    //color: white;
+    white-space: nowrap;
+    transition: background 0.2s;
+
+    &:hover { background: #3d5fe0; }
+  }
+}
 // ── PAGE ──────────────────────────────────────────────────────────────────────
 
 .page {

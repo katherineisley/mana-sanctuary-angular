@@ -1,51 +1,43 @@
-import { Component } from '@angular/core';
 
-import {
-  ChartConfiguration
-} from 'chart.js';
-
+import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
+import { ChartConfiguration, ChartOptions } from 'chart.js';
 import { CombatEvent } from '../models/combat-event.model';
-
 import { LogParserService } from '../services/log-parser.service';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-dps-dashboard',
   templateUrl: './dps-dashboard.component.html',
   styleUrls: ['./dps-dashboard.component.scss']
 })
-export class DpsDashboardComponent {
+export class DpsDashboardComponent implements OnInit {
 
   events: CombatEvent[] = [];
-
+  rawLog = '';
   totalDamage = 0;
-
   dps = 0;
-
   maxHit = 0;
-
   lowestAtk = 0;
-
   highestAtk = 0;
-
   atkIncreasePercent = 0;
-
   lowestCritDamage = 0;
-
   highestCritDamage = 0;
-
   averageCritDamage = 0;
-
   averageCritRate = 0;
+  shareUrl = '';
+  copySuccess = false;
 
-skillGroupStats: {
-  name: string;
-  totalDamage: number;
-  highestDamage: number;
-  lowestDamage: number;
-  lowest: number;
-  highest: number;
-  average: number;
-}[] = [];
+  skillGroupStats: {
+    name: string;
+    totalDamage: number;
+    highestDamage: number;
+    percentageOfTotal: number;
+    lowestDamage: number;
+    lowest: number;
+    highest: number;
+    average: number;
+  }[] = [];
 
   lineChartData: ChartConfiguration<'line'>['data'] = {
     labels: [],
@@ -57,160 +49,217 @@ skillGroupStats: {
     datasets: []
   };
 
+  pieChartOptions: ChartOptions<'pie'> = {
+    responsive: true,
+    plugins: {
+      legend: {
+        display: true,
+        position: 'bottom',
+        labels: {
+          boxWidth: 10,
+          boxHeight: 10,
+          padding: 10,
+          color: 'rgba(255,255,255,0.75)',
+          font: {
+            size: 11,
+            family: 'inherit'
+          }
+        }
+      }
+    }
+  };
+
   constructor(
-    private parser: LogParserService
+    private parser: LogParserService,
+    private router: Router,
+    private route: ActivatedRoute
   ) {}
 
+  ngOnInit(): void {
+    this.route.queryParams.subscribe(async params => {
+      if (params['log']) {
+        try {
+          const response = await fetch(`${environment.apiUrl}/api/logs/${params['log']}`);
+          const text = await response.text();
+          const result = JSON.parse(text);
+          this.rawLog = result.log;
+          this.events = this.parser.parse(result.log);
+          this.calculateStats();
+          this.buildCharts();
+        } catch (e) {
+          console.error('Failed to load shared log', e);
+        }
+      }
+    });
+  }
+
   onFile(event: any): void {
-
     const file = event.target.files[0];
-
     if (!file) {
       return;
     }
 
     const reader = new FileReader();
 
-    reader.onload = () => {
-
+    reader.onload = async () => {
       const text = reader.result as string;
-
+      this.rawLog = text;
       this.events = this.parser.parse(text);
       console.log('RAW EVENTS:', this.events);
-
       this.calculateStats();
-
       this.buildCharts();
+      await this.generateShareUrl();
     };
 
     reader.readAsText(file);
   }
-calculateStats(): void {
-  if (!this.events.length) {
-    return;
+
+  async generateShareUrl(): Promise<void> {
+    try {
+      const response = await fetch(`${environment.apiUrl}/api/logs`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ log: this.rawLog })
+      });
+
+      const text = await response.text();
+      const result = JSON.parse(text);
+
+      const url = `${window.location.origin}${window.location.pathname}?log=${result.id}`;
+      this.shareUrl = url;
+
+      this.router.navigate([], {
+        queryParams: { log: result.id },
+        replaceUrl: true
+      });
+    } catch (e) {
+      console.error('Failed to generate share URL', e);
+    }
   }
 
-  const events = this.events.filter(e => !e.isSpecialDamage);
-
-  if (!events.length) {
-    return;
+  copyToClipboard(): void {
+    navigator.clipboard.writeText(this.shareUrl).then(() => {
+      this.copySuccess = true;
+      setTimeout(() => this.copySuccess = false, 2000);
+    });
   }
 
-  this.totalDamage = events.reduce((sum, e) => sum + e.calculatedDamage, 0);
+  calculateStats(): void {
+    if (!this.events.length) {
+      return;
+    }
 
-  this.maxHit = Math.max(...events.map(x => x.calculatedDamage));
+    const events = this.events.filter(e => !e.isSpecialDamage);
 
-  const duration = (events[events.length - 1].timestamp - events[0].timestamp) / 1000;
-  this.dps = this.totalDamage / duration;
+    if (!events.length) {
+      return;
+    }
 
-  const atkValues = events.map(x => x.atk);
-  this.lowestAtk = Math.min(...atkValues);
-  this.highestAtk = Math.max(...atkValues);
-  this.atkIncreasePercent = ((this.highestAtk - this.lowestAtk) / this.lowestAtk) * 100;
+    this.totalDamage = events.reduce((sum, e) => sum + e.calculatedDamage, 0);
+    this.maxHit = Math.max(...events.map(x => x.calculatedDamage));
 
-  const critDamageValues = events.map(x => x.critDamageMultiplier);
-  this.lowestCritDamage = Math.min(...critDamageValues);
-  this.highestCritDamage = Math.max(...critDamageValues);
-  this.averageCritDamage = critDamageValues.reduce((a, b) => a + b, 0) / critDamageValues.length;
+    const duration = (events[events.length - 1].timestamp - events[0].timestamp) / 1000;
+    this.dps = this.totalDamage / duration;
 
-  const critHits = events.filter(x => x.critDamageMultiplier > 1).length;
-  this.averageCritRate = critHits / events.length;
-}
+    const atkValues = events.map(x => x.atk);
+    this.lowestAtk = Math.min(...atkValues);
+    this.highestAtk = Math.max(...atkValues);
+    this.atkIncreasePercent = ((this.highestAtk - this.lowestAtk) / this.lowestAtk) * 100;
+
+    const critDamageValues = events.map(x => x.critDamageMultiplier);
+    this.lowestCritDamage = Math.min(...critDamageValues);
+    this.highestCritDamage = Math.max(...critDamageValues);
+    this.averageCritDamage = critDamageValues.reduce((a, b) => a + b, 0) / critDamageValues.length;
+
+    const critHits = events.filter(x => x.critDamageMultiplier > 1).length;
+    this.averageCritRate = critHits / events.length;
+  }
 
   buildCharts(): void {
-
     this.buildTimeline();
-
     this.buildSkillBreakdown();
   }
 
   buildTimeline(): void {
-
     const buckets: Record<number, number> = {};
-
-    const start =
-      this.events[0].timestamp;
+    const start = this.events[0].timestamp;
 
     for (const event of this.events) {
-
-      const second = Math.floor(
-        (event.timestamp - start) / 1000
-      );
-
+      const second = Math.floor((event.timestamp - start) / 1000);
       buckets[second] ??= 0;
-
       buckets[second] += event.calculatedDamage;
     }
 
     this.lineChartData = {
-
       labels: Object.keys(buckets),
-
-      datasets: [
-        {
-          label: 'Damage Per Second',
-
-          data: Object.values(buckets),
-
-          tension: 0.25
-        }
-      ]
+      datasets: [{
+        label: 'Damage Per Second',
+        data: Object.values(buckets),
+        tension: 0.25
+      }]
     };
   }
 
-buildSkillBreakdown(): void {
-  const map: Record<string, number> = {};
-  const multipliers: Record<string, number[]> = {};
+  buildSkillBreakdown(): void {
+    const map: Record<string, number> = {};
+    const multipliers: Record<string, number[]> = {};
 
-  for (const event of this.events) {
-    const groupKey = this.getSkillGroupKey(event.skill);
+    for (const event of this.events) {
+      const groupKey = this.getSkillGroupKey(event.skill);
+      map[groupKey] ??= 0;
+      map[groupKey] += event.calculatedDamage;
+      multipliers[groupKey] ??= [];
+      multipliers[groupKey].push(event.buffMultiplier);
+    }
 
-    map[groupKey] ??= 0;
-    map[groupKey] += event.calculatedDamage;
+    const totalDamageAll = Object.values(map).reduce((a, b) => a + b, 0);
 
-    multipliers[groupKey] ??= [];
-    multipliers[groupKey].push(event.buffMultiplier);
+    this.skillGroupStats = Object.keys(multipliers)
+      .map(name => {
+        const values = multipliers[name];
+        const damages = this.events
+          .filter(e => this.getSkillGroupKey(e.skill) === name)
+          .map(e => e.calculatedDamage);
+        const totalDamage = damages.reduce((a, b) => a + b, 0);
+
+        return {
+          name,
+          totalDamage,
+          percentageOfTotal: totalDamageAll > 0 ? (totalDamage / totalDamageAll) : 0,
+          highestDamage: Math.max(...damages),
+          lowestDamage: Math.min(...damages),
+          lowest: Math.min(...values),
+          highest: Math.max(...values),
+          average: values.reduce((a, b) => a + b, 0) / values.length
+        };
+      })
+      .sort((a, b) => b.totalDamage - a.totalDamage);
+
+    this.pieChartData = {
+      labels: this.skillGroupStats.map(s => s.name),
+      datasets: [{ data: this.skillGroupStats.map(s => s.totalDamage) }]
+    };
   }
 
-  this.pieChartData = {
-    labels: Object.keys(map),
-    datasets: [{ data: Object.values(map) }]
-  };
-
-this.skillGroupStats = Object.keys(multipliers).map(name => {
-  const values = multipliers[name];
-  const damages = this.events
-    .filter(e => this.getSkillGroupKey(e.skill) === name)
-    .map(e => e.calculatedDamage);
-
-  return {
-    name,
-    totalDamage: damages.reduce((a, b) => a + b, 0),
-    highestDamage: Math.max(...damages),
-    lowestDamage: Math.min(...damages),
-    lowest: Math.min(...values),
-    highest: Math.max(...values),
-    average: values.reduce((a, b) => a + b, 0) / values.length
-  };
-});
+  private getSkillGroupKey(skill: string): string {
+    return skill
+      .replace(/(?:SSR|SSR_|[Ll]evel|[Ll]v)\d+|\d+(?=_|$)/g, (match) => {
+        return /^(?:SSR|SSR_|[Ll]evel|[Ll]v)/.test(match) ? match : '';
+      })
+      .replace(/__+/g, '_')
+      .replace(/^_|_$/g, '')
+      .replace(/_C$/, '')
+      .replace(/^GE_/, '')
+      .replace(/^Damage_/, '')
+      .replace(/_damage$/, '')
+      .replace(/_Damage$/, '')
+      .replace(/_Balance$/, '')
+      .replace(/_balance$/, '')
+      .replace(/_damage$/, '')
+      .replace(/_Damage$/, '')
+  }
 }
 
 
-private getSkillGroupKey(skill: string): string {
-  return skill
-.replace(/(?:SSR|SSR_|[Ll]evel|[Ll]v)\d+|\d+(?=_|$)/g, (match) => {
-    return /^(?:SSR|SSR_|[Ll]evel|[Ll]v)/.test(match) ? match : '';
-})
-.replace(/__+/g, '_')
-.replace(/^_|_$/g, '')
-.replace(/_C$/, '')
-.replace(/^GE_/, '')
-.replace(/^Damage_/, '')
-.replace(/_damage$/, '')
-.replace(/_Damage$/, '')
-.replace(/_Balance$/, '')
-.replace(/_balance$/, '')
-.replace(/_damage$/, '')
-.replace(/_Damage$/, '')
-}
-}
+
+
