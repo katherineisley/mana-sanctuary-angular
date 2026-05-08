@@ -21,6 +21,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AnchorPageComponent } from './anchor-page/anchor-page.component';
 import { JointOperationComponent } from './joint-operation/joint-operation.component';
+import { DpsDashboardComponent } from './dps-dashboard/dps-dashboard.component';
+
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
   { path: 'home', component: HomeComponent, resolve: {data: DataResolver} },
@@ -29,6 +31,7 @@ const routes: Routes = [
   // { path: 'healing/teams', component: HealingTeamsComponent },
   // { path: 'healing/calculator', component: HealingCalculatorComponent, resolve: {data: DataResolver} },
   // { path: 'guides', component: GuidesComponent },
+  { path: 'dps', component: DpsDashboardComponent },
   { path: 'jointop', component: JointOperationComponent },
   { path: 'anchors', component: AnchorPageComponent },
   { path: 'index/:server', component: IndexComponent },
@@ -41,6 +44,7 @@ const routes: Routes = [
   { path: 'glossary', component: GlossaryComponent, resolve: {data: DataResolver} },
   { path: 'about-us', component: AboutUsComponent, resolve: {data: DataResolver} },
   { path: '**', component: PageNotFoundComponent }, // keep this as the last route
+
 ];
 
 @NgModule({

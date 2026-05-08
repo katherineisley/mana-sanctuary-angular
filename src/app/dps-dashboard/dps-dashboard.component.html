@@ -1,0 +1,146 @@
+<div class="page">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-left">
+      <span class="header-sub">Battle Log</span>
+    </div>
+    <label class="file-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+        <polyline points="17 8 12 3 7 8"/>
+        <line x1="12" y1="3" x2="12" y2="15"/>
+      </svg>
+      Upload combat log
+      <input type="file" accept=".txt,.log" (change)="onFile($event)" />
+    </label>
+  </header>
+
+  <!-- STATS -->
+  <p class="section-label">Summary</p>
+  <div class="stats-grid">
+
+    <div class="stat-card primary">
+      <h2>Total Damage</h2>
+      <div class="value accent">{{ totalDamage | number }}</div>
+    </div>
+
+    <div class="stat-card primary">
+      <h2>DPS</h2>
+      <div class="value accent">{{ dps | number:'1.0-0' }}</div>
+    </div>
+
+    <div class="stat-card">
+      <h2>Max Hit</h2>
+      <div class="value">{{ maxHit | number }}</div>
+    </div>
+
+    <div class="stat-card">
+      <h2>Lowest ATK</h2>
+      <div class="value">{{ lowestAtk | number }}</div>
+    </div>
+
+    <div class="stat-card">
+      <h2>Highest ATK</h2>
+      <div class="value green">{{ highestAtk | number }}</div>
+    </div>
+
+    <div class="stat-card">
+      <h2>ATK Increase</h2>
+      <div class="value amber">{{ atkIncreasePercent | number:'1.0-2' }}%</div>
+    </div>
+
+    <div class="stat-card">
+      <h2>Lowest Crit DMG</h2>
+      <div class="value">{{ lowestCritDamage | number:'1.0-2' }}</div>
+    </div>
+
+    <div class="stat-card">
+      <h2>Highest Crit DMG</h2>
+      <div class="value green">{{ highestCritDamage | number:'1.0-2' }}</div>
+    </div>
+
+    <div class="stat-card">
+      <h2>Average Crit DMG</h2>
+      <div class="value">{{ averageCritDamage | number:'1.0-2' }}</div>
+    </div>
+
+    <div class="stat-card">
+      <h2>Average Crit Rate</h2>
+      <div class="value blue">{{ averageCritRate | percent:'1.0-2' }}</div>
+    </div>
+
+  </div>
+
+  <!-- CHARTS -->
+  <p class="section-label">Charts</p>
+  <div class="charts">
+
+    <div class="chart-card">
+      <div class="chart-card-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+        </svg>
+        DPS Timeline
+      </div>
+      <canvas baseChart [data]="lineChartData" [type]="'line'"></canvas>
+    </div>
+
+    <div class="chart-card">
+      <div class="chart-card-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21.21 15.89A10 10 0 1 1 8 2.83"/>
+          <path d="M22 12A10 10 0 0 0 12 2v10z"/>
+        </svg>
+        Skill Breakdown
+      </div>
+      <canvas baseChart [data]="pieChartData" [type]="'pie'"></canvas>
+    </div>
+
+  </div>
+
+  <!-- SKILL TABLE -->
+  <div class="table-card">
+    <div class="table-header">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/>
+        <line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/>
+      </svg>
+      Skill Group Stats
+    </div>
+
+    <div *ngIf="skillGroupStats.length === 0" class="empty-state">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/>
+        <polyline points="13 2 13 9 20 9"/>
+      </svg>
+      <p>Upload a combat log to see detailed skill stats</p>
+    </div>
+
+    <table *ngIf="skillGroupStats.length > 0">
+      <thead>
+        <tr>
+          <th>Skill Group</th>
+          <th>Total DMG</th>
+          <th>↓ Hit</th>
+          <th>↑ Hit</th>
+          <th>↓ Multi</th>
+          <th>↑ Multi</th>
+          <th>Avg Multi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of skillGroupStats">
+          <td>{{ row.name }}</td>
+          <td>{{ row.totalDamage | number:'1.0-0' }}</td>
+          <td class="lo">{{ row.lowestDamage | number:'1.0-0' }}</td>
+          <td class="hi">{{ row.highestDamage | number:'1.0-0' }}</td>
+          <td class="lo">{{ row.lowest | number:'1.3-3' }}</td>
+          <td class="hi">{{ row.highest | number:'1.3-3' }}</td>
+          <td>{{ row.average | number:'1.3-3' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>

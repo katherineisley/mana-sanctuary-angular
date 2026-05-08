@@ -32,7 +32,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { BaseChartDirective, provideCharts, withDefaultRegisterables } from 'ng2-charts';
-
+import { DpsDashboardComponent } from './dps-dashboard/dps-dashboard.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,7 +58,8 @@ import { BaseChartDirective, provideCharts, withDefaultRegisterables } from 'ng2
     MatrixCardComponent,
     MatrixPageComponent,
     RelicCardComponent,
-    RelicPageComponent
+    RelicPageComponent,
+    DpsDashboardComponent
   ],
   imports: [
     BrowserModule,

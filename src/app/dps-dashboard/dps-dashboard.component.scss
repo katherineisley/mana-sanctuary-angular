@@ -1,0 +1,282 @@
+
+@use 'src/styles' as *;
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+// ── PAGE ──────────────────────────────────────────────────────────────────────
+
+.page {
+  min-height: 100vh;
+  color: $text;
+  width: 100%;
+  padding: 28px 24px 60px;
+  //background: $bg;
+
+}
+
+// ── HEADER ────────────────────────────────────────────────────────────────────
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid $border;
+}
+
+.header-left {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+
+
+.header-sub {
+  font-size: 12px;
+  color: $muted;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.file-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 18px;
+  border: 1px solid $border2;
+  border-radius: 8px;
+
+  font-size: 13px;
+  font-weight: 500;
+  color: $muted;
+  background: $surface;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+
+  &:hover {
+    border-color: $accent;
+    color: $text;
+    background: $surface2;
+  }
+
+  svg {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+  }
+
+  input[type='file'] { display: none; }
+}
+
+// ── SECTION LABEL ─────────────────────────────────────────────────────────────
+
+.section-label {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: $muted2;
+  margin-bottom: 12px;
+}
+
+// ── STATS GRID ────────────────────────────────────────────────────────────────
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  //background: $surface;
+  border: 1px solid $border;
+  border-radius: $radius;
+  padding: 16px 18px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.2s;
+
+  &:hover { border-color: $border2; }
+
+  &.primary {
+    border-color: rgba(232, 66, 58, 0.3);
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(232, 66, 58, 0.07) 0%, transparent 60%);
+      pointer-events: none;
+    }
+  }
+
+  h2 {
+    font-size: 11px;
+    font-weight: 400;
+    color: $muted;
+    letter-spacing: 0.04em;
+    margin: 0 0 6px;
+  }
+}
+
+.value {
+
+  font-size: 24px;
+  font-weight: 500;
+  color: $text;
+  line-height: 1;
+
+  &.accent { color: $accent; }
+  &.green  { color: $green; }
+  &.blue   { color: $blue; }
+  &.amber  { color: $amber; }
+}
+
+// ── CHARTS ────────────────────────────────────────────────────────────────────
+
+.charts {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.chart-card {
+  //background: $surface;
+  border: 1px solid $border;
+  border-radius: $radius-lg;
+  padding: 20px 22px;
+}
+
+.chart-card-title {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $muted;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  svg {
+    width: 14px;
+    height: 14px;
+    opacity: 0.6;
+  }
+}
+
+// ── TABLE ─────────────────────────────────────────────────────────────────────
+
+.table-card {
+  //background: $surface;
+  border: 1px solid $border;
+  border-radius: $radius-lg;
+  overflow: hidden;
+  margin-top: 14px;
+}
+
+.table-header {
+  padding: 14px 20px;
+  border-bottom: 1px solid $border;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $muted;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  svg {
+    width: 14px;
+    height: 14px;
+    opacity: 0.6;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  padding: 10px 16px;
+  text-align: right;
+
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $muted2;
+  border-bottom: 1px solid $border;
+
+  &:first-child { text-align: left; }
+}
+
+tbody td {
+  padding: 11px 16px;
+  text-align: right;
+
+  font-size: 13px;
+  color: $muted;
+  border-bottom: 1px solid $border;
+
+  &:first-child {
+    text-align: left;
+    color: $text;
+
+    font-weight: 500;
+  }
+
+  &.hi { color: $green; }
+  &.lo { color: $accent; }
+}
+
+tbody tr {
+  &:last-child td { border-bottom: none; }
+  &:hover td { background: $surface2; }
+}
+
+// ── EMPTY STATE ───────────────────────────────────────────────────────────────
+
+.empty-state {
+  text-align: center;
+  padding: 48px 24px;
+  color: $muted2;
+
+  svg {
+    width: 36px;
+    height: 36px;
+    margin: 0 auto 12px;
+    opacity: 0.4;
+    display: block;
+  }
+
+  p { font-size: 13px; }
+}
+
+// ── RESPONSIVE ────────────────────────────────────────────────────────────────
+
+@media (max-width: 700px) {
+  .charts { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .logo { font-size: 22px; }
+}
+
+@media (max-width: 420px) {
+  .page { padding: 16px 12px 40px; }
+  .value { font-size: 20px; }
+}
+@media (min-width: 1400px) {
+  .page {
+    min-width: 1400px;
+    margin: 0 auto;
+    padding-inline: 48px;
+  }
+}
