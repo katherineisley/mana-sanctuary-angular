@@ -31,7 +31,7 @@ const routes: Routes = [
   // { path: 'healing/teams', component: HealingTeamsComponent },
   // { path: 'healing/calculator', component: HealingCalculatorComponent, resolve: {data: DataResolver} },
   // { path: 'guides', component: GuidesComponent },
-  { path: 'dps', component: DpsDashboardComponent },
+  { path: 'dps', component: DpsDashboardComponent,resolve: {data: DataResolver}  },
   { path: 'jointop', component: JointOperationComponent },
   { path: 'anchors', component: AnchorPageComponent },
   { path: 'index/:server', component: IndexComponent },

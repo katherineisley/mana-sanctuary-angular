@@ -135,6 +135,9 @@
     <table *ngIf="skillGroupStats.length > 0">
       <thead>
         <tr>
+          <th>DMG Type</th>
+          <th>Element</th>
+          <th>Source</th>
           <th>Skill Group</th>
           <th>DMG</th>
           <th>Total DMG</th>
@@ -147,6 +150,20 @@
       </thead>
       <tbody>
         <tr *ngFor="let row of skillGroupStats">
+          <td>
+              <span
+                *ngIf="row.main_tag"
+                [matTooltip]="row.damage_tags?.join('\n') ?? ''"
+                matTooltipClass="multiline-tooltip"
+                matTooltipPosition="above"
+                class="tag-label"
+              >
+                {{ row.main_tag }}
+              </span>
+              <span *ngIf="!row.main_tag">—</span>
+          </td>
+          <td>{{ row.element ?? '' }}</td>
+          <td>{{ row.source ?? '' }}</td>
           <td>{{ row.name }}</td>
           <td>{{ row.percentageOfTotal | percent:'1.0-2' }}</td>
           <td>{{ row.totalDamage | number:'1.0-0' }}</td>

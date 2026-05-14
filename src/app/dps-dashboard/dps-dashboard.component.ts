@@ -1,10 +1,37 @@
-
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { ChartConfiguration, ChartOptions } from 'chart.js';
 import { CombatEvent } from '../models/combat-event.model';
 import { LogParserService } from '../services/log-parser.service';
 import { environment } from '../environments/environment';
+
+interface SkillMeta {
+  file_name: string;
+  file_path: string;
+  damage_tags: string[];
+  main_tag: string;
+  element: string;
+  source: string;
+  slug: string;
+  icon: string;
+}
+
+interface SkillGroupStat {
+  name: string;
+  totalDamage: number;
+  highestDamage: number;
+  percentageOfTotal: number;
+  lowestDamage: number;
+  lowest: number;
+  highest: number;
+  average: number;
+  element: string | null;
+  main_tag: string | null;
+  source: string | null;
+  slug: string | null;
+  icon: string | null;
+  damage_tags: string[] | null;
+}
 
 @Component({
   selector: 'app-dps-dashboard',
@@ -28,16 +55,9 @@ export class DpsDashboardComponent implements OnInit {
   shareUrl = '';
   copySuccess = false;
 
-  skillGroupStats: {
-    name: string;
-    totalDamage: number;
-    highestDamage: number;
-    percentageOfTotal: number;
-    lowestDamage: number;
-    lowest: number;
-    highest: number;
-    average: number;
-  }[] = [];
+  private skillMetaMap: Record<string, SkillMeta> = {};
+
+  skillGroupStats: SkillGroupStat[] = [];
 
   lineChartData: ChartConfiguration<'line'>['data'] = {
     labels: [],
@@ -76,6 +96,15 @@ export class DpsDashboardComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    console.log('full snapshot.data:', this.route.snapshot.data);
+    // Pull weaponSkill directly from the resolver data — no extra HTTP call needed
+    const resolvedData = this.route.snapshot.data['data'];
+    const weaponSkillData: SkillMeta[] = resolvedData?.weaponSkill ?? [];
+
+    this.skillMetaMap = Object.fromEntries(
+      weaponSkillData.map((entry: SkillMeta) => [entry.file_name, entry])
+    );
+
     this.route.queryParams.subscribe(async params => {
       if (params['log']) {
         try {
@@ -200,9 +229,14 @@ export class DpsDashboardComponent implements OnInit {
     };
   }
 
+private normaliseSkillKey(raw: string): string {
+  return raw.replace(/_C$/, '');
+}
+
   buildSkillBreakdown(): void {
     const map: Record<string, number> = {};
     const multipliers: Record<string, number[]> = {};
+    const rawSkillNames: Record<string, string> = {};
 
     for (const event of this.events) {
       const groupKey = this.getSkillGroupKey(event.skill);
@@ -210,8 +244,11 @@ export class DpsDashboardComponent implements OnInit {
       map[groupKey] += event.calculatedDamage;
       multipliers[groupKey] ??= [];
       multipliers[groupKey].push(event.buffMultiplier);
+      rawSkillNames[groupKey] ??= event.skill;
     }
-
+  // ADD THIS — check what raw names look like vs your JSON keys
+  console.log('rawSkillNames:', rawSkillNames);
+  console.log('skillMetaMap keys:', Object.keys(this.skillMetaMap));
     const totalDamageAll = Object.values(map).reduce((a, b) => a + b, 0);
 
     this.skillGroupStats = Object.keys(multipliers)
@@ -222,6 +259,8 @@ export class DpsDashboardComponent implements OnInit {
           .map(e => e.calculatedDamage);
         const totalDamage = damages.reduce((a, b) => a + b, 0);
 
+        const meta = this.skillMetaMap[this.normaliseSkillKey(rawSkillNames[name])] ?? null;
+
         return {
           name,
           totalDamage,
@@ -230,7 +269,13 @@ export class DpsDashboardComponent implements OnInit {
           lowestDamage: Math.min(...damages),
           lowest: Math.min(...values),
           highest: Math.max(...values),
-          average: values.reduce((a, b) => a + b, 0) / values.length
+          average: values.reduce((a, b) => a + b, 0) / values.length,
+          element:     meta?.element     ?? null,
+          main_tag:    meta?.main_tag    ?? null,
+          source:      meta?.source      ?? null,
+          slug:        meta?.slug        ?? null,
+          icon:        meta?.icon        ?? null,
+          damage_tags: meta?.damage_tags ?? null,
         };
       })
       .sort((a, b) => b.totalDamage - a.totalDamage);
@@ -259,7 +304,3 @@ export class DpsDashboardComponent implements OnInit {
       .replace(/_Damage$/, '')
   }
 }
-
-
-
-

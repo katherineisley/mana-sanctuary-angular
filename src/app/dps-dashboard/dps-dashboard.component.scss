@@ -12,7 +12,9 @@
     opacity: 0.7;
   }
 }
-
+.multiline-tooltip {
+  white-space: pre-line;
+}
 .share-input-row {
   display: flex;
   gap: 0.5rem;

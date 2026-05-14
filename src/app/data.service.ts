@@ -47,6 +47,11 @@ export class DataService {
   getJointOps(): Observable<any> {
     return this.http.get('/assets/json/joint-operations.json');
   }
+
+  getWeaponSkillData(): Observable<any> {
+    return this.http.get('/assets/json/weapon-skill-data.json');
+  }
+
   getHealingCalculatorSimulacraData(): Observable<any[]> {
     return this.http.get<any[]>('assets/json/simulacra-data.json').pipe(
       map(data => data.filter(entry => entry.onHealingCalculator === true))
