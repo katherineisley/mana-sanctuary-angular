@@ -10,6 +10,7 @@ interface SkillMeta {
   file_path: string;
   damage_tags: string[];
   main_tag: string;
+  type: string;
   element: string;
   source: string;
   slug: string;
@@ -26,11 +27,13 @@ interface SkillGroupStat {
   highest: number;
   average: number;
   element: string | null;
+  type: string | null;
   main_tag: string | null;
   source: string | null;
   slug: string | null;
   icon: string | null;
   damage_tags: string[] | null;
+  originalSkills: string[]; // ADD THIS
 }
 
 @Component({
@@ -68,7 +71,35 @@ export class DpsDashboardComponent implements OnInit {
     labels: [],
     datasets: []
   };
+  elementRawChartData: ChartConfiguration<'pie'>['data'] = {
+    labels: [],
+    datasets: []
+  };
 
+  elementCalculatedChartData: ChartConfiguration<'pie'>['data'] = {
+    labels: [],
+    datasets: []
+  };
+
+  damageTypeRawChartData: ChartConfiguration<'pie'>['data'] = {
+    labels: [],
+    datasets: []
+  };
+
+  damageTypeCalculatedChartData: ChartConfiguration<'pie'>['data'] = {
+    labels: [],
+    datasets: []
+  };
+
+  sourceRawChartData: ChartConfiguration<'pie'>['data'] = {
+    labels: [],
+    datasets: []
+  };
+
+  sourceCalculatedChartData: ChartConfiguration<'pie'>['data'] = {
+    labels: [],
+    datasets: []
+  };
   pieChartOptions: ChartOptions<'pie'> = {
     responsive: true,
     plugins: {
@@ -88,12 +119,31 @@ export class DpsDashboardComponent implements OnInit {
       }
     }
   };
-
+  pieChartOptions2: ChartOptions<'pie'> = {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        display: true,
+        position: 'right',
+        labels: {
+          boxWidth: 14,
+          boxHeight: 14,
+          padding: 16,
+          font: {
+            size: 14
+          },
+          color: 'rgba(255,255,255,0.75)'
+        }
+      }
+    },
+    radius: '70%'
+  };
   constructor(
     private parser: LogParserService,
     private router: Router,
     private route: ActivatedRoute
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     console.log('full snapshot.data:', this.route.snapshot.data);
@@ -207,6 +257,7 @@ export class DpsDashboardComponent implements OnInit {
   buildCharts(): void {
     this.buildTimeline();
     this.buildSkillBreakdown();
+    this.buildCategoryCharts();
   }
 
   buildTimeline(): void {
@@ -228,15 +279,89 @@ export class DpsDashboardComponent implements OnInit {
       }]
     };
   }
+  private buildPercentagePieChart(
+    keyGetter: (row: SkillGroupStat) => string[],
+    valueGetter: (event: CombatEvent) => number
+  ): ChartConfiguration<'pie'>['data'] {
 
-private normaliseSkillKey(raw: string): string {
-  return raw.replace(/_C$/, '');
-}
+    const totals: Record<string, number> = {};
+
+    for (const event of this.events) {
+
+      const groupKey = this.getSkillGroupKey(event.skill);
+
+      const row = this.skillGroupStats.find(x => x.name === groupKey);
+
+      if (!row) {
+        continue;
+      }
+
+      const keys = keyGetter(row);
+
+      for (const key of keys) {
+
+        if (!key) {
+          continue;
+        }
+
+        totals[key] ??= 0;
+        totals[key] += valueGetter(event);
+      }
+    }
+
+    return {
+      labels: Object.keys(totals),
+      datasets: [{
+        data: Object.values(totals)
+      }]
+    };
+  }
+  private buildCategoryCharts(): void {
+
+    // ELEMENT
+
+    this.elementRawChartData = this.buildPercentagePieChart(
+      row => row.element ? [row.element] : [],
+      event => event.rawDamage
+    );
+
+    this.elementCalculatedChartData = this.buildPercentagePieChart(
+      row => row.element ? [row.element] : [],
+      event => event.calculatedDamage
+    );
+
+    // DAMAGE TYPE
+
+    this.damageTypeRawChartData = this.buildPercentagePieChart(
+      row => row.main_tag ? [row.main_tag] : [],
+      event => event.rawDamage
+    );
+
+    this.damageTypeCalculatedChartData = this.buildPercentagePieChart(
+      row => row.main_tag ? [row.main_tag] : [],
+      event => event.calculatedDamage
+    );
+
+    // SOURCE
+
+    this.sourceRawChartData = this.buildPercentagePieChart(
+      row => row.source ? [row.source] : [],
+      event => event.rawDamage
+    );
+
+    this.sourceCalculatedChartData = this.buildPercentagePieChart(
+      row => row.source ? [row.source] : [],
+      event => event.calculatedDamage
+    );
+  }
+  private normaliseSkillKey(raw: string): string {
+    return raw.replace(/_C$/, '');
+  }
 
   buildSkillBreakdown(): void {
     const map: Record<string, number> = {};
     const multipliers: Record<string, number[]> = {};
-    const rawSkillNames: Record<string, string> = {};
+    const rawSkillNames: Record<string, Set<string>> = {};
 
     for (const event of this.events) {
       const groupKey = this.getSkillGroupKey(event.skill);
@@ -244,11 +369,12 @@ private normaliseSkillKey(raw: string): string {
       map[groupKey] += event.calculatedDamage;
       multipliers[groupKey] ??= [];
       multipliers[groupKey].push(event.buffMultiplier);
-      rawSkillNames[groupKey] ??= event.skill;
+      rawSkillNames[groupKey] ??= new Set<string>();
+      rawSkillNames[groupKey].add(event.skill);
     }
-  // ADD THIS — check what raw names look like vs your JSON keys
-  console.log('rawSkillNames:', rawSkillNames);
-  console.log('skillMetaMap keys:', Object.keys(this.skillMetaMap));
+    // ADD THIS — check what raw names look like vs your JSON keys
+    console.log('rawSkillNames:', rawSkillNames);
+    console.log('skillMetaMap keys:', Object.keys(this.skillMetaMap));
     const totalDamageAll = Object.values(map).reduce((a, b) => a + b, 0);
 
     this.skillGroupStats = Object.keys(multipliers)
@@ -259,7 +385,8 @@ private normaliseSkillKey(raw: string): string {
           .map(e => e.calculatedDamage);
         const totalDamage = damages.reduce((a, b) => a + b, 0);
 
-        const meta = this.skillMetaMap[this.normaliseSkillKey(rawSkillNames[name])] ?? null;
+        const firstSkill = [...rawSkillNames[name]][0];
+        const meta = this.skillMetaMap[this.normaliseSkillKey(firstSkill)] ?? null;
 
         return {
           name,
@@ -270,12 +397,14 @@ private normaliseSkillKey(raw: string): string {
           lowest: Math.min(...values),
           highest: Math.max(...values),
           average: values.reduce((a, b) => a + b, 0) / values.length,
-          element:     meta?.element     ?? null,
-          main_tag:    meta?.main_tag    ?? null,
-          source:      meta?.source      ?? null,
-          slug:        meta?.slug        ?? null,
-          icon:        meta?.icon        ?? null,
+          type: meta?.type ?? null,
+          element: meta?.element ?? null,
+          main_tag: meta?.main_tag ?? null,
+          source: meta?.source ?? null,
+          slug: meta?.slug ?? null,
+          icon: meta?.icon ?? null,
           damage_tags: meta?.damage_tags ?? null,
+          originalSkills: [...rawSkillNames[name]],
         };
       })
       .sort((a, b) => b.totalDamage - a.totalDamage);
@@ -288,8 +417,8 @@ private normaliseSkillKey(raw: string): string {
 
   private getSkillGroupKey(skill: string): string {
     return skill
-      .replace(/(?:SSR|SSR_|[Ll]evel|[Ll]v)\d+|\d+(?=_|$)/g, (match) => {
-        return /^(?:SSR|SSR_|[Ll]evel|[Ll]v)/.test(match) ? match : '';
+      .replace(/(?:SSR|SSR_|Orange_Skill|[Aa]rtifact|MMO|MMO_|[Mm]atrix]|[Ll]evel|[Ll]v)\d+|\d+(?=_|$)/g, (match) => {
+        return /^(?:SSR|SSR_|Orange_Skill|[Aa]rtifact|MMO|MMO_|[Mm]atrix]|[Ll]evel|[Ll]v)/.test(match) ? match : '';
       })
       .replace(/__+/g, '_')
       .replace(/^_|_$/g, '')

@@ -1,8 +1,11 @@
-
 @use 'src/styles' as *;
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
+
 .share-section {
 
   label {
@@ -12,9 +15,11 @@
     opacity: 0.7;
   }
 }
+
 .multiline-tooltip {
   white-space: pre-line;
 }
+
 .share-input-row {
   display: flex;
   gap: 0.5rem;
@@ -22,8 +27,8 @@
   input {
     flex: 1;
     padding: 0.4rem 0.6rem;
-    background: rgba(255,255,255,0.08);
-    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 4px;
     color: inherit;
     font-size: 0.8rem;
@@ -41,9 +46,12 @@
     white-space: nowrap;
     transition: background 0.2s;
 
-    &:hover { background: #3d5fe0; }
+    &:hover {
+      background: #3d5fe0;
+    }
   }
 }
+
 // ── PAGE ──────────────────────────────────────────────────────────────────────
 
 .page {
@@ -109,7 +117,9 @@
     flex-shrink: 0;
   }
 
-  input[type='file'] { display: none; }
+  input[type='file'] {
+    display: none;
+  }
 }
 
 // ── SECTION LABEL ─────────────────────────────────────────────────────────────
@@ -141,7 +151,9 @@
   overflow: hidden;
   transition: border-color 0.2s;
 
-  &:hover { border-color: $border2; }
+  &:hover {
+    border-color: $border2;
+  }
 
   &.primary {
     border-color: rgba(232, 66, 58, 0.3);
@@ -171,10 +183,21 @@
   color: $text;
   line-height: 1;
 
-  &.accent { color: $accent; }
-  &.green  { color: $green; }
-  &.blue   { color: $blue; }
-  &.amber  { color: $amber; }
+  &.accent {
+    color: $accent;
+  }
+
+  &.green {
+    color: $green;
+  }
+
+  &.blue {
+    color: $blue;
+  }
+
+  &.amber {
+    color: $amber;
+  }
 }
 
 // ── CHARTS ────────────────────────────────────────────────────────────────────
@@ -186,12 +209,38 @@
   margin-bottom: 14px;
 }
 
+.charts2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+@media (max-width: 1100px) {
+  .charts2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .charts2 {
+    grid-template-columns: 1fr;
+  }
+}
+
 .chart-card {
-  //background: $surface;
   border: 1px solid $border;
   border-radius: $radius-lg;
   padding: 20px 22px;
 }
+
+
+.chart-card2 {
+  height: 320px;
+
+}
+
+
 
 .chart-card-title {
   font-size: 12px;
@@ -214,11 +263,10 @@
 // ── TABLE ─────────────────────────────────────────────────────────────────────
 
 .table-card {
-  //background: $surface;
   border: 1px solid $border;
   border-radius: $radius-lg;
   overflow: hidden;
-  margin-top: 14px;
+  margin: 14px 0px;
 }
 
 .table-header {
@@ -256,7 +304,9 @@ thead th {
   color: $muted2;
   border-bottom: 1px solid $border;
 
-  &:first-child { text-align: left; }
+  &:first-child {
+    text-align: left;
+  }
 }
 
 tbody td {
@@ -274,13 +324,23 @@ tbody td {
     font-weight: 500;
   }
 
-  &.hi { color: $green; }
-  &.lo { color: $accent; }
+  &.hi {
+    color: $green;
+  }
+
+  &.lo {
+    color: $accent;
+  }
 }
 
 tbody tr {
-  &:last-child td { border-bottom: none; }
-  &:hover td { background: $surface2; }
+  &:last-child td {
+    border-bottom: none;
+  }
+
+  &:hover td {
+    background: $surface2;
+  }
 }
 
 // ── EMPTY STATE ───────────────────────────────────────────────────────────────
@@ -298,21 +358,37 @@ tbody tr {
     display: block;
   }
 
-  p { font-size: 13px; }
+  p {
+    font-size: 13px;
+  }
 }
 
 // ── RESPONSIVE ────────────────────────────────────────────────────────────────
 
 @media (max-width: 700px) {
-  .charts { grid-template-columns: 1fr; }
-  .stats-grid { grid-template-columns: repeat(2, 1fr); }
-  .logo { font-size: 22px; }
+  .charts {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .logo {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 420px) {
-  .page { padding: 16px 12px 40px; }
-  .value { font-size: 20px; }
+  .page {
+    padding: 16px 12px 40px;
+  }
+
+  .value {
+    font-size: 20px;
+  }
 }
+
 @media (min-width: 1400px) {
   .page {
     min-width: 1400px;
